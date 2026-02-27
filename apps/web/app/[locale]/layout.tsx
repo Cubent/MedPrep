@@ -19,19 +19,19 @@ import type { Metadata } from 'next';
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-  title: 'PushToProd Studio - Web Development & Digital Solutions',
-  description: 'We build custom web applications, mobile apps, and digital platforms that drive real business growth. Expert team of designers, engineers, and product leaders.',
+  title: 'TripDeals - Save 90% on your next flight - Download on iOS now!',
+  description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights with TripDeals.',
   openGraph: {
-    title: 'PushToProd Studio - Web Development & Digital Solutions',
-    description: 'We build custom web applications, mobile apps, and digital platforms that drive real business growth. Expert team of designers, engineers, and product leaders.',
-    url: 'https://pushtoprod.studio',
-    siteName: 'PushToProd Studio',
+    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
+    description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights.',
+    url: 'https://tripdeals.com',
+    siteName: 'TripDeals',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'PushToProd Studio - Web Development Agency',
+        alt: 'TripDeals - Exclusive Flight Deals',
       },
     ],
     locale: 'en_US',
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PushToProd Studio - Web Development & Digital Solutions',
-    description: 'We build custom web applications, mobile apps, and digital platforms that drive real business growth. Expert team of designers, engineers, and product leaders.',
+    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
+    description: 'Get instant alerts for massive flight discounts and error fares from your home airport.',
     images: ['/og-image.png'],
   },
   icons: {
     icon: [
-      { url: '/faviconpushtoprod.png', type: 'image/png' },
+      { url: '/logoflavorly (5).png', type: 'image/png' },
       { url: '/favicon.ico', type: 'image/x-icon' }
     ],
-    shortcut: '/faviconpushtoprod.png',
+    shortcut: '/logoflavorly (5).png',
     apple: '/apple-touch-icon.png',
   },
 };
@@ -77,31 +77,28 @@ const RootLayout = async ({ children, params }: RootLayoutProperties) => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "PushToProd Studio",
-            "description": "Web development agency specializing in custom web applications, mobile apps, UI/UX design, and digital solutions. We build scalable products that drive business growth.",
-            "url": "https://pushtoprod.studio",
-            "logo": "https://pushtoprod.studio/faviconpushtoprod.png",
+            "name": "TripDeals",
+            "description": "Flight deal alert service helping travelers save up to 90% on flights. Get instant alerts for massive discounts and error fares from your home airport.",
+            "url": "https://tripdeals.com",
+            "logo": "https://tripdeals.com/logoflavorly (5).png",
             "sameAs": [
-              "https://www.linkedin.com/company/pushtoprod",
-              "https://twitter.com/pushtoprodstudio",
-              "https://www.instagram.com/pushtoprodstudio"
+              "https://www.instagram.com/tripdeals",
+              "https://twitter.com/tripdeals",
+              "https://www.facebook.com/tripdeals"
             ],
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer service",
-              "url": "https://pushtoprod.studio/contact",
-              "email": "hello@pushtoprod.studio"
+              "url": "https://tripdeals.com/contact",
+              "email": "hello@tripdeals.com"
             },
-            "founder": {
-              "@type": "Person",
-              "name": "PushToProd Studio Founder"
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.7",
+              "ratingCount": "50000",
+              "bestRating": "5"
             },
-            "foundingDate": "2020",
-            "address": {
-              "@type": "PostalAddress",
-              "addressCountry": "US"
-            },
-            "keywords": "web development, mobile app development, UI/UX design, custom software, web applications, e-commerce, AI solutions, digital agency, software development"
+            "keywords": "flight deals, cheap flights, flight discounts, error fares, travel deals, airline tickets, flight alerts, budget travel"
           })
         }}
       />

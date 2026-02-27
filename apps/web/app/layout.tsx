@@ -6,15 +6,27 @@ import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Velgance - Trasformiamo il talento in opportunità',
-  description: 'Academy Model Management - Connettiamo talenti unici con le migliori opportunità del settore della moda.',
+  title: 'TripDeals - Save 90% on your next flight - Download on iOS now!',
+  description: 'Join TripDeals and find the best flights from your city. Save up to 90% on flights.',
   icons: {
     icon: [
-      { url: '/faviconpushtoprod.png', type: 'image/png' },
+      { url: '/logoflavorly (5).png', type: 'image/png' },
       { url: '/favicon.ico', type: 'image/x-icon' }
     ],
-    shortcut: '/faviconpushtoprod.png',
+    shortcut: '/logoflavorly (5).png',
     apple: '/apple-touch-icon.png',
+  },
+  openGraph: {
+    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
+    description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights.',
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'TripDeals',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
+    description: 'Get instant alerts for massive flight discounts and error fares from your home airport.',
   },
 };
 
