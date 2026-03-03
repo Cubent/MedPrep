@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
     description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights.',
-    url: 'https://tripdeals.com',
+    url: 'https://jointripdeals.com',
     siteName: 'TripDeals',
     images: [
       {
