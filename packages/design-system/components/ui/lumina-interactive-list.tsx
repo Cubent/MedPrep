@@ -58,7 +58,7 @@ export function LuminaInteractiveList() {
             </div>
           </div>
           <a 
-            href="https://apps.apple.com" 
+            href="https://apps.apple.com/us/app/tripdeals-cheap-flight-deals/id6758586511" 
             target="_blank" 
             rel="noopener noreferrer"
             className="bg-[#6e0f2d] text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-[#5a0c24] transition-colors"
@@ -136,7 +136,7 @@ export function LuminaInteractiveList() {
           {/* App Store Button */}
           <div className="flex items-center justify-center">
             <a 
-              href="https://apps.apple.com" 
+              href="https://apps.apple.com/us/app/tripdeals-cheap-flight-deals/id6758586511" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"
