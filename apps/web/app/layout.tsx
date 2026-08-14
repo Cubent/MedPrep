@@ -39,7 +39,7 @@ export default function RootLayout({
     <html className={cn(fonts, 'scroll-smooth')}>
       <head>
         <link rel="canonical" href="https://jointripdeals.com" />
-        <meta name="apple-itunes-app" content="app-id=6758586511" />
+        <meta name="apple-itunes-app" content="app-id=6758586511, app-argument=https://jointripdeals.com" />
       </head>
       <body style={{ backgroundColor: '#f9f7ee' }}>
         <DesignSystemProvider>
