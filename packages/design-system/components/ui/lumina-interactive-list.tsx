@@ -48,12 +48,12 @@ export function LuminaInteractiveList() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <img 
-              src="/logoflavorly (5).png" 
-              alt="TripDeals Logo" 
+            <img
+              src="/animateos-logo (12).png"
+              alt="TripDeals Logo"
               className="h-8 w-8 rounded-lg object-cover"
             />
-            <div className="text-xl font-bold text-[#6e0f2d]">
+            <div className="text-xl font-bold text-[#004ffe]">
               TripDeals
             </div>
           </div>
@@ -61,7 +61,7 @@ export function LuminaInteractiveList() {
             href="https://apps.apple.com/us/app/tripdeals-cheap-flight-deals/id6758586511" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="bg-[#6e0f2d] text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-[#5a0c24] transition-colors"
+            className="bg-[#004ffe] text-white px-5 py-2 rounded-full font-semibold text-sm hover:bg-[#5a0c24] transition-colors"
           >
             Download App
           </a>
@@ -73,7 +73,7 @@ export function LuminaInteractiveList() {
         {/* Main Content - Centered */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-3xl">
           {/* Social Proof Badge */}
-          <div className="mb-4 bg-[#6e0f2d] rounded-full px-3 sm:px-5 py-2 sm:py-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-full">
+          <div className="mb-4 bg-[#004ffe] rounded-full px-3 sm:px-5 py-2 sm:py-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-full">
             <div className="hidden sm:flex -space-x-2 shrink-0">
               <img 
                 src="https://randomuser.me/api/portraits/women/1.jpg" 
@@ -125,7 +125,7 @@ export function LuminaInteractiveList() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-            <span className="text-[#6e0f2d]">Save up to 90%</span> <span className="text-black">on flights</span>
+            <span className="text-[#004ffe]">Save up to 90%</span> <span className="text-black">on flights</span>
           </h1>
 
           {/* Subtitle */}
@@ -170,7 +170,7 @@ export function LuminaInteractiveList() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-6 relative">
                 <div className="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md">
-                  <span className="text-2xl font-bold text-[#6e0f2d]">1</span>
+                  <span className="text-2xl font-bold text-[#004ffe]">1</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
                   <img 
@@ -190,7 +190,7 @@ export function LuminaInteractiveList() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-6 relative">
                 <div className="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md">
-                  <span className="text-2xl font-bold text-[#6e0f2d]">2</span>
+                  <span className="text-2xl font-bold text-[#004ffe]">2</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
                   <img 
@@ -210,7 +210,7 @@ export function LuminaInteractiveList() {
             <div className="flex flex-col items-center text-center">
               <div className="mb-6 relative">
                 <div className="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md">
-                  <span className="text-2xl font-bold text-[#6e0f2d]">3</span>
+                  <span className="text-2xl font-bold text-[#004ffe]">3</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
                   <img 
@@ -272,9 +272,9 @@ export function LuminaInteractiveList() {
                     alt="Boston to Paris" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -294,9 +294,9 @@ export function LuminaInteractiveList() {
                     alt="Toronto to New York" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -316,9 +316,9 @@ export function LuminaInteractiveList() {
                     alt="Miami to Tokyo" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -338,9 +338,9 @@ export function LuminaInteractiveList() {
                     alt="Los Angeles to London" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -360,9 +360,9 @@ export function LuminaInteractiveList() {
                     alt="Boston to Paris" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -382,9 +382,9 @@ export function LuminaInteractiveList() {
                     alt="Seattle to Barcelona" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -404,9 +404,9 @@ export function LuminaInteractiveList() {
                     alt="Chicago to Rome" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -426,9 +426,9 @@ export function LuminaInteractiveList() {
                     alt="Denver to Amsterdam" 
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#6e0f2d]/80 via-[#6e0f2d]/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#004ffe]/80 via-[#004ffe]/20 to-transparent"></div>
                   <div className="absolute top-4 left-4 right-4">
-                    <span className="inline-block bg-[#6e0f2d] text-white text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="inline-block bg-[#004ffe] text-white text-xs font-bold px-3 py-1 rounded-full">
                       BOOKED BY TRIPDEALS MEMBERS
                     </span>
                   </div>
@@ -603,13 +603,13 @@ export function LuminaInteractiveList() {
 
             {/* Links */}
             <div className="flex items-center gap-6 text-sm">
-              <a href="#" className="text-gray-600 hover:text-[#6e0f2d] transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#004ffe] transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-600 hover:text-[#6e0f2d] transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#004ffe] transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-gray-600 hover:text-[#6e0f2d] transition-colors">
+              <a href="#" className="text-gray-600 hover:text-[#004ffe] transition-colors">
                 Contact
               </a>
             </div>
