@@ -173,9 +173,9 @@ export function LuminaInteractiveList() {
                   <span className="text-2xl font-bold text-[#004ffe]">1</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
-                  <img 
-                    src="/step1-airport.png" 
-                    alt="Start with your airport" 
+                  <img
+                    src="/6.png"
+                    alt="Start with your airport"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -193,9 +193,9 @@ export function LuminaInteractiveList() {
                   <span className="text-2xl font-bold text-[#004ffe]">2</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
-                  <img 
-                    src="/step2-deals.png" 
-                    alt="Deals to your dream destinations" 
+                  <img
+                    src="/7.png"
+                    alt="Deals to your dream destinations"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -213,9 +213,9 @@ export function LuminaInteractiveList() {
                   <span className="text-2xl font-bold text-[#004ffe]">3</span>
                 </div>
                 <div className="w-64 h-80 overflow-hidden rounded-2xl shadow-lg">
-                  <img 
-                    src="/step3-book.png" 
-                    alt="Then book it" 
+                  <img
+                    src="/8.png"
+                    alt="Then book it"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -591,9 +591,9 @@ export function LuminaInteractiveList() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Logo and Copyright */}
             <div className="flex items-center gap-3">
-              <img 
-                src="/logoflavorly (5).png" 
-                alt="TripDeals Logo" 
+              <img
+                src="/animateos-logo (12).png"
+                alt="TripDeals Logo"
                 className="h-8 w-8 rounded-lg object-cover"
               />
               <div className="text-sm text-gray-600">
