@@ -1,5 +1,6 @@
 'use client';
 
+// Brand assets updated: header/footer logo and step images
 import React, { useEffect, useState } from 'react';
 
 export function LuminaInteractiveList() {
