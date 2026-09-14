@@ -74,7 +74,7 @@ export function LuminaInteractiveList() {
         className="flex flex-col items-center justify-center relative overflow-hidden px-6 py-24 sm:py-32 lg:py-40"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -133,7 +133,7 @@ export function LuminaInteractiveList() {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
             <span className="text-white">Save up to </span><span className="text-[#004ffe]">90%</span> <span className="text-white">on flights</span>
           </h1>
 
