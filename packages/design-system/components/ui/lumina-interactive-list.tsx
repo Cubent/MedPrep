@@ -46,7 +46,7 @@ export function LuminaInteractiveList() {
   return (
     <>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+      <header className="relative z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
@@ -71,7 +71,7 @@ export function LuminaInteractiveList() {
 
       {/* Hero Section */}
       <div
-        className="flex flex-col items-center justify-center relative overflow-hidden px-6 py-24 sm:py-32 lg:py-40 mt-14"
+        className="flex flex-col items-center justify-center relative overflow-hidden px-6 py-24 sm:py-32 lg:py-40"
         style={{
           backgroundImage:
             "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
@@ -134,7 +134,7 @@ export function LuminaInteractiveList() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-            <span className="text-white">Save up to </span><span className="text-[#ffa726]">90%</span> <span className="text-white">on flights</span>
+            <span className="text-white">Save up to </span><span className="text-[#004ffe]">90%</span> <span className="text-white">on flights</span>
           </h1>
 
           {/* Subtitle */}
