@@ -1,49 +1,33 @@
 {
-  "name": "Cubent - Lightning-Fast AI Code Assistant",
-  "short_name": "Cubent",
-  "description": "AI-native coding assistant for developers. Full-code generation, codebase-aware autocomplete and terminal-ready actions.",
+  "name": "TripDeals - Cheap Flight Deals",
+  "short_name": "TripDeals",
+  "description": "Get instant alerts for massive flight discounts and error fares from your home airport. Save up to 90% on flights.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "theme_color": "#004ffe",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["productivity", "developer", "utilities"],
+  "categories": ["travel", "lifestyle"],
   "icons": [
     {
-      "src": "/faviconpushtoprod.png",
-      "sizes": "any",
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Pricing",
-      "short_name": "Pricing",
-      "description": "View Cubent pricing plans",
-      "url": "/pricing",
-      "icons": [
-        {
-          "src": "/faviconpushtoprod.png",
-          "sizes": "any",
-          "type": "image/png"
-        }
-      ]
+      "purpose": "any"
     },
     {
-      "name": "Blog",
-      "short_name": "Blog",
-      "description": "Read the latest from Cubent",
-      "url": "/blog",
-      "icons": [
-        {
-          "src": "/faviconpushtoprod.png",
-          "sizes": "any",
-          "type": "image/png"
-        }
-      ]
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

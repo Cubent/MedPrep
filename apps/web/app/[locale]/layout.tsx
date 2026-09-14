@@ -43,12 +43,21 @@ export const metadata: Metadata = {
     description: 'Get instant alerts for massive flight discounts and error fares from your home airport.',
     images: ['/og-image.png'],
   },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    title: 'TripDeals',
+    statusBarStyle: 'default',
+  },
   icons: {
     icon: [
-      { url: '/logoflavorly (5).png', type: 'image/png' },
-      { url: '/favicon.png', type: 'image/png' }
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
-    shortcut: '/logoflavorly (5).png',
+    shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
 };
