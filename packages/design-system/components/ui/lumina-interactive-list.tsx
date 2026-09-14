@@ -81,8 +81,8 @@ export function LuminaInteractiveList() {
       >
         {/* Main Content - Centered */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-3xl">
-          {/* Social Proof Badge - temporarily hidden */}
-          <div className="hidden mb-4 bg-[#004ffe] rounded-full px-3 sm:px-5 py-2 sm:py-2.5 flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-full">
+          {/* Social Proof Badge */}
+          <div className="mb-4 bg-[#004ffe] rounded-full px-3 sm:px-5 py-2 sm:py-2.5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-full">
             <div className="hidden sm:flex -space-x-2 shrink-0">
               <img 
                 src="https://randomuser.me/api/portraits/women/1.jpg" 
