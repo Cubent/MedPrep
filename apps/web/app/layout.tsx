@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'TripDeals - Save 90% on your next flight - Download on iOS now!',
-  description: 'Join TripDeals and find the best flights from your city. Save up to 90% on flights.',
+  description: 'We alert you when airlines publish flights 50-90% off regular price from your own airport.. Save up to 90% on flights.',
   icons: {
     icon: [
       { url: '/logoflavorly (5).png', type: 'image/png' },

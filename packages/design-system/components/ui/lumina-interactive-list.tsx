@@ -131,7 +131,7 @@ export function LuminaInteractiveList() {
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-gray-700 mb-6">
-            Join TripDeals and find the best flights from your city
+            We alert you when airlines publish flights 50-90% off regular price from your own airport.
           </p>
 
           {/* App Store Button */}
@@ -142,12 +142,68 @@ export function LuminaInteractiveList() {
               rel="noopener noreferrer"
               className="inline-block"
             >
-              <img 
-                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1610841600" 
-                alt="Download on the App Store" 
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1610841600"
+                alt="Download on the App Store"
                 className="h-12 sm:h-14"
               />
             </a>
+          </div>
+
+          {/* Social Proof Banner */}
+          <div
+            className="mt-12 w-full rounded-3xl overflow-hidden relative px-6 py-8 sm:px-10 sm:py-10"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              <div className="flex -space-x-3 shrink-0">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop"
+                  alt="TripDeals traveler"
+                  className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop"
+                  alt="TripDeals traveler"
+                  className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop"
+                  alt="TripDeals traveler"
+                  className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200&auto=format&fit=crop"
+                  alt="TripDeals traveler"
+                  className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop"
+                  alt="TripDeals traveler"
+                  className="w-12 h-12 rounded-full border-2 border-white object-cover"
+                />
+              </div>
+              <p className="text-white text-xl sm:text-2xl font-semibold text-center sm:text-left">
+                50K+ Travelers have joined TripDeals
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-6 gap-y-2 mt-6 pt-6 border-t border-white/20">
+              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+                <span className="text-green-400">✓</span> Price Drop Alerts
+              </span>
+              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+                <span className="text-green-400">✓</span> Mistake Fares
+              </span>
+              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+                <span className="text-green-400">✓</span> Cancel Anytime
+              </span>
+            </div>
           </div>
         </div>
       </div>
