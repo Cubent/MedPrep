@@ -134,7 +134,7 @@ export function LuminaInteractiveList() {
 
           {/* Title */}
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
-            <span className="text-white">Save up to </span><span className="text-[#004ffe]">90%</span> <span className="text-white">on flights</span>
+            <span className="text-white">Save up to </span><span className="text-[#fef9c3]">90%</span> <span className="text-white">on flights</span>
           </h1>
 
           {/* Subtitle */}
