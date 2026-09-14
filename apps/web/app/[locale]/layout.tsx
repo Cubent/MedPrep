@@ -21,6 +21,26 @@ import { headers } from 'next/headers';
 export const metadata: Metadata = {
   title: 'TripDeals - Save 90% on your next flight - Download on iOS now!',
   description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights with TripDeals.',
+  keywords: [
+    'TripDeals',
+    'TripDeals app',
+    'TripDeals flight deals',
+    'TripDeals cheap flights',
+    'download TripDeals',
+    'TripDeals iOS app',
+    'TripDeals mistake fares',
+    'TripDeals price drop alerts',
+    'TripDeals error fares',
+    'flight deals',
+    'cheap flights',
+    'error fares',
+    'mistake fares',
+    'flight discounts',
+    'travel deals',
+    'airline tickets',
+    'flight alerts',
+    'budget travel',
+  ],
   openGraph: {
     title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
     description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights.',
@@ -107,7 +127,7 @@ const RootLayout = async ({ children, params }: RootLayoutProperties) => {
               "ratingCount": "50000",
               "bestRating": "5"
             },
-            "keywords": "flight deals, cheap flights, flight discounts, error fares, travel deals, airline tickets, flight alerts, budget travel"
+            "keywords": "TripDeals, TripDeals app, TripDeals flight deals, download TripDeals, flight deals, cheap flights, flight discounts, error fares, travel deals, airline tickets, flight alerts, budget travel"
           })
         }}
       />
