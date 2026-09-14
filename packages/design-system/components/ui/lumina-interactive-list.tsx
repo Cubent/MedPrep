@@ -46,7 +46,7 @@ export function LuminaInteractiveList() {
   return (
     <>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent">
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
@@ -188,19 +188,19 @@ export function LuminaInteractiveList() {
                   className="w-12 h-12 rounded-full border-2 border-white object-cover"
                 />
               </div>
-              <p className="text-white text-xl sm:text-2xl font-semibold text-center sm:text-left">
+              <p className="text-white text-sm sm:text-base font-semibold text-center sm:text-left">
                 50K+ Travelers have joined TripDeals
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-6 gap-y-2 mt-6 pt-6 border-t border-white/20">
-              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-1 mt-4 pt-4 border-t border-white/20">
+              <span className="flex items-center gap-1.5 text-white text-xs">
                 <span className="text-green-400">✓</span> Price Drop Alerts
               </span>
-              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+              <span className="flex items-center gap-1.5 text-white text-xs">
                 <span className="text-green-400">✓</span> Mistake Fares
               </span>
-              <span className="flex items-center gap-2 text-white text-sm sm:text-base">
+              <span className="flex items-center gap-1.5 text-white text-xs">
                 <span className="text-green-400">✓</span> Cancel Anytime
               </span>
             </div>
