@@ -1,6 +1,6 @@
 'use client';
 
-// Brand assets updated: header/footer logo and step images
+// Brand assets updated: header/footer logo, step images, hero social proof banner
 import React, { useEffect, useState } from 'react';
 
 export function LuminaInteractiveList() {
