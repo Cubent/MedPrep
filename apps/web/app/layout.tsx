@@ -41,7 +41,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://jointripdeals.com" />
         <meta name="apple-itunes-app" content="app-id=6758586511, app-argument=https://jointripdeals.com" />
       </head>
-      <body style={{ backgroundColor: '#f9f7ee' }}>
+      <body style={{ backgroundColor: '#ffffff' }}>
         <DesignSystemProvider>
           {children}
         </DesignSystemProvider>
