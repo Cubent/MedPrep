@@ -70,7 +70,15 @@ export function LuminaInteractiveList() {
       </header>
 
       {/* Hero Section */}
-      <div className="bg-[#FFFFFF] flex flex-col items-center justify-center relative overflow-hidden px-6 py-24 sm:py-32 lg:py-40 mt-14">
+      <div
+        className="flex flex-col items-center justify-center relative overflow-hidden px-6 py-24 sm:py-32 lg:py-40 mt-14"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         {/* Main Content - Centered */}
         <div className="relative z-10 flex flex-col items-center text-center max-w-3xl">
           {/* Social Proof Badge */}
@@ -126,11 +134,11 @@ export function LuminaInteractiveList() {
 
           {/* Title */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-            <span className="text-[#004ffe]">Save up to 90%</span> <span className="text-black">on flights</span>
+            <span className="text-[#4d8dff]">Save up to 90%</span> <span className="text-white">on flights</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl text-gray-700 mb-6">
+          <p className="text-lg sm:text-xl text-gray-200 mb-6">
             We alert you when airlines publish flights 50-90% off regular price from your own airport.
           </p>
 
@@ -151,15 +159,7 @@ export function LuminaInteractiveList() {
           </div>
 
           {/* Social Proof Banner */}
-          <div
-            className="mt-12 w-full rounded-3xl overflow-hidden relative px-6 py-8 sm:px-10 sm:py-10"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?q=80&w=3133&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-            }}
-          >
+          <div className="mt-12 w-full rounded-3xl overflow-hidden relative px-6 py-8 sm:px-10 sm:py-10 bg-white/10 backdrop-blur-md border border-white/20">
             <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
               <div className="flex -space-x-3 shrink-0">
                 <img
