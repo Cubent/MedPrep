@@ -4,6 +4,7 @@ import { UserButton } from '@clerk/nextjs';
 import { useTheme } from '@repo/design-system';
 import { Bell, Moon, Sun } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { AiTutorWidget } from './ai-tutor-widget';
 
 export const DashboardHeaderActions = () => {
   const [mounted, setMounted] = useState(false);
@@ -17,6 +18,8 @@ export const DashboardHeaderActions = () => {
 
   return (
     <div className="flex items-center gap-2">
+      <AiTutorWidget />
+
       <button
         type="button"
         onClick={() => setTheme(isDark ? 'light' : 'dark')}

@@ -12,15 +12,22 @@ export async function POST(request: Request) {
   const body = await request.json().catch(() => null);
   const questionId = body?.questionId as string | undefined;
   const chosenAnswerId = body?.chosenAnswerId as string | undefined;
+  const sessionId = body?.sessionId as string | undefined;
+  const isReview = Boolean(body?.isReview);
 
-  if (!questionId || !chosenAnswerId) {
-    return NextResponse.json({ error: 'Missing questionId or chosenAnswerId' }, { status: 400 });
+  if (!questionId || !chosenAnswerId || !sessionId) {
+    return NextResponse.json(
+      { error: 'Missing questionId, chosenAnswerId, or sessionId' },
+      { status: 400 }
+    );
   }
 
   const result = await recordAttempt({
     clerkUserId: userId,
     questionId,
     chosenAnswerId,
+    sessionId,
+    isReview,
     errorType: body?.errorType,
   });
 

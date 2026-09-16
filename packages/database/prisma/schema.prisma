@@ -23,6 +23,9 @@ model UserPreference {
   clerkUserId    String   @unique
   exam           ExamType
   examSelectedAt DateTime @default(now())
+  // Systems the user has chosen to drill via /dashboard/topics. Empty means
+  // "All topics" — no filter, sample from the whole exam.
+  focusSystemIds String[] @default([])
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 
@@ -66,7 +69,8 @@ model System {
 // The atomic testable fact. Real NBME content is tagged along two axes:
 // the organ system (System, above) and the discipline/process (Pathology,
 // Physiology, Pharmacology, ...). yieldWeight (0-100) drives how often this
-// objective is prioritized when picking the next question.
+// objective is prioritized when picking the next question. `summary` is the
+// short recap shown on the review/explanation screen (falls back to title).
 model LearningObjective {
   id          String                  @id @default(cuid())
   systemId    String
@@ -74,9 +78,11 @@ model LearningObjective {
   examType    ExamType
   discipline  String
   title       String
+  summary     String?
   yieldWeight Int                     @default(50)
   questions   Question[]
   progress    UserObjectiveProgress[]
+  notes       UserQuestionNote[]
   createdAt   DateTime                @default(now())
 
   @@index([examType, systemId])
@@ -97,6 +103,7 @@ model Question {
   choices             AnswerChoice[]
   attempts            UserQuestionAttempt[]
   sessionQuestions    SessionQuestion[]
+  bookmarks           UserBookmark[]
   createdAt           DateTime              @default(now())
 
   @@index([learningObjectiveId])
@@ -104,14 +111,17 @@ model Question {
   @@map("questions")
 }
 
+// `explanation` is the per-choice rationale ("why this is right/wrong"),
+// distinct from Question.explanation (the overall concept explanation).
 model AnswerChoice {
-  id         String                @id @default(cuid())
-  questionId String
-  question   Question              @relation(fields: [questionId], references: [id], onDelete: Cascade)
-  text       String
-  isCorrect  Boolean               @default(false)
-  sortOrder  Int                   @default(0)
-  attempts   UserQuestionAttempt[]
+  id          String                @id @default(cuid())
+  questionId  String
+  question    Question              @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  text        String
+  isCorrect   Boolean               @default(false)
+  explanation String?
+  sortOrder   Int                   @default(0)
+  attempts    UserQuestionAttempt[]
 
   @@map("answer_choices")
 }
@@ -146,6 +156,9 @@ model UserQuestionAttempt {
   chosenAnswerId   String?
   chosenAnswer     AnswerChoice? @relation(fields: [chosenAnswerId], references: [id])
   isCorrect        Boolean
+  // True when this attempt was served as a due spaced-repetition review
+  // rather than new material. Drives the "answer 1 review" unlock condition.
+  isReview         Boolean       @default(false)
   errorType        ErrorType?
   timeSpentSeconds Int?
   attemptedAt      DateTime      @default(now())
@@ -167,14 +180,44 @@ model StudySession {
   @@map("study_sessions")
 }
 
+// A question served within a study session. Created as soon as the question
+// is shown (answeredAt: null), so navigating away and back resumes the same
+// pending question at the same step instead of picking a new one.
 model SessionQuestion {
   id         String       @id @default(cuid())
   sessionId  String
   session    StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
   questionId String
-  question   Question     @relation(fields: [questionId], references: [id])
+  question   Question     @relation(fields: [questionId], references: [id], onDelete: Cascade)
   order      Int
+  isReview   Boolean      @default(false)
   answeredAt DateTime?
 
   @@map("session_questions")
+}
+
+// A user's personal note on a learning objective (persists across variations
+// of that objective, since the note is about the concept, not one question).
+model UserQuestionNote {
+  id                  String            @id @default(cuid())
+  clerkUserId         String
+  learningObjectiveId String
+  learningObjective   LearningObjective @relation(fields: [learningObjectiveId], references: [id], onDelete: Cascade)
+  content             String
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  @@unique([clerkUserId, learningObjectiveId])
+  @@map("user_question_notes")
+}
+
+model UserBookmark {
+  id          String   @id @default(cuid())
+  clerkUserId String
+  questionId  String
+  question    Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+
+  @@unique([clerkUserId, questionId])
+  @@map("user_bookmarks")
 }
