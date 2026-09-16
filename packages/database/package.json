@@ -9,7 +9,11 @@
     "migrate": "prisma migrate dev",
     "deploy": "prisma migrate deploy",
     "studio": "prisma studio",
+    "seed": "tsx prisma/seed.ts",
     "clean": "git clean -xdf .cache .turbo dist node_modules generated"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.9.0"
@@ -17,6 +21,7 @@
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
     "prisma": "^6.9.0",
+    "tsx": "^4.23.13",
     "typescript": "^5.8.3"
   }
 }

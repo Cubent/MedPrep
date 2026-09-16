@@ -28,3 +28,153 @@ model UserPreference {
 
   @@map("user_preferences")
 }
+
+enum ObjectiveStatus {
+  NOT_SEEN
+  LEARNING
+  REVIEW
+  MASTERED
+}
+
+enum ErrorType {
+  CONCEPT
+  RECALL
+  CARELESS
+  TIME
+}
+
+enum SessionMode {
+  SEMESTER
+  DEDICATED
+  RESERVE
+}
+
+// Organ system / discipline bucket a learning objective belongs to, per exam.
+// e.g. { examType: STEP_1, name: "Cardiovascular" }
+model System {
+  id         String              @id @default(cuid())
+  examType   ExamType
+  name       String
+  sortOrder  Int                 @default(0)
+  objectives LearningObjective[]
+  createdAt  DateTime            @default(now())
+
+  @@unique([examType, name])
+  @@map("systems")
+}
+
+// The atomic testable fact. Real NBME content is tagged along two axes:
+// the organ system (System, above) and the discipline/process (Pathology,
+// Physiology, Pharmacology, ...). yieldWeight (0-100) drives how often this
+// objective is prioritized when picking the next question.
+model LearningObjective {
+  id          String                  @id @default(cuid())
+  systemId    String
+  system      System                  @relation(fields: [systemId], references: [id], onDelete: Cascade)
+  examType    ExamType
+  discipline  String
+  title       String
+  yieldWeight Int                     @default(50)
+  questions   Question[]
+  progress    UserObjectiveProgress[]
+  createdAt   DateTime                @default(now())
+
+  @@index([examType, systemId])
+  @@map("learning_objectives")
+}
+
+// variationGroupId groups multiple questions that test the SAME learning
+// objective from different angles, so spaced repetition can resurface a
+// missed concept without repeating the literal same question.
+model Question {
+  id                  String                @id @default(cuid())
+  learningObjectiveId String
+  learningObjective   LearningObjective     @relation(fields: [learningObjectiveId], references: [id], onDelete: Cascade)
+  variationGroupId    String
+  stem                String
+  explanation         String
+  difficulty          Int                   @default(3)
+  choices             AnswerChoice[]
+  attempts            UserQuestionAttempt[]
+  sessionQuestions    SessionQuestion[]
+  createdAt           DateTime              @default(now())
+
+  @@index([learningObjectiveId])
+  @@index([variationGroupId])
+  @@map("questions")
+}
+
+model AnswerChoice {
+  id         String                @id @default(cuid())
+  questionId String
+  question   Question              @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  text       String
+  isCorrect  Boolean               @default(false)
+  sortOrder  Int                   @default(0)
+  attempts   UserQuestionAttempt[]
+
+  @@map("answer_choices")
+}
+
+// Per-user, per-learning-objective mastery state. This is the scheduling
+// layer that makes spaced repetition work: easeFactor/interval/nextReviewAt
+// follow a simplified binary-response SM-2 (see packages/database/qbank.ts).
+model UserObjectiveProgress {
+  id                  String            @id @default(cuid())
+  clerkUserId         String
+  learningObjectiveId String
+  learningObjective   LearningObjective @relation(fields: [learningObjectiveId], references: [id], onDelete: Cascade)
+  status              ObjectiveStatus   @default(NOT_SEEN)
+  easeFactor          Float             @default(2.5)
+  interval            Int               @default(0)
+  correctStreak       Int               @default(0)
+  nextReviewAt        DateTime?
+  lastAttemptAt       DateTime?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  @@unique([clerkUserId, learningObjectiveId])
+  @@index([clerkUserId, nextReviewAt])
+  @@map("user_objective_progress")
+}
+
+model UserQuestionAttempt {
+  id               String        @id @default(cuid())
+  clerkUserId      String
+  questionId       String
+  question         Question      @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  chosenAnswerId   String?
+  chosenAnswer     AnswerChoice? @relation(fields: [chosenAnswerId], references: [id])
+  isCorrect        Boolean
+  errorType        ErrorType?
+  timeSpentSeconds Int?
+  attemptedAt      DateTime      @default(now())
+
+  @@index([clerkUserId])
+  @@index([questionId])
+  @@map("user_question_attempts")
+}
+
+model StudySession {
+  id          String            @id @default(cuid())
+  clerkUserId String
+  examType    ExamType
+  mode        SessionMode       @default(SEMESTER)
+  createdAt   DateTime          @default(now())
+  completedAt DateTime?
+  questions   SessionQuestion[]
+
+  @@map("study_sessions")
+}
+
+model SessionQuestion {
+  id         String       @id @default(cuid())
+  sessionId  String
+  session    StudySession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  questionId String
+  question   Question     @relation(fields: [questionId], references: [id])
+  order      Int
+  answeredAt DateTime?
+
+  @@map("session_questions")
+}
