@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { LuminaInteractiveList } from '@repo/design-system';
+import { HeaderAuth } from './components/header-auth';
 
 type HomeProps = {
   params: Promise<{
@@ -12,8 +13,7 @@ type HomeProps = {
 const Home = ({ params }: HomeProps) => {
   return (
     <div className="min-h-screen">
-      {/* Hero Section Only */}
-      <LuminaInteractiveList />
+      <LuminaInteractiveList authSlot={<HeaderAuth />} />
     </div>
   );
 };

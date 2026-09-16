@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum ExamType {
+  STEP_1
+  STEP_2_CK
+  STEP_3
+  ABIM
+}
+
+// The exam a user selected during onboarding. Locked for 30 days from
+// examSelectedAt; changing exams after that resets the timer (enforced in
+// application code, not the database).
+model UserPreference {
+  id             String   @id @default(cuid())
+  clerkUserId    String   @unique
+  exam           ExamType
+  examSelectedAt DateTime @default(now())
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@map("user_preferences")
+}

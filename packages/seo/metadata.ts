@@ -8,13 +8,13 @@ type MetadataGenerator = Omit<Metadata, 'description' | 'title'> & {
   noSuffix?: boolean;
 };
 
-const applicationName = 'Cubent';
+const applicationName = 'MedPrep Institute';
 const author: Metadata['authors'] = {
-  name: 'Cubent',
-  url: 'https://cubent.dev/',
+  name: 'MedPrep Institute',
+  url: 'https://medprepinstitute.com/',
 };
-const publisher = 'Cubent';
-const twitterHandle = '@cubent';
+const publisher = 'MedPrep Institute';
+const twitterHandle = '@medprepinstitute';
 const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
 const productionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 

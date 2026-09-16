@@ -2,6 +2,10 @@
 @import "tw-animate-css";
 @source "../**/*.{ts,tsx}";
 
+/* Ensure Clerk's isolated styles (cssLayerName: "clerk") win over Tailwind's
+   Preflight reset (base layer), matching Clerk's Tailwind integration guidance. */
+@layer theme, base, clerk, components, utilities;
+
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:is(.dark *));
@@ -28,50 +32,50 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
 
-  /* Travira Green Primary Colors */
-  --primary: oklch(0.4 0.15 160); /* Dark green (#059669 equivalent) */
-  --primary-foreground: oklch(1 0 0); /* White text on green */
+  /* MedPrep Institute Primary Colors */
+  --primary: #06005A; /* Navy */
+  --primary-foreground: #ffffff;
 
-  /* Light green secondary colors */
-  --secondary: oklch(0.95 0.05 160); /* Very light green */
-  --secondary-foreground: oklch(0.3 0.15 160); /* Dark green text */
+  /* Secondary colors */
+  --secondary: #F4F2FB; /* Light lavender tint */
+  --secondary-foreground: #06005A;
 
-  /* Muted colors with green tint */
-  --muted: oklch(0.97 0.02 160); /* Very light green-gray */
-  --muted-foreground: oklch(0.556 0.05 160); /* Medium green-gray */
+  /* Muted colors */
+  --muted: #F4F2FB;
+  --muted-foreground: #6b7280; /* Neutral gray */
 
   /* Accent colors */
-  --accent: oklch(0.9 0.08 160); /* Light green accent */
-  --accent-foreground: oklch(0.25 0.15 160); /* Dark green text */
+  --accent: #FCEEE0; /* Light orange tint */
+  --accent-foreground: #C46B10; /* Orange */
 
   /* Status colors */
   --destructive: oklch(0.577 0.245 27.325); /* Red for errors */
   --destructive-foreground: oklch(1 0 0);
-  --success: oklch(0.5 0.15 160); /* Green for success (matches primary) */
+  --success: oklch(0.5 0.15 145); /* Green for success */
 
   /* Border and input colors */
-  --border: oklch(0.9 0.02 160); /* Light green-gray borders */
-  --input: oklch(0.95 0.02 160); /* Very light green-gray inputs */
-  --ring: oklch(0.4 0.15 160); /* Green focus rings */
+  --border: #e5e7eb;
+  --input: #f3f4f6;
+  --ring: #06005A;
 
-  /* Chart colors with green theme */
-  --chart-1: oklch(0.4 0.15 160); /* Primary green */
-  --chart-2: oklch(0.5 0.12 180); /* Teal */
-  --chart-3: oklch(0.6 0.1 140); /* Light green */
-  --chart-4: oklch(0.45 0.12 200); /* Blue-green */
-  --chart-5: oklch(0.35 0.18 160); /* Dark green */
+  /* Chart colors */
+  --chart-1: #06005A;
+  --chart-2: #C46B10;
+  --chart-3: #8b7cf6;
+  --chart-4: #4a3f8f;
+  --chart-5: #e08a3c;
 
   --radius: 0.625rem;
 
   /* Sidebar colors */
-  --sidebar: oklch(0.98 0.02 160); /* Very light green */
-  --sidebar-foreground: oklch(0.2 0.1 160); /* Dark green text */
-  --sidebar-primary: oklch(0.4 0.15 160); /* Primary green */
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.92 0.05 160); /* Light green accent */
-  --sidebar-accent-foreground: oklch(0.25 0.15 160);
-  --sidebar-border: oklch(0.9 0.03 160); /* Light green border */
-  --sidebar-ring: oklch(0.4 0.15 160);
+  --sidebar: #F4F2FB;
+  --sidebar-foreground: #06005A;
+  --sidebar-primary: #06005A;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #FCEEE0;
+  --sidebar-accent-foreground: #C46B10;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: #06005A;
 
   --font-weight-bold: 700;
 
@@ -97,48 +101,48 @@
   --popover: oklch(0.15 0.02 160);
   --popover-foreground: oklch(0.95 0.02 160);
 
-  /* Bright green primary for dark theme */
-  --primary: oklch(0.6 0.15 160); /* Bright green */
-  --primary-foreground: oklch(0.08 0.01 160); /* Dark text on bright green */
+  /* Orange primary accent for dark theme */
+  --primary: #C46B10;
+  --primary-foreground: #0B0620;
 
-  /* Dark green secondary colors */
-  --secondary: oklch(0.2 0.05 160); /* Dark green */
-  --secondary-foreground: oklch(0.9 0.05 160); /* Light green text */
+  /* Dark secondary colors */
+  --secondary: #1a1030;
+  --secondary-foreground: #ffffff;
 
-  /* Muted colors with green tint */
-  --muted: oklch(0.25 0.03 160); /* Dark green-gray */
-  --muted-foreground: oklch(0.7 0.05 160); /* Light green-gray */
+  /* Muted colors */
+  --muted: #1a1030;
+  --muted-foreground: #9ca3af;
 
   /* Accent colors */
-  --accent: oklch(0.3 0.08 160); /* Medium dark green */
-  --accent-foreground: oklch(0.9 0.05 160); /* Light green text */
+  --accent: #2a1a4a;
+  --accent-foreground: #C46B10;
 
   /* Status colors */
   --destructive: oklch(0.5 0.2 25); /* Red for errors */
   --destructive-foreground: oklch(0.95 0.02 160);
-  --success: oklch(0.6 0.15 160); /* Bright green for success */
+  --success: oklch(0.6 0.15 145); /* Green for success */
 
   /* Border and input colors */
-  --border: oklch(0.25 0.03 160); /* Dark green borders */
-  --input: oklch(0.2 0.03 160); /* Dark green inputs */
-  --ring: oklch(0.6 0.15 160); /* Bright green focus rings */
+  --border: rgba(255, 255, 255, 0.1);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #C46B10;
 
-  /* Chart colors with green theme for dark mode */
-  --chart-1: oklch(0.6 0.15 160); /* Bright green */
-  --chart-2: oklch(0.65 0.12 180); /* Bright teal */
-  --chart-3: oklch(0.7 0.1 140); /* Light green */
-  --chart-4: oklch(0.55 0.12 200); /* Blue-green */
-  --chart-5: oklch(0.5 0.18 160); /* Medium green */
+  /* Chart colors */
+  --chart-1: #C46B10;
+  --chart-2: #8b7cf6;
+  --chart-3: #e08a3c;
+  --chart-4: #4a3f8f;
+  --chart-5: #6b7280;
 
   /* Sidebar colors for dark theme */
-  --sidebar: oklch(0.15 0.02 160); /* Dark green sidebar */
-  --sidebar-foreground: oklch(0.9 0.05 160); /* Light green text */
-  --sidebar-primary: oklch(0.6 0.15 160); /* Bright green */
-  --sidebar-primary-foreground: oklch(0.08 0.01 160);
-  --sidebar-accent: oklch(0.25 0.05 160); /* Medium dark green */
-  --sidebar-accent-foreground: oklch(0.9 0.05 160);
-  --sidebar-border: oklch(0.25 0.03 160); /* Dark green border */
-  --sidebar-ring: oklch(0.6 0.15 160);
+  --sidebar: #120A2E;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #C46B10;
+  --sidebar-primary-foreground: #0B0620;
+  --sidebar-accent: #2a1a4a;
+  --sidebar-accent-foreground: #C46B10;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: #C46B10;
 
   /* Dark theme Travira-specific custom properties */
   --travira-green-50: oklch(0.08 0.01 160);

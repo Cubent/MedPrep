@@ -24,3 +24,9 @@ export const DesignSystemProvider = ({
 
 // Export Lumina Interactive List component
 export { LuminaInteractiveList } from './components/ui/lumina-interactive-list';
+
+// Re-export useTheme so consumers share the exact same next-themes module
+// instance that actually renders <ThemeProvider> above (avoids a duplicate
+// pnpm-installed copy of next-themes creating a separate, unconnected
+// React Context in apps that also declare next-themes as their own dependency).
+export { useTheme } from 'next-themes';

@@ -37,17 +37,17 @@ export default function GlobalNotFound() {
             </p>
             <div className="flex flex-wrap gap-2 justify-center">
               <Link
-                href="/models"
+                href="/#how-it-works"
                 className="text-sm text-white hover:text-gray-300 underline"
               >
-                Models
+                The Method
               </Link>
               <span className="text-gray-600">•</span>
               <Link
-                href="/magazine"
+                href="/#faq"
                 className="text-sm text-white hover:text-gray-300 underline"
               >
-                Magazine
+                FAQ
               </Link>
               <span className="text-gray-600">•</span>
               <Link

@@ -2,35 +2,28 @@ import './[locale]/styles.css';
 import { DesignSystemProvider } from '@repo/design-system';
 import { fonts } from '@repo/design-system/lib/fonts';
 import { cn } from '@repo/design-system/lib/utils';
+import { ClerkProvider } from '@clerk/nextjs';
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'TripDeals - Save 90% on your next flight - Download on iOS now!',
-  description: 'We alert you when airlines publish flights 50-90% off regular price from your own airport.. Save up to 90% on flights.',
+  title: 'MedPrep Institute - Study smarter. Master the USMLE.',
+  description: 'MedPrep Institute is a living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
   keywords: [
-    'TripDeals',
-    'TripDeals app',
-    'TripDeals flight deals',
-    'TripDeals cheap flights',
-    'download TripDeals',
-    'TripDeals iOS app',
-    'TripDeals mistake fares',
-    'TripDeals price drop alerts',
-    'TripDeals error fares',
-    'flight deals',
-    'cheap flights',
-    'error fares',
-    'mistake fares',
-    'flight discounts',
-    'travel deals',
-    'airline tickets',
-    'flight alerts',
-    'budget travel',
+    'MedPrep Institute',
+    'USMLE question bank',
+    'USMLE Step 1',
+    'USMLE Step 2 CK',
+    'USMLE Step 3',
+    'ABIM exam prep',
+    'adaptive question bank',
+    'spaced repetition medical',
+    'med school qbank',
+    'residency prep',
   ],
   manifest: '/manifest.json',
   appleWebApp: {
-    title: 'TripDeals',
+    title: 'MedPrep Institute',
     statusBarStyle: 'default',
   },
   icons: {
@@ -46,16 +39,16 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
-    description: 'Get instant alerts for massive flight discounts and error fares from your home airport. Join 50K+ travelers saving up to 90% on flights.',
+    title: 'MedPrep Institute - Study smarter. Master the USMLE.',
+    description: 'A living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'TripDeals',
+    siteName: 'MedPrep Institute',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TripDeals - Find Exclusive Flight Deals & Save Up to 90%',
-    description: 'Get instant alerts for massive flight discounts and error fares from your home airport.',
+    title: 'MedPrep Institute - Study smarter. Master the USMLE.',
+    description: 'A living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
   },
 };
 
@@ -65,15 +58,30 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html className={cn(fonts, 'scroll-smooth')}>
+    <html className={cn(fonts, 'scroll-smooth')} suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://jointripdeals.com" />
-        <meta name="apple-itunes-app" content="app-id=6758586511, app-argument=https://jointripdeals.com" />
+        <link rel="canonical" href="https://medprepinstitute.com" />
       </head>
       <body style={{ backgroundColor: '#ffffff' }}>
-        <DesignSystemProvider>
-          {children}
-        </DesignSystemProvider>
+        <ClerkProvider
+          appearance={{
+            cssLayerName: 'clerk',
+            variables: {
+              colorPrimary: '#06005A',
+              colorPrimaryForeground: '#ffffff',
+              colorBackground: '#F5F5F5',
+              colorForeground: '#000000',
+              colorNeutral: '#06005A',
+              colorInput: '#ffffff',
+              colorInputForeground: '#000000',
+              colorMutedForeground: '#4b5563',
+            },
+          }}
+        >
+          <DesignSystemProvider>
+            {children}
+          </DesignSystemProvider>
+        </ClerkProvider>
       </body>
     </html>
   );
