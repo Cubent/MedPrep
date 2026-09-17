@@ -55,10 +55,11 @@ export const QuestionPlayer = () => {
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [note, setNote] = useState('');
   const [setSize, setSetSize] = useState(5);
-  const [answeredInSet, setAnsweredInSet] = useState(0);
+  const [answeredResults, setAnsweredResults] = useState<(boolean | null)[]>([]);
   const [setSummary, setSetSummary] = useState<SetSummaryData | null>(null);
   const { setCurrentQuestion, setIsStuck } = usePracticeContext();
   const stuckTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const sessionIdRef = useRef<string | null>(null);
 
   const armStuckTimer = useCallback(() => {
     if (stuckTimerRef.current) clearTimeout(stuckTimerRef.current);
@@ -85,12 +86,26 @@ export const QuestionPlayer = () => {
     }
 
     setQuestion(data.question ?? null);
-    setSessionId(data.sessionId ?? null);
     setIsReview(Boolean(data.isReview));
     setIsBookmarked(Boolean(data.isBookmarked));
     setNote(data.note ?? '');
     setSetSize(data.setSize ?? 5);
-    setAnsweredInSet(data.answeredInSet ?? 0);
+
+    // A fresh session (a new set, or the first load) fully adopts the
+    // server's progress. Within the SAME session, only adopt it if it knows
+    // at least as much as we already do locally — a submitted answer is
+    // reflected in local state immediately, and a subsequent read of the
+    // same session shouldn't ever visually "undo" that while it catches up.
+    const previousSessionId = sessionIdRef.current;
+    const serverResults: (boolean | null)[] = data.answeredResults ?? [];
+    setAnsweredResults((prev) => {
+      if (data.sessionId !== previousSessionId) return serverResults;
+      const prevCount = prev.filter((r) => r !== null).length;
+      const serverCount = serverResults.filter((r) => r !== null).length;
+      return serverCount >= prevCount ? serverResults : prev;
+    });
+    sessionIdRef.current = data.sessionId ?? null;
+    setSessionId(data.sessionId ?? null);
     setCurrentQuestion(
       data.question
         ? { system: data.question.system, objectiveTitle: data.question.objectiveTitle, stem: data.question.stem }
@@ -126,7 +141,13 @@ export const QuestionPlayer = () => {
       const data = await response.json().catch(() => ({}));
       if (response.ok) {
         setResult(data);
-        setAnsweredInSet((n) => n + 1);
+        setAnsweredResults((prev) => {
+          const idx = prev.findIndex((r) => r === null);
+          const next = [...prev];
+          if (idx === -1) next.push(data.isCorrect);
+          else next[idx] = data.isCorrect;
+          return next;
+        });
         setIsStuck(false);
         if (stuckTimerRef.current) clearTimeout(stuckTimerRef.current);
       } else {
@@ -215,7 +236,7 @@ export const QuestionPlayer = () => {
 
       {/* Top bar: set progress + actions, outside the question card */}
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-        <SetProgress answered={answeredInSet} setSize={setSize} />
+        <SetProgress results={answeredResults} setSize={setSize} />
         {actionButtons}
       </div>
 

@@ -426,6 +426,31 @@ export async function getPendingSessionQuestion(sessionId: string) {
   return { question: pending.question, isReview: pending.isReview };
 }
 
+/**
+ * Per-slot correctness for every question served in this session so far, in
+ * order: `true`/`false` once answered, `null` while still pending. Since a
+ * StudySession maps 1:1 to one set (it's marked complete once SET_SIZE
+ * questions are answered and a fresh session is created for the next set),
+ * this is exactly "this set's" progress — used to render each dot in
+ * `SetProgress` by actual correctness instead of just a raw answered count.
+ */
+export async function getSessionProgress(sessionId: string): Promise<(boolean | null)[]> {
+  const sessionQuestions = await database.sessionQuestion.findMany({
+    where: { sessionId },
+    orderBy: { order: 'asc' },
+    select: { questionId: true, answeredAt: true },
+  });
+  if (!sessionQuestions.length) return [];
+
+  const attempts = await database.userQuestionAttempt.findMany({
+    where: { sessionId, questionId: { in: sessionQuestions.map((s) => s.questionId) } },
+    select: { questionId: true, isCorrect: true },
+  });
+  const correctByQuestion = new Map(attempts.map((a) => [a.questionId, a.isCorrect]));
+
+  return sessionQuestions.map((sq) => (sq.answeredAt ? (correctByQuestion.get(sq.questionId) ?? null) : null));
+}
+
 /** Records that `question` has been served (but not yet answered) in `sessionId`. */
 export async function markQuestionServed(sessionId: string, questionId: string, isReview: boolean) {
   const order = await database.sessionQuestion.count({ where: { sessionId } });

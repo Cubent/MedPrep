@@ -5,6 +5,7 @@ import {
   getNote,
   getOrCreateActiveSession,
   getPendingSessionQuestion,
+  getSessionProgress,
   isBookmarked,
   markQuestionServed,
   pickQuestionSet,
@@ -76,12 +77,13 @@ export async function GET() {
   }
 
   if (!picked) {
-    return NextResponse.json({ question: null, setSize: SET_SIZE, answeredInSet });
+    return NextResponse.json({ question: null, setSize: SET_SIZE, answeredInSet, answeredResults: [] });
   }
 
-  const [bookmarked, note] = await Promise.all([
+  const [bookmarked, note, answeredResults] = await Promise.all([
     isBookmarked(userId, picked.question.id),
     getNote(userId, picked.question.learningObjectiveId),
+    getSessionProgress(session.id),
   ]);
 
   // Never send isCorrect/explanation to the client before they answer.
@@ -95,6 +97,7 @@ export async function GET() {
     note: note?.content ?? '',
     setSize: SET_SIZE,
     answeredInSet,
+    answeredResults,
     question: {
       ...rest,
       system: isAiGenerated ? learningObjective.discipline : learningObjective.system.name,

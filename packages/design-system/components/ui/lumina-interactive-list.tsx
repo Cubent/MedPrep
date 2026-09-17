@@ -56,12 +56,12 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
 
       {/* Hero Section */}
       <div
-        className="relative overflow-hidden px-6 pt-8 sm:pt-12 lg:pt-14"
+        className="relative overflow-hidden px-6 pt-6 sm:pt-12 lg:pt-14"
         style={{ backgroundColor: '#06005A' }}
       >
-        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center gap-12 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center lg:flex-row lg:items-end lg:justify-between lg:gap-10">
           {/* Left: Text content */}
-          <div className="flex max-w-xl flex-col items-center text-center pb-28 sm:pb-36 lg:pb-40 lg:items-start lg:text-left">
+          <div className="flex max-w-xl flex-col items-center text-center pb-52 sm:pb-64 lg:pb-40 lg:items-start lg:text-left">
             {/* Exam Timeline */}
             <p className="mb-5 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 lg:justify-start">
               <span>STEP 1</span>
@@ -115,23 +115,27 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
             */}
           </div>
 
-          {/* Right: Doctor image with decorative rings */}
-          <div className="relative flex w-full max-w-lg shrink-0 items-end justify-center self-end lg:max-w-xl">
-            <svg
-              viewBox="0 0 420 420"
-              className="pointer-events-none absolute inset-0 h-full w-full"
-              aria-hidden="true"
-            >
-              <circle cx="350" cy="70" r="55" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="6 9" opacity="0.85" />
-              <circle cx="45" cy="150" r="38" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="5 8" opacity="0.6" />
-              <circle cx="365" cy="300" r="46" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="5 8" opacity="0.7" />
-              <circle cx="50" cy="360" r="30" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="4 7" opacity="0.5" />
-            </svg>
-            <img
-              src="/MedPrep institute (3).png"
-              alt="MedPrep Institute"
-              className="relative z-10 w-full max-w-sm object-contain sm:max-w-md lg:max-w-xl"
-            />
+          {/* Right: Doctor image with decorative rings — pinned to the very bottom of the hero on
+              mobile (out of normal flow, growing up from the edge); back in the flex row as a
+              normal right column from lg up. */}
+          <div className="absolute inset-x-0 bottom-0 flex items-end justify-center lg:static lg:w-full lg:max-w-xl lg:shrink-0 lg:justify-center lg:self-end">
+            <div className="relative flex w-full max-w-lg items-end justify-center lg:max-w-xl">
+              <svg
+                viewBox="0 0 420 420"
+                className="pointer-events-none absolute inset-0 h-full w-full"
+                aria-hidden="true"
+              >
+                <circle cx="350" cy="70" r="55" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="6 9" opacity="0.85" />
+                <circle cx="45" cy="150" r="38" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="5 8" opacity="0.6" />
+                <circle cx="365" cy="300" r="46" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="5 8" opacity="0.7" />
+                <circle cx="50" cy="360" r="30" fill="none" stroke="#C46B10" strokeWidth="3" strokeDasharray="4 7" opacity="0.5" />
+              </svg>
+              <img
+                src="/MedPrep institute (3).png"
+                alt="MedPrep Institute"
+                className="relative z-10 w-full max-w-sm object-contain sm:max-w-md lg:max-w-xl"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -949,6 +953,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Product</p>
               <ul className="mt-4 flex flex-col gap-3 text-sm">
                 <li><a href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</a></li>
+                <li><a href="/usmle-step-2-question-bank" className="text-white/70 hover:text-white">Step 2 CK Qbank</a></li>
                 <li><a href="/#how-it-works" className="text-white/70 hover:text-white">The Method</a></li>
                 <li><a href="/sign-up" className="text-white/70 hover:text-white">Start practicing</a></li>
               </ul>
