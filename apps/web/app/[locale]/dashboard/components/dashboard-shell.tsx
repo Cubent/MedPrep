@@ -7,6 +7,7 @@ import {
   History,
   Home,
   RotateCcw,
+  Sparkles,
   Target,
   UserRound,
 } from 'lucide-react';
@@ -19,6 +20,7 @@ import { DashboardHeaderActions } from './dashboard-header-actions';
 const NAV_ITEMS = [
   { label: 'My Dashboard', href: '/dashboard', icon: Home },
   { label: 'Practice', href: '/dashboard/practice', icon: Target },
+  { label: 'AI Practice', href: '/dashboard/practice-ai', icon: Sparkles },
   { label: 'Review', href: '/dashboard/review', icon: RotateCcw },
   { label: 'Topics', href: '/dashboard/topics', icon: BookOpen },
   { label: 'History', href: '/dashboard/history', icon: History },
@@ -94,7 +96,9 @@ export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => 
               const isActive =
                 item.href === '/dashboard'
                   ? pathname === '/dashboard' || pathname.endsWith('/dashboard')
-                  : pathname.includes(item.href);
+                  : pathname.includes(item.href) &&
+                    (pathname.length === pathname.indexOf(item.href) + item.href.length ||
+                      pathname[pathname.indexOf(item.href) + item.href.length] === '/');
               const Icon = item.icon;
 
               return (

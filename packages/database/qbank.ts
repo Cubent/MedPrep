@@ -1,5 +1,5 @@
 import { database } from './index';
-import { ExamType, ObjectiveStatus } from './generated/client';
+import { ExamType, ObjectiveStatus, SessionMode } from './generated/client';
 
 const CONSECUTIVE_QUESTIONS_BEFORE_SWITCH = 3;
 export const SET_SIZE = 5;
@@ -61,15 +61,19 @@ export function scoreAttempt(
 }
 
 /** Finds the user's in-progress set for this exam, or starts a new one. */
-export async function getOrCreateActiveSession(clerkUserId: string, examType: ExamType) {
+export async function getOrCreateActiveSession(
+  clerkUserId: string,
+  examType: ExamType,
+  mode: SessionMode = SessionMode.SEMESTER
+) {
   const active = await database.studySession.findFirst({
-    where: { clerkUserId, examType, completedAt: null },
+    where: { clerkUserId, examType, mode, completedAt: null },
     orderBy: { createdAt: 'desc' },
   });
   if (active) return active;
 
   return database.studySession.create({
-    data: { clerkUserId, examType },
+    data: { clerkUserId, examType, mode },
   });
 }
 

@@ -50,6 +50,9 @@ enum SessionMode {
   SEMESTER
   DEDICATED
   RESERVE
+  // A session drilling the "AI Generated" system (packages/database/ai-practice.ts),
+  // kept distinct so it never collides with a user's in-progress real practice set.
+  AI_GENERATED
 }
 
 // Organ system / discipline bucket a learning objective belongs to, per exam.
@@ -80,6 +83,12 @@ model LearningObjective {
   title       String
   summary     String?
   yieldWeight Int                     @default(50)
+  // AI-generated titles only: when true, the generated question for this
+  // title MUST embed a markdown table (labs/vitals/NCS/reflex data, etc.);
+  // when false, it must not. Decided once per title, not left to the model's
+  // per-question judgment, so table usage stays deliberate rather than
+  // inconsistent across a set.
+  requiresTable Boolean               @default(false)
   questions   Question[]
   progress    UserObjectiveProgress[]
   notes       UserQuestionNote[]
