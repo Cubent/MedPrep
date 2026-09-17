@@ -146,7 +146,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 <p className="font-[family-name:var(--font-display)] text-3xl font-bold text-[#06005A] sm:text-4xl">
                   2M+
                 </p>
-                <p className="mt-1 text-sm text-gray-600">Questions Answered</p>
+                <p className="mt-1 text-sm text-gray-600">USMLE Questions Answered</p>
               </div>
               <div className="border-l-2 border-gray-200 pl-5">
                 <p className="font-[family-name:var(--font-display)] text-3xl font-bold text-[#06005A] sm:text-4xl">
@@ -166,7 +166,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 <p className="font-[family-name:var(--font-display)] text-3xl font-bold text-[#06005A] sm:text-4xl">
                   60K+
                 </p>
-                <p className="mt-1 text-sm text-gray-600">Students Trained</p>
+                <p className="mt-1 text-sm text-gray-600">USMLE Students Trained</p>
               </div>
             </div>
 
@@ -276,7 +276,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 Adaptive Engine
               </p>
               <h2 className="font-[family-name:var(--font-display)] mt-3 text-balance text-3xl font-bold tracking-tight text-black sm:text-4xl">
-                MedPrep Institute remembers your mistakes and trains you from first principles.
+                MedPrep Institute remembers your USMLE mistakes and trains you from first principles.
               </h2>
             </div>
 
@@ -523,7 +523,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
               A curated path that adapts as you go. Feels effortless, like reading your favorite story.
             </h2>
             <p className="mt-4 max-w-xl text-lg leading-relaxed text-gray-600">
-              Working through a question bank should feel like building a coherent knowledge structure &mdash; not memorizing random, disconnected facts.
+              Working through a USMLE question bank should feel like building a coherent knowledge structure &mdash; not memorizing random, disconnected facts.
             </p>
           </div>
 
@@ -613,12 +613,13 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 Why it works
               </p>
               <h2 className="font-[family-name:var(--font-display)] mt-4 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Three reasons this method sticks
+                Three reasons this USMLE method sticks
               </h2>
               <p className="mt-4 max-w-md text-lg leading-relaxed text-white/70">
-                None of this is a gimmick. It is spaced repetition, progressive
-                difficulty, and high-yield prioritization &mdash; done automatically
-                instead of left for you to manage on your own.
+                None of this is a gimmick. Across the Step 1 Qbank and Step 2
+                Qbank, it is spaced repetition, progressive difficulty, and
+                high-yield prioritization &mdash; done automatically instead of
+                left for you to manage on your own.
               </p>
               <a
                 href="/sign-up"
@@ -678,7 +679,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 After this exam, your next one is dramatically easier.
               </h2>
               <p className="mt-4 max-w-md text-lg leading-relaxed text-gray-600">
-                As you progress from STEP 1 to STEP 3, you'll find that the material you struggled with in the previous exam is prioritized first in the next question bank. If there were any concepts you didn't finish, they will also be prioritized in the next question bank. Your learning compounds instead of starting over. You will be glad you started early.
+                As you progress through the USMLE from STEP 1 to STEP 3, you'll find that the material you struggled with in the previous exam is prioritized first in the next question bank. If there were any concepts you didn't finish, they will also be prioritized in the next question bank. Your learning compounds instead of starting over. You will be glad you started early.
               </p>
             </div>
 
@@ -830,7 +831,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
             {[
               {
                 q: 'What makes MedPrep Institute different from other question banks?',
-                a: "Most question banks deal you disconnected questions with no memory of what you missed. MedPrep Institute builds each set from the one before it, so your practice has continuity and concepts get a chance to connect.",
+                a: "Most question banks deal you disconnected questions with no memory of what you missed. Whether you're working through the Step 1 Qbank or the Step 2 Qbank, MedPrep Institute builds each set from the one before it, so your practice has continuity and concepts get a chance to connect.",
               },
               {
                 q: 'What happens when I get a question wrong?',
@@ -838,11 +839,11 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
               },
               {
                 q: 'Does the spaced repetition show me the same question over and over again?',
-                a: "Not exactly. We have pre-written variations on each question that hit the same learning objective from a different angle.",
+                a: "Not exactly. Across the Step 1 Qbank and the Step 2 Qbank, we have pre-written variations on each question that hit the same learning objective from a different angle.",
               },
               {
                 q: 'Can I focus on a single system?',
-                a: "Yes. If you're in your cardiology block, restrict your questions to cardiology and the same adaptive engine works within it. Widen back out whenever you're ready.",
+                a: "Yes. Whether you're in the Step 1 Qbank or the Step 2 Qbank, if you're in your cardiology block, restrict your questions to cardiology and the same adaptive engine works within it. Widen back out whenever you're ready.",
               },
               {
                 q: 'Can I study for my SHELF exam with MedPrep Institute?',
@@ -862,7 +863,11 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
               },
               {
                 q: 'Which exams does MedPrep Institute cover?',
-                a: 'MedPrep Institute is built for USMLE STEP 1, STEP 2 CK, STEP 3, and the ABIM Exam.',
+                a: 'MedPrep Institute is built for the USMLE Step 1 Qbank, the Step 2 CK Qbank, the Step 3 question bank, and the ABIM Exam.',
+              },
+              {
+                q: "What's the difference between the Step 1 Qbank and the Step 2 Qbank?",
+                a: 'The Step 1 Qbank focuses on foundational science &mdash; biochemistry, physiology, pharmacology, and pathology &mdash; while the Step 2 Qbank shifts to clinical management and patient-care vignettes. Progress carries over between them, so concepts you struggled with in the Step 1 question bank are prioritized first when you move into the Step 2 question bank.',
               },
               {
                 q: 'Is STEP 2 CS Covered?',
@@ -906,7 +911,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
       <div className="mx-auto max-w-6xl px-6 pb-16 sm:pb-24">
         <div className="rounded-3xl px-8 py-16 text-center sm:py-20" style={{ backgroundColor: '#06005A' }}>
           <h2 className="font-[family-name:var(--font-display)] mx-auto max-w-xl text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Stop doing random questions.
+            Stop doing random USMLE questions.
           </h2>
           <p className="mx-auto mt-4 max-w-md text-balance text-lg text-white/70">
             Start practicing right now. Try it for free for 7 days.
