@@ -6,7 +6,7 @@ import {
   getPendingSessionQuestion,
   isBookmarked,
   markQuestionServed,
-  pickNextQuestion,
+  pickQuestionSet,
   SET_SIZE,
 } from '@repo/database/qbank';
 import { NextResponse } from 'next/server';
@@ -35,16 +35,25 @@ export async function GET() {
   // of picking a new one — so leaving and returning to /dashboard/practice
   // lands you back on the same question at the same step.
   let picked = await getPendingSessionQuestion(session.id);
-  if (!picked) {
-    picked = await pickNextQuestion(userId, preference.exam, preference.focusSystemIds);
-    if (picked) {
-      await markQuestionServed(session.id, picked.question.id, picked.isReview);
-    }
-  }
 
   const answeredInSet = await database.sessionQuestion.count({
     where: { sessionId: session.id, answeredAt: { not: null } },
   });
+
+  if (!picked) {
+    // No question queued and waiting — fill the rest of this set upfront
+    // (all remaining slots at once) rather than picking one question at a
+    // time as the user answers through it. This also re-fills the set after
+    // a mid-set focus change, which clears only the unanswered questions.
+    const remaining = SET_SIZE - answeredInSet;
+    if (remaining > 0) {
+      const picks = await pickQuestionSet(userId, preference.exam, preference.focusSystemIds, remaining);
+      for (const p of picks) {
+        await markQuestionServed(session.id, p.question.id, p.isReview);
+      }
+      picked = picks[0] ?? null;
+    }
+  }
 
   if (!picked) {
     return NextResponse.json({ question: null, setSize: SET_SIZE, answeredInSet });

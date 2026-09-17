@@ -75,19 +75,32 @@ export async function getOrCreateActiveSession(clerkUserId: string, examType: Ex
 
 type PickedQuestion = NonNullable<Awaited<ReturnType<typeof pickUnseenVariation>>>;
 
+type PickOptions = {
+  /** Learning objectives already reserved earlier in the same batch pick, so a second slot never repeats one. */
+  excludeObjectiveIds?: string[];
+  /** Rolling window of the most-recent system ids (newest first) for breadth-aware saturation checks. When
+   * omitted, it's derived from real attempt history — used when picking one question at a time. */
+  recentSystemIdsWindow?: string[];
+};
+
 /**
  * Priority-queue question selection:
  *   1. Overdue spaced-repetition reviews (a variation of a previously-missed LO)
  *   2. Weak areas: LOs the user has started but is under 50% on, not yet mastered
  *   3. Next unseen LO by yield weight, favoring breadth once a system is "saturated"
  */
-export async function pickNextQuestion(
+async function pickOneQuestion(
   clerkUserId: string,
   examType: ExamType,
-  focusSystemIds: string[] = []
+  focusSystemIds: string[],
+  options: PickOptions = {}
 ): Promise<{ question: PickedQuestion; isReview: boolean } | null> {
   const now = new Date();
   const systemFilter = focusSystemIds.length ? { systemId: { in: focusSystemIds } } : {};
+  const excludeObjectiveIds = options.excludeObjectiveIds ?? [];
+  const excludeFilter = excludeObjectiveIds.length
+    ? { learningObjectiveId: { notIn: excludeObjectiveIds } }
+    : {};
 
   // 1. Overdue reviews
   const dueProgress = await database.userObjectiveProgress.findFirst({
@@ -95,6 +108,7 @@ export async function pickNextQuestion(
       clerkUserId,
       nextReviewAt: { lte: now },
       learningObjective: { examType, ...systemFilter },
+      ...excludeFilter,
     },
     orderBy: { nextReviewAt: 'asc' },
   });
@@ -110,6 +124,7 @@ export async function pickNextQuestion(
       clerkUserId,
       status: { in: [ObjectiveStatus.LEARNING, ObjectiveStatus.REVIEW] },
       learningObjective: { examType, ...systemFilter },
+      ...excludeFilter,
     },
   });
 
@@ -125,16 +140,21 @@ export async function pickNextQuestion(
   }
 
   // 3. Next unseen LO, breadth-aware
-  const recentAttempts = await database.userQuestionAttempt.findMany({
-    where: { clerkUserId },
-    orderBy: { attemptedAt: 'desc' },
-    take: CONSECUTIVE_QUESTIONS_BEFORE_SWITCH,
-    include: { question: { include: { learningObjective: true } } },
-  });
+  let recentSystemIds: string[];
+  if (options.recentSystemIdsWindow) {
+    recentSystemIds = options.recentSystemIdsWindow;
+  } else {
+    const recentAttempts = await database.userQuestionAttempt.findMany({
+      where: { clerkUserId },
+      orderBy: { attemptedAt: 'desc' },
+      take: CONSECUTIVE_QUESTIONS_BEFORE_SWITCH,
+      include: { question: { include: { learningObjective: true } } },
+    });
+    recentSystemIds = recentAttempts.map((a) => a.question.learningObjective.systemId);
+  }
 
-  const recentSystemIds = recentAttempts.map((a) => a.question.learningObjective.systemId);
   const isSaturated =
-    recentAttempts.length === CONSECUTIVE_QUESTIONS_BEFORE_SWITCH &&
+    recentSystemIds.length === CONSECUTIVE_QUESTIONS_BEFORE_SWITCH &&
     recentSystemIds.every((id) => id === recentSystemIds[0]);
 
   const seenObjectiveIds = (
@@ -143,6 +163,8 @@ export async function pickNextQuestion(
       select: { learningObjectiveId: true },
     })
   ).map((p) => p.learningObjectiveId);
+
+  const allExcludedObjectiveIds = [...new Set([...seenObjectiveIds, ...excludeObjectiveIds])];
 
   // Only let "saturation" force a system switch away from the recent system
   // if that system is actually still in scope under the current focus.
@@ -153,7 +175,7 @@ export async function pickNextQuestion(
     where: {
       examType,
       ...systemFilter,
-      id: { notIn: seenObjectiveIds.length ? seenObjectiveIds : undefined },
+      id: { notIn: allExcludedObjectiveIds.length ? allExcludedObjectiveIds : undefined },
       ...(shouldAvoidRecentSystem ? { systemId: { not: recentSystemIds[0] } } : {}),
     },
     orderBy: { yieldWeight: 'desc' },
@@ -163,6 +185,59 @@ export async function pickNextQuestion(
 
   const question = await pickUnseenVariation(clerkUserId, nextObjective.id);
   return question ? { question, isReview: false } : null;
+}
+
+/** Picks a single question — kept for callers that only ever need one at a time. */
+export async function pickNextQuestion(
+  clerkUserId: string,
+  examType: ExamType,
+  focusSystemIds: string[] = []
+): Promise<{ question: PickedQuestion; isReview: boolean } | null> {
+  return pickOneQuestion(clerkUserId, examType, focusSystemIds);
+}
+
+/**
+ * Picks up to `count` questions in one go — used to fill an entire practice
+ * set upfront, rather than picking one question at a time as the user
+ * answers through it. Maintains the same priority-queue and breadth-aware
+ * system-rotation logic as `pickNextQuestion`, but tracks which learning
+ * objectives have already been reserved earlier in this same batch (so the
+ * set never repeats an objective) and rolls the "recent system" window
+ * forward locally instead of only reading it from already-recorded attempts.
+ */
+export async function pickQuestionSet(
+  clerkUserId: string,
+  examType: ExamType,
+  focusSystemIds: string[] = [],
+  count: number = SET_SIZE
+): Promise<{ question: PickedQuestion; isReview: boolean }[]> {
+  const picks: { question: PickedQuestion; isReview: boolean }[] = [];
+  const excludeObjectiveIds: string[] = [];
+
+  const recentAttempts = await database.userQuestionAttempt.findMany({
+    where: { clerkUserId },
+    orderBy: { attemptedAt: 'desc' },
+    take: CONSECUTIVE_QUESTIONS_BEFORE_SWITCH,
+    include: { question: { include: { learningObjective: true } } },
+  });
+  let recentSystemIdsWindow = recentAttempts.map((a) => a.question.learningObjective.systemId);
+
+  for (let i = 0; i < count; i++) {
+    const picked = await pickOneQuestion(clerkUserId, examType, focusSystemIds, {
+      excludeObjectiveIds,
+      recentSystemIdsWindow,
+    });
+    if (!picked) break;
+
+    picks.push(picked);
+    excludeObjectiveIds.push(picked.question.learningObjectiveId);
+    recentSystemIdsWindow = [picked.question.learningObjective.systemId, ...recentSystemIdsWindow].slice(
+      0,
+      CONSECUTIVE_QUESTIONS_BEFORE_SWITCH
+    );
+  }
+
+  return picks;
 }
 
 /**
@@ -244,6 +319,13 @@ export async function recordAttempt(params: {
   // params.isReview is only a fallback if no such row exists.
   const isReview = pending?.isReview ?? params.isReview;
 
+  const [priorCorrectCount, priorIncorrectCount] = await Promise.all([
+    database.userQuestionAttempt.count({ where: { clerkUserId: params.clerkUserId, isCorrect: true } }),
+    database.userQuestionAttempt.count({ where: { clerkUserId: params.clerkUserId, isCorrect: false } }),
+  ]);
+  const isFirstCorrectEver = isCorrect && priorCorrectCount === 0;
+  const isFirstIncorrectEver = !isCorrect && priorIncorrectCount === 0;
+
   await database.userQuestionAttempt.create({
     data: {
       clerkUserId: params.clerkUserId,
@@ -252,6 +334,7 @@ export async function recordAttempt(params: {
       isCorrect,
       isReview,
       errorType: isCorrect ? undefined : params.errorType,
+      sessionId: params.sessionId,
     },
   });
 
@@ -340,6 +423,38 @@ export async function recordAttempt(params: {
     learningObjectiveId: question.learningObjectiveId,
     learningObjectiveTitle: learningObjective.title,
     learningObjectiveSummary: learningObjective.summary ?? learningObjective.title,
+    isFirstCorrectEver,
+    isFirstIncorrectEver,
+    isSetComplete: answeredInSession >= SET_SIZE,
+  };
+}
+
+/**
+ * Per-question correct/incorrect breakdown for a just-completed set, shown
+ * on the set-completion summary screen before the user starts the next one.
+ */
+export async function getSessionSummary(clerkUserId: string, sessionId: string) {
+  const session = await database.studySession.findFirst({ where: { id: sessionId, clerkUserId } });
+  if (!session) return null;
+
+  const attempts = await database.userQuestionAttempt.findMany({
+    where: { clerkUserId, sessionId },
+    orderBy: { attemptedAt: 'asc' },
+    include: {
+      question: { include: { learningObjective: { include: { system: true } } } },
+    },
+  });
+
+  return {
+    correctCount: attempts.filter((a) => a.isCorrect).length,
+    total: attempts.length,
+    questions: attempts.map((a) => ({
+      isCorrect: a.isCorrect,
+      isReview: a.isReview,
+      stem: a.question.stem,
+      system: a.question.learningObjective.system.name,
+      objectiveTitle: a.question.learningObjective.title,
+    })),
   };
 }
 

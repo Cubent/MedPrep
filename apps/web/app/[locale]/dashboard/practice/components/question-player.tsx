@@ -5,9 +5,11 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { RichText } from '../../components/rich-text';
 import { usePracticeContext } from '../../practice-context';
 import { BookmarkButton } from './bookmark-button';
+import { FirstMilestoneModal } from './first-milestone-modal';
 import { LabValuesModal } from './lab-values-modal';
 import { NotesPanel } from './notes-panel';
 import { SetProgress } from './set-progress';
+import { SetSummary } from './set-summary';
 
 const STUCK_THRESHOLD_MS = 5 * 60 * 1000;
 
@@ -29,8 +31,16 @@ type AttemptResult = {
   learningObjectiveId: string;
   learningObjectiveTitle: string;
   learningObjectiveSummary: string;
+  isFirstCorrectEver?: boolean;
+  isFirstIncorrectEver?: boolean;
+  isSetComplete?: boolean;
 };
 type HistoryEntry = { setNumber: number; date: string; isCorrect: boolean; explanation: string };
+type SetSummaryData = {
+  correctCount: number;
+  total: number;
+  questions: { isCorrect: boolean; isReview: boolean; stem: string; system: string; objectiveTitle: string }[];
+};
 
 export const QuestionPlayer = () => {
   const [question, setQuestion] = useState<Question | null | undefined>(undefined);
@@ -46,6 +56,7 @@ export const QuestionPlayer = () => {
   const [note, setNote] = useState('');
   const [setSize, setSetSize] = useState(5);
   const [answeredInSet, setAnsweredInSet] = useState(0);
+  const [setSummary, setSetSummary] = useState<SetSummaryData | null>(null);
   const { setCurrentQuestion, setIsStuck } = usePracticeContext();
   const stuckTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -62,6 +73,7 @@ export const QuestionPlayer = () => {
     setQuestion(undefined);
     setHistory(null);
     setShowHistory(false);
+    setSetSummary(null);
 
     const response = await fetch('/api/practice/next');
     const data = await response.json().catch(() => ({}));
@@ -125,6 +137,18 @@ export const QuestionPlayer = () => {
     }
   };
 
+  const handleNext = async () => {
+    if (result?.isSetComplete && sessionId) {
+      const response = await fetch(`/api/practice/session-summary?sessionId=${sessionId}`);
+      const data = await response.json().catch(() => null);
+      if (response.ok && data) {
+        setSetSummary(data);
+        return;
+      }
+    }
+    fetchNext();
+  };
+
   const loadHistory = async () => {
     if (!result) return;
     setShowHistory(true);
@@ -145,6 +169,10 @@ export const QuestionPlayer = () => {
       />
     </div>
   ) : null;
+
+  if (setSummary) {
+    return <SetSummary summary={setSummary} onStartNext={fetchNext} />;
+  }
 
   if (question === undefined) {
     return (
@@ -182,6 +210,9 @@ export const QuestionPlayer = () => {
 
   return (
     <div>
+      <FirstMilestoneModal variant="correct" trigger={Boolean(result?.isFirstCorrectEver)} />
+      <FirstMilestoneModal variant="incorrect" trigger={Boolean(result?.isFirstIncorrectEver)} />
+
       {/* Top bar: set progress + actions, outside the question card */}
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <SetProgress answered={answeredInSet} setSize={setSize} />
@@ -322,10 +353,10 @@ export const QuestionPlayer = () => {
           {result ? (
             <button
               type="button"
-              onClick={fetchNext}
+              onClick={handleNext}
               className="rounded-full bg-[#C46B10] px-6 py-2.5 text-sm font-semibold text-white hover:bg-[#a95a0d]"
             >
-              Next question
+              {result.isSetComplete ? 'View set results' : 'Next question'}
             </button>
           ) : (
             <button

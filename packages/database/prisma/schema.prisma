@@ -162,20 +162,27 @@ model UserQuestionAttempt {
   errorType        ErrorType?
   timeSpentSeconds Int?
   attemptedAt      DateTime      @default(now())
+  // Which set this attempt belongs to, so the set-completion summary can
+  // pull an authoritative per-question correct/incorrect breakdown. Nullable
+  // since attempts recorded before this field existed have no session link.
+  sessionId        String?
+  session          StudySession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
 
   @@index([clerkUserId])
   @@index([questionId])
+  @@index([sessionId])
   @@map("user_question_attempts")
 }
 
 model StudySession {
-  id          String            @id @default(cuid())
+  id          String                @id @default(cuid())
   clerkUserId String
   examType    ExamType
-  mode        SessionMode       @default(SEMESTER)
-  createdAt   DateTime          @default(now())
+  mode        SessionMode           @default(SEMESTER)
+  createdAt   DateTime              @default(now())
   completedAt DateTime?
   questions   SessionQuestion[]
+  attempts    UserQuestionAttempt[]
 
   @@map("study_sessions")
 }

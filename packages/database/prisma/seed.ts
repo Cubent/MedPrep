@@ -80,6 +80,11368 @@ const SYSTEMS: SeedSystem[] = [
           },
         ],
       },
+      {
+        title: 'Localize a lower trunk brachial plexus injury (Klumpke palsy)',
+        summary:
+          'Traction injury to the C8-T1 roots (lower trunk) of the brachial plexus — classically from a breech delivery in which the arm is pulled superiorly, or from grabbing a branch while falling — paralyzes the intrinsic muscles of the hand, producing a claw hand with sensory loss along the medial forearm and hand; it may also disrupt the sympathetic chain, causing Horner syndrome.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following a difficult breech delivery in which the newborn’s arm was pulled superiorly during extraction, the infant is noted to have a claw-hand deformity with weakness of the intrinsic hand muscles and diminished sensation along the medial forearm and hand. Which brachial plexus structure was most likely injured?',
+            explanation:
+              'This is Klumpke palsy, caused by traction injury to the lower trunk of the brachial plexus (C8-T1 roots), classically from upward traction on an abducted arm during a difficult delivery. Loss of C8-T1 function paralyzes the intrinsic hand muscles (interossei, lumbricals), producing a claw hand, and causes sensory loss over the medial forearm and hand (ulnar and medial antebrachial cutaneous territory).',
+            difficulty: 3,
+            choices: [
+              { text: 'Lower trunk of the brachial plexus (C8-T1)', isCorrect: true },
+              {
+                text: 'Upper trunk of the brachial plexus (C5-C6)',
+                isCorrect: false,
+                explanation: 'Upper trunk injury causes Erb palsy, with the arm adducted and internally rotated ("waiter’s tip") — the opposite, proximal pattern, not a claw hand.',
+              },
+              {
+                text: 'Isolated ulnar nerve injury at the elbow',
+                isCorrect: false,
+                explanation: 'An isolated ulnar neuropathy would spare the thenar (median-innervated) muscles and would not cause sensory loss over the medial forearm, which is supplied by the medial antebrachial cutaneous nerve — both are affected in a full lower trunk lesion.',
+              },
+              {
+                text: 'Radial nerve at the spiral groove',
+                isCorrect: false,
+                explanation: 'Radial nerve injury causes wrist drop from loss of wrist and finger extension, not a claw hand.',
+              },
+              {
+                text: 'Long thoracic nerve',
+                isCorrect: false,
+                explanation: 'Long thoracic nerve injury causes winging of the scapula and is unrelated to hand function.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a radial nerve injury from a midshaft humeral fracture',
+        summary:
+          'The radial nerve runs in the spiral (radial) groove of the humerus, making it vulnerable to injury from midshaft humeral fractures or prolonged compression ("Saturday night palsy"). Injury here paralyzes wrist and finger extensors, producing wrist drop, along with sensory loss over the dorsal web space between the thumb and index finger.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 60,
+        variations: [
+          {
+            stem: 'A 24-year-old man falls onto an outstretched arm and sustains a closed fracture of the midshaft of the humerus. On exam, he is unable to extend his wrist or fingers, and there is sensory loss over the dorsal web space between the thumb and index finger. Which nerve is most likely injured?',
+            explanation:
+              'The radial nerve travels directly against the humeral shaft in the spiral groove, making it the nerve most commonly injured by midshaft humeral fractures. Loss of radial nerve function paralyzes the wrist and finger extensors, producing the characteristic wrist drop, and causes sensory loss over the dorsal first web space.',
+            difficulty: 2,
+            choices: [
+              { text: 'Radial nerve', isCorrect: true },
+              {
+                text: 'Median nerve',
+                isCorrect: false,
+                explanation: 'Median nerve injury impairs wrist flexion/pronation and thumb opposition with palmar sensory loss, not wrist drop.',
+              },
+              {
+                text: 'Ulnar nerve',
+                isCorrect: false,
+                explanation: 'Ulnar nerve injury produces a claw hand and medial hand sensory loss, not wrist drop.',
+              },
+              {
+                text: 'Axillary nerve',
+                isCorrect: false,
+                explanation: 'Axillary nerve injury causes deltoid weakness and sensory loss over the lateral shoulder, not wrist drop.',
+              },
+              {
+                text: 'Musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'Musculocutaneous nerve injury weakens elbow flexion/supination with lateral forearm sensory loss, not wrist drop.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize an axillary nerve injury after anterior shoulder dislocation',
+        summary:
+          'The axillary nerve wraps around the surgical neck of the humerus, making it vulnerable to injury from anterior shoulder dislocations or surgical neck fractures. Injury paralyzes the deltoid and teres minor, weakening abduction beyond the first 15 degrees (initiated by supraspinatus), and causes sensory loss over the "regimental badge" area of the lateral shoulder.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 19-year-old football player sustains an anterior shoulder dislocation during a tackle. After closed reduction, he has weakness of shoulder abduction beyond the first 15 degrees and a small patch of sensory loss over the lateral shoulder (the "regimental badge" area). Which nerve was most likely injured?',
+            explanation:
+              'The axillary nerve winds around the surgical neck of the humerus and is the nerve most commonly injured by anterior shoulder dislocation or surgical neck fracture. It innervates the deltoid (abduction beyond the initial 15 degrees, which is initiated by the supraspinatus) and teres minor, and supplies cutaneous sensation over the lateral shoulder.',
+            difficulty: 2,
+            choices: [
+              { text: 'Axillary nerve', isCorrect: true },
+              {
+                text: 'Suprascapular nerve',
+                isCorrect: false,
+                explanation: 'The suprascapular nerve innervates the supraspinatus and infraspinatus (initiating abduction and external rotation) but has no cutaneous sensory branch, so it cannot explain the sensory loss described.',
+              },
+              {
+                text: 'Radial nerve',
+                isCorrect: false,
+                explanation: 'Radial nerve injury causes wrist drop, not deltoid weakness or lateral shoulder sensory loss.',
+              },
+              {
+                text: 'Musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'Musculocutaneous nerve injury affects elbow flexion and lateral forearm sensation, not shoulder abduction or lateral shoulder sensation.',
+              },
+              {
+                text: 'Long thoracic nerve',
+                isCorrect: false,
+                explanation: 'Long thoracic nerve injury causes winging of the scapula from serratus anterior paralysis, not deltoid weakness.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a long thoracic nerve injury causing a winged scapula',
+        summary:
+          'The long thoracic nerve (C5-C7) runs along the lateral surface of the serratus anterior and is vulnerable during axillary lymph node dissection or with blows to the lateral chest wall. Injury paralyzes the serratus anterior, which normally holds the scapula against the thoracic wall, producing a winged scapula that is most apparent when pushing against resistance.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'Following axillary lymph node dissection for breast cancer, a patient’s scapula protrudes posteriorly ("winging") when she pushes against a wall with outstretched arms. Which nerve was most likely damaged during surgery?',
+            explanation:
+              'The long thoracic nerve runs superficially along the lateral chest wall to innervate the serratus anterior and is at risk during axillary dissection. Serratus anterior paralysis prevents the scapula from being held flush against the thoracic wall, producing a winged scapula that becomes obvious with forward pushing.',
+            difficulty: 2,
+            choices: [
+              { text: 'Long thoracic nerve', isCorrect: true },
+              {
+                text: 'Thoracodorsal nerve',
+                isCorrect: false,
+                explanation: 'Thoracodorsal nerve injury weakens the latissimus dorsi (arm adduction/extension) and does not cause scapular winging.',
+              },
+              {
+                text: 'Spinal accessory nerve',
+                isCorrect: false,
+                explanation: 'Spinal accessory nerve injury paralyzes the trapezius, causing a different pattern of scapular malposition (lateral winging with shoulder droop), typically after posterior triangle neck surgery, not axillary dissection.',
+              },
+              {
+                text: 'Dorsal scapular nerve',
+                isCorrect: false,
+                explanation: 'Dorsal scapular nerve injury weakens the rhomboids and is not the classic cause of winging after axillary surgery.',
+              },
+              {
+                text: 'Axillary nerve',
+                isCorrect: false,
+                explanation: 'Axillary nerve injury causes deltoid weakness and lateral shoulder sensory loss, not scapular winging.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a musculocutaneous nerve injury',
+        summary:
+          'The musculocutaneous nerve innervates the biceps brachii, brachialis, and coracobrachialis (elbow flexion and forearm supination) before continuing as the lateral antebrachial cutaneous nerve. Injury, though uncommon, weakens elbow flexion/supination and causes sensory loss over the lateral forearm.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient sustains a penetrating injury to the axilla and subsequently has weakness of elbow flexion and forearm supination, along with sensory loss over the lateral forearm. Which nerve is most likely injured?',
+            explanation:
+              'The musculocutaneous nerve innervates the biceps brachii, brachialis, and coracobrachialis, which flex the elbow and (via the biceps) supinate the forearm. After supplying these muscles, it becomes the lateral antebrachial cutaneous nerve, supplying sensation to the lateral forearm — matching both the motor and sensory deficits described.',
+            difficulty: 2,
+            choices: [
+              { text: 'Musculocutaneous nerve', isCorrect: true },
+              {
+                text: 'Radial nerve',
+                isCorrect: false,
+                explanation: 'Radial nerve injury causes wrist/finger extensor weakness (wrist drop) with dorsal hand sensory loss, not elbow flexion weakness.',
+              },
+              {
+                text: 'Median nerve',
+                isCorrect: false,
+                explanation: 'Median nerve injury impairs forearm pronation and wrist/finger flexion with palmar sensory loss, not elbow flexion or lateral forearm sensation.',
+              },
+              {
+                text: 'Ulnar nerve',
+                isCorrect: false,
+                explanation: 'Ulnar nerve injury affects intrinsic hand muscles and medial hand sensation, unrelated to elbow flexion.',
+              },
+              {
+                text: 'Axillary nerve',
+                isCorrect: false,
+                explanation: 'Axillary nerve injury affects deltoid-driven abduction and lateral shoulder sensation, not elbow flexion.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize median nerve compression at the carpal tunnel',
+        summary:
+          'The median nerve passes through the carpal tunnel at the wrist along with the flexor tendons. Compression here (carpal tunnel syndrome), common in hypothyroidism, pregnancy, and repetitive use, causes nocturnal paresthesias and pain in the thumb, index, middle, and lateral ring finger, with thenar weakness/atrophy in advanced cases; sensation over the palm itself is typically spared because the palmar cutaneous branch arises proximal to the tunnel.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 65,
+        variations: [
+          {
+            stem: 'A 45-year-old woman with hypothyroidism reports nocturnal tingling and numbness in the thumb, index, middle, and lateral half of the ring finger, along with weakness of thumb opposition and thenar eminence atrophy. Tapping over the volar wrist reproduces her symptoms. Which nerve is affected, and at what site?',
+            explanation:
+              'This is carpal tunnel syndrome: compression of the median nerve as it passes through the carpal tunnel at the wrist, beneath the flexor retinaculum. It classically produces paresthesias in the median-innervated digits (thumb through lateral ring finger) and, with chronic compression, weakness and atrophy of the thenar muscles. A positive Tinel sign (tingling with tapping over the nerve) at the wrist supports this localization.',
+            difficulty: 2,
+            choices: [
+              { text: 'Median nerve, at the wrist (carpal tunnel)', isCorrect: true },
+              {
+                text: 'Ulnar nerve, at the wrist (Guyon canal)',
+                isCorrect: false,
+                explanation: 'Ulnar nerve compression at Guyon canal affects the little finger and medial ring finger, sparing the thumb and index finger described here.',
+              },
+              {
+                text: 'Median nerve, at the elbow (pronator syndrome)',
+                isCorrect: false,
+                explanation: 'Compression at the elbow would also impair forearm pronation and more proximal flexor muscles, and Tinel sign would localize to the elbow/forearm, not the wrist.',
+              },
+              {
+                text: 'Radial nerve, at the wrist',
+                isCorrect: false,
+                explanation: 'The radial nerve is purely sensory at the wrist (dorsal hand) and does not innervate the thenar muscles.',
+              },
+              {
+                text: 'Ulnar nerve, at the elbow (cubital tunnel)',
+                isCorrect: false,
+                explanation: 'Cubital tunnel compression causes little/ring finger numbness and a positive Tinel sign at the elbow, not the wrist, and spares the thenar muscles.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize ulnar nerve compression at the cubital tunnel',
+        summary:
+          'The ulnar nerve passes posterior to the medial epicondyle of the humerus through the cubital tunnel, where it is superficial and vulnerable to compression (e.g., leaning on the elbow) or subluxation. Compression here causes numbness of the little finger and medial ring finger and, with chronicity, weakness of the intrinsic hand muscles it supplies, contributing to a claw-hand deformity.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 30-year-old man who habitually rests his elbows on a hard desk develops numbness of the little finger and medial half of the ring finger, along with weakness of finger abduction and adduction. Tapping posterior to the medial epicondyle reproduces the tingling. Which nerve is most likely compressed, and at what site?',
+            explanation:
+              'The ulnar nerve runs posterior to the medial epicondyle through the cubital tunnel, where superficial location makes it prone to compression from leaning on the elbow. This produces sensory loss in the ulnar distribution (little finger and medial ring finger) and weakness of the interossei (finger abduction/adduction), with a positive Tinel sign at the elbow localizing the lesion there rather than at the wrist.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ulnar nerve, in the cubital tunnel (posterior to the medial epicondyle)', isCorrect: true },
+              {
+                text: 'Ulnar nerve, at Guyon canal (wrist)',
+                isCorrect: false,
+                explanation: 'Guyon canal compression produces the same sensory pattern but the reproducible tingling on tapping would localize to the wrist, not posterior to the medial epicondyle.',
+              },
+              {
+                text: 'Median nerve, at the wrist',
+                isCorrect: false,
+                explanation: 'Median nerve compression affects the thumb through lateral ring finger, not the little finger and medial ring finger described here.',
+              },
+              {
+                text: 'Radial nerve, at the spiral groove',
+                isCorrect: false,
+                explanation: 'Radial nerve injury causes wrist drop and dorsal hand sensory loss, not the sensory/motor pattern described.',
+              },
+              {
+                text: 'Median nerve, at the elbow (pronator syndrome)',
+                isCorrect: false,
+                explanation: 'Pronator syndrome affects median-innervated structures (thumb-to-ring finger sensation, thenar muscles), not the ulnar distribution described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize recurrent laryngeal nerve injury after thyroid surgery',
+        summary:
+          'The recurrent laryngeal nerve, a branch of the vagus, runs close to the inferior thyroid artery and posterior thyroid capsule, making it vulnerable during thyroidectomy. It innervates most of the intrinsic laryngeal muscles that control the vocal cords; unilateral injury causes hoarseness from an immobile vocal cord.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient develops hoarseness and a weak, breathy voice several hours after undergoing thyroidectomy. Which nerve was most likely injured during the surgery?',
+            explanation:
+              'The recurrent laryngeal nerve runs in close proximity to the inferior thyroid artery and the posterior surface of the thyroid gland, placing it at risk during thyroid surgery. It supplies nearly all of the intrinsic muscles of the larynx that move the vocal cords; unilateral injury paralyzes the ipsilateral cord in a paramedian position, producing hoarseness and a breathy voice.',
+            difficulty: 2,
+            choices: [
+              { text: 'Recurrent laryngeal nerve', isCorrect: true },
+              {
+                text: 'External branch of the superior laryngeal nerve',
+                isCorrect: false,
+                explanation: 'This branch innervates the cricothyroid muscle, which tenses the vocal cords; injury causes a monotone voice that tires easily, not the hoarse, breathy voice described.',
+              },
+              {
+                text: 'Hypoglossal nerve',
+                isCorrect: false,
+                explanation: 'Hypoglossal nerve injury causes tongue deviation toward the affected side on protrusion, not voice changes.',
+              },
+              {
+                text: 'Glossopharyngeal nerve',
+                isCorrect: false,
+                explanation: 'Glossopharyngeal nerve injury affects taste on the posterior tongue and the gag reflex, not vocal cord movement.',
+              },
+              {
+                text: 'Vagus nerve trunk proximal to the pharyngeal branches',
+                isCorrect: false,
+                explanation: 'Injury this proximal would cause more widespread deficits (palate, pharynx) in addition to voice change; the injury during thyroidectomy is classically isolated to the recurrent laryngeal branch.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Explain referred shoulder pain from diaphragmatic irritation via the phrenic nerve',
+        summary:
+          'The diaphragm and the skin over the tip of the shoulder both derive sensory innervation from the C3-C5 spinal segments (diaphragm via the phrenic nerve; shoulder skin via the supraclavicular nerves, also C3-C4). Irritation of the diaphragm — from blood, pus, or air beneath it — is therefore perceived as referred pain at the shoulder.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 32-year-old woman involved in a motor vehicle collision has a ruptured spleen with blood collecting beneath the diaphragm. She reports pain radiating to the tip of her left shoulder. This referred pain is best explained by shared innervation of the diaphragm and shoulder skin by which spinal nerve roots?',
+            explanation:
+              'The diaphragm is innervated by the phrenic nerve (C3-C5), and the skin over the tip of the shoulder is innervated by the supraclavicular nerves, which also arise from C3-C4. Because these afferents converge on the same spinal cord segments, pain originating from diaphragmatic irritation (here, from subdiaphragmatic blood after splenic rupture) is referred to the shoulder — Kehr sign.',
+            difficulty: 3,
+            choices: [
+              { text: 'C3-C5, via the phrenic nerve', isCorrect: true },
+              {
+                text: 'T1-T2, via intercostal nerves',
+                isCorrect: false,
+                explanation: 'Intercostal (T1-T2) afferents would refer pain to the chest or abdominal wall, not the shoulder tip.',
+              },
+              {
+                text: 'Vagus nerve, via visceral afferents to the brainstem',
+                isCorrect: false,
+                explanation: 'Vagal visceral afferents mediate reflex and autonomic responses but do not explain somatic referred pain patterns like shoulder tip pain.',
+              },
+              {
+                text: 'C5-C6, via the axillary nerve',
+                isCorrect: false,
+                explanation: 'The axillary nerve provides direct somatic sensation over the lateral shoulder from local structures, not referred visceral pain from the diaphragm.',
+              },
+              {
+                text: 'L1-L2, via the genitofemoral nerve',
+                isCorrect: false,
+                explanation: 'The genitofemoral nerve refers pain to the groin (e.g., from ureteral colic), unrelated to diaphragmatic irritation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a common fibular (peroneal) nerve injury at the fibular neck',
+        summary:
+          'The common fibular (peroneal) nerve winds superficially around the neck of the fibula, making it the most commonly injured nerve of the lower limb — vulnerable to fibular neck fractures, tight casts, or habitual leg crossing. Injury paralyzes the muscles of dorsiflexion and eversion, producing foot drop, with sensory loss over the dorsum of the foot and lateral leg.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient who sustains a fracture of the fibular neck develops foot drop (inability to dorsiflex or evert the foot) and sensory loss over the dorsum of the foot and lateral leg. Which nerve is most likely injured?',
+            explanation:
+              'The common fibular (peroneal) nerve wraps superficially around the fibular neck, making it especially vulnerable to fractures at this site. It supplies the muscles of the anterior and lateral leg compartments responsible for dorsiflexion and eversion; injury produces foot drop and sensory loss over the dorsum of the foot and lateral leg.',
+            difficulty: 2,
+            choices: [
+              { text: 'Common fibular (peroneal) nerve', isCorrect: true },
+              {
+                text: 'Tibial nerve',
+                isCorrect: false,
+                explanation: 'Tibial nerve injury impairs plantarflexion and inversion with sensory loss over the sole of the foot — the opposite pattern from the one described.',
+              },
+              {
+                text: 'Femoral nerve',
+                isCorrect: false,
+                explanation: 'Femoral nerve injury weakens knee extension and causes anterior thigh sensory loss, unrelated to foot drop.',
+              },
+              {
+                text: 'Sciatic nerve',
+                isCorrect: false,
+                explanation: 'A full sciatic nerve injury would also impair hamstring function (knee flexion) in addition to the peroneal-distribution deficits, which is not described here.',
+              },
+              {
+                text: 'Superficial fibular nerve alone',
+                isCorrect: false,
+                explanation: 'The superficial fibular nerve supplies eversion and lateral leg sensation, but dorsiflexion (tibialis anterior) is supplied by the deep fibular branch — an isolated superficial branch injury would spare dorsiflexion.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a sciatic nerve injury after posterior hip dislocation',
+        summary:
+          'The sciatic nerve exits the pelvis just posterior to the hip joint, making it vulnerable to injury during posterior hip dislocation. Because it carries fibers destined for both the tibial and common fibular nerves, injury impairs knee flexion (hamstrings) and essentially all motor/sensory function below the knee except the medial leg (saphenous nerve, from the femoral nerve).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'After a posterior hip dislocation sustained in a motor vehicle collision, a patient has weakness of knee flexion as well as foot dorsiflexion and plantarflexion, with sensory loss over the posterior thigh and most of the leg and foot, sparing a strip of skin along the medial leg. Which nerve is most likely injured?',
+            explanation:
+              'The sciatic nerve passes directly posterior to the hip joint and is at risk during posterior hip dislocation. It innervates the hamstrings (knee flexion) and, via its tibial and common fibular divisions, essentially all motor and sensory function of the leg and foot below the knee — except the medial leg strip supplied by the saphenous nerve (a femoral nerve branch), which is characteristically spared.',
+            difficulty: 2,
+            choices: [
+              { text: 'Sciatic nerve', isCorrect: true },
+              {
+                text: 'Femoral nerve',
+                isCorrect: false,
+                explanation: 'Femoral nerve injury causes anterior thigh weakness (knee extension) and anteromedial sensory loss — the opposite regional pattern from the one described.',
+              },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'Obturator nerve injury weakens thigh adduction and causes a small medial thigh sensory patch, not the widespread leg/foot deficits described.',
+              },
+              {
+                text: 'Superior gluteal nerve',
+                isCorrect: false,
+                explanation: 'Superior gluteal nerve injury weakens hip abduction (Trendelenburg gait) and has no cutaneous sensory distribution.',
+              },
+              {
+                text: 'Common fibular nerve alone',
+                isCorrect: false,
+                explanation: 'Isolated common fibular nerve injury would not impair knee flexion (hamstrings) or plantarflexion, which are also affected here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a femoral nerve injury in the femoral triangle',
+        summary:
+          'The femoral nerve travels through the femoral triangle to innervate the quadriceps femoris (knee extension) and the anterior/medial thigh, continuing as the saphenous nerve to supply the medial leg. It is vulnerable to injury during pelvic or hip surgery, femoral catheterization, and psoas hematomas.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'Following a complicated hip surgery, a patient has difficulty extending the knee and reports sensory loss over the anterior and medial thigh as well as the medial leg down to the ankle. Which nerve was most likely injured?',
+            explanation:
+              'The femoral nerve innervates the quadriceps femoris, the primary knee extensor, and supplies sensation to the anterior and medial thigh; it continues below the knee as the saphenous nerve, supplying the medial leg. This combination of knee extension weakness with anteromedial thigh and medial leg sensory loss localizes the injury to the femoral nerve.',
+            difficulty: 2,
+            choices: [
+              { text: 'Femoral nerve', isCorrect: true },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'Obturator nerve injury weakens thigh adduction and causes a small medial thigh sensory patch only, without knee extension weakness or medial leg sensory loss.',
+              },
+              {
+                text: 'Sciatic nerve',
+                isCorrect: false,
+                explanation: 'Sciatic nerve injury produces posterior thigh and below-knee deficits, not anterior thigh weakness or anteromedial sensory loss.',
+              },
+              {
+                text: 'Lateral femoral cutaneous nerve',
+                isCorrect: false,
+                explanation: 'This is a purely sensory nerve (meralgia paresthetica); it does not innervate the quadriceps and would not cause knee extension weakness.',
+              },
+              {
+                text: 'Common fibular nerve',
+                isCorrect: false,
+                explanation: 'Common fibular nerve injury causes foot drop and dorsal foot/lateral leg sensory loss, unrelated to knee extension or thigh sensation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a posterior interosseous nerve injury (motor-only radial neuropathy)',
+        summary:
+          'The posterior interosseous nerve is the deep motor branch of the radial nerve, passing through the supinator muscle (arcade of Fröhse) to supply the finger and thumb extensors. Because it branches off after the radial nerve’s cutaneous branches have already left, injury causes finger/thumb extensor weakness with little wrist drop and no sensory loss — unlike a proximal radial nerve injury.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a long-standing lipoma near the proximal forearm develops weakness of finger and thumb extension, with relatively preserved wrist extension and no sensory deficit anywhere in the hand. Which nerve is most likely compressed, and where?',
+            explanation:
+              'The posterior interosseous nerve is the deep, purely motor branch of the radial nerve that passes through the supinator muscle. Compression here paralyzes the finger and thumb extensors but spares the sensory branches of the radial nerve, which have already departed proximally, and largely spares wrist extension (extensor carpi radialis longus is innervated before the split). This distinguishes it from a proximal radial nerve lesion, which causes both motor and sensory deficits.',
+            difficulty: 2,
+            choices: [
+              { text: 'Posterior interosseous nerve, in the supinator muscle', isCorrect: true },
+              {
+                text: 'Radial nerve at the spiral groove',
+                isCorrect: false,
+                explanation: 'A proximal radial nerve lesion would also cause sensory loss over the dorsal hand and more prominent wrist drop, neither of which is present here.',
+              },
+              {
+                text: 'Median nerve at the wrist',
+                isCorrect: false,
+                explanation: 'Median nerve compression causes thenar and sensory changes in the median distribution, not isolated finger extension weakness.',
+              },
+              {
+                text: 'Anterior interosseous nerve',
+                isCorrect: false,
+                explanation: 'This motor branch of the median nerve causes a weak pincer grip (inability to make an "OK" sign), not finger extension weakness.',
+              },
+              {
+                text: 'Ulnar nerve at the elbow',
+                isCorrect: false,
+                explanation: 'Ulnar nerve injury causes intrinsic hand muscle weakness and medial sensory loss, not extensor weakness.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize thoracic outlet syndrome from a cervical rib',
+        summary:
+          'An anomalous cervical rib can compress the lower trunk of the brachial plexus (C8-T1) and the subclavian artery as they pass over the first rib through the thoracic outlet, producing medial arm/forearm pain and paresthesias along with a diminished radial pulse and hand ischemia with arm elevation.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 28-year-old woman reports pain and tingling along the medial forearm and hand, worsened by raising her arm overhead, along with intermittent coolness and pallor of the hand. Imaging reveals a cervical rib. Which neurovascular structures are most likely compressed as they pass through the thoracic outlet?',
+            explanation:
+              'A cervical rib narrows the thoracic outlet through which the lower trunk of the brachial plexus (C8-T1) and the subclavian artery pass over the first rib. Compression of the lower trunk produces the medial arm/forearm sensory symptoms (the same distribution affected in Klumpke palsy), while subclavian artery compression causes a diminished pulse and ischemic hand symptoms that worsen with arm elevation, which further narrows the outlet.',
+            difficulty: 3,
+            choices: [
+              { text: 'Lower trunk of the brachial plexus and the subclavian artery', isCorrect: true },
+              {
+                text: 'Upper trunk of the brachial plexus and the subclavian vein',
+                isCorrect: false,
+                explanation: 'Upper trunk compression would cause proximal, Erb-pattern weakness, not medial forearm symptoms; the subclavian vein is also not the vessel classically compressed in this syndrome.',
+              },
+              {
+                text: 'Phrenic nerve and the internal jugular vein',
+                isCorrect: false,
+                explanation: 'Neither structure passes through the thoracic outlet’s scalene triangle in a way that produces this presentation.',
+              },
+              {
+                text: 'Vagus nerve and the common carotid artery',
+                isCorrect: false,
+                explanation: 'These structures do not pass through the thoracic outlet and are not compressed by a cervical rib.',
+              },
+              {
+                text: 'Long thoracic nerve and the axillary artery',
+                isCorrect: false,
+                explanation: 'Long thoracic nerve compression causes scapular winging, not the sensory pattern described, and neither structure travels through the thoracic outlet.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize suprascapular nerve entrapment at the suprascapular notch',
+        summary:
+          'The suprascapular nerve passes through the suprascapular notch, beneath the transverse scapular ligament, to innervate the supraspinatus (initiates the first 15 degrees of abduction) and infraspinatus (external rotation). It has no cutaneous sensory branch, so entrapment causes deep shoulder pain and weakness without sensory loss.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A volleyball player develops deep, aching shoulder pain and has weakness initiating abduction of the arm as well as weak external rotation, but no sensory abnormality anywhere in the upper limb. Which nerve is most likely entrapped, and at which site?',
+            explanation:
+              'The suprascapular nerve passes beneath the transverse scapular ligament at the suprascapular notch to reach the supraspinatus and infraspinatus. Entrapment weakens abduction initiation (supraspinatus) and external rotation (infraspinatus) but produces no sensory deficit, since the nerve carries no cutaneous branches — a feature that distinguishes it from other proximal upper-limb neuropathies.',
+            difficulty: 3,
+            choices: [
+              { text: 'Suprascapular nerve, at the suprascapular notch', isCorrect: true },
+              {
+                text: 'Axillary nerve, at the quadrangular space',
+                isCorrect: false,
+                explanation: 'Axillary nerve injury would also cause deltoid weakness (limiting abduction beyond 15 degrees) plus lateral shoulder sensory loss, which is absent here.',
+              },
+              {
+                text: 'Musculocutaneous nerve, in the coracobrachialis',
+                isCorrect: false,
+                explanation: 'This nerve affects elbow flexion/supination and lateral forearm sensation, unrelated to shoulder abduction or external rotation.',
+              },
+              {
+                text: 'Long thoracic nerve, along the serratus anterior',
+                isCorrect: false,
+                explanation: 'Injury here causes scapular winging, not weakness of abduction or external rotation.',
+              },
+              {
+                text: 'Upper trunk of the brachial plexus',
+                isCorrect: false,
+                explanation: 'A full upper trunk lesion would also weaken elbow flexion and cause sensory loss, neither of which is present here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize anterior interosseous nerve syndrome (inability to make the "OK" sign)',
+        summary:
+          'The anterior interosseous nerve is a purely motor branch of the median nerve supplying the flexor pollicis longus, the flexor digitorum profundus to the index/middle fingers, and pronator quadratus. Injury impairs precision pinch between the thumb and index finger (an abnormal, flattened "OK" sign) without any sensory loss.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'After a forearm fracture, a patient is unable to form a normal circle ("OK" sign) when asked to pinch the tip of the thumb to the tip of the index finger — instead, both digits remain extended at the interphalangeal joints. There is no sensory loss anywhere in the hand. Which nerve is most likely injured?',
+            explanation:
+              'The anterior interosseous nerve, a motor-only branch of the median nerve, innervates the flexor pollicis longus and the flexor digitorum profundus to the index and middle fingers. Its injury classically prevents flexion at the interphalangeal joints of the thumb and index finger needed to form a precise "OK" sign, while sparing all sensory function, since the nerve carries no cutaneous fibers.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior interosseous nerve', isCorrect: true },
+              {
+                text: 'Median nerve at the wrist',
+                isCorrect: false,
+                explanation: 'Injury here would cause sensory loss over the median distribution in addition to motor deficits, which is absent in this case.',
+              },
+              {
+                text: 'Ulnar nerve at the wrist',
+                isCorrect: false,
+                explanation: 'The ulnar nerve controls the intrinsic hand muscles and ring/little finger sensation, not the thumb-index pinch described.',
+              },
+              {
+                text: 'Radial nerve',
+                isCorrect: false,
+                explanation: 'The radial nerve controls extension, not flexion, and its injury would not affect this pinch maneuver.',
+              },
+              {
+                text: 'Posterior interosseous nerve',
+                isCorrect: false,
+                explanation: 'This motor branch of the radial nerve controls finger/thumb extension, not the flexion movement described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish ulnar nerve compression at Guyon canal from cubital tunnel compression',
+        summary:
+          'The ulnar nerve can be compressed at the wrist within Guyon canal (e.g., "handlebar palsy" in cyclists, or a ganglion cyst), producing the same sensory/motor pattern as cubital tunnel compression, but the forearm flexor carpi ulnaris and ulnar half of flexor digitorum profundus are spared because those branches exit above the wrist, and Tinel sign localizes to the wrist rather than the elbow.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A competitive cyclist who grips the handlebars for long periods develops numbness of the little finger and medial ring finger along with weakness of finger abduction. Forearm wrist flexion strength is normal, and tapping over the wrist (not the elbow) reproduces the tingling. Which nerve is most likely compressed, and at what site?',
+            explanation:
+              'This is ulnar nerve compression at Guyon canal, at the wrist ("handlebar palsy"). The sensory and intrinsic hand muscle findings mirror those of cubital tunnel syndrome, but because the ulnar nerve’s branches to flexor carpi ulnaris and the ulnar half of flexor digitorum profundus leave the nerve proximal to the wrist, those muscles are spared here — and the reproducible tingling localizes to the wrist rather than the elbow.',
+            difficulty: 3,
+            choices: [
+              { text: 'Ulnar nerve, at Guyon canal (wrist)', isCorrect: true },
+              {
+                text: 'Ulnar nerve, at the cubital tunnel (elbow)',
+                isCorrect: false,
+                explanation: 'Cubital tunnel compression would also weaken the flexor carpi ulnaris and produce a positive Tinel sign at the elbow, not the wrist.',
+              },
+              {
+                text: 'Median nerve, at the carpal tunnel (wrist)',
+                isCorrect: false,
+                explanation: 'Median nerve compression affects the thumb through lateral ring finger, not the little finger and medial ring finger described.',
+              },
+              {
+                text: 'Radial nerve, at the wrist',
+                isCorrect: false,
+                explanation: 'The radial nerve is purely sensory at this level and does not affect the intrinsic hand muscles.',
+              },
+              {
+                text: 'Musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the lateral forearm and elbow flexors, unrelated to hand sensation or intrinsic muscles.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a supracondylar humeral fracture to brachial artery injury and Volkmann contracture',
+        summary:
+          'A supracondylar humeral fracture, common in children after a fall on an outstretched hand, can lacerate or compress the brachial artery, which runs directly anterior to the distal humerus. Resulting forearm ischemia and compartment syndrome, if untreated, leads to Volkmann ischemic contracture — fibrotic shortening of the forearm flexor muscles with a clawed hand — and the nearby median nerve is also at risk.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'An 8-year-old girl falls onto an outstretched hand and sustains a supracondylar fracture of the humerus. Her hand is pale and cool, and she reports severe forearm pain out of proportion to exam, with pain on passive finger extension. Which structure is most at risk of injury, and what late complication can result if the ischemia is not promptly addressed?',
+            explanation:
+              'The brachial artery runs directly anterior to the distal humerus and is vulnerable to injury or compression by a displaced supracondylar fracture, along with the adjacent median nerve. The resulting forearm ischemia and compartment syndrome (pain out of proportion, pain with passive stretch) can progress, if untreated, to Volkmann ischemic contracture — permanent fibrotic shortening of the forearm flexor muscles producing a clawed, contracted hand.',
+            difficulty: 2,
+            choices: [
+              { text: 'Brachial artery injury, risking Volkmann ischemic contracture', isCorrect: true },
+              {
+                text: 'Radial artery injury, risking a claw hand from ulnar nerve ischemia',
+                isCorrect: false,
+                explanation: 'The radial artery is not the vessel that runs adjacent to the distal humerus and is not the vessel classically at risk in this fracture.',
+              },
+              {
+                text: 'Axillary artery injury, risking deltoid necrosis',
+                isCorrect: false,
+                explanation: 'The axillary artery is proximal, near the shoulder, far from a supracondylar fracture site.',
+              },
+              {
+                text: 'Ulnar artery injury, risking wrist drop',
+                isCorrect: false,
+                explanation: 'Wrist drop results from radial nerve injury, not ulnar artery compromise, and the ulnar artery is not the vessel at greatest risk here.',
+              },
+              {
+                text: 'Popliteal artery injury, risking compartment syndrome of the leg',
+                isCorrect: false,
+                explanation: 'The popliteal artery is in the lower limb and unrelated to a humeral fracture.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish trapezius (spinal accessory nerve) winging from serratus anterior winging',
+        summary:
+          'The spinal accessory nerve (CN XI) runs through the posterior triangle of the neck, where it is vulnerable during lymph node biopsy, and innervates the trapezius. Injury causes a shoulder droop and lateral/inferior scapular winging (worse with arm abduction) plus weak shoulder shrug — a different pattern from the medial winging produced by long thoracic nerve (serratus anterior) injury.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following a lymph node biopsy in the posterior triangle of the neck, a patient develops a drooping shoulder and lateral displacement of the scapula that worsens with arm abduction, along with weakness shrugging that shoulder. Which nerve was most likely injured?',
+            explanation:
+              'The spinal accessory nerve (CN XI) travels through the posterior triangle of the neck, making it vulnerable during lymph node biopsy or dissection in this region. It innervates the trapezius, which helps rotate and stabilize the scapula during arm abduction and elevates the shoulder (shrug); its paralysis produces a drooped shoulder and a distinct pattern of scapular winging, along with weak shoulder shrug — differing from the medial winging seen with long thoracic nerve (serratus anterior) injury.',
+            difficulty: 3,
+            choices: [
+              { text: 'Spinal accessory nerve (CN XI)', isCorrect: true },
+              {
+                text: 'Long thoracic nerve',
+                isCorrect: false,
+                explanation: 'This causes medial winging from serratus anterior paralysis, classically after axillary (not posterior triangle) dissection, without shoulder shrug weakness.',
+              },
+              {
+                text: 'Dorsal scapular nerve',
+                isCorrect: false,
+                explanation: 'This innervates the rhomboids; injury causes mild winging without the shoulder droop or shrug weakness described.',
+              },
+              {
+                text: 'Suprascapular nerve',
+                isCorrect: false,
+                explanation: 'This affects abduction initiation and external rotation, not scapular position or shoulder shrug.',
+              },
+              {
+                text: 'Phrenic nerve',
+                isCorrect: false,
+                explanation: 'This runs through the neck but innervates the diaphragm; its injury causes diaphragmatic paralysis, unrelated to scapular winging.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Horner syndrome from sympathetic chain compression by a Pancoast tumor',
+        summary:
+          'A Pancoast tumor at the lung apex can invade the cervical sympathetic chain, disrupting oculosympathetic fibers and producing Horner syndrome: ptosis (loss of Müller muscle tone), miosis (unopposed parasympathetic pupillary constriction), and anhidrosis of the ipsilateral face, often together with arm pain from brachial plexus (lower trunk) involvement.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 62-year-old man with a long smoking history presents with drooping of the right eyelid, a smaller right pupil, and decreased sweating on the right side of his face, along with pain radiating down his right arm. Chest imaging reveals an apical lung mass. Compression of which structure best explains the eye and facial findings?',
+            explanation:
+              'This is Horner syndrome (ptosis, miosis, anhidrosis) resulting from an apical lung tumor (Pancoast tumor) compressing the cervical sympathetic chain. Loss of sympathetic tone causes ptosis (paralysis of Müller muscle), miosis (unopposed parasympathetic pupillary constriction), and anhidrosis of the ipsilateral face. The concurrent arm pain reflects local invasion of the adjacent brachial plexus lower trunk.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cervical sympathetic chain', isCorrect: true },
+              {
+                text: 'Recurrent laryngeal nerve',
+                isCorrect: false,
+                explanation: 'Injury here causes hoarseness, not the oculosympathetic findings described.',
+              },
+              {
+                text: 'Phrenic nerve',
+                isCorrect: false,
+                explanation: 'Injury causes diaphragmatic paralysis, not ptosis, miosis, or anhidrosis.',
+              },
+              {
+                text: 'Vagus nerve',
+                isCorrect: false,
+                explanation: 'Vagal injury affects the larynx, heart rate, and GI motility, not the sympathetic eye/face findings described.',
+              },
+              {
+                text: 'Glossopharyngeal nerve',
+                isCorrect: false,
+                explanation: 'This nerve controls taste/pharyngeal sensation and is unrelated to this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize cranial nerve palsies to the cavernous sinus',
+        summary:
+          'The cavernous sinus is traversed by CN III, IV, V1, V2, and VI, along with the internal carotid artery; CN VI lies free within the sinus (rather than in its lateral wall like the others), making it the most vulnerable to compression. Cavernous sinus pathology (thrombosis, pituitary apoplexy, tumor) can produce a combination of ophthalmoplegia, ptosis, and facial sensory loss in the V1/V2 distribution.',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A patient with pituitary apoplexy develops diplopia, ptosis, and a dilated pupil on the right, along with decreased sensation over the right forehead and cheek but normal sensation over the right jaw. Compression of which anatomic structure best explains this combination of findings?',
+            explanation:
+              'The cavernous sinus carries CN III, IV, V1, V2, and VI along with the internal carotid artery. Compression here (e.g., from pituitary apoplexy, since the pituitary sits just medial to the sinus) can affect the oculomotor, trochlear, and abducens nerves (producing ophthalmoplegia and ptosis) as well as the ophthalmic (V1) and maxillary (V2) divisions of the trigeminal nerve (forehead/cheek sensory loss), while sparing the mandibular division (V3, jaw), which does not pass through the cavernous sinus.',
+            difficulty: 3,
+            choices: [
+              { text: 'Cavernous sinus', isCorrect: true },
+              {
+                text: 'Superior orbital fissure alone',
+                isCorrect: false,
+                explanation: 'This transmits CN III, IV, V1, and VI but not V2, which does not explain the cheek sensory loss described.',
+              },
+              {
+                text: 'Jugular foramen',
+                isCorrect: false,
+                explanation: 'This transmits CN IX, X, and XI; injury here would not cause ophthalmoplegia or V1/V2 sensory loss.',
+              },
+              {
+                text: 'Internal acoustic meatus',
+                isCorrect: false,
+                explanation: 'This transmits CN VII and VIII; injury causes facial paralysis and hearing loss, not this presentation.',
+              },
+              {
+                text: 'Foramen ovale alone',
+                isCorrect: false,
+                explanation: 'This transmits only CN V3 (mandibular division), which would affect jaw sensation, not forehead/cheek sensation or eye movements.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish LMN facial nerve palsy (Bell palsy) from UMN facial weakness (stroke) by forehead sparing',
+        summary:
+          'The forehead (frontalis) receives bilateral corticobulbar (UMN) innervation, while the lower face receives only contralateral input. A peripheral (LMN) facial nerve lesion, as in Bell palsy, paralyzes the entire ipsilateral face including the forehead, whereas a central (UMN) lesion, as in stroke, spares the forehead because the opposite corticobulbar tract can still activate it.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient is unable to wrinkle the forehead, close the eye, or move the corner of the mouth on the entire left side of the face. Which of the following is true regarding the localization of this lesion?',
+            explanation:
+              'Complete unilateral facial paralysis including the forehead indicates a lower motor neuron lesion of the facial nerve itself (Bell palsy). This is because the frontalis muscle normally receives bilateral upper motor neuron (corticobulbar) input, so a central (stroke) lesion of one corticobulbar tract would spare the forehead — only a lesion of the facial nerve itself, after the two UMN inputs have converged, paralyzes the entire ipsilateral face including the forehead.',
+            difficulty: 2,
+            choices: [
+              { text: 'This pattern (including forehead involvement) indicates a lower motor neuron lesion of the facial nerve, not a cortical stroke', isCorrect: true },
+              {
+                text: 'This pattern indicates a cortical stroke, since strokes always paralyze the entire contralateral face',
+                isCorrect: false,
+                explanation: 'Strokes classically spare the forehead due to bilateral corticobulbar innervation — the opposite of what is described here.',
+              },
+              {
+                text: 'This pattern is consistent with a lesion of the trigeminal nerve',
+                isCorrect: false,
+                explanation: 'The trigeminal nerve controls facial sensation, not facial movement, and would not explain this motor pattern.',
+              },
+              {
+                text: 'This pattern indicates bilateral facial nerve injury, since only bilateral lesions can affect the forehead',
+                isCorrect: false,
+                explanation: 'A unilateral, complete LMN facial nerve lesion fully explains this presentation without requiring a bilateral process.',
+              },
+              {
+                text: 'This pattern indicates a lesion of the hypoglossal nerve',
+                isCorrect: false,
+                explanation: 'The hypoglossal nerve controls tongue movement, not facial muscles.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link an anterior communicating artery aneurysm to bitemporal hemianopia via optic chiasm compression',
+        summary:
+          'The optic chiasm sits just superior to the pituitary gland and near the anterior communicating artery. An aneurysm here, like a pituitary macroadenoma, can compress the chiasm and selectively damage the crossing nasal retinal fibers (which carry temporal visual field information), producing bitemporal hemianopia.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient presents with progressive loss of peripheral vision in both temporal visual fields, with normal central and nasal field vision. Imaging reveals an anterior communicating artery aneurysm. Compression of which structure best explains this visual field defect?',
+            explanation:
+              'The optic chiasm lies just above the pituitary gland, near the anterior communicating artery, where crossing nasal retinal fibers (which subserve the temporal visual fields) decussate. Compression of the chiasm, whether from an aneurysm at this location or a pituitary mass from below, selectively damages these crossing fibers and produces bitemporal hemianopia, while sparing the uncrossed temporal retinal fibers that carry nasal field vision.',
+            difficulty: 3,
+            choices: [
+              { text: 'Optic chiasm', isCorrect: true },
+              {
+                text: 'Optic nerve',
+                isCorrect: false,
+                explanation: 'A lesion here, proximal to the chiasm, causes monocular vision loss in one eye, not a bitemporal field cut.',
+              },
+              {
+                text: 'Optic tract',
+                isCorrect: false,
+                explanation: 'A lesion here, distal to the chiasm, causes a contralateral homonymous hemianopia, not a bitemporal defect.',
+              },
+              {
+                text: 'Occipital (calcarine) cortex',
+                isCorrect: false,
+                explanation: 'A lesion here causes a contralateral homonymous hemianopia (often with macular sparing), not a bitemporal one.',
+              },
+              {
+                text: 'Lateral geniculate nucleus',
+                isCorrect: false,
+                explanation: 'A lesion here also produces a contralateral homonymous field defect, not a bitemporal one.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a pterion fracture to middle meningeal artery injury and epidural hematoma',
+        summary:
+          'The pterion is the thinnest part of the skull, overlying the middle meningeal artery. A blow to this region can fracture the pterion and lacerate the artery, causing an epidural hematoma — a rapidly expanding, lens (biconvex)-shaped collection between the skull and dura, classically presenting with a lucid interval before deterioration.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient struck in the temple during an assault has a brief loss of consciousness, then a lucid interval, followed by rapid deterioration with a dilated pupil on the side of impact. CT shows a biconvex, lens-shaped hyperdensity that does not cross suture lines. Which vessel is most likely injured, and at which site?',
+            explanation:
+              'The temple overlies the pterion, the thinnest region of the skull, directly beneath which runs the middle meningeal artery. A fracture here can lacerate the artery, producing an epidural hematoma: arterial bleeding accumulates rapidly between the skull and dura, stripping the dura from bone in a lens (biconvex) shape that is limited by suture lines, where the dura is tightly attached. The classic lucid interval reflects initial concussion followed by delayed arterial accumulation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Middle meningeal artery, at the pterion', isCorrect: true },
+              {
+                text: 'Bridging veins, diffusely over the cerebral convexity',
+                isCorrect: false,
+                explanation: 'Injury here causes a subdural hematoma, which is crescent-shaped and can cross suture lines, unlike the finding described.',
+              },
+              {
+                text: 'Anterior cerebral artery, at the falx',
+                isCorrect: false,
+                explanation: 'This vessel supplies the medial brain surface and is not associated with epidural hematoma from temporal trauma.',
+              },
+              {
+                text: 'Basilar artery, at the pons',
+                isCorrect: false,
+                explanation: 'Injury here would be catastrophic and is not associated with an epidural collection.',
+              },
+              {
+                text: 'Cavernous sinus',
+                isCorrect: false,
+                explanation: 'This is a venous, not arterial, structure and is not the classic cause of an acute epidural hematoma.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link bridging vein rupture to subdural hematoma, especially in brain atrophy',
+        summary:
+          'Bridging veins cross the subdural space to drain the cerebral cortex into the dural venous sinuses. In elderly or chronically alcoholic patients, brain atrophy stretches these veins, making them prone to tearing with even minor trauma, producing a slowly accumulating, crescent-shaped subdural hematoma that can cross suture lines.',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'An 80-year-old man with a history of chronic alcohol use falls and strikes his head. Over the next two weeks he develops progressive headache and confusion. CT shows a crescent-shaped hyperdensity that crosses suture lines. Which vessels were most likely torn?',
+            explanation:
+              'Bridging veins traverse the subdural space to drain the cerebral cortex into the dural venous sinuses. Cerebral atrophy, common with aging and chronic alcohol use, stretches these veins over a wider space, increasing their vulnerability to tearing even with minor trauma. The resulting venous bleed accumulates slowly, producing a crescent-shaped subdural hematoma that, unlike an epidural hematoma, is not limited by suture lines.',
+            difficulty: 2,
+            choices: [
+              { text: 'Bridging veins', isCorrect: true },
+              {
+                text: 'Middle meningeal artery',
+                isCorrect: false,
+                explanation: 'Injury here produces a rapidly progressive, lens-shaped epidural hematoma limited by suture lines, not the finding described.',
+              },
+              {
+                text: 'Posterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'Occlusion here causes lateral medullary (Wallenberg) syndrome, an ischemic stroke, not a hematoma.',
+              },
+              {
+                text: 'Anterior communicating artery',
+                isCorrect: false,
+                explanation: 'Aneurysmal rupture here causes subarachnoid hemorrhage, presenting with sudden "thunderclap" headache, not a slowly progressive crescent-shaped collection.',
+              },
+              {
+                text: 'Superior sagittal sinus',
+                isCorrect: false,
+                explanation: 'Thrombosis here causes venous infarction and increased intracranial pressure, not a subdural hematoma.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a middle cerebral artery stroke by its motor, sensory, and language deficits',
+        summary:
+          'The middle cerebral artery supplies the lateral surface of the cerebral hemisphere, including the motor and sensory cortex representing the face and arm (more than the leg) and, in the dominant hemisphere, the language areas. Occlusion produces contralateral face/arm-predominant weakness and sensory loss, with aphasia if the dominant hemisphere is affected.',
+        discipline: 'Nervous system',
+        yieldWeight: 60,
+        variations: [
+          {
+            stem: 'A patient suddenly develops right-sided weakness and sensory loss affecting the face and arm more than the leg, along with difficulty producing and understanding speech. Occlusion of which vessel is most likely responsible?',
+            explanation:
+              'The middle cerebral artery supplies the lateral cerebral cortex, where the motor and sensory homunculus devotes a larger area to the face and hand/arm than the leg, which is instead supplied by the anterior cerebral artery along the medial surface. In the dominant (usually left) hemisphere, the MCA territory also includes the language areas (Broca and Wernicke), explaining the aphasia.',
+            difficulty: 2,
+            choices: [
+              { text: 'Middle cerebral artery', isCorrect: true },
+              {
+                text: 'Anterior cerebral artery',
+                isCorrect: false,
+                explanation: 'This supplies the medial cortex, producing leg-predominant weakness and sensory loss — the opposite pattern from the one described.',
+              },
+              {
+                text: 'Posterior cerebral artery',
+                isCorrect: false,
+                explanation: 'This supplies the occipital lobe, causing visual field deficits (homonymous hemianopia), not motor/language deficits.',
+              },
+              {
+                text: 'Posterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This supplies the lateral medulla and cerebellum, causing ataxia, vertigo, and crossed sensory findings, not this cortical pattern.',
+              },
+              {
+                text: 'Anterior spinal artery',
+                isCorrect: false,
+                explanation: 'This supplies the spinal cord, not the cerebral cortex, and is unrelated to this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize an anterior cerebral artery stroke by leg-predominant weakness',
+        summary:
+          'The anterior cerebral artery supplies the medial surface of the frontal and parietal lobes, including the motor/sensory cortex representing the leg. Occlusion causes contralateral leg-predominant weakness and sensory loss, with relative sparing of the face and arm, and can also cause urinary incontinence and behavioral changes from frontal lobe involvement.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient develops sudden weakness and sensory loss of the left leg, with relative sparing of the left face and arm, along with new urinary incontinence. Occlusion of which vessel best explains this presentation?',
+            explanation:
+              'The anterior cerebral artery supplies the medial surface of the cerebral hemisphere, where the motor and sensory homunculus for the leg is located (the leg representation "folds over" onto the medial surface). Occlusion therefore produces leg-predominant contralateral weakness and sensory loss, sparing the face/arm (MCA territory), and frontal lobe involvement can cause urinary incontinence and personality changes.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior cerebral artery', isCorrect: true },
+              {
+                text: 'Middle cerebral artery',
+                isCorrect: false,
+                explanation: 'This produces face/arm-predominant weakness, the opposite pattern from the leg-predominant deficit described.',
+              },
+              {
+                text: 'Posterior cerebral artery',
+                isCorrect: false,
+                explanation: 'This produces visual field deficits from occipital lobe ischemia, not limb weakness.',
+              },
+              {
+                text: 'Basilar artery',
+                isCorrect: false,
+                explanation: 'Occlusion here causes brainstem findings (e.g., locked-in syndrome, cranial nerve deficits), not isolated leg-predominant cortical weakness.',
+              },
+              {
+                text: 'Anterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This supplies the lateral pons and cerebellum, causing facial paralysis, hearing loss, and ataxia, not leg-predominant cortical weakness.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a posterior cerebral artery stroke by macular-sparing homonymous hemianopia',
+        summary:
+          'The posterior cerebral artery supplies the occipital lobe, including the primary visual cortex. Occlusion causes a contralateral homonymous hemianopia; the macula is often spared because it has some collateral blood supply from the middle cerebral artery near the occipital pole.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient develops loss of the left half of the visual field in both eyes, with preservation of central (macular) vision. Occlusion of which vessel is the most likely cause?',
+            explanation:
+              'The posterior cerebral artery supplies the occipital lobe and primary visual cortex, and its occlusion classically produces a contralateral homonymous hemianopia. Central (macular) vision is frequently spared because the occipital pole, where macular fibers project, receives some collateral supply from the middle cerebral artery.',
+            difficulty: 2,
+            choices: [
+              { text: 'Posterior cerebral artery', isCorrect: true },
+              {
+                text: 'Middle cerebral artery',
+                isCorrect: false,
+                explanation: 'This produces contralateral face/arm weakness and aphasia, not an isolated homonymous hemianopia with macular sparing.',
+              },
+              {
+                text: 'Anterior cerebral artery',
+                isCorrect: false,
+                explanation: 'This produces contralateral leg-predominant weakness, not a visual field defect.',
+              },
+              {
+                text: 'Ophthalmic artery',
+                isCorrect: false,
+                explanation: 'Occlusion causes monocular, not homonymous, vision loss in one eye only.',
+              },
+              {
+                text: 'Posterior communicating artery',
+                isCorrect: false,
+                explanation: 'Aneurysms here classically compress CN III, causing a "down and out" eye with a blown pupil, not a homonymous visual field defect.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize lateral medullary (Wallenberg) syndrome from PICA occlusion',
+        summary:
+          'The posterior inferior cerebellar artery (PICA) supplies the lateral medulla and inferior cerebellum. Occlusion causes lateral medullary (Wallenberg) syndrome: dysphagia and hoarseness (nucleus ambiguus), ipsilateral facial and contralateral body pain/temperature loss (spinal trigeminal nucleus and spinothalamic tract), ataxia (cerebellum), and ipsilateral Horner syndrome (descending sympathetic fibers) — with no motor weakness, since the corticospinal tract runs more medially.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient presents with sudden vertigo, difficulty swallowing, and hoarseness, along with loss of pain and temperature sensation on the left side of the face and the right side of the body, ataxia, and left-sided ptosis and miosis. Strength is normal throughout. Occlusion of which artery best explains this presentation?',
+            explanation:
+              'This is lateral medullary (Wallenberg) syndrome, from occlusion of the posterior inferior cerebellar artery (PICA), which supplies the lateral medulla and inferior cerebellum. It damages the nucleus ambiguus (dysphagia, hoarseness), the spinal trigeminal nucleus (ipsilateral facial) and spinothalamic tract (contralateral body) pain/temperature pathways, cerebellar peduncles (ataxia), and descending sympathetic fibers (ipsilateral Horner syndrome) — while sparing the more medially located corticospinal tract, explaining the preserved strength.',
+            difficulty: 3,
+            choices: [
+              { text: 'Posterior inferior cerebellar artery (PICA)', isCorrect: true },
+              {
+                text: 'Anterior spinal artery',
+                isCorrect: false,
+                explanation: 'Occlusion here causes medial medullary syndrome, with contralateral limb weakness and loss of proprioception/vibration plus tongue deviation — a different pattern that notably includes motor involvement.',
+              },
+              {
+                text: 'Middle cerebral artery',
+                isCorrect: false,
+                explanation: 'This supplies the cerebral cortex, producing cortical deficits like aphasia and face/arm weakness, not this brainstem pattern.',
+              },
+              {
+                text: 'Basilar artery (full occlusion)',
+                isCorrect: false,
+                explanation: 'This causes a much more severe, often bilateral brainstem syndrome (e.g., locked-in syndrome), not this discrete lateral medullary pattern.',
+              },
+              {
+                text: 'Anterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'Occlusion here causes lateral pontine syndrome, which additionally involves facial paralysis and hearing loss (facial and vestibulocochlear nerve involvement), not seen here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize uncal herniation from ipsilateral CN III compression',
+        summary:
+          'A rapidly expanding supratentorial mass (e.g., epidural or subdural hematoma) can push the medial temporal lobe (uncus) over the tentorial edge, compressing the oculomotor nerve (CN III) as it exits the midbrain, and then the cerebral peduncle. This produces an ipsilateral dilated, nonreactive pupil ("blown pupil") with ptosis and down-and-out eye deviation, followed by contralateral hemiparesis.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient with a rapidly expanding epidural hematoma develops a dilated, nonreactive right pupil with the right eye deviated down and out, followed by left-sided hemiparesis. Which process best explains this sequence of findings?',
+            explanation:
+              'This is uncal (transtentorial) herniation: the expanding hematoma pushes the medial temporal lobe (uncus) over the edge of the tentorium cerebelli, compressing the oculomotor nerve (CN III) as it exits the midbrain. This produces the ipsilateral "blown pupil" (loss of parasympathetic fibers, which run superficially on CN III) with ptosis and a down-and-out eye. Continued herniation compresses the cerebral peduncle, causing contralateral hemiparesis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Uncal (transtentorial) herniation compressing CN III and the cerebral peduncle', isCorrect: true },
+              {
+                text: 'Cerebellar tonsillar herniation through the foramen magnum',
+                isCorrect: false,
+                explanation: 'This compresses the medulla, causing cardiorespiratory arrest, not the pupillary and hemiparesis findings described.',
+              },
+              {
+                text: 'Central herniation of the diencephalon',
+                isCorrect: false,
+                explanation: 'This causes bilateral, symmetric findings and small, reactive-then-fixed pupils — a different pattern from the unilateral blown pupil described.',
+              },
+              {
+                text: 'Subfalcine herniation of the cingulate gyrus under the falx cerebri',
+                isCorrect: false,
+                explanation: 'This classically compresses the anterior cerebral artery, causing leg weakness, not a blown pupil.',
+              },
+              {
+                text: 'Middle cerebral artery occlusion',
+                isCorrect: false,
+                explanation: 'This produces cortical deficits (face/arm weakness, aphasia) without the pupillary findings characteristic of herniation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize an anterior wall MI to left anterior descending artery occlusion',
+        summary:
+          'The left anterior descending (LAD) artery supplies the anterior wall of the left ventricle and the anterior two-thirds of the interventricular septum. It is the most commonly occluded coronary vessel and, given the extensive myocardium it supplies, is sometimes called the "widow maker" — occlusion produces ST elevations in the anterior precordial leads (V1-V4).',
+        discipline: 'Cardiovascular',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient presents with crushing chest pain and an ECG showing ST-segment elevations in leads V1 through V4. Occlusion of which coronary artery is most likely responsible?',
+            explanation:
+              'Leads V1-V4 reflect the anterior wall of the left ventricle and anterior interventricular septum, territory supplied by the left anterior descending (LAD) artery. The LAD is the most frequently occluded coronary artery in myocardial infarction and, because it supplies such a large area of myocardium, is often referred to as the "widow maker."',
+            difficulty: 2,
+            choices: [
+              { text: 'Left anterior descending artery', isCorrect: true },
+              {
+                text: 'Right coronary artery',
+                isCorrect: false,
+                explanation: 'This supplies the inferior wall (leads II, III, aVF) and, in most people, the SA and AV nodes; its occlusion would not produce anterior lead changes.',
+              },
+              {
+                text: 'Left circumflex artery',
+                isCorrect: false,
+                explanation: 'This supplies the lateral wall (leads I, aVL, V5-V6), a different territory than the one described.',
+              },
+              {
+                text: 'Posterior descending artery',
+                isCorrect: false,
+                explanation: 'This supplies the posterior/inferior wall, usually as a branch of the RCA, not the anterior leads.',
+              },
+              {
+                text: 'Marginal artery',
+                isCorrect: false,
+                explanation: 'This branch of the circumflex supplies the lateral/posterior left ventricle, not the anterior leads.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link right coronary artery occlusion to inferior MI and SA/AV nodal dysfunction',
+        summary:
+          'The right coronary artery (RCA) supplies the inferior wall of the left ventricle (leads II, III, aVF) and, in most individuals, the SA and AV nodes. Occlusion can therefore cause inferior ST elevations along with bradyarrhythmias and heart block, in addition to chest pain.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient with an acute inferior wall myocardial infarction (ST elevations in leads II, III, and aVF) develops new bradycardia and a high-grade AV block. Occlusion of which coronary artery, and the resulting ischemia of which additional structures, best explains the arrhythmia?',
+            explanation:
+              'The right coronary artery supplies the inferior wall of the left ventricle (leads II, III, aVF) and, in the majority of people, gives rise to branches supplying the SA node and AV node. Occlusion causing an inferior MI can therefore also cause ischemia of the conduction system itself, producing sinus bradycardia and AV block in addition to the myocardial infarction.',
+            difficulty: 2,
+            choices: [
+              { text: 'Right coronary artery, supplying the SA and AV nodes', isCorrect: true },
+              {
+                text: 'Left anterior descending artery, supplying the bundle of His only',
+                isCorrect: false,
+                explanation: 'The LAD supplies the anterior septum and part of the bundle branches, but inferior ST elevations and typical SA/AV nodal ischemia localize to the RCA, not the LAD.',
+              },
+              {
+                text: 'Left circumflex artery, supplying the sinoatrial node in all patients',
+                isCorrect: false,
+                explanation: 'The circumflex supplies the SA node in only a minority of people and supplies the lateral wall, not the inferior wall described here.',
+              },
+              {
+                text: 'Left main coronary artery, supplying the entire left ventricle',
+                isCorrect: false,
+                explanation: 'Occlusion here would be catastrophic and far more extensive than an isolated inferior MI.',
+              },
+              {
+                text: 'Posterior circumflex artery',
+                isCorrect: false,
+                explanation: 'This is not a standard, distinctly named coronary artery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall diaphragm opening levels and link the esophageal hiatus to hiatal hernia',
+        summary:
+          'The diaphragm has three major openings at three vertebral levels: the caval opening (T8, for the IVC), the esophageal hiatus (T10, for the esophagus and vagal trunks), and the aortic hiatus (T12, for the aorta, thoracic duct, and azygos vein). Herniation of the stomach through a widened esophageal hiatus produces a hiatal hernia.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An obese patient with chronic reflux is found on imaging to have a portion of the stomach protruding upward through the diaphragm alongside the esophagus, into the thorax. Widening of the diaphragmatic opening at which vertebral level allowed this to occur?',
+            explanation:
+              'The esophagus and vagal trunks pass through the esophageal hiatus of the diaphragm at the T10 vertebral level. Widening of this hiatus allows part of the stomach to herniate upward alongside the esophagus into the thorax, producing a hiatal hernia — distinct from the caval opening (T8, IVC) and the aortic hiatus (T12, aorta/thoracic duct/azygos vein), which are not involved in this process.',
+            difficulty: 2,
+            choices: [
+              { text: 'T10 (the esophageal hiatus)', isCorrect: true },
+              {
+                text: 'T8 (the caval opening)',
+                isCorrect: false,
+                explanation: 'This opening transmits the inferior vena cava, not the stomach or esophagus.',
+              },
+              {
+                text: 'T12 (the aortic hiatus)',
+                isCorrect: false,
+                explanation: 'This opening transmits the aorta, thoracic duct, and azygos vein — structures that stay fixed in position with the vertebral column, unlike the esophageal hiatus.',
+              },
+              {
+                text: 'T6',
+                isCorrect: false,
+                explanation: 'This is not the level of any major diaphragmatic opening.',
+              },
+              {
+                text: 'L1',
+                isCorrect: false,
+                explanation: 'This is below the diaphragm entirely, near structures like the renal arteries, not a diaphragmatic opening.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link thoracic duct injury during neck/thoracic surgery to chylothorax',
+        summary:
+          'The thoracic duct ascends through the posterior mediastinum and arches over the left subclavian artery to drain into the venous system at the junction of the left subclavian and internal jugular veins (the left venous angle). Injury here, during neck or thoracic surgery, releases lymphatic fluid (chyle) into the pleural space, producing a milky pleural effusion (chylothorax).',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following left-sided neck dissection, a patient develops a milky-white pleural effusion. Injury to which structure, and at what site, is the most likely cause?',
+            explanation:
+              'The thoracic duct arches over the left subclavian artery to drain lymph (chyle) into the venous system at the junction of the left subclavian and internal jugular veins (the left venous angle), placing it at risk during left-sided neck or thoracic surgery. Injury releases chyle, rich in dietary lipids absorbed by intestinal lymphatics, into the pleural space, producing the characteristic milky-white effusion (chylothorax).',
+            difficulty: 3,
+            choices: [
+              { text: 'Thoracic duct, near the left venous angle', isCorrect: true },
+              {
+                text: 'Azygos vein, near its arch over the right main bronchus',
+                isCorrect: false,
+                explanation: 'Injury here would cause a bloody, not milky, effusion, since it carries venous blood, not lymph.',
+              },
+              {
+                text: 'Right lymphatic duct, near the right venous angle',
+                isCorrect: false,
+                explanation: 'This duct drains only the right upper body and would not be at risk during a left-sided procedure.',
+              },
+              {
+                text: 'Recurrent laryngeal nerve, near the aortic arch',
+                isCorrect: false,
+                explanation: 'Injury here causes hoarseness, not a pleural effusion.',
+              },
+              {
+                text: 'Internal jugular vein alone',
+                isCorrect: false,
+                explanation: 'Venous injury would cause a hemothorax (bloody effusion), not the milky appearance of chyle.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize left recurrent laryngeal nerve injury from an aortic arch process',
+        summary:
+          'Unlike the right recurrent laryngeal nerve, which loops under the right subclavian artery, the left recurrent laryngeal nerve loops under the arch of the aorta (at the ligamentum arteriosum) before ascending to the larynx. An aortic arch aneurysm can therefore compress the left, but not the right, recurrent laryngeal nerve, causing hoarseness.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a thoracic aortic arch aneurysm develops hoarseness. Compression of the recurrent laryngeal nerve at which specific location explains why this occurs on the left side rather than the right?',
+            explanation:
+              'The left recurrent laryngeal nerve has a longer intrathoracic course than the right: it loops underneath the arch of the aorta at the ligamentum arteriosum before ascending to the larynx, whereas the right recurrent laryngeal nerve loops under the right subclavian artery, higher and further from the aortic arch. An aortic arch aneurysm can stretch or compress the left recurrent laryngeal nerve at this point, producing hoarseness that would not occur with an isolated aortic arch process on the right.',
+            difficulty: 3,
+            choices: [
+              { text: 'Where the left recurrent laryngeal nerve loops under the aortic arch at the ligamentum arteriosum', isCorrect: true },
+              {
+                text: 'Where the right recurrent laryngeal nerve loops under the right subclavian artery',
+                isCorrect: false,
+                explanation: 'This is the course of the right, not left, recurrent laryngeal nerve, and would not be affected by an aortic arch aneurysm.',
+              },
+              {
+                text: 'Where the vagus nerve exits the jugular foramen',
+                isCorrect: false,
+                explanation: 'This is too high in the neck to be affected by an intrathoracic aortic arch process.',
+              },
+              {
+                text: 'Where the phrenic nerve crosses the pericardium',
+                isCorrect: false,
+                explanation: 'Injury here affects the diaphragm, not the voice.',
+              },
+              {
+                text: 'Where the superior laryngeal nerve branches from the vagus near the carotid bifurcation',
+                isCorrect: false,
+                explanation: 'This is also too high in the neck to be affected by an aortic arch aneurysm, and injury here would cause a different (monotone, easily fatigued) voice change.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Explain the shifting pain pattern of acute appendicitis',
+        summary:
+          'Early appendiceal distension activates visceral afferents traveling with sympathetic fibers back to the T10 spinal level, producing vague, poorly localized periumbilical pain. As inflammation progresses to involve the adjacent parietal peritoneum, somatic afferents produce sharp, well-localized pain at McBurney point in the right lower quadrant.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient initially describes vague, crampy pain around the umbilicus that, over several hours, becomes a sharp, well-localized pain in the right lower quadrant, worsened by movement. Which mechanism best explains this shift in pain character and location?',
+            explanation:
+              'Early distension of the appendix stimulates visceral afferent fibers that travel alongside sympathetic nerves back to the T10 spinal cord level (the same level supplying the periumbilical dermatome), producing vague, poorly localized pain there. As inflammation progresses and irritates the adjacent parietal peritoneum overlying the appendix, somatic afferents, which localize precisely, produce sharp pain at McBurney point in the right lower quadrant.',
+            difficulty: 2,
+            choices: [
+              { text: 'Visceral (T10) referred periumbilical pain progressing to somatic parietal peritoneal pain at McBurney point', isCorrect: true },
+              {
+                text: 'Direct bacterial spread from the umbilicus to the right lower quadrant',
+                isCorrect: false,
+                explanation: 'The appendix and umbilicus are not anatomically continuous, and infection does not spread this way.',
+              },
+              {
+                text: 'Referred pain from the diaphragm via the phrenic nerve',
+                isCorrect: false,
+                explanation: 'This would refer pain to the shoulder, not the abdomen, and is unrelated to appendicitis.',
+              },
+              {
+                text: 'Somatic pain from the start, becoming visceral later',
+                isCorrect: false,
+                explanation: 'This reverses the actual sequence; visceral pain occurs first, followed by somatic localization.',
+              },
+              {
+                text: 'Pain from ureteral obstruction radiating to the right lower quadrant',
+                isCorrect: false,
+                explanation: 'This describes renal colic, a different condition from appendicitis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize an indirect inguinal hernia to the deep inguinal ring, lateral to the inferior epigastric vessels',
+        summary:
+          'An indirect inguinal hernia follows the path of testicular descent through the deep (internal) inguinal ring, lateral to the inferior epigastric vessels, and travels through the inguinal canal covered by all three spermatic fascial layers; it results from failure of the processus vaginalis to obliterate, and is more common in males and in infants.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 6-month-old boy is noted to have a bulge in the groin that extends into the scrotum, thought to result from persistence of an embryonic peritoneal outpouching. Relative to the inferior epigastric vessels, where does this type of hernia pass, and through which structure?',
+            explanation:
+              'An indirect inguinal hernia results from failure of the processus vaginalis (the peritoneal outpouching that normally guides testicular descent) to obliterate, leaving a preformed sac. It passes through the deep inguinal ring, lateral to the inferior epigastric vessels, and travels the length of the inguinal canal (potentially into the scrotum), covered by all three layers of spermatic fascia — explaining both its congenital origin and its ability to reach the scrotum in an infant.',
+            difficulty: 2,
+            choices: [
+              { text: 'Lateral to the inferior epigastric vessels, through the deep inguinal ring (following a patent processus vaginalis)', isCorrect: true },
+              {
+                text: 'Medial to the inferior epigastric vessels, through Hesselbach triangle',
+                isCorrect: false,
+                explanation: 'This describes a direct inguinal hernia, which is acquired from a weakened abdominal wall floor and does not follow the processus vaginalis.',
+              },
+              {
+                text: 'Below the inguinal ligament, medial to the femoral vein',
+                isCorrect: false,
+                explanation: 'This describes a femoral hernia, which passes through the femoral canal, not the inguinal canal.',
+              },
+              {
+                text: 'Through the umbilical ring',
+                isCorrect: false,
+                explanation: 'This describes an umbilical hernia, from failure of the umbilical ring to close — a distinct entity unrelated to the processus vaginalis.',
+              },
+              {
+                text: 'Through the linea alba above the umbilicus',
+                isCorrect: false,
+                explanation: 'This describes an epigastric hernia, unrelated to the processus vaginalis or the groin.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a direct inguinal hernia to Hesselbach triangle, medial to the inferior epigastric vessels',
+        summary:
+          'A direct inguinal hernia results from acquired weakness of the transversalis fascia forming the floor of Hesselbach triangle (bounded by the inferior epigastric vessels laterally, the rectus abdominis medially, and the inguinal ligament inferiorly), and protrudes medial to the inferior epigastric vessels — more common in older men with weakened abdominal musculature, and it does not typically enter the scrotum.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 68-year-old man with chronic cough and a history of heavy lifting develops a groin bulge that protrudes directly through a weakened area of the abdominal wall, medial to the inferior epigastric vessels, and rarely enters the scrotum. Through which anatomic space did this hernia most likely pass?',
+            explanation:
+              'This is a direct inguinal hernia, which pushes through an acquired weakness in the transversalis fascia forming the floor of Hesselbach triangle — bounded by the inferior epigastric vessels laterally, the lateral edge of the rectus abdominis medially, and the inguinal ligament inferiorly. Because it emerges medial to the inferior epigastric vessels and does not follow the pathway of the spermatic cord through the deep ring, it rarely extends into the scrotum, unlike an indirect hernia.',
+            difficulty: 2,
+            choices: [
+              { text: 'Hesselbach triangle, medial to the inferior epigastric vessels', isCorrect: true },
+              {
+                text: 'The deep inguinal ring, lateral to the inferior epigastric vessels',
+                isCorrect: false,
+                explanation: 'This describes the path of an indirect inguinal hernia, which follows the spermatic cord and commonly reaches the scrotum.',
+              },
+              {
+                text: 'The femoral canal, medial to the femoral vein',
+                isCorrect: false,
+                explanation: 'This describes a femoral hernia, located below the inguinal ligament, not through the abdominal wall above it.',
+              },
+              {
+                text: 'The obturator canal',
+                isCorrect: false,
+                explanation: 'Obturator hernias are rare, occurring in the pelvis and presenting with medial thigh pain, unrelated to this groin bulge.',
+              },
+              {
+                text: 'The umbilical ring',
+                isCorrect: false,
+                explanation: 'Umbilical hernias occur at the umbilicus, not the groin.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a femoral hernia to the femoral canal, medial to the femoral vein',
+        summary:
+          'A femoral hernia passes below the inguinal ligament through the femoral canal, medial to the femoral vein (lateral to medial: femoral nerve, artery, vein, empty space/canal). It is more common in women and carries a high risk of incarceration and strangulation because the femoral canal is a rigid, narrow space.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 55-year-old woman presents with a tender bulge just below the inguinal ligament, medial to a palpable femoral pulse. Imaging confirms bowel has become incarcerated within this space. Through which structure did this hernia most likely pass, and why is it prone to strangulation?',
+            explanation:
+              'This is a femoral hernia, which protrudes through the femoral canal below the inguinal ligament, medial to the femoral vein (and further medial still to the femoral artery, palpated as the pulse). Femoral hernias are more common in women and carry a high risk of incarceration and strangulation because the femoral canal is bounded by rigid structures (the inguinal ligament, lacunar ligament, and pectineal ligament), leaving little room for the herniated bowel to be reduced.',
+            difficulty: 2,
+            choices: [
+              { text: 'Femoral canal, medial to the femoral vein — high strangulation risk due to the canal’s rigid boundaries', isCorrect: true },
+              {
+                text: 'Deep inguinal ring, lateral to the inferior epigastric vessels',
+                isCorrect: false,
+                explanation: 'This describes an indirect inguinal hernia, located above (not below) the inguinal ligament.',
+              },
+              {
+                text: 'Hesselbach triangle, medial to the inferior epigastric vessels',
+                isCorrect: false,
+                explanation: 'This describes a direct inguinal hernia, also above the inguinal ligament.',
+              },
+              {
+                text: 'Obturator canal, within the pelvis',
+                isCorrect: false,
+                explanation: 'Obturator hernias present with medial thigh pain from obturator nerve compression, not a groin bulge below the inguinal ligament.',
+              },
+              {
+                text: 'Umbilical ring',
+                isCorrect: false,
+                explanation: 'Umbilical hernias occur at the umbilicus, unrelated to the femoral vessels or inguinal ligament.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the cystic artery within Calot triangle during cholecystectomy',
+        summary:
+          'Calot triangle is bounded by the cystic duct, the common hepatic duct, and the inferior edge of the liver; the cystic artery (a branch of the right hepatic artery) is typically found within this triangle and must be identified and ligated during cholecystectomy to avoid hemorrhage or injury to the bile ducts.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'During a laparoscopic cholecystectomy, the surgeon carefully dissects the triangular area bounded by the cystic duct, the common hepatic duct, and the inferior liver edge in order to safely identify and ligate a key vessel before removing the gallbladder. Which vessel is being identified?',
+            explanation:
+              'This triangular area is Calot triangle, bounded by the cystic duct, the common hepatic duct, and the inferior border of the liver. It characteristically contains the cystic artery, a branch of the right hepatic artery supplying the gallbladder, which must be identified and ligated during cholecystectomy — careful dissection here helps the surgeon avoid inadvertent injury to the common bile duct or hepatic artery.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cystic artery', isCorrect: true },
+              {
+                text: 'Splenic artery',
+                isCorrect: false,
+                explanation: 'This supplies the spleen and runs along the superior border of the pancreas, unrelated to the gallbladder or Calot triangle.',
+              },
+              {
+                text: 'Left gastric artery',
+                isCorrect: false,
+                explanation: 'This supplies the stomach and distal esophagus, not the gallbladder.',
+              },
+              {
+                text: 'Gastroduodenal artery',
+                isCorrect: false,
+                explanation: 'This runs posterior to the duodenum and supplies the stomach/duodenum/pancreas, at risk during duodenal ulcer perforation, not cholecystectomy.',
+              },
+              {
+                text: 'Right renal artery',
+                isCorrect: false,
+                explanation: 'This supplies the kidney and is anatomically unrelated to the biliary tree.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the risk of pancreatic tail injury during splenectomy',
+        summary:
+          'The tail of the pancreas lies in close proximity to the splenic hilum, with the splenic artery and vein running along its posterosuperior border. During splenectomy, ligation of these vessels near the hilum risks inadvertent injury to the adjacent pancreatic tail, which can cause postoperative pancreatitis or a pancreatic fistula.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following a splenectomy for traumatic splenic rupture, a patient develops elevated amylase and lipase along with left upper quadrant pain. Injury to which adjacent structure, encountered during ligation of the splenic vessels, most likely explains this complication?',
+            explanation:
+              'The tail of the pancreas lies close to the splenic hilum, with the splenic artery and vein running directly along its posterosuperior surface as they approach the spleen. During splenectomy, ligation of these vessels near the hilum can inadvertently injure the adjacent pancreatic tail, leading to postoperative pancreatitis or a pancreatic fistula, as suggested by the elevated pancreatic enzymes.',
+            difficulty: 2,
+            choices: [
+              { text: 'Tail of the pancreas', isCorrect: true },
+              {
+                text: 'Head of the pancreas',
+                isCorrect: false,
+                explanation: 'This portion lies near the duodenum, far from the splenic hilum, and would not be at risk during splenectomy.',
+              },
+              {
+                text: 'Left kidney',
+                isCorrect: false,
+                explanation: 'Although near the spleen, injury here would not elevate amylase/lipase.',
+              },
+              {
+                text: 'Left adrenal gland',
+                isCorrect: false,
+                explanation: 'Injury here would not elevate pancreatic enzymes.',
+              },
+              {
+                text: 'Greater curvature of the stomach',
+                isCorrect: false,
+                explanation: 'While near the spleen (via the short gastric vessels), injury here would not elevate amylase/lipase.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the ureter’s relationship to the uterine artery ("water under the bridge")',
+        summary:
+          'As the ureter courses through the pelvis toward the bladder, it passes directly inferior to the uterine artery near the lateral cervix/vaginal fornix — a relationship remembered as "water [ureter] under the bridge [uterine artery]." This proximity places the ureter at risk of injury or inadvertent ligation during hysterectomy.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'During a hysterectomy, the surgeon must take care while ligating the uterine artery, because a nearby structure passing directly beneath it is at risk of injury. Which structure is this, and what relationship helps surgeons remember its location?',
+            explanation:
+              'The ureter passes just inferior to the uterine artery as it travels through the pelvis near the lateral cervix, a relationship commonly remembered by the mnemonic "water [the ureter] under the bridge [the uterine artery]." Because of this close proximity, the ureter is at risk of inadvertent ligation or transection during hysterectomy, particularly when clamping the uterine vessels.',
+            difficulty: 2,
+            choices: [
+              { text: 'The ureter', isCorrect: true },
+              {
+                text: 'The ovarian artery',
+                isCorrect: false,
+                explanation: 'This vessel travels through the suspensory ligament of the ovary, at risk during oophorectomy, but it does not have the "water under the bridge" relationship with the uterine artery.',
+              },
+              {
+                text: 'The obturator nerve',
+                isCorrect: false,
+                explanation: 'This nerve runs along the pelvic sidewall and is at risk during pelvic lymphadenectomy, not specifically during uterine artery ligation.',
+              },
+              {
+                text: 'The round ligament of the uterus',
+                isCorrect: false,
+                explanation: 'This structure is typically ligated intentionally early in hysterectomy and is not the structure at risk from the uterine artery specifically.',
+              },
+              {
+                text: 'The internal pudendal artery',
+                isCorrect: false,
+                explanation: 'This vessel supplies the perineum and is not in this specific anatomic relationship with the uterine artery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link portal hypertension to esophageal varices via the portosystemic anastomosis at the gastroesophageal junction',
+        summary:
+          'The left gastric vein (portal circulation) anastomoses with the esophageal veins (draining into the azygos vein, systemic circulation) at the gastroesophageal junction. In portal hypertension, elevated pressure is transmitted through this portosystemic anastomosis, engorging the esophageal venous plexus and producing esophageal varices, which can rupture and cause life-threatening hemorrhage.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient with cirrhosis and portal hypertension develops hematemesis. Endoscopy reveals dilated, tortuous submucosal veins at the distal esophagus. Elevated pressure transmitted through an anastomosis between which two venous systems best explains this finding?',
+            explanation:
+              'In portal hypertension, elevated pressure in the portal venous system is transmitted through the portosystemic anastomosis at the gastroesophageal junction, where the left gastric vein (portal system) connects with the esophageal veins (which drain into the azygos vein, part of the systemic system). This engorges and dilates the submucosal esophageal venous plexus, producing esophageal varices that are prone to rupture and severe upper GI bleeding.',
+            difficulty: 2,
+            choices: [
+              { text: 'The left gastric vein (portal) and the esophageal veins draining into the azygos vein (systemic)', isCorrect: true },
+              {
+                text: 'The superior and inferior mesenteric veins',
+                isCorrect: false,
+                explanation: 'Both of these are part of the portal system itself and do not form a portosystemic anastomosis with each other.',
+              },
+              {
+                text: 'The splenic vein and the left renal vein',
+                isCorrect: false,
+                explanation: 'While anatomically related, this connection is not the site of esophageal varix formation.',
+              },
+              {
+                text: 'The umbilical vein and the epigastric veins',
+                isCorrect: false,
+                explanation: 'This anastomosis produces caput medusae (dilated periumbilical veins), not esophageal varices.',
+              },
+              {
+                text: 'The superior and middle rectal veins',
+                isCorrect: false,
+                explanation: 'This anastomosis produces hemorrhoids, not esophageal varices.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify retroperitoneal organs ("SAD PUCKER")',
+        summary:
+          'Most abdominal organs are intraperitoneal, but several lie retroperitoneally, behind the parietal peritoneum — commonly recalled with the mnemonic "SAD PUCKER": Suprarenal (adrenal) glands, Aorta/IVC, Duodenum (2nd-4th parts), Pancreas (except tail), Ureters, Colon (ascending/descending), Kidneys, Esophagus (thoracic portion), and Rectum. This matters clinically, since retroperitoneal structures are better visualized on CT than ultrasound and retroperitoneal injuries can be occult on exams limited to the peritoneal cavity.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A trauma patient has a penetrating injury to the flank. Which of the following structures is most likely to be injured given its retroperitoneal location, making it prone to being missed on a diagnostic peritoneal lavage that examines only the peritoneal cavity?',
+            explanation:
+              'The ascending and descending colon are secondarily retroperitoneal structures, lying behind the parietal peritoneum along the posterior abdominal wall (flanks) — along with the duodenum, pancreas (except the tail), kidneys, ureters, and great vessels (mnemonic "SAD PUCKER"). Because these structures lie outside the peritoneal cavity proper, injury to them can be missed by procedures that only assess the peritoneal cavity, such as diagnostic peritoneal lavage.',
+            difficulty: 2,
+            choices: [
+              { text: 'The ascending colon', isCorrect: true },
+              {
+                text: 'The stomach',
+                isCorrect: false,
+                explanation: 'This is an intraperitoneal structure, suspended by the greater and lesser omenta, and would generally be well-visualized within the peritoneal cavity.',
+              },
+              {
+                text: 'The spleen',
+                isCorrect: false,
+                explanation: 'This is an intraperitoneal structure, and injury here would typically produce free intraperitoneal blood, detectable by peritoneal lavage.',
+              },
+              {
+                text: 'The jejunum',
+                isCorrect: false,
+                explanation: 'This is an intraperitoneal structure suspended by the mesentery, well within the peritoneal cavity.',
+              },
+              {
+                text: 'The liver',
+                isCorrect: false,
+                explanation: 'This is largely an intraperitoneal structure (aside from a small bare area), and significant injury would generally produce free intraperitoneal blood.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the pudendal nerve’s role in perineal sensation and continence, localized at the ischial spine',
+        summary:
+          'The pudendal nerve (S2-S4) exits the pelvis, passes just posterior to the ischial spine (the classic landmark for a pudendal nerve block during childbirth), and re-enters via the lesser sciatic foramen to reach the perineum, where it provides sensory innervation and motor control of the external anal and urethral sphincters, essential for voluntary continence.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'To provide anesthesia for a vaginal delivery, an obstetrician performs a pudendal nerve block by injecting local anesthetic near a specific bony landmark. Which landmark is used, and which spinal cord levels contribute to this nerve?',
+            explanation:
+              'The pudendal nerve (arising from S2-S4) passes just posterior to the ischial spine as it courses toward the perineum, making the ischial spine the classic landmark for a pudendal nerve block during labor. The pudendal nerve provides sensory innervation to the perineum and motor innervation to the external anal and urethral sphincters, which is why blocking it provides perineal anesthesia for delivery or episiotomy.',
+            difficulty: 2,
+            choices: [
+              { text: 'The ischial spine; S2-S4', isCorrect: true },
+              {
+                text: 'The pubic symphysis; L1-L2',
+                isCorrect: false,
+                explanation: 'The pubic symphysis is not the anatomic landmark used for this block, and the pudendal nerve does not arise from the lumbar plexus.',
+              },
+              {
+                text: 'The sacrospinous ligament’s midpoint; S1 only',
+                isCorrect: false,
+                explanation: 'While near the sacrospinous ligament, the classic landmark is specifically the ischial spine, and the nerve arises from S2-S4, not S1 alone.',
+              },
+              {
+                text: 'The greater sciatic notch; L4-S3',
+                isCorrect: false,
+                explanation: 'This describes the exit point and root levels of the sciatic nerve, a different nerve entirely.',
+              },
+              {
+                text: 'The obturator foramen; L2-L4',
+                isCorrect: false,
+                explanation: 'This describes the obturator nerve, which supplies the medial thigh, not the perineum.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize an obturator nerve injury during pelvic surgery',
+        summary:
+          'The obturator nerve (L2-L4) exits the pelvis through the obturator foramen to innervate the medial thigh (hip adductors) and provide sensation to a small area of skin on the medial thigh. It runs along the pelvic sidewall and is vulnerable during pelvic lymph node dissection or gynecologic surgery.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following pelvic lymph node dissection for cervical cancer, a patient has weakness adducting her thigh and a small area of numbness on the medial thigh. Which nerve was most likely injured?',
+            explanation:
+              'The obturator nerve runs along the pelvic sidewall before exiting through the obturator foramen to innervate the adductor muscles of the medial thigh and a small overlying area of skin. Its position along the pelvic sidewall places it at risk during pelvic lymph node dissection, producing thigh adduction weakness and medial thigh sensory loss, as described.',
+            difficulty: 2,
+            choices: [
+              { text: 'Obturator nerve', isCorrect: true },
+              {
+                text: 'Femoral nerve',
+                isCorrect: false,
+                explanation: 'Injury here weakens knee extension and causes anterior/medial thigh and medial leg sensory loss (via the saphenous nerve) — a larger territory than the isolated adduction weakness described.',
+              },
+              {
+                text: 'Sciatic nerve',
+                isCorrect: false,
+                explanation: 'Injury here affects the posterior thigh and the entire leg/foot below the knee, not isolated thigh adduction.',
+              },
+              {
+                text: 'Superior gluteal nerve',
+                isCorrect: false,
+                explanation: 'Injury here weakens hip abduction (causing a Trendelenburg gait), not adduction, and has no cutaneous branch.',
+              },
+              {
+                text: 'Pudendal nerve',
+                isCorrect: false,
+                explanation: 'Injury here affects perineal sensation and sphincter control, not thigh adduction.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a scaphoid fracture to avascular necrosis via retrograde blood supply',
+        summary:
+          'The scaphoid receives its blood supply from a branch of the radial artery that enters distally and courses retrograde (proximally) through the bone. A fracture through the scaphoid waist can therefore cut off flow to the proximal fragment, risking avascular necrosis — a key reason scaphoid fractures are treated aggressively even when initial imaging is unremarkable.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 22-year-old man falls onto an outstretched hand and has tenderness in the anatomical snuffbox. Initial x-rays are negative, but he is casted anyway given the classic presentation. Why is a scaphoid fracture treated cautiously even with negative initial imaging, and what late complication is of greatest concern?',
+            explanation:
+              'The scaphoid’s blood supply enters distally from a branch of the radial artery and travels retrograde (proximal direction) through the bone. A fracture through the waist of the scaphoid can disrupt this retrograde flow to the proximal fragment, risking avascular necrosis — which may not be visible on initial x-rays taken soon after injury, so snuffbox tenderness alone warrants immobilization and repeat imaging.',
+            difficulty: 2,
+            choices: [
+              { text: 'Retrograde blood supply from the radial artery risks avascular necrosis of the proximal fragment', isCorrect: true },
+              {
+                text: 'The scaphoid has no blood supply and heals only by fibrous union',
+                isCorrect: false,
+                explanation: 'The scaphoid does receive a blood supply; the concern is that its retrograde pattern of flow can be disrupted by a fracture, not that it lacks blood supply entirely.',
+              },
+              {
+                text: 'The scaphoid is at risk of compressing the median nerve, causing acute carpal tunnel syndrome',
+                isCorrect: false,
+                explanation: 'While displaced wrist fractures can rarely cause acute carpal tunnel syndrome, the classic, defining concern with a scaphoid fracture specifically is avascular necrosis, not nerve compression.',
+              },
+              {
+                text: 'The scaphoid articulates directly with the radial artery, and fracture always lacerates the vessel',
+                isCorrect: false,
+                explanation: 'The scaphoid does not directly articulate with the radial artery; the artery merely supplies a nutrient branch, and laceration of the main vessel is not the typical mechanism of concern.',
+              },
+              {
+                text: 'Scaphoid fractures are only a concern because of their high risk of infection',
+                isCorrect: false,
+                explanation: 'Infection is not the classic concern with a closed scaphoid fracture; avascular necrosis from disrupted retrograde blood flow is.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the contents of the cubital fossa (lateral to medial: Tendon, Artery, Nerve)',
+        summary:
+          'The cubital fossa, the triangular depression anterior to the elbow, contains from lateral to medial: the biceps brachii tendon, the brachial artery, and the median nerve (mnemonic "TAN" — Tendon, Artery, Nerve). These structures are at risk during venipuncture or trauma to this region.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'During an antecubital venipuncture that is performed too deeply and too medially, a patient develops sudden weakness of forearm pronation and loss of sensation over the palmar thumb, index, and middle fingers. Which structure was most likely injured, and what is its position relative to the other contents of the cubital fossa?',
+            explanation:
+              'The cubital fossa contains, from lateral to medial, the biceps brachii tendon, the brachial artery, and the median nerve (mnemonic "TAN"). The median nerve lies most medially, making it the structure most likely injured by a needle directed too far medially and deeply, and its injury explains the pronator weakness and palmar sensory loss in the median distribution described.',
+            difficulty: 2,
+            choices: [
+              { text: 'Median nerve, the most medial of the three major cubital fossa contents', isCorrect: true },
+              {
+                text: 'Brachial artery, the most medial of the three major cubital fossa contents',
+                isCorrect: false,
+                explanation: 'The brachial artery lies in the middle of the three structures, not the most medial position, and arterial injury would cause ischemia/bleeding rather than an isolated nerve deficit.',
+              },
+              {
+                text: 'Biceps brachii tendon, the most medial of the three major cubital fossa contents',
+                isCorrect: false,
+                explanation: 'The biceps tendon is the most lateral structure, and its injury would impair elbow flexion/supination, not cause a sensory or pronator deficit.',
+              },
+              {
+                text: 'Radial nerve, which lies within the cubital fossa medial to the brachial artery',
+                isCorrect: false,
+                explanation: 'The radial nerve exits the cubital fossa laterally (near the lateral epicondyle) and is not one of the three classic medial-to-lateral TAN contents.',
+              },
+              {
+                text: 'Ulnar nerve, which lies within the cubital fossa medial to the median nerve',
+                isCorrect: false,
+                explanation: 'The ulnar nerve does not pass through the cubital fossa at all; it travels posterior to the medial epicondyle, outside this triangular space.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a supraspinatus (rotator cuff) tear by a painful arc and positive drop-arm test',
+        summary:
+          'The supraspinatus, one of the four rotator cuff muscles (SITS: supraspinatus, infraspinatus, teres minor, subscapularis), initiates the first 15 degrees of shoulder abduction and stabilizes the humeral head. Its tendon is prone to impingement and tearing with age and overhead activity, producing pain most pronounced between roughly 60 and 120 degrees of abduction (painful arc) and an inability to smoothly lower the arm from full abduction (positive drop-arm test).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 58-year-old former painter reports shoulder pain that is worst when raising his arm partway to the side, and he is unable to smoothly lower his arm from an overhead position, letting it drop suddenly instead. Which structure is most likely torn?',
+            explanation:
+              'This presentation, a painful arc of abduction and a positive drop-arm test, is classic for a supraspinatus tear, the most commonly injured of the four rotator cuff muscles. The supraspinatus initiates abduction and stabilizes the humeral head in the glenoid; degeneration and impingement under the acromion over years of overhead activity commonly leads to tearing.',
+            difficulty: 2,
+            choices: [
+              { text: 'Supraspinatus tendon', isCorrect: true },
+              {
+                text: 'Infraspinatus tendon',
+                isCorrect: false,
+                explanation: 'Infraspinatus tears primarily weaken external rotation rather than producing this classic abduction-related painful arc and drop-arm pattern.',
+              },
+              {
+                text: 'Subscapularis tendon',
+                isCorrect: false,
+                explanation: 'Subscapularis tears weaken internal rotation (positive lift-off test), a different clinical pattern than the one described.',
+              },
+              {
+                text: 'Long head of the biceps tendon',
+                isCorrect: false,
+                explanation: 'Biceps tendon pathology causes anterior shoulder pain with resisted forearm supination/elbow flexion, not this abduction-specific pattern.',
+              },
+              {
+                text: 'Teres minor tendon',
+                isCorrect: false,
+                explanation: 'Teres minor assists external rotation; its isolated injury does not produce the classic painful arc/drop-arm presentation described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize saphenous nerve injury during great saphenous vein harvesting',
+        summary:
+          'The saphenous nerve, the terminal cutaneous branch of the femoral nerve, runs alongside the great saphenous vein below the knee. It is purely sensory, so injury during vein harvesting (e.g., for coronary artery bypass grafting) or varicose vein stripping causes numbness over the medial leg and ankle without any motor deficit.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following coronary artery bypass grafting using the great saphenous vein, a patient reports numbness along the medial aspect of the calf and ankle, with normal strength throughout the leg. Which nerve was most likely injured during vein harvesting?',
+            explanation:
+              'The saphenous nerve, the terminal sensory branch of the femoral nerve, travels alongside the great saphenous vein in the leg, making it vulnerable to injury during vein harvesting for bypass grafting or during varicose vein stripping. Because it is a purely sensory nerve, injury causes numbness over the medial leg and ankle without any weakness.',
+            difficulty: 2,
+            choices: [
+              { text: 'Saphenous nerve', isCorrect: true },
+              {
+                text: 'Tibial nerve',
+                isCorrect: false,
+                explanation: 'Tibial nerve injury would cause both motor deficits (weak plantarflexion/inversion) and sensory loss over the sole, not an isolated medial leg sensory deficit.',
+              },
+              {
+                text: 'Common fibular nerve',
+                isCorrect: false,
+                explanation: 'This nerve’s injury causes foot drop and lateral leg/dorsal foot sensory loss, a different distribution and with motor involvement.',
+              },
+              {
+                text: 'Sural nerve',
+                isCorrect: false,
+                explanation: 'The sural nerve supplies the posterolateral leg and lateral foot, not the medial leg, and runs with the small saphenous vein, not the great saphenous vein.',
+              },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the medial thigh, not the leg, and is unrelated to great saphenous vein harvesting.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize ilioinguinal nerve injury after a low abdominal (appendectomy) incision',
+        summary:
+          'The ilioinguinal nerve runs just deep to the external oblique aponeurosis in the lower abdominal wall and can be injured during low transverse or McBurney-point incisions (e.g., appendectomy, inguinal hernia repair). Injury causes sensory loss over the inguinal region and proximal genitals (scrotum/labia), without motor deficit, since the nerve is primarily sensory in this distribution.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Several weeks after an open appendectomy through a right lower quadrant incision, a patient reports numbness over the skin above the inguinal ligament and the ipsilateral scrotum. Which nerve was most likely injured during the surgery?',
+            explanation:
+              'The ilioinguinal nerve travels just deep to the external oblique aponeurosis in the lower abdominal wall and passes through the inguinal canal, placing it at risk during low abdominal incisions such as those used for appendectomy or hernia repair. Injury produces sensory loss over the inguinal region and proximal genital skin, since its distribution in this area is purely sensory.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ilioinguinal nerve', isCorrect: true },
+              {
+                text: 'Genitofemoral nerve',
+                isCorrect: false,
+                explanation: 'This nerve runs on the surface of the psoas muscle and, while it can also be injured in this region, is more classically associated with loss of the cremasteric reflex rather than isolated inguinal skin numbness from a McBurney incision.',
+              },
+              {
+                text: 'Femoral nerve',
+                isCorrect: false,
+                explanation: 'Femoral nerve injury would cause quadriceps weakness (impaired knee extension) in addition to sensory changes, which is not described here.',
+              },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the medial thigh, an area unrelated to the inguinal/scrotal skin described.',
+              },
+              {
+                text: 'Pudendal nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the perineum proper and deeper genital structures, not the anterior inguinal skin affected by a low abdominal incision.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize superior gluteal nerve injury from a Trendelenburg gait',
+        summary:
+          'The superior gluteal nerve innervates the gluteus medius and minimus, which stabilize the pelvis during single-leg stance by abducting the hip. Injury (e.g., from an improperly placed intramuscular injection in the wrong buttock quadrant, or during hip surgery) causes a Trendelenburg gait: the pelvis drops toward the unsupported (contralateral) side when standing on the injured leg.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following an intramuscular injection given into the wrong quadrant of the buttock, a patient develops a gait abnormality in which the pelvis drops toward the left side whenever she stands on her right leg alone. Which nerve was most likely injured, and which muscles does it normally stabilize?',
+            explanation:
+              'This is a Trendelenburg gait, caused by injury to the superior gluteal nerve, which innervates the gluteus medius and minimus. These muscles normally contract during single-leg stance to keep the pelvis level; when they are weak on the stance-leg side, the pelvis drops toward the opposite (unsupported) side — here, standing on the right leg causes the pelvis to drop on the left, indicating right gluteus medius/minimus weakness from a right superior gluteal nerve injury.',
+            difficulty: 3,
+            choices: [
+              { text: 'Superior gluteal nerve, which innervates the gluteus medius and minimus', isCorrect: true },
+              {
+                text: 'Inferior gluteal nerve, which innervates the gluteus maximus',
+                isCorrect: false,
+                explanation: 'Gluteus maximus weakness impairs hip extension (difficulty rising from a seated position or climbing stairs), not the pelvic-drop pattern of a Trendelenburg gait.',
+              },
+              {
+                text: 'Sciatic nerve, which innervates the hamstrings',
+                isCorrect: false,
+                explanation: 'Sciatic nerve injury impairs knee flexion and function below the knee, not hip abduction/pelvic stabilization.',
+              },
+              {
+                text: 'Obturator nerve, which innervates the hip adductors',
+                isCorrect: false,
+                explanation: 'Adductor weakness does not produce a Trendelenburg gait, which specifically results from abductor (gluteus medius/minimus) weakness.',
+              },
+              {
+                text: 'Femoral nerve, which innervates the quadriceps',
+                isCorrect: false,
+                explanation: 'Quadriceps weakness impairs knee extension and can cause the knee to buckle, a different gait abnormality than the pelvic drop described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize inferior gluteal nerve injury by weak hip extension',
+        summary:
+          'The inferior gluteal nerve innervates the gluteus maximus, the primary hip extensor used to rise from a seated position, climb stairs, or push off during running. Injury causes weakness of these activities without the pelvic-drop (Trendelenburg) pattern seen with superior gluteal nerve injury, since hip abduction is preserved.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient recovering from a deep gluteal intramuscular injection has new difficulty rising from a seated position and climbing stairs, but her pelvis remains level when standing on either leg alone. Which nerve was most likely injured?',
+            explanation:
+              'The inferior gluteal nerve innervates the gluteus maximus, the chief hip extensor needed to rise from sitting, climb stairs, or push off while running. Its injury weakens these activities but, unlike superior gluteal nerve injury, spares hip abduction (gluteus medius/minimus), so the pelvis remains level during single-leg stance and no Trendelenburg gait develops.',
+            difficulty: 2,
+            choices: [
+              { text: 'Inferior gluteal nerve', isCorrect: true },
+              {
+                text: 'Superior gluteal nerve',
+                isCorrect: false,
+                explanation: 'Injury here weakens hip abduction and produces a Trendelenburg gait (pelvic drop), which is explicitly absent in this patient.',
+              },
+              {
+                text: 'Sciatic nerve',
+                isCorrect: false,
+                explanation: 'A full sciatic nerve injury would also impair knee flexion and function below the knee, a more extensive deficit than described.',
+              },
+              {
+                text: 'Pudendal nerve',
+                isCorrect: false,
+                explanation: 'This nerve controls perineal sensation and sphincter function, unrelated to hip extension.',
+              },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'This nerve controls hip adduction, not extension, and its injury would not cause this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize tibial nerve compression at the tarsal tunnel',
+        summary:
+          'The tibial nerve passes posterior to the medial malleolus through the tarsal tunnel (beneath the flexor retinaculum) to reach the sole of the foot. Compression here (tarsal tunnel syndrome) causes burning pain and numbness on the plantar surface of the foot, with a positive Tinel sign on tapping behind the medial malleolus.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient reports burning pain and numbness on the sole of the foot that worsens with standing, and tapping just posterior to the medial malleolus reproduces the sensation. Which nerve is most likely compressed, and at what site?',
+            explanation:
+              'The tibial nerve travels posterior to the medial malleolus through the tarsal tunnel, beneath the flexor retinaculum, before branching to supply the sole of the foot. Compression here, tarsal tunnel syndrome, produces burning plantar pain and numbness, with a positive Tinel sign elicited by tapping behind the medial malleolus — the lower-limb analog of carpal tunnel syndrome.',
+            difficulty: 2,
+            choices: [
+              { text: 'Tibial nerve, at the tarsal tunnel (posterior to the medial malleolus)', isCorrect: true },
+              {
+                text: 'Common fibular nerve, at the fibular neck',
+                isCorrect: false,
+                explanation: 'Compression here causes foot drop and dorsal foot/lateral leg sensory loss, not plantar burning pain localized to the medial ankle.',
+              },
+              {
+                text: 'Sural nerve, at the lateral ankle',
+                isCorrect: false,
+                explanation: 'The sural nerve supplies the lateral foot and would produce symptoms and a Tinel sign at the lateral, not medial, ankle.',
+              },
+              {
+                text: 'Saphenous nerve, at the medial ankle',
+                isCorrect: false,
+                explanation: 'The saphenous nerve supplies the medial leg down to the ankle but does not innervate the sole of the foot.',
+              },
+              {
+                text: 'Deep fibular nerve, on the dorsum of the foot',
+                isCorrect: false,
+                explanation: 'This nerve supplies a small area between the first and second toes dorsally, not the sole, and does not run near the medial malleolus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize an Achilles tendon rupture with a positive Thompson test',
+        summary:
+          'The Achilles (calcaneal) tendon, formed by the gastrocnemius and soleus, inserts on the calcaneus and is innervated indirectly via the tibial nerve (S1-S2 roots). Rupture, often during forceful push-off in middle-aged recreational athletes, produces a palpable gap and a positive Thompson test — squeezing the calf fails to produce the normal passive plantarflexion.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 45-year-old recreational basketball player feels a sudden "pop" in the back of his ankle while sprinting and now cannot push off with that foot. Squeezing his calf while he lies prone produces no plantarflexion of the foot. Which structure has most likely ruptured, and which spinal nerve roots are primarily responsible for the affected movement?',
+            explanation:
+              'This presentation, a sudden pop with loss of the normal calf-squeeze-induced plantarflexion (a positive Thompson test), is classic for Achilles tendon rupture. The Achilles tendon is formed by the gastrocnemius and soleus, plantarflexors innervated by the tibial nerve, which carries fibers predominantly from the S1-S2 nerve roots.',
+            difficulty: 2,
+            choices: [
+              { text: 'Achilles tendon, primarily S1-S2 innervated', isCorrect: true },
+              {
+                text: 'Patellar tendon, primarily L2-L4 innervated',
+                isCorrect: false,
+                explanation: 'The patellar tendon is involved in knee extension (quadriceps), tested by the knee-jerk reflex, and is unrelated to ankle plantarflexion or the Thompson test.',
+              },
+              {
+                text: 'Anterior talofibular ligament, primarily L4-L5 innervated',
+                isCorrect: false,
+                explanation: 'This ligament stabilizes the ankle against inversion sprains; ligaments do not have their own nerve root motor innervation, and injury here would not affect the Thompson test.',
+              },
+              {
+                text: 'Plantar fascia, primarily L5-S1 innervated',
+                isCorrect: false,
+                explanation: 'The plantar fascia supports the arch of the foot; its injury (plantar fasciitis) causes heel pain but not a positive Thompson test.',
+              },
+              {
+                text: 'Peroneus longus tendon, primarily L5-S1 innervated',
+                isCorrect: false,
+                explanation: 'This tendon assists foot eversion, not plantarflexion via calf squeeze, and its rupture would not produce a positive Thompson test.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize hypoglossal nerve injury by ipsilateral tongue deviation',
+        summary:
+          'The hypoglossal nerve (CN XII) innervates the intrinsic and most extrinsic muscles of the tongue, including genioglossus, which normally protrudes and pushes the tongue to the opposite side. A lower motor neuron hypoglossal nerve injury (e.g., during carotid endarterectomy, where the nerve crosses the operative field) causes the protruded tongue to deviate toward the side of the lesion ("the tongue points to the side of the wound").',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following a left carotid endarterectomy, a patient is asked to stick out his tongue, and it deviates to the left. Which nerve was most likely injured, and why does the tongue deviate toward that side?',
+            explanation:
+              'The hypoglossal nerve (CN XII) is at risk during carotid endarterectomy because it crosses the carotid sheath in the operative field. It innervates the genioglossus muscle, which normally protrudes and pushes the tongue toward the opposite side; with a left hypoglossal nerve injury, the unopposed right genioglossus pushes the tongue toward the weak left side, so the tongue deviates toward the side of the lesion.',
+            difficulty: 2,
+            choices: [
+              { text: 'Hypoglossal nerve (CN XII); the tongue deviates toward the side of a lower motor neuron lesion', isCorrect: true },
+              {
+                text: 'Vagus nerve (CN X); the uvula deviates toward the side of the lesion',
+                isCorrect: false,
+                explanation: 'Vagus nerve injury affects the palate/uvula (which deviates away from, not toward, the lesion) and voice, not tongue movement.',
+              },
+              {
+                text: 'Facial nerve (CN VII); the tongue deviates away from the side of the lesion',
+                isCorrect: false,
+                explanation: 'The facial nerve controls facial expression and taste on the anterior two-thirds of the tongue, not tongue movement.',
+              },
+              {
+                text: 'Glossopharyngeal nerve (CN IX); the tongue deviates away from the side of the lesion',
+                isCorrect: false,
+                explanation: 'The glossopharyngeal nerve mediates taste/sensation on the posterior tongue and the gag reflex, not tongue movement.',
+              },
+              {
+                text: 'Spinal accessory nerve (CN XI); the tongue deviates toward the side opposite the lesion',
+                isCorrect: false,
+                explanation: 'CN XI innervates the trapezius and sternocleidomastoid, unrelated to tongue movement.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish the afferent (CN IX) and efferent (CN X) limbs of the gag reflex',
+        summary:
+          'The gag reflex depends on glossopharyngeal (CN IX) sensory afferents from the posterior pharynx and vagal (CN X) motor efferents to the pharyngeal muscles. Touching one side of the pharynx normally produces bilateral elevation; if touching one side produces no response at all (afferent loss), CN IX on that side is impaired, whereas if touching either side fails to elevate one particular side of the palate (with the uvula deviating away from that side), CN X on that side is impaired.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'On exam, touching the right side of a patient’s posterior pharynx produces no gag response at all (touching the left side produces a normal bilateral gag). Sensation of the right pharynx is also reported as absent by the patient. Which nerve is most likely damaged, and is this the afferent or efferent limb of the reflex?',
+            explanation:
+              'The glossopharyngeal nerve (CN IX) carries the afferent (sensory) limb of the gag reflex from the posterior pharynx. If touching the right pharyngeal wall produces no response at all — and the patient cannot even feel the touch — the sensory input on that side is lost, localizing the lesion to the right CN IX. This differs from a vagal (efferent, CN X) lesion, where sensation would be intact bilaterally, but the motor response (palatal elevation) would be asymmetric with uvular deviation away from the affected side.',
+            difficulty: 3,
+            choices: [
+              { text: 'Right glossopharyngeal nerve (CN IX), the afferent (sensory) limb', isCorrect: true },
+              {
+                text: 'Right vagus nerve (CN X), the efferent (motor) limb',
+                isCorrect: false,
+                explanation: 'A pure efferent (vagal) lesion would still allow the patient to feel the touch on that side; sensation would be intact even though the motor response was impaired, which is not the case described.',
+              },
+              {
+                text: 'Left glossopharyngeal nerve (CN IX), the afferent (sensory) limb',
+                isCorrect: false,
+                explanation: 'The finding is a loss of both sensation and response specifically when touching the right side, indicating a right-sided, not left-sided, lesion.',
+              },
+              {
+                text: 'Right hypoglossal nerve (CN XII), a purely motor nerve to the tongue',
+                isCorrect: false,
+                explanation: 'CN XII controls tongue movement and is not involved in the gag reflex at all.',
+              },
+              {
+                text: 'Right facial nerve (CN VII), the efferent limb of the gag reflex',
+                isCorrect: false,
+                explanation: 'The facial nerve is not part of the gag reflex circuit; it mediates facial expression and taste on the anterior tongue.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a cerebellopontine angle tumor by combined CN V, VII, and VIII deficits',
+        summary:
+          'The cerebellopontine angle, where CN V, VII, and VIII lie in close proximity as they exit/enter the brainstem, is the classic site of a vestibular schwannoma (acoustic neuroma), often associated with neurofibromatosis type 2 when bilateral. Growth here progressively compresses these nerves, causing unilateral hearing loss and tinnitus (CN VIII) followed by facial weakness (CN VII) and facial numbness (CN V).',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A patient presents with progressive unilateral hearing loss and tinnitus, followed months later by ipsilateral facial weakness and diminished facial sensation. Imaging reveals a mass at the cerebellopontine angle. Compression of which nerves, in the order typically affected, best explains this progression?',
+            explanation:
+              'A vestibular schwannoma (acoustic neuroma) arising at the cerebellopontine angle typically compresses CN VIII first, causing unilateral sensorineural hearing loss and tinnitus, since this nerve is often most immediately adjacent to the tumor’s origin on the vestibular portion of CN VIII. As the mass enlarges, it subsequently compresses the adjacent CN VII (facial weakness) and CN V (facial numbness), reflecting the close anatomic grouping of these three nerves at the cerebellopontine angle.',
+            difficulty: 3,
+            choices: [
+              { text: 'CN VIII, then CN VII and CN V', isCorrect: true },
+              {
+                text: 'CN III, then CN IV and CN VI',
+                isCorrect: false,
+                explanation: 'These nerves are grouped together in the cavernous sinus and orbit, not the cerebellopontine angle, and control eye movements, not hearing or facial sensation/movement.',
+              },
+              {
+                text: 'CN IX, then CN X and CN XI',
+                isCorrect: false,
+                explanation: 'These nerves exit together through the jugular foramen, a different location from the cerebellopontine angle, and control pharyngeal/laryngeal/neck functions.',
+              },
+              {
+                text: 'CN I, then CN II',
+                isCorrect: false,
+                explanation: 'These nerves mediate smell and vision, unrelated to the cerebellopontine angle or this presentation.',
+              },
+              {
+                text: 'CN XII alone',
+                isCorrect: false,
+                explanation: 'CN XII controls tongue movement, exits through the hypoglossal canal (a different location), and would not explain hearing loss or facial findings.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link parotidectomy to Frey syndrome via auriculotemporal nerve misdirection',
+        summary:
+          'The facial nerve branches within the substance of the parotid gland, placing it at risk during parotidectomy, but a distinct complication — Frey syndrome — arises from injury to the parasympathetic secretomotor fibers of the auriculotemporal nerve (destined for the parotid gland itself). During regeneration, these fibers can be misdirected to sweat glands in the overlying skin, causing gustatory sweating (sweating over the cheek while eating).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Several months after a parotidectomy, a patient notices sweating and flushing over the cheek overlying the surgical site whenever she eats. Aberrant regeneration of which nerve’s fibers, originally destined for a different target, best explains this phenomenon?',
+            explanation:
+              'This is Frey syndrome (gustatory sweating), caused by aberrant regeneration of the auriculotemporal nerve’s parasympathetic secretomotor fibers, which normally stimulate salivation from the parotid gland in response to eating. After parotidectomy severs these fibers, they can regenerate along the wrong pathway and reinnervate the sweat glands and blood vessels of the overlying facial skin instead, so that the stimulus to eat now triggers sweating and flushing in that area rather than salivation.',
+            difficulty: 3,
+            choices: [
+              { text: 'Auriculotemporal nerve (parasympathetic secretomotor fibers destined for the parotid gland)', isCorrect: true },
+              {
+                text: 'Facial nerve (motor fibers destined for facial expression muscles)',
+                isCorrect: false,
+                explanation: 'Facial nerve injury during parotidectomy causes facial weakness, not gustatory sweating; Frey syndrome is a distinct complication from a different nerve.',
+              },
+              {
+                text: 'Greater auricular nerve (sensory fibers to the ear and overlying skin)',
+                isCorrect: false,
+                explanation: 'This purely sensory nerve, though also at risk during parotidectomy, causes numbness of the earlobe when injured, not gustatory sweating.',
+              },
+              {
+                text: 'Lingual nerve (sensory and taste fibers to the anterior tongue)',
+                isCorrect: false,
+                explanation: 'This nerve is at risk during submandibular gland surgery, not parotidectomy, and is unrelated to facial skin sweating.',
+              },
+              {
+                text: 'Glossopharyngeal nerve (fibers destined for the submandibular gland)',
+                isCorrect: false,
+                explanation: 'The glossopharyngeal nerve contributes parasympathetic fibers to the parotid gland via a different pathway (the otic ganglion, tympanic plexus), but it does not innervate the submandibular gland, and this nerve is not the one implicated in Frey syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link substantia nigra dopaminergic loss to Parkinson disease',
+        summary:
+          'The substantia nigra pars compacta, part of the basal ganglia circuitry in the midbrain, projects dopaminergic fibers to the striatum (nigrostriatal pathway) that normally facilitate voluntary movement. Progressive loss of these neurons, as in Parkinson disease, produces the classic triad of resting tremor, rigidity, and bradykinesia.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 68-year-old man presents with a resting tremor, cogwheel rigidity, and slowness of movement. Autopsy studies in patients with this condition classically show depigmentation and neuronal loss in which midbrain structure?',
+            explanation:
+              'This presentation describes Parkinson disease, caused by progressive degeneration of dopaminergic neurons in the substantia nigra pars compacta, part of the midbrain. These neurons normally send excitatory dopaminergic projections to the striatum (the nigrostriatal pathway) that facilitate voluntary movement; their loss disinhibits pathways that suppress movement, producing the classic triad of resting tremor, rigidity, and bradykinesia. The normally pigmented (melanin-containing) substantia nigra grossly appears depigmented on autopsy.',
+            difficulty: 2,
+            choices: [
+              { text: 'Substantia nigra pars compacta', isCorrect: true },
+              {
+                text: 'Subthalamic nucleus',
+                isCorrect: false,
+                explanation: 'Lesions here cause hemiballismus (violent flinging movements), not the tremor/rigidity/bradykinesia triad of Parkinson disease.',
+              },
+              {
+                text: 'Caudate nucleus',
+                isCorrect: false,
+                explanation: 'Atrophy here is associated with Huntington disease (chorea), not Parkinson disease.',
+              },
+              {
+                text: 'Cerebellar vermis',
+                isCorrect: false,
+                explanation: 'Damage here causes truncal ataxia, not the resting tremor/rigidity/bradykinesia triad.',
+              },
+              {
+                text: 'Locus coeruleus',
+                isCorrect: false,
+                explanation: 'This norepinephrine-producing nucleus is affected in Parkinson disease to a lesser degree but is not the classic structure responsible for the core motor triad.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize Broca and Wernicke aphasia to MCA superior and inferior divisions',
+        summary:
+          'Broca area (inferior frontal gyrus, dominant hemisphere), supplied by the superior division of the MCA, produces expressive (non-fluent, effortful) aphasia with intact comprehension when damaged. Wernicke area (superior temporal gyrus, dominant hemisphere), supplied by the inferior division of the MCA, produces receptive (fluent but nonsensical) aphasia with impaired comprehension when damaged.',
+        discipline: 'Nervous system',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient who has had a stroke speaks fluently, with normal rate and rhythm, but the content is nonsensical and full of made-up words; he also cannot follow simple verbal commands. Which artery territory was most likely affected, and which cortical area is damaged?',
+            explanation:
+              'This is Wernicke (receptive) aphasia: speech remains fluent in rate and rhythm but is nonsensical, and comprehension is impaired, because the lesion is in Wernicke area (posterior superior temporal gyrus), which is responsible for language comprehension. This region is supplied by the inferior division of the middle cerebral artery in the dominant (usually left) hemisphere — distinct from Broca area (inferior frontal gyrus, superior MCA division), whose damage instead causes effortful, non-fluent speech with preserved comprehension.',
+            difficulty: 3,
+            choices: [
+              { text: 'Inferior division of the MCA, damaging Wernicke area (fluent aphasia with impaired comprehension)', isCorrect: true },
+              {
+                text: 'Superior division of the MCA, damaging Broca area (non-fluent aphasia with intact comprehension)',
+                isCorrect: false,
+                explanation: 'Broca aphasia produces effortful, non-fluent speech with relatively preserved comprehension — the opposite pattern from the fluent, comprehension-impaired speech described.',
+              },
+              {
+                text: 'Anterior cerebral artery, damaging the supplementary motor area',
+                isCorrect: false,
+                explanation: 'ACA territory damage causes leg-predominant weakness and behavioral changes, not this specific language pattern.',
+              },
+              {
+                text: 'Posterior cerebral artery, damaging the primary visual cortex',
+                isCorrect: false,
+                explanation: 'PCA territory damage causes visual field deficits, not aphasia.',
+              },
+              {
+                text: 'Anterior spinal artery, damaging the corticospinal tract',
+                isCorrect: false,
+                explanation: 'This supplies the spinal cord and would cause limb weakness, not a language disturbance.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Brown-Séquard syndrome from spinal cord hemisection',
+        summary:
+          'Spinal cord hemisection damages the ipsilateral lateral corticospinal tract (ipsilateral weakness below the lesion), the ipsilateral dorsal columns (ipsilateral loss of vibration/proprioception below the lesion), and the crossing fibers of the contralateral spinothalamic tract, which produces contralateral loss of pain/temperature beginning a couple of levels below the lesion (since these fibers cross a couple of segments after entering the cord).',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A patient with a stab wound to the right side of the spinal cord at T8 develops right-sided weakness and loss of vibration sense below the level of injury, along with loss of pain and temperature sensation on the left side beginning a couple of levels below the injury. Hemisection of the spinal cord affecting which specific tracts best explains this pattern?',
+            explanation:
+              'This is Brown-Séquard syndrome, from hemisection of the spinal cord. The ipsilateral lateral corticospinal tract (motor) and ipsilateral dorsal columns (vibration/proprioception) are damaged, producing ipsilateral weakness and vibration/proprioceptive loss below the lesion. The spinothalamic tract fibers, however, have already crossed within a couple of spinal segments of entering the cord, so damage to the tract at the level of hemisection affects fibers that originated from the contralateral side, producing contralateral pain/temperature loss beginning a couple of levels below the lesion.',
+            difficulty: 3,
+            choices: [
+              { text: 'Ipsilateral lateral corticospinal tract and dorsal columns; contralateral spinothalamic tract', isCorrect: true },
+              {
+                text: 'Ipsilateral lateral corticospinal tract and spinothalamic tract; contralateral dorsal columns',
+                isCorrect: false,
+                explanation: 'The dorsal columns do not cross until the medulla, so they produce ipsilateral (not contralateral) deficits when damaged in the spinal cord.',
+              },
+              {
+                text: 'Contralateral corticospinal tract and dorsal columns; ipsilateral spinothalamic tract',
+                isCorrect: false,
+                explanation: 'This reverses the actual pattern — the corticospinal tract and dorsal columns produce ipsilateral deficits, while the spinothalamic tract produces contralateral deficits, when the cord is hemisected.',
+              },
+              {
+                text: 'Only the anterior spinal artery territory, sparing all dorsal structures',
+                isCorrect: false,
+                explanation: 'Anterior spinal artery syndrome spares the dorsal columns bilaterally but affects both sides equally; it does not produce the asymmetric, one-sided pattern described here.',
+              },
+              {
+                text: 'Only the dorsal root ganglia bilaterally',
+                isCorrect: false,
+                explanation: 'Isolated bilateral dorsal root ganglia damage would not explain the unilateral motor weakness described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize syringomyelia by cape-like bilateral pain/temperature loss',
+        summary:
+          'Syringomyelia is a fluid-filled cavity (syrinx) that typically expands within the central canal of the cervical spinal cord. It first damages the crossing spinothalamic fibers near the anterior white commissure, causing bilateral loss of pain and temperature sensation in a "cape-like" distribution over the shoulders and arms, while preserving touch and proprioception (carried by the dorsal columns, located more peripherally).',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a history of Chiari malformation develops bilateral loss of pain and temperature sensation over the shoulders and upper arms, in a cape-like distribution, while touch and proprioception in the same area remain intact. Which spinal cord pathology best explains this finding, and which fibers are damaged first?',
+            explanation:
+              'This is syringomyelia, a fluid-filled cavity that classically expands within the central canal of the cervical cord (often associated with Chiari malformation). It first damages the spinothalamic tract fibers as they cross through the anterior white commissure near the central canal, producing bilateral, cape-like loss of pain and temperature sensation, while sparing the dorsal columns (touch, proprioception, vibration), which lie more peripherally and are affected only later, if the syrinx expands further.',
+            difficulty: 3,
+            choices: [
+              { text: 'Syringomyelia, damaging crossing spinothalamic fibers near the central canal', isCorrect: true },
+              {
+                text: 'Brown-Séquard syndrome, damaging one-sided corticospinal and dorsal column tracts',
+                isCorrect: false,
+                explanation: 'Brown-Séquard syndrome produces an asymmetric, one-sided pattern of deficits, not the bilateral, symmetric cape-like distribution described.',
+              },
+              {
+                text: 'Anterior spinal artery occlusion, damaging the corticospinal tracts bilaterally',
+                isCorrect: false,
+                explanation: 'This would primarily cause bilateral motor weakness, not the isolated bilateral pain/temperature sensory loss described.',
+              },
+              {
+                text: 'Multiple sclerosis plaque in the dorsal columns',
+                isCorrect: false,
+                explanation: 'Dorsal column damage would impair touch/proprioception/vibration, which are specifically preserved in this presentation.',
+              },
+              {
+                text: 'Tabes dorsalis, damaging the dorsal roots and columns',
+                isCorrect: false,
+                explanation: 'This condition (from tertiary syphilis) impairs proprioception and vibration, not pain/temperature sensation, and does not produce a cape-like distribution.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish internal from external hemorrhoids by the pectinate line',
+        summary:
+          'The pectinate (dentate) line marks the embryologic transition in the anal canal: above it, the mucosa is visceral (endoderm-derived, insensate, drained by the superior rectal vein into the portal system); below it, it is somatic (ectoderm-derived, pain-sensitive, drained by the inferior rectal vein into the systemic system). Internal hemorrhoids (above the line) are painless, while external hemorrhoids (below the line) are painful.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A patient has painless rectal bleeding with prolapsing anal tissue, while another patient has a painful, tender lump at the anal verge. Which anatomic landmark explains why one type of hemorrhoid is painful and the other is not?',
+            explanation:
+              'The pectinate (dentate) line divides the anal canal embryologically. Above it, the mucosa is visceral (endoderm-derived), innervated by autonomic fibers that do not transmit sharp pain, and drains via the superior rectal vein into the portal system — this is where painless internal hemorrhoids form. Below it, the anal canal is somatic (ectoderm-derived), innervated by the pudendal nerve’s somatic sensory fibers (which do transmit sharp pain), and drains via the inferior rectal vein into the systemic system — this is where painful external hemorrhoids form.',
+            difficulty: 2,
+            choices: [
+              { text: 'The pectinate line, separating insensate visceral mucosa above from pain-sensitive somatic skin below', isCorrect: true },
+              {
+                text: 'The anorectal ring, separating the external and internal anal sphincters',
+                isCorrect: false,
+                explanation: 'This muscular landmark is important for continence but is not the structure that determines pain sensation differences between hemorrhoid types.',
+              },
+              {
+                text: 'The rectosigmoid junction, separating the rectum from the sigmoid colon',
+                isCorrect: false,
+                explanation: 'This is far too proximal to be relevant to the anal canal’s sensory innervation.',
+              },
+              {
+                text: 'The ischial spine, separating the greater and lesser sciatic foramina',
+                isCorrect: false,
+                explanation: 'This bony pelvic landmark is relevant to pudendal nerve blocks, not to the histologic transition responsible for hemorrhoid pain differences.',
+              },
+              {
+                text: 'The linea alba of the anal canal, separating internal from external hemorrhoidal veins directly',
+                isCorrect: false,
+                explanation: 'This is not a recognized anatomic landmark of the anal canal; the correct dividing structure is the pectinate line.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize testicular torsion from twisting of the spermatic cord',
+        summary:
+          'Testicular torsion occurs when the testis twists on its spermatic cord (often due to a congenitally inadequate attachment of the tunica vaginalis, the "bell-clapper deformity"), compromising the testicular artery and causing acute ischemia. It presents with sudden, severe unilateral testicular pain, a high-riding testis, an absent cremasteric reflex, and is a surgical emergency requiring prompt detorsion to salvage the testis.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 55,
+        variations: [
+          {
+            stem: 'A 14-year-old boy presents with sudden, severe left testicular pain and swelling. On exam, the left testis is high-riding and horizontally oriented, and the cremasteric reflex is absent on that side. Which process best explains this presentation, and why is it a surgical emergency?',
+            explanation:
+              'This presentation is classic for testicular torsion: the testis twists on its spermatic cord, often due to an inadequately fixed tunica vaginalis (the "bell-clapper deformity"), compromising blood flow through the testicular artery. The absent cremasteric reflex and high-riding, horizontally lying testis are classic exam findings. Because testicular viability depends on how quickly blood flow is restored, this is a surgical emergency requiring prompt detorsion, typically within about 6 hours, to prevent infarction.',
+            difficulty: 2,
+            choices: [
+              { text: 'Testicular torsion, compromising testicular artery flow — an emergency requiring prompt detorsion to prevent infarction', isCorrect: true },
+              {
+                text: 'Epididymitis, an infectious process that resolves with antibiotics alone',
+                isCorrect: false,
+                explanation: 'Epididymitis typically has a more gradual onset, preserved cremasteric reflex, and relief of pain with testicular elevation (Prehn sign), unlike the sudden onset and absent reflex described here.',
+              },
+              {
+                text: 'Varicocele, a dilation of the pampiniform venous plexus',
+                isCorrect: false,
+                explanation: 'A varicocele causes a chronic, dull, "bag of worms" scrotal mass, not sudden severe pain, and is not a surgical emergency.',
+              },
+              {
+                text: 'Hydrocele, a fluid collection within the tunica vaginalis',
+                isCorrect: false,
+                explanation: 'A hydrocele is typically painless and transilluminates, unlike the acutely painful presentation described.',
+              },
+              {
+                text: 'Inguinal hernia, with bowel descending into the scrotum',
+                isCorrect: false,
+                explanation: 'While a hernia can cause scrotal swelling, it would not typically cause an absent cremasteric reflex or the specific high-riding, horizontal testicular position described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link left-sided varicocele to left gonadal vein drainage into the left renal vein',
+        summary:
+          'The right gonadal vein drains directly into the inferior vena cava at an oblique angle, while the left gonadal vein drains at a right angle into the left renal vein, which itself can be compressed between the aorta and superior mesenteric artery ("nutcracker" effect). This anatomic asymmetry causes higher venous pressure on the left, explaining why varicoceles are far more common on the left side.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 55-year-old man is found to have a new-onset varicocele on the left side that does not decompress when he lies down. Which anatomic relationship explains why varicoceles occur far more often on the left than the right, and why a new one in an older man raises concern for renal cell carcinoma?',
+            explanation:
+              'The left gonadal (testicular) vein drains at a right angle into the left renal vein (rather than directly into the IVC, as the right gonadal vein does), and the left renal vein can be compressed between the aorta and superior mesenteric artery. This anatomic arrangement causes higher venous pressure in the left pampiniform plexus, making varicoceles far more common on the left. A new left varicocele in an older man, especially one that does not decompress when supine, raises concern that a left renal cell carcinoma has invaded or compressed the left renal vein, obstructing gonadal vein drainage.',
+            difficulty: 3,
+            choices: [
+              { text: 'The left gonadal vein drains into the left renal vein at a right angle, causing higher venous pressure than the right gonadal vein’s direct drainage into the IVC', isCorrect: true },
+              {
+                text: 'The right gonadal vein drains into the left renal vein, causing higher pressure on the right side instead',
+                isCorrect: false,
+                explanation: 'This reverses the actual anatomy; the right gonadal vein drains directly into the IVC, not into the left renal vein.',
+              },
+              {
+                text: 'The left testicular artery is longer than the right, causing arterial congestion',
+                isCorrect: false,
+                explanation: 'Varicoceles are a venous phenomenon (dilation of the pampiniform plexus), not an arterial one.',
+              },
+              {
+                text: 'The left spermatic cord passes through a narrower inguinal canal than the right',
+                isCorrect: false,
+                explanation: 'The inguinal canals are not classically described as asymmetric in width, and this is not the accepted explanation for the left-sided predominance of varicoceles.',
+              },
+              {
+                text: 'The left testis normally sits lower than the right, increasing hydrostatic venous pressure',
+                isCorrect: false,
+                explanation: 'While the left testis does often sit slightly lower, the accepted mechanism for left-sided varicocele predominance is the venous drainage angle into the left renal vein, not simple hydrostatic height difference.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the contents of the hepatoduodenal ligament and the Pringle maneuver',
+        summary:
+          'The hepatoduodenal ligament, the free edge of the lesser omentum, contains the portal triad: the portal vein (posterior), the hepatic artery proper (left anterior), and the common bile duct (right anterior) — mnemonic "CBD" left to right as viewed anteriorly. The epiploic foramen (of Winslow) lies just posterior to this ligament, connecting the greater and lesser sacs; compressing the ligament here (Pringle maneuver) can control bleeding from the liver by occluding its inflow.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'During control of severe liver hemorrhage, a surgeon compresses the free edge of the lesser omentum between a finger placed anteriorly and a thumb placed through the epiploic foramen posteriorly, temporarily stopping the bleeding. Which three structures, running together within this ligament, have been occluded?',
+            explanation:
+              'This describes the Pringle maneuver, which compresses the hepatoduodenal ligament (the free edge of the lesser omentum) to occlude the portal triad: the portal vein (posteriorly), the hepatic artery proper (anteriorly and to the left), and the common bile duct (anteriorly and to the right). Because this maneuver occludes the liver’s two inflow sources (portal vein and hepatic artery), it can temporarily control bleeding from hepatic parenchymal injury, though it does not stop bleeding from the hepatic veins, which drain directly into the IVC.',
+            difficulty: 3,
+            choices: [
+              { text: 'Portal vein, hepatic artery proper, and common bile duct', isCorrect: true },
+              {
+                text: 'Splenic artery, splenic vein, and pancreatic duct',
+                isCorrect: false,
+                explanation: 'These structures run near the pancreas and spleen, not within the hepatoduodenal ligament.',
+              },
+              {
+                text: 'Superior mesenteric artery, superior mesenteric vein, and the third part of the duodenum',
+                isCorrect: false,
+                explanation: 'The superior mesenteric vessels and duodenum are located elsewhere in the abdomen, not within the free edge of the lesser omentum.',
+              },
+              {
+                text: 'Hepatic veins, inferior vena cava, and the coronary ligament',
+                isCorrect: false,
+                explanation: 'The hepatic veins drain the liver directly into the IVC and, along with the coronary ligament, are located posteriorly at the bare area of the liver, not within the hepatoduodenal ligament, and are not occluded by this maneuver.',
+              },
+              {
+                text: 'Cystic artery, cystic duct, and gallbladder fundus',
+                isCorrect: false,
+                explanation: 'These structures are found near Calot triangle at the gallbladder, a related but distinct anatomic region from the hepatoduodenal ligament and portal triad.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Colles fracture and its risk of acute median nerve compression',
+        summary:
+          'A Colles fracture — a fracture of the distal radius with dorsal displacement of the distal fragment, classically from a fall onto an outstretched, dorsiflexed hand — produces a "dinner fork" deformity of the wrist. Because the median nerve passes directly through the carpal tunnel just distal to this fracture site, significant swelling or displacement can cause acute median nerve compression.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'An elderly woman falls onto an outstretched, dorsiflexed hand and sustains a wrist deformity described as resembling a dinner fork. X-ray confirms a fracture of the distal radius with dorsal displacement. Which nerve is at risk of acute compression from swelling at this site, and through which structure does it pass?',
+            explanation:
+              'This is a Colles fracture, a dorsally displaced distal radius fracture producing the classic "dinner fork" deformity. The median nerve passes through the carpal tunnel immediately distal to the distal radius, so significant swelling or bony displacement here can cause acute median nerve compression, presenting with numbness in the median distribution and requiring monitoring for acute carpal tunnel syndrome.',
+            difficulty: 2,
+            choices: [
+              { text: 'Median nerve, through the carpal tunnel', isCorrect: true },
+              {
+                text: 'Ulnar nerve, through Guyon canal',
+                isCorrect: false,
+                explanation: 'Guyon canal lies more medially at the wrist; the median nerve and carpal tunnel are the structures classically at risk after a distal radius fracture.',
+              },
+              {
+                text: 'Radial nerve, at the spiral groove',
+                isCorrect: false,
+                explanation: 'The spiral groove is at the level of the humeral shaft, far from the wrist, and is not the site of concern in a distal radius fracture.',
+              },
+              {
+                text: 'Anterior interosseous nerve, in the proximal forearm',
+                isCorrect: false,
+                explanation: 'This branch of the median nerve is at risk with more proximal forearm trauma, not specifically with a distal radius fracture at the wrist.',
+              },
+              {
+                text: 'Posterior interosseous nerve, in the supinator muscle',
+                isCorrect: false,
+                explanation: 'This deep branch of the radial nerve is at risk with proximal radial injuries, not with a distal radius (Colles) fracture.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize De Quervain tenosynovitis from inflammation of the first extensor compartment',
+        summary:
+          'De Quervain tenosynovitis is inflammation of the tendons of abductor pollicis longus and extensor pollicis brevis as they pass through the first dorsal extensor compartment at the radial styloid — the same tendons that form the borders of the anatomical snuffbox. It causes pain over the radial wrist reproduced by ulnar deviation of a fisted thumb (Finkelstein test), common in new parents from repetitive thumb use lifting an infant.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A new mother develops pain along the radial side of her wrist, worsened by repetitive lifting of her infant. Pain is reproduced when she makes a fist around her thumb and the examiner passively deviates her wrist toward the ulnar side. Inflammation of which structures, forming part of the anatomical snuffbox, is responsible?',
+            explanation:
+              'This is De Quervain tenosynovitis: inflammation of the abductor pollicis longus and extensor pollicis brevis tendons as they pass through the first dorsal extensor compartment at the radial styloid. These same two tendons form the anterior (radial) border of the anatomical snuffbox. The Finkelstein test (ulnar deviation of a fisted thumb) stretches these inflamed tendons, reproducing the pain, and the condition is common with repetitive thumb-and-wrist use, such as lifting an infant.',
+            difficulty: 2,
+            choices: [
+              { text: 'Abductor pollicis longus and extensor pollicis brevis tendons', isCorrect: true },
+              {
+                text: 'Flexor carpi radialis and flexor pollicis longus tendons',
+                isCorrect: false,
+                explanation: 'These are volar (palmar) flexor tendons, unrelated to the dorsal first extensor compartment or the anatomical snuffbox.',
+              },
+              {
+                text: 'Extensor pollicis longus tendon alone',
+                isCorrect: false,
+                explanation: 'This tendon forms the posterior (ulnar) border of the anatomical snuffbox and occupies a separate (third) extensor compartment, not the one inflamed in De Quervain tenosynovitis.',
+              },
+              {
+                text: 'Extensor carpi radialis longus and brevis tendons',
+                isCorrect: false,
+                explanation: 'These tendons extend the wrist and are not part of the anatomical snuffbox or the first extensor compartment.',
+              },
+              {
+                text: 'Palmaris longus tendon',
+                isCorrect: false,
+                explanation: 'This tendon (absent in some individuals) lies on the volar wrist and is unrelated to the anatomical snuffbox or De Quervain tenosynovitis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish axillary from internal mammary lymphatic drainage of the breast',
+        summary:
+          'Most of the breast (particularly the lateral quadrants) drains to the axillary lymph nodes, making these nodes the first site of metastasis for most breast cancers and the target of sentinel lymph node biopsy. The medial quadrants, however, drain preferentially to the internal thoracic (mammary) nodes along the internal thoracic artery, deep to the sternum.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a malignant tumor in the medial, lower quadrant of the breast is found to have metastatic lymph nodes along the internal thoracic artery, deep to the sternum, despite a clinically normal axilla. Which lymphatic drainage pattern best explains this finding?',
+            explanation:
+              'While most breast lymphatics, especially from the lateral quadrants, drain to the axillary lymph nodes, the medial quadrants of the breast drain preferentially to the internal thoracic (internal mammary) lymph nodes, which lie along the internal thoracic artery deep to the sternum. A tumor in the medial breast can therefore metastasize to these internal thoracic nodes even when the axilla remains clinically uninvolved.',
+            difficulty: 2,
+            choices: [
+              { text: 'Medial breast quadrants drain preferentially to internal thoracic (internal mammary) nodes', isCorrect: true },
+              {
+                text: 'All breast quadrants drain exclusively to the axillary nodes, regardless of location',
+                isCorrect: false,
+                explanation: 'This is inaccurate; medial quadrants preferentially drain to the internal thoracic nodes rather than the axilla, as demonstrated by this patient’s findings.',
+              },
+              {
+                text: 'Lateral breast quadrants drain to the internal thoracic nodes, while medial quadrants drain to the axilla',
+                isCorrect: false,
+                explanation: 'This reverses the actual pattern; it is the medial quadrants that preferentially drain to the internal thoracic nodes.',
+              },
+              {
+                text: 'All breast lymphatics drain directly to the thoracic duct, bypassing regional lymph nodes',
+                isCorrect: false,
+                explanation: 'Breast lymphatics drain to regional nodes (axillary or internal thoracic) before eventually reaching the thoracic duct or right lymphatic duct, not directly.',
+              },
+              {
+                text: 'Breast lymphatics drain to the inguinal lymph nodes',
+                isCorrect: false,
+                explanation: 'The inguinal nodes drain the lower limb and external genitalia/perineum, not the breast.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize piriformis syndrome from anatomic variation of the sciatic nerve',
+        summary:
+          'The sciatic nerve normally exits the pelvis below the piriformis muscle through the greater sciatic foramen, but in a common anatomic variant, part or all of the nerve pierces through the muscle belly. Piriformis spasm or hypertrophy can then compress the sciatic nerve, causing buttock pain radiating down the leg that mimics lumbar disc herniation, often worsened by sitting or hip internal rotation.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A long-distance runner develops deep buttock pain radiating down the posterior thigh, worsened by prolonged sitting and by internal rotation of the hip, without any back pain or abnormality on lumbar spine imaging. Compression of which nerve, by which muscle, best explains this presentation?',
+            explanation:
+              'This is piriformis syndrome: the sciatic nerve, which in many individuals normally passes below the piriformis muscle but in an anatomic variant pierces through or around it, becomes compressed by piriformis spasm or hypertrophy. This produces sciatica-like buttock and posterior thigh pain that mimics a herniated disc but occurs with a structurally normal lumbar spine, and is characteristically worsened by activities that stretch or contract the piriformis, such as sitting or internal hip rotation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Sciatic nerve, compressed by the piriformis muscle', isCorrect: true },
+              {
+                text: 'Femoral nerve, compressed by the iliopsoas muscle',
+                isCorrect: false,
+                explanation: 'Femoral nerve compression would cause anterior thigh symptoms and knee extension weakness, not posterior buttock/thigh pain.',
+              },
+              {
+                text: 'Pudendal nerve, compressed by the obturator internus muscle',
+                isCorrect: false,
+                explanation: 'Pudendal nerve entrapment causes perineal, not buttock/posterior thigh, pain.',
+              },
+              {
+                text: 'Superior gluteal nerve, compressed by the gluteus maximus',
+                isCorrect: false,
+                explanation: 'Superior gluteal nerve compression would cause hip abductor weakness (Trendelenburg gait) rather than radiating pain.',
+              },
+              {
+                text: 'Obturator nerve, compressed by the pectineus muscle',
+                isCorrect: false,
+                explanation: 'Obturator nerve compression causes medial thigh symptoms, not posterior buttock/thigh pain.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize meralgia paresthetica from lateral femoral cutaneous nerve entrapment',
+        summary:
+          'The lateral femoral cutaneous nerve, a purely sensory branch of the lumbar plexus (L2-L3), passes beneath (or through) the inguinal ligament near the anterior superior iliac spine to supply the anterolateral thigh. Entrapment here — from obesity, pregnancy, tight belts, or prolonged sitting — causes burning pain and numbness over the anterolateral thigh without any motor weakness (meralgia paresthetica).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An obese patient who recently started wearing a tight utility belt for work develops burning pain and numbness over the anterolateral thigh, with no weakness of hip or knee movement. Entrapment of which nerve, at which anatomic landmark, best explains this presentation?',
+            explanation:
+              'This is meralgia paresthetica, caused by entrapment of the lateral femoral cutaneous nerve as it passes beneath the inguinal ligament near the anterior superior iliac spine. Because this nerve is purely sensory, supplying the anterolateral thigh, entrapment (from a tight belt, obesity, or pregnancy) causes burning pain and numbness in this distribution without any associated motor weakness.',
+            difficulty: 2,
+            choices: [
+              { text: 'Lateral femoral cutaneous nerve, beneath the inguinal ligament near the anterior superior iliac spine', isCorrect: true },
+              {
+                text: 'Femoral nerve, within the femoral triangle',
+                isCorrect: false,
+                explanation: 'Femoral nerve entrapment would also cause quadriceps weakness and a larger sensory territory (anterior/medial thigh, medial leg), not an isolated anterolateral sensory deficit.',
+              },
+              {
+                text: 'Obturator nerve, at the obturator canal',
+                isCorrect: false,
+                explanation: 'Obturator nerve entrapment affects the medial thigh, not the anterolateral thigh.',
+              },
+              {
+                text: 'Ilioinguinal nerve, within the inguinal canal',
+                isCorrect: false,
+                explanation: 'The ilioinguinal nerve supplies the proximal medial thigh and genital skin, a different distribution from the anterolateral thigh.',
+              },
+              {
+                text: 'Genitofemoral nerve, on the surface of the psoas muscle',
+                isCorrect: false,
+                explanation: 'The genitofemoral nerve supplies the genital skin and a small area of upper anterior thigh via its femoral branch, not the broader anterolateral thigh.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the contents and boundaries of the popliteal fossa',
+        summary:
+          'The popliteal fossa, the diamond-shaped space posterior to the knee, contains (from superficial/posterior to deep/anterior) the tibial nerve, the popliteal vein, and the popliteal artery, with the common fibular nerve running along its lateral border. A popliteal artery aneurysm here can compress the adjacent tibial nerve, causing posterior knee pain with radiating leg symptoms.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a pulsatile mass behind the knee is found to have a popliteal artery aneurysm. As it enlarges, which adjacent structure, lying most superficially within the popliteal fossa, is most likely to be compressed first, producing posterior knee pain and leg paresthesias?',
+            explanation:
+              'Within the popliteal fossa, the tibial nerve lies most superficially (posteriorly), with the popliteal vein deep to it and the popliteal artery deepest (most anterior) of the three, directly against the femur and tibia. An expanding popliteal artery aneurysm therefore tends to compress the more superficial tibial nerve, producing posterior knee pain and leg paresthesias, before it compresses structures on its own more anterior side.',
+            difficulty: 3,
+            choices: [
+              { text: 'Tibial nerve', isCorrect: true },
+              {
+                text: 'Common fibular nerve',
+                isCorrect: false,
+                explanation: 'The common fibular nerve runs along the lateral border of the popliteal fossa, further from the deeply positioned artery than the tibial nerve, which lies directly superficial to it.',
+              },
+              {
+                text: 'Popliteal vein',
+                isCorrect: false,
+                explanation: 'The popliteal vein lies between the artery and the tibial nerve, but the more superficial and clinically emphasized structure at risk from an expanding aneurysm is the tibial nerve.',
+              },
+              {
+                text: 'Femoral nerve',
+                isCorrect: false,
+                explanation: 'The femoral nerve is located anteriorly in the femoral triangle, nowhere near the popliteal fossa.',
+              },
+              {
+                text: 'Saphenous nerve',
+                isCorrect: false,
+                explanation: 'The saphenous nerve travels in the adductor canal and along the medial leg, not through the popliteal fossa.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the "unhappy triad" from a valgus knee injury',
+        summary:
+          'A lateral force applied to a planted, slightly flexed knee (a valgus stress, classic in football/soccer tackles) can simultaneously injure the anterior cruciate ligament, the medial collateral ligament, and the medial meniscus — the "unhappy triad" — because the MCL is firmly attached to the medial meniscus, transmitting injury between them.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A soccer player is tackled from the lateral side while her foot is planted, driving her knee medially (a valgus force). She reports immediate pain and a "pop," with subsequent joint laxity on valgus stress testing and a positive anterior drawer test. Which three structures are classically injured together in this mechanism?',
+            explanation:
+              'A lateral (valgus) blow to a planted, slightly flexed knee classically injures the "unhappy triad": the medial collateral ligament (from the direct valgus stress), the anterior cruciate ligament (from the accompanying rotational/anterior translation forces, reflected by the positive anterior drawer test), and the medial meniscus, which is injured because it is firmly attached to the deep fibers of the MCL and gets torn along with it.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior cruciate ligament, medial collateral ligament, and medial meniscus', isCorrect: true },
+              {
+                text: 'Posterior cruciate ligament, lateral collateral ligament, and lateral meniscus',
+                isCorrect: false,
+                explanation: 'This combination is not the classic unhappy triad and does not match a valgus injury mechanism; the LCL is not attached to the lateral meniscus the way the MCL is attached to the medial meniscus.',
+              },
+              {
+                text: 'Patellar tendon, quadriceps tendon, and both menisci',
+                isCorrect: false,
+                explanation: 'These structures are not the classic unhappy triad and are not the ones typically injured together by a valgus force.',
+              },
+              {
+                text: 'Anterior cruciate ligament, lateral collateral ligament, and lateral meniscus',
+                isCorrect: false,
+                explanation: 'A valgus force stresses the medial, not lateral, side of the knee, so the MCL and medial meniscus, not their lateral counterparts, are classically injured alongside the ACL.',
+              },
+              {
+                text: 'Posterior cruciate ligament, medial collateral ligament, and medial meniscus',
+                isCorrect: false,
+                explanation: 'The classic triad involves the anterior, not posterior, cruciate ligament; PCL injury is more typical of a direct blow to the proximal tibia (dashboard injury), a different mechanism.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize posterior cruciate ligament injury from a "dashboard" mechanism',
+        summary:
+          'The posterior cruciate ligament prevents posterior displacement of the tibia relative to the femur. It is classically injured by a posteriorly directed force on the proximal tibia with the knee flexed, as when the knee strikes a car dashboard in a head-on collision, producing a positive posterior drawer test.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient involved in a head-on motor vehicle collision strikes his flexed knee against the dashboard. On exam, the tibia can be pushed posteriorly relative to the femur (a positive posterior drawer test). Which ligament has most likely been injured, and by what mechanism?',
+            explanation:
+              'This is a posterior cruciate ligament (PCL) injury, classically caused by a posteriorly directed force on the proximal tibia with the knee flexed — the "dashboard injury" mechanism seen in head-on collisions. The PCL normally prevents posterior displacement of the tibia relative to the femur, so its rupture produces a positive posterior drawer test.',
+            difficulty: 2,
+            choices: [
+              { text: 'Posterior cruciate ligament', isCorrect: true },
+              {
+                text: 'Anterior cruciate ligament',
+                isCorrect: false,
+                explanation: 'ACL injury classically results from a noncontact pivoting/deceleration mechanism and produces a positive anterior, not posterior, drawer test.',
+              },
+              {
+                text: 'Medial collateral ligament',
+                isCorrect: false,
+                explanation: 'MCL injury results from a valgus (lateral) force and produces medial joint laxity, not posterior tibial displacement.',
+              },
+              {
+                text: 'Lateral collateral ligament',
+                isCorrect: false,
+                explanation: 'LCL injury results from a varus (medial) force and produces lateral joint laxity, not posterior tibial displacement.',
+              },
+              {
+                text: 'Medial meniscus',
+                isCorrect: false,
+                explanation: 'Meniscal injury typically presents with joint line tenderness and locking/catching, not a positive posterior drawer test.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the contents of the femoral triangle (NAVEL, lateral to medial)',
+        summary:
+          'The femoral triangle, bounded by the inguinal ligament, sartorius, and adductor longus, contains from lateral to medial: the femoral Nerve, femoral Artery, femoral Vein, and Empty space/Lymphatics (mnemonic "NAVEL"). This order matters clinically for femoral vein catheterization (aiming medial to the arterial pulse) and for understanding femoral hernias, which emerge through the empty space medial to the vein.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'To safely cannulate the femoral vein while avoiding the femoral artery and nerve, a clinician palpates the femoral pulse and inserts the needle just medial to it. This approach relies on which arrangement of structures within the femoral triangle?',
+            explanation:
+              'Within the femoral triangle, the structures are arranged from lateral to medial as: femoral Nerve, femoral Artery, femoral Vein, and Empty space/Lymphatics (mnemonic "NAVEL"). Because the vein lies immediately medial to the palpable arterial pulse, clinicians cannulate just medial to the pulse to reliably access the vein while avoiding the nerve (lateral to the artery) and the artery itself.',
+            difficulty: 2,
+            choices: [
+              { text: 'Femoral nerve, artery, vein, and empty space/lymphatics, arranged lateral to medial (NAVEL)', isCorrect: true },
+              {
+                text: 'Femoral vein, artery, nerve, and empty space/lymphatics, arranged lateral to medial',
+                isCorrect: false,
+                explanation: 'This reverses the actual order; the nerve is the most lateral structure and the vein lies medial to the artery, not lateral to it.',
+              },
+              {
+                text: 'Femoral artery, nerve, vein, and empty space/lymphatics, arranged lateral to medial',
+                isCorrect: false,
+                explanation: 'The nerve, not the artery, is the most lateral structure in the femoral triangle.',
+              },
+              {
+                text: 'Femoral nerve, vein, artery, and empty space/lymphatics, arranged lateral to medial',
+                isCorrect: false,
+                explanation: 'The artery lies between the nerve and vein, not medial to the vein.',
+              },
+              {
+                text: 'All femoral triangle contents lie at the same depth, with no consistent lateral-to-medial order',
+                isCorrect: false,
+                explanation: 'The femoral triangle contents have a well-defined, consistent lateral-to-medial arrangement (NAVEL), which is precisely why this venipuncture technique is reliable.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the adductor (subsartorial) canal as the femoral vessels’ path to the popliteal fossa',
+        summary:
+          'The adductor canal (Hunter canal), running deep to the sartorius muscle in the middle third of the thigh, transmits the femoral artery and vein (which exit posteriorly through the adductor hiatus to become the popliteal vessels) along with the saphenous nerve, which instead continues superficially to supply the medial leg.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A surgeon performing a below-knee bypass identifies a fascial tunnel deep to the sartorius muscle in the middle third of the thigh, through which the femoral vessels travel before passing through the adductor hiatus to continue as the popliteal vessels. Which nerve also travels within this same canal but does not exit through the adductor hiatus?',
+            explanation:
+              'This is the adductor (Hunter/subsartorial) canal, which transmits the femoral artery and vein along with the saphenous nerve. The femoral vessels exit posteriorly through the adductor hiatus in the adductor magnus to become the popliteal vessels, but the saphenous nerve, a purely sensory branch of the femoral nerve, instead continues distally in a more superficial plane to supply the medial leg.',
+            difficulty: 3,
+            choices: [
+              { text: 'Saphenous nerve', isCorrect: true },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'The obturator nerve travels through the obturator canal and innervates the medial thigh adductors, not the adductor canal of the distal thigh.',
+              },
+              {
+                text: 'Tibial nerve',
+                isCorrect: false,
+                explanation: 'The tibial nerve travels with the sciatic nerve posteriorly and reaches the popliteal fossa via a different path, not through the adductor canal.',
+              },
+              {
+                text: 'Common fibular nerve',
+                isCorrect: false,
+                explanation: 'This nerve also travels posteriorly with the sciatic nerve, not through the anteromedial adductor canal.',
+              },
+              {
+                text: 'Femoral nerve proper',
+                isCorrect: false,
+                explanation: 'The femoral nerve terminates largely within the femoral triangle, proximal to the adductor canal; only its saphenous branch continues through the canal.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the "danger triangle" of the face and its connection to cavernous sinus thrombosis',
+        summary:
+          'The area from the corners of the mouth to the bridge of the nose ("danger triangle") drains via the facial vein into the ophthalmic veins and then the cavernous sinus. Because these veins are valveless, infection here (e.g., a squeezed nasal or upper lip pimple) can spread retrograde into the cavernous sinus, causing septic cavernous sinus thrombosis.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient who squeezed a pimple near the corner of the nose develops fever, periorbital swelling, proptosis, and ophthalmoplegia several days later. Infection spreading through which valveless venous pathway best explains this progression to a life-threatening intracranial complication?',
+            explanation:
+              'The region from the corners of the mouth to the bridge of the nose is called the "danger triangle" because it drains via the facial vein into the ophthalmic veins, which connect directly to the cavernous sinus. Since these veins lack valves, infection can spread retrograde from the face into the cavernous sinus, causing septic cavernous sinus thrombosis — presenting with fever, periorbital swelling, proptosis, and ophthalmoplegia from compression of the cranial nerves that traverse the sinus.',
+            difficulty: 3,
+            choices: [
+              { text: 'Facial vein → ophthalmic veins → cavernous sinus (all valveless)', isCorrect: true },
+              {
+                text: 'Facial artery → internal carotid artery → circle of Willis',
+                isCorrect: false,
+                explanation: 'This describes an arterial pathway; the danger triangle’s risk comes from valveless venous drainage, not arterial spread.',
+              },
+              {
+                text: 'Lymphatic drainage via the submandibular lymph nodes directly into the jugular vein',
+                isCorrect: false,
+                explanation: 'Lymphatic spread to regional nodes does not explain the direct, rapid intracranial venous spread characteristic of danger-triangle infections.',
+              },
+              {
+                text: 'Cerebrospinal fluid spread through the cribriform plate',
+                isCorrect: false,
+                explanation: 'This pathway is relevant to anterior skull base fractures and CSF leaks, not to venous spread of facial skin infections.',
+              },
+              {
+                text: 'Direct extension through the maxillary sinus into the orbit',
+                isCorrect: false,
+                explanation: 'While sinus infections can also cause orbital complications, the classic mechanism for danger-triangle skin infections reaching the cavernous sinus is via the valveless facial-to-ophthalmic venous connection.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize central retinal artery occlusion as a cause of sudden, painless monocular vision loss',
+        summary:
+          'The central retinal artery, a branch of the ophthalmic artery (itself a branch of the internal carotid artery), is an end artery supplying the retina with no significant collateral circulation. Its occlusion, often embolic, causes sudden, painless, complete monocular vision loss with a pale retina and a "cherry-red spot" at the fovea on fundoscopy.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with atrial fibrillation develops sudden, painless, complete loss of vision in one eye. Fundoscopic exam reveals a pale retina with a cherry-red spot at the macula. Occlusion of which vessel is most likely responsible, and why does this cause such severe, immediate vision loss?',
+            explanation:
+              'This presentation is classic for central retinal artery occlusion, most often from an embolus (here, likely originating from atrial fibrillation-associated thrombus). The central retinal artery is a branch of the ophthalmic artery and functions as an end artery with essentially no collateral supply to the retina, so its occlusion causes sudden and complete ischemia, producing profound painless vision loss with the pale retina and cherry-red fovea (the thin foveal retina allows the underlying choroidal circulation to show through) seen on exam.',
+            difficulty: 2,
+            choices: [
+              { text: 'Central retinal artery, an end artery with no significant collateral supply', isCorrect: true },
+              {
+                text: 'Central retinal vein, which has extensive collateral drainage',
+                isCorrect: false,
+                explanation: 'Central retinal vein occlusion causes a more gradual, less severe vision loss with retinal hemorrhages ("blood and thunder" fundus), not this acute painless picture with a cherry-red spot.',
+              },
+              {
+                text: 'Posterior ciliary arteries, which richly anastomose with the central retinal artery',
+                isCorrect: false,
+                explanation: 'The posterior ciliary arteries supply the choroid and optic nerve head and have their own collateral network; their occlusion causes a different pattern (e.g., ischemic optic neuropathy), not this presentation.',
+              },
+              {
+                text: 'Ophthalmic vein, which drains into the cavernous sinus',
+                isCorrect: false,
+                explanation: 'Venous occlusion here would not produce this acute arterial ischemic picture with a cherry-red spot.',
+              },
+              {
+                text: 'Middle cerebral artery, supplying the optic radiations',
+                isCorrect: false,
+                explanation: 'MCA occlusion affecting the optic radiations would cause a homonymous visual field defect, not complete monocular vision loss with retinal findings.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a painful Horner syndrome from internal carotid artery dissection',
+        summary:
+          'Postganglionic sympathetic fibers to the face travel along the internal carotid artery, while fibers to facial sweat glands travel separately along the external carotid artery. An internal carotid artery dissection therefore causes a painful Horner syndrome (ptosis, miosis) with anhidrosis limited to (or sparing) different areas than a lesion affecting the whole sympathetic chain, and is often accompanied by neck pain and signs of cerebral ischemia.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 40-year-old woman develops sudden neck pain after a chiropractic neck manipulation, followed by ipsilateral ptosis and miosis without any facial anhidrosis, and then transient weakness of the contralateral arm. Dissection of which vessel best explains this combination of a painful Horner syndrome with facial sweating spared and an ischemic neurologic event?',
+            explanation:
+              'This presentation reflects internal carotid artery dissection. Postganglionic sympathetic fibers destined for the pupil and eyelid (causing miosis and ptosis if disrupted) travel along the internal carotid artery, while the fibers responsible for facial sweating travel separately along the external carotid artery; a dissection isolated to the internal carotid artery therefore produces Horner syndrome (ptosis, miosis) while sparing facial sweating, distinguishing it from a more proximal sympathetic chain lesion. Neck pain and a subsequent ischemic event (from thromboembolism or reduced flow) further support carotid dissection as the diagnosis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Internal carotid artery dissection, sparing facial sweating', isCorrect: true },
+              {
+                text: 'External carotid artery dissection, sparing pupillary and eyelid function',
+                isCorrect: false,
+                explanation: 'The external carotid artery does not carry the sympathetic fibers responsible for pupil/eyelid function; its involvement would not produce Horner syndrome.',
+              },
+              {
+                text: 'Vertebral artery dissection, causing bilateral facial anhidrosis',
+                isCorrect: false,
+                explanation: 'Vertebral artery dissection typically causes posterior circulation (brainstem/cerebellar) symptoms, not this pattern of Horner syndrome with sweating spared.',
+              },
+              {
+                text: 'Complete cervical sympathetic chain injury, causing both ptosis/miosis and facial anhidrosis',
+                isCorrect: false,
+                explanation: 'A complete sympathetic chain lesion (as from a Pancoast tumor) would also cause facial anhidrosis, since it affects fibers before they split between the internal and external carotid arteries — anhidrosis is explicitly absent in this case.',
+              },
+              {
+                text: 'Basilar artery dissection, causing bilateral cranial nerve palsies',
+                isCorrect: false,
+                explanation: 'Basilar artery pathology causes brainstem findings, typically bilateral or alternating, not this unilateral painful Horner syndrome pattern.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish orbital apex syndrome from superior orbital fissure syndrome by CN II involvement',
+        summary:
+          'The superior orbital fissure transmits CN III, IV, V1, and VI; the optic canal, just medial to it, separately transmits CN II and the ophthalmic artery. A mass at the superior orbital fissure alone spares vision (superior orbital fissure syndrome: ophthalmoplegia + V1 sensory loss), whereas a more posteromedial mass involving the orbital apex additionally compresses the optic nerve, adding vision loss (orbital apex syndrome).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with an orbital mass has ophthalmoplegia (paralysis of eye movements), ptosis, and numbness over the forehead, but normal visual acuity. Which structure has NOT been compressed, and which additional structure’s involvement would upgrade this to orbital apex syndrome?',
+            explanation:
+              'This presentation, ophthalmoplegia (CN III, IV, VI), ptosis, and V1 sensory loss with preserved vision, is superior orbital fissure syndrome, since the superior orbital fissure transmits these nerves but not the optic nerve. The optic nerve instead passes through the adjacent optic canal; if a mass extends posteromedially enough to also compress the optic canal and optic nerve, vision loss would be added, upgrading the diagnosis to orbital apex syndrome.',
+            difficulty: 3,
+            choices: [
+              { text: 'The optic nerve (CN II), traveling through the separate optic canal, has not been compressed; its involvement defines orbital apex syndrome', isCorrect: true },
+              {
+                text: 'The oculomotor nerve (CN III) has not been compressed; its involvement defines orbital apex syndrome',
+                isCorrect: false,
+                explanation: 'CN III passes through the superior orbital fissure itself and is already compressed here, as reflected by the ophthalmoplegia and ptosis.',
+              },
+              {
+                text: 'The trigeminal nerve’s ophthalmic division (V1) has not been compressed; its involvement defines orbital apex syndrome',
+                isCorrect: false,
+                explanation: 'V1 also passes through the superior orbital fissure and is already compressed here, as reflected by the forehead numbness.',
+              },
+              {
+                text: 'The abducens nerve (CN VI) has not been compressed; its involvement defines orbital apex syndrome',
+                isCorrect: false,
+                explanation: 'CN VI also passes through the superior orbital fissure and is already involved in this presentation (contributing to the ophthalmoplegia).',
+              },
+              {
+                text: 'The facial nerve (CN VII) has not been compressed; its involvement defines orbital apex syndrome',
+                isCorrect: false,
+                explanation: 'CN VII does not pass through the superior orbital fissure or optic canal at all and is not relevant to either syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a cribriform plate fracture to anosmia and CSF rhinorrhea',
+        summary:
+          'The cribriform plate of the ethmoid bone, in the anterior cranial fossa, is perforated by the filaments of the olfactory nerve (CN I) as they pass from the nasal mucosa to the olfactory bulb, and is covered by a thin layer of dura. A fracture here (classically from facial trauma) can shear these delicate nerve filaments, causing anosmia, and tear the overlying dura, allowing cerebrospinal fluid to leak into the nose (CSF rhinorrhea).',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following a severe facial trauma, a patient reports loss of the sense of smell and is noted to have clear fluid dripping from the nose that tests positive for glucose. Fracture of which structure best explains both findings?',
+            explanation:
+              'A fracture of the cribriform plate of the ethmoid bone can shear the delicate olfactory nerve (CN I) filaments that pass through its perforations, causing anosmia, and can also tear the thin layer of dura covering the plate, allowing cerebrospinal fluid to leak into the nasal cavity (CSF rhinorrhea) — confirmed by a glucose-positive nasal discharge, since CSF (unlike normal nasal mucus) contains glucose.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cribriform plate of the ethmoid bone', isCorrect: true },
+              {
+                text: 'Petrous part of the temporal bone',
+                isCorrect: false,
+                explanation: 'A fracture here would more likely cause hearing loss, facial nerve palsy, and CSF otorrhea (from the ear), not anosmia and CSF rhinorrhea.',
+              },
+              {
+                text: 'Pterion',
+                isCorrect: false,
+                explanation: 'A fracture here is associated with middle meningeal artery injury and epidural hematoma, not anosmia or CSF rhinorrhea.',
+              },
+              {
+                text: 'Foramen magnum',
+                isCorrect: false,
+                explanation: 'This large posterior opening transmits the brainstem and spinal cord/vertebral arteries; its fracture would not selectively cause anosmia and CSF rhinorrhea.',
+              },
+              {
+                text: 'Sella turcica',
+                isCorrect: false,
+                explanation: 'This houses the pituitary gland; its fracture could affect pituitary function but is not the classic cause of anosmia and CSF rhinorrhea.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize basilar skull fracture from Battle sign and raccoon eyes',
+        summary:
+          'A basilar skull fracture can cause blood to track along fascial planes to produce two classic delayed signs: Battle sign (ecchymosis over the mastoid process, from bleeding tracking along the posterior auricular region) and "raccoon eyes" (periorbital ecchymosis, from bleeding into the loose periorbital connective tissue via the anterior cranial fossa) — both indicating fracture rather than direct facial trauma when found together with other signs like CSF otorrhea/rhinorrhea.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Two days after a high-speed motorcycle collision, a patient develops bruising over both mastoid processes and bilateral periorbital ecchymosis, with clear fluid draining from one ear. Which underlying injury do these delayed findings, taken together, most strongly suggest?',
+            explanation:
+              'Battle sign (mastoid ecchymosis) and raccoon eyes (periorbital ecchymosis), especially when they appear a day or two after trauma (rather than immediately, as with direct facial bruising) and are accompanied by clear otorrhea (suggesting a CSF leak), are classic indicators of a basilar skull fracture, in which blood and CSF track along fascial planes from the fracture site to these distant, characteristic locations.',
+            difficulty: 2,
+            choices: [
+              { text: 'Basilar skull fracture', isCorrect: true },
+              {
+                text: 'Isolated nasal bone fracture',
+                isCorrect: false,
+                explanation: 'A nasal fracture would cause more localized swelling and bruising around the nose, not the delayed, distant mastoid and periorbital ecchymosis with CSF otorrhea described.',
+              },
+              {
+                text: 'Mandibular fracture',
+                isCorrect: false,
+                explanation: 'This would cause jaw pain, malocclusion, and local bruising, not the classic distant Battle sign/raccoon eyes pattern with CSF leak.',
+              },
+              {
+                text: 'Simple orbital blowout fracture',
+                isCorrect: false,
+                explanation: 'This typically causes immediate periorbital swelling and possible entrapment of extraocular muscles, not bilateral delayed ecchymosis with CSF otorrhea from the ear.',
+              },
+              {
+                text: 'Zygomatic arch fracture',
+                isCorrect: false,
+                explanation: 'This causes localized cheek flattening and trismus, not the distant, delayed Battle sign/raccoon eyes/CSF otorrhea pattern described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Ramsay Hunt syndrome from herpes zoster reactivation in the geniculate ganglion',
+        summary:
+          'Ramsay Hunt syndrome results from reactivation of latent varicella-zoster virus within the geniculate ganglion of the facial nerve. It produces a triad of ipsilateral facial paralysis, ear pain, and a vesicular rash in the ear canal/auricle (and sometimes on the anterior two-thirds of the tongue), distinguishing it from idiopathic Bell palsy, which lacks the vesicular rash.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An elderly patient presents with sudden unilateral facial paralysis, severe ear pain, and a vesicular rash within the external auditory canal. Reactivation of which virus, latent in which structure, best explains this combination of findings?',
+            explanation:
+              'This is Ramsay Hunt syndrome (herpes zoster oticus), caused by reactivation of latent varicella-zoster virus in the geniculate ganglion of the facial nerve. The virus’s spread along the facial nerve and its sensory contributions to the ear explains the combination of facial paralysis, severe otalgia, and the characteristic vesicular rash in the auditory canal — distinguishing it from idiopathic Bell palsy, which presents with facial paralysis alone, without a vesicular rash.',
+            difficulty: 2,
+            choices: [
+              { text: 'Varicella-zoster virus, latent in the geniculate ganglion of the facial nerve', isCorrect: true },
+              {
+                text: 'Herpes simplex virus type 1, latent in the trigeminal ganglion',
+                isCorrect: false,
+                explanation: 'HSV-1 reactivation from the trigeminal ganglion classically causes oral/perioral cold sores, not this combination of facial paralysis and ear vesicles.',
+              },
+              {
+                text: 'Varicella-zoster virus, latent in the dorsal root ganglia of the thoracic spinal nerves',
+                isCorrect: false,
+                explanation: 'Reactivation here causes thoracic dermatomal shingles, not facial paralysis or ear findings.',
+              },
+              {
+                text: 'Cytomegalovirus, latent in the cochlear nerve',
+                isCorrect: false,
+                explanation: 'CMV is not the classic cause of this syndrome, and this is not a recognized site of viral latency for it.',
+              },
+              {
+                text: 'Herpes simplex virus type 2, latent in the sacral dorsal root ganglia',
+                isCorrect: false,
+                explanation: 'HSV-2 reactivation from sacral ganglia causes genital lesions, unrelated to facial paralysis or ear findings.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link the facial nerve’s branch to stapedius with hyperacusis in proximal facial nerve lesions',
+        summary:
+          'The facial nerve gives off a branch to the stapedius muscle before exiting the stylomastoid foramen; the stapedius normally dampens the vibration of the ossicles in response to loud sounds. A facial nerve lesion proximal to this branch (e.g., within the facial canal) therefore paralyzes the stapedius, causing hyperacusis (sounds perceived as abnormally loud) in addition to facial weakness — a finding absent if the lesion is distal to the stapedius branch, such as at the stylomastoid foramen.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with acute facial paralysis also reports that ordinary sounds seem unusually loud in the affected ear. This additional finding suggests the facial nerve lesion is located at which point relative to its branch to the stapedius muscle?',
+            explanation:
+              'The stapedius muscle, innervated by a branch of the facial nerve given off within the facial canal (before the nerve exits the stylomastoid foramen), normally dampens ossicular vibration in response to loud sounds. A facial nerve lesion proximal to this branch paralyzes the stapedius as well, removing this dampening effect and causing hyperacusis alongside the facial weakness — whereas a lesion distal to the branch (e.g., right at or after the stylomastoid foramen) would spare stapedius function and not cause hyperacusis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Proximal to the branch to the stapedius (within the facial canal)', isCorrect: true },
+              {
+                text: 'Distal to the branch to the stapedius (at or after the stylomastoid foramen)',
+                isCorrect: false,
+                explanation: 'A lesion here would spare the stapedius branch, preserving normal sound dampening and not causing hyperacusis.',
+              },
+              {
+                text: 'Within the internal acoustic meatus, before any facial nerve branches arise',
+                isCorrect: false,
+                explanation: 'While a lesion here would also cause hyperacusis (since it is proximal to the stapedius branch), the finding of hyperacusis specifically localizes the lesion to anywhere proximal to that branch, not uniquely to the internal acoustic meatus, making the facial canal the more precise, generally correct localization being tested here.',
+              },
+              {
+                text: 'At the geniculate ganglion only, and nowhere else',
+                isCorrect: false,
+                explanation: 'A lesion anywhere proximal to the stapedius branch, not only at the geniculate ganglion specifically, would cause hyperacusis.',
+              },
+              {
+                text: 'This finding cannot be used to localize a facial nerve lesion',
+                isCorrect: false,
+                explanation: 'Hyperacusis is in fact a useful localizing sign, indicating a lesion proximal to the stapedius branch rather than distal to it.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the chorda tympani’s role in anterior tongue taste and its risk during ear surgery',
+        summary:
+          'The chorda tympani, a branch of the facial nerve, crosses through the middle ear cavity (across the tympanic membrane) before joining the lingual nerve to carry taste sensation from the anterior two-thirds of the tongue and parasympathetic fibers to the submandibular and sublingual glands. Its course through the middle ear places it at risk during tympanostomy tube placement or other middle ear surgery.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following middle ear surgery, a patient reports a metallic taste and loss of taste sensation over the anterior two-thirds of the tongue on the operated side, with normal facial movement. Which nerve was most likely injured, and what is its relationship to the facial nerve?',
+            explanation:
+              'The chorda tympani, a branch of the facial nerve that splits off before the main trunk exits the stylomastoid foramen, crosses through the middle ear cavity on its way to join the lingual nerve. It carries taste fibers from the anterior two-thirds of the tongue (and parasympathetic secretomotor fibers to the submandibular/sublingual glands). Because it traverses the middle ear, it is vulnerable to injury during middle ear surgery independent of the main facial nerve trunk, explaining isolated taste loss with preserved facial movement.',
+            difficulty: 3,
+            choices: [
+              { text: 'Chorda tympani, a branch of the facial nerve that crosses the middle ear', isCorrect: true },
+              {
+                text: 'Lingual nerve, a branch of the mandibular division of the trigeminal nerve, injured at its origin',
+                isCorrect: false,
+                explanation: 'While the chorda tympani does join the lingual nerve, the lingual nerve’s own general sensory fibers (touch/pain, not taste) come from the trigeminal nerve; the taste fibers specifically come from the facial nerve’s chorda tympani branch, which is the structure at risk during middle ear surgery.',
+              },
+              {
+                text: 'Glossopharyngeal nerve, supplying taste to the posterior third of the tongue',
+                isCorrect: false,
+                explanation: 'This nerve supplies the posterior third of the tongue, not the anterior two-thirds affected here, and does not pass through the middle ear.',
+              },
+              {
+                text: 'Main trunk of the facial nerve, at the stylomastoid foramen',
+                isCorrect: false,
+                explanation: 'Injury to the main facial nerve trunk would cause facial weakness, which is explicitly absent in this patient.',
+              },
+              {
+                text: 'Hypoglossal nerve, supplying tongue motor function',
+                isCorrect: false,
+                explanation: 'This nerve controls tongue movement, not taste, and is unrelated to this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish the nerve at risk from the superior versus inferior thyroid artery during thyroidectomy',
+        summary:
+          'The external branch of the superior laryngeal nerve runs close to the superior thyroid artery near the superior pole of the thyroid, while the recurrent laryngeal nerve runs close to the inferior thyroid artery near the inferior pole/posterior thyroid. Ligating the superior pole vessels close to the gland risks the external laryngeal branch (voice pitch changes), while ligating the inferior pole vessels risks the recurrent laryngeal nerve (hoarseness/vocal cord paralysis).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'During thyroidectomy, a surgeon ligates the superior thyroid artery too far from the gland, injuring a nearby nerve, and separately ligates the inferior thyroid artery, injuring a different nearby nerve. Which nerve is at greatest risk from each vessel, and what distinct voice change does each produce?',
+            explanation:
+              'The external branch of the superior laryngeal nerve runs in close proximity to the superior thyroid artery near the gland’s superior pole; injury here weakens the cricothyroid muscle, causing a monotone voice that tires easily (subtle, easily missed). The recurrent laryngeal nerve runs close to the inferior thyroid artery near the inferior pole; injury here paralyzes most intrinsic laryngeal muscles, causing hoarseness or a breathy voice from vocal cord paralysis (a much more obvious deficit). Surgeons therefore ligate the superior pole vessels close to the gland (away from the external laryngeal nerve) and carefully identify the recurrent laryngeal nerve before ligating inferior pole vessels.',
+            difficulty: 3,
+            choices: [
+              { text: 'Superior thyroid artery risks the external laryngeal nerve (subtle pitch change); inferior thyroid artery risks the recurrent laryngeal nerve (hoarseness)', isCorrect: true },
+              {
+                text: 'Superior thyroid artery risks the recurrent laryngeal nerve; inferior thyroid artery risks the external laryngeal nerve',
+                isCorrect: false,
+                explanation: 'This reverses the actual anatomic relationships; the recurrent laryngeal nerve is associated with the inferior, not superior, thyroid vessels.',
+              },
+              {
+                text: 'Both arteries place only the recurrent laryngeal nerve at risk, with no distinct nerve near the superior pole',
+                isCorrect: false,
+                explanation: 'The external branch of the superior laryngeal nerve is a distinct nerve specifically at risk near the superior pole, separate from the recurrent laryngeal nerve.',
+              },
+              {
+                text: 'Superior thyroid artery risks the hypoglossal nerve; inferior thyroid artery risks the vagus nerve trunk',
+                isCorrect: false,
+                explanation: 'Neither the hypoglossal nerve nor the main vagal trunk runs in close proximity to these specific thyroid vessels in the way the laryngeal nerves do.',
+              },
+              {
+                text: 'Neither vessel is closely associated with any laryngeal nerve',
+                isCorrect: false,
+                explanation: 'Both thyroid vessels have well-described, clinically important close relationships with laryngeal nerve branches, which is precisely why careful dissection is required during thyroidectomy.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize post-thyroidectomy hypocalcemia from inadvertent parathyroid injury',
+        summary:
+          'The four parathyroid glands lie on the posterior surface of the thyroid gland and can be inadvertently removed, devascularized, or injured during thyroidectomy. Because the parathyroids secrete parathyroid hormone, essential for calcium homeostasis, their injury causes hypocalcemia, presenting with perioral numbness, muscle cramps, and a positive Chvostek or Trousseau sign.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'One day after a total thyroidectomy, a patient develops perioral tingling and involuntary carpal spasm when a blood pressure cuff is inflated on her arm (a positive Trousseau sign). Injury to which glands, located on the posterior surface of the organ removed, best explains this complication?',
+            explanation:
+              'The four parathyroid glands sit on the posterior surface of the thyroid gland and are at risk of inadvertent removal or devascularization during thyroidectomy. Because they secrete parathyroid hormone, which is essential for maintaining serum calcium, their injury causes hypocalcemia — presenting with perioral numbness, muscle cramps, and the classic Chvostek sign (facial twitching with tapping over the facial nerve) or Trousseau sign (carpal spasm with blood pressure cuff inflation), as described here.',
+            difficulty: 2,
+            choices: [
+              { text: 'Parathyroid glands, causing hypocalcemia', isCorrect: true },
+              {
+                text: 'Adrenal glands, causing adrenal insufficiency',
+                isCorrect: false,
+                explanation: 'The adrenal glands are located atop the kidneys, far from the thyroid, and are not at risk during thyroidectomy.',
+              },
+              {
+                text: 'Submandibular glands, causing decreased salivation',
+                isCorrect: false,
+                explanation: 'These glands are located in the floor of the mouth, not on the thyroid, and their injury would not cause hypocalcemia.',
+              },
+              {
+                text: 'Thymus gland, causing immunodeficiency',
+                isCorrect: false,
+                explanation: 'The thymus lies in the anterior mediastinum and, while occasionally encountered during extensive neck surgery, is not the structure responsible for this calcium-related presentation.',
+              },
+              {
+                text: 'Lacrimal glands, causing dry eyes',
+                isCorrect: false,
+                explanation: 'These glands are located in the orbit and are completely unrelated to thyroid surgery or calcium homeostasis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Justify right internal jugular vein preference for central line placement',
+        summary:
+          'The right internal jugular vein offers a short, straight path to the superior vena cava and right atrium, and its cannulation avoids the thoracic duct (which enters the venous system on the left, at the left venous angle) and minimizes the risk of injuring the pleural dome/lung apex compared to subclavian approaches — making it the preferred first-choice site for central venous catheterization.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'When choosing a site for central venous catheter placement, clinicians generally prefer the right internal jugular vein over the left internal jugular vein or either subclavian vein. Which anatomic considerations best explain this preference?',
+            explanation:
+              'The right internal jugular vein provides a short, relatively straight path directly into the superior vena cava and right atrium, facilitating catheter placement and reducing malposition. Choosing the right side over the left also avoids the thoracic duct, which empties into the venous system at the left venous angle (junction of the left subclavian and internal jugular veins) and could be injured on the left. Compared to the subclavian approach, the internal jugular approach (and particularly the right side) also carries a lower risk of pneumothorax from inadvertent injury to the pleural dome/lung apex.',
+            difficulty: 2,
+            choices: [
+              { text: 'Short, straight path to the SVC/right atrium; avoids the thoracic duct (left-sided) and reduces pneumothorax risk versus subclavian access', isCorrect: true },
+              {
+                text: 'The right internal jugular vein is preferred solely because it is larger in diameter than the left',
+                isCorrect: false,
+                explanation: 'While vein caliber can be a minor factor, the primary reasons for preferring the right side relate to its straighter path to the heart and avoidance of the thoracic duct, not simply size.',
+              },
+              {
+                text: 'The right internal jugular vein is preferred because the thoracic duct enters the venous system on the right side, which must be avoided',
+                isCorrect: false,
+                explanation: 'The thoracic duct actually enters on the left side, at the left venous angle — this is precisely why the right side is preferred, not because the duct is on the right.',
+              },
+              {
+                text: 'The right internal jugular vein is preferred because it lies farther from the lung apex than the left',
+                isCorrect: false,
+                explanation: 'Both internal jugular veins are similarly positioned relative to their respective lung apices; the reduced pneumothorax risk relates to the internal jugular approach in general compared to the subclavian approach, not a left-right difference in proximity to the lung.',
+              },
+              {
+                text: 'The right internal jugular vein is preferred because it directly overlies the right coronary artery, aiding fluoroscopic guidance',
+                isCorrect: false,
+                explanation: 'The internal jugular vein does not overlie a coronary artery, and this is not a relevant consideration for site selection.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Courvoisier sign as pancreatic head cancer obstructing the common bile duct',
+        summary:
+          'A painless, palpably enlarged gallbladder in a jaundiced patient (Courvoisier sign) suggests malignant obstruction of the common bile duct — classically pancreatic head cancer — rather than gallstones, because gallstone disease usually causes a chronically scarred, fibrotic gallbladder that cannot distend, whereas a previously healthy gallbladder can distend freely against a slowly progressive malignant obstruction.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 65-year-old man presents with painless jaundice and weight loss. On exam, his gallbladder is palpably enlarged but non-tender. Which process is more likely responsible for his biliary obstruction, and why does the gallbladder finding argue against gallstones as the cause?',
+            explanation:
+              'A palpable, nontender, distended gallbladder in a jaundiced patient (Courvoisier sign/law) suggests malignant obstruction of the common bile duct, classically from a cancer in the head of the pancreas compressing the duct as it passes through or near the pancreatic head. This finding argues against gallstone disease as the cause, because chronic gallstones typically cause the gallbladder wall to become fibrotic and scarred over time, preventing it from distending even when the duct is obstructed — whereas a previously normal, healthy gallbladder wall can distend freely in response to a slowly developing malignant obstruction.',
+            difficulty: 2,
+            choices: [
+              { text: 'Pancreatic head cancer compressing the common bile duct; a healthy, non-fibrotic gallbladder can distend, unlike a gallstone-scarred one', isCorrect: true },
+              {
+                text: 'Choledocholithiasis (a gallstone lodged in the common bile duct); the gallbladder is enlarged because of the stone itself',
+                isCorrect: false,
+                explanation: 'Gallstone disease typically produces a chronically scarred, non-distensible gallbladder and often presents with painful, not painless, obstruction — the opposite of what Courvoisier sign implies.',
+              },
+              {
+                text: 'Acute cholecystitis; gallbladder inflammation directly causes painless enlargement',
+                isCorrect: false,
+                explanation: 'Acute cholecystitis is classically painful and tender on exam, not painless, and is caused by cystic duct obstruction (usually by a stone), which is the opposite implication of Courvoisier sign.',
+              },
+              {
+                text: 'Primary sclerosing cholangitis; diffuse bile duct fibrosis causes gallbladder distension',
+                isCorrect: false,
+                explanation: 'This condition causes diffuse intrahepatic and extrahepatic bile duct strictures rather than a discrete, palpable gallbladder enlargement, and is not the classic explanation for Courvoisier sign.',
+              },
+              {
+                text: 'Acute viral hepatitis; hepatocyte swelling causes the gallbladder to enlarge',
+                isCorrect: false,
+                explanation: 'Viral hepatitis causes hepatocellular, not obstructive, jaundice and does not classically cause a palpably enlarged gallbladder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize superior mesenteric artery (SMA) syndrome from duodenal compression',
+        summary:
+          'The third (horizontal) part of the duodenum passes between the superior mesenteric artery (anteriorly) and the aorta (posteriorly). Loss of the mesenteric fat pad that normally cushions this angle — from significant weight loss, prolonged bed rest, or a body cast — narrows the aortomesenteric angle and can compress the duodenum between these vessels, causing SMA syndrome: postprandial abdominal pain, nausea, and vomiting.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a recent history of rapid, significant weight loss develops postprandial abdominal pain, bloating, and vomiting, relieved somewhat by lying in the left lateral decubitus or knee-chest position. Imaging shows dilation of the stomach and proximal duodenum with an abrupt cutoff at the third part of the duodenum, which is compressed between two vessels. Which vessels are responsible for this compression?',
+            explanation:
+              'This is superior mesenteric artery (SMA) syndrome: the third part of the duodenum normally passes through the angle between the SMA (anteriorly) and the aorta (posteriorly), cushioned by a mesenteric fat pad. Significant weight loss reduces this fat pad, narrowing the aortomesenteric angle and compressing the duodenum between the two vessels, causing postprandial pain and vomiting that may improve with positioning that opens the angle (such as the left lateral decubitus or knee-chest position).',
+            difficulty: 3,
+            choices: [
+              { text: 'Superior mesenteric artery (anteriorly) and the aorta (posteriorly)', isCorrect: true },
+              {
+                text: 'Celiac trunk (anteriorly) and the inferior vena cava (posteriorly)',
+                isCorrect: false,
+                explanation: 'The celiac trunk supplies more proximal foregut structures and does not cross the third part of the duodenum in this manner; the IVC is not the posterior structure involved in this syndrome.',
+              },
+              {
+                text: 'Inferior mesenteric artery (anteriorly) and the left renal vein (posteriorly)',
+                isCorrect: false,
+                explanation: 'The inferior mesenteric artery supplies the hindgut and is unrelated to duodenal compression; compression of the left renal vein between the aorta and SMA is a distinct entity (nutcracker syndrome), not SMA syndrome.',
+              },
+              {
+                text: 'Splenic artery (anteriorly) and the pancreas (posteriorly)',
+                isCorrect: false,
+                explanation: 'These structures relate to pancreatic and splenic anatomy, not to the classic aortomesenteric compression of the duodenum.',
+              },
+              {
+                text: 'Hepatic artery (anteriorly) and the portal vein (posteriorly)',
+                isCorrect: false,
+                explanation: 'These vessels form the portal triad near the liver and duodenal bulb, not the site of compression at the third part of the duodenum described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a probe-patent fossa ovalis to paradoxical embolism',
+        summary:
+          'The fossa ovalis is the fibrous depression in the interatrial septum marking the site of the fetal foramen ovale, which normally seals after birth. In roughly a quarter of adults, it remains probe-patent (a patent foramen ovale); under conditions that transiently raise right atrial pressure above left (e.g., Valsalva), a venous clot can cross into the left heart and reach the systemic (including cerebral) circulation as a paradoxical embolus.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A young patient with a deep vein thrombosis develops a stroke shortly after a bout of forceful straining, without any evidence of a cardiac source of embolism such as atrial fibrillation. Echocardiography reveals a small interatrial communication. Which structure’s failure to seal, and what mechanism, best explains how a venous clot reached the arterial circulation?',
+            explanation:
+              'This is a paradoxical embolism through a patent foramen ovale, an incompletely sealed fossa ovalis (the postnatal remnant of the fetal foramen ovale, present in about a quarter of the general population). Straining (Valsalva) transiently raises right atrial pressure above left atrial pressure, allowing a venous clot (here, from a DVT) to cross from the right to the left atrium and enter the systemic circulation, where it can travel to the brain and cause a stroke despite an otherwise unremarkable cardiac source.',
+            difficulty: 3,
+            choices: [
+              { text: 'A patent foramen ovale (incompletely sealed fossa ovalis), allowing right-to-left shunting during a Valsalva-induced pressure reversal', isCorrect: true },
+              {
+                text: 'A patent ductus arteriosus, allowing left-to-right shunting of arterial blood',
+                isCorrect: false,
+                explanation: 'A PDA connects the pulmonary artery and aorta and classically causes left-to-right shunting, not the right-to-left interatrial shunt responsible for a paradoxical venous-to-arterial embolism.',
+              },
+              {
+                text: 'An atrial septal defect of the sinus venosus type only, which cannot permit paradoxical embolism',
+                isCorrect: false,
+                explanation: 'Sinus venosus ASDs can also permit shunting; the distinguishing issue here is the direction and mechanism of shunting (transient right-to-left flow), not the specific ASD subtype, and a PFO is the far more common substrate for this presentation.',
+              },
+              {
+                text: 'A ventricular septal defect, allowing left ventricular clot to cross into the right ventricle',
+                isCorrect: false,
+                explanation: 'A VSD connects the ventricles, not the atria, and would not explain a venous clot crossing into the systemic arterial circulation via the interatrial septum.',
+              },
+              {
+                text: 'An intact fossa ovalis with no communication, ruling out a cardiac shunting mechanism entirely',
+                isCorrect: false,
+                explanation: 'Echocardiography demonstrated an interatrial communication, so the fossa ovalis is not intact in this patient.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall coronary sinus drainage and its dilation with a persistent left superior vena cava',
+        summary:
+          'The coronary sinus, running in the posterior atrioventricular groove, collects most of the heart’s venous drainage and empties into the right atrium. A persistent left superior vena cava, an embryologic variant, drains into an enlarged coronary sinus, which can be an incidental but important finding on echocardiography or during pacemaker lead placement.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During attempted placement of a pacemaker lead via the left subclavian vein, the operator finds the catheter unexpectedly following a course into a dilated venous structure in the posterior atrioventricular groove before entering the right atrium. Dilation of which structure, due to an anomalous vein draining into it, best explains this finding?',
+            explanation:
+              'This describes an enlarged coronary sinus, which normally runs in the posterior atrioventricular groove and drains most of the heart’s venous blood into the right atrium. A persistent left superior vena cava, a congenital venous variant in which the left-sided systemic veins fail to regress and instead drain into the coronary sinus, causes this structure to become dilated and can be encountered unexpectedly during left-sided central venous or pacemaker procedures.',
+            difficulty: 3,
+            choices: [
+              { text: 'Coronary sinus, dilated by drainage from a persistent left superior vena cava', isCorrect: true },
+              {
+                text: 'Azygos vein, dilated by obstruction of the inferior vena cava',
+                isCorrect: false,
+                explanation: 'The azygos vein lies in the posterior mediastinum and drains into the superior vena cava directly, not into the atrioventricular groove structure described.',
+              },
+              {
+                text: 'Great cardiac vein, dilated by aortic regurgitation',
+                isCorrect: false,
+                explanation: 'The great cardiac vein is a tributary that drains into the coronary sinus itself; it is not the structure that empties into the right atrium.',
+              },
+              {
+                text: 'Right superior pulmonary vein, dilated by mitral stenosis',
+                isCorrect: false,
+                explanation: 'Pulmonary veins drain into the left atrium, not the right atrium via the posterior atrioventricular groove, and are unrelated to a persistent left SVC.',
+              },
+              {
+                text: 'Ligamentum arteriosum, dilated by a patent ductus arteriosus',
+                isCorrect: false,
+                explanation: 'The ligamentum arteriosum is a fibrous cord, not a venous structure, and does not drain into the right atrium.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the transverse pericardial sinus as a surgical landmark for great vessel control',
+        summary:
+          'The transverse pericardial sinus is a passage within the fibrous pericardium that lies posterior to the aorta and pulmonary trunk and anterior to the superior vena cava and atria. Cardiac surgeons pass a clamp or ligature through this sinus to temporarily occlude the aorta and pulmonary trunk together (e.g., during cardiopulmonary bypass cannulation), without disturbing the great veins.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During cardiac surgery, the surgeon passes a clamp through a pericardial passage that lies behind the aorta and pulmonary trunk but in front of the venous structures, in order to temporarily encircle and control the two great arteries together. Which structure is being used?',
+            explanation:
+              'This is the transverse pericardial sinus, a passage within the fibrous pericardium situated posterior to the aorta and pulmonary trunk and anterior to the superior vena cava and atria. Because it separates the arterial outflow tracts from the venous inflow structures, surgeons can pass a clamp or umbilical tape through it to encircle and temporarily occlude the aorta and pulmonary trunk together, a maneuver useful during cannulation for cardiopulmonary bypass.',
+            difficulty: 3,
+            choices: [
+              { text: 'Transverse pericardial sinus', isCorrect: true },
+              {
+                text: 'Oblique pericardial sinus',
+                isCorrect: false,
+                explanation: 'The oblique pericardial sinus lies posterior to the left atrium, behind the pulmonary veins and IVC, and is used to access the posterior heart, not to encircle the aorta and pulmonary trunk.',
+              },
+              {
+                text: 'Costodiaphragmatic recess',
+                isCorrect: false,
+                explanation: 'This is a pleural (lung), not pericardial, space and is unrelated to cardiac surgical vessel control.',
+              },
+              {
+                text: 'Rectouterine pouch',
+                isCorrect: false,
+                explanation: 'This is a peritoneal space in the female pelvis, entirely unrelated to the pericardium.',
+              },
+              {
+                text: 'Epiploic foramen (of Winslow)',
+                isCorrect: false,
+                explanation: 'This connects the greater and lesser peritoneal sacs in the abdomen and is unrelated to the pericardium or cardiac surgery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link cardiac tamponade to the noncompliant fibrous pericardium',
+        summary:
+          'The fibrous pericardium is a tough, relatively inelastic sac surrounding the heart. Rapid accumulation of even a small volume of pericardial fluid or blood (e.g., from trauma or aortic dissection) can sharply raise intrapericardial pressure because the fibrous sac cannot stretch quickly, compressing all four cardiac chambers and impairing filling — cardiac tamponade, presenting with Beck triad (hypotension, distended neck veins, muffled heart sounds).',
+        discipline: 'Cardiovascular',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A patient with a stab wound to the chest develops hypotension, distended neck veins, and muffled heart sounds. Only about 150 mL of blood is found in the pericardial space, yet this small volume has caused hemodynamic collapse. Which anatomic property of the pericardium explains why even this modest volume is so dangerous when it accumulates rapidly?',
+            explanation:
+              'The fibrous pericardium is a tough, relatively inelastic sac. When fluid or blood accumulates rapidly, as from traumatic bleeding, the noncompliant fibrous layer cannot stretch quickly enough to accommodate the added volume without a sharp rise in intrapericardial pressure. This elevated pressure compresses all four cardiac chambers, impairing diastolic filling and producing cardiac tamponade (Beck triad: hypotension, jugular venous distension, muffled heart sounds) — in contrast to slowly accumulating effusions, which can stretch the pericardium gradually and accommodate much larger volumes without tamponade.',
+            difficulty: 2,
+            choices: [
+              { text: 'The fibrous pericardium is relatively inelastic, so rapid volume accumulation sharply raises intrapericardial pressure', isCorrect: true },
+              {
+                text: 'The fibrous pericardium is highly elastic and stretches easily, so pressure should not rise significantly',
+                isCorrect: false,
+                explanation: 'This is the opposite of the pericardium’s actual mechanical property; its relative inelasticity, not elasticity, is precisely why rapid accumulation is so dangerous.',
+              },
+              {
+                text: 'The visceral pericardium actively contracts around the fluid, forcibly compressing the heart',
+                isCorrect: false,
+                explanation: 'The pericardium does not actively contract; the danger comes from its passive mechanical inelasticity in the setting of rapid volume accumulation, not active muscular compression.',
+              },
+              {
+                text: 'The pericardial space normally contains no fluid at all, so any fluid is immediately fatal regardless of rate',
+                isCorrect: false,
+                explanation: 'The pericardial space normally contains a small amount of physiologic fluid, and slowly accumulating effusions can reach much larger volumes without tamponade, showing that the rate of accumulation, not simply the presence of fluid, is what matters.',
+              },
+              {
+                text: 'Cardiac tamponade requires at least one liter of fluid regardless of the rate of accumulation',
+                isCorrect: false,
+                explanation: 'The volume required to cause tamponade depends heavily on the rate of accumulation; a small, rapidly accumulating volume (as described here) can cause tamponade, while a much larger, slowly accumulating one might not.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the falciform ligament and ligamentum teres hepatis as remnants of fetal circulation',
+        summary:
+          'The falciform ligament, a peritoneal fold connecting the liver to the anterior abdominal wall, contains within its free edge the ligamentum teres hepatis (round ligament of the liver), the fibrous remnant of the fetal umbilical vein, which carried oxygenated blood from the placenta to the fetus.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'During an open abdominal surgery, the surgeon identifies a peritoneal fold connecting the liver to the anterior abdominal wall, with a firm fibrous cord running along its free inferior edge. This cord is the postnatal remnant of which fetal structure?',
+            explanation:
+              'The peritoneal fold described is the falciform ligament, and the fibrous cord within its free edge is the ligamentum teres hepatis (round ligament of the liver) — the remnant of the fetal umbilical vein, which carried oxygenated, nutrient-rich blood from the placenta to the fetal liver and inferior vena cava before birth.',
+            difficulty: 2,
+            choices: [
+              { text: 'The fetal umbilical vein', isCorrect: true },
+              {
+                text: 'The fetal ductus arteriosus',
+                isCorrect: false,
+                explanation: 'The ductus arteriosus becomes the ligamentum arteriosum near the heart and great vessels, not the ligamentum teres of the liver.',
+              },
+              {
+                text: 'The fetal umbilical arteries',
+                isCorrect: false,
+                explanation: 'The umbilical arteries become the medial umbilical ligaments on the anterior abdominal wall, not the ligamentum teres hepatis.',
+              },
+              {
+                text: 'The fetal ductus venosus',
+                isCorrect: false,
+                explanation: 'The ductus venosus becomes the ligamentum venosum, a separate fibrous remnant found within the liver itself, not the falciform ligament’s free edge.',
+              },
+              {
+                text: 'The fetal foramen ovale',
+                isCorrect: false,
+                explanation: 'The foramen ovale becomes the fossa ovalis within the interatrial septum of the heart, unrelated to the liver or falciform ligament.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a horseshoe kidney’s entrapment by the inferior mesenteric artery',
+        summary:
+          'A horseshoe kidney forms when the two developing kidneys fuse, usually at their lower poles, during ascent. The fused isthmus becomes trapped beneath the inferior mesenteric artery, which crosses anteriorly, preventing the kidneys from ascending to their normal position and leaving them lower than usual, with the ureters draining anteriorly over the isthmus.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Imaging incidentally reveals a horseshoe kidney positioned lower than normal in the abdomen, with the two kidneys fused at their lower poles. Which structure normally crosses anterior to the great vessels at this level and is responsible for arresting the kidney’s ascent at this position?',
+            explanation:
+              'A horseshoe kidney results from fusion of the lower poles of the two kidneys during their embryologic ascent. As the fused kidney attempts to ascend, its isthmus becomes trapped beneath the inferior mesenteric artery, which crosses anteriorly over the aorta at this level, arresting further ascent and leaving the horseshoe kidney in a lower-than-normal position.',
+            difficulty: 2,
+            choices: [
+              { text: 'Inferior mesenteric artery', isCorrect: true },
+              {
+                text: 'Superior mesenteric artery',
+                isCorrect: false,
+                explanation: 'The superior mesenteric artery arises higher, at a level the kidneys would ascend past well before reaching the inferior mesenteric artery, and is not the structure that arrests horseshoe kidney ascent.',
+              },
+              {
+                text: 'Celiac trunk',
+                isCorrect: false,
+                explanation: 'The celiac trunk arises even more superiorly and is not the vessel responsible for arresting horseshoe kidney ascent.',
+              },
+              {
+                text: 'Renal artery bifurcation',
+                isCorrect: false,
+                explanation: 'The renal arteries arise from the aorta at the level the kidneys ultimately reach, but they are not the structure entrapping the fused isthmus during ascent.',
+              },
+              {
+                text: 'Gonadal vessels',
+                isCorrect: false,
+                explanation: 'The gonadal vessels arise below the renal vessels but are not the classic structure that arrests ascent of a horseshoe kidney.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Justify preferring the left kidney for living-donor transplantation based on renal vein length',
+        summary:
+          'The left renal vein is considerably longer than the right, since it must cross the midline anterior to the aorta to reach the inferior vena cava, while the right renal vein has a short, direct course. The left kidney is therefore generally preferred for living-donor transplantation, since a longer donor vein simplifies the vascular anastomosis in the recipient.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'When evaluating a healthy volunteer for living-donor kidney transplantation, the surgical team preferentially selects the left kidney for procurement when both kidneys are otherwise equally suitable. Which anatomic feature of the renal vasculature explains this preference?',
+            explanation:
+              'The left renal vein is substantially longer than the right, because it must travel across the midline, anterior to the aorta (and often between the aorta and the superior mesenteric artery), to reach the inferior vena cava, whereas the right renal vein drains directly and briefly into the nearby IVC. Because a longer venous cuff simplifies the anastomosis to the recipient’s vessels during transplantation, the left kidney (with its longer vein) is generally the preferred kidney to procure when either side is otherwise suitable.',
+            difficulty: 3,
+            choices: [
+              { text: 'The left renal vein is longer, since it must cross the midline anterior to the aorta to reach the IVC', isCorrect: true },
+              {
+                text: 'The right renal vein is longer, since it must cross posterior to the IVC',
+                isCorrect: false,
+                explanation: 'This reverses the actual anatomy; the right renal vein has the shorter, more direct course into the immediately adjacent IVC.',
+              },
+              {
+                text: 'The left renal artery is longer, making the left kidney easier to procure',
+                isCorrect: false,
+                explanation: 'It is specifically the renal vein length, not the artery, that differs substantially between the two sides and drives this surgical preference; in fact, the right renal artery is typically the longer artery, since it must cross posterior to the IVC to reach the right kidney.',
+              },
+              {
+                text: 'The left kidney is preferred because it is anatomically larger than the right kidney',
+                isCorrect: false,
+                explanation: 'The two kidneys are not classically described as differing significantly in size; the surgical preference relates to venous anatomy, not kidney size.',
+              },
+              {
+                text: 'The left kidney is preferred because it lacks a renal vein entirely, simplifying dissection',
+                isCorrect: false,
+                explanation: 'Both kidneys have a renal vein; the left one is simply longer, which is an advantage for transplantation, not an absence of the vein.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the ureteropelvic junction as the most common site of congenital hydronephrosis',
+        summary:
+          'The ureteropelvic junction (UPJ), where the renal pelvis narrows to become the ureter, is the most common site of congenital urinary tract obstruction, typically from abnormal ureteral musculature or a failure of proper canalization. Obstruction here causes hydronephrosis (dilation of the renal pelvis and calyces) without ureteral dilation below the obstruction.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A prenatal ultrasound reveals dilation of the fetal renal pelvis and calyces, with a normal-caliber ureter below. After birth, imaging confirms obstruction at the point where the renal pelvis narrows to become the ureter. Which site is this, and why is it the most common location for this type of congenital obstruction?',
+            explanation:
+              'This describes obstruction at the ureteropelvic junction (UPJ), the most common site of congenital urinary tract obstruction. The UPJ is the point where the funnel-shaped renal pelvis narrows into the ureter proper, and abnormal ureteral smooth muscle development or canalization defects here can impair urine flow, causing hydronephrosis proximal to the obstruction (dilated renal pelvis/calyces) while the ureter distal to the UPJ remains normal caliber, since it does not receive the backed-up urine.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ureteropelvic junction', isCorrect: true },
+              {
+                text: 'Ureterovesical junction',
+                isCorrect: false,
+                explanation: 'Obstruction here would cause dilation of the entire ureter as well as the renal pelvis, not an isolated dilation of the renal pelvis with a normal-caliber ureter below the obstruction.',
+              },
+              {
+                text: 'Pelvic brim, where the ureter crosses the iliac vessels',
+                isCorrect: false,
+                explanation: 'While this is a site where stones commonly lodge, it is not the classic site of congenital obstruction causing isolated hydronephrosis in this manner.',
+              },
+              {
+                text: 'Renal papilla',
+                isCorrect: false,
+                explanation: 'This is the site where collecting ducts empty into the minor calyces, not a classic site of congenital ureteral obstruction.',
+              },
+              {
+                text: 'External urethral sphincter',
+                isCorrect: false,
+                explanation: 'This is located in the perineum, far from the kidney, and its dysfunction would not selectively cause isolated renal pelvis dilation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the three narrow points of the ureter where kidney stones most often lodge',
+        summary:
+          'The ureter has three anatomically narrow points where kidney stones are most likely to become impacted: the ureteropelvic junction, the point where the ureter crosses the pelvic brim (over the common iliac vessels), and the ureterovesical junction (where it enters the bladder wall) — the narrowest of the three.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a kidney stone reports severe colicky flank pain that migrates toward the groin as the stone travels distally, with three points along the ureter’s course where impaction is most likely. Which three sites are these, listed from proximal to distal?',
+            explanation:
+              'The ureter has three normal anatomic narrowings that are the most common sites of stone impaction: the ureteropelvic junction (where the renal pelvis narrows into the ureter), the point where the ureter crosses the pelvic brim over the common iliac vessels, and the ureterovesical junction (where the ureter enters the bladder wall), which is the narrowest of the three and a very common site of impaction.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ureteropelvic junction, the pelvic brim (crossing the common iliac vessels), and the ureterovesical junction', isCorrect: true },
+              {
+                text: 'Renal papilla, the mid-ureter, and the prostatic urethra',
+                isCorrect: false,
+                explanation: 'These are not the three classically described narrow points of the ureter itself; the prostatic urethra is beyond the ureterovesical junction and part of the urethra, not the ureter.',
+              },
+              {
+                text: 'Major calyx, minor calyx, and renal pelvis',
+                isCorrect: false,
+                explanation: 'These are intrarenal collecting structures proximal to the ureter itself, not the classic narrow points along the ureter’s course.',
+              },
+              {
+                text: 'Bladder neck, external urethral sphincter, and urethral meatus',
+                isCorrect: false,
+                explanation: 'These are urethral, not ureteral, structures and are not the classic sites of ureteral stone impaction.',
+              },
+              {
+                text: 'Renal hilum, adrenal gland border, and diaphragmatic crus',
+                isCorrect: false,
+                explanation: 'These are not recognized narrow points of the ureter and are not classic sites of stone impaction.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the suspensory ligament of the ovary as the pathway of the ovarian vessels',
+        summary:
+          'The suspensory ligament of the ovary (infundibulopelvic ligament) carries the ovarian artery, vein, and nerves from the pelvic sidewall to the ovary. It is a key structure to identify and ligate carefully during oophorectomy or in ovarian torsion, and the ureter runs close to it retroperitoneally, placing the ureter at risk during ligation.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'During an oophorectomy, the surgeon must carefully identify and ligate a ligament running from the pelvic sidewall to the ovary that carries its main blood supply, taking care to avoid a nearby retroperitoneal structure that runs close to it. Which ligament is being ligated, and which structure is at risk nearby?',
+            explanation:
+              'This is the suspensory ligament of the ovary (infundibulopelvic ligament), which carries the ovarian artery, vein, and nerve fibers from the pelvic sidewall to the ovary. The ureter runs retroperitoneally in close proximity to this ligament as it courses through the pelvis, placing it at risk of inadvertent injury or ligation during oophorectomy if the surgeon does not carefully distinguish the two structures.',
+            difficulty: 2,
+            choices: [
+              { text: 'Suspensory ligament of the ovary (infundibulopelvic ligament); the ureter is at risk nearby', isCorrect: true },
+              {
+                text: 'Round ligament of the uterus; the femoral nerve is at risk nearby',
+                isCorrect: false,
+                explanation: 'The round ligament carries no major vessels to the ovary and travels through the inguinal canal, not the pelvic sidewall near the ureter.',
+              },
+              {
+                text: 'Broad ligament; the obturator artery is at risk nearby',
+                isCorrect: false,
+                explanation: 'The broad ligament is a general peritoneal fold covering several pelvic structures, not specifically the pathway of the ovarian vessels.',
+              },
+              {
+                text: 'Ovarian ligament proper; the internal iliac artery is at risk nearby',
+                isCorrect: false,
+                explanation: 'The ovarian ligament proper connects the ovary to the uterus and does not carry the main ovarian blood supply, which instead travels via the suspensory ligament.',
+              },
+              {
+                text: 'Uterosacral ligament; the rectum is at risk nearby',
+                isCorrect: false,
+                explanation: 'This ligament supports the uterus posteriorly and is not the pathway of the ovarian vessels or the structure ligated during oophorectomy.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the ampulla of the fallopian tube as the most common site of ectopic pregnancy',
+        summary:
+          'The ampulla, the widest and longest segment of the fallopian tube, is where fertilization normally occurs and is also the most common site of ectopic (tubal) pregnancy implantation. Risk factors that impair normal tubal transport of the fertilized egg (e.g., prior pelvic inflammatory disease causing tubal scarring) increase the likelihood of implantation here rather than in the uterine cavity.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A woman with a history of pelvic inflammatory disease presents with lower abdominal pain and vaginal bleeding; ultrasound and a positive pregnancy test confirm an ectopic pregnancy within the fallopian tube. Which segment of the tube is the most common site of implantation, and why is fertilization normally expected to occur there as well?',
+            explanation:
+              'The ampulla is the widest and longest segment of the fallopian tube and is where fertilization of the egg by sperm normally takes place. It is also, by far, the most common site of ectopic pregnancy implantation, since a fertilized egg that fails to be transported onward to the uterus (often due to prior tubal scarring, such as from pelvic inflammatory disease) tends to implant at this same site where fertilization occurred.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ampulla of the fallopian tube', isCorrect: true },
+              {
+                text: 'Isthmus of the fallopian tube',
+                isCorrect: false,
+                explanation: 'The isthmus is the narrow segment closest to the uterus; while ectopic pregnancies can occur here, it is not the most common site, and fertilization does not normally occur here.',
+              },
+              {
+                text: 'Infundibulum of the fallopian tube',
+                isCorrect: false,
+                explanation: 'The infundibulum is the funnel-shaped, fimbriated end near the ovary that captures the egg; it is not the site where fertilization normally occurs or the most common ectopic implantation site.',
+              },
+              {
+                text: 'Interstitial (intramural) portion of the fallopian tube',
+                isCorrect: false,
+                explanation: 'This segment passes through the uterine wall and, while ectopic pregnancies here are especially dangerous due to proximity to the uterine vessels, it is not the most common site overall.',
+              },
+              {
+                text: 'Cervical canal',
+                isCorrect: false,
+                explanation: 'Cervical ectopic pregnancy is a rare, distinct entity and is not part of the fallopian tube or the most common ectopic implantation site.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize round ligament pain during pregnancy from its course through the inguinal canal',
+        summary:
+          'The round ligament of the uterus travels from the uterus through the inguinal canal to insert in the labia majora, following the same path taken by the embryologic gubernaculum. As the uterus enlarges in pregnancy, stretching of this ligament classically causes sharp, brief groin pain with sudden movements or position changes ("round ligament pain").',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A pregnant woman in her second trimester reports sharp, brief pain in the right groin that occurs with sudden position changes, such as standing up quickly or rolling over in bed. Stretching of which structure, as it passes through a specific anatomic canal, most likely explains this pain?',
+            explanation:
+              'This is round ligament pain, caused by stretching of the round ligament of the uterus as the enlarging uterus in pregnancy places tension on it. The round ligament runs from the uterus through the inguinal canal to insert in the labia majora, and sudden movements can cause sharp, brief stretching pain along this course, typically felt in the groin.',
+            difficulty: 2,
+            choices: [
+              { text: 'Round ligament of the uterus, passing through the inguinal canal', isCorrect: true },
+              {
+                text: 'Suspensory ligament of the ovary, passing through the pelvic sidewall',
+                isCorrect: false,
+                explanation: 'This ligament carries the ovarian vessels retroperitoneally and does not pass through the inguinal canal or classically cause this groin pain pattern in pregnancy.',
+              },
+              {
+                text: 'Broad ligament, passing over the pelvic floor',
+                isCorrect: false,
+                explanation: 'The broad ligament is a peritoneal fold that does not pass through the inguinal canal and is not the structure responsible for this pain.',
+              },
+              {
+                text: 'Uterosacral ligament, passing posteriorly to the sacrum',
+                isCorrect: false,
+                explanation: 'This ligament supports the uterus posteriorly toward the sacrum and does not pass through the inguinal canal or explain groin pain of this character.',
+              },
+              {
+                text: 'Cardinal (transverse cervical) ligament, passing laterally to the pelvic wall',
+                isCorrect: false,
+                explanation: 'This ligament supports the cervix laterally and does not travel through the inguinal canal.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link levator ani weakness to pelvic organ prolapse',
+        summary:
+          'The levator ani muscle group, innervated largely by the pudendal nerve, forms the primary support of the pelvic floor, holding the bladder, uterus/vagina, and rectum in their normal positions. Weakening of this muscular support — from vaginal childbirth, aging, or chronic increased intra-abdominal pressure — allows these pelvic organs to descend, producing pelvic organ prolapse (e.g., cystocele, uterine prolapse, rectocele).',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A woman with a history of multiple vaginal deliveries reports a sensation of vaginal fullness and a visible bulge at the vaginal introitus that worsens with straining. Weakening of which muscular structure, which normally provides the primary support for the pelvic organs, best explains this presentation?',
+            explanation:
+              'This presentation describes pelvic organ prolapse, most often caused by weakening of the levator ani muscle group, the primary muscular support of the pelvic floor. Vaginal childbirth can stretch or partially denervate the levator ani (and the pudendal nerve that innervates much of it), reducing its ability to support the bladder, uterus, and rectum against intra-abdominal pressure, allowing these organs to descend and bulge toward or through the vaginal introitus.',
+            difficulty: 2,
+            choices: [
+              { text: 'Levator ani muscle group', isCorrect: true },
+              {
+                text: 'Piriformis muscle',
+                isCorrect: false,
+                explanation: 'The piriformis is a hip external rotator located in the buttock region and does not provide pelvic floor support for the bladder, uterus, or rectum.',
+              },
+              {
+                text: 'Iliopsoas muscle',
+                isCorrect: false,
+                explanation: 'This muscle flexes the hip and is unrelated to pelvic floor support.',
+              },
+              {
+                text: 'Obturator internus muscle',
+                isCorrect: false,
+                explanation: 'This muscle forms part of the lateral pelvic wall and assists hip external rotation; it is not the primary support for the pelvic organs.',
+              },
+              {
+                text: 'Rectus abdominis muscle',
+                isCorrect: false,
+                explanation: 'This anterior abdominal wall muscle is unrelated to pelvic floor support for the bladder, uterus, or rectum.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish voluntary control of the external anal sphincter from involuntary control of the internal anal sphincter',
+        summary:
+          'The internal anal sphincter is smooth muscle under involuntary autonomic control (sympathetic contraction, parasympathetic relaxation), while the external anal sphincter is skeletal muscle under voluntary control via the pudendal nerve (S2-S4), allowing conscious deferral of defecation even when rectal distension has already triggered involuntary internal sphincter relaxation.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'When the rectum becomes distended with stool, the internal anal sphincter relaxes involuntarily (the rectoanal inhibitory reflex), yet a person can still consciously delay defecation until a socially appropriate time. Which structure allows this voluntary override, and under whose control is it?',
+            explanation:
+              'The external anal sphincter, composed of skeletal muscle innervated by the pudendal nerve (S2-S4), is under voluntary somatic control, allowing a person to consciously contract it and delay defecation even after rectal distension has triggered involuntary relaxation of the internal anal sphincter (smooth muscle under autonomic control) via the rectoanal inhibitory reflex.',
+            difficulty: 2,
+            choices: [
+              { text: 'External anal sphincter, skeletal muscle under voluntary pudendal nerve control', isCorrect: true },
+              {
+                text: 'Internal anal sphincter, skeletal muscle under voluntary control',
+                isCorrect: false,
+                explanation: 'The internal anal sphincter is smooth muscle under involuntary autonomic control, not the voluntary structure responsible for consciously delaying defecation.',
+              },
+              {
+                text: 'Puborectalis muscle, smooth muscle under autonomic control',
+                isCorrect: false,
+                explanation: 'The puborectalis is actually skeletal muscle (part of the levator ani) under voluntary control, but the classic structure taught for this specific voluntary override function is the external anal sphincter.',
+              },
+              {
+                text: 'Internal anal sphincter, under voluntary pudendal nerve control',
+                isCorrect: false,
+                explanation: 'The internal anal sphincter is under involuntary autonomic, not voluntary pudendal, control.',
+              },
+              {
+                text: 'Levator ani muscle acting alone, under sympathetic control',
+                isCorrect: false,
+                explanation: 'While the levator ani contributes to continence, the specific voluntary sphincter responsible for consciously deferring defecation is the external anal sphincter, and it is under somatic (pudendal), not sympathetic, control.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the perineal body as the central point of perineal muscle attachment at risk during delivery',
+        summary:
+          'The perineal body is a fibromuscular node located between the vagina and anus (or, in males, between the bulb of the penis and anus) that serves as the central attachment point for several perineal muscles, including the bulbospongiosus, superficial transverse perineal, and external anal sphincter. It is at risk of tearing during vaginal delivery, which is why an episiotomy is sometimes performed to control the direction of any perineal laceration.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During a vaginal delivery, an obstetrician performs an episiotomy to prevent an uncontrolled tear through a fibromuscular structure located between the vagina and anus that serves as the central attachment site for several perineal muscles. Which structure is being protected?',
+            explanation:
+              'This is the perineal body, a fibromuscular node between the vagina and anus that serves as the shared attachment point for muscles including the bulbospongiosus, superficial transverse perineal muscle, and external anal sphincter. Because it can be torn during vaginal delivery, potentially compromising these attachments and continence, an episiotomy may be performed to create a controlled incision rather than risk an uncontrolled perineal tear.',
+            difficulty: 2,
+            choices: [
+              { text: 'Perineal body', isCorrect: true },
+              {
+                text: 'Ischial spine',
+                isCorrect: false,
+                explanation: 'This is a bony landmark used for pudendal nerve blocks and pelvic measurements, not a fibromuscular attachment point at risk of tearing during delivery.',
+              },
+              {
+                text: 'Pubic symphysis',
+                isCorrect: false,
+                explanation: 'This is an anterior bony/cartilaginous joint, not the fibromuscular structure between the vagina and anus.',
+              },
+              {
+                text: 'Sacrospinous ligament',
+                isCorrect: false,
+                explanation: 'This ligament spans from the sacrum to the ischial spine and is not the central perineal muscle attachment point at risk during delivery.',
+              },
+              {
+                text: 'Urogenital diaphragm alone, without any specific central node',
+                isCorrect: false,
+                explanation: 'While the urogenital diaphragm is a related structure, the specific central fibromuscular attachment point protected by episiotomy is the perineal body.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish central versus peripheral diaphragmatic pain referral by innervation',
+        summary:
+          'The central portion of the diaphragm is innervated by the phrenic nerve (C3-C5), so irritation there refers pain to the shoulder (sharing spinal levels with the supraclavicular nerves). The peripheral rim of the diaphragm, however, is innervated by the lower intercostal nerves, so irritation there instead produces localized pain over the adjacent chest wall or upper abdomen, not referred shoulder pain.',
+        discipline: 'Respiratory',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'One patient with subdiaphragmatic blood irritating the central diaphragm reports pain referred to the shoulder tip, while another patient with a peripheral diaphragmatic irritation instead reports localized lower chest wall pain without any shoulder involvement. Differences in innervation of which two regions of the diaphragm explain this distinction?',
+            explanation:
+              'The central diaphragm is innervated by the phrenic nerve (C3-C5), which shares spinal cord levels with the supraclavicular nerves supplying the shoulder skin, so irritation of the central diaphragm produces referred shoulder tip pain. The peripheral rim of the diaphragm, however, is innervated segmentally by the lower intercostal nerves (like the overlying chest wall and abdominal wall), so irritation there produces localized pain corresponding to those dermatomes (lower chest/upper abdomen) rather than referred shoulder pain.',
+            difficulty: 3,
+            choices: [
+              { text: 'Central diaphragm (phrenic nerve, C3-C5) refers pain to the shoulder; peripheral diaphragm (lower intercostal nerves) causes localized chest/abdominal wall pain', isCorrect: true },
+              {
+                text: 'Central diaphragm (intercostal nerves) refers pain to the shoulder; peripheral diaphragm (phrenic nerve) causes localized pain',
+                isCorrect: false,
+                explanation: 'This reverses the actual innervation pattern; the phrenic nerve supplies the central diaphragm, not the peripheral rim.',
+              },
+              {
+                text: 'Both the central and peripheral diaphragm are innervated exclusively by the phrenic nerve, so both should refer pain identically to the shoulder',
+                isCorrect: false,
+                explanation: 'The peripheral rim of the diaphragm is innervated by the lower intercostal nerves, not the phrenic nerve, which is precisely why its pain pattern differs from central diaphragmatic irritation.',
+              },
+              {
+                text: 'Both regions are innervated only by intercostal nerves, so neither should refer pain to the shoulder',
+                isCorrect: false,
+                explanation: 'The central diaphragm is specifically innervated by the phrenic nerve, which is why central diaphragmatic irritation classically refers pain to the shoulder.',
+              },
+              {
+                text: 'The diaphragm has no sensory innervation, so neither region should produce any pain',
+                isCorrect: false,
+                explanation: 'The diaphragm is sensorily innervated by both the phrenic nerve (centrally) and lower intercostal nerves (peripherally), which is why irritation of either region can produce pain, just with different referral patterns.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the arcuate line and its relevance to rectus sheath hematoma',
+        summary:
+          'Above the arcuate line, the rectus abdominis muscle is enclosed both anteriorly and posteriorly by the aponeuroses of the abdominal wall muscles; below it (roughly a third of the way between the umbilicus and pubic symphysis), the posterior rectus sheath is absent, leaving only the thin transversalis fascia posterior to the muscle. A rectus sheath hematoma, from bleeding of the epigastric vessels running within or deep to the muscle, can mimic an acute abdomen but is distinguished by a positive Carnett sign (pain increases with abdominal muscle tensing).',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient on anticoagulation develops sudden lower abdominal pain and a palpable abdominal wall mass after a bout of forceful coughing. The pain worsens when the patient tenses the abdominal muscles (a positive Carnett sign), suggesting the pathology lies within the abdominal wall itself rather than the peritoneal cavity. Bleeding of which vessels, and relative to which anatomic landmark, most likely explains this presentation?',
+            explanation:
+              'This is a rectus sheath hematoma, caused by bleeding of the epigastric vessels (typically the inferior epigastric artery) that run within or deep to the rectus abdominis muscle, often precipitated by a sudden increase in intra-abdominal pressure (such as coughing) in an anticoagulated patient. It is especially likely to occur below the arcuate line, where the posterior rectus sheath is absent (leaving only the thin transversalis fascia), allowing a hematoma to expand more easily and track within the abdominal wall. The positive Carnett sign (pain worsened by tensing the abdominal muscles) helps distinguish this abdominal wall process from an intraperitoneal source of pain.',
+            difficulty: 3,
+            choices: [
+              { text: 'Epigastric vessels, especially below the arcuate line where the posterior rectus sheath is absent', isCorrect: true },
+              {
+                text: 'Splenic vessels, especially above the arcuate line where the sheath is thickest',
+                isCorrect: false,
+                explanation: 'The splenic vessels are located in the upper abdomen near the spleen and pancreas, not within the rectus sheath, and are not the source of a rectus sheath hematoma.',
+              },
+              {
+                text: 'Superior mesenteric vessels, unrelated to the arcuate line',
+                isCorrect: false,
+                explanation: 'These vessels supply the midgut and are not located within the rectus sheath or responsible for this type of abdominal wall hematoma.',
+              },
+              {
+                text: 'Iliac vessels, at the level of the pubic symphysis',
+                isCorrect: false,
+                explanation: 'The iliac vessels lie deep in the pelvis, not within the rectus sheath itself, and are not the classic source of a rectus sheath hematoma.',
+              },
+              {
+                text: 'Portal vein tributaries, above the umbilicus',
+                isCorrect: false,
+                explanation: 'Portal venous bleeding would not produce a discrete abdominal wall mass with a positive Carnett sign; this presentation is specific to the abdominal wall vasculature.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a Spigelian hernia to the semilunar line',
+        summary:
+          'A Spigelian hernia protrudes through a defect in the aponeurosis of the transversus abdominis at the semilunar line, the lateral border of the rectus abdominis muscle, typically at or below the level of the arcuate line where the posterior support is weaker. Because the overlying external and internal oblique aponeuroses remain intact, the hernia can be difficult to palpate, making it prone to a delayed diagnosis.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient reports intermittent abdominal pain and a subtle bulge along the lateral edge of the rectus abdominis muscle, below the level of the umbilicus, that is difficult to palpate on exam because the overlying muscle layers remain intact. Which type of hernia, occurring at which anatomic line, best fits this description?',
+            explanation:
+              'This describes a Spigelian hernia, which protrudes through a defect in the aponeurosis of the transversus abdominis at the semilunar line (the lateral border of the rectus abdominis), often near or below the arcuate line where the posterior rectus sheath support is weaker. Because the more superficial external and internal oblique aponeuroses typically remain intact over the defect, the hernia can be difficult to palpate, making it a commonly missed diagnosis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Spigelian hernia, at the semilunar line', isCorrect: true },
+              {
+                text: 'Umbilical hernia, at the umbilical ring',
+                isCorrect: false,
+                explanation: 'An umbilical hernia occurs directly at the umbilicus, a different, more midline and typically more easily palpable location.',
+              },
+              {
+                text: 'Incisional hernia, at a prior surgical scar',
+                isCorrect: false,
+                explanation: 'This scenario describes no prior surgery, and the defect is at a specific anatomic line, not a surgical scar.',
+              },
+              {
+                text: 'Epigastric hernia, at the linea alba above the umbilicus',
+                isCorrect: false,
+                explanation: 'An epigastric hernia occurs in the midline linea alba above the umbilicus, not at the lateral semilunar line.',
+              },
+              {
+                text: 'Direct inguinal hernia, at Hesselbach triangle',
+                isCorrect: false,
+                explanation: 'This occurs in the groin, well below and medial to the semilunar line described in this scenario.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the four boundaries of the inguinal canal',
+        summary:
+          'The inguinal canal has four walls, each contributed by a different layer of the abdominal wall: an anterior wall of external oblique aponeurosis (reinforced laterally by internal oblique), a posterior wall of transversalis fascia (reinforced medially by the conjoint tendon), a roof formed by the internal oblique and transversus abdominis arching over the canal, and a floor formed by the inguinal ligament (with the lacunar ligament medially).',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During inguinal hernia repair, a surgeon identifies the four walls of the inguinal canal to properly reconstruct the region. Which layer forms the floor of the canal, providing the structural base upon which the spermatic cord (or round ligament) travels?',
+            explanation:
+              'The floor of the inguinal canal is formed by the inguinal ligament (the rolled-under inferior edge of the external oblique aponeurosis), reinforced medially by the lacunar ligament. This is distinct from the anterior wall (external oblique aponeurosis), the roof (arching fibers of internal oblique and transversus abdominis), and the posterior wall (transversalis fascia, reinforced medially by the conjoint tendon).',
+            difficulty: 2,
+            choices: [
+              { text: 'Inguinal ligament (reinforced medially by the lacunar ligament)', isCorrect: true },
+              {
+                text: 'Transversalis fascia (reinforced medially by the conjoint tendon)',
+                isCorrect: false,
+                explanation: 'This describes the posterior wall of the inguinal canal, not the floor.',
+              },
+              {
+                text: 'External oblique aponeurosis (reinforced laterally by internal oblique)',
+                isCorrect: false,
+                explanation: 'This describes the anterior wall of the inguinal canal, not the floor.',
+              },
+              {
+                text: 'Internal oblique and transversus abdominis, arching over the canal',
+                isCorrect: false,
+                explanation: 'This describes the roof of the inguinal canal, not the floor.',
+              },
+              {
+                text: 'Rectus sheath, forming the medial boundary',
+                isCorrect: false,
+                explanation: 'The rectus sheath is not one of the four classic walls of the inguinal canal.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Trace the cremasteric reflex arc through the genitofemoral and ilioinguinal nerves',
+        summary:
+          'The cremasteric reflex — retraction of the testis when the medial thigh is stroked — depends on an afferent limb carried by the ilioinguinal nerve (sensing the thigh stimulus) and an efferent limb carried by the genital branch of the genitofemoral nerve (contracting the cremaster muscle, which is continuous with the internal oblique). Loss of this reflex is an important exam finding in testicular torsion.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Stroking the skin of the medial thigh normally causes reflexive elevation of the ipsilateral testis. Which two nerves form the afferent and efferent limbs of this reflex arc, respectively?',
+            explanation:
+              'The cremasteric reflex arc has its afferent limb carried by the ilioinguinal nerve, which senses the light touch stimulus on the medial thigh, and its efferent limb carried by the genital branch of the genitofemoral nerve, which supplies motor innervation to the cremaster muscle (a continuation of the internal oblique muscle that wraps around the spermatic cord), causing testicular elevation. Loss of this reflex is an important supportive finding in testicular torsion, where the involved spermatic cord’s function is disrupted.',
+            difficulty: 3,
+            choices: [
+              { text: 'Afferent: ilioinguinal nerve; Efferent: genital branch of the genitofemoral nerve', isCorrect: true },
+              {
+                text: 'Afferent: genitofemoral nerve; Efferent: ilioinguinal nerve',
+                isCorrect: false,
+                explanation: 'This reverses the actual roles; the ilioinguinal nerve carries the sensory (afferent) limb, and the genitofemoral nerve’s genital branch carries the motor (efferent) limb.',
+              },
+              {
+                text: 'Afferent: pudendal nerve; Efferent: obturator nerve',
+                isCorrect: false,
+                explanation: 'Neither of these nerves forms the classic cremasteric reflex arc, which specifically involves the ilioinguinal and genitofemoral nerves.',
+              },
+              {
+                text: 'Afferent: femoral nerve; Efferent: sciatic nerve',
+                isCorrect: false,
+                explanation: 'These nerves are not part of the cremasteric reflex arc.',
+              },
+              {
+                text: 'Afferent and efferent limbs are both carried by the ilioinguinal nerve alone',
+                isCorrect: false,
+                explanation: 'While the ilioinguinal nerve carries the afferent (sensory) limb, the efferent (motor) limb is carried by a separate nerve, the genital branch of the genitofemoral nerve.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize ulnar nerve injury from posterior elbow dislocation',
+        summary:
+          'The ulnar nerve passes directly posterior to the medial epicondyle of the humerus, in close relation to the elbow joint capsule. A posterior elbow dislocation, which displaces the olecranon and disrupts the joint’s normal alignment around the medial epicondyle, can stretch or contuse the ulnar nerve at this vulnerable location.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following a fall onto a hyperextended elbow that results in a posterior elbow dislocation, a patient develops numbness of the little finger and medial ring finger along with weakness of finger abduction. Which nerve, given its close relationship to the medial epicondyle, was most likely injured during this dislocation?',
+            explanation:
+              'The ulnar nerve travels directly posterior to the medial epicondyle of the humerus as it crosses the elbow, making it vulnerable to stretch or contusion when a posterior elbow dislocation disrupts the joint’s normal alignment around this landmark. The resulting sensory loss in the little finger/medial ring finger and weakness of the interossei (finger abduction) reflect ulnar nerve dysfunction.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ulnar nerve', isCorrect: true },
+              {
+                text: 'Median nerve',
+                isCorrect: false,
+                explanation: 'The median nerve travels more anteriorly through the cubital fossa and would cause thumb-to-ring finger sensory loss and pronator/flexor weakness, not the ulnar distribution described.',
+              },
+              {
+                text: 'Radial nerve',
+                isCorrect: false,
+                explanation: 'The radial nerve exits the cubital fossa laterally and its injury would cause wrist/finger extensor weakness, not the sensory and intrinsic hand findings described.',
+              },
+              {
+                text: 'Musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'This nerve terminates as the lateral antebrachial cutaneous nerve well before the wrist and does not supply the hand or explain these findings.',
+              },
+              {
+                text: 'Axillary nerve',
+                isCorrect: false,
+                explanation: 'This nerve is located at the shoulder, far from the elbow, and is not at risk from an elbow dislocation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize posterior shoulder dislocation from a seizure or electrical injury',
+        summary:
+          'Posterior shoulder dislocation is a rare but classic complication of severe muscle contraction from a generalized seizure or electrical shock, because the strong internal rotators (subscapularis, pectoralis major, latissimus dorsi) overpower the weaker external rotators. It produces a characteristic "light bulb sign" on x-ray, from fixed internal rotation of the humeral head.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient is brought in after a generalized tonic-clonic seizure with his arm held in fixed internal rotation and adduction, unable to externally rotate the shoulder. An x-ray shows the humeral head appearing rounded and symmetric, resembling a light bulb. Which shoulder injury does this represent, and why does the mechanism of seizure activity favor this particular direction of dislocation?',
+            explanation:
+              'This is a posterior shoulder dislocation, the classic "light bulb sign" resulting from fixed internal rotation of the humeral head. Seizures (and electrical injuries) preferentially cause posterior, rather than the far more common anterior, dislocation because the internal rotator muscles of the shoulder (subscapularis, pectoralis major, latissimus dorsi) are collectively stronger than the external rotators (infraspinatus, teres minor), so violent generalized muscle contraction pulls the humeral head posteriorly out of the joint.',
+            difficulty: 3,
+            choices: [
+              { text: 'Posterior shoulder dislocation, because the internal rotators overpower the weaker external rotators during violent contraction', isCorrect: true },
+              {
+                text: 'Anterior shoulder dislocation, because the external rotators overpower the internal rotators',
+                isCorrect: false,
+                explanation: 'Anterior dislocation is the most common type overall but is classically caused by a direct blow or fall with the arm abducted and externally rotated, not by seizure-induced muscle contraction, which favors posterior dislocation.',
+              },
+              {
+                text: 'Inferior shoulder dislocation (luxatio erecta), because gravity pulls the arm downward during a seizure',
+                isCorrect: false,
+                explanation: 'This rare dislocation type results from a hyperabduction force, not from the muscular imbalance produced by seizure activity.',
+              },
+              {
+                text: 'Acromioclavicular joint separation, because seizures place direct stress on the shoulder’s bony joints',
+                isCorrect: false,
+                explanation: 'AC separation typically results from a direct fall onto the shoulder, not the muscular mechanism of a seizure, and would not produce a "light bulb sign" of the humeral head.',
+              },
+              {
+                text: 'Sternoclavicular joint dislocation, from strong contraction of the pectoralis muscles',
+                isCorrect: false,
+                explanation: 'This is a distinct, rare injury usually from direct trauma to the medial clavicle, not the mechanism or radiographic finding described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a distal biceps tendon rupture by the "reverse Popeye sign"',
+        summary:
+          'Rupture of the distal biceps tendon at its insertion on the radial tuberosity, typically from a sudden eccentric load on a flexed, supinating arm, causes the biceps muscle belly to retract proximally, producing a "reverse Popeye sign" (bulge higher up the arm) along with weakness of forearm supination more than elbow flexion (since brachialis and brachioradialis partially compensate for flexion).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A weightlifter feels a sudden pop in the antecubital fossa while lowering a heavy weight with the elbow flexed, followed by bruising and a muscle bulge that has shifted higher up the anterior arm rather than near the elbow. Which structure has most likely ruptured, and why does the muscle belly retract proximally rather than distally?',
+            explanation:
+              'This is a distal biceps tendon rupture, occurring at its insertion on the radial tuberosity, classically from a sudden eccentric load (an outside force flexing/extending the arm against active contraction) on a flexed, supinating arm. Once the distal tendon tears, the biceps muscle belly is no longer anchored distally and retracts proximally under its own resting tension, producing a bulge higher up the arm — the "reverse Popeye sign," as opposed to the more common proximal (long head) biceps tendon rupture, which causes a bulge lower in the arm.',
+            difficulty: 3,
+            choices: [
+              { text: 'Distal biceps tendon rupture at the radial tuberosity, with proximal retraction of the muscle belly', isCorrect: true },
+              {
+                text: 'Proximal (long head) biceps tendon rupture, with distal retraction of the muscle belly',
+                isCorrect: false,
+                explanation: 'A proximal long head rupture produces the more common, classic Popeye sign (bulge low in the arm, near the elbow), the opposite pattern from the one described here.',
+              },
+              {
+                text: 'Triceps tendon rupture, with proximal retraction of the muscle belly',
+                isCorrect: false,
+                explanation: 'Triceps tendon rupture would cause weakness of elbow extension and a defect near the olecranon on the posterior arm, not the anterior findings described.',
+              },
+              {
+                text: 'Brachialis muscle tear, with distal retraction',
+                isCorrect: false,
+                explanation: 'This is not the classic structure or presentation associated with the "reverse Popeye sign," which specifically refers to distal biceps tendon rupture.',
+              },
+              {
+                text: 'Supraspinatus tendon rupture, with retraction into the shoulder',
+                isCorrect: false,
+                explanation: 'This would produce shoulder abduction weakness, not the antecubital fossa pop and arm muscle bulge described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Wartenberg syndrome from superficial radial nerve entrapment',
+        summary:
+          'The superficial branch of the radial nerve is purely sensory, supplying the dorsoradial hand and thumb. Entrapment as it emerges from beneath the brachioradialis tendon near the wrist (e.g., from a tight watch band or handcuffs) causes burning pain and numbness in this distribution without any motor weakness, since all radial nerve motor branches have already been given off more proximally.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient who wears a tight wristwatch develops burning pain and numbness over the back of the thumb and dorsoradial hand, with completely normal wrist and finger extension strength. Entrapment of which nerve best explains this presentation, and why is there no associated weakness?',
+            explanation:
+              'This is Wartenberg syndrome, entrapment of the superficial (sensory) branch of the radial nerve as it emerges from beneath the brachioradialis tendon near the wrist. Because this branch is purely sensory, supplying the dorsoradial hand and thumb, and because all of the radial nerve’s motor branches (to the wrist and finger extensors) have already been given off more proximally in the forearm, entrapment here causes sensory symptoms alone, without any associated motor weakness.',
+            difficulty: 3,
+            choices: [
+              { text: 'Superficial branch of the radial nerve, which is purely sensory at this level', isCorrect: true },
+              {
+                text: 'Posterior interosseous nerve, which is purely motor at this level',
+                isCorrect: false,
+                explanation: 'This deep motor branch would cause finger/thumb extensor weakness without sensory loss, the opposite pattern from the one described.',
+              },
+              {
+                text: 'Median nerve, at the carpal tunnel',
+                isCorrect: false,
+                explanation: 'Median nerve compression affects the palmar thumb through ring finger and can cause thenar weakness, a different distribution and pattern from this dorsoradial, motor-sparing presentation.',
+              },
+              {
+                text: 'Ulnar nerve, at Guyon canal',
+                isCorrect: false,
+                explanation: 'Ulnar nerve compression affects the little finger and medial ring finger, not the dorsoradial hand and thumb.',
+              },
+              {
+                text: 'Lateral antebrachial cutaneous nerve, at the elbow',
+                isCorrect: false,
+                explanation: 'This nerve supplies the lateral forearm, not the dorsoradial hand and thumb, and is not associated with wristwatch-related entrapment.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize an inversion ankle sprain by anterior talofibular ligament injury',
+        summary:
+          'The anterior talofibular ligament (ATFL), one of three lateral ankle ligaments, is the weakest and most anteriorly placed, making it the most commonly injured ligament in ankle sprains, typically from an inversion (and often plantarflexion) mechanism, such as rolling the ankle while stepping off a curb.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A basketball player rolls her ankle inward while landing from a jump and has tenderness and swelling just anterior to the lateral malleolus. Which ligament is most commonly injured by this inversion mechanism?',
+            explanation:
+              'The anterior talofibular ligament (ATFL) is the weakest of the three lateral ankle ligaments and lies most anteriorly, making it the ligament most susceptible to injury during an inversion (and plantarflexion) mechanism, the most common mechanism of ankle sprain.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior talofibular ligament', isCorrect: true },
+              {
+                text: 'Calcaneofibular ligament',
+                isCorrect: false,
+                explanation: 'This ligament is the second most commonly injured lateral ankle ligament, typically involved with more severe inversion injuries, but the ATFL is injured first and most often.',
+              },
+              {
+                text: 'Posterior talofibular ligament',
+                isCorrect: false,
+                explanation: 'This is the strongest of the three lateral ligaments and is rarely injured in a typical inversion sprain.',
+              },
+              {
+                text: 'Deltoid ligament',
+                isCorrect: false,
+                explanation: 'This strong medial ankle ligament is injured by eversion, not inversion, injuries, and is far less commonly injured overall.',
+              },
+              {
+                text: 'Anterior tibiofibular ligament (syndesmotic ligament)',
+                isCorrect: false,
+                explanation: 'Injury to this ligament defines a "high ankle sprain" from an external rotation/hyperdorsiflexion mechanism, distinct from the inversion mechanism and lateral ligament injury described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish a high ankle sprain (syndesmotic injury) from a typical lateral ankle sprain',
+        summary:
+          'A "high ankle sprain" injures the tibiofibular syndesmosis (the ligamentous complex holding the distal tibia and fibula together, including the anterior tibiofibular ligament), typically from an external rotation or forced dorsiflexion mechanism, rather than the inversion mechanism that injures the lateral (ATFL) ligaments. It causes pain above the ankle joint proper and takes longer to heal than a typical lateral sprain.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A football player’s foot is planted while an opponent falls onto his lower leg, forcibly externally rotating his foot relative to the leg. He has pain above the ankle joint, between the distal tibia and fibula, worsened by external rotation stress testing. Which ligamentous complex is most likely injured, and how does the mechanism differ from a typical lateral ankle sprain?',
+            explanation:
+              'This is a "high ankle sprain," an injury to the tibiofibular syndesmosis, the ligamentous complex (including the anterior and posterior tibiofibular ligaments and interosseous membrane) that binds the distal tibia and fibula together above the ankle joint. Unlike the inversion mechanism that injures the lateral collateral ligaments (like the ATFL) at the ankle joint itself, syndesmotic injury results from external rotation or forced dorsiflexion, producing pain above the joint line that is reproduced by external rotation stress and that typically requires a longer recovery.',
+            difficulty: 3,
+            choices: [
+              { text: 'Tibiofibular syndesmosis, injured by external rotation/forced dorsiflexion (rather than inversion)', isCorrect: true },
+              {
+                text: 'Anterior talofibular ligament, injured by external rotation',
+                isCorrect: false,
+                explanation: 'The ATFL is injured by inversion, not external rotation, and produces pain at the ankle joint itself, not above it.',
+              },
+              {
+                text: 'Deltoid ligament, injured by inversion',
+                isCorrect: false,
+                explanation: 'The deltoid ligament is injured by eversion, not the external rotation mechanism described, and this is a medial, not syndesmotic, structure.',
+              },
+              {
+                text: 'Calcaneofibular ligament, injured by plantarflexion alone',
+                isCorrect: false,
+                explanation: 'This lateral ligament is injured by inversion mechanisms, producing joint-level pain, not the above-joint syndesmotic pain described.',
+              },
+              {
+                text: 'Achilles tendon, injured by forced dorsiflexion',
+                isCorrect: false,
+                explanation: 'Achilles injury would cause posterior heel pain and weak plantarflexion, not the anterior/lateral above-joint pain described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish deep from superficial fibular nerve function and injury patterns',
+        summary:
+          'The common fibular nerve divides into the deep fibular nerve (motor to the anterior compartment — dorsiflexion — with sensation limited to the first dorsal web space) and the superficial fibular nerve (motor to the lateral compartment — eversion — with sensation over most of the dorsal foot). Isolated injury to one branch produces a partial deficit distinguishable from full common fibular nerve injury.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient has weakness of foot eversion and sensory loss over most of the dorsal foot, but normal dorsiflexion strength and normal sensation in the web space between the first and second toes. Injury to which specific branch of the common fibular nerve best explains this isolated pattern?',
+            explanation:
+              'The common fibular nerve divides into the deep fibular nerve, which supplies the anterior compartment muscles (dorsiflexion) and sensation limited to the first dorsal web space, and the superficial fibular nerve, which supplies the lateral compartment muscles (eversion) and sensation over most of the remaining dorsal foot. This patient’s isolated eversion weakness and dorsal foot sensory loss, with preserved dorsiflexion and first web space sensation, localizes the injury specifically to the superficial fibular nerve, sparing the deep branch.',
+            difficulty: 3,
+            choices: [
+              { text: 'Superficial fibular nerve', isCorrect: true },
+              {
+                text: 'Deep fibular nerve',
+                isCorrect: false,
+                explanation: 'Deep fibular nerve injury would cause dorsiflexion weakness (foot drop) and first web space sensory loss, both of which are explicitly preserved in this patient.',
+              },
+              {
+                text: 'Tibial nerve',
+                isCorrect: false,
+                explanation: 'Tibial nerve injury would cause plantarflexion/inversion weakness and plantar sensory loss, a completely different pattern from the one described.',
+              },
+              {
+                text: 'Sural nerve',
+                isCorrect: false,
+                explanation: 'This purely sensory nerve supplies the posterolateral leg and lateral foot, not the eversion muscles or the broader dorsal foot sensation described.',
+              },
+              {
+                text: 'Saphenous nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the medial leg down to the ankle and has no motor function, unrelated to eversion or dorsal foot sensation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize a Morton neuroma to the third common plantar digital nerve',
+        summary:
+          'A Morton neuroma is a benign perineural fibrosis of a common plantar digital nerve, most often the one between the third and fourth toes, where two branches of the medial and lateral plantar nerves converge and become compressed between the metatarsal heads during weight-bearing, causing sharp pain and numbness in the third web space, often worsened by tight, narrow shoes.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A woman who frequently wears narrow, high-heeled shoes develops sharp, burning pain in the ball of her foot that radiates into the space between the third and fourth toes, along with a sensation of "walking on a pebble." Perineural fibrosis of which nerve, at which specific location, best explains this presentation?',
+            explanation:
+              'This is a Morton neuroma, perineural fibrosis of a common plantar digital nerve — most classically the one in the third intermetatarsal space (between the third and fourth toes), where nerve fibers from the medial and lateral plantar nerves converge and become repeatedly compressed between the metatarsal heads during weight-bearing, especially when narrow or high-heeled shoes force the toes together.',
+            difficulty: 2,
+            choices: [
+              { text: 'Common plantar digital nerve in the third intermetatarsal space (between the third and fourth toes)', isCorrect: true },
+              {
+                text: 'Common plantar digital nerve in the first intermetatarsal space (between the first and second toes)',
+                isCorrect: false,
+                explanation: 'While a neuroma can rarely occur here, the third intermetatarsal space is by far the classic, most common site.',
+              },
+              {
+                text: 'Tibial nerve, at the tarsal tunnel',
+                isCorrect: false,
+                explanation: 'Tarsal tunnel syndrome causes broader plantar burning pain and numbness, not the localized third web space symptoms of a Morton neuroma.',
+              },
+              {
+                text: 'Sural nerve, at the lateral ankle',
+                isCorrect: false,
+                explanation: 'This nerve supplies the lateral foot, not the web spaces between the toes on the plantar surface.',
+              },
+              {
+                text: 'Deep fibular nerve, on the dorsum of the foot',
+                isCorrect: false,
+                explanation: 'A Morton neuroma is a plantar (not dorsal) nerve entity, and the deep fibular nerve’s sensory territory is limited to the dorsal first web space.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link a displaced femoral neck fracture to avascular necrosis of the femoral head',
+        summary:
+          'The femoral head receives most of its blood supply in adults from the medial femoral circumflex artery, via retinacular vessels that travel along the femoral neck within the joint capsule. A displaced intracapsular femoral neck fracture can tear these retinacular vessels, cutting off the femoral head’s blood supply and causing avascular necrosis.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'An elderly woman sustains a displaced fracture through the neck of the femur after a fall. Her orthopedic surgeon is concerned about a specific late complication related to disruption of the blood supply to the femoral head. Which artery’s branches, traveling along the femoral neck, are most responsible for this risk?',
+            explanation:
+              'The femoral head is supplied mainly by retinacular vessels arising from the medial femoral circumflex artery, which travel proximally along the femoral neck within the hip joint capsule to reach the head. A displaced intracapsular femoral neck fracture can tear these vessels, depriving the femoral head of its blood supply and leading to avascular necrosis — a well-recognized complication that is far more likely with displaced, intracapsular fractures than with extracapsular (e.g., intertrochanteric) fractures, where the blood supply is better preserved.',
+            difficulty: 2,
+            choices: [
+              { text: 'Medial femoral circumflex artery (via retinacular vessels along the femoral neck)', isCorrect: true },
+              {
+                text: 'Lateral femoral circumflex artery',
+                isCorrect: false,
+                explanation: 'This artery contributes less to femoral head perfusion in adults; the medial femoral circumflex artery is the dominant supply at risk in a femoral neck fracture.',
+              },
+              {
+                text: 'Obturator artery, via the artery of the ligamentum teres',
+                isCorrect: false,
+                explanation: 'This artery provides a minor, often insufficient supply to the femoral head, particularly in adults, and is not the primary vessel of concern after a femoral neck fracture.',
+              },
+              {
+                text: 'Superior gluteal artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the gluteal muscles, not the femoral head itself.',
+              },
+              {
+                text: 'Popliteal artery',
+                isCorrect: false,
+                explanation: 'This artery is located behind the knee, far from the femoral head, and is unrelated to this complication.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Legg-Calvé-Perthes disease as idiopathic avascular necrosis of the femoral head in children',
+        summary:
+          'Legg-Calvé-Perthes disease is idiopathic avascular necrosis of the femoral head in children, typically ages 4-10, thought to result from disruption of the tenuous, developing blood supply to the femoral epiphysis (which, unlike in adults, has not yet been fully taken over by the retinacular vessels of the medial femoral circumflex artery). It presents with insidious hip or knee pain and a limp, without a history of trauma or fracture.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 6-year-old boy presents with several weeks of an intermittent limp and mild hip pain that sometimes radiates to the knee, with no history of trauma. Imaging reveals flattening and fragmentation of the femoral epiphysis consistent with avascular necrosis. What is this condition called, and how does its underlying vascular vulnerability differ from the mechanism of avascular necrosis following an adult femoral neck fracture?',
+            explanation:
+              'This is Legg-Calvé-Perthes disease, idiopathic avascular necrosis of the femoral head occurring in children, most often between ages 4 and 10. Unlike adult avascular necrosis, which typically follows disruption of the medial femoral circumflex artery’s retinacular vessels after a fracture, Legg-Calvé-Perthes arises spontaneously from the femoral epiphysis’s inherently tenuous developing blood supply during this period of growth, without any inciting fracture or trauma.',
+            difficulty: 2,
+            choices: [
+              { text: 'Legg-Calvé-Perthes disease; idiopathic disruption of the tenuous, still-developing epiphyseal blood supply, without trauma', isCorrect: true },
+              {
+                text: 'Slipped capital femoral epiphysis; traumatic disruption of the medial femoral circumflex artery',
+                isCorrect: false,
+                explanation: 'Slipped capital femoral epiphysis is a distinct condition involving displacement of the femoral epiphysis through the growth plate, typically in obese adolescents, not this idiopathic avascular necrosis pattern in a young child.',
+              },
+              {
+                text: 'Osgood-Schlatter disease; traction injury of the tibial tuberosity apophysis',
+                isCorrect: false,
+                explanation: 'This condition affects the tibial tuberosity in adolescents from quadriceps traction, an entirely different location and mechanism from femoral head avascular necrosis.',
+              },
+              {
+                text: 'Septic arthritis of the hip; bacterial destruction of the femoral head',
+                isCorrect: false,
+                explanation: 'Septic arthritis typically presents acutely with fever and an inability to bear weight, not the insidious, afebrile course described here.',
+              },
+              {
+                text: 'Developmental dysplasia of the hip; congenital shallow acetabulum',
+                isCorrect: false,
+                explanation: 'This condition is typically identified in infancy with hip instability, not an insidious limp with avascular necrosis findings at school age.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize trigeminal neuralgia from vascular compression of the trigeminal nerve root',
+        summary:
+          'Trigeminal neuralgia is most often caused by compression of the trigeminal nerve at its root entry zone (where it exits the pons) by an aberrant, tortuous artery — classically the superior cerebellar artery. This produces brief, severe, electric-shock-like facial pain in the trigeminal distribution, triggered by light touch or routine activities like chewing or brushing teeth.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An elderly woman experiences brief, severe, electric-shock-like pain over her cheek and jaw triggered by light touch, chewing, or a breeze on her face. MRI reveals a tortuous artery in close contact with the trigeminal nerve as it exits the pons. Compression by which artery is the most common cause of this presentation?',
+            explanation:
+              'This is trigeminal neuralgia, most commonly caused by compression of the trigeminal nerve at its root entry zone, where it exits the pons, by an aberrant, pulsating artery — classically the superior cerebellar artery. The chronic pulsatile compression is thought to cause focal demyelination of the nerve, producing brief, severe, electric-shock-like pain triggered by innocuous stimuli in the trigeminal distribution.',
+            difficulty: 2,
+            choices: [
+              { text: 'Superior cerebellar artery', isCorrect: true },
+              {
+                text: 'Posterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This artery is classically associated with lateral medullary (Wallenberg) syndrome from occlusion, not trigeminal nerve compression at the pons.',
+              },
+              {
+                text: 'Anterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This artery is more classically associated with compression or occlusion affecting CN VII/VIII at the cerebellopontine angle, not the specific trigeminal neuralgia mechanism.',
+              },
+              {
+                text: 'Middle cerebral artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the cerebral cortex and is not located near the trigeminal nerve root entry zone at the pons.',
+              },
+              {
+                text: 'Posterior communicating artery',
+                isCorrect: false,
+                explanation: 'Aneurysms of this artery classically compress CN III, not the trigeminal nerve.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize peritonsillar abscess and its glossopharyngeal-mediated referred ear pain',
+        summary:
+          'A peritonsillar abscess forms between the palatine tonsil and its capsule, pushing the tonsil and soft palate medially and displacing the uvula toward the opposite side. Because the glossopharyngeal nerve (CN IX) provides sensory innervation to both the tonsillar region and, via the tympanic branch (Jacobson nerve), part of the middle ear, patients often report referred ear pain on the same side as the abscess.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with severe sore throat, trismus (difficulty opening the mouth), and a muffled "hot potato" voice is found to have a bulging, erythematous area near the right tonsil with the uvula deviated to the left. The patient also reports pain radiating to the right ear. Shared innervation by which nerve explains the referred ear pain in this presentation?',
+            explanation:
+              'This presentation describes a peritonsillar abscess, which displaces the tonsil and soft palate medially, pushing the uvula toward the contralateral side. The glossopharyngeal nerve (CN IX) provides sensory innervation to the tonsillar region and pharynx, and also gives off the tympanic branch (Jacobson nerve), which supplies part of the middle ear; this shared innervation explains why pain from a peritonsillar abscess is frequently referred to the ipsilateral ear.',
+            difficulty: 3,
+            choices: [
+              { text: 'Glossopharyngeal nerve (CN IX), via its tympanic branch to the middle ear', isCorrect: true },
+              {
+                text: 'Facial nerve (CN VII), via its chorda tympani branch',
+                isCorrect: false,
+                explanation: 'The chorda tympani carries taste and parasympathetic fibers, not general sensation responsible for this referred pain pattern from the tonsil to the ear.',
+              },
+              {
+                text: 'Trigeminal nerve (CN V), via its mandibular division',
+                isCorrect: false,
+                explanation: 'While the trigeminal nerve does supply some ear sensation via other branches, the classic nerve responsible for tonsil-to-ear referred pain in peritonsillar abscess is the glossopharyngeal nerve.',
+              },
+              {
+                text: 'Vagus nerve (CN X), via its auricular branch alone',
+                isCorrect: false,
+                explanation: 'While the vagus nerve’s auricular branch does supply part of the ear, the classic shared innervation explaining tonsil-related referred ear pain is attributed to the glossopharyngeal nerve.',
+              },
+              {
+                text: 'Hypoglossal nerve (CN XII)',
+                isCorrect: false,
+                explanation: 'This nerve is purely motor to the tongue and carries no sensory fibers to explain referred pain.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Ludwig angina as a rapidly spreading submandibular space infection threatening the airway',
+        summary:
+          'Ludwig angina is a rapidly progressive cellulitis of the submandibular space, most often arising from an infected lower molar tooth, that spreads bilaterally to involve the sublingual and submental spaces as well. Because these spaces have no distinct fascial barriers between them, the resulting swelling can push the tongue posteriorly and superiorly, threatening airway obstruction — a true emergency requiring prompt airway management.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a recent dental infection develops rapidly progressive, firm swelling of the floor of the mouth and submandibular region bilaterally, with the tongue pushed upward and posteriorly, along with difficulty breathing and swallowing. Which condition does this represent, and why is airway compromise a primary concern?',
+            explanation:
+              'This is Ludwig angina, a rapidly spreading cellulitis of the submandibular space (typically originating from an infected lower molar) that extends into the sublingual and submental spaces because these compartments communicate without distinct fascial barriers between them. The resulting bilateral swelling elevates and displaces the tongue posteriorly, which can obstruct the airway — making this a surgical and airway emergency requiring prompt recognition and management, often before the infection is even fully drained.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ludwig angina, with tongue displacement threatening airway obstruction', isCorrect: true },
+              {
+                text: 'Peritonsillar abscess, with lateral tonsillar displacement threatening airway obstruction',
+                isCorrect: false,
+                explanation: 'A peritonsillar abscess is typically unilateral and localized near the tonsil, not the bilateral submandibular/sublingual swelling described here.',
+              },
+              {
+                text: 'Retropharyngeal abscess, with posterior pharyngeal wall bulging',
+                isCorrect: false,
+                explanation: 'This infection occurs in the retropharyngeal space behind the pharynx, a different location from the submandibular/sublingual spaces described.',
+              },
+              {
+                text: 'Parotitis, with swelling anterior to the ear',
+                isCorrect: false,
+                explanation: 'Parotid gland infection causes swelling anterior to the ear extending toward the jaw angle, not the floor-of-mouth and submandibular swelling described.',
+              },
+              {
+                text: 'Sialadenitis of the submandibular gland alone, without spread to adjacent spaces',
+                isCorrect: false,
+                explanation: 'This describes an isolated glandular infection, not the rapidly spreading, multi-space cellulitis with airway-threatening tongue displacement characteristic of Ludwig angina.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the retropharyngeal ("danger") space as a pathway for infection to spread into the mediastinum',
+        summary:
+          'The retropharyngeal space, located between the pharynx/esophagus and the prevertebral fascia, is sometimes called the "danger space" because it extends continuously from the base of the skull down into the posterior mediastinum. Infection here (e.g., from a pharyngeal abscess or penetrating injury) can therefore spread directly into the mediastinum, causing mediastinitis, without needing to cross any fascial barrier.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A child with a retropharyngeal abscess is found several days later to have developed mediastinitis, with the infection tracking downward from the neck into the chest without ever crossing a distinct anatomic barrier. Which fascial space, sometimes called the "danger space," explains this direct route of spread?',
+            explanation:
+              'The retropharyngeal space, lying between the pharynx and esophagus anteriorly and the prevertebral fascia posteriorly, is termed the "danger space" precisely because it is a continuous potential space extending from the skull base down to the posterior mediastinum, with no fascial barrier interrupting this path. Infection originating in the neck (such as a retropharyngeal abscess) can therefore spread directly downward into the mediastinum along this space, causing mediastinitis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Retropharyngeal ("danger") space', isCorrect: true },
+              {
+                text: 'Pretracheal space',
+                isCorrect: false,
+                explanation: 'This space lies anterior to the trachea and, while it also communicates with the mediastinum, is not the space classically termed the "danger space" for direct skull-base-to-mediastinum spread.',
+              },
+              {
+                text: 'Submandibular space',
+                isCorrect: false,
+                explanation: 'This space lies in the floor of the mouth and does not extend into the mediastinum; infection here (Ludwig angina) threatens the airway rather than causing direct mediastinal spread.',
+              },
+              {
+                text: 'Parapharyngeal space',
+                isCorrect: false,
+                explanation: 'While this space communicates with the retropharyngeal space, it is not itself the space specifically named the "danger space" for direct mediastinal extension.',
+              },
+              {
+                text: 'Masticator space',
+                isCorrect: false,
+                explanation: 'This space surrounds the muscles of mastication near the mandible and does not provide a direct route to the mediastinum.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the contents of the carotid sheath',
+        summary:
+          'The carotid sheath, a fascial condensation in the neck, encloses the common (and internal) carotid artery, the internal jugular vein, and the vagus nerve, along with deep cervical lymph nodes. These structures travel together throughout the neck, making the sheath an important surgical landmark and a site where injury to one structure raises concern for the others.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During neck exploration for a penetrating injury, a surgeon identifies a fascial sheath containing three major structures that travel together throughout the neck. Which three structures does this carotid sheath contain?',
+            explanation:
+              'The carotid sheath contains the common carotid artery (which becomes the internal carotid artery superiorly), the internal jugular vein, and the vagus nerve, along with associated deep cervical lymph nodes. Because these three major structures travel together, penetrating neck trauma affecting one raises significant concern for injury to the others as well.',
+            difficulty: 2,
+            choices: [
+              { text: 'Common/internal carotid artery, internal jugular vein, and vagus nerve', isCorrect: true },
+              {
+                text: 'External carotid artery, external jugular vein, and hypoglossal nerve',
+                isCorrect: false,
+                explanation: 'The external carotid artery and external jugular vein travel outside the carotid sheath, and the hypoglossal nerve is not one of its three classic contents.',
+              },
+              {
+                text: 'Common carotid artery, internal jugular vein, and phrenic nerve',
+                isCorrect: false,
+                explanation: 'The phrenic nerve travels along the anterior scalene muscle, outside the carotid sheath, not within it.',
+              },
+              {
+                text: 'Internal carotid artery, external jugular vein, and glossopharyngeal nerve',
+                isCorrect: false,
+                explanation: 'The external jugular vein lies outside the carotid sheath, and while the glossopharyngeal nerve passes near the sheath, it is not one of its three classic contents.',
+              },
+              {
+                text: 'Thyrocervical trunk, internal jugular vein, and recurrent laryngeal nerve',
+                isCorrect: false,
+                explanation: 'Neither the thyrocervical trunk nor the recurrent laryngeal nerve is a classic content of the carotid sheath; the recurrent laryngeal nerve travels in the tracheoesophageal groove, outside the sheath.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize locked-in syndrome from basilar artery occlusion at the ventral pons',
+        summary:
+          'Basilar artery occlusion affecting the ventral pons can destroy the corticospinal and corticobulbar tracts bilaterally, causing quadriplegia and paralysis of most cranial nerve-mediated movements (including horizontal eye movements and facial expression), while sparing the reticular activating system (preserving consciousness) and the vertical eye movement and blinking pathways — locked-in syndrome, in which patients remain awake and aware but nearly completely paralyzed.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a basilar artery occlusion is quadriplegic and unable to speak or move the face, yet remains fully conscious and able to communicate by blinking and moving the eyes vertically. Damage limited to which region of the brainstem best explains this combination of profound paralysis with preserved consciousness and vertical eye movement?',
+            explanation:
+              'This is locked-in syndrome, resulting from basilar artery occlusion damaging the ventral (basal) pons, which contains the corticospinal and corticobulbar tracts responsible for limb movement, speech, and most cranial nerve-mediated facial and horizontal eye movements. Because the lesion is limited to the ventral pons, the reticular activating system (more dorsally located, maintaining consciousness) and the pathways for vertical eye movement and blinking (mediated more rostrally, near the midbrain) are spared, allowing the patient to remain awake, aware, and able to communicate through vertical eye movements and blinking despite otherwise complete paralysis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Ventral pons, sparing the reticular activating system and vertical gaze pathways', isCorrect: true },
+              {
+                text: 'Dorsal medulla, sparing the corticospinal tracts',
+                isCorrect: false,
+                explanation: 'Dorsal medullary damage would more classically produce sensory (dorsal column) deficits, not the profound bilateral motor paralysis with preserved consciousness described here.',
+              },
+              {
+                text: 'Bilateral cerebral cortex, sparing the brainstem entirely',
+                isCorrect: false,
+                explanation: 'Diffuse bilateral cortical damage of this severity would typically impair consciousness itself (e.g., a persistent vegetative state), not preserve full awareness as seen in locked-in syndrome.',
+              },
+              {
+                text: 'Cerebellar vermis, sparing the pons and medulla',
+                isCorrect: false,
+                explanation: 'Cerebellar vermis damage causes truncal ataxia, not quadriplegia or the profound bulbar paralysis described.',
+              },
+              {
+                text: 'Thalamus bilaterally, sparing the brainstem',
+                isCorrect: false,
+                explanation: 'Bilateral thalamic damage can impair consciousness itself, unlike the preserved awareness that defines locked-in syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize central pontine myelinolysis from overly rapid correction of hyponatremia',
+        summary:
+          'Central pontine myelinolysis (osmotic demyelination syndrome) results from correcting severe hyponatremia too rapidly, causing an osmotic fluid shift out of pontine neurons and demyelination. It classically produces a delayed onset (days after correction) of quadriplegia, dysarthria, and dysphagia, sometimes progressing to locked-in syndrome, from damage localized to the pons.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with severe hyponatremia is treated with rapid intravenous saline correction. Several days later, he develops progressive quadriplegia, dysarthria, and difficulty swallowing. MRI reveals a symmetric lesion within the pons. What is this condition called, and what is the underlying mechanism linking it to the rate of sodium correction?',
+            explanation:
+              'This is central pontine myelinolysis (osmotic demyelination syndrome), caused by correcting severe hyponatremia too quickly. Because brain cells adapt to chronic hyponatremia by extruding intracellular solutes, a rapid rise in serum sodium creates a relatively hypertonic extracellular environment that draws water out of these already solute-depleted neurons, particularly within the tightly packed pontine white matter, causing osmotic injury and demyelination. This produces a delayed (days after correction) onset of quadriplegia, dysarthria, and dysphagia, which can progress to a locked-in-like state.',
+            difficulty: 2,
+            choices: [
+              { text: 'Central pontine myelinolysis, from osmotic injury after overly rapid sodium correction', isCorrect: true },
+              {
+                text: 'Cerebral edema, from overly rapid correction of hypernatremia',
+                isCorrect: false,
+                explanation: 'This describes the opposite electrolyte disturbance and mechanism (swelling with rapid correction of high, not low, sodium), and it typically affects the whole brain rather than the pons specifically.',
+              },
+              {
+                text: 'Wernicke encephalopathy, from thiamine deficiency unrelated to sodium correction',
+                isCorrect: false,
+                explanation: 'Wernicke encephalopathy involves the mammillary bodies and periaqueductal gray from thiamine deficiency, a different mechanism and location from this sodium-correction-related pontine injury.',
+              },
+              {
+                text: 'Guillain-Barré syndrome, from autoimmune peripheral nerve demyelination',
+                isCorrect: false,
+                explanation: 'This is a peripheral nervous system, autoimmune process, not a central pontine lesion related to sodium correction.',
+              },
+              {
+                text: 'Multiple sclerosis, from a new demyelinating plaque unrelated to serum sodium',
+                isCorrect: false,
+                explanation: 'While MS also causes demyelination, this specific presentation temporally linked to rapid sodium correction is characteristic of central pontine myelinolysis, not a coincidental MS flare.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize visual field quadrantanopias to the temporal versus parietal optic radiations',
+        summary:
+          'The optic radiations split after the optic tract: fibers carrying information from the inferior visual field loop through the temporal lobe (Meyer loop) before reaching the occipital cortex, while fibers carrying the superior visual field travel more directly through the parietal lobe. A temporal lobe lesion therefore causes a contralateral superior quadrantanopia ("pie in the sky"), while a parietal lobe lesion causes a contralateral inferior quadrantanopia ("pie on the floor").',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a temporal lobe tumor is found to have a visual field defect affecting the contralateral upper quadrant of vision in both eyes. Damage to fibers looping through which anatomic pathway explains this specific quadrant of visual loss?',
+            explanation:
+              'Optic radiation fibers carrying information from the inferior retina (which corresponds to the superior visual field) loop anteriorly through the temporal lobe as Meyer loop before turning posteriorly to reach the occipital cortex. A temporal lobe lesion damaging this loop therefore produces a contralateral superior quadrantanopia, often remembered as "pie in the sky" — in contrast to a parietal lobe lesion, which damages the more direct parietal fibers carrying the superior retina/inferior visual field information, producing a contralateral inferior quadrantanopia ("pie on the floor").',
+            difficulty: 3,
+            choices: [
+              { text: 'Meyer loop, the temporal lobe portion of the optic radiations carrying inferior retinal (superior visual field) fibers', isCorrect: true },
+              {
+                text: 'Parietal optic radiations, carrying superior retinal (inferior visual field) fibers',
+                isCorrect: false,
+                explanation: 'Damage to the parietal radiations would cause a contralateral inferior, not superior, quadrantanopia — the opposite of the finding described.',
+              },
+              {
+                text: 'Optic chiasm, affecting crossing nasal retinal fibers',
+                isCorrect: false,
+                explanation: 'Chiasmal lesions cause bitemporal hemianopia, not a unilateral quadrant defect localized to one lobe.',
+              },
+              {
+                text: 'Lateral geniculate nucleus, affecting all retinal fibers equally',
+                isCorrect: false,
+                explanation: 'A lesion here would typically cause a more complete contralateral homonymous hemianopia rather than an isolated quadrant defect.',
+              },
+              {
+                text: 'Primary visual cortex only, sparing all optic radiation fibers',
+                isCorrect: false,
+                explanation: 'Isolated occipital cortex lesions can also cause quadrant defects, but the specific pathway explaining a temporal lobe lesion’s effect is Meyer loop, part of the optic radiations, not the cortex itself.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a lacunar stroke from lenticulostriate artery occlusion in the internal capsule',
+        summary:
+          'The lenticulostriate arteries, small penetrating branches of the middle cerebral artery, supply the internal capsule and basal ganglia. Occlusion of one of these small vessels (classically from chronic hypertension causing lipohyalinosis) produces a lacunar infarct, often presenting as a pure motor or pure sensory stroke — a dense, contralateral deficit affecting the face, arm, and leg equally, without cortical signs like aphasia or neglect, since the corticospinal/sensory fibers are tightly packed together at this level.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with long-standing, poorly controlled hypertension develops sudden weakness equally affecting the contralateral face, arm, and leg, with no aphasia, neglect, or visual field defect. Imaging reveals a small infarct in the internal capsule. Occlusion of which type of vessel, and by what chronic process, best explains this pure motor stroke pattern?',
+            explanation:
+              'This is a lacunar stroke, caused by occlusion of a lenticulostriate artery, a small penetrating branch of the middle cerebral artery supplying the internal capsule and basal ganglia. Chronic hypertension causes lipohyalinosis (a degenerative thickening) of these small vessels, predisposing them to occlusion. Because the corticospinal fibers for the face, arm, and leg are tightly packed together within the internal capsule, a small infarct here affects all three equally (a pure motor stroke), without the cortical signs (aphasia, neglect, visual field defects) seen with larger cortical strokes, since the cortex itself is undamaged.',
+            difficulty: 3,
+            choices: [
+              { text: 'Lenticulostriate artery occlusion, from chronic hypertensive lipohyalinosis', isCorrect: true },
+              {
+                text: 'Middle cerebral artery main trunk occlusion, from cardioembolism',
+                isCorrect: false,
+                explanation: 'A main MCA trunk occlusion would produce a much larger cortical infarct with face/arm-predominant weakness and cortical signs like aphasia, not this small, pure motor, internal capsule pattern.',
+              },
+              {
+                text: 'Anterior choroidal artery occlusion, from atherosclerotic large-vessel disease',
+                isCorrect: false,
+                explanation: 'While the anterior choroidal artery can also cause internal capsule infarcts, the classic, most common mechanism tested for lacunar strokes is lenticulostriate artery lipohyalinosis from chronic hypertension.',
+              },
+              {
+                text: 'Posterior cerebral artery occlusion, from vertebrobasilar atherosclerosis',
+                isCorrect: false,
+                explanation: 'PCA occlusion causes visual field deficits from occipital lobe ischemia, not this pure motor internal capsule pattern.',
+              },
+              {
+                text: 'Superior cerebellar artery occlusion, from cardioembolism',
+                isCorrect: false,
+                explanation: 'This artery supplies the cerebellum and midbrain, causing ataxia, not the pure motor hemiparesis pattern described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish cerebellar vermis lesions (truncal ataxia) from hemisphere lesions (limb ataxia)',
+        summary:
+          'The cerebellar vermis, the midline portion of the cerebellum, coordinates axial and truncal muscle control; lesions here cause truncal ataxia (wide-based, unsteady gait) without significant limb incoordination. The cerebellar hemispheres, in contrast, coordinate ipsilateral limb movements; lesions here cause ipsilateral limb ataxia (dysmetria, intention tremor) with relatively preserved gait/trunk stability when limbs are not being tested.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a cerebellar tumor has a wide-based, unsteady gait but performs finger-to-nose and heel-to-shin testing normally in both limbs. A different patient with a cerebellar tumor has normal gait when not being specifically tested for limb movements but has dysmetria and intention tremor localized to the right arm and leg. Which cerebellar regions are most likely affected in each patient, respectively?',
+            explanation:
+              'The first patient’s isolated truncal/gait ataxia with normal limb coordination localizes to the cerebellar vermis, the midline structure responsible for axial and truncal control. The second patient’s unilateral limb dysmetria and intention tremor, with better-preserved gait, localizes to a cerebellar hemisphere, which coordinates ipsilateral limb movements — hemisphere lesions produce ipsilateral limb findings because cerebellar output crosses twice (effectively acting ipsilaterally on the body).',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: cerebellar vermis (truncal ataxia); Second patient: cerebellar hemisphere (ipsilateral limb ataxia)', isCorrect: true },
+              {
+                text: 'First patient: cerebellar hemisphere; Second patient: cerebellar vermis',
+                isCorrect: false,
+                explanation: 'This reverses the actual localization; the vermis controls truncal/gait function, while the hemispheres control limb coordination.',
+              },
+              {
+                text: 'Both patients have vermis lesions, since the vermis controls all cerebellar function',
+                isCorrect: false,
+                explanation: 'The vermis and hemispheres have distinct functional roles (truncal versus limb coordination, respectively), which is why these two patients present so differently.',
+              },
+              {
+                text: 'Both patients have contralateral cerebral cortex lesions, not cerebellar lesions',
+                isCorrect: false,
+                explanation: 'These presentations (ataxia, dysmetria, intention tremor) are classic cerebellar, not cerebral cortical, findings.',
+              },
+              {
+                text: 'First patient: cerebellar hemisphere bilaterally; Second patient: cerebellar vermis bilaterally',
+                isCorrect: false,
+                explanation: 'This does not correctly match the described lateralized (second patient) versus midline/axial (first patient) findings to the correct anatomic regions.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize tabes dorsalis from tertiary syphilis damaging the dorsal columns',
+        summary:
+          'Tabes dorsalis, a manifestation of tertiary neurosyphilis, results from chronic inflammation damaging the dorsal columns and dorsal roots, impairing proprioception and vibration sense (causing a wide-based, stomping, "tabetic" gait worsened in the dark) while sparing pain/temperature sensation (spinothalamic tract). It is also associated with Argyll Robertson pupils, which accommodate but do not react to light.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with untreated syphilis from many years ago develops a wide-based, stomping gait that markedly worsens in the dark or with eyes closed, along with pupils that constrict with near focus but fail to react to light. Pain and temperature sensation remain intact. Damage to which spinal cord structures, sparing which other pathway, best explains the gait finding?',
+            explanation:
+              'This is tabes dorsalis, a form of tertiary neurosyphilis that damages the dorsal columns and dorsal roots, impairing proprioception and vibration sense. Because patients lose the position sense needed to know where their feet are without looking, they develop a wide-based, stomping gait that is markedly worse in the dark (when vision can no longer compensate). Pain and temperature sensation, carried by the separate, unaffected spinothalamic tract, remain intact. The associated Argyll Robertson pupils (which accommodate but do not react to light) are a classic accompanying finding in neurosyphilis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Dorsal columns and dorsal roots damaged, sparing the spinothalamic tract', isCorrect: true },
+              {
+                text: 'Spinothalamic tract damaged, sparing the dorsal columns',
+                isCorrect: false,
+                explanation: 'This would impair pain/temperature sensation while preserving proprioception, the opposite of what is described in this patient.',
+              },
+              {
+                text: 'Lateral corticospinal tract damaged, sparing all sensory pathways',
+                isCorrect: false,
+                explanation: 'Corticospinal tract damage would cause spastic weakness, not the purely sensory ataxia described here.',
+              },
+              {
+                text: 'Anterior horn cells damaged bilaterally, sparing all sensory pathways',
+                isCorrect: false,
+                explanation: 'Anterior horn cell damage would cause lower motor neuron weakness (as in polio or ALS), not a sensory ataxic gait.',
+              },
+              {
+                text: 'Cerebellar vermis damaged, sparing all spinal cord pathways',
+                isCorrect: false,
+                explanation: 'While cerebellar disease can also cause a wide-based gait, it would not selectively worsen in the dark, since cerebellar ataxia does not depend on visual compensation for lost proprioception the way a dorsal column lesion does.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize internuclear ophthalmoplegia from a medial longitudinal fasciculus lesion',
+        summary:
+          'The medial longitudinal fasciculus (MLF) coordinates conjugate horizontal eye movements by connecting the abducens nucleus on one side to the oculomotor nucleus on the other. A lesion of the MLF (classically from multiple sclerosis in young patients) causes internuclear ophthalmoplegia: impaired adduction of the eye on the side of the lesion during attempted lateral gaze, with nystagmus of the abducting contralateral eye, while convergence remains intact.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A young woman with multiple sclerosis is asked to look to the right. Her right eye abducts normally, but with nystagmus, while her left eye fails to adduct. When asked to look at a near object (convergence), both eyes move medially normally. A lesion of which structure, and on which side, best explains this finding?',
+            explanation:
+              'This is internuclear ophthalmoplegia, caused by a lesion of the medial longitudinal fasciculus (MLF) on the left side (the side with the adduction deficit during right gaze). The MLF normally connects the abducens nucleus on one side to the contralateral oculomotor nucleus to coordinate conjugate horizontal gaze; a lesion here disconnects this pathway, so the ipsilateral eye (relative to the lesion) fails to adduct on attempted contralateral gaze, while the contralateral eye abducts with nystagmus. Convergence remains intact because it uses a different pathway that does not rely on the MLF.',
+            difficulty: 3,
+            choices: [
+              { text: 'Left medial longitudinal fasciculus', isCorrect: true },
+              {
+                text: 'Right medial longitudinal fasciculus',
+                isCorrect: false,
+                explanation: 'A right MLF lesion would impair adduction of the right eye during left gaze, not the left eye’s adduction failure during right gaze described here.',
+              },
+              {
+                text: 'Left oculomotor nerve (CN III) directly',
+                isCorrect: false,
+                explanation: 'A direct CN III lesion would also impair convergence and other oculomotor functions (like pupillary constriction and eyelid elevation), which are preserved in this patient.',
+              },
+              {
+                text: 'Right abducens nerve (CN VI) directly',
+                isCorrect: false,
+                explanation: 'A right CN VI lesion would impair abduction of the right eye, but the right eye abducts normally (with nystagmus) in this patient.',
+              },
+              {
+                text: 'Bilateral optic nerves',
+                isCorrect: false,
+                explanation: 'Optic nerve lesions cause vision loss, not this specific pattern of impaired conjugate eye movement.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the correct needle site for emergency needle decompression of tension pneumothorax',
+        summary:
+          'Tension pneumothorax, in which air enters the pleural space with each breath but cannot escape, causes progressive lung collapse and mediastinal shift, compressing the heart and great vessels. Emergency needle decompression is performed in the second intercostal space at the midclavicular line, just superior to the third rib (to avoid the neurovascular bundle running along the inferior rib margin), to rapidly relieve the pressure.',
+        discipline: 'Respiratory',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A trauma patient develops absent breath sounds on one side, tracheal deviation away from that side, distended neck veins, and hypotension after a chest injury. Needle decompression is performed to relieve the presumed tension pneumothorax. At which anatomic location should the needle be inserted, and why is it directed just above (rather than below) the rib at that level?',
+            explanation:
+              'Tension pneumothorax, suggested here by absent breath sounds, tracheal deviation, jugular venous distension, and hypotension from mediastinal shift and impaired venous return, is treated emergently with needle decompression at the second intercostal space, midclavicular line. The needle is inserted just superior to the third rib (i.e., along the top of the rib below the space) rather than along the inferior margin of the rib above, because the intercostal neurovascular bundle (vein, artery, nerve) runs along the inferior margin of each rib, and inserting just above the lower rib avoids injuring these structures.',
+            difficulty: 2,
+            choices: [
+              { text: 'Second intercostal space, midclavicular line, just superior to the rib below to avoid the neurovascular bundle', isCorrect: true },
+              {
+                text: 'Fifth intercostal space, midaxillary line, just inferior to the rib above',
+                isCorrect: false,
+                explanation: 'This location (roughly the "triangle of safety") is used for chest tube placement, not emergency needle decompression, and directing the needle along the inferior rib margin risks the neurovascular bundle.',
+              },
+              {
+                text: 'Second intercostal space, midclavicular line, just inferior to the rib above',
+                isCorrect: false,
+                explanation: 'This would direct the needle along the inferior margin of the upper rib, where the neurovascular bundle travels, increasing the risk of vascular or nerve injury.',
+              },
+              {
+                text: 'Fourth intercostal space, parasternal line, along the inferior rib margin',
+                isCorrect: false,
+                explanation: 'This location is neither the standard site for needle decompression nor does it avoid the neurovascular bundle, and it risks injury to the internal thoracic vessels running near the sternal border.',
+              },
+              {
+                text: 'Seventh intercostal space, posterior axillary line, along the superior rib margin',
+                isCorrect: false,
+                explanation: 'This location is too low and posterior for standard needle decompression of a tension pneumothorax.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish posteromedial from anterolateral papillary muscle vulnerability after myocardial infarction',
+        summary:
+          'The posteromedial papillary muscle of the mitral valve receives blood supply from only a single source (the posterior descending artery, usually from the right coronary artery), making it far more vulnerable to ischemic rupture after an inferior MI than the anterolateral papillary muscle, which receives dual supply from branches of both the left anterior descending and left circumflex arteries.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Several days after an inferior wall myocardial infarction, a patient develops acute pulmonary edema and a new holosystolic murmur consistent with acute mitral regurgitation from papillary muscle rupture. Which papillary muscle is far more likely to have ruptured, and why is it more vulnerable than the other?',
+            explanation:
+              'The posteromedial papillary muscle is far more vulnerable to ischemic rupture because it receives blood supply from only a single source, typically the posterior descending artery (usually a branch of the right coronary artery) — the same vessel most often occluded in an inferior wall MI. The anterolateral papillary muscle, in contrast, receives dual blood supply from branches of both the left anterior descending and left circumflex arteries, making it much less vulnerable to ischemia from occlusion of any single vessel.',
+            difficulty: 3,
+            choices: [
+              { text: 'Posteromedial papillary muscle, because it has only a single (posterior descending artery) blood supply', isCorrect: true },
+              {
+                text: 'Anterolateral papillary muscle, because it has only a single (left anterior descending artery) blood supply',
+                isCorrect: false,
+                explanation: 'The anterolateral papillary muscle actually has dual blood supply (from both the LAD and circumflex arteries), making it the less vulnerable of the two, not the more vulnerable one.',
+              },
+              {
+                text: 'Posteromedial papillary muscle, because it has dual blood supply that is easily overwhelmed',
+                isCorrect: false,
+                explanation: 'The posteromedial papillary muscle’s vulnerability comes specifically from having only a single blood supply, not a dual one.',
+              },
+              {
+                text: 'Anterolateral papillary muscle, because it is anatomically thinner and weaker',
+                isCorrect: false,
+                explanation: 'The key distinguishing factor is blood supply redundancy, not muscle thickness; the anterolateral muscle’s dual supply is what protects it from ischemia.',
+              },
+              {
+                text: 'Both papillary muscles are equally likely to rupture regardless of infarct location',
+                isCorrect: false,
+                explanation: 'The posteromedial papillary muscle is specifically and substantially more vulnerable due to its single-vessel blood supply, which is why it ruptures far more often, especially after inferior infarcts.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Zenker diverticulum forming through Killian triangle',
+        summary:
+          'A Zenker diverticulum is a false (pulsion) diverticulum of the pharyngeal mucosa that herniates through Killian triangle, an area of relative muscular weakness between the oblique fibers of the inferior pharyngeal constrictor and the transverse fibers of the cricopharyngeus muscle, typically from impaired coordination or spasm of the upper esophageal sphincter.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An elderly patient reports halitosis, regurgitation of undigested food hours after eating, and occasional gurgling sounds in the neck. A barium swallow reveals an outpouching of the posterior pharyngeal wall just above the esophagus. Herniation through which anatomic area of muscular weakness best explains this diverticulum?',
+            explanation:
+              'This is a Zenker diverticulum, a false diverticulum (containing only mucosa and submucosa, not the full muscular wall) that herniates through Killian triangle, the area of relative weakness between the obliquely oriented fibers of the inferior pharyngeal constrictor above and the transversely oriented fibers of the cricopharyngeus muscle below. Impaired relaxation or spasm of the upper esophageal sphincter (cricopharyngeus) raises pressure in this region, promoting herniation through this weak point and producing the classic symptoms of halitosis and regurgitation of old, undigested food.',
+            difficulty: 3,
+            choices: [
+              { text: 'Killian triangle, between the inferior pharyngeal constrictor and cricopharyngeus muscles', isCorrect: true },
+              {
+                text: 'Triangle of Calot, between the cystic duct and common hepatic duct',
+                isCorrect: false,
+                explanation: 'This is an abdominal landmark near the gallbladder, unrelated to the pharynx or esophagus.',
+              },
+              {
+                text: 'Hesselbach triangle, in the anterior abdominal wall',
+                isCorrect: false,
+                explanation: 'This is the site of direct inguinal hernias, an entirely different region of the body from the pharynx.',
+              },
+              {
+                text: 'Triangle of safety, in the thoracic wall',
+                isCorrect: false,
+                explanation: 'This landmark is used for chest tube placement and is unrelated to pharyngeal diverticula.',
+              },
+              {
+                text: 'Femoral triangle, in the upper thigh',
+                isCorrect: false,
+                explanation: 'This is unrelated to the pharynx and is the site of femoral vessel and hernia anatomy in the leg.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Baker cyst as synovial fluid herniation into the popliteal fossa',
+        summary:
+          'A Baker (popliteal) cyst is a synovial fluid-filled swelling that forms when fluid from the knee joint herniates posteriorly into the bursa between the semimembranosus and medial head of the gastrocnemius, communicating with the joint space. It presents as a soft, fluctuant mass behind the knee and can occasionally rupture, mimicking a deep vein thrombosis.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with osteoarthritis of the knee develops a soft, fluctuant swelling behind the knee that communicates with the joint space on ultrasound. Herniation of joint fluid into the bursa between which two muscles best explains this finding?',
+            explanation:
+              'This is a Baker (popliteal) cyst, formed when excess synovial fluid from an arthritic or otherwise inflamed knee joint herniates posteriorly into the bursa located between the semimembranosus tendon and the medial head of the gastrocnemius muscle, which normally communicates with the joint space. This connection explains why the cyst fluctuates with joint effusion and, if it ruptures, can cause calf pain and swelling that mimics a deep vein thrombosis.',
+            difficulty: 2,
+            choices: [
+              { text: 'Semimembranosus and the medial head of the gastrocnemius', isCorrect: true },
+              {
+                text: 'Semitendinosus and the lateral head of the gastrocnemius',
+                isCorrect: false,
+                explanation: 'This is not the classic bursa involved in a Baker cyst, which specifically forms between the semimembranosus and the medial gastrocnemius head.',
+              },
+              {
+                text: 'Biceps femoris and the popliteus',
+                isCorrect: false,
+                explanation: 'These muscles are located more laterally in the popliteal fossa and are not the classic site of Baker cyst formation.',
+              },
+              {
+                text: 'Sartorius and gracilis',
+                isCorrect: false,
+                explanation: 'These muscles insert at the pes anserinus on the medial tibia, unrelated to the popliteal fossa bursa involved in a Baker cyst.',
+              },
+              {
+                text: 'Quadriceps femoris and the patellar tendon',
+                isCorrect: false,
+                explanation: 'These structures are located anteriorly at the knee, not in the posterior popliteal fossa where a Baker cyst forms.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize trigger finger from flexor tendon nodule entrapment at the A1 pulley',
+        summary:
+          'Trigger finger results from a nodular thickening of a flexor tendon (often the flexor digitorum superficialis or profundus) that catches as it passes through the A1 pulley at the base of the finger, causing the finger to lock in flexion and then snap straight with a palpable/audible pop.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with diabetes reports that her ring finger catches in a flexed position and then suddenly snaps straight with an audible pop, and a tender nodule is palpable at the base of the finger on the palm side. Entrapment of a thickened structure at which specific site best explains this presentation?',
+            explanation:
+              'This is trigger finger, caused by a nodular thickening of a flexor tendon that becomes too large to smoothly glide through the first annular (A1) pulley at the base of the finger (at the level of the metacarpal head). The tendon catches within the narrowed pulley during flexion and then releases suddenly with a snap as the nodule pops through, producing the characteristic triggering.',
+            difficulty: 2,
+            choices: [
+              { text: 'A1 pulley, at the base of the finger', isCorrect: true },
+              {
+                text: 'Carpal tunnel, at the wrist',
+                isCorrect: false,
+                explanation: 'Carpal tunnel syndrome causes median nerve compression symptoms (numbness, thenar weakness), not a snapping/locking sensation localized to a single finger.',
+              },
+              {
+                text: 'First dorsal extensor compartment, at the radial styloid',
+                isCorrect: false,
+                explanation: 'This is the site of De Quervain tenosynovitis, which causes radial wrist pain, not a triggering finger.',
+              },
+              {
+                text: 'Guyon canal, at the wrist',
+                isCorrect: false,
+                explanation: 'This is the site of ulnar nerve compression, causing sensory/motor changes, not a snapping finger.',
+              },
+              {
+                text: 'Cubital tunnel, at the elbow',
+                isCorrect: false,
+                explanation: 'This is the site of ulnar nerve entrapment at the elbow, unrelated to flexor tendon triggering at the finger base.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish boutonniere deformity (central slip injury) from mallet finger (terminal tendon injury)',
+        summary:
+          'Boutonniere deformity results from rupture of the central slip of the extensor tendon at the proximal interphalangeal (PIP) joint, causing PIP flexion with compensatory distal interphalangeal (DIP) hyperextension. Mallet finger results from rupture of the terminal extensor tendon at the distal interphalangeal (DIP) joint (often from a direct blow to an extended fingertip), causing isolated DIP flexion droop that cannot be actively extended.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A baseball player is struck on the tip of an extended finger by the ball and is subsequently unable to actively straighten the distal joint of that finger, which now droops in flexion, while the more proximal joint moves normally. Which tendon injury, at which specific joint, best explains this finding?',
+            explanation:
+              'This is a mallet finger, caused by rupture (or avulsion) of the terminal extensor tendon at its insertion on the distal phalanx, at the distal interphalangeal (DIP) joint — classically from a direct blow to the tip of an actively extended finger, such as being struck by a ball. This is distinct from a boutonniere deformity, which instead involves rupture of the central slip of the extensor tendon at the more proximal interphalangeal (PIP) joint, causing PIP flexion with DIP hyperextension rather than isolated DIP droop.',
+            difficulty: 2,
+            choices: [
+              { text: 'Terminal extensor tendon rupture at the DIP joint (mallet finger)', isCorrect: true },
+              {
+                text: 'Central slip rupture at the PIP joint (boutonniere deformity)',
+                isCorrect: false,
+                explanation: 'A boutonniere deformity produces PIP flexion with DIP hyperextension, not the isolated DIP droop with normal PIP motion described in this patient.',
+              },
+              {
+                text: 'Flexor digitorum profundus avulsion at the DIP joint ("jersey finger")',
+                isCorrect: false,
+                explanation: 'Jersey finger involves loss of active DIP flexion (not extension) from a flexor, not extensor, tendon avulsion, typically from grabbing a jersey during forced extension.',
+              },
+              {
+                text: 'Ulnar collateral ligament tear of the thumb ("skier’s thumb")',
+                isCorrect: false,
+                explanation: 'This is a distinct injury to the thumb’s metacarpophalangeal joint ligament, not an extensor tendon injury of a finger.',
+              },
+              {
+                text: 'Sagittal band rupture at the metacarpophalangeal joint',
+                isCorrect: false,
+                explanation: 'This injury causes extensor tendon subluxation at the knuckle, a different joint and mechanism from the DIP droop described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Dupuytren contracture from palmar fascia thickening',
+        summary:
+          'Dupuytren contracture is a progressive fibrotic thickening and contracture of the palmar fascia, most often affecting the ring and little fingers, that pulls them into fixed flexion at the metacarpophalangeal joint. It is associated with alcohol use disorder, diabetes, and northern European ancestry.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'An older man with a history of heavy alcohol use develops thickened, cord-like tissue in the palm that gradually pulls his ring and little fingers into a fixed flexed position at the base of the fingers, which he cannot fully straighten. Progressive fibrosis of which structure best explains this presentation?',
+            explanation:
+              'This is Dupuytren contracture, caused by progressive fibrotic thickening and contracture of the palmar fascia (palmar aponeurosis). The fibrotic cords characteristically pull the ring and little fingers into fixed flexion at the metacarpophalangeal joints, and the condition is associated with alcohol use disorder, diabetes, smoking, and a genetic predisposition often seen in people of northern European descent.',
+            difficulty: 2,
+            choices: [
+              { text: 'Palmar fascia (palmar aponeurosis)', isCorrect: true },
+              {
+                text: 'Flexor digitorum profundus tendons',
+                isCorrect: false,
+                explanation: 'Dupuytren contracture arises from the fascia overlying the tendons, not the flexor tendons themselves, which remain structurally normal.',
+              },
+              {
+                text: 'Extensor expansion (dorsal hood)',
+                isCorrect: false,
+                explanation: 'This structure is on the dorsal, not palmar, side of the hand and is not involved in Dupuytren contracture.',
+              },
+              {
+                text: 'Transverse carpal ligament (flexor retinaculum)',
+                isCorrect: false,
+                explanation: 'Thickening here is associated with carpal tunnel syndrome, not the finger contractures of Dupuytren disease.',
+              },
+              {
+                text: 'Collateral ligaments of the metacarpophalangeal joints',
+                isCorrect: false,
+                explanation: 'The primary pathology in Dupuytren contracture is fibrosis of the palmar fascia, not the joint collateral ligaments.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a middle-third clavicle fracture as the most common clavicle fracture site',
+        summary:
+          'The clavicle fractures most often at the junction of its middle and lateral thirds, the weakest point structurally because it is the transition between the two opposing curvatures of the bone and the site with the least muscular/ligamentous reinforcement. Neurovascular injury (to the subclavian vessels or brachial plexus, which lie just posterior) is uncommon despite their proximity, because the subclavius muscle and fascia offer some protection.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A cyclist falls onto an outstretched arm and sustains a clavicle fracture at the junction of the middle and lateral thirds, the most common site for this injury. Why is this the most common site of clavicle fracture, and why is neurovascular injury relatively uncommon despite the proximity of major structures?',
+            explanation:
+              'The junction of the middle and lateral thirds of the clavicle is structurally the weakest point because it is the transition between the bone’s two opposing curves and is less reinforced by surrounding ligaments and muscle attachments than the medial and lateral ends. Although the subclavian vessels and brachial plexus lie just posterior to the clavicle at this level, injury to them is relatively uncommon because the subclavius muscle and associated fascia provide a protective buffer between the bone and these deeper neurovascular structures.',
+            difficulty: 2,
+            choices: [
+              { text: 'The middle-to-lateral third junction is structurally weakest, and the subclavius muscle/fascia protects the underlying neurovascular structures', isCorrect: true },
+              {
+                text: 'The medial third is weakest, and the sternocleidomastoid protects the neurovascular structures',
+                isCorrect: false,
+                explanation: 'The medial third is not the most common fracture site; the middle-to-lateral third junction is structurally weakest and most frequently fractured.',
+              },
+              {
+                text: 'The lateral third is weakest, and the deltoid muscle protects the neurovascular structures',
+                isCorrect: false,
+                explanation: 'While lateral third fractures occur, the middle-to-lateral third junction is the most common site overall, and the subclavius, not deltoid, provides the protective buffer.',
+              },
+              {
+                text: 'The middle third is weakest because it has the thickest cortical bone, which paradoxically fractures more easily',
+                isCorrect: false,
+                explanation: 'The middle-to-lateral junction is weak due to its transitional curvature and reduced structural reinforcement, not because of unusually thick cortical bone.',
+              },
+              {
+                text: 'Neurovascular injury is actually common at this site because no protective structures exist',
+                isCorrect: false,
+                explanation: 'Neurovascular injury is in fact relatively uncommon at this fracture site precisely because the subclavius muscle and fascia provide some protection.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize conduction aphasia from arcuate fasciculus disruption',
+        summary:
+          'The arcuate fasciculus is a white matter tract connecting Wernicke area (language comprehension) to Broca area (speech production). Damage to this connecting tract, without directly damaging either cortical area, produces conduction aphasia: fluent speech with intact comprehension, but a disproportionately impaired ability to repeat spoken phrases.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient speaks fluently and understands spoken commands normally, but is strikingly unable to repeat a simple phrase word-for-word when asked. Damage to which white matter structure, connecting two specific cortical language areas, best explains this isolated deficit?',
+            explanation:
+              'This is conduction aphasia, caused by damage to the arcuate fasciculus, the white matter tract connecting Wernicke area (comprehension) to Broca area (speech production). Because both cortical areas themselves remain intact, fluency and comprehension are preserved, but the disconnection between them selectively and disproportionately impairs the ability to repeat spoken language, which requires information to travel directly from the comprehension area to the production area.',
+            difficulty: 3,
+            choices: [
+              { text: 'Arcuate fasciculus', isCorrect: true },
+              {
+                text: 'Broca area itself',
+                isCorrect: false,
+                explanation: 'Damage to Broca area causes non-fluent, effortful speech, not the fluent speech with isolated repetition deficit described here.',
+              },
+              {
+                text: 'Wernicke area itself',
+                isCorrect: false,
+                explanation: 'Damage to Wernicke area causes impaired comprehension along with fluent but nonsensical speech, not the intact comprehension and fluency described here.',
+              },
+              {
+                text: 'Corpus callosum splenium',
+                isCorrect: false,
+                explanation: 'Damage here (in conjunction with a left PCA infarct) classically causes alexia without agraphia, not a repetition-specific aphasia.',
+              },
+              {
+                text: 'Internal capsule',
+                isCorrect: false,
+                explanation: 'This structure carries motor and sensory fibers; its damage causes hemiparesis/hemisensory loss (lacunar stroke), not this specific language deficit.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize global aphasia from combined Broca and Wernicke area damage',
+        summary:
+          'Global aphasia results from a large infarct affecting the entire middle cerebral artery territory, damaging both Broca area (frontal) and Wernicke area (temporal) along with the connecting arcuate fasciculus, producing severe impairment of both language production and comprehension, often with accompanying dense contralateral hemiparesis from internal capsule/corona radiata involvement.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a large left-sided stroke has severely impaired speech production, severely impaired comprehension, and dense right-sided hemiparesis. Damage to which combination of structures, from occlusion of which artery’s full territory, best explains this severe presentation?',
+            explanation:
+              'This is global aphasia, resulting from a large infarct in the entire territory of the (typically left, dominant-hemisphere) middle cerebral artery, damaging both Broca area (frontal, speech production) and Wernicke area (temporal, comprehension), along with the connecting arcuate fasciculus. Because a stroke this large also frequently involves deeper structures like the internal capsule or corona radiata within the same vascular territory, patients often have dense contralateral hemiparesis in addition to the combined expressive and receptive language impairment.',
+            difficulty: 2,
+            choices: [
+              { text: 'Combined Broca and Wernicke areas (plus the arcuate fasciculus), from a full MCA territory infarct', isCorrect: true },
+              {
+                text: 'Isolated Broca area damage, from a small superior division MCA branch infarct',
+                isCorrect: false,
+                explanation: 'Isolated Broca area damage produces non-fluent aphasia with relatively preserved comprehension, not the severe combined deficit described here.',
+              },
+              {
+                text: 'Isolated Wernicke area damage, from a small inferior division MCA branch infarct',
+                isCorrect: false,
+                explanation: 'Isolated Wernicke area damage produces fluent aphasia with impaired comprehension but preserved fluency, not the severe combined production and comprehension deficit described.',
+              },
+              {
+                text: 'Bilateral occipital lobe damage, from bilateral PCA infarcts',
+                isCorrect: false,
+                explanation: 'This would cause cortical blindness, not the language and hemiparesis findings described.',
+              },
+              {
+                text: 'Isolated arcuate fasciculus damage, sparing both cortical language areas',
+                isCorrect: false,
+                explanation: 'Isolated arcuate fasciculus damage causes conduction aphasia (fluent speech, intact comprehension, impaired repetition), a much milder and more selective deficit than the one described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize alexia without agraphia from a splenium lesion with left PCA infarct',
+        summary:
+          'Alexia without agraphia results from a left posterior cerebral artery infarct that damages both the left visual cortex and the splenium of the corpus callosum. This disconnects visual information from the intact right visual cortex from reaching the language areas of the left hemisphere, so the patient cannot read (alexia) but can still write normally (no agraphia), since writing does not require this visual-to-language connection.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient who suffered a left posterior cerebral artery stroke has a right homonymous hemianopia and is completely unable to read, yet can still write a sentence from dictation fluently and correctly. Damage to the left visual cortex combined with which additional structure explains why reading, but not writing, is impaired?',
+            explanation:
+              'This is alexia without agraphia, caused by a left PCA infarct that damages both the left occipital (visual) cortex, producing the right homonymous hemianopia, and the splenium of the corpus callosum, the posterior portion that carries visual information from the intact right visual cortex over to the left hemisphere’s language areas. With this connection severed, visual information reaching the brain (via the still-functioning right visual cortex) cannot access the language areas needed for reading, but writing is unaffected because it does not depend on this particular visual-to-language pathway.',
+            difficulty: 3,
+            choices: [
+              { text: 'Splenium of the corpus callosum', isCorrect: true },
+              {
+                text: 'Genu of the corpus callosum',
+                isCorrect: false,
+                explanation: 'The genu connects the frontal lobes and is not involved in the visual-language disconnection responsible for alexia without agraphia.',
+              },
+              {
+                text: 'Arcuate fasciculus',
+                isCorrect: false,
+                explanation: 'Damage here causes conduction aphasia (an isolated repetition deficit), not the specific reading-writing dissociation described.',
+              },
+              {
+                text: 'Internal capsule',
+                isCorrect: false,
+                explanation: 'Internal capsule damage causes motor/sensory deficits, not the specific alexia without agraphia syndrome.',
+              },
+              {
+                text: 'Optic chiasm',
+                isCorrect: false,
+                explanation: 'Chiasmal damage causes bitemporal hemianopia, not a homonymous hemianopia combined with this specific reading deficit.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Anton syndrome (cortical blindness with confabulation) from bilateral occipital infarction',
+        summary:
+          'Anton syndrome results from bilateral occipital lobe damage (classically from bilateral posterior cerebral artery infarcts) that destroys the primary visual cortex, causing complete cortical blindness. Uniquely, patients lack insight into their blindness and confabulate visual experiences, confidently describing surroundings they cannot actually see — because the visual association areas needed to recognize the blindness itself are also damaged.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient who suffered bilateral posterior cerebral artery infarcts is completely blind based on formal visual testing (no light perception, no blink to threat), yet insists that she can see normally and confidently describes objects and people in the room that are not accurate. Which condition does this represent, and what is the underlying anatomic basis for the lack of insight?',
+            explanation:
+              'This is Anton syndrome (cortical blindness with anosognosia/confabulation), resulting from bilateral occipital lobe damage, most often from bilateral posterior cerebral artery infarcts, destroying the primary visual cortex and causing complete blindness. Uniquely, the visual association areas that would normally allow the patient to recognize and process the loss of vision are also damaged, so the patient lacks insight into the deficit and confabulates visual experiences rather than acknowledging blindness.',
+            difficulty: 3,
+            choices: [
+              { text: 'Anton syndrome, from bilateral occipital lobe (bilateral PCA) damage destroying visual cortex and associated visual insight pathways', isCorrect: true },
+              {
+                text: 'Balint syndrome, from bilateral parieto-occipital damage causing optic ataxia and simultanagnosia',
+                isCorrect: false,
+                explanation: 'Balint syndrome involves difficulty perceiving more than one object at a time and inaccurate visually guided reaching, not complete blindness with confabulation.',
+              },
+              {
+                text: 'Charles Bonnet syndrome, from peripheral (retinal) vision loss with preserved cortex',
+                isCorrect: false,
+                explanation: 'This syndrome involves visual hallucinations in patients with peripheral eye disease and preserved insight that the hallucinations are not real, unlike the cortical blindness with lack of insight described here.',
+              },
+              {
+                text: 'Wernicke encephalopathy, from thiamine deficiency affecting the mammillary bodies',
+                isCorrect: false,
+                explanation: 'This condition causes confusion, ataxia, and ophthalmoplegia from a nutritional deficiency, not cortical blindness from bilateral occipital infarcts.',
+              },
+              {
+                text: 'Klüver-Bucy syndrome, from bilateral amygdala damage',
+                isCorrect: false,
+                explanation: 'This syndrome causes hyperorality, hypersexuality, and placidity from temporal lobe/amygdala damage, unrelated to visual cortex function or blindness.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize obstructive hydrocephalus from cerebral aqueduct stenosis',
+        summary:
+          'The cerebral aqueduct (of Sylvius) connects the third and fourth ventricles and is the narrowest point of the ventricular system, making it especially prone to obstruction (congenital stenosis, or compression by a tumor). Blockage here causes obstructive hydrocephalus with dilation of the lateral and third ventricles, while the fourth ventricle remains normal in size.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An infant with an enlarging head circumference is found on imaging to have dilation of both lateral ventricles and the third ventricle, but a normal-sized fourth ventricle. Obstruction at which narrow point of the ventricular system best explains this specific pattern of dilation?',
+            explanation:
+              'This pattern, dilation of the lateral and third ventricles with a normal fourth ventricle, localizes the obstruction to the cerebral aqueduct (aqueduct of Sylvius), the narrow channel connecting the third and fourth ventricles and the most common site of congenital obstructive hydrocephalus. Because the blockage occurs before the fourth ventricle, structures upstream (lateral and third ventricles) dilate, while the fourth ventricle downstream of the obstruction remains normal in size.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cerebral aqueduct (of Sylvius)', isCorrect: true },
+              {
+                text: 'Foramen of Monro',
+                isCorrect: false,
+                explanation: 'Obstruction here would cause dilation of only the lateral ventricle(s) proximal to the blockage, without the third ventricle also being dilated in the way described (if only one foramen is blocked) or would need bilateral blockage to match this pattern.',
+              },
+              {
+                text: 'Foramina of Luschka and Magendie',
+                isCorrect: false,
+                explanation: 'Obstruction of these fourth ventricle outlet foramina would cause the fourth ventricle to also dilate, which is explicitly normal-sized in this patient.',
+              },
+              {
+                text: 'Arachnoid granulations',
+                isCorrect: false,
+                explanation: 'Obstruction or dysfunction here causes communicating hydrocephalus, with dilation of the entire ventricular system including the fourth ventricle, not the isolated pattern described.',
+              },
+              {
+                text: 'Central canal of the spinal cord',
+                isCorrect: false,
+                explanation: 'This structure is unrelated to CSF flow between the cerebral ventricles and is not implicated in this pattern of hydrocephalus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize normal pressure hydrocephalus by its classic triad',
+        summary:
+          'Normal pressure hydrocephalus is a form of communicating hydrocephalus, most common in the elderly, in which impaired CSF reabsorption at the arachnoid granulations causes ventricular enlargement with normal-range CSF pressure on lumbar puncture. It produces a classic triad, often remembered as "wet, wacky, and wobbly": urinary incontinence, cognitive decline, and a magnetic, wide-based gait disturbance.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An elderly patient presents with a progressive triad of urinary incontinence, cognitive decline, and a slow, wide-based, shuffling gait. Imaging shows ventricular enlargement disproportionate to the degree of cortical atrophy, and lumbar puncture reveals a normal opening pressure. Which condition does this represent, and what is the presumed underlying mechanism?',
+            explanation:
+              'This presentation, the classic triad of gait disturbance, urinary incontinence, and cognitive decline ("wet, wacky, and wobbly") with ventriculomegaly out of proportion to atrophy and a normal CSF opening pressure, is characteristic of normal pressure hydrocephalus. It is thought to result from impaired CSF reabsorption at the arachnoid granulations, a form of communicating hydrocephalus in which pressure, though technically within the normal range on single measurement, is effectively elevated in a way that gradually enlarges the ventricles and stretches the periventricular white matter tracts responsible for gait and bladder control.',
+            difficulty: 2,
+            choices: [
+              { text: 'Normal pressure hydrocephalus, from impaired CSF reabsorption at the arachnoid granulations', isCorrect: true },
+              {
+                text: 'Obstructive hydrocephalus, from aqueductal stenosis',
+                isCorrect: false,
+                explanation: 'Aqueductal stenosis is a congenital or structural obstruction typically presenting earlier in life, not this classic elderly triad with communicating hydrocephalus.',
+              },
+              {
+                text: 'Alzheimer disease, from diffuse cortical atrophy',
+                isCorrect: false,
+                explanation: 'Alzheimer disease causes progressive cortical atrophy with ex vacuo ventricular enlargement (a passive consequence of tissue loss), not the disproportionate ventriculomegaly and classic triad described here.',
+              },
+              {
+                text: 'Idiopathic intracranial hypertension, from elevated CSF pressure',
+                isCorrect: false,
+                explanation: 'This condition, more common in young obese women, presents with headache and papilledema from elevated (not normal) CSF pressure, a different presentation entirely.',
+              },
+              {
+                text: 'Subdural hematoma, from bridging vein rupture',
+                isCorrect: false,
+                explanation: 'This would present with a focal collection on imaging, not the ventriculomegaly and classic triad described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a colloid cyst causing intermittent hydrocephalus via foramen of Monro obstruction',
+        summary:
+          'A colloid cyst, typically located at the roof of the third ventricle near the foramen of Monro (the passage connecting each lateral ventricle to the third ventricle), can intermittently obstruct CSF flow, causing sudden, severe headaches that are classically positional (worse with movements that shift the cyst, such as bending forward) and can lead to acute hydrocephalus or even sudden death.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A young adult experiences episodic, severe headaches that occur specifically when bending forward or with certain head positions, sometimes accompanied by transient loss of consciousness. Imaging reveals a mass near the roof of the third ventricle at the point where the lateral ventricles communicate with it. Intermittent obstruction of which structure by this mass best explains the positional nature of the symptoms?',
+            explanation:
+              'This presentation is classic for a colloid cyst obstructing the foramen of Monro, the narrow channel through which each lateral ventricle communicates with the third ventricle. Because the cyst can act like a ball valve, shifting position with head movement, it intermittently obstructs CSF outflow from the lateral ventricles depending on head position, causing the classic positional headaches and, in severe cases, acute obstructive hydrocephalus that can be life-threatening.',
+            difficulty: 3,
+            choices: [
+              { text: 'Foramen of Monro', isCorrect: true },
+              {
+                text: 'Cerebral aqueduct',
+                isCorrect: false,
+                explanation: 'While aqueductal obstruction also causes hydrocephalus, the classic ball-valve, positional headache presentation with a mass at the roof of the third ventricle is specifically associated with a colloid cyst obstructing the foramen of Monro.',
+              },
+              {
+                text: 'Foramen magnum',
+                isCorrect: false,
+                explanation: 'This large opening at the skull base transmits the brainstem and spinal cord, not CSF between the lateral and third ventricles.',
+              },
+              {
+                text: 'Foramina of Luschka',
+                isCorrect: false,
+                explanation: 'These lateral fourth ventricle outlet foramina are not the site associated with a colloid cyst, which characteristically sits at the roof of the third ventricle.',
+              },
+              {
+                text: 'Central canal of the spinal cord',
+                isCorrect: false,
+                explanation: 'This structure is unrelated to third ventricle CSF outflow and is not the site of colloid cyst obstruction.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Chiari I malformation from cerebellar tonsillar herniation through the foramen magnum',
+        summary:
+          'Chiari I malformation is characterized by downward displacement of the cerebellar tonsils through the foramen magnum into the upper cervical spinal canal. It can obstruct normal CSF flow at the foramen magnum, predisposing to syringomyelia, and classically presents with occipital headache and neck pain worsened by Valsalva maneuvers (coughing, straining).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A young adult reports occipital headaches and neck pain that worsen significantly with coughing or straining. MRI reveals the cerebellar tonsils extending below the level of the foramen magnum into the upper cervical canal, along with a fluid-filled cavity within the cervical spinal cord. Which malformation does this represent, and how does it predispose to the spinal cord finding?',
+            explanation:
+              'This is Chiari I malformation, in which the cerebellar tonsils herniate downward through the foramen magnum into the upper cervical spinal canal. This displacement can obstruct the normal flow of CSF at the foramen magnum, and the resulting altered CSF dynamics are thought to predispose to syringomyelia, a fluid-filled cavity within the central spinal cord, which is why the two findings are often seen together. Valsalva maneuvers transiently raise intracranial pressure and further compress the already crowded foramen magnum, worsening the headache and neck pain.',
+            difficulty: 2,
+            choices: [
+              { text: 'Chiari I malformation, obstructing CSF flow at the foramen magnum and predisposing to syringomyelia', isCorrect: true },
+              {
+                text: 'Dandy-Walker malformation, causing agenesis of the cerebellar vermis',
+                isCorrect: false,
+                explanation: 'This is a distinct congenital malformation involving cystic dilation of the fourth ventricle and vermian agenesis, typically presenting in infancy, not tonsillar herniation in a young adult.',
+              },
+              {
+                text: 'Uncal herniation, compressing the oculomotor nerve',
+                isCorrect: false,
+                explanation: 'This is an acute, life-threatening herniation from an expanding supratentorial mass, not the chronic, positional headache presentation of Chiari I malformation.',
+              },
+              {
+                text: 'Central herniation of the diencephalon',
+                isCorrect: false,
+                explanation: 'This is also an acute herniation syndrome from elevated intracranial pressure, not the chronic congenital tonsillar displacement described here.',
+              },
+              {
+                text: 'Normal pressure hydrocephalus, causing ventricular enlargement',
+                isCorrect: false,
+                explanation: 'This condition presents with gait disturbance, incontinence, and cognitive decline in the elderly, not positional headache with tonsillar herniation in a young adult.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Parinaud syndrome from pineal region compression of the superior colliculus',
+        summary:
+          'Parinaud (dorsal midbrain) syndrome results from a mass in the pineal region (such as a pinealoma) compressing the superior colliculus and pretectal area of the midbrain, which coordinate upward gaze. This produces paralysis of upward gaze, often with pupils that accommodate but react poorly to light, and can obstruct the nearby cerebral aqueduct, causing hydrocephalus.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A child with a pineal gland tumor develops an inability to look upward, along with pupils that constrict poorly to light but normally with near accommodation, and signs of increased intracranial pressure. Compression of which midbrain structure by the tumor explains the upward gaze palsy, and why does this tumor location also risk hydrocephalus?',
+            explanation:
+              'This is Parinaud syndrome, caused by compression of the superior colliculus and pretectal area of the dorsal midbrain by a pineal region mass, impairing the pathways responsible for upward gaze and normal pupillary light reflex (while accommodation, mediated by a different pathway, is relatively preserved). Because the pineal gland sits directly adjacent to the cerebral aqueduct, a mass here can also compress and obstruct the aqueduct, causing obstructive hydrocephalus.',
+            difficulty: 3,
+            choices: [
+              { text: 'Superior colliculus and pretectal area of the dorsal midbrain', isCorrect: true },
+              {
+                text: 'Inferior colliculus of the midbrain',
+                isCorrect: false,
+                explanation: 'The inferior colliculus is part of the auditory pathway, not the pathway for vertical gaze, and its compression would not cause an upward gaze palsy.',
+              },
+              {
+                text: 'Lateral geniculate nucleus of the thalamus',
+                isCorrect: false,
+                explanation: 'This structure relays visual information for conscious perception, not eye movement control, and its damage would not cause a gaze palsy.',
+              },
+              {
+                text: 'Red nucleus of the midbrain',
+                isCorrect: false,
+                explanation: 'This structure is involved in motor coordination pathways (rubrospinal tract), not vertical gaze control.',
+              },
+              {
+                text: 'Substantia nigra of the midbrain',
+                isCorrect: false,
+                explanation: 'Damage here is associated with Parkinson disease (tremor, rigidity, bradykinesia), not an upward gaze palsy.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize watershed zone infarcts from severe hypotension',
+        summary:
+          'Watershed zones are border regions between the territories of major cerebral arteries (e.g., between the anterior and middle cerebral arteries) that receive the most marginal blood supply. During severe, prolonged hypotension (e.g., from shock), these watershed areas are especially vulnerable to ischemia, causing a characteristic pattern of proximal arm and leg weakness with relative sparing of the hands, face, and distal legs — sometimes called "man in the barrel" syndrome.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient who survived a prolonged episode of severe hypotension during major surgery develops bilateral weakness of the shoulders and hips, with relatively preserved strength in the hands, feet, and face. Ischemia localized to which vascular territory pattern best explains this distribution of weakness?',
+            explanation:
+              'This is a watershed (border zone) infarct pattern, affecting the border regions between the anterior and middle cerebral artery territories, which are perfused by the most distal, marginal branches of each vessel and are therefore most vulnerable during systemic hypotension (when overall cerebral perfusion pressure drops, these border zones are the last to receive adequate flow). This produces proximal weakness of the shoulders and hips (corresponding to the cortical representation at the ACA-MCA border) with relative sparing of the hands, feet, and face (whose cortical representations lie more centrally within each artery’s core territory) — sometimes called "man in the barrel" syndrome.',
+            difficulty: 3,
+            choices: [
+              { text: 'Watershed (border zone) infarcts between the anterior and middle cerebral artery territories', isCorrect: true },
+              {
+                text: 'A focal infarct within the core middle cerebral artery territory',
+                isCorrect: false,
+                explanation: 'A core MCA infarct would cause face/arm-predominant weakness with possible aphasia, not this bilateral proximal-predominant pattern from systemic hypotension.',
+              },
+              {
+                text: 'A focal infarct within the core anterior cerebral artery territory',
+                isCorrect: false,
+                explanation: 'An isolated ACA infarct would cause unilateral leg-predominant weakness, not the bilateral proximal pattern described here.',
+              },
+              {
+                text: 'A lacunar infarct within the internal capsule',
+                isCorrect: false,
+                explanation: 'A lacunar infarct would cause unilateral, dense, equal face/arm/leg weakness, not this bilateral proximal-predominant pattern related to systemic hypotension.',
+              },
+              {
+                text: 'A hemorrhagic infarct within the basal ganglia',
+                isCorrect: false,
+                explanation: 'Basal ganglia hemorrhage typically presents with unilateral weakness and altered consciousness, not the bilateral hypotension-related watershed pattern described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the cricothyroid membrane as the landmark for emergency cricothyroidotomy',
+        summary:
+          'The cricothyroid membrane, located between the thyroid and cricoid cartilages, is the landmark for emergency cricothyroidotomy when a definitive airway cannot be secured by intubation. It is preferred over tracheostomy in emergencies because it is more superficial, has fewer overlying structures (avoiding the thyroid gland and its vessels), and can be accessed more quickly.',
+        discipline: 'Respiratory',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with severe facial trauma cannot be intubated or ventilated, and an emergency surgical airway is required. The clinician palpates a depression between two laryngeal cartilages to make the incision. Which structure is this, and why is it preferred over a tracheostomy in this emergency setting?',
+            explanation:
+              'This is the cricothyroid membrane, located between the thyroid cartilage above and the cricoid cartilage below. It is preferred for emergency surgical airway access because it lies just beneath the skin with minimal overlying soft tissue, avoiding the thyroid gland and its associated vessels (which lie lower, over the trachea), allowing for a much faster and technically simpler procedure than a formal tracheostomy in a time-critical emergency.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cricothyroid membrane, superficial and avoiding the thyroid gland/vessels', isCorrect: true },
+              {
+                text: 'Thyrohyoid membrane, superficial and avoiding the larynx entirely',
+                isCorrect: false,
+                explanation: 'This membrane lies above the thyroid cartilage, between it and the hyoid bone, and is not the landmark used for emergency airway access.',
+              },
+              {
+                text: 'Second and third tracheal rings, avoiding the cricoid cartilage',
+                isCorrect: false,
+                explanation: 'This is the landmark for an elective tracheostomy, not the faster, more superficial emergency cricothyroidotomy.',
+              },
+              {
+                text: 'Hyoid bone, avoiding the thyroid cartilage',
+                isCorrect: false,
+                explanation: 'The hyoid bone is a bony structure superior to the larynx and is not the site of airway access.',
+              },
+              {
+                text: 'Isthmus of the thyroid gland, directly incised for fastest access',
+                isCorrect: false,
+                explanation: 'The thyroid isthmus is deliberately avoided in favor of the cricothyroid membrane precisely because incising through glandular tissue and its vessels would be slower and riskier.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the tracheal ring landmark and thyroid isthmus relationship for tracheostomy',
+        summary:
+          'An elective (non-emergency) tracheostomy is typically performed at the second through fourth tracheal rings, a location that requires either retracting or dividing the thyroid isthmus, which normally overlies this portion of the trachea, in contrast to the more superficial, gland-avoiding cricothyroidotomy used in emergencies.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient requiring prolonged mechanical ventilation undergoes an elective tracheostomy. During the procedure, the surgeon must retract or divide a glandular structure that overlies the trachea at the level chosen for the incision. Which structure is this, and at approximately which tracheal rings is the incision typically made?',
+            explanation:
+              'An elective tracheostomy is typically performed at the level of the second through fourth tracheal rings, a location directly overlain by the isthmus of the thyroid gland, which connects the two thyroid lobes across the anterior trachea. The surgeon must therefore retract or divide the thyroid isthmus to access the trachea at this level — a key difference from emergency cricothyroidotomy, which is performed higher up, at the cricothyroid membrane, specifically to avoid the thyroid gland altogether.',
+            difficulty: 2,
+            choices: [
+              { text: 'Thyroid isthmus, overlying the second through fourth tracheal rings', isCorrect: true },
+              {
+                text: 'Cricoid cartilage, overlying the first tracheal ring',
+                isCorrect: false,
+                explanation: 'The cricoid cartilage is a laryngeal structure superior to the trachea itself, not a gland overlying the tracheal rings used for tracheostomy.',
+              },
+              {
+                text: 'Thyroid isthmus, overlying the cricothyroid membrane',
+                isCorrect: false,
+                explanation: 'The cricothyroid membrane is located above the thyroid gland, at the site used for cricothyroidotomy, not the lower tracheal level used for tracheostomy.',
+              },
+              {
+                text: 'Parathyroid glands, overlying the second tracheal ring',
+                isCorrect: false,
+                explanation: 'The parathyroid glands lie on the posterior surface of the thyroid lobes, not directly over the anterior trachea, and are not the structure retracted during tracheostomy.',
+              },
+              {
+                text: 'Thymus gland, overlying the fourth tracheal ring',
+                isCorrect: false,
+                explanation: 'The thymus lies in the anterior mediastinum, inferior to the standard tracheostomy site, and is not the structure typically encountered at this level.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Kiesselbach plexus as the most common site of anterior epistaxis',
+        summary:
+          'Kiesselbach plexus (Little area) is a vascular watershed on the anterior nasal septum where branches of the anterior and posterior ethmoidal, sphenopalatine, and superior labial arteries anastomose. This richly vascularized, superficial area is the most common source of epistaxis, especially in children, typically from minor trauma such as nose-picking.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A child presents with recurrent nosebleeds originating from the anterior portion of the nasal septum, often after nose-picking. Multiple arterial branches anastomosing at this specific, superficially located site make it the most common source of this type of bleeding. What is this vascular area called?',
+            explanation:
+              'This is Kiesselbach plexus (Little area), located on the anterior nasal septum, where branches of the anterior and posterior ethmoidal arteries, the sphenopalatine artery, and the superior labial artery converge and anastomose. Because this network is superficial and richly vascularized, it is the most common site of epistaxis, particularly the minor, self-limited anterior nosebleeds seen after trauma such as nose-picking, especially in children.',
+            difficulty: 2,
+            choices: [
+              { text: 'Kiesselbach plexus (Little area)', isCorrect: true },
+              {
+                text: 'Woodruff plexus',
+                isCorrect: false,
+                explanation: 'This venous plexus is located posteriorly in the nasal cavity and is associated with posterior epistaxis, typically in older adults, not this anterior childhood presentation.',
+              },
+              {
+                text: 'Pterygoid venous plexus',
+                isCorrect: false,
+                explanation: 'This venous plexus is located deep in the infratemporal fossa and is not the classic site of epistaxis.',
+              },
+              {
+                text: 'Circle of Willis',
+                isCorrect: false,
+                explanation: 'This is an intracranial arterial anastomosis at the base of the brain, entirely unrelated to nasal bleeding.',
+              },
+              {
+                text: 'Pampiniform plexus',
+                isCorrect: false,
+                explanation: 'This venous plexus surrounds the testicular vessels in the scrotum and is unrelated to the nose.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize sphenopalatine artery hemorrhage as the source of severe posterior epistaxis',
+        summary:
+          'Posterior epistaxis, typically more severe and harder to control than anterior bleeds, usually originates from the sphenopalatine artery, a terminal branch of the maxillary artery, and is more common in older adults with hypertension or atherosclerosis. It may require posterior nasal packing or arterial ligation/embolization rather than simple anterior pressure.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An elderly hypertensive patient presents with a severe nosebleed that continues to drain posteriorly into the throat despite firm anterior nasal pressure. Bleeding from which artery is the most likely source, and why is this type of bleed generally more severe than a typical childhood nosebleed?',
+            explanation:
+              'This is posterior epistaxis, most often arising from the sphenopalatine artery, a terminal branch of the maxillary artery that supplies the posterior nasal cavity. It is generally more severe and difficult to control than the anterior epistaxis typical of children (from Kiesselbach plexus), both because the vessel involved is larger and because the posterior location makes direct pressure ineffective, often requiring posterior packing or, in refractory cases, surgical or endovascular arterial control.',
+            difficulty: 2,
+            choices: [
+              { text: 'Sphenopalatine artery', isCorrect: true },
+              {
+                text: 'Kiesselbach plexus',
+                isCorrect: false,
+                explanation: 'This anterior septal plexus is responsible for anterior, typically milder and pressure-responsive epistaxis, not the severe posterior bleeding described here.',
+              },
+              {
+                text: 'Superior labial artery',
+                isCorrect: false,
+                explanation: 'This artery contributes to the anterior Kiesselbach plexus, not posterior nasal bleeding.',
+              },
+              {
+                text: 'Anterior ethmoidal artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the anterior/superior nasal cavity and contributes to Kiesselbach plexus, not the posterior nasal cavity.',
+              },
+              {
+                text: 'Facial artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the face externally and contributes only indirectly to nasal blood supply, not the classic source of severe posterior epistaxis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize superior vena cava syndrome from mediastinal mass compression',
+        summary:
+          'The superior vena cava, which drains venous blood from the head, neck, and upper limbs into the right atrium, runs through the narrow superior mediastinum surrounded by lymph nodes and, commonly, by lung and mediastinal tumors. Compression or invasion here (classically by lung cancer or lymphoma) obstructs venous return, causing facial and upper extremity swelling, distended neck and chest wall veins, and headache/facial plethora that worsen with bending forward.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a history of heavy smoking presents with facial swelling, distended veins over the upper chest and neck, and a headache that worsens when he bends forward. CT reveals a large mediastinal mass compressing a major vein. Compression of which vessel by this mass best explains the presentation, and why does the swelling affect the face and arms but not the legs?',
+            explanation:
+              'This is superior vena cava (SVC) syndrome, caused here by a mediastinal mass (commonly lung cancer) compressing the SVC as it passes through the narrow superior mediastinum. Because the SVC normally drains venous blood specifically from the head, neck, and upper limbs into the right atrium, its obstruction causes venous congestion limited to those regions (facial/upper extremity swelling, distended neck and chest wall collateral veins), while the lower body, which drains via the separate inferior vena cava, is unaffected.',
+            difficulty: 2,
+            choices: [
+              { text: 'Superior vena cava, draining only the head, neck, and upper limbs', isCorrect: true },
+              {
+                text: 'Inferior vena cava, draining the entire body below the diaphragm',
+                isCorrect: false,
+                explanation: 'IVC obstruction would cause lower extremity and abdominal wall swelling, not the facial and upper extremity pattern described here.',
+              },
+              {
+                text: 'Pulmonary artery, causing right heart failure',
+                isCorrect: false,
+                explanation: 'Pulmonary artery compression would primarily cause respiratory symptoms and right heart strain, not this specific pattern of upper body venous congestion.',
+              },
+              {
+                text: 'Azygos vein, draining the posterior thoracic wall only',
+                isCorrect: false,
+                explanation: 'The azygos vein is a much smaller collateral pathway and its obstruction alone would not produce this dramatic, widespread upper body venous congestion.',
+              },
+              {
+                text: 'Thoracic duct, causing lymphatic obstruction',
+                isCorrect: false,
+                explanation: 'Thoracic duct obstruction causes chylous effusions, not venous congestion with distended veins and facial swelling.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the right crus of the diaphragm surrounding the esophagus as an anti-reflux mechanism',
+        summary:
+          'The right crus of the diaphragm, arising from the L1-L3 vertebral bodies, forms a muscular sling around the esophagus at the esophageal hiatus, contributing (along with the lower esophageal sphincter) to preventing gastroesophageal reflux by pinching the esophagus closed, particularly during inspiration when intra-abdominal pressure rises.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A researcher studying the mechanisms that prevent gastroesophageal reflux notes that, in addition to the lower esophageal sphincter, a muscular sling formed by the diaphragm itself helps pinch the esophagus closed as it passes through the diaphragm, especially during inspiration. Which specific part of the diaphragm forms this sling?',
+            explanation:
+              'The right crus of the diaphragm, which arises from the L1-L3 vertebral bodies, forms a muscular sling that wraps around the esophagus at the esophageal hiatus. This sling contributes an extrinsic compressive mechanism (in addition to the intrinsic lower esophageal sphincter) that helps prevent reflux, and this effect is enhanced during inspiration, when diaphragmatic contraction increases the pinching force on the esophagus at a time when intra-abdominal pressure is also rising.',
+            difficulty: 3,
+            choices: [
+              { text: 'Right crus of the diaphragm', isCorrect: true },
+              {
+                text: 'Left crus of the diaphragm',
+                isCorrect: false,
+                explanation: 'The left crus arises from L1-L2 and contributes less to the muscular sling around the esophagus; the right crus is the one classically described as forming this anti-reflux sling.',
+              },
+              {
+                text: 'Central tendon of the diaphragm',
+                isCorrect: false,
+                explanation: 'The central tendon is the site of the caval opening (T8, for the IVC), not the esophageal hiatus sling.',
+              },
+              {
+                text: 'Costal part of the diaphragm',
+                isCorrect: false,
+                explanation: 'This portion attaches to the lower ribs and does not form the esophageal sling, which is specifically formed by the right crus.',
+              },
+              {
+                text: 'Sternal part of the diaphragm',
+                isCorrect: false,
+                explanation: 'This small portion attaches near the xiphoid process and is unrelated to the esophageal hiatus or reflux prevention.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Explain why aspirated foreign bodies most often lodge in the right mainstem bronchus',
+        summary:
+          'The right mainstem bronchus is wider, shorter, and more vertically oriented (a more direct continuation of the trachea) than the left mainstem bronchus, which branches off at a more acute angle. This anatomy makes aspirated foreign bodies, and aspirated gastric contents in a supine patient, more likely to enter the right lung, particularly the right lower lobe in an upright patient.',
+        discipline: 'Respiratory',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A toddler who aspirated a small toy part is found on chest x-ray to have the object lodged in the right mainstem bronchus rather than the left. Which anatomic features of the right mainstem bronchus explain why aspirated material more commonly ends up there?',
+            explanation:
+              'The right mainstem bronchus is wider, shorter, and takes off from the trachea at a more vertical, less acute angle than the left mainstem bronchus, making it more of a direct continuation of the trachea’s course. These features make it the more likely path for aspirated foreign bodies (and aspirated gastric contents) to follow due to gravity and airflow dynamics, explaining why aspiration pneumonia and foreign body aspiration disproportionately affect the right lung.',
+            difficulty: 2,
+            choices: [
+              { text: 'The right mainstem bronchus is wider, shorter, and more vertical (a more direct continuation of the trachea)', isCorrect: true },
+              {
+                text: 'The left mainstem bronchus is wider, shorter, and more vertical',
+                isCorrect: false,
+                explanation: 'This reverses the actual anatomy; the left mainstem bronchus is narrower, longer, and branches at a more acute angle because it must travel around the heart and aortic arch.',
+              },
+              {
+                text: 'The right lung has fewer lobes, making aspiration more likely',
+                isCorrect: false,
+                explanation: 'The right lung actually has more lobes (three) than the left (two), and lobe number is not the relevant factor in aspiration likelihood; bronchial angle and caliber are.',
+              },
+              {
+                text: 'The right mainstem bronchus is narrower, causing foreign bodies to become trapped more easily',
+                isCorrect: false,
+                explanation: 'The right mainstem bronchus is actually wider, not narrower, than the left, which is part of why material passes into it more easily rather than being trapped more proximally.',
+              },
+              {
+                text: 'Gravity has no significant effect on the distribution of aspirated material',
+                isCorrect: false,
+                explanation: 'Gravity, combined with the right bronchus’s more direct, vertical course, is part of why aspirated material and fluid preferentially enter the right side.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish sliding from paraesophageal hiatal hernia by gastroesophageal junction position',
+        summary:
+          'In a sliding hiatal hernia (the vast majority of cases), the gastroesophageal junction itself slides upward through the esophageal hiatus into the thorax along with part of the stomach. In a paraesophageal hiatal hernia (less common but more prone to complications like strangulation), the gastroesophageal junction remains in its normal position below the diaphragm, while the gastric fundus herniates alongside the esophagus into the thorax.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Imaging in one patient with chronic reflux shows the entire gastroesophageal junction displaced above the diaphragm along with the proximal stomach. In a different patient, imaging shows the gastroesophageal junction remaining in its normal position below the diaphragm, while a portion of the gastric fundus has herniated into the thorax alongside a normally positioned esophagus. Which type of hiatal hernia does each patient have?',
+            explanation:
+              'The first patient has a sliding hiatal hernia, the far more common type, in which the gastroesophageal junction itself migrates upward through the esophageal hiatus along with part of the stomach. The second patient has a paraesophageal hiatal hernia, in which the gastroesophageal junction stays anchored in its normal position below the diaphragm, but the gastric fundus rolls up alongside the esophagus into the thorax; although less common, this type carries a higher risk of gastric volvulus and strangulation, since the herniated portion can become trapped.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: sliding hiatal hernia; Second patient: paraesophageal hiatal hernia', isCorrect: true },
+              {
+                text: 'First patient: paraesophageal hiatal hernia; Second patient: sliding hiatal hernia',
+                isCorrect: false,
+                explanation: 'This reverses the definitions; a sliding hernia is defined by upward displacement of the gastroesophageal junction itself, which is the first patient’s finding.',
+              },
+              {
+                text: 'Both patients have sliding hiatal hernias, since the gastroesophageal junction position does not matter',
+                isCorrect: false,
+                explanation: 'The position of the gastroesophageal junction is precisely the feature that distinguishes these two hernia types.',
+              },
+              {
+                text: 'Both patients have paraesophageal hiatal hernias, since both involve herniation through the esophageal hiatus',
+                isCorrect: false,
+                explanation: 'While both involve the esophageal hiatus, only the second patient’s gastroesophageal junction remains normally positioned, which is the defining feature of a paraesophageal hernia.',
+              },
+              {
+                text: 'Neither patient has a hiatal hernia, since some portion of the stomach remains below the diaphragm in both cases',
+                isCorrect: false,
+                explanation: 'Both presentations describe true hiatal hernias; a hiatal hernia does not require the entire stomach to herniate, only a portion of it (or the GE junction) through the hiatus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize sigmoid volvulus from a redundant sigmoid mesocolon',
+        summary:
+          'Sigmoid volvulus, most common in elderly or chronically constipated patients, occurs when a redundant, elongated sigmoid colon with a narrow mesenteric attachment twists on its own mesentery, obstructing the bowel and its blood supply. It produces massive colonic dilation classically described as a "coffee bean sign" on abdominal x-ray.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An elderly nursing home resident with chronic constipation presents with progressive abdominal distension and obstipation. Abdominal x-ray shows a massively dilated loop of colon with a "coffee bean" appearance. Twisting of which segment of colon, predisposed by which anatomic feature, best explains this presentation?',
+            explanation:
+              'This is sigmoid volvulus, in which the sigmoid colon twists on its own mesentery. It occurs most often in elderly, chronically constipated patients whose sigmoid colon has become redundant (elongated and floppy) while its mesenteric attachment to the posterior abdominal wall remains relatively narrow, creating a mobile loop prone to twisting and producing the characteristic massively dilated "coffee bean" appearance on x-ray, along with risk of bowel ischemia if the twist compromises the mesenteric blood supply.',
+            difficulty: 2,
+            choices: [
+              { text: 'Sigmoid colon, twisting on a redundant mesocolon with a narrow mesenteric base', isCorrect: true },
+              {
+                text: 'Cecum, twisting on an abnormally fixed mesentery',
+                isCorrect: false,
+                explanation: 'Cecal volvulus occurs due to an abnormally mobile (not fixed) cecum, typically in younger patients, and is a distinct, less common entity from sigmoid volvulus.',
+              },
+              {
+                text: 'Transverse colon, twisting on the gastrocolic ligament',
+                isCorrect: false,
+                explanation: 'Transverse colon volvulus is rare and not the classic cause of this presentation or the "coffee bean" sign, which is specific to sigmoid volvulus.',
+              },
+              {
+                text: 'Ascending colon, which is retroperitoneal and cannot twist',
+                isCorrect: false,
+                explanation: 'The ascending colon is indeed retroperitoneally fixed and essentially immobile, correctly making it an unlikely site of volvulus, but this is not the segment involved in this presentation.',
+              },
+              {
+                text: 'Rectum, twisting within the pelvic cavity',
+                isCorrect: false,
+                explanation: 'The rectum is fixed within the pelvis and does not twist; it is not the segment involved in this classic volvulus presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish the trigone from the rest of the bladder by embryologic origin',
+        summary:
+          'The trigone of the bladder, the smooth triangular area between the two ureteral openings and the internal urethral orifice, develops from absorbed mesonephric (Wolffian) duct tissue, distinct from the rest of the bladder, which arises from the endodermal urogenital sinus. This distinct origin explains why the trigone is smooth (lacking rugae) while the rest of the bladder is folded, and why it can be a site of trigonitis related to reflux from the ureters.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Unlike the rest of the urinary bladder, which is lined by folded, rugated mucosa capable of significant distension, the triangular region between the two ureteral orifices and the internal urethral orifice remains smooth and relatively fixed regardless of bladder filling. Which distinct embryologic origin explains this structural difference?',
+            explanation:
+              'The trigone of the bladder develops from absorbed tissue of the mesonephric (Wolffian) ducts, which become incorporated into the developing bladder wall, whereas the remainder of the bladder arises from the endodermal urogenital sinus. This distinct mesodermal origin gives the trigone its smooth, non-distensible mucosal surface, in contrast to the rugated, highly distensible urothelium covering the rest of the bladder, which derives from the urogenital sinus.',
+            difficulty: 3,
+            choices: [
+              { text: 'The trigone derives from absorbed mesonephric (Wolffian) duct tissue, unlike the rest of the endodermal urogenital sinus-derived bladder', isCorrect: true },
+              {
+                text: 'The trigone derives from the paramesonephric (Müllerian) ducts, unlike the rest of the bladder',
+                isCorrect: false,
+                explanation: 'The paramesonephric ducts give rise to female reproductive structures (fallopian tubes, uterus, upper vagina), not the bladder trigone.',
+              },
+              {
+                text: 'The trigone derives from the allantois, unlike the rest of the bladder',
+                isCorrect: false,
+                explanation: 'The allantois contributes to the urachus (median umbilical ligament in adults), not specifically the trigone.',
+              },
+              {
+                text: 'The trigone and the rest of the bladder share an identical embryologic origin from the urogenital sinus',
+                isCorrect: false,
+                explanation: 'This is incorrect; the trigone’s distinct mesonephric duct origin, separate from the rest of the urogenital sinus-derived bladder, is precisely what explains its different mucosal appearance.',
+              },
+              {
+                text: 'The trigone derives from the cloaca directly, unlike the rest of the bladder',
+                isCorrect: false,
+                explanation: 'The cloaca gives rise to the urogenital sinus (which forms most of the bladder) after being divided by the urorectal septum; the trigone specifically comes from incorporated mesonephric duct tissue, not the cloaca directly.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish the transition zone from the peripheral zone of the prostate',
+        summary:
+          'The prostate’s transition zone surrounds the urethra and is the site where benign prostatic hyperplasia (BPH) develops, causing urethral compression and obstructive urinary symptoms. The peripheral zone, located posteriorly and palpable on digital rectal exam, is where the large majority of prostate cancers arise, often without causing urinary symptoms until advanced.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'One elderly man presents with urinary hesitancy and a weak stream from prostatic enlargement compressing the urethra, while another man is found to have a firm, irregular nodule on digital rectal exam without any urinary symptoms, later confirmed to be prostate cancer. Which prostatic zones are most likely involved in each patient, respectively?',
+            explanation:
+              'The first patient’s urethral compression and obstructive symptoms are characteristic of benign prostatic hyperplasia, which arises in the transition zone, the portion of the prostate immediately surrounding the urethra. The second patient’s palpable nodule on digital rectal exam without urinary symptoms is characteristic of prostate cancer, which arises predominantly in the peripheral zone, located posteriorly (accessible to rectal exam) and often not causing urethral compression until the disease is advanced.',
+            difficulty: 2,
+            choices: [
+              { text: 'First patient: transition zone (BPH); Second patient: peripheral zone (prostate cancer)', isCorrect: true },
+              {
+                text: 'First patient: peripheral zone; Second patient: transition zone',
+                isCorrect: false,
+                explanation: 'This reverses the classic zonal associations; BPH arises in the transition zone (causing urethral symptoms), while most cancers arise in the peripheral zone (palpable on exam).',
+              },
+              {
+                text: 'Both conditions arise in the central zone of the prostate',
+                isCorrect: false,
+                explanation: 'The central zone is a separate anatomic region and is not the classic site associated with either BPH or the majority of prostate cancers.',
+              },
+              {
+                text: 'Both conditions arise in the transition zone',
+                isCorrect: false,
+                explanation: 'While BPH does arise in the transition zone, the large majority of prostate cancers arise in the peripheral zone, not the transition zone.',
+              },
+              {
+                text: 'Both conditions arise in the peripheral zone',
+                isCorrect: false,
+                explanation: 'While prostate cancer does arise in the peripheral zone, BPH classically arises in the transition zone, not the peripheral zone.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall that the vas deferens crosses anterior to the ureter en route to the seminal vesicle',
+        summary:
+          'As the vas deferens travels from the deep inguinal ring toward the seminal vesicle and prostate, it crosses anterior to the ureter near the posterolateral bladder wall, placing the ureter at risk during vasectomy-related procedures or pelvic surgery in men — an anatomic relationship analogous to (but the reverse of) the uterine artery passing anterior to the ureter in women.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'During a pelvic surgery in a male patient, the surgeon must take care while mobilizing the vas deferens near the base of the bladder, because a retroperitoneal structure crosses just deep to it at this point. Which structure is this, and how does the vas deferens cross relative to it?',
+            explanation:
+              'The vas deferens crosses anterior to the ureter as it travels from the deep inguinal ring toward the seminal vesicle near the posterolateral aspect of the bladder. This close anatomic relationship places the ureter at risk of injury during surgery involving the vas deferens or nearby pelvic structures in men, paralleling (though structurally the reverse of) the relationship between the uterine artery and ureter in women.',
+            difficulty: 3,
+            choices: [
+              { text: 'The ureter, which passes posterior to (deep to) the crossing vas deferens', isCorrect: true },
+              {
+                text: 'The internal iliac artery, which passes anterior to the vas deferens',
+                isCorrect: false,
+                explanation: 'While the internal iliac artery and its branches are nearby, the specific structure classically described as crossing in this relationship with the vas deferens is the ureter.',
+              },
+              {
+                text: 'The obturator nerve, which passes anterior to the vas deferens',
+                isCorrect: false,
+                explanation: 'The obturator nerve travels along the pelvic sidewall, not in this specific crossing relationship with the vas deferens near the bladder base.',
+              },
+              {
+                text: 'The rectum, which passes anterior to the vas deferens',
+                isCorrect: false,
+                explanation: 'The rectum lies posterior to the bladder and seminal vesicles but does not have this specific crossing relationship with the vas deferens.',
+              },
+              {
+                text: 'The femoral vessels, which pass posterior to the vas deferens',
+                isCorrect: false,
+                explanation: 'The femoral vessels are located in the thigh, well below and lateral to the pelvic course of the vas deferens near the bladder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize nursemaid’s elbow from radial head subluxation under the annular ligament',
+        summary:
+          'Nursemaid’s elbow (radial head subluxation) occurs in young children when a sudden longitudinal pull on the extended, pronated arm (e.g., swinging a child by the hands) causes the annular ligament, which normally encircles and stabilizes the radial head, to slip partially over it. The child holds the arm slightly flexed and pronated and refuses to use it, without swelling or deformity.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A toddler is lifted abruptly by one hand to prevent a fall and immediately afterward refuses to move that arm, holding it slightly flexed and pronated at his side, with no swelling or visible deformity. Which structure has most likely slipped out of its normal position relative to the radial head?',
+            explanation:
+              'This is nursemaid’s elbow (radial head subluxation), in which a sudden longitudinal traction force on the extended, pronated arm causes the annular ligament, which normally wraps around and stabilizes the radial head against the ulna, to partially slip over the head of the radius. Because there is no fracture or ligament tear, there is no swelling or deformity, but the child holds the arm in a characteristic guarded position and refuses to use it due to pain.',
+            difficulty: 2,
+            choices: [
+              { text: 'Annular ligament, slipping over the radial head', isCorrect: true },
+              {
+                text: 'Medial collateral (ulnar) ligament, tearing at the elbow',
+                isCorrect: false,
+                explanation: 'This ligament injury would be expected to cause swelling and instability, not the painless, deformity-free presentation of nursemaid’s elbow.',
+              },
+              {
+                text: 'Ulnar nerve, subluxating out of the cubital tunnel',
+                isCorrect: false,
+                explanation: 'Ulnar nerve subluxation would cause sensory symptoms in the hand, not this specific pattern of arm positioning and refusal to move the elbow.',
+              },
+              {
+                text: 'Biceps tendon, rupturing at its radial insertion',
+                isCorrect: false,
+                explanation: 'This would occur in adults with forceful loading, not from a gentle traction injury in a toddler, and would show a "reverse Popeye" muscle bulge, not this presentation.',
+              },
+              {
+                text: 'Distal humeral growth plate, fracturing',
+                isCorrect: false,
+                explanation: 'A growth plate fracture would typically cause visible swelling and would require a more significant traumatic force than the traction mechanism described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize olecranon bursitis as superficial swelling over the elbow',
+        summary:
+          'The olecranon bursa lies in the subcutaneous tissue directly over the olecranon process of the ulna, superficial to the joint capsule itself. Repetitive pressure or trauma (leaning on elbows, "student’s elbow") or infection can inflame this bursa, causing a soft, fluctuant, well-circumscribed swelling over the point of the elbow, typically with preserved range of motion since the joint itself is not primarily involved.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A student who habitually leans on his elbows while studying develops a soft, fluctuant swelling directly over the point of his elbow, with full, painless range of motion of the joint itself. Inflammation of which structure, located superficial to the joint capsule, best explains this localized swelling?',
+            explanation:
+              'This is olecranon bursitis, inflammation of the olecranon bursa, a fluid-filled sac lying in the subcutaneous tissue directly over the olecranon process, superficial to the elbow joint capsule itself. Because the bursa is a separate, superficial structure from the joint, repetitive pressure (as from leaning on the elbows) can inflame and distend it while leaving the joint’s own range of motion unaffected.',
+            difficulty: 2,
+            choices: [
+              { text: 'Olecranon bursa', isCorrect: true },
+              {
+                text: 'Elbow joint capsule itself',
+                isCorrect: false,
+                explanation: 'True joint (synovial) involvement would typically limit range of motion and cause more diffuse swelling around the joint, not the well-circumscribed superficial swelling described.',
+              },
+              {
+                text: 'Triceps tendon',
+                isCorrect: false,
+                explanation: 'Triceps tendinopathy or rupture would cause pain with elbow extension and possibly a palpable defect, not a soft fluctuant bursal swelling.',
+              },
+              {
+                text: 'Radial collateral ligament',
+                isCorrect: false,
+                explanation: 'Ligament injury would cause joint instability and pain with stress testing, not an isolated superficial fluctuant swelling.',
+              },
+              {
+                text: 'Common extensor tendon origin',
+                isCorrect: false,
+                explanation: 'This structure, when inflamed, causes lateral epicondylitis ("tennis elbow") with pain over the lateral epicondyle, not a fluctuant swelling over the olecranon.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize "tardy" ulnar nerve palsy from chronic cubitus valgus after a malunited fracture',
+        summary:
+          'A malunited lateral condyle fracture of the humerus in childhood can result in cubitus valgus (an increased carrying angle), which chronically stretches the ulnar nerve as it passes behind the medial epicondyle. Over years, this repetitive traction produces a delayed ("tardy") ulnar neuropathy, presenting with slowly progressive numbness and intrinsic hand weakness long after the original fracture has healed.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'An adult who sustained a lateral condyle fracture of the humerus in childhood, which healed with an increased elbow carrying angle, now presents decades later with slowly progressive numbness of the little finger and weakness of the intrinsic hand muscles. Chronic stretching of which nerve, due to this altered elbow alignment, best explains this delayed presentation?',
+            explanation:
+              'This is "tardy" ulnar nerve palsy, a delayed ulnar neuropathy resulting from chronic cubitus valgus (an increased carrying angle) following a malunited lateral condyle fracture in childhood. The altered alignment increases traction on the ulnar nerve as it passes behind the medial epicondyle with each elbow motion over many years, eventually producing progressive nerve dysfunction long after the original fracture has healed — distinguishing this from an acute ulnar nerve injury occurring at the time of trauma.',
+            difficulty: 3,
+            choices: [
+              { text: 'Ulnar nerve, chronically stretched behind the medial epicondyle by cubitus valgus', isCorrect: true },
+              {
+                text: 'Median nerve, chronically compressed at the carpal tunnel',
+                isCorrect: false,
+                explanation: 'Carpal tunnel syndrome is unrelated to elbow alignment or a childhood lateral condyle fracture; the delayed neuropathy specifically linked to cubitus valgus is ulnar, not median, nerve dysfunction.',
+              },
+              {
+                text: 'Radial nerve, chronically compressed at the spiral groove',
+                isCorrect: false,
+                explanation: 'Radial nerve dysfunction would cause wrist drop, not the intrinsic hand weakness and little finger numbness described, and is not linked to cubitus valgus.',
+              },
+              {
+                text: 'Musculocutaneous nerve, chronically stretched at the coracobrachialis',
+                isCorrect: false,
+                explanation: 'This nerve affects elbow flexion and lateral forearm sensation, not the ulnar hand distribution described.',
+              },
+              {
+                text: 'Anterior interosseous nerve, chronically compressed in the forearm',
+                isCorrect: false,
+                explanation: 'This nerve causes an isolated pinch weakness without sensory loss, not the sensory and intrinsic motor findings described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a boxer’s fracture at the fifth metacarpal neck',
+        summary:
+          'A boxer’s fracture is a fracture of the neck of the fifth metacarpal, classically from striking an object with a closed fist, producing volar (palmar) angulation and depression of the knuckle. It is distinguished from a Bennett fracture, which instead involves the base of the first metacarpal.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient who punched a wall in anger presents with pain and a depressed knuckle over the little finger side of the hand. X-ray confirms a fracture with volar angulation at the neck of a specific metacarpal. Which metacarpal is classically fractured by this mechanism?',
+            explanation:
+              'This is a boxer’s fracture, a fracture of the neck of the fifth metacarpal, classically caused by striking an object with a closed fist. The fracture typically angulates volarly (toward the palm), producing the characteristic depressed knuckle appearance on the ulnar side of the hand.',
+            difficulty: 2,
+            choices: [
+              { text: 'Fifth metacarpal, at its neck', isCorrect: true },
+              {
+                text: 'First metacarpal, at its base (Bennett fracture)',
+                isCorrect: false,
+                explanation: 'A Bennett fracture involves the base of the thumb metacarpal with intra-articular extension into the carpometacarpal joint, a distinct injury with a different mechanism and location from a boxer’s fracture.',
+              },
+              {
+                text: 'Second metacarpal, at its base',
+                isCorrect: false,
+                explanation: 'This is not the classic bone or location fractured by a closed-fist punching mechanism.',
+              },
+              {
+                text: 'Scaphoid, at its waist',
+                isCorrect: false,
+                explanation: 'A scaphoid fracture results from a fall onto an outstretched hand, not a closed-fist punch, and presents with snuffbox tenderness rather than a depressed knuckle.',
+              },
+              {
+                text: 'Fifth metacarpal, at its base',
+                isCorrect: false,
+                explanation: 'The classic "boxer’s fracture" location is the neck (distal shaft), not the base, of the fifth metacarpal.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Bennett fracture as an intra-articular fracture of the first metacarpal base',
+        summary:
+          'A Bennett fracture is an intra-articular fracture-dislocation at the base of the first metacarpal, where the pull of the abductor pollicis longus displaces the metacarpal shaft proximally and radially while a small fragment remains attached to the trapezium by the volar ligament, making it inherently unstable and often requiring surgical fixation.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient who fell onto a partially flexed thumb has pain and instability at the base of the thumb. X-ray shows an intra-articular fracture at the base of the first metacarpal, with the main shaft fragment displaced proximally and radially due to unopposed muscle pull. Which fracture is this, and which muscle’s pull causes the characteristic displacement?',
+            explanation:
+              'This is a Bennett fracture, an intra-articular fracture-dislocation at the base of the first metacarpal. A small volar fragment remains attached to the trapezium by the strong volar (anterior oblique) ligament, while the unopposed pull of the abductor pollicis longus, which inserts on the metacarpal shaft, displaces the larger fragment proximally and radially, creating an inherently unstable injury.',
+            difficulty: 3,
+            choices: [
+              { text: 'Bennett fracture; the abductor pollicis longus displaces the metacarpal shaft', isCorrect: true },
+              {
+                text: 'Boxer’s fracture; the extensor digiti minimi displaces the metacarpal shaft',
+                isCorrect: false,
+                explanation: 'A boxer’s fracture involves the fifth metacarpal neck from a punching mechanism, a completely different fracture, location, and mechanism from this thumb base injury.',
+              },
+              {
+                text: 'Rolando fracture; the flexor pollicis longus displaces the metacarpal shaft',
+                isCorrect: false,
+                explanation: 'A Rolando fracture is a comminuted (three-part or more), not simple two-part, version of this same base-of-thumb injury; the deforming force in both is primarily the abductor pollicis longus, not the flexor pollicis longus.',
+              },
+              {
+                text: 'Scaphoid fracture; the brachioradialis displaces the fragment',
+                isCorrect: false,
+                explanation: 'A scaphoid fracture occurs at the wrist, not the base of the thumb metacarpal, and does not involve this deforming mechanism.',
+              },
+              {
+                text: 'Gamekeeper’s thumb; the adductor pollicis displaces the fragment',
+                isCorrect: false,
+                explanation: 'Gamekeeper’s (skier’s) thumb is a ligamentous injury (ulnar collateral ligament tear) at the thumb metacarpophalangeal joint, not a fracture of the metacarpal base.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize iliotibial band syndrome from friction over the lateral femoral epicondyle',
+        summary:
+          'The iliotibial band, a thick band of fascia running from the iliac crest to the lateral tibia (Gerdy tubercle), can repeatedly rub over the lateral femoral epicondyle during repetitive knee flexion and extension (as in running or cycling), causing friction-related inflammation and lateral knee pain just proximal to the joint line.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A long-distance runner develops sharp lateral knee pain that worsens with continued running and is reproduced by repeated knee flexion and extension, localized just above the lateral joint line. Friction of which structure against a bony prominence best explains this pain?',
+            explanation:
+              'This is iliotibial band syndrome, caused by repetitive friction of the iliotibial band, a thick fascial band running from the iliac crest to the lateral tibia (Gerdy tubercle), against the lateral femoral epicondyle as the knee repeatedly flexes and extends during running. This overuse friction produces localized inflammation and pain just proximal to the lateral joint line.',
+            difficulty: 2,
+            choices: [
+              { text: 'Iliotibial band, against the lateral femoral epicondyle', isCorrect: true },
+              {
+                text: 'Medial collateral ligament, against the medial femoral epicondyle',
+                isCorrect: false,
+                explanation: 'This would cause medial, not lateral, knee pain, and is not the classic friction-based overuse injury described.',
+              },
+              {
+                text: 'Patellar tendon, against the tibial tuberosity',
+                isCorrect: false,
+                explanation: 'This describes patellar tendinopathy or Osgood-Schlatter disease, causing anterior, not lateral, knee pain.',
+              },
+              {
+                text: 'Biceps femoris tendon, against the fibular head',
+                isCorrect: false,
+                explanation: 'This is not the classic structure or mechanism responsible for the lateral knee pain of a running-related overuse injury described here.',
+              },
+              {
+                text: 'Popliteus tendon, against the lateral meniscus',
+                isCorrect: false,
+                explanation: 'This is not the classic cause of lateral knee pain from repetitive running; iliotibial band friction against the lateral epicondyle is the well-established mechanism.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Osgood-Schlatter disease as traction apophysitis of the tibial tuberosity',
+        summary:
+          'Osgood-Schlatter disease is a traction injury (apophysitis) of the tibial tuberosity, the growth plate where the patellar tendon inserts, caused by repetitive quadriceps traction during growth spurts in active adolescents. It presents with a tender, sometimes visibly prominent bump over the tibial tuberosity that worsens with activity (running, jumping) and resolves once the growth plate fuses.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 13-year-old competitive basketball player reports pain and a tender, enlarging bump just below the kneecap, worsened by jumping and running, in the setting of a recent growth spurt. Repetitive traction on which structure, at which growth plate, best explains this presentation?',
+            explanation:
+              'This is Osgood-Schlatter disease, a traction apophysitis of the tibial tuberosity, the growth plate onto which the patellar tendon inserts. Repetitive quadriceps contraction transmits traction force through the patellar tendon onto this still-developing growth plate during a growth spurt in an active adolescent, causing pain, tenderness, and sometimes a visibly prominent bony bump that typically resolves once the growth plate fuses with skeletal maturity.',
+            difficulty: 2,
+            choices: [
+              { text: 'Patellar tendon traction on the tibial tuberosity apophysis', isCorrect: true },
+              {
+                text: 'Quadriceps tendon traction on the inferior patella',
+                isCorrect: false,
+                explanation: 'Traction injury here (Sinding-Larsen-Johansson syndrome) affects the inferior pole of the patella itself, a distinct but related condition, not the tibial tuberosity described in this classic presentation.',
+              },
+              {
+                text: 'Iliotibial band traction on the lateral femoral epicondyle',
+                isCorrect: false,
+                explanation: 'This causes lateral knee pain (iliotibial band syndrome), not the anterior tibial tuberosity bump described here.',
+              },
+              {
+                text: 'Medial collateral ligament traction on the medial femoral condyle',
+                isCorrect: false,
+                explanation: 'This is not the mechanism or location involved in Osgood-Schlatter disease.',
+              },
+              {
+                text: 'Achilles tendon traction on the calcaneal apophysis',
+                isCorrect: false,
+                explanation: 'Traction injury here (Sever disease) causes heel pain in active children, a related but anatomically distinct condition from the anterior knee findings described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Jones fracture at the fifth metatarsal metaphyseal-diaphyseal junction',
+        summary:
+          'A Jones fracture occurs at the junction of the metaphysis and diaphysis of the fifth metatarsal, a watershed zone with relatively poor blood supply. This makes it prone to delayed union or nonunion compared to the more common, better-vascularized avulsion fracture of the fifth metatarsal base (from the peroneus brevis tendon pull), which typically heals well with conservative treatment.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Two patients sustain fractures of the fifth metatarsal after twisting their ankle. One fracture is at the very base (a small avulsion fragment) and heals uneventfully with a walking boot. The other fracture is slightly more distal, at the junction of the metaphysis and diaphysis, and fails to heal after months of conservative treatment. Which fracture is the second one, and why is it prone to poor healing?',
+            explanation:
+              'The second fracture is a Jones fracture, occurring at the metaphyseal-diaphyseal junction of the fifth metatarsal, a region with a watershed blood supply (relatively poor vascularity where the nutrient artery’s supply meets that of the metaphyseal vessels). This poor blood supply predisposes Jones fractures to delayed union or nonunion, in contrast to the more proximal base avulsion fracture (from traction by the peroneus brevis tendon), which lies in a better-vascularized region and typically heals well with conservative management.',
+            difficulty: 3,
+            choices: [
+              { text: 'Jones fracture, at the metaphyseal-diaphyseal junction, in a region of poor (watershed) blood supply', isCorrect: true },
+              {
+                text: 'Avulsion fracture of the fifth metatarsal base, in a region of excellent blood supply',
+                isCorrect: false,
+                explanation: 'This describes the first (well-healing) fracture in the scenario, not the second, poorly-healing one.',
+              },
+              {
+                text: 'Lisfranc fracture-dislocation, at the tarsometatarsal joint',
+                isCorrect: false,
+                explanation: 'A Lisfranc injury involves the tarsometatarsal joint complex, a different and more proximal location than the fifth metatarsal shaft.',
+              },
+              {
+                text: 'Stress fracture of the second metatarsal, in a well-vascularized region',
+                isCorrect: false,
+                explanation: 'This describes a different bone (second, not fifth, metatarsal) and does not match the described fracture location or poor healing tendency.',
+              },
+              {
+                text: 'March fracture of the calcaneus, in a poorly vascularized region',
+                isCorrect: false,
+                explanation: 'This describes a different bone (calcaneus) and fracture type, not the fifth metatarsal fracture described in this scenario.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a Lisfranc injury as fracture-dislocation of the tarsometatarsal joint complex',
+        summary:
+          'A Lisfranc injury involves disruption of the tarsometatarsal joint complex, most critically the Lisfranc ligament connecting the medial cuneiform to the base of the second metatarsal (the "keystone" of the midfoot arch). It typically results from an axial load on a plantarflexed foot and can be subtle on x-ray, making it a commonly missed but potentially disabling injury if untreated.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A football player is injured when another player falls onto the back of his planted, plantarflexed foot, causing severe midfoot pain and swelling. X-rays show subtle widening between the base of the first and second metatarsals. Disruption of which ligament, connecting which bones, is responsible for this injury pattern?',
+            explanation:
+              'This is a Lisfranc injury, disruption of the tarsometatarsal joint complex centered on the Lisfranc ligament, which connects the medial cuneiform to the base of the second metatarsal and serves as the key stabilizing structure ("keystone") of the midfoot arch. An axial load on a plantarflexed foot, as from another player falling onto the heel of a planted foot, can disrupt this ligament, and the resulting joint widening on x-ray, though sometimes subtle, is diagnostic of this potentially disabling injury.',
+            difficulty: 3,
+            choices: [
+              { text: 'Lisfranc ligament, connecting the medial cuneiform to the base of the second metatarsal', isCorrect: true },
+              {
+                text: 'Anterior talofibular ligament, connecting the talus to the fibula',
+                isCorrect: false,
+                explanation: 'This ligament is injured in a typical ankle inversion sprain, a different joint and mechanism from the midfoot injury described here.',
+              },
+              {
+                text: 'Deltoid ligament, connecting the tibia to multiple tarsal bones',
+                isCorrect: false,
+                explanation: 'This medial ankle ligament is injured by eversion forces at the ankle, not the midfoot tarsometatarsal complex described.',
+              },
+              {
+                text: 'Plantar fascia, connecting the calcaneus to the metatarsal heads',
+                isCorrect: false,
+                explanation: 'Plantar fascia injury causes heel/arch pain (plantar fasciitis), not the acute traumatic midfoot fracture-dislocation described here.',
+              },
+              {
+                text: 'Spring ligament, connecting the calcaneus to the navicular',
+                isCorrect: false,
+                explanation: 'This ligament supports the medial longitudinal arch and, while related to midfoot stability, is not the specific ligament defining a Lisfranc injury.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize plantar fasciitis by tenderness at the medial calcaneal tubercle',
+        summary:
+          'Plantar fasciitis is inflammation of the plantar fascia at its origin on the medial calcaneal tubercle, causing classic heel pain that is worst with the first steps in the morning or after rest, then partially improves with continued walking as the fascia stretches out.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient reports sharp heel pain that is worst with the very first steps out of bed each morning and improves somewhat after walking for a few minutes, only to worsen again after prolonged standing later in the day. Point tenderness is noted at the origin of a structure on the medial calcaneus. Inflammation of which structure, at which specific site, best explains this pattern?',
+            explanation:
+              'This is plantar fasciitis, inflammation of the plantar fascia at its origin on the medial tubercle of the calcaneus. The classic pattern of pain that is worst with the first steps after rest (when the fascia has tightened overnight) and then partially improves with continued walking (as the fascia stretches), only to worsen again with prolonged weight-bearing, is highly characteristic of this condition.',
+            difficulty: 2,
+            choices: [
+              { text: 'Plantar fascia, at its origin on the medial calcaneal tubercle', isCorrect: true },
+              {
+                text: 'Achilles tendon, at its insertion on the posterior calcaneus',
+                isCorrect: false,
+                explanation: 'Achilles tendinopathy causes posterior heel pain, worsened by activity rather than classically improving after a few minutes of walking, and is not associated with medial tubercle tenderness.',
+              },
+              {
+                text: 'Tibialis posterior tendon, at its insertion on the navicular',
+                isCorrect: false,
+                explanation: 'This tendon’s dysfunction causes medial midfoot/arch pain and can lead to acquired flatfoot, a different presentation from classic first-step heel pain.',
+              },
+              {
+                text: 'Flexor digitorum longus tendon, at the medial malleolus',
+                isCorrect: false,
+                explanation: 'This tendon runs behind the medial malleolus and is not the structure responsible for medial calcaneal tubercle tenderness and classic first-step heel pain.',
+              },
+              {
+                text: 'Spring ligament, at the sustentaculum tali',
+                isCorrect: false,
+                explanation: 'This ligament supports the arch and its dysfunction contributes to flatfoot, not the classic first-step heel pain of plantar fasciitis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize spondylolisthesis from a pars interarticularis defect',
+        summary:
+          'Spondylolisthesis is anterior slippage of one vertebral body relative to the one below it, most often at L5-S1, typically resulting from a bilateral defect or fracture of the pars interarticularis (spondylolysis) — the bony segment connecting the superior and inferior articular processes of the vertebra — which normally helps lock the vertebrae together and resist forward slippage.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A young gymnast with a history of repetitive lumbar hyperextension develops low back pain, and imaging reveals that the fifth lumbar vertebra has slipped anteriorly relative to the sacrum. A bilateral defect in which specific bony structure, which normally helps stabilize the vertebrae against each other, best explains this slippage?',
+            explanation:
+              'This is spondylolisthesis, anterior slippage of a vertebral body (most commonly L5 relative to S1), resulting from spondylolysis — a bilateral stress fracture or defect of the pars interarticularis, the bony bridge connecting the superior and inferior articular processes of the vertebra. This structure normally helps lock adjacent vertebrae together via the facet joints; when it is bilaterally defective, the vertebral body above is no longer restrained and can slip forward, a stress injury commonly seen in athletes who perform repetitive lumbar hyperextension, such as gymnasts.',
+            difficulty: 2,
+            choices: [
+              { text: 'Pars interarticularis (bilateral defect/fracture)', isCorrect: true },
+              {
+                text: 'Intervertebral disc (bilateral herniation)',
+                isCorrect: false,
+                explanation: 'Disc herniation causes nerve root compression symptoms, not the bony vertebral slippage that defines spondylolisthesis.',
+              },
+              {
+                text: 'Spinous process (bilateral fracture)',
+                isCorrect: false,
+                explanation: 'This posterior bony prominence is not the structure whose defect causes vertebral slippage.',
+              },
+              {
+                text: 'Anterior longitudinal ligament (bilateral rupture)',
+                isCorrect: false,
+                explanation: 'While this ligament helps stabilize the spine, the classic structural defect responsible for spondylolisthesis is a pars interarticularis defect, not ligament rupture.',
+              },
+              {
+                text: 'Transverse process (bilateral fracture)',
+                isCorrect: false,
+                explanation: 'This lateral bony projection is not the structure implicated in the mechanism of spondylolisthesis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish cauda equina syndrome from conus medullaris syndrome',
+        summary:
+          'The spinal cord itself (conus medullaris) typically ends around the L1-L2 vertebral level, below which the vertebral canal contains only the cauda equina, a bundle of lumbosacral nerve roots. Cauda equina syndrome (compression below this level) causes asymmetric, radicular leg pain and sensory/motor loss with relatively late-onset bowel/bladder dysfunction, while conus medullaris syndrome (compression at or near the cord’s end) causes more symmetric, less painful presentations with earlier, more prominent bowel/bladder dysfunction and saddle anesthesia.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a large midline disc herniation at L2-L3 develops symmetric leg weakness, early and prominent urinary retention, and saddle anesthesia, with relatively little radicular leg pain. A different patient with a herniation at L4-L5 develops asymmetric, severe radicular leg pain and weakness with only late, mild urinary symptoms. Which syndrome does each patient most likely have, based on the level and character of their symptoms?',
+            explanation:
+              'The first patient’s symmetric findings with early, prominent bowel/bladder dysfunction and relatively mild pain reflect conus medullaris syndrome, since the compression is near the L2-L3 level, close to where the spinal cord itself terminates, affecting the densely packed sacral segments responsible for bladder control early and often bilaterally. The second patient’s asymmetric, severe radicular pain with only late bowel/bladder involvement reflects cauda equina syndrome, since the compression at L4-L5 affects the more loosely organized, individually vulnerable lumbosacral nerve roots of the cauda equina rather than the cord itself.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: conus medullaris syndrome; Second patient: cauda equina syndrome', isCorrect: true },
+              {
+                text: 'First patient: cauda equina syndrome; Second patient: conus medullaris syndrome',
+                isCorrect: false,
+                explanation: 'This reverses the classic associations; conus medullaris syndrome causes the symmetric, early bowel/bladder pattern (matching the first patient), while cauda equina syndrome causes the asymmetric, pain-predominant pattern (matching the second patient).',
+              },
+              {
+                text: 'Both patients have cauda equina syndrome, since both involve lumbar spine compression',
+                isCorrect: false,
+                explanation: 'The level and character of compression differ meaningfully between these two classic syndromes, which is why they present so differently despite both occurring in the lumbar region.',
+              },
+              {
+                text: 'Both patients have conus medullaris syndrome, since both involve bowel/bladder symptoms',
+                isCorrect: false,
+                explanation: 'While both syndromes can eventually cause bowel/bladder symptoms, their timing, symmetry, and associated pain differ in the classic, testable way described.',
+              },
+              {
+                text: 'Neither patient has spinal cord/nerve root compression, since both syndromes require thoracic-level lesions',
+                isCorrect: false,
+                explanation: 'Both conus medullaris and cauda equina syndromes classically arise from lumbar-level pathology, exactly as described in this scenario.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish neurogenic from vascular claudication by positional relief',
+        summary:
+          'Neurogenic claudication, from lumbar spinal stenosis compressing the cauda equina, causes leg pain and weakness with standing/walking that is classically relieved by lumbar flexion (such as leaning forward or sitting), which enlarges the spinal canal. Vascular claudication, from peripheral arterial disease, causes similar exertional leg pain but is relieved simply by stopping and resting, regardless of position, since it depends on oxygen demand rather than spinal canal size.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An elderly patient reports bilateral leg pain and heaviness that develops after walking a certain distance. He notices that leaning forward on a shopping cart while walking allows him to walk much farther before the pain starts, and simply standing still (without changing posture) does not relieve the pain. Compression of which structure, relieved by which specific positional change, best explains this pattern?',
+            explanation:
+              'This pattern, relief specifically with lumbar flexion (leaning forward) rather than simply stopping or standing still, is characteristic of neurogenic claudication from lumbar spinal stenosis compressing the cauda equina. Flexing the lumbar spine enlarges the diameter of the spinal canal, temporarily relieving the compression, which is why posture, not just rest, matters — in contrast to vascular claudication (from peripheral arterial disease), which is relieved by simply stopping and resting in any position, since it results from a mismatch between muscular oxygen demand and blood supply rather than positional canal narrowing.',
+            difficulty: 3,
+            choices: [
+              { text: 'Cauda equina compression from lumbar spinal stenosis, relieved by lumbar flexion (enlarging the canal)', isCorrect: true },
+              {
+                text: 'Peripheral arterial disease, relieved by lumbar flexion',
+                isCorrect: false,
+                explanation: 'Vascular claudication is relieved simply by stopping and resting in any position, not specifically by lumbar flexion, which is the distinguishing feature pointing toward a neurogenic cause here.',
+              },
+              {
+                text: 'Peripheral arterial disease, relieved only by elevating the legs',
+                isCorrect: false,
+                explanation: 'Vascular claudication improves with simple rest regardless of specific positioning; leg elevation is more relevant to venous, not arterial, symptoms, and neither matches this patient’s described relief with forward lean.',
+              },
+              {
+                text: 'Cauda equina compression, relieved equally well by any form of rest, including standing still',
+                isCorrect: false,
+                explanation: 'This patient specifically notes that standing still without changing posture does not relieve his pain, distinguishing his presentation from simple rest-related relief and supporting the positional (flexion-specific) mechanism of neurogenic claudication.',
+              },
+              {
+                text: 'Sciatic nerve compression from piriformis syndrome, relieved by hip extension',
+                isCorrect: false,
+                explanation: 'Piriformis syndrome causes unilateral buttock and posterior thigh pain worsened, not relieved, by activities that stretch the piriformis, and does not match this bilateral, walking-distance-dependent, flexion-relieved pattern.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize that a posterolateral disc herniation compresses the traversing, not exiting, nerve root',
+        summary:
+          'A herniated intervertebral disc most often protrudes posterolaterally, the weakest point of the annulus fibrosus (since the posterior longitudinal ligament reinforces the midline). At most lumbar levels, this posterolateral herniation compresses the traversing nerve root (the root exiting one level lower, which crosses through this area on its way down), rather than the exiting root at that same level (which has already left more laterally, above the disc).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient has a posterolateral disc herniation at the L4-L5 level. Which nerve root is most likely compressed by this herniation: the L4 root exiting at that level, or the L5 root that is still traversing downward through this region on its way to exit one level lower?',
+            explanation:
+              'A posterolateral disc herniation, the most common type since the midline is reinforced by the posterior longitudinal ligament, classically compresses the traversing nerve root rather than the exiting root at that same level. At L4-L5, the L4 root has already exited above and more laterally, while the L5 root is still traveling down through the posterolateral region on its way to exit at the L5-S1 level below — placing it directly in the path of an L4-L5 posterolateral herniation.',
+            difficulty: 3,
+            choices: [
+              { text: 'The L5 nerve root (traversing through this level en route to exiting one level lower)', isCorrect: true },
+              {
+                text: 'The L4 nerve root (exiting at this same level)',
+                isCorrect: false,
+                explanation: 'The L4 root has already exited more laterally, above the level of a typical posterolateral herniation at L4-L5, making it less vulnerable than the traversing L5 root.',
+              },
+              {
+                text: 'Both the L4 and L5 nerve roots are equally likely to be compressed',
+                isCorrect: false,
+                explanation: 'A posterolateral herniation classically and preferentially compresses the traversing root (L5 at this level), not both roots equally.',
+              },
+              {
+                text: 'The S1 nerve root, since it is the most distal lumbosacral root',
+                isCorrect: false,
+                explanation: 'The S1 root is not yet at this level and would be the traversing root affected by a herniation one level lower (L5-S1), not at L4-L5.',
+              },
+              {
+                text: 'Neither root is at risk, since posterolateral herniations only affect the spinal cord directly',
+                isCorrect: false,
+                explanation: 'The spinal cord itself typically ends around L1-L2, well above L4-L5; at this level, only nerve roots (not the cord) are present and at risk.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize mastoiditis as a complication of otitis media via the aditus ad antrum',
+        summary:
+          'The mastoid air cells communicate with the middle ear cavity through a narrow passage called the aditus ad antrum. Untreated or inadequately treated middle ear infections (otitis media) can therefore spread posteriorly into the mastoid air cells through this passage, causing mastoiditis, with pain, swelling, and tenderness over the mastoid process behind the ear.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A child with a poorly treated middle ear infection develops fever, postauricular swelling, and tenderness over the bony prominence behind the ear, with the pinna displaced outward and downward. Spread of infection from the middle ear into the mastoid air cells occurs through which specific anatomic passage?',
+            explanation:
+              'This is mastoiditis, a complication of otitis media in which infection spreads from the middle ear cavity into the mastoid air cells through the aditus ad antrum, a narrow channel connecting the two spaces. The resulting inflammation and pressure within the mastoid air cells causes the classic postauricular swelling and tenderness, and can push the pinna outward and downward as the mastoid region becomes swollen.',
+            difficulty: 2,
+            choices: [
+              { text: 'Aditus ad antrum', isCorrect: true },
+              {
+                text: 'Eustachian tube',
+                isCorrect: false,
+                explanation: 'The eustachian tube connects the middle ear to the nasopharynx (and is often the initial route of infection into the middle ear from the nose/throat), not the pathway from the middle ear into the mastoid air cells.',
+              },
+              {
+                text: 'External auditory meatus',
+                isCorrect: false,
+                explanation: 'This is the ear canal, connecting the outer ear to the tympanic membrane, not a pathway into the mastoid air cells.',
+              },
+              {
+                text: 'Internal acoustic meatus',
+                isCorrect: false,
+                explanation: 'This transmits CN VII and VIII into the inner ear/brainstem, an entirely different pathway unrelated to the spread of middle ear infection into the mastoid.',
+              },
+              {
+                text: 'Foramen ovale',
+                isCorrect: false,
+                explanation: 'This skull base foramen transmits CN V3, unrelated to the connection between the middle ear and mastoid air cells.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize cholesteatoma as an erosive growth of keratinizing squamous epithelium in the middle ear',
+        summary:
+          'A cholesteatoma is an abnormal growth of keratinizing squamous epithelium within the middle ear, often arising from a retraction pocket of the tympanic membrane. Though not a true neoplasm, it can slowly enlarge and erode adjacent structures, including the ossicles (causing conductive hearing loss) and, if untreated, the facial nerve canal or inner ear.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient with chronic ear drainage and progressive conductive hearing loss is found on otoscopy to have a retraction pocket of the tympanic membrane containing a whitish, keratin-filled mass eroding into the middle ear. What is this growth called, and how does it cause hearing loss despite not being a true tumor?',
+            explanation:
+              'This is a cholesteatoma, an abnormal accumulation and growth of keratinizing squamous epithelium within the middle ear, typically arising from a retraction pocket of the tympanic membrane (often related to chronic eustachian tube dysfunction). Although not a true neoplasm, it behaves locally destructively, slowly eroding adjacent structures — most often the ossicular chain, producing conductive hearing loss, and potentially the facial nerve canal or inner ear structures if left untreated.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cholesteatoma, eroding the ossicular chain', isCorrect: true },
+              {
+                text: 'Acoustic neuroma, compressing the cochlear nerve',
+                isCorrect: false,
+                explanation: 'This is a Schwann cell tumor arising from the vestibulocochlear nerve at the cerebellopontine angle, a completely different location and pathology from a middle ear cholesteatoma.',
+              },
+              {
+                text: 'Otosclerosis, fixing the stapes footplate',
+                isCorrect: false,
+                explanation: 'Otosclerosis is an abnormal bony overgrowth fixing the stapes, a distinct condition from the epithelial growth and erosive behavior of a cholesteatoma.',
+              },
+              {
+                text: 'Glomus tumor, arising from paraganglion cells in the middle ear',
+                isCorrect: false,
+                explanation: 'This is a vascular tumor of paraganglion cells, presenting with pulsatile tinnitus and a reddish middle ear mass, distinct from the keratin-filled epithelial growth described here.',
+              },
+              {
+                text: 'Cerumen impaction, blocking the external auditory canal',
+                isCorrect: false,
+                explanation: 'This is simple wax buildup in the ear canal, not an erosive middle ear growth arising from a tympanic membrane retraction pocket.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize vertebral artery dissection from neck rotation or manipulation',
+        summary:
+          'The vertebral arteries travel through the transverse foramina of the cervical vertebrae before entering the skull to form the basilar artery. Sudden or forceful neck rotation/extension (including cervical spine manipulation) can stretch and tear a vertebral artery, causing dissection that can lead to posterior circulation (brainstem/cerebellar) ischemic stroke, sometimes with neck pain as the presenting symptom.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A young patient develops sudden neck pain and dizziness shortly after a chiropractic neck manipulation, followed by vertigo, double vision, and difficulty swallowing. Dissection of which artery, which travels through the transverse foramina of the cervical vertebrae before joining its counterpart to form the basilar artery, best explains this presentation?',
+            explanation:
+              'This presentation, neck pain followed by brainstem symptoms (vertigo, diplopia, dysphagia) after neck manipulation, is characteristic of vertebral artery dissection. The vertebral arteries ascend through the transverse foramina of the cervical vertebrae (C6 through C1) before entering the skull and joining to form the basilar artery; forceful or sudden neck rotation/extension can stretch and tear the vessel wall at points where it is less mobile relative to the surrounding bone, leading to dissection and posterior circulation ischemia.',
+            difficulty: 2,
+            choices: [
+              { text: 'Vertebral artery', isCorrect: true },
+              {
+                text: 'Internal carotid artery',
+                isCorrect: false,
+                explanation: 'While internal carotid dissection also occurs (often with neck pain and Horner syndrome), it does not travel through the cervical transverse foramina or form the basilar artery, and it more classically causes anterior circulation (hemispheric) symptoms.',
+              },
+              {
+                text: 'External carotid artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the face and neck externally and does not travel through the transverse foramina or contribute to intracranial circulation.',
+              },
+              {
+                text: 'Anterior spinal artery',
+                isCorrect: false,
+                explanation: 'This artery arises from the vertebral arteries after they enter the skull and supplies the spinal cord, not the brainstem territory affected here, and is not the vessel that dissects in this classic presentation.',
+              },
+              {
+                text: 'Thyrocervical trunk',
+                isCorrect: false,
+                explanation: 'This vessel supplies structures in the neck (thyroid, some cervical muscles) and does not travel through the transverse foramina or contribute to the basilar artery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize jugular foramen syndrome (Vernet syndrome) from combined CN IX, X, and XI palsy',
+        summary:
+          'The jugular foramen transmits cranial nerves IX, X, and XI together, along with the internal jugular vein. A mass or lesion here (jugular foramen syndrome, or Vernet syndrome) can compress all three nerves together, causing loss of the gag reflex and posterior tongue taste (CN IX), hoarseness and palatal weakness (CN X), and weakness of the trapezius and sternocleidomastoid (CN XI).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a skull base tumor develops loss of the gag reflex, hoarseness with palatal droop, and weakness turning the head to the opposite side along with ipsilateral shoulder shrug weakness. Compression of which group of cranial nerves, exiting together through a shared skull base opening, best explains this combination of findings?',
+            explanation:
+              'This is jugular foramen syndrome (Vernet syndrome), from compression of cranial nerves IX, X, and XI, which all pass together through the jugular foramen along with the internal jugular vein. Glossopharyngeal (IX) involvement causes loss of the gag reflex, vagal (X) involvement causes hoarseness and palatal weakness, and spinal accessory (XI) involvement causes weakness of the sternocleidomastoid (head turning) and trapezius (shoulder shrug) — reflecting the shared exit point of these three nerves.',
+            difficulty: 3,
+            choices: [
+              { text: 'CN IX, X, and XI, exiting together through the jugular foramen', isCorrect: true },
+              {
+                text: 'CN VII and VIII, exiting together through the internal acoustic meatus',
+                isCorrect: false,
+                explanation: 'These nerves control facial movement and hearing/balance, not the gag reflex, voice, or head/shoulder movement described here, and exit through a different foramen.',
+              },
+              {
+                text: 'CN III, IV, and VI, exiting together through the superior orbital fissure',
+                isCorrect: false,
+                explanation: 'These nerves control eye movements, unrelated to the gag reflex, voice, or neck/shoulder findings described.',
+              },
+              {
+                text: 'CN V branches, exiting together through the foramen ovale and rotundum',
+                isCorrect: false,
+                explanation: 'These transmit sensory information from the face, not the motor/gag functions described in this presentation.',
+              },
+              {
+                text: 'CN XII alone, exiting through the hypoglossal canal',
+                isCorrect: false,
+                explanation: 'CN XII controls only tongue movement and would not explain the gag reflex, voice, or shoulder/neck findings described, and it is a single nerve, not the combination described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a relative afferent pupillary defect (Marcus Gunn pupil) from optic nerve damage',
+        summary:
+          'The swinging flashlight test detects a relative afferent pupillary defect by comparing the pupillary constriction response between the two eyes. Because the afferent limb of the pupillary light reflex depends on the optic nerve, damage to one optic nerve causes that pupil (and, via the consensual reflex, the other pupil) to constrict less briskly when light is swung onto the affected eye, causing it to appear to paradoxically dilate relative to its prior consensual constriction.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'During a swinging flashlight test, light shone in a patient’s right eye causes both pupils to constrict normally, but when the light is swiftly moved to the left eye, both pupils appear to dilate rather than remain constricted. Damage to which structure in the left eye’s pathway best explains this finding, and which limb of the pupillary reflex is affected?',
+            explanation:
+              'This is a relative afferent pupillary defect (Marcus Gunn pupil), indicating damage to the left optic nerve, which carries the afferent (sensory input) limb of the pupillary light reflex from that eye. When light is shone in the healthy right eye, both pupils constrict normally (via the intact right afferent limb and bilateral efferent output). When the light swings to the damaged left eye, its weakened afferent signal is interpreted by the brain as "less light detected," causing both pupils to paradoxically dilate relative to their prior constricted state, even though light is still present — the hallmark of an afferent (not efferent) pupillary pathway defect.',
+            difficulty: 3,
+            choices: [
+              { text: 'Left optic nerve, the afferent limb of the pupillary light reflex', isCorrect: true },
+              {
+                text: 'Left oculomotor nerve, the efferent limb of the pupillary light reflex',
+                isCorrect: false,
+                explanation: 'A pure efferent (oculomotor) lesion would cause a fixed, poorly reactive pupil regardless of which eye the light shines into, not the specific paradoxical dilation pattern that depends on which eye the light is swung toward, which localizes to the afferent (optic nerve) pathway instead.',
+              },
+              {
+                text: 'Right optic nerve, the afferent limb of the pupillary light reflex',
+                isCorrect: false,
+                explanation: 'The right eye’s response is normal (both pupils constrict when light is shone there), indicating the right optic nerve is intact; the defect is specifically triggered by swinging light to the left eye.',
+              },
+              {
+                text: 'Right oculomotor nerve, the efferent limb of the pupillary light reflex',
+                isCorrect: false,
+                explanation: 'An efferent defect would impair pupillary constriction regardless of which eye is stimulated, unlike the eye-dependent (afferent) pattern described here.',
+              },
+              {
+                text: 'Optic chiasm, affecting both afferent pathways equally',
+                isCorrect: false,
+                explanation: 'A chiasmal lesion affecting both sides more symmetrically would not produce this clearly lateralized, one-sided swinging flashlight finding.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize aortic dissection from an intimal tear and identify the Stanford classification',
+        summary:
+          'Aortic dissection begins with a tear in the intima of the aortic wall, allowing blood to enter and dissect through the media, creating a false lumen alongside the true lumen. The Stanford classification divides dissections into type A (involving the ascending aorta, a surgical emergency due to risk of pericardial tamponade and coronary/carotid involvement) and type B (limited to the descending aorta, often managed medically).',
+        discipline: 'Cardiovascular',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A patient with poorly controlled hypertension presents with sudden, tearing chest pain radiating to the back. CT angiography shows a tear in the aortic intima with blood tracking through the aortic media, forming a false channel that involves the ascending aorta. Which layer of the aortic wall was initially torn, and how would this dissection be classified?',
+            explanation:
+              'Aortic dissection begins with a tear in the intima (the innermost layer of the aortic wall), which allows pulsatile arterial blood to enter and dissect through the underlying media, creating a false lumen running alongside the true lumen. Because this dissection involves the ascending aorta, it is classified as a Stanford type A dissection, a surgical emergency due to the risk of retrograde extension causing pericardial tamponade, aortic valve regurgitation, or coronary/carotid artery occlusion — in contrast to a Stanford type B dissection, which is limited to the descending aorta (distal to the left subclavian artery) and is often managed medically.',
+            difficulty: 2,
+            choices: [
+              { text: 'Intimal tear, dissecting through the media; Stanford type A (involves the ascending aorta)', isCorrect: true },
+              {
+                text: 'Adventitial tear, dissecting through the media; Stanford type B',
+                isCorrect: false,
+                explanation: 'Dissection classically begins with a tear in the intima, the innermost layer, not the adventitia (the outermost layer); this is also a type A, not type B, dissection since the ascending aorta is involved.',
+              },
+              {
+                text: 'Intimal tear, dissecting through the media; Stanford type B (limited to the descending aorta)',
+                isCorrect: false,
+                explanation: 'Because this dissection involves the ascending aorta, it is classified as type A, not type B, which is reserved for dissections limited to the descending aorta.',
+              },
+              {
+                text: 'Medial tear, dissecting through the adventitia; Stanford type A',
+                isCorrect: false,
+                explanation: 'The initiating tear occurs in the intima, not the media, with the dissection then propagating through the media, not the adventitia.',
+              },
+              {
+                text: 'Intimal tear, dissecting through the adventitia only; DeBakey type III',
+                isCorrect: false,
+                explanation: 'The dissection plane is within the media, not confined to a separate tear through the adventitia, and involvement of the ascending aorta would classify this as DeBakey type I or II, not type III (which is limited to the descending aorta).',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link coarctation of the aorta to rib notching from collateral intercostal artery enlargement',
+        summary:
+          'In coarctation of the aorta (a narrowing typically just distal to the left subclavian artery, near the ligamentum arteriosum), blood reaches the descending aorta partly through enlarged collateral vessels, including the posterior intercostal arteries, which anastomose with the internal thoracic artery via the anterior intercostal arteries. Chronic enlargement and increased pulsatile flow through these collaterals erodes the undersurface of the ribs, producing "rib notching" visible on chest x-ray.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An adolescent with hypertension in the arms but diminished, delayed femoral pulses is found on chest x-ray to have notching along the undersurface of several ribs. Chronic dilation and increased flow through which collateral vessels, bypassing a narrowed segment of the aorta, best explains this radiographic finding?',
+            explanation:
+              'This presentation is classic for coarctation of the aorta, a narrowing typically located near the ligamentum arteriosum, distal to the left subclavian artery, which produces upper extremity hypertension with diminished, delayed lower extremity (femoral) pulses. To bypass the narrowed segment, blood flow increases through collateral pathways, including the internal thoracic artery’s anterior intercostal branches anastomosing with the posterior intercostal arteries arising from the descending aorta below the coarctation. Chronic, high-flow pulsatile dilation of these intercostal collaterals erodes the adjacent rib undersurfaces over time, producing the characteristic "rib notching" seen on chest x-ray.',
+            difficulty: 3,
+            choices: [
+              { text: 'Enlarged posterior intercostal arteries, anastomosing with the internal thoracic artery via anterior intercostal branches', isCorrect: true },
+              {
+                text: 'Enlarged bronchial arteries, anastomosing with the pulmonary arteries',
+                isCorrect: false,
+                explanation: 'While bronchial artery collaterals exist in other conditions, the classic collateral pathway responsible for rib notching in coarctation is the intercostal artery network, not the bronchial-pulmonary connection.',
+              },
+              {
+                text: 'Enlarged azygos vein, anastomosing with the hemiazygos vein',
+                isCorrect: false,
+                explanation: 'This is a venous, not arterial, collateral pathway and is not the mechanism responsible for the bony erosion of rib notching.',
+              },
+              {
+                text: 'Enlarged coronary arteries, anastomosing with the internal thoracic artery',
+                isCorrect: false,
+                explanation: 'Coronary artery collaterals would not produce rib notching, which specifically results from intercostal artery enlargement along the ribs themselves.',
+              },
+              {
+                text: 'Enlarged renal arteries, anastomosing with the lumbar arteries',
+                isCorrect: false,
+                explanation: 'This is not the collateral pathway responsible for rib notching, which occurs along the ribs via the intercostal arteries, a thoracic, not renal/lumbar, collateral system.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the azygos-hemiazygos system as a collateral pathway for IVC obstruction',
+        summary:
+          'The azygos vein (on the right) and hemiazygos vein (on the left), running along the posterior thoracic wall and draining into the superior vena cava, receive tributaries from the ascending lumbar veins, which connect inferiorly with the common iliac veins. This provides a natural collateral pathway that can carry blood from the lower body up to the SVC if the inferior vena cava becomes obstructed.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a tumor obstructing the inferior vena cava develops prominent, dilated veins along the posterior and lateral trunk, and imaging shows blood being redirected upward through a paravertebral venous system that ultimately drains into the superior vena cava. Which venous system provides this natural collateral pathway around the IVC obstruction?',
+            explanation:
+              'The azygos vein on the right and hemiazygos vein on the left run along the posterior thoracic wall and drain into the superior vena cava. Because these veins receive tributaries from the ascending lumbar veins, which connect inferiorly with the common iliac veins, they provide a natural collateral pathway that can carry blood from the lower body upward into the SVC when the inferior vena cava is obstructed, bypassing the blockage.',
+            difficulty: 3,
+            choices: [
+              { text: 'Azygos-hemiazygos venous system, via the ascending lumbar veins', isCorrect: true },
+              {
+                text: 'Portal venous system, via the paraumbilical veins',
+                isCorrect: false,
+                explanation: 'This collateral pathway (producing caput medusae) is relevant to portal hypertension, not IVC obstruction, and does not connect to the SVC.',
+              },
+              {
+                text: 'Pulmonary venous system, via the bronchial veins',
+                isCorrect: false,
+                explanation: 'The pulmonary veins drain into the left atrium and are not a collateral pathway for systemic venous return around an IVC obstruction.',
+              },
+              {
+                text: 'Coronary sinus system, via the cardiac veins',
+                isCorrect: false,
+                explanation: 'The coronary sinus drains the heart itself into the right atrium and is not a collateral pathway for lower body venous return around IVC obstruction.',
+              },
+              {
+                text: 'Vertebral venous (Batson) plexus, draining directly into the pulmonary veins',
+                isCorrect: false,
+                explanation: 'The vertebral venous plexus is a valveless collateral system important for the spread of pelvic cancers to the spine, but it drains into the azygos system and does not connect directly to the pulmonary veins.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Boerhaave syndrome from full-thickness esophageal rupture at its weakest point',
+        summary:
+          'Boerhaave syndrome is a full-thickness (transmural) rupture of the esophagus, most often at the left posterolateral wall of the distal esophagus just above the diaphragm — the weakest point structurally, lacking the reinforcing serosal layer that most of the GI tract has — classically precipitated by a sudden rise in intraesophageal pressure during forceful vomiting.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'After a severe bout of forceful vomiting, a patient develops sudden, severe chest and upper abdominal pain, subcutaneous emphysema in the neck, and a crunching sound synchronous with the heartbeat on auscultation (Hamman crunch). Imaging confirms free air in the mediastinum from a full-thickness tear at a specific, structurally weak point of the esophagus. Where is this rupture classically located, and why is this the weakest point?',
+            explanation:
+              'This is Boerhaave syndrome, a full-thickness esophageal rupture classically occurring at the left posterolateral wall of the distal esophagus, just above the gastroesophageal junction. This location is the weakest point of the esophagus because, unlike most of the rest of the GI tract, the esophagus lacks a reinforcing serosal layer, and the sudden, forceful rise in intraesophageal pressure during vomiting against a closed glottis is most likely to rupture the wall at this distal, unsupported segment, producing pneumomediastinum and its classic findings (chest pain, subcutaneous emphysema, and the Hamman crunch).',
+            difficulty: 3,
+            choices: [
+              { text: 'Left posterolateral wall of the distal esophagus, which lacks a reinforcing serosal layer', isCorrect: true },
+              {
+                text: 'Upper esophageal sphincter, which is reinforced by a strong serosal layer',
+                isCorrect: false,
+                explanation: 'Boerhaave syndrome classically ruptures the distal, not proximal, esophagus, and the esophagus lacks a serosal layer throughout its length, not just at the site of rupture.',
+              },
+              {
+                text: 'Gastroesophageal junction mucosa only, sparing the deeper wall layers',
+                isCorrect: false,
+                explanation: 'This describes a Mallory-Weiss tear, a shallow mucosal (not full-thickness) injury, a distinct and generally less severe condition from the full-thickness rupture of Boerhaave syndrome.',
+              },
+              {
+                text: 'Middle third of the esophagus, at the level of the aortic arch',
+                isCorrect: false,
+                explanation: 'This is not the classic location of Boerhaave syndrome rupture, which occurs distally, near the diaphragm.',
+              },
+              {
+                text: 'Right anterolateral wall of the proximal esophagus',
+                isCorrect: false,
+                explanation: 'The classic rupture site is the left posterolateral wall of the distal, not proximal, esophagus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish a Mallory-Weiss tear as a mucosal-only injury at the gastroesophageal junction',
+        summary:
+          'A Mallory-Weiss tear is a superficial, mucosal (and submucosal) laceration at the gastroesophageal junction, caused by a sudden rise in intra-abdominal/intraluminal pressure during forceful retching or vomiting. Unlike Boerhaave syndrome, it does not involve the full thickness of the esophageal wall, so it typically presents with hematemesis rather than the pneumomediastinum and severe chest pain of a transmural rupture.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a history of binge alcohol use develops several episodes of forceful vomiting, followed by bright red hematemesis, but has no chest pain, subcutaneous emphysema, or evidence of mediastinal air. Endoscopy reveals a shallow linear tear at the gastroesophageal junction limited to the mucosa and submucosa. How does this injury differ structurally from Boerhaave syndrome, and why does it not cause pneumomediastinum?',
+            explanation:
+              'This is a Mallory-Weiss tear, a superficial laceration limited to the mucosa and submucosa at the gastroesophageal junction, caused by the same general mechanism (a sudden pressure spike during forceful retching/vomiting) as Boerhaave syndrome, but without extending through the full thickness of the esophageal wall. Because the tear does not breach the entire wall, air and gastric contents do not leak into the mediastinum, so patients present with hematemesis from mucosal bleeding rather than the pneumomediastinum, severe chest pain, and subcutaneous emphysema characteristic of a full-thickness (transmural) Boerhaave rupture.',
+            difficulty: 2,
+            choices: [
+              { text: 'Mallory-Weiss tear is limited to the mucosa/submucosa, so no mediastinal air leak occurs', isCorrect: true },
+              {
+                text: 'Mallory-Weiss tear extends through the full thickness of the wall, just like Boerhaave syndrome',
+                isCorrect: false,
+                explanation: 'This is incorrect; the defining feature distinguishing a Mallory-Weiss tear from Boerhaave syndrome is precisely that it does not extend through the full wall thickness.',
+              },
+              {
+                text: 'Mallory-Weiss tear occurs in the stomach body, not at the gastroesophageal junction',
+                isCorrect: false,
+                explanation: 'A Mallory-Weiss tear classically occurs at the gastroesophageal junction, not in the body of the stomach.',
+              },
+              {
+                text: 'Mallory-Weiss tear is caused by a different mechanism (peptic ulcer disease) than Boerhaave syndrome',
+                isCorrect: false,
+                explanation: 'Both conditions are caused by the same general mechanism, a sudden pressure spike from forceful vomiting/retching; they differ in the depth of the resulting injury, not the underlying mechanism.',
+              },
+              {
+                text: 'Mallory-Weiss tear always requires emergency surgical repair, just like Boerhaave syndrome',
+                isCorrect: false,
+                explanation: 'A Mallory-Weiss tear is typically self-limited and managed conservatively, unlike the surgical emergency of a full-thickness Boerhaave rupture.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish anterior from posterior duodenal ulcer perforation risk',
+        summary:
+          'An anterior duodenal ulcer, if it perforates, releases air and gastric contents into the peritoneal cavity, causing free air under the diaphragm (pneumoperitoneum) visible on upright x-ray and peritonitis. A posterior duodenal ulcer instead tends to erode into the retroperitoneal gastroduodenal artery, which runs directly posterior to the duodenal bulb, causing brisk gastrointestinal hemorrhage without free air, since the retroperitoneum contains the leak.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'One patient with a duodenal ulcer develops sudden severe abdominal pain with a rigid abdomen, and upright x-ray shows free air under the diaphragm. Another patient with a duodenal ulcer instead develops massive hematemesis and melena without any free air on imaging. Which location of the ulcer, anterior or posterior, best explains each patient’s presentation, and which vessel is at risk in the second patient?',
+            explanation:
+              'The first patient’s presentation, peritonitis with pneumoperitoneum, is characteristic of an anterior duodenal ulcer perforating directly into the free peritoneal cavity, releasing air that rises to collect under the diaphragm. The second patient’s presentation, massive GI bleeding without free air, is characteristic of a posterior duodenal ulcer eroding into the gastroduodenal artery, which runs directly posterior to the duodenal bulb in the retroperitoneum; because this bleeding occurs retroperitoneally rather than into the free peritoneal cavity, no pneumoperitoneum develops despite the severity of the hemorrhage.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: anterior ulcer (free perforation); Second patient: posterior ulcer eroding the gastroduodenal artery', isCorrect: true },
+              {
+                text: 'First patient: posterior ulcer; Second patient: anterior ulcer eroding the splenic artery',
+                isCorrect: false,
+                explanation: 'This reverses the classic associations; posterior ulcers cause retroperitoneal bleeding (typically from the gastroduodenal artery) without free air, while anterior ulcers cause free perforation with pneumoperitoneum.',
+              },
+              {
+                text: 'Both patients have anterior ulcers, since anterior ulcers can cause either presentation',
+                isCorrect: false,
+                explanation: 'The classic anatomic teaching specifically distinguishes anterior ulcers (perforation, free air) from posterior ulcers (hemorrhage from the gastroduodenal artery, no free air), rather than attributing both presentations to the same location.',
+              },
+              {
+                text: 'First patient: anterior ulcer; Second patient: posterior ulcer eroding the splenic artery',
+                isCorrect: false,
+                explanation: 'The classic vessel at risk from a posterior duodenal ulcer is the gastroduodenal artery, which runs directly behind the duodenal bulb, not the splenic artery, which is located near the pancreatic tail and spleen.',
+              },
+              {
+                text: 'Both patients have posterior ulcers, since posterior ulcers can cause either presentation',
+                isCorrect: false,
+                explanation: 'A posterior ulcer classically causes retroperitoneal hemorrhage without free air, not the free perforation with pneumoperitoneum seen in the first patient.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link gastric ulcer hemorrhage on the lesser curvature to the left gastric artery',
+        summary:
+          'Gastric ulcers occur most often along the lesser curvature of the stomach. Because the left gastric artery (and its anastomosis with the right gastric artery) runs along this curvature, a deeply eroding lesser curvature ulcer risks major hemorrhage from this vessel.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a chronic gastric ulcer located along the lesser curvature of the stomach develops sudden massive hematemesis. Erosion into which artery, running along this curvature, is the most likely source of this bleeding?',
+            explanation:
+              'Gastric ulcers most commonly occur along the lesser curvature of the stomach, which is supplied by the left gastric artery (anastomosing with the right gastric artery from the hepatic artery). A deep ulcer at this location can erode into this vessel, causing brisk, potentially massive upper gastrointestinal hemorrhage.',
+            difficulty: 2,
+            choices: [
+              { text: 'Left gastric artery', isCorrect: true },
+              {
+                text: 'Right gastroepiploic artery',
+                isCorrect: false,
+                explanation: 'This artery runs along the greater, not lesser, curvature of the stomach and is not the classic vessel eroded by a lesser curvature gastric ulcer.',
+              },
+              {
+                text: 'Splenic artery',
+                isCorrect: false,
+                explanation: 'This artery runs along the superior border of the pancreas toward the spleen, giving off short gastric branches to the fundus, not the lesser curvature specifically.',
+              },
+              {
+                text: 'Gastroduodenal artery',
+                isCorrect: false,
+                explanation: 'This artery is classically eroded by a posterior duodenal ulcer, not a gastric ulcer on the lesser curvature.',
+              },
+              {
+                text: 'Inferior mesenteric artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the hindgut (distal colon, rectum), far from the stomach, and is unrelated to gastric ulcer bleeding.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the ejaculatory duct as the union of the vas deferens and seminal vesicle',
+        summary:
+          'The ejaculatory duct forms from the union of the vas deferens and the duct of the seminal vesicle, then travels through the prostate gland to empty into the prostatic urethra at the seminal colliculus (verumontanum), where seminal fluid, sperm, and prostatic secretions all combine before ejaculation.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Contrast imaging of the male reproductive tract shows the vas deferens joining with the duct of the seminal vesicle to form a single duct that then passes through the prostate gland to empty into the urethra at a specific landmark. Which duct is formed by this union, and where does it empty?',
+            explanation:
+              'The union of the vas deferens and the duct of the seminal vesicle forms the ejaculatory duct, which then travels through the substance of the prostate gland to empty into the prostatic urethra at the seminal colliculus (verumontanum), a small elevation on the posterior wall of the prostatic urethra where seminal vesicle secretions, sperm from the vas deferens, and prostatic fluid all converge before ejaculation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Ejaculatory duct, emptying into the prostatic urethra at the seminal colliculus', isCorrect: true },
+              {
+                text: 'Prostatic duct, emptying into the membranous urethra',
+                isCorrect: false,
+                explanation: 'Prostatic ducts drain prostatic secretions directly into the prostatic urethra along its length but are not formed by the union of the vas deferens and seminal vesicle duct.',
+              },
+              {
+                text: 'Bulbourethral duct, emptying into the bulbar urethra',
+                isCorrect: false,
+                explanation: 'The bulbourethral (Cowper) gland ducts empty pre-ejaculate fluid into the proximal spongy (bulbar) urethra and are unrelated to the vas deferens or seminal vesicle.',
+              },
+              {
+                text: 'Epididymal duct, emptying directly into the membranous urethra',
+                isCorrect: false,
+                explanation: 'The epididymal duct continues as the vas deferens itself; it does not empty directly and separately into the urethra.',
+              },
+              {
+                text: 'Utricle, emptying into the membranous urethra',
+                isCorrect: false,
+                explanation: 'The prostatic utricle is a small, functionless remnant of the paramesonephric ducts located at the seminal colliculus, not the duct formed by the union of the vas deferens and seminal vesicle.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the bulbourethral (Cowper) glands as producers of pre-ejaculatory fluid within the urogenital diaphragm',
+        summary:
+          'The bulbourethral (Cowper) glands lie within the urogenital diaphragm (deep perineal pouch) and secrete a clear, mucus-like pre-ejaculatory fluid into the proximal spongy urethra, which helps lubricate the urethra and neutralize residual acidic urine before ejaculation.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A pair of small glands located within the urogenital diaphragm secrete a clear fluid into the proximal spongy urethra during sexual arousal, prior to ejaculation. Which glands are these, and what is the physiologic role of their secretion?',
+            explanation:
+              'These are the bulbourethral (Cowper) glands, located within the urogenital diaphragm (deep perineal pouch), which secrete a clear, mucus-like fluid into the proximal spongy (bulbar) urethra during arousal, prior to ejaculation. This pre-ejaculatory fluid helps lubricate the urethra and neutralize any residual acidic urine, creating a more favorable environment for sperm that will follow during ejaculation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Bulbourethral (Cowper) glands', isCorrect: true },
+              {
+                text: 'Seminal vesicles',
+                isCorrect: false,
+                explanation: 'The seminal vesicles contribute the majority of seminal fluid volume (fructose-rich, alkaline) at the time of ejaculation itself, not a separate pre-ejaculatory secretion.',
+              },
+              {
+                text: 'Prostate gland',
+                isCorrect: false,
+                explanation: 'The prostate contributes its own secretions (including PSA) during ejaculation, but it is not the source of the pre-ejaculatory fluid described here.',
+              },
+              {
+                text: 'Epididymis',
+                isCorrect: false,
+                explanation: 'The epididymis is the site of sperm maturation and storage, not a secretory gland producing pre-ejaculatory fluid.',
+              },
+              {
+                text: 'Greater vestibular (Bartholin) glands',
+                isCorrect: false,
+                explanation: 'These are the female homologue of the bulbourethral glands, located at the vaginal introitus, not in the male urogenital diaphragm.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish posterior (membranous) from anterior (bulbar) urethral injury by mechanism and exam findings',
+        summary:
+          'Posterior urethral injury (at the membranous urethra, within the urogenital diaphragm) is classically caused by pelvic fracture, presenting with blood at the meatus and a high-riding prostate on rectal exam, since the prostate is displaced upward by the associated pelvic hematoma. Anterior urethral injury (at the bulbar urethra) is classically caused by a straddle injury (direct blunt trauma to the perineum), causing perineal/scrotal hematoma without the high-riding prostate finding.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'One patient with a pelvic fracture from a motor vehicle collision has blood at the urethral meatus and a high-riding prostate on digital rectal exam. Another patient who fell straddling a metal fence rail has blood at the meatus with a butterfly-pattern perineal hematoma but a normally positioned prostate. Which segment of the urethra is injured in each patient, respectively?',
+            explanation:
+              'The first patient’s presentation, associated with pelvic fracture and a high-riding prostate (displaced upward by an expanding pelvic hematoma), is characteristic of a posterior urethral injury, at the membranous urethra within the urogenital diaphragm. The second patient’s presentation, from a direct straddle injury to the perineum with a butterfly hematoma (confined by the attachments of the superficial perineal fascia) and a normal prostate position, is characteristic of an anterior urethral injury, at the bulbar urethra.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: posterior (membranous) urethral injury; Second patient: anterior (bulbar) urethral injury', isCorrect: true },
+              {
+                text: 'First patient: anterior (bulbar) urethral injury; Second patient: posterior (membranous) urethral injury',
+                isCorrect: false,
+                explanation: 'This reverses the classic associations; pelvic fracture with a high-riding prostate indicates posterior (membranous) urethral injury, while a straddle injury with a butterfly hematoma indicates anterior (bulbar) urethral injury.',
+              },
+              {
+                text: 'Both patients have posterior urethral injuries, since both have blood at the meatus',
+                isCorrect: false,
+                explanation: 'Blood at the meatus is a nonspecific finding common to both anterior and posterior urethral injuries; the mechanism and specific exam findings (high-riding prostate versus butterfly hematoma) are what distinguish the two locations.',
+              },
+              {
+                text: 'Both patients have anterior urethral injuries, since both involve external trauma',
+                isCorrect: false,
+                explanation: 'While both involve trauma, the specific mechanism (pelvic fracture versus direct perineal straddle injury) and exam findings distinguish a posterior from an anterior urethral injury, as described.',
+              },
+              {
+                text: 'Neither patient has a urethral injury, since blood at the meatus indicates only bladder injury',
+                isCorrect: false,
+                explanation: 'Blood at the urethral meatus is a classic sign of urethral, not bladder, injury, and in fact should prompt caution against blind catheterization until the urethra is evaluated.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize benign paroxysmal positional vertigo (BPPV) from otolith displacement into the semicircular canals',
+        summary:
+          'Benign paroxysmal positional vertigo results from displaced otoliths (calcium carbonate crystals) that dislodge from the utricle and migrate into a semicircular canal — most often the posterior canal, the most dependent canal in a supine position. Head movements that shift these particles within the canal trigger brief, intense vertigo and a positive Dix-Hallpike test.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient reports brief episodes of intense vertigo triggered specifically by rolling over in bed or looking upward, each lasting less than a minute. A Dix-Hallpike maneuver reproduces the vertigo along with a characteristic nystagmus. Displaced particles from which structure, migrating into which canal, most commonly explain this presentation?',
+            explanation:
+              'This is benign paroxysmal positional vertigo (BPPV), caused by otoliths (otoconia) that have become dislodged from the utricle and migrated into a semicircular canal, most commonly the posterior semicircular canal, since it is the most dependent (gravity-influenced) canal when the head is in a supine position. Movement of the head shifts these free-floating particles within the endolymph of the canal, triggering brief, intense vertigo, reproduced clinically by the Dix-Hallpike maneuver.',
+            difficulty: 2,
+            choices: [
+              { text: 'Otoliths from the utricle, migrating into the posterior semicircular canal', isCorrect: true },
+              {
+                text: 'Otoliths from the saccule, migrating into the cochlea',
+                isCorrect: false,
+                explanation: 'The cochlea is responsible for hearing, not balance, and is not the structure into which displaced otoliths migrate to cause positional vertigo.',
+              },
+              {
+                text: 'Endolymph excess within the entire membranous labyrinth, causing hydrops',
+                isCorrect: false,
+                explanation: 'This describes the mechanism of Ménière disease, which causes episodic vertigo with hearing loss and tinnitus, not the brief, purely positional vertigo of BPPV.',
+              },
+              {
+                text: 'Fixation of the stapes footplate to the oval window',
+                isCorrect: false,
+                explanation: 'This describes otosclerosis, which causes progressive conductive hearing loss, not positional vertigo.',
+              },
+              {
+                text: 'Inflammation of the vestibular nerve itself',
+                isCorrect: false,
+                explanation: 'This describes vestibular neuritis, which causes a single prolonged episode of vertigo (not brief, repeated positional episodes) and is not related to otolith displacement.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish Ménière disease (endolymphatic hydrops) from BPPV by its additional cochlear symptoms',
+        summary:
+          'Ménière disease results from excess accumulation of endolymph within the membranous labyrinth (endolymphatic hydrops), affecting both the vestibular apparatus and the cochlea. Unlike BPPV, which causes brief, purely positional vertigo without hearing changes, Ménière disease causes episodic vertigo lasting minutes to hours accompanied by fluctuating sensorineural hearing loss, tinnitus, and a sensation of aural fullness, reflecting its combined effect on balance and hearing structures.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient experiences recurrent episodes of vertigo lasting 30 minutes to several hours, each accompanied by ringing in one ear, a sensation of fullness in that ear, and fluctuating hearing loss. Unlike positional vertigo, these episodes are not triggered by specific head movements. Excess accumulation of which fluid, within which structure, best explains this combination of vestibular and cochlear symptoms?',
+            explanation:
+              'This is Ménière disease, caused by excess accumulation of endolymph within the membranous labyrinth (endolymphatic hydrops), which distends and disrupts the function of both the vestibular structures (causing vertigo) and the cochlea (causing the fluctuating sensorineural hearing loss, tinnitus, and aural fullness). This distinguishes it from BPPV, which affects only the vestibular system via displaced otoliths and produces brief, purely positional vertigo without any hearing-related symptoms.',
+            difficulty: 2,
+            choices: [
+              { text: 'Endolymph, within the membranous labyrinth (endolymphatic hydrops)', isCorrect: true },
+              {
+                text: 'Perilymph, within the bony labyrinth',
+                isCorrect: false,
+                explanation: 'Ménière disease specifically involves excess endolymph within the membranous labyrinth, not the perilymph of the surrounding bony labyrinth.',
+              },
+              {
+                text: 'Cerebrospinal fluid, within the internal acoustic meatus',
+                isCorrect: false,
+                explanation: 'This is not the fluid or location implicated in Ménière disease, which is a disorder of the inner ear’s own fluid compartments.',
+              },
+              {
+                text: 'Middle ear effusion, within the tympanic cavity',
+                isCorrect: false,
+                explanation: 'A middle ear effusion causes conductive hearing loss and is associated with otitis media, not the episodic vertigo and sensorineural hearing loss of Ménière disease.',
+              },
+              {
+                text: 'Otoliths, displaced into the semicircular canals',
+                isCorrect: false,
+                explanation: 'This describes the mechanism of BPPV, which lacks the hearing loss, tinnitus, and aural fullness seen in Ménière disease.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish otosclerosis (stapes fixation) from cholesteatoma as a cause of conductive hearing loss',
+        summary:
+          'Otosclerosis results from abnormal bony overgrowth fixing the stapes footplate to the oval window, progressively impairing sound transmission and causing conductive hearing loss, typically in young adults, often bilateral and sometimes worsening during pregnancy. This differs from cholesteatoma, which causes conductive hearing loss through erosive destruction of the ossicles rather than fixation, and is usually associated with chronic ear drainage.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A 30-year-old woman notices progressive, bilateral hearing loss that has worsened during her pregnancy, without any history of ear infections or drainage. Audiometry confirms a conductive hearing loss. Abnormal bony growth fixing which structure to the oval window best explains this presentation?',
+            explanation:
+              'This is otosclerosis, caused by abnormal bony remodeling that fixes the stapes footplate to the oval window, impairing the normal piston-like movement needed to transmit sound vibrations into the inner ear and producing progressive conductive hearing loss. It classically affects young adults, is often bilateral, and can worsen during pregnancy, distinguishing it from cholesteatoma, which instead causes conductive hearing loss through erosive destruction of the ossicular chain and is typically associated with a history of chronic ear infection and drainage, neither of which is present here.',
+            difficulty: 2,
+            choices: [
+              { text: 'Stapes footplate, fixed to the oval window', isCorrect: true },
+              {
+                text: 'Malleus, fixed to the tympanic membrane',
+                isCorrect: false,
+                explanation: 'While the malleus does attach to the tympanic membrane normally, otosclerosis specifically involves fixation of the stapes footplate at the oval window, not the malleus-tympanic membrane junction.',
+              },
+              {
+                text: 'Incus, eroded by chronic infection',
+                isCorrect: false,
+                explanation: 'Erosion of the incus (or other ossicles) from chronic infection describes the mechanism of cholesteatoma-related hearing loss, not otosclerosis, and this patient has no history of ear infection.',
+              },
+              {
+                text: 'Tympanic membrane, perforated by chronic otitis media',
+                isCorrect: false,
+                explanation: 'A tympanic membrane perforation would also cause conductive hearing loss but is associated with a history of infection/drainage, which is absent here, and does not match the classic otosclerosis presentation.',
+              },
+              {
+                text: 'Round window, obliterated by fibrous tissue',
+                isCorrect: false,
+                explanation: 'Otosclerosis classically involves the oval window and stapes footplate, not the round window.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize presbycusis as age-related, high-frequency sensorineural hearing loss from basal cochlear hair cell loss',
+        summary:
+          'Presbycusis is gradual, bilateral, symmetric sensorineural hearing loss associated with aging, resulting from progressive loss of hair cells in the basal turn of the cochlea, which is tonotopically organized to detect high-frequency sounds. This explains why presbycusis characteristically affects high-frequency hearing (making consonant sounds and speech discrimination difficult) before affecting lower frequencies.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An 80-year-old man reports gradual, bilateral hearing loss over several years, most noticeable when trying to understand speech in noisy environments, with particular difficulty hearing high-pitched sounds and consonants. Audiometry confirms symmetric sensorineural hearing loss affecting high frequencies more than low frequencies. Loss of hair cells in which region of the cochlea, and why is that region affected first, best explains this pattern?',
+            explanation:
+              'This is presbycusis, age-related sensorineural hearing loss resulting from progressive degeneration of hair cells in the basal turn of the cochlea. Because the cochlea is tonotopically organized, with the basal turn responsible for detecting high-frequency sounds (and the apex for low frequencies), and because the basal turn experiences greater cumulative mechanical stress over a lifetime of sound exposure, hair cell loss begins here first, explaining why presbycusis characteristically impairs high-frequency hearing and consonant discrimination before affecting lower-frequency sounds.',
+            difficulty: 3,
+            choices: [
+              { text: 'Basal turn of the cochlea, tonotopically responsible for high-frequency sound detection', isCorrect: true },
+              {
+                text: 'Apex of the cochlea, tonotopically responsible for high-frequency sound detection',
+                isCorrect: false,
+                explanation: 'The apex of the cochlea is tonotopically responsible for low-frequency, not high-frequency, sound detection; the base is responsible for high frequencies.',
+              },
+              {
+                text: 'Basal turn of the cochlea, tonotopically responsible for low-frequency sound detection',
+                isCorrect: false,
+                explanation: 'The basal turn is responsible for high-frequency, not low-frequency, sound detection, which is why its degeneration in presbycusis selectively impairs high-frequency hearing.',
+              },
+              {
+                text: 'Vestibular hair cells within the utricle and saccule',
+                isCorrect: false,
+                explanation: 'These structures mediate balance, not hearing, and their degeneration would not explain a hearing loss pattern.',
+              },
+              {
+                text: 'Stria vascularis, uniformly throughout the cochlea without any tonotopic pattern',
+                isCorrect: false,
+                explanation: 'While stria vascularis dysfunction can contribute to some forms of hearing loss, the classic explanation for presbycusis’s specific high-frequency pattern is basal turn hair cell loss, reflecting the cochlea’s tonotopic organization.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize acute angle-closure glaucoma from anterior chamber angle obstruction',
+        summary:
+          'Acute angle-closure glaucoma occurs when the iridocorneal angle (where the iris meets the cornea, containing the trabecular meshwork that normally drains aqueous humor) becomes acutely narrowed or blocked, often when pupillary dilation (e.g., in a dark room) pushes the peripheral iris forward against the trabecular meshwork. This abruptly prevents aqueous outflow, causing a rapid, severe rise in intraocular pressure with eye pain, blurred vision, and a fixed, mid-dilated pupil.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An older, farsighted patient develops sudden severe eye pain, blurred vision, halos around lights, nausea, and a fixed, mid-dilated pupil after sitting in a dark movie theater. Tonometry reveals markedly elevated intraocular pressure. Obstruction of aqueous humor outflow at which specific anatomic structure best explains this acute presentation?',
+            explanation:
+              'This is acute angle-closure glaucoma, caused by sudden obstruction of aqueous humor outflow at the iridocorneal (anterior chamber) angle, where the trabecular meshwork is located. In predisposed individuals (often farsighted, with a shallower anterior chamber), pupillary dilation in a dark environment pushes the peripheral iris forward against this angle, blocking the trabecular meshwork and preventing aqueous drainage, causing a rapid, severe rise in intraocular pressure with the classic pain, blurred vision, halos, and fixed mid-dilated pupil.',
+            difficulty: 2,
+            choices: [
+              { text: 'Iridocorneal angle (trabecular meshwork), blocked by the peripheral iris', isCorrect: true },
+              {
+                text: 'Central retinal vein, obstructed by a thrombus',
+                isCorrect: false,
+                explanation: 'This describes central retinal vein occlusion, which causes painless, gradual vision loss with retinal hemorrhages, not the acute painful pressure rise of angle-closure glaucoma.',
+              },
+              {
+                text: 'Optic canal, compressed by orbital swelling',
+                isCorrect: false,
+                explanation: 'This is not the mechanism of angle-closure glaucoma, which involves aqueous humor outflow obstruction within the eye itself, not compression of the optic nerve at the orbital apex.',
+              },
+              {
+                text: 'Nasolacrimal duct, obstructed by inflammation',
+                isCorrect: false,
+                explanation: 'This causes epiphora (excessive tearing), not elevated intraocular pressure or the acute pain and vision changes described.',
+              },
+              {
+                text: 'Central retinal artery, obstructed by an embolus',
+                isCorrect: false,
+                explanation: 'This causes sudden painless monocular vision loss with a pale retina, not the painful, pressure-related presentation of angle-closure glaucoma.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize retinal detachment from separation of the neurosensory retina and retinal pigment epithelium',
+        summary:
+          'Retinal detachment occurs when the neurosensory retina separates from the underlying retinal pigment epithelium, most often after a retinal tear allows vitreous fluid to seep beneath the retina. It presents with sudden floaters, flashes of light (photopsia), and a dark, curtain-like shadow progressively obscuring part of the visual field, corresponding to the detached area.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with high myopia suddenly notices a shower of floaters and flashes of light in one eye, followed over the next day by a dark curtain progressively obscuring the lower part of his visual field. Separation of which two layers of the eye, and by what fluid accumulating between them, best explains this presentation?',
+            explanation:
+              'This presentation is classic for retinal detachment: a retinal tear (more common in highly myopic eyes, which have a longer, more elongated globe) allows liquefied vitreous fluid to pass through the tear and accumulate in the potential space between the neurosensory retina and the underlying retinal pigment epithelium, separating the two layers. This separation deprives the detached neurosensory retina of its normal blood supply and metabolic support from the choroid/RPE, producing the classic symptoms of floaters, flashes, and a progressive curtain-like visual field defect corresponding to the area of detachment.',
+            difficulty: 2,
+            choices: [
+              { text: 'Neurosensory retina separating from the retinal pigment epithelium, via subretinal fluid accumulation', isCorrect: true },
+              {
+                text: 'Cornea separating from the lens, via aqueous humor accumulation',
+                isCorrect: false,
+                explanation: 'This is not an anatomically or clinically recognized process; the cornea and lens are not adjacent structures that separate from one another in this way.',
+              },
+              {
+                text: 'Choroid separating from the sclera, via blood accumulation (choroidal hemorrhage)',
+                isCorrect: false,
+                explanation: 'This describes a choroidal hemorrhage, a distinct and less common entity, not the classic retinal detachment mechanism described by this presentation.',
+              },
+              {
+                text: 'Vitreous body separating from the lens, via aqueous humor accumulation',
+                isCorrect: false,
+                explanation: 'This is not the anatomic basis of retinal detachment, which specifically involves separation of the retina from the retinal pigment epithelium.',
+              },
+              {
+                text: 'Iris separating from the ciliary body, via vitreous accumulation',
+                isCorrect: false,
+                explanation: 'This is not a recognized clinical entity matching this presentation; retinal detachment involves the posterior segment layers (retina and RPE), not the iris and ciliary body.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the nine structures passing through the carpal tunnel alongside the median nerve',
+        summary:
+          'The carpal tunnel, bounded by the carpal bones and the flexor retinaculum, transmits nine flexor tendons — the four tendons each of flexor digitorum superficialis and flexor digitorum profundus, plus the flexor pollicis longus — along with the median nerve. The flexor carpi radialis and palmaris longus tendons, along with the ulnar nerve and artery, pass outside the tunnel, which is why they are unaffected in carpal tunnel syndrome.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'During a surgical release of the flexor retinaculum for severe carpal tunnel syndrome, the surgeon identifies and protects nine tendons traveling alongside the median nerve through the tunnel. Which nine tendons are these?',
+            explanation:
+              'The carpal tunnel transmits nine flexor tendons together with the median nerve: the four tendons of flexor digitorum superficialis, the four tendons of flexor digitorum profundus, and the single tendon of flexor pollicis longus. The flexor carpi radialis tendon runs within its own separate compartment of the flexor retinaculum, and the palmaris longus tendon (when present) passes superficial to the retinaculum entirely, while the ulnar nerve and artery pass through the separate Guyon canal — none of these four structures are affected by carpal tunnel compression.',
+            difficulty: 3,
+            choices: [
+              { text: 'The four tendons of flexor digitorum superficialis, four tendons of flexor digitorum profundus, and one tendon of flexor pollicis longus', isCorrect: true },
+              {
+                text: 'The four tendons of flexor digitorum superficialis, four tendons of flexor digitorum profundus, and the flexor carpi radialis tendon',
+                isCorrect: false,
+                explanation: 'The flexor carpi radialis tendon travels within its own separate tunnel through the flexor retinaculum, not within the main carpal tunnel alongside the median nerve.',
+              },
+              {
+                text: 'The four tendons of flexor digitorum superficialis, four tendons of flexor digitorum profundus, and the palmaris longus tendon',
+                isCorrect: false,
+                explanation: 'The palmaris longus tendon passes superficial to the flexor retinaculum, not through the carpal tunnel itself.',
+              },
+              {
+                text: 'The four tendons of flexor digitorum profundus, the flexor pollicis longus, and the ulnar nerve',
+                isCorrect: false,
+                explanation: 'The ulnar nerve passes through the separate Guyon canal at the wrist, not through the carpal tunnel, and this list omits the four flexor digitorum superficialis tendons.',
+              },
+              {
+                text: 'The four tendons of flexor digitorum superficialis, four tendons of extensor digitorum, and the flexor pollicis longus',
+                isCorrect: false,
+                explanation: 'The extensor digitorum tendons are dorsal structures that do not pass through the carpal tunnel at all, which lies on the palmar (flexor) side of the wrist.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish Erb point of the cervical plexus from Erb palsy of the brachial plexus',
+        summary:
+          'Erb point, a landmark on the posterior border of the sternocleidomastoid, is where the four cutaneous branches of the cervical plexus (great auricular, lesser occipital, transverse cervical, and supraclavicular nerves) emerge to supply sensation to the neck, ear, and shoulder skin — a distinct structure and nerve plexus from the "Erb palsy" of upper trunk brachial plexus injury, despite the shared eponym.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'To anesthetize the skin of the neck for a superficial procedure, a clinician injects local anesthetic at a point along the posterior border of the sternocleidomastoid muscle, where four cutaneous nerves emerge together. Which plexus do these four nerves belong to, and how does this landmark differ from the "Erb palsy" seen after a difficult delivery?',
+            explanation:
+              'This landmark is Erb point, where the four cutaneous branches of the cervical plexus (great auricular, lesser occipital, transverse cervical, and supraclavicular nerves) emerge along the posterior border of the sternocleidomastoid to supply sensation to the neck, ear, and shoulder skin. Despite sharing part of the eponym, this is anatomically distinct from Erb (Duchenne-Erb) palsy, which refers to injury of the upper trunk of the brachial plexus (C5-C6), a completely different nerve plexus responsible for motor function of the shoulder and arm, not cutaneous sensation of the neck.',
+            difficulty: 3,
+            choices: [
+              { text: 'Cervical plexus (great auricular, lesser occipital, transverse cervical, supraclavicular nerves); distinct from the brachial plexus injury of Erb palsy', isCorrect: true },
+              {
+                text: 'Brachial plexus (upper trunk, C5-C6); the same structure injured in Erb palsy',
+                isCorrect: false,
+                explanation: 'The cutaneous nerve landmark at the posterior border of the sternocleidomastoid belongs to the cervical, not brachial, plexus, despite the similar eponym.',
+              },
+              {
+                text: 'Lumbar plexus (ilioinguinal, iliohypogastric, genitofemoral nerves)',
+                isCorrect: false,
+                explanation: 'These nerves arise from the lumbar plexus in the abdomen/pelvis, unrelated to the neck landmark described.',
+              },
+              {
+                text: 'Sacral plexus (pudendal, sciatic nerves)',
+                isCorrect: false,
+                explanation: 'These nerves arise from the sacral plexus in the pelvis, unrelated to the cervical landmark described.',
+              },
+              {
+                text: 'Cardiac plexus (autonomic cardiac nerves)',
+                isCorrect: false,
+                explanation: 'This is an autonomic plexus supplying the heart, unrelated to cutaneous sensation of the neck.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Map the brachial plexus cords to their terminal nerve branches',
+        summary:
+          'The three cords of the brachial plexus, named for their position relative to the axillary artery, give rise to distinct terminal nerves: the lateral cord gives rise to the musculocutaneous nerve and contributes to the median nerve; the medial cord gives rise to the ulnar nerve and also contributes to the median nerve; and the posterior cord gives rise to the axillary and radial nerves.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A penetrating injury damages the posterior cord of the brachial plexus. Which two terminal nerves, both arising from this cord, are most likely to be affected, producing combined shoulder and wrist/finger extensor weakness?',
+            explanation:
+              'The posterior cord of the brachial plexus gives rise to the axillary nerve (deltoid, shoulder abduction) and the radial nerve (wrist and finger extensors), so injury to the posterior cord itself produces a combined deficit affecting both of these nerves’ territories — distinguishing a cord-level injury from an isolated peripheral nerve injury affecting only one of the two.',
+            difficulty: 3,
+            choices: [
+              { text: 'Axillary and radial nerves', isCorrect: true },
+              {
+                text: 'Musculocutaneous and median nerves',
+                isCorrect: false,
+                explanation: 'These nerves arise primarily from the lateral cord, not the posterior cord.',
+              },
+              {
+                text: 'Ulnar and median nerves',
+                isCorrect: false,
+                explanation: 'The ulnar nerve arises from the medial cord, and the median nerve arises from contributions of both the lateral and medial cords, not the posterior cord.',
+              },
+              {
+                text: 'Musculocutaneous and ulnar nerves',
+                isCorrect: false,
+                explanation: 'The musculocutaneous nerve arises from the lateral cord and the ulnar nerve from the medial cord; neither arises from the posterior cord.',
+              },
+              {
+                text: 'Long thoracic and suprascapular nerves',
+                isCorrect: false,
+                explanation: 'These nerves arise directly from the roots and upper trunk of the brachial plexus, respectively, not from the posterior cord.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the interscalene block site at the level of the brachial plexus trunks',
+        summary:
+          'An interscalene nerve block targets the brachial plexus at the level of its trunks, in the groove between the anterior and middle scalene muscles in the neck. This approach reliably anesthetizes the shoulder and upper arm but often spares the C8-T1 (lower trunk) distribution, making it less suitable for procedures involving the hand.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'For a shoulder surgery, an anesthesiologist performs a nerve block by injecting local anesthetic into the groove between two muscles in the lateral neck, targeting the brachial plexus at a specific level of its formation. Which muscles form this groove, and at which level of brachial plexus organization is the block performed?',
+            explanation:
+              'This is an interscalene block, performed in the groove between the anterior and middle scalene muscles, where the brachial plexus exists in the form of its trunks (upper, middle, and lower) after the roots have combined but before dividing further into divisions and cords. Because the block is performed at the level of the trunks, it reliably anesthetizes the shoulder and upper arm (upper/middle trunk distribution) but often incompletely covers the lower trunk (C8-T1) territory supplying the hand.',
+            difficulty: 3,
+            choices: [
+              { text: 'Groove between the anterior and middle scalene muscles, at the level of the brachial plexus trunks', isCorrect: true },
+              {
+                text: 'Groove between the middle and posterior scalene muscles, at the level of the brachial plexus roots',
+                isCorrect: false,
+                explanation: 'The classic interscalene approach uses the groove between the anterior and middle scalene muscles, not the middle and posterior scalenes.',
+              },
+              {
+                text: 'Axilla, at the level of the brachial plexus terminal branches',
+                isCorrect: false,
+                explanation: 'This describes an axillary block, a different approach performed much more distally, at the level of the terminal nerves rather than the trunks.',
+              },
+              {
+                text: 'Costoclavicular space, at the level of the brachial plexus cords',
+                isCorrect: false,
+                explanation: 'This describes an infraclavicular block, performed at the level of the cords, a different location and level from the interscalene approach.',
+              },
+              {
+                text: 'Cubital fossa, at the level of the median and radial nerves',
+                isCorrect: false,
+                explanation: 'This location is far too distal and involves individual peripheral nerves, not the brachial plexus trunks targeted by an interscalene block.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the three parts of the axillary artery relative to pectoralis minor',
+        summary:
+          'The axillary artery is divided into three parts based on its relationship to the pectoralis minor muscle: the first part lies proximal (medial) to the muscle, the second part lies directly posterior to it, and the third part lies distal (lateral) to it — a landmark useful for describing the origin of its branches and for surgical/radiologic localization.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'On an arteriogram, a radiologist identifies a segment of the axillary artery lying directly deep to the pectoralis minor muscle. Which numbered part of the axillary artery is this?',
+            explanation:
+              'The axillary artery is divided into three parts using the pectoralis minor muscle as the landmark: the first part is proximal (medial) to the muscle, the second part lies directly posterior (deep) to it, and the third part is distal (lateral) to it. A segment lying directly deep to the pectoralis minor is therefore the second part of the axillary artery.',
+            difficulty: 3,
+            choices: [
+              { text: 'Second part', isCorrect: true },
+              {
+                text: 'First part',
+                isCorrect: false,
+                explanation: 'The first part of the axillary artery lies proximal (medial) to the pectoralis minor, not directly deep to it.',
+              },
+              {
+                text: 'Third part',
+                isCorrect: false,
+                explanation: 'The third part of the axillary artery lies distal (lateral) to the pectoralis minor, not directly deep to it.',
+              },
+              {
+                text: 'Fourth part',
+                isCorrect: false,
+                explanation: 'The axillary artery is classically divided into only three parts; there is no fourth part.',
+              },
+              {
+                text: 'The axillary artery has no defined parts relative to the pectoralis minor',
+                isCorrect: false,
+                explanation: 'The pectoralis minor is specifically used as the anatomic landmark dividing the axillary artery into its three defined parts.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize pronator teres syndrome as proximal median nerve entrapment at the elbow',
+        summary:
+          'Pronator teres syndrome results from median nerve compression as it passes between the two heads of the pronator teres muscle at the elbow, causing forearm pain with activities involving repetitive pronation, along with sensory changes in the median distribution — but, unlike carpal tunnel syndrome, it can also affect the palmar cutaneous branch (sparing thenar-only carpal tunnel sensory patterns) and forearm flexor muscles innervated proximal to the wrist.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A weightlifter who performs repetitive forearm pronation develops aching forearm pain and numbness in the thumb, index, and middle fingers, along with mild weakness of forearm flexor muscles, but no nocturnal symptoms and a negative Tinel sign at the wrist. Tinel sign is instead positive with tapping over the proximal forearm near the elbow. Compression of the median nerve at which specific site best explains this presentation?',
+            explanation:
+              'This is pronator teres syndrome, caused by median nerve compression as it passes between the two heads of the pronator teres muscle near the elbow. Unlike carpal tunnel syndrome (which is typically worse at night and produces a positive Tinel sign at the wrist), pronator teres syndrome causes forearm pain with pronation activities, a positive Tinel sign near the elbow instead of the wrist, and can affect forearm flexor muscles and the palmar cutaneous sensory branch, which arises proximal to the carpal tunnel and is therefore spared in true carpal tunnel syndrome.',
+            difficulty: 3,
+            choices: [
+              { text: 'Median nerve, between the two heads of the pronator teres at the elbow', isCorrect: true },
+              {
+                text: 'Median nerve, within the carpal tunnel at the wrist',
+                isCorrect: false,
+                explanation: 'Carpal tunnel syndrome produces a positive Tinel sign at the wrist and nocturnal symptoms, neither of which is described here; this patient’s findings localize to the elbow/proximal forearm instead.',
+              },
+              {
+                text: 'Anterior interosseous nerve, in the mid-forearm',
+                isCorrect: false,
+                explanation: 'This is a motor-only branch and would not cause the sensory symptoms and Tinel sign described here.',
+              },
+              {
+                text: 'Ulnar nerve, at the cubital tunnel',
+                isCorrect: false,
+                explanation: 'Ulnar nerve compression would cause little finger and medial ring finger symptoms, not the thumb-to-middle-finger pattern described here.',
+              },
+              {
+                text: 'Radial nerve, at the spiral groove',
+                isCorrect: false,
+                explanation: 'Radial nerve compression causes wrist drop and dorsal hand sensory changes, not the palmar median-distribution symptoms described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the safe zone for deltoid intramuscular injection',
+        summary:
+          'Intramuscular injections into the deltoid muscle are given in the mid-lateral portion of the muscle, several centimeters below the acromion, to avoid the axillary nerve and posterior circumflex humeral artery, which wrap around the surgical neck of the humerus and pass through the muscle at a more proximal level.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A nurse administering an intramuscular vaccine into the deltoid muscle is taught to inject only into the mid-lateral portion of the muscle, several centimeters below the acromion, rather than higher up near the shoulder. Injury to which neurovascular structures, which wrap around the humerus at a more proximal level, is this technique designed to avoid?',
+            explanation:
+              'The recommended deltoid injection site, several centimeters below the acromion in the mid-lateral muscle belly, is chosen specifically to avoid the axillary nerve and posterior circumflex humeral artery, which wind around the surgical neck of the humerus (a more proximal level) before entering the deltoid muscle from its deep surface. Injecting too high or too medially risks direct needle trauma to these structures.',
+            difficulty: 2,
+            choices: [
+              { text: 'Axillary nerve and posterior circumflex humeral artery', isCorrect: true },
+              {
+                text: 'Radial nerve and profunda brachii artery',
+                isCorrect: false,
+                explanation: 'These structures travel through the triangular interval and spiral groove more distally along the humeral shaft, not near the proximal deltoid injection site.',
+              },
+              {
+                text: 'Musculocutaneous nerve and brachial artery',
+                isCorrect: false,
+                explanation: 'These structures are located more anteriorly and medially in the arm, not at the deltoid injection site.',
+              },
+              {
+                text: 'Suprascapular nerve and artery',
+                isCorrect: false,
+                explanation: 'These structures are located posteriorly near the scapula, not at the lateral deltoid injection site.',
+              },
+              {
+                text: 'Long thoracic nerve and lateral thoracic artery',
+                isCorrect: false,
+                explanation: 'These structures run along the lateral chest wall, not through the deltoid muscle.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the borders and contents of the anatomical snuffbox',
+        summary:
+          'The anatomical snuffbox is bounded by the extensor pollicis longus tendon posteriorly (ulnarly) and the abductor pollicis longus and extensor pollicis brevis tendons anteriorly (radially), with the scaphoid forming its floor and the radial artery passing through it — explaining both the snuffbox tenderness of a scaphoid fracture and the risk of radial artery injury with penetrating trauma here.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A laceration through the depression on the radial side of the wrist, visible when the thumb is extended, risks injury to a major artery that runs through this space, as well as tenderness over the carpal bone that forms its floor. Which artery passes through this space, and which bone forms its floor?',
+            explanation:
+              'This is the anatomical snuffbox, bounded by the extensor pollicis longus tendon on one side and the abductor pollicis longus/extensor pollicis brevis tendons on the other, with the scaphoid bone forming its floor. The radial artery passes through this space on its way to the dorsum of the hand, making it vulnerable to laceration here, and tenderness in this space is the classic exam finding for a scaphoid fracture.',
+            difficulty: 2,
+            choices: [
+              { text: 'Radial artery; scaphoid forms the floor', isCorrect: true },
+              {
+                text: 'Ulnar artery; lunate forms the floor',
+                isCorrect: false,
+                explanation: 'The ulnar artery and lunate bone are not associated with the anatomical snuffbox, which is specifically defined by the radial artery and scaphoid.',
+              },
+              {
+                text: 'Radial artery; triquetrum forms the floor',
+                isCorrect: false,
+                explanation: 'The scaphoid, not the triquetrum, forms the floor of the anatomical snuffbox.',
+              },
+              {
+                text: 'Anterior interosseous artery; capitate forms the floor',
+                isCorrect: false,
+                explanation: 'Neither this artery nor the capitate bone is associated with the anatomical snuffbox.',
+              },
+              {
+                text: 'Ulnar artery; hamate forms the floor',
+                isCorrect: false,
+                explanation: 'Neither the ulnar artery nor the hamate bone is associated with the anatomical snuffbox.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the four compartments of the leg and the classic 5 P’s of compartment syndrome',
+        summary:
+          'The lower leg is divided by fascial septa into four compartments (anterior, lateral, superficial posterior, and deep posterior), each with its own muscles, nerve, and artery. Acute compartment syndrome, from trauma or reperfusion causing swelling within this fixed fascial space, raises pressure until capillary perfusion is compromised, presenting with the classic 5 P’s: pain out of proportion (especially with passive stretch), paresthesia, pallor, pulselessness, and paralysis (a late finding).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Following a tibial fracture and cast placement, a patient develops severe leg pain out of proportion to the injury, markedly worsened by passive stretching of the toes, along with paresthesias. Pulses remain palpable. Elevated pressure within a fixed fascial compartment, of which there are four in the leg, best explains this presentation. What is the most important early clinical clue that distinguishes this from a normal post-fracture pain, and why do pulses often remain intact despite the diagnosis?',
+            explanation:
+              'This is acute compartment syndrome, in which swelling within one of the leg’s four fixed fascial compartments (anterior, lateral, superficial posterior, deep posterior) raises intracompartmental pressure until capillary and venous flow are compromised. Pain out of proportion to the injury, especially pain markedly worsened by passive stretch of the muscles in the affected compartment, is the earliest and most sensitive clinical clue — appearing well before pulselessness, since arterial pressure is much higher than the capillary pressure needed to cause ischemic damage, so pulses are often preserved until very late, and their presence should never be used to rule out the diagnosis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Pain out of proportion, worsened by passive stretch, is the earliest sign; pulses remain palpable because arterial pressure exceeds the capillary pressure compromised by compartment swelling', isCorrect: true },
+              {
+                text: 'Pulselessness is the earliest and most reliable sign, appearing before pain out of proportion',
+                isCorrect: false,
+                explanation: 'Pulselessness is actually one of the latest findings in compartment syndrome, occurring only once pressure rises high enough to compromise even the higher-pressure arterial system; pain out of proportion is the earliest clue.',
+              },
+              {
+                text: 'Paralysis is the earliest sign, and pulses are always absent from the onset of symptoms',
+                isCorrect: false,
+                explanation: 'Paralysis is a late finding, not an early one, and pulses are typically preserved early in the course, which is why relying on pulse exams alone can dangerously delay diagnosis.',
+              },
+              {
+                text: 'Pallor is the earliest and most sensitive sign of compartment syndrome',
+                isCorrect: false,
+                explanation: 'While pallor can occur, pain out of proportion (especially with passive stretch) is considered the earliest and most sensitive clinical finding.',
+              },
+              {
+                text: 'There is only one compartment in the leg, so pulse and pain findings should always occur together',
+                isCorrect: false,
+                explanation: 'The leg has four distinct fascial compartments, and pain findings classically precede pulse changes by a significant margin, which is precisely why relying on pulses is dangerous.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the Achilles tendon’s hypovascular watershed zone as a site prone to rupture',
+        summary:
+          'The Achilles tendon has a relatively hypovascular "watershed" zone approximately 2 to 6 centimeters proximal to its calcaneal insertion, where blood supply from the proximal musculotendinous junction and the distal insertion both taper off. This poorly vascularized segment is the most common site of both Achilles tendinopathy and tendon rupture.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Imaging in a patient with chronic Achilles tendon pain, and separately in a different patient who suffered a complete Achilles rupture during a sprint, both show pathology localized to a segment of tendon several centimeters proximal to its insertion on the calcaneus, rather than at the myotendinous junction or the insertion itself. Reduced blood supply in which specific region of the tendon explains why both tendinopathy and rupture cluster at this same site?',
+            explanation:
+              'The Achilles tendon has a relatively hypovascular "watershed" zone located approximately 2 to 6 centimeters proximal to its insertion on the calcaneus, where the blood supply arising from the proximal musculotendinous junction and the supply entering near the distal insertion both diminish, leaving this middle segment with the poorest overall vascularity. This relative ischemia impairs the tendon’s capacity for repair and remodeling, making this specific zone the most common site for both chronic tendinopathy and acute rupture.',
+            difficulty: 3,
+            choices: [
+              { text: 'The hypovascular zone approximately 2-6 cm proximal to the calcaneal insertion', isCorrect: true },
+              {
+                text: 'The musculotendinous junction, which has the poorest blood supply of the tendon',
+                isCorrect: false,
+                explanation: 'The musculotendinous junction is actually one of the two better-vascularized ends of the tendon; the classic hypovascular zone lies in the middle segment, away from both ends.',
+              },
+              {
+                text: 'The calcaneal insertion itself, which has the poorest blood supply of the tendon',
+                isCorrect: false,
+                explanation: 'The insertion site is also relatively well-vascularized compared to the mid-substance watershed zone, which is the classic site of tendinopathy and rupture.',
+              },
+              {
+                text: 'The entire tendon is uniformly vascularized, so location does not predict tendinopathy or rupture risk',
+                isCorrect: false,
+                explanation: 'The Achilles tendon has a well-recognized relatively hypovascular segment, which is precisely why pathology clusters at this specific location rather than being evenly distributed.',
+              },
+              {
+                text: 'The paratenon surrounding the entire tendon has no role in blood supply',
+                isCorrect: false,
+                explanation: 'The paratenon does contribute some blood supply along the tendon’s length, but the watershed zone still exists because the more substantial vascular contributions from each end taper off in this middle segment.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize lateral patellar dislocation and medial patellofemoral ligament injury',
+        summary:
+          'The patella is normally stabilized medially by the medial patellofemoral ligament (MPFL), which resists the natural lateral pull created by the quadriceps angle (Q angle) and the pull of the vastus lateralis. A lateral-directed force or sudden quadriceps contraction with the knee in a vulnerable position can tear the MPFL, allowing the patella to dislocate laterally, most often reducing spontaneously with knee extension.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A young athlete twists her knee while cutting to change direction and feels her kneecap shift out of place, visibly displaced to the lateral side of the knee, which then spontaneously reduces as she straightens her leg. Tenderness is noted along the medial aspect of the patella. Injury to which specific stabilizing structure best explains this dislocation, and in which direction does the patella typically dislocate?',
+            explanation:
+              'This is a lateral patellar dislocation, resulting from injury to the medial patellofemoral ligament (MPFL), the primary soft tissue restraint preventing the patella from being pulled laterally by the natural quadriceps angle and the vastus lateralis. Once the MPFL is torn, the patella displaces laterally out of the trochlear groove, and it often reduces spontaneously as the knee is extended and the quadriceps relaxes, which is why tenderness is found specifically along the medial patellar border, where the torn ligament attaches.',
+            difficulty: 2,
+            choices: [
+              { text: 'Medial patellofemoral ligament; the patella dislocates laterally', isCorrect: true },
+              {
+                text: 'Lateral patellofemoral ligament; the patella dislocates medially',
+                isCorrect: false,
+                explanation: 'The primary restraint against lateral patellar displacement is the medial, not lateral, patellofemoral ligament, and dislocation occurs laterally, not medially, since the natural pull of the extensor mechanism is lateral.',
+              },
+              {
+                text: 'Anterior cruciate ligament; the patella dislocates posteriorly',
+                isCorrect: false,
+                explanation: 'The ACL stabilizes the tibiofemoral joint, not the patella, and is not the ligament responsible for patellar stability.',
+              },
+              {
+                text: 'Patellar tendon; the patella dislocates superiorly',
+                isCorrect: false,
+                explanation: 'The patellar tendon connects the patella to the tibial tuberosity and its rupture would cause the patella to ride up (patella alta), not laterally dislocate.',
+              },
+              {
+                text: 'Medial collateral ligament; the patella dislocates medially',
+                isCorrect: false,
+                explanation: 'The MCL stabilizes the knee joint itself against valgus stress, not the patella, and is not the structure responsible for patellar tracking.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize snapping hip syndrome from iliopsoas tendon or iliotibial band friction',
+        summary:
+          'Snapping hip syndrome can result from either the iliopsoas tendon catching on the iliopectineal eminence or femoral head (internal/anterior snapping) or the iliotibial band snapping over the greater trochanter (external/lateral snapping) during hip flexion and extension, producing an audible or palpable snap, sometimes with associated pain.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A dancer reports a palpable, audible snapping sensation over the lateral hip each time she flexes and extends her hip, distinct from a separate anterior snapping sensation some patients report with hip flexion. Which two structures are classically responsible for the lateral (external) and anterior (internal) types of snapping hip, respectively?',
+            explanation:
+              'Snapping hip syndrome has two classic causes: external (lateral) snapping results from the iliotibial band catching and releasing over the greater trochanter during hip flexion/extension, while internal (anterior) snapping results from the iliopsoas tendon catching on the iliopectineal eminence or the femoral head as the hip moves from a flexed, abducted, externally rotated position to extension.',
+            difficulty: 3,
+            choices: [
+              { text: 'External: iliotibial band over the greater trochanter; Internal: iliopsoas tendon over the iliopectineal eminence/femoral head', isCorrect: true },
+              {
+                text: 'External: iliopsoas tendon over the greater trochanter; Internal: iliotibial band over the femoral head',
+                isCorrect: false,
+                explanation: 'This reverses the classic associations; the iliotibial band is responsible for external (lateral) snapping, while the iliopsoas tendon is responsible for internal (anterior) snapping.',
+              },
+              {
+                text: 'External: gluteus maximus over the ischial tuberosity; Internal: gluteus medius over the acetabulum',
+                isCorrect: false,
+                explanation: 'Neither of these muscle-bone relationships is the classic cause of either type of snapping hip syndrome.',
+              },
+              {
+                text: 'External: rectus femoris over the anterior inferior iliac spine; Internal: sartorius over the anterior superior iliac spine',
+                isCorrect: false,
+                explanation: 'These are not the classic structures responsible for snapping hip syndrome, which is specifically attributed to the iliotibial band (external) and iliopsoas tendon (internal).',
+              },
+              {
+                text: 'Both types are caused by the same structure, the iliotibial band, snapping at different points',
+                isCorrect: false,
+                explanation: 'The two types of snapping hip have distinct causes, involving two different structures (iliotibial band externally, iliopsoas tendon internally), not the same structure at different points.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize greater trochanteric pain syndrome (trochanteric bursitis)',
+        summary:
+          'The trochanteric bursa lies between the greater trochanter of the femur and the overlying gluteus medius tendon and iliotibial band. Repetitive friction or direct trauma can inflame this bursa, causing lateral hip pain that is tender directly over the greater trochanter and worsened by lying on the affected side or climbing stairs.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A middle-aged runner reports lateral hip pain that is worst when lying on that side at night and when climbing stairs, with point tenderness directly over the bony prominence on the lateral hip. Inflammation of a bursa located between which two structures best explains this pain?',
+            explanation:
+              'This is greater trochanteric pain syndrome (trochanteric bursitis), inflammation of the bursa located between the greater trochanter of the femur and the overlying gluteus medius tendon/iliotibial band. Repetitive friction from activities like running, or simply lying on the affected side (compressing the bursa against the trochanter), produces the characteristic point tenderness and pain pattern.',
+            difficulty: 2,
+            choices: [
+              { text: 'Greater trochanter and the overlying gluteus medius tendon/iliotibial band', isCorrect: true },
+              {
+                text: 'Ischial tuberosity and the overlying hamstring origin',
+                isCorrect: false,
+                explanation: 'Bursitis here (ischial bursitis) causes pain in the buttock/sitting area, not the lateral hip pain described.',
+              },
+              {
+                text: 'Iliopsoas tendon and the iliopectineal eminence',
+                isCorrect: false,
+                explanation: 'Bursitis here (iliopsoas bursitis) causes anterior groin pain, not the lateral hip pain described.',
+              },
+              {
+                text: 'Patella and the overlying quadriceps tendon',
+                isCorrect: false,
+                explanation: 'Bursitis here causes anterior knee pain, an entirely different location from the lateral hip pain described.',
+              },
+              {
+                text: 'Olecranon and the overlying triceps tendon',
+                isCorrect: false,
+                explanation: 'This is an elbow structure, unrelated to hip pain.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the anatomic relationship between the sciatic nerve and piriformis muscle',
+        summary:
+          'The sciatic nerve typically exits the pelvis as a single trunk below the piriformis muscle through the greater sciatic foramen. In a common anatomic variant, however, the nerve (or one of its divisions, tibial or common fibular) may pass through or above the piriformis muscle belly instead, a variation thought to predispose to piriformis syndrome in some individuals.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During a cadaveric dissection, a student finds that the common fibular division of the sciatic nerve passes directly through the belly of the piriformis muscle, while the tibial division passes below it, an anatomic variant differing from the typical arrangement. What is the typical (most common) relationship between the piriformis muscle and the sciatic nerve when the nerve exits the pelvis as a single trunk?',
+            explanation:
+              'In the most common (typical) anatomic arrangement, the sciatic nerve exits the pelvis through the greater sciatic foramen as a single trunk, passing below (inferior to) the piriformis muscle. Anatomic variants, such as the nerve or one of its divisions passing through or above the piriformis muscle belly, occur in a meaningful minority of individuals and are thought to predispose to piriformis muscle compression of the nerve (piriformis syndrome).',
+            difficulty: 3,
+            choices: [
+              { text: 'The sciatic nerve typically passes below (inferior to) the piriformis muscle as a single trunk', isCorrect: true },
+              {
+                text: 'The sciatic nerve typically passes through the belly of the piriformis muscle as a single trunk',
+                isCorrect: false,
+                explanation: 'This is the less common anatomic variant, not the typical arrangement, which is passage below the muscle.',
+              },
+              {
+                text: 'The sciatic nerve typically passes above (superior to) the piriformis muscle as a single trunk',
+                isCorrect: false,
+                explanation: 'This is not the typical arrangement; passing below the piriformis is the most common pattern.',
+              },
+              {
+                text: 'The sciatic nerve never has any anatomic relationship to the piriformis muscle',
+                isCorrect: false,
+                explanation: 'The sciatic nerve’s relationship to the piriformis is a well-described and clinically relevant anatomic relationship, whether typical or variant.',
+              },
+              {
+                text: 'The sciatic nerve always divides into its two terminal branches before entering the gluteal region',
+                isCorrect: false,
+                explanation: 'The sciatic nerve typically remains a single trunk through the gluteal region and thigh, dividing into the tibial and common fibular nerves only near the popliteal fossa (though variable division levels occur), not before entering the gluteal region.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish L5 radiculopathy from an isolated common fibular nerve palsy as a cause of foot drop',
+        summary:
+          'Both L5 radiculopathy and common fibular (peroneal) nerve palsy can cause foot drop, but they are distinguished by additional findings: L5 radiculopathy also weakens hip abduction (gluteus medius, also L5-innervated) and often causes back pain radiating down the leg, while isolated common fibular nerve palsy spares hip abduction entirely, since the superior gluteal nerve (supplying the hip abductors) is a separate nerve unaffected by a fibular nerve lesion.',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'Two patients present with foot drop and weakness of foot dorsiflexion. One also has weakness of hip abduction on the same side and low back pain radiating down the leg. The other has normal hip abduction strength and no back pain, with the foot drop attributed to a recent fibular neck fracture. Which diagnosis best explains each patient’s presentation, and what specific additional finding distinguishes them?',
+            explanation:
+              'The first patient’s combination of foot drop with hip abduction weakness and radicular back pain is characteristic of L5 radiculopathy, since the L5 nerve root also contributes to the superior gluteal nerve’s innervation of the hip abductors (gluteus medius/minimus) before those root fibers ever reach the sciatic/fibular nerve pathway. The second patient’s isolated foot drop with normal hip abduction, in the setting of trauma to the fibular neck, is characteristic of an isolated common fibular nerve palsy, since the superior gluteal nerve arises entirely separately, well proximal to the site of the fibular nerve injury, and is therefore unaffected.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: L5 radiculopathy (hip abduction weakness present); Second patient: common fibular nerve palsy (hip abduction spared)', isCorrect: true },
+              {
+                text: 'First patient: common fibular nerve palsy; Second patient: L5 radiculopathy',
+                isCorrect: false,
+                explanation: 'This reverses the classic distinguishing feature; hip abduction weakness points to a more proximal (L5 root) lesion, not an isolated peripheral fibular nerve injury.',
+              },
+              {
+                text: 'Both patients have L5 radiculopathy, since foot drop always indicates a nerve root problem',
+                isCorrect: false,
+                explanation: 'Foot drop can result from either a proximal nerve root lesion or a more distal isolated peripheral nerve injury; the presence or absence of hip abduction weakness is precisely what distinguishes the two.',
+              },
+              {
+                text: 'Both patients have isolated common fibular nerve palsy, since both have foot drop',
+                isCorrect: false,
+                explanation: 'The first patient’s additional hip abduction weakness and radicular back pain indicate a more proximal process (L5 radiculopathy) rather than an isolated peripheral nerve lesion.',
+              },
+              {
+                text: 'Hip abduction strength cannot be used to distinguish these two conditions',
+                isCorrect: false,
+                explanation: 'Hip abduction strength is in fact a key distinguishing exam finding, since the superior gluteal nerve (hip abductors) shares the L5 root but is anatomically separate from the common fibular nerve.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish the genital and femoral branches of the genitofemoral nerve',
+        summary:
+          'The genitofemoral nerve (L1-L2) divides into a genital branch, which supplies the cremaster muscle and scrotal/labial skin (and forms the efferent limb of the cremasteric reflex), and a femoral branch, which supplies a small area of skin on the upper anterior thigh, just below the inguinal ligament.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Following retroperitoneal lymph node dissection, a patient reports numbness over a small area of skin on the upper anterior thigh, just below the inguinal ligament, with normal cremasteric reflex and normal scrotal sensation. Injury to which specific branch of the genitofemoral nerve best explains this isolated finding?',
+            explanation:
+              'The genitofemoral nerve divides into a genital branch, which supplies the cremaster muscle and scrotal/labial skin (and mediates the efferent limb of the cremasteric reflex), and a femoral branch, which supplies a small area of skin on the upper anterior thigh just below the inguinal ligament. Because this patient has isolated numbness in the femoral branch’s territory with preserved cremasteric reflex and scrotal sensation (genital branch functions), the injury localizes specifically to the femoral branch.',
+            difficulty: 3,
+            choices: [
+              { text: 'Femoral branch of the genitofemoral nerve', isCorrect: true },
+              {
+                text: 'Genital branch of the genitofemoral nerve',
+                isCorrect: false,
+                explanation: 'Genital branch injury would impair the cremasteric reflex and scrotal sensation, both of which are explicitly preserved in this patient.',
+              },
+              {
+                text: 'Ilioinguinal nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the proximal medial thigh and genital skin in a different distribution and is not the specific branch matching this isolated upper anterior thigh finding.',
+              },
+              {
+                text: 'Lateral femoral cutaneous nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the anterolateral, not anteromedial/upper, thigh, and entrapment here causes meralgia paresthetica, a different distribution from the finding described.',
+              },
+              {
+                text: 'Obturator nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the medial thigh and is unrelated to the genitofemoral nerve’s branches or this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize a positive straight leg raise as a sign of L5-S1 nerve root tension',
+        summary:
+          'The straight leg raise test passively flexes the hip with the knee extended, stretching the L5 and S1 nerve roots (and the sciatic nerve they contribute to). Reproduction of radicular leg pain (not just back or hamstring tightness) between roughly 30 and 70 degrees of elevation is a positive test, supporting a diagnosis of lumbosacral disc herniation compressing these roots.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with suspected lumbar disc herniation lies supine while the examiner passively raises the affected straight leg. At 45 degrees of elevation, the patient reports sharp pain radiating down the posterior leg past the knee, reproducing his presenting symptoms. Stretching of which nerve roots, contributing to which peripheral nerve, does this maneuver assess?',
+            explanation:
+              'This is a positive straight leg raise test, which passively stretches the L5 and S1 nerve roots (which contribute to the sciatic nerve) as the hip is flexed with the knee kept extended. Reproduction of radicular pain radiating down the leg past the knee, particularly between 30 and 70 degrees of elevation, supports compression of these nerve roots, commonly from a herniated lumbar disc, and helps distinguish true radicular pain from simple hamstring tightness or isolated back pain.',
+            difficulty: 2,
+            choices: [
+              { text: 'L5 and S1 nerve roots, contributing to the sciatic nerve', isCorrect: true },
+              {
+                text: 'L2 and L3 nerve roots, contributing to the femoral nerve',
+                isCorrect: false,
+                explanation: 'These roots and this nerve are assessed by the femoral stretch test (with the patient prone, extending the hip), not the straight leg raise test.',
+              },
+              {
+                text: 'C5 and C6 nerve roots, contributing to the musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'These are cervical, not lumbosacral, nerve roots and are unrelated to a lower limb straight leg raise test.',
+              },
+              {
+                text: 'S2-S4 nerve roots, contributing to the pudendal nerve',
+                isCorrect: false,
+                explanation: 'These roots and this nerve are not the ones tested by the straight leg raise maneuver.',
+              },
+              {
+                text: 'T12-L1 nerve roots, contributing to the ilioinguinal nerve',
+                isCorrect: false,
+                explanation: 'These roots and this nerve are unrelated to the straight leg raise test, which specifically assesses the L5-S1 roots.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize osteoporotic vertebral compression fracture by anterior wedging',
+        summary:
+          'Osteoporotic vertebral compression fractures result from weakened trabecular bone in the vertebral body failing under normal axial load, characteristically collapsing anteriorly (since the vertebral body’s anterior portion bears more load in the normal thoracic kyphotic curve) while the posterior wall remains relatively intact, producing a wedge-shaped vertebra and progressive kyphosis ("dowager’s hump") with height loss over time.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'An elderly woman with osteoporosis develops sudden mid-back pain after bending to pick up a light object, without any significant trauma. Imaging shows a vertebral body that has collapsed anteriorly, creating a wedge shape, with the posterior wall of the vertebra remaining intact. Why does this type of fracture characteristically collapse the vertebral body anteriorly rather than uniformly or posteriorly?',
+            explanation:
+              'Osteoporotic vertebral compression fractures classically produce anterior wedging because the normal thoracic kyphotic curvature concentrates axial load disproportionately on the anterior portion of the vertebral body. When trabecular bone has been weakened by osteoporosis, this anteriorly concentrated load causes the anterior vertebral body to collapse preferentially, while the posterior wall (bearing less load and having somewhat different structural support) tends to remain intact, producing the characteristic wedge shape and, with multiple such fractures over time, progressive kyphosis and height loss.',
+            difficulty: 2,
+            choices: [
+              { text: 'The thoracic kyphotic curve concentrates axial load on the anterior vertebral body, causing preferential anterior collapse', isCorrect: true },
+              {
+                text: 'Osteoporosis affects only the posterior elements of the vertebra, sparing the anterior body',
+                isCorrect: false,
+                explanation: 'Osteoporosis diffusely weakens trabecular bone throughout the vertebra; the anterior-predominant collapse pattern results from load distribution related to spinal curvature, not a selective weakening of only the anterior portion.',
+              },
+              {
+                text: 'The posterior longitudinal ligament pulls the vertebra into a wedge shape',
+                isCorrect: false,
+                explanation: 'Ligamentous pull is not the mechanism of vertebral wedging; the collapse results from bone failure under the mechanical load distribution of the spine’s curvature.',
+              },
+              {
+                text: 'Compression fractures collapse the vertebral body uniformly, without any anterior or posterior predominance',
+                isCorrect: false,
+                explanation: 'Osteoporotic compression fractures classically show anterior-predominant wedging, not uniform collapse, which is precisely why kyphosis develops over time with multiple fractures.',
+              },
+              {
+                text: 'The fracture occurs because the posterior wall is weaker and always fails first',
+                isCorrect: false,
+                explanation: 'It is the anterior body, not the posterior wall, that classically fails first and collapses, due to the load distribution created by the spine’s kyphotic curvature.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish typical from atypical ribs',
+        summary:
+          'A "typical" rib (ribs 3-9) has a head with two articular facets (for two adjacent vertebral bodies), a neck, a tubercle articulating with the transverse process, and a shaft with a costal groove for the neurovascular bundle. "Atypical" ribs (1, 2, 10, 11, 12) each deviate from this pattern in specific ways — for example, rib 1 is short, flat, and has only a single facet articulating with T1, while ribs 11 and 12 ("floating ribs") lack a tubercle and any attachment to the sternum.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 30,
+        variations: [
+          {
+            stem: 'A student examining a set of isolated ribs notes that most have a head with two articular facets and a distinct tubercle for articulation with a vertebral transverse process, but one particular rib is unusually short and flat, with only a single facet on its head, and no separate sternal attachment at all is expected for two other very short ribs. Which characteristics identify the first rib specifically, distinguishing it from the "typical" pattern seen in the middle ribs?',
+            explanation:
+              'The first rib is a classic "atypical" rib: it is short, flat, and broad, and unlike a typical rib (ribs 3-9, which have a head with two articular facets for two adjacent vertebrae), it has only a single facet on its head that articulates with the body of T1 alone. This distinguishes it from typical ribs and also from ribs 11 and 12 (the "floating ribs"), which are atypical in a different way — they lack a tubercle and have no anterior attachment to the sternum or costal cartilage of another rib at all.',
+            difficulty: 2,
+            choices: [
+              { text: 'Short, flat shape with a single articular facet on the head (articulating only with T1)', isCorrect: true },
+              {
+                text: 'Long, curved shape with two articular facets on the head, identical to a typical rib',
+                isCorrect: false,
+                explanation: 'This describes a typical rib pattern (ribs 3-9), not the atypical first rib.',
+              },
+              {
+                text: 'No tubercle and no attachment to the sternum, identical to ribs 11 and 12',
+                isCorrect: false,
+                explanation: 'This describes the "floating ribs" (11 and 12), a different atypical pattern from the first rib, which does have a tubercle and does attach (via costal cartilage) to the sternum.',
+              },
+              {
+                text: 'An unusually long neck and no costal groove, unique among all ribs',
+                isCorrect: false,
+                explanation: 'This is not the defining atypical feature of the first rib, which is specifically its short, flat shape and single articular facet.',
+              },
+              {
+                text: 'Bifid (forked) sternal end, unique among all ribs',
+                isCorrect: false,
+                explanation: 'This is not a recognized distinguishing feature of the first rib among human ribs.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the three classic sites of neurovascular compression in thoracic outlet syndrome',
+        summary:
+          'Thoracic outlet syndrome can result from compression at any of three sequential sites along the path of the brachial plexus and subclavian vessels: the scalene triangle (between the anterior and middle scalene muscles, over the first rib — the most common site, often from a cervical rib), the costoclavicular space (between the clavicle and first rib), and the subcoracoid (pectoralis minor) space (beneath the pectoralis minor tendon).',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A surgeon evaluating a patient for thoracic outlet syndrome considers three distinct anatomic spaces along the pathway of the brachial plexus and subclavian vessels as they travel from the neck into the arm, any of which could be the site of compression. Which three spaces are these, listed from most proximal to most distal?',
+            explanation:
+              'Thoracic outlet syndrome can arise from compression at any of three sequential anatomic spaces: the scalene triangle (between the anterior and middle scalene muscles, over the first rib — the most common site, often related to a cervical rib), the costoclavicular space (the narrow passage between the clavicle and the first rib), and the subcoracoid (pectoralis minor) space (beneath the tendon of the pectoralis minor as it attaches to the coracoid process) — the most distal of the three sites.',
+            difficulty: 3,
+            choices: [
+              { text: 'Scalene triangle, costoclavicular space, and subcoracoid (pectoralis minor) space', isCorrect: true },
+              {
+                text: 'Cubital tunnel, carpal tunnel, and Guyon canal',
+                isCorrect: false,
+                explanation: 'These are all sites of individual peripheral nerve entrapment in the forearm/wrist, not the sites implicated in thoracic outlet syndrome, which occurs more proximally.',
+              },
+              {
+                text: 'Suprascapular notch, quadrangular space, and triangular interval',
+                isCorrect: false,
+                explanation: 'These are sites of individual nerve entrapment (suprascapular, axillary, and radial nerves, respectively) around the shoulder, not the three classic sites of thoracic outlet compression.',
+              },
+              {
+                text: 'Foramen ovale, foramen rotundum, and foramen spinosum',
+                isCorrect: false,
+                explanation: 'These are skull base foramina, entirely unrelated to the thoracic outlet.',
+              },
+              {
+                text: 'Femoral triangle, adductor canal, and popliteal fossa',
+                isCorrect: false,
+                explanation: 'These are lower limb anatomic spaces, unrelated to the thoracic outlet in the upper body.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize how the facial nerve divides the parotid gland into superficial and deep lobes',
+        summary:
+          'The facial nerve passes through the substance of the parotid gland, branching into its terminal divisions, and is used as the anatomic (though not truly fascial) landmark dividing the gland into a larger superficial lobe and a smaller deep lobe. This relationship is why parotid surgery carries inherent risk to the facial nerve, which must be identified and preserved while working around and between its branches.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During a parotidectomy for a tumor located in the portion of the gland closer to the skin surface, the surgeon carefully identifies and preserves a nerve that passes through the gland and is used to define the boundary between two portions of the gland. Which nerve is this, and which two lobes does it define?',
+            explanation:
+              'The facial nerve passes directly through the parotid gland as it exits the stylomastoid foramen and divides into its terminal branches. Its plane of passage is used to divide the parotid gland into a larger superficial lobe (external to the nerve) and a smaller deep lobe (internal to the nerve), which is why the facial nerve must be carefully identified and dissected free during parotid surgery to avoid injuring it, regardless of which lobe contains the pathology.',
+            difficulty: 2,
+            choices: [
+              { text: 'Facial nerve, dividing the gland into superficial and deep lobes', isCorrect: true },
+              {
+                text: 'Auriculotemporal nerve, dividing the gland into anterior and posterior lobes',
+                isCorrect: false,
+                explanation: 'The auriculotemporal nerve provides sensory and parasympathetic secretomotor innervation related to the parotid gland but is not the structure used to divide it into lobes.',
+              },
+              {
+                text: 'Great auricular nerve, dividing the gland into superior and inferior lobes',
+                isCorrect: false,
+                explanation: 'This purely sensory nerve supplies skin overlying the parotid region but does not pass through the gland or define its lobar division.',
+              },
+              {
+                text: 'Glossopharyngeal nerve, dividing the gland into medial and lateral lobes',
+                isCorrect: false,
+                explanation: 'While the glossopharyngeal nerve contributes parasympathetic input to the parotid gland via a different pathway (through the otic ganglion), it does not pass through the gland itself or define its lobes.',
+              },
+              {
+                text: 'Hypoglossal nerve, dividing the gland into anterior and posterior lobes',
+                isCorrect: false,
+                explanation: 'The hypoglossal nerve controls tongue movement and is not related to the parotid gland’s structure.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the lingual nerve’s relationship to the submandibular (Wharton) duct',
+        summary:
+          'As the submandibular duct (Wharton duct) travels forward from the submandibular gland to its opening near the base of the tongue, it passes between the lingual and hypoglossal nerves. The lingual nerve initially runs superior and lateral to the duct but then hooks underneath and crosses to the medial side, making the two structures cross twice — a relationship that places the lingual nerve at risk during surgery on the duct or gland.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'During surgical removal of a stone obstructing the submandibular duct, the surgeon must carefully identify a nerve that hooks underneath the duct and crosses from its lateral to its medial side as the duct travels toward the tongue. Injury to this nerve would impair sensation and taste on the anterior tongue. Which nerve is this?',
+            explanation:
+              'This is the lingual nerve, which runs alongside the submandibular (Wharton) duct as it travels toward the base of the tongue, initially lying superior and lateral to the duct before hooking underneath it and crossing to the medial side. This looping relationship places the lingual nerve, which carries general sensation and (via the chorda tympani fibers it carries) taste from the anterior two-thirds of the tongue, at risk during surgery involving the duct or submandibular gland.',
+            difficulty: 3,
+            choices: [
+              { text: 'Lingual nerve', isCorrect: true },
+              {
+                text: 'Hypoglossal nerve',
+                isCorrect: false,
+                explanation: 'While the hypoglossal nerve also runs near the submandibular gland (running inferior to the duct rather than hooking around it), the nerve classically described as crossing under and around the duct itself is the lingual nerve.',
+              },
+              {
+                text: 'Glossopharyngeal nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the posterior tongue and pharynx and does not have this specific looping relationship with the submandibular duct.',
+              },
+              {
+                text: 'Facial nerve',
+                isCorrect: false,
+                explanation: 'While a marginal mandibular branch of the facial nerve is at risk during submandibular surgery, it does not have this specific hooking relationship with the duct itself.',
+              },
+              {
+                text: 'Mylohyoid nerve',
+                isCorrect: false,
+                explanation: 'This motor nerve supplies the mylohyoid and anterior digastric muscles and does not have this specific relationship with the submandibular duct.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize orbital blowout fracture with inferior rectus entrapment',
+        summary:
+          'A blunt blow to the orbit can transmit force that fractures the thin orbital floor (over the maxillary sinus) while sparing the more robust orbital rim, herniating orbital fat and sometimes the inferior rectus muscle into the maxillary sinus. Entrapment of the inferior rectus restricts upward gaze and causes diplopia on upward gaze, while associated infraorbital nerve injury (which also runs along the orbital floor) causes numbness of the cheek and upper lip.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient struck in the eye by a fist has diplopia that worsens when looking upward, along with numbness of the cheek and upper lip on the same side, but an intact orbital rim on exam. Imaging shows a fracture of the thin bone forming the floor of the orbit, with soft tissue herniating into the sinus below. Entrapment of which muscle explains the diplopia, and injury to which nerve explains the facial numbness?',
+            explanation:
+              'This is an orbital blowout fracture, in which blunt trauma fractures the thin orbital floor (over the maxillary sinus) while the more robust orbital rim remains intact, absorbing the force differently. Herniation and entrapment of the inferior rectus muscle within the fracture restricts upward gaze, producing diplopia on attempted upward gaze, while the infraorbital nerve, which runs in a groove/canal along the orbital floor, is also injured, causing numbness of the cheek, upper lip, and ipsilateral upper teeth.',
+            difficulty: 2,
+            choices: [
+              { text: 'Inferior rectus entrapment (diplopia on upward gaze); infraorbital nerve injury (cheek/lip numbness)', isCorrect: true },
+              {
+                text: 'Superior rectus entrapment (diplopia on downward gaze); supraorbital nerve injury (forehead numbness)',
+                isCorrect: false,
+                explanation: 'A blowout fracture of the orbital floor entraps the inferior, not superior, rectus, and injures the infraorbital, not supraorbital, nerve, which runs along the orbital roof, not floor.',
+              },
+              {
+                text: 'Lateral rectus entrapment (diplopia on lateral gaze); zygomaticofacial nerve injury (cheek numbness)',
+                isCorrect: false,
+                explanation: 'The lateral rectus and the medial orbital wall (not floor) are not the classic structures involved in an inferior orbital blowout fracture.',
+              },
+              {
+                text: 'Medial rectus entrapment (diplopia on medial gaze); nasociliary nerve injury (nasal numbness)',
+                isCorrect: false,
+                explanation: 'Medial rectus entrapment occurs with a medial wall (not floor) blowout fracture, a different, less common injury pattern from the one described.',
+              },
+              {
+                text: 'No muscle is typically entrapped in this type of fracture',
+                isCorrect: false,
+                explanation: 'Inferior rectus entrapment is a classic and clinically important complication of an orbital floor blowout fracture, explaining the diplopia described.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize Horner syndrome along the three-neuron oculosympathetic pathway',
+        summary:
+          'The oculosympathetic pathway to the eye and face involves three neurons: a first-order (central) neuron from the hypothalamus to the spinal cord (C8-T2), a second-order (preganglionic) neuron exiting the cord to the superior cervical ganglion (passing near the lung apex and subclavian vessels), and a third-order (postganglionic) neuron traveling with the internal carotid artery to the eye (pupil/eyelid) and separately with the external carotid artery to facial sweat glands. The level of the lesion determines whether facial anhidrosis is present, and if so, over what distribution.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Three different patients present with ptosis and miosis on one side. The first has a lateral medullary (Wallenberg) stroke and anhidrosis over the entire ipsilateral face and body above the lesion level. The second has a Pancoast tumor and anhidrosis limited to the entire ipsilateral face. The third has an internal carotid artery dissection and no anhidrosis at all. Lesions at which respective orders of the three-neuron oculosympathetic pathway explain each patient’s pattern of anhidrosis?',
+            explanation:
+              'The first patient’s widespread anhidrosis (face, arm, and trunk) reflects a first-order (central) neuron lesion, affecting descending hypothalamospinal fibers before they have segregated regionally, as in a lateral medullary stroke. The second patient’s anhidrosis limited to the entire face reflects a second-order (preganglionic) neuron lesion, as from a Pancoast tumor compressing the sympathetic chain after it has already exited the cord but before it reaches the superior cervical ganglion, where face-specific fibers are still together. The third patient’s absence of any anhidrosis reflects a third-order (postganglionic) neuron lesion isolated to the internal carotid artery, since sudomotor fibers to the face split off to travel with the external, not internal, carotid artery before the internal carotid dissection occurs, sparing sweating entirely.',
+            difficulty: 3,
+            choices: [
+              { text: 'First: first-order (central) neuron; Second: second-order (preganglionic) neuron; Third: third-order (postganglionic) neuron', isCorrect: true },
+              {
+                text: 'First: third-order neuron; Second: second-order neuron; Third: first-order neuron',
+                isCorrect: false,
+                explanation: 'This reverses the classic localization pattern; the most widespread anhidrosis (body, arm, and face) localizes to the earliest (first-order/central) lesion, not the latest.',
+              },
+              {
+                text: 'All three patients have lesions at the same (second-order) level, since all have ptosis and miosis',
+                isCorrect: false,
+                explanation: 'Ptosis and miosis occur with a lesion at any of the three levels; it is specifically the pattern of associated anhidrosis (or its absence) that distinguishes the level of the lesion.',
+              },
+              {
+                text: 'First: second-order neuron; Second: first-order neuron; Third: third-order neuron',
+                isCorrect: false,
+                explanation: 'This incorrectly swaps the first and second patients’ localization; the more widespread anhidrosis (patient one) corresponds to the more central (first-order) lesion, not the preganglionic (second-order) level.',
+              },
+              {
+                text: 'Anhidrosis pattern cannot be used to localize the level of a Horner syndrome lesion',
+                isCorrect: false,
+                explanation: 'The distribution of anhidrosis (or its absence) is in fact a classic and clinically useful tool for localizing the level of the oculosympathetic pathway lesion causing Horner syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the sternal angle (of Louis) as a vertebral level landmark',
+        summary:
+          'The sternal angle (angle of Louis), the palpable ridge where the manubrium meets the body of the sternum, corresponds to the T4-T5 vertebral level and marks several important landmarks at once: the second costal cartilage (for counting ribs), the bifurcation of the trachea into the two main bronchi, the point where the arch of the aorta begins and ends, and the crossing of the azygos vein into the superior vena cava.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A clinician palpates a horizontal ridge on the anterior chest where the manubrium joins the body of the sternum, using it as a starting landmark to count ribs and to estimate the level of several deeper structures, including the tracheal bifurcation. Which vertebral level does this landmark correspond to?',
+            explanation:
+              'The sternal angle (angle of Louis) corresponds to the T4-T5 vertebral level. In addition to marking the second costal cartilage (used to count ribs), this level approximately corresponds to the bifurcation of the trachea into the right and left main bronchi, the beginning and end of the aortic arch, and the point where the azygos vein arches over to join the superior vena cava — making it one of the most useful surface landmarks in thoracic anatomy.',
+            difficulty: 2,
+            choices: [
+              { text: 'T4-T5', isCorrect: true },
+              {
+                text: 'T7-T8',
+                isCorrect: false,
+                explanation: 'This is not the vertebral level of the sternal angle; T7-T8 is closer to the level of the inferior angle of the scapula and gastroesophageal junction region.',
+              },
+              {
+                text: 'T10',
+                isCorrect: false,
+                explanation: 'This is the vertebral level of the esophageal hiatus of the diaphragm, not the sternal angle.',
+              },
+              {
+                text: 'T1-T2',
+                isCorrect: false,
+                explanation: 'This is too high; the sternal angle corresponds to a level several vertebrae lower, at T4-T5.',
+              },
+              {
+                text: 'L1',
+                isCorrect: false,
+                explanation: 'This lumbar level is far below the sternal angle and corresponds instead to structures like the pylorus and the origin of the superior mesenteric artery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the cricoid cartilage as the only complete tracheal ring, relevant to cricoid pressure',
+        summary:
+          'Unlike the C-shaped tracheal cartilage rings, which are incomplete posteriorly (where the trachealis muscle closes the gap), the cricoid cartilage forms a complete ring around the airway. This structural completeness allows firm posterior cricoid pressure (the Sellick maneuver) during rapid sequence intubation to occlude the esophagus against the vertebral column without collapsing the airway.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'During rapid sequence intubation, an assistant applies firm posterior pressure on a specific laryngeal cartilage to compress the esophagus against the vertebral column and reduce the risk of aspiration, a maneuver that relies on this cartilage’s unique structural completeness compared to the rest of the airway. Which cartilage is this, and what makes it structurally unique among the airway’s cartilaginous rings?',
+            explanation:
+              'This is the cricoid cartilage, targeted for cricoid pressure (the Sellick maneuver) specifically because, unlike the tracheal cartilage rings (which are C-shaped and incomplete posteriorly, closed only by the trachealis muscle) and the thyroid cartilage (which is open posteriorly), the cricoid cartilage forms a single, complete ring around the airway. This completeness allows firm posterior pressure to reliably compress the esophagus against the cervical vertebral bodies without the airway itself collapsing.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cricoid cartilage, the only complete ring of the laryngotracheal airway', isCorrect: true },
+              {
+                text: 'Thyroid cartilage, the only complete ring of the laryngotracheal airway',
+                isCorrect: false,
+                explanation: 'The thyroid cartilage is open posteriorly (shield-shaped, fused only anteriorly), not a complete ring, and is not the cartilage used for cricoid pressure.',
+              },
+              {
+                text: 'Tracheal cartilage rings, which are complete circles at every level',
+                isCorrect: false,
+                explanation: 'Tracheal cartilage rings are C-shaped and incomplete posteriorly, where the trachealis muscle closes the gap; they are not complete rings.',
+              },
+              {
+                text: 'Arytenoid cartilages, which form a complete ring around the vocal cords',
+                isCorrect: false,
+                explanation: 'The arytenoid cartilages are small, paired, pyramid-shaped cartilages that do not form a ring at all.',
+              },
+              {
+                text: 'Epiglottis, which forms a complete ring at the laryngeal inlet',
+                isCorrect: false,
+                explanation: 'The epiglottis is a single leaf-shaped cartilage, not a ring, and sits superior to the larynx, not at the level used for cricoid pressure.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the sensory boundary at the vocal cords supplied by the internal laryngeal nerve',
+        summary:
+          'The internal branch of the superior laryngeal nerve provides sensory innervation to the larynx above the vocal cords (supraglottic mucosa), important for triggering the cough reflex to protect against aspiration. Below the vocal cords, sensation is instead carried by the recurrent laryngeal nerve, so damage isolated to the internal laryngeal nerve blunts protective airway reflexes above the cords without affecting voice, since the nerve carries no significant motor fibers to the larynx.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with isolated injury to the internal branch of the superior laryngeal nerve has a normal voice but is found to have diminished sensation and an impaired cough reflex to food or liquid touching the mucosa above the vocal cords, increasing aspiration risk. Why is the voice preserved despite this nerve injury, and which nerve instead supplies sensation below the vocal cords?',
+            explanation:
+              'The internal branch of the superior laryngeal nerve is a purely sensory nerve supplying the laryngeal mucosa above the vocal cords (supraglottis), which is essential for triggering the protective cough reflex when food or liquid contacts this region; because it carries no significant motor fibers, its injury does not affect the voice. Sensation below the vocal cords (subglottis) is instead supplied by the recurrent laryngeal nerve, which also provides the motor innervation responsible for voice production — explaining why a voice change (from motor loss) and a sensory/reflex change (from internal laryngeal nerve loss) can occur independently, from injury to different nerves.',
+            difficulty: 3,
+            choices: [
+              { text: 'The internal laryngeal nerve is purely sensory (no motor fibers to affect voice); the recurrent laryngeal nerve supplies sensation below the vocal cords', isCorrect: true },
+              {
+                text: 'The internal laryngeal nerve carries motor fibers to the vocal cords, which compensate for its own sensory loss',
+                isCorrect: false,
+                explanation: 'The internal laryngeal nerve is purely sensory; it does not carry motor fibers to the vocal cords at all, which is precisely why the voice is unaffected by its injury.',
+              },
+              {
+                text: 'The external laryngeal nerve supplies sensation below the vocal cords',
+                isCorrect: false,
+                explanation: 'The external branch of the superior laryngeal nerve is a motor nerve to the cricothyroid muscle, not a sensory nerve to the subglottis; the recurrent laryngeal nerve supplies sensation below the cords.',
+              },
+              {
+                text: 'The vagus nerve trunk directly supplies sensation above the vocal cords, bypassing any laryngeal branches',
+                isCorrect: false,
+                explanation: 'Sensation above the vocal cords is specifically carried by the internal branch of the superior laryngeal nerve, a branch of the vagus, not by the vagal trunk directly bypassing this branch.',
+              },
+              {
+                text: 'Both above and below the vocal cords are supplied by the same nerve, the internal laryngeal nerve',
+                isCorrect: false,
+                explanation: 'The vocal cords represent a genuine sensory boundary; the internal laryngeal nerve supplies only above the cords, while the recurrent laryngeal nerve supplies below.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the somatotopic organization of the motor and sensory homunculus',
+        summary:
+          'The primary motor and sensory cortices are somatotopically organized along the precentral and postcentral gyri, respectively, with the body represented medial-to-lateral roughly as leg/foot (on the medial surface), trunk, arm/hand, and face — with disproportionately large areas devoted to the hands and face, reflecting their fine motor control and sensory discrimination. This organization explains why focal cortical lesions produce contralateral deficits limited to specific body parts.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient develops an isolated area of weakness affecting only the contralateral hand and fingers, with normal strength in the face, arm, trunk, and leg. A focal lesion in which specific region of the precentral gyrus, based on the somatotopic organization of the motor homunculus, best explains this isolated pattern?',
+            explanation:
+              'The primary motor cortex along the precentral gyrus is somatotopically organized, with the hand and fingers occupying a disproportionately large, discrete area on the lateral convexity of the gyrus (between the more medial arm/shoulder representation and the more lateral face representation). A small, focal lesion limited to this specific hand area of the motor homunculus can therefore produce an isolated hand/finger weakness while sparing the face, more proximal arm, trunk, and leg, which are represented in adjacent but distinct cortical territories.',
+            difficulty: 3,
+            choices: [
+              { text: 'The hand/finger area of the precentral gyrus, a discrete region within the lateral convexity of the motor homunculus', isCorrect: true },
+              {
+                text: 'The leg/foot area of the precentral gyrus, on the medial surface of the hemisphere',
+                isCorrect: false,
+                explanation: 'A lesion here would cause leg weakness, not the isolated hand weakness described.',
+              },
+              {
+                text: 'The face area of the precentral gyrus, at the most lateral/inferior part of the gyrus',
+                isCorrect: false,
+                explanation: 'A lesion here would cause facial weakness, not the isolated hand weakness described, and the face is explicitly spared in this patient.',
+              },
+              {
+                text: 'The entire precentral gyrus diffusely, since the homunculus has no discrete regional organization',
+                isCorrect: false,
+                explanation: 'The motor homunculus has a well-defined, discrete somatotopic organization, which is precisely why focal lesions can produce isolated deficits limited to specific body parts, as seen here.',
+              },
+              {
+                text: 'The postcentral gyrus hand area, since motor and sensory functions share a single homunculus',
+                isCorrect: false,
+                explanation: 'Motor function is represented in the precentral gyrus, while sensory function is represented in the separate postcentral gyrus; a pure motor deficit localizes to the precentral, not postcentral, gyrus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize circumventricular organs as brain regions lacking a blood-brain barrier',
+        summary:
+          'A small number of specialized brain regions, the circumventricular organs (including the area postrema, the median eminence, and the posterior pituitary), lack a normal blood-brain barrier, allowing them to directly sense circulating substances (like toxins or hormones) or, in the case of the posterior pituitary, to release hormones directly into the systemic circulation without the barrier interfering.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A circulating toxin that cannot cross the blood-brain barrier elsewhere in the brain is still able to trigger vomiting by acting directly on a specific medullary structure known to lack this barrier. Which structure is this, and why does its lack of a blood-brain barrier serve a useful physiologic purpose?',
+            explanation:
+              'This is the area postrema, part of the chemoreceptor trigger zone in the medulla, one of the circumventricular organs that lack a normal blood-brain barrier. This absence of a barrier allows the area postrema to directly sense circulating toxins, drugs, and metabolic byproducts in the blood and trigger the vomiting reflex as a protective mechanism, without needing these substances to first cross into the rest of the brain.',
+            difficulty: 3,
+            choices: [
+              { text: 'Area postrema, part of the chemoreceptor trigger zone', isCorrect: true },
+              {
+                text: 'Hippocampus, part of the limbic system',
+                isCorrect: false,
+                explanation: 'The hippocampus is protected by a normal, intact blood-brain barrier and is not a circumventricular organ.',
+              },
+              {
+                text: 'Primary visual cortex, in the occipital lobe',
+                isCorrect: false,
+                explanation: 'The visual cortex has a normal blood-brain barrier and is not involved in sensing circulating toxins or triggering vomiting.',
+              },
+              {
+                text: 'Internal capsule, carrying corticospinal fibers',
+                isCorrect: false,
+                explanation: 'This white matter structure has a normal blood-brain barrier and has no role in chemosensing or vomiting.',
+              },
+              {
+                text: 'Broca area, in the frontal lobe',
+                isCorrect: false,
+                explanation: 'This language area has a normal blood-brain barrier and is unrelated to vomiting or toxin sensing.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Map somatosensory modalities to their thalamic relay nuclei',
+        summary:
+          'The thalamus relays sensory information to the cortex through modality-specific nuclei: the ventral posterolateral (VPL) nucleus relays body (trunk/limb) touch, pain, and proprioception; the ventral posteromedial (VPM) nucleus relays facial sensation (via the trigeminal pathway) and taste; the lateral geniculate nucleus (LGN) relays visual information; and the medial geniculate nucleus (MGN) relays auditory information.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A small, focal thalamic stroke causes isolated loss of pain and temperature sensation over the contralateral face, while sensation over the contralateral trunk and limbs remains completely intact. Damage to which specific thalamic nucleus best explains this isolated facial sensory loss?',
+            explanation:
+              'The ventral posteromedial (VPM) nucleus of the thalamus specifically relays facial sensory information (via the trigeminal pathway) to the cortex, distinct from the ventral posterolateral (VPL) nucleus, which relays sensory information from the trunk and limbs. A focal lesion isolated to the VPM, sparing the VPL, would therefore selectively impair facial sensation while leaving body sensation intact — the pattern described in this patient.',
+            difficulty: 3,
+            choices: [
+              { text: 'Ventral posteromedial (VPM) nucleus', isCorrect: true },
+              {
+                text: 'Ventral posterolateral (VPL) nucleus',
+                isCorrect: false,
+                explanation: 'The VPL relays sensation from the trunk and limbs, not the face; damage here would cause body, not facial, sensory loss.',
+              },
+              {
+                text: 'Lateral geniculate nucleus (LGN)',
+                isCorrect: false,
+                explanation: 'The LGN relays visual information, not somatosensory information from the face or body.',
+              },
+              {
+                text: 'Medial geniculate nucleus (MGN)',
+                isCorrect: false,
+                explanation: 'The MGN relays auditory information, not somatosensory information.',
+              },
+              {
+                text: 'Ventral anterior (VA) nucleus',
+                isCorrect: false,
+                explanation: 'This nucleus relays motor-related information from the basal ganglia and cerebellum to the cortex, not somatosensory information from the face or body.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link caudate nucleus atrophy to the chorea of Huntington disease',
+        summary:
+          'Huntington disease causes progressive degeneration of GABAergic neurons in the caudate nucleus (and putamen), part of the striatum that normally forms the "indirect pathway" that helps inhibit unwanted movement. Loss of these inhibitory neurons disinhibits movement, producing chorea (involuntary, dance-like movements), along with progressive dementia and psychiatric symptoms, and imaging classically shows atrophy of the caudate nucleus with resulting enlargement of the frontal horns of the lateral ventricles.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a family history of an autosomal dominant neurodegenerative disorder develops involuntary, dance-like movements of the limbs along with progressive cognitive decline and personality changes. MRI shows atrophy of a structure whose loss also causes enlargement of the frontal horns of the lateral ventricles. Degeneration of which structure, and loss of which pathway’s function, best explains the chorea in this disease?',
+            explanation:
+              'This is Huntington disease, caused by degeneration of GABAergic neurons in the caudate nucleus (part of the striatum). These neurons normally form part of the "indirect pathway," which helps suppress unwanted movements; their loss disinhibits the motor system, producing chorea. Because the caudate nucleus forms the lateral wall of the frontal horn of the lateral ventricle, its atrophy causes the frontal horns to enlarge (ventriculomegaly) on imaging, a classic radiographic finding in this disease.',
+            difficulty: 2,
+            choices: [
+              { text: 'Caudate nucleus atrophy, from loss of GABAergic indirect pathway neurons', isCorrect: true },
+              {
+                text: 'Substantia nigra atrophy, from loss of dopaminergic neurons',
+                isCorrect: false,
+                explanation: 'This describes Parkinson disease, which causes bradykinesia, rigidity, and tremor, not chorea, and would not cause frontal horn enlargement.',
+              },
+              {
+                text: 'Subthalamic nucleus atrophy, from loss of glutamatergic neurons',
+                isCorrect: false,
+                explanation: 'Subthalamic nucleus damage (not the caudate) classically causes hemiballismus, a related but distinct movement disorder, and is not the classic finding in Huntington disease.',
+              },
+              {
+                text: 'Cerebellar vermis atrophy, from loss of Purkinje cells',
+                isCorrect: false,
+                explanation: 'This would cause truncal ataxia, not chorea, and is not the structure implicated in Huntington disease.',
+              },
+              {
+                text: 'Hippocampal atrophy, from loss of pyramidal neurons',
+                isCorrect: false,
+                explanation: 'While cognitive decline can involve many structures, the chorea and the classic frontal horn ventricular enlargement specifically relate to caudate atrophy, not the hippocampus.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize optic neuritis as inflammatory demyelination of the optic nerve in multiple sclerosis',
+        summary:
+          'Optic neuritis, a common presenting feature of multiple sclerosis, results from inflammatory demyelination of the optic nerve, causing subacute, painful (especially with eye movement) monocular vision loss along with a relative afferent pupillary defect. It differs from ischemic causes of vision loss (like central retinal artery occlusion) in its subacute onset, associated pain, and underlying inflammatory rather than vascular mechanism.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 28-year-old woman develops blurred vision in one eye over several days, along with pain that worsens when she moves that eye. Exam reveals a relative afferent pupillary defect in the affected eye. MRI subsequently reveals additional white matter lesions elsewhere in the brain. Inflammatory demyelination of which structure best explains her vision loss, and what underlying disease process does this presentation suggest?',
+            explanation:
+              'This is optic neuritis, caused by inflammatory demyelination of the optic nerve, often as a presenting feature of multiple sclerosis, as suggested by the additional white matter lesions found on MRI. The subacute onset and pain with eye movement (from inflammation involving the nerve sheath, which moves with the extraocular muscles) distinguish it from vascular causes of sudden, typically painless vision loss like central retinal artery occlusion, and the relative afferent pupillary defect reflects the optic nerve’s role as the afferent limb of the pupillary light reflex.',
+            difficulty: 2,
+            choices: [
+              { text: 'Optic nerve, from inflammatory demyelination (multiple sclerosis)', isCorrect: true },
+              {
+                text: 'Central retinal artery, from embolic occlusion',
+                isCorrect: false,
+                explanation: 'Central retinal artery occlusion causes sudden, painless vision loss without the subacute onset and pain with eye movement described here.',
+              },
+              {
+                text: 'Optic chiasm, from compression by a pituitary tumor',
+                isCorrect: false,
+                explanation: 'Chiasmal compression classically causes bitemporal hemianopia developing gradually, not the acute painful monocular vision loss with an afferent pupillary defect described here.',
+              },
+              {
+                text: 'Oculomotor nerve, from diabetic microvascular ischemia',
+                isCorrect: false,
+                explanation: 'Oculomotor nerve palsy causes ptosis and eye movement abnormalities (with pupillary sparing in microvascular disease), not the isolated vision loss and afferent pupillary defect described.',
+              },
+              {
+                text: 'Retina, from a detachment of the neurosensory layer',
+                isCorrect: false,
+                explanation: 'Retinal detachment causes painless floaters, flashes, and a curtain-like field defect, not the painful vision loss with pupillary defect and systemic demyelinating findings described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Identify the foramen spinosum as the entry point of the middle meningeal artery',
+        summary:
+          'The foramen spinosum, located in the greater wing of the sphenoid bone posterolateral to the foramen ovale, transmits the middle meningeal artery (a branch of the maxillary artery) into the cranial cavity, where it runs beneath the pterion to supply the dura mater — the vessel classically torn in an epidural hematoma.',
+        discipline: 'Nervous system',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A vessel supplying the dura mater, and classically implicated in epidural hematoma when torn by a temporal skull fracture, enters the cranial cavity through a specific foramen in the greater wing of the sphenoid bone. Which foramen is this?',
+            explanation:
+              'The middle meningeal artery, a branch of the maxillary artery, enters the cranial cavity through the foramen spinosum, located in the greater wing of the sphenoid bone just posterolateral to the foramen ovale. Once inside the skull, it runs beneath the thin bone of the pterion to supply the dura mater, which is why a pterion fracture can lacerate this vessel and cause an epidural hematoma.',
+            difficulty: 2,
+            choices: [
+              { text: 'Foramen spinosum', isCorrect: true },
+              {
+                text: 'Foramen ovale',
+                isCorrect: false,
+                explanation: 'This foramen transmits the mandibular division of the trigeminal nerve (V3), not the middle meningeal artery.',
+              },
+              {
+                text: 'Foramen rotundum',
+                isCorrect: false,
+                explanation: 'This foramen transmits the maxillary division of the trigeminal nerve (V2), not the middle meningeal artery.',
+              },
+              {
+                text: 'Foramen magnum',
+                isCorrect: false,
+                explanation: 'This large opening transmits the brainstem/spinal cord and vertebral arteries, not the middle meningeal artery.',
+              },
+              {
+                text: 'Jugular foramen',
+                isCorrect: false,
+                explanation: 'This foramen transmits CN IX, X, XI, and the internal jugular vein, not the middle meningeal artery.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the vessels forming the circle of Willis',
+        summary:
+          'The circle of Willis, an anastomotic ring at the base of the brain that provides collateral circulation between the anterior and posterior cerebral circulations, is formed by the two anterior cerebral arteries connected by the anterior communicating artery, and the two posterior cerebral arteries each connected to the ipsilateral internal carotid artery by a posterior communicating artery.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A vascular anatomy diagram shows an anastomotic ring at the base of the brain connecting the anterior and posterior circulations, allowing blood flow to potentially reroute around a blockage in one carotid or vertebral system. Which vessels, including the connecting arteries, together form this ring?',
+            explanation:
+              'The circle of Willis is formed by the two anterior cerebral arteries (connected to each other by a single anterior communicating artery), the internal carotid arteries (which give rise to the anterior and middle cerebral arteries), the posterior cerebral arteries (arising from the basilar artery), and the posterior communicating arteries, which connect each internal carotid artery to the ipsilateral posterior cerebral artery — together forming a complete anastomotic ring that provides potential collateral flow between the anterior and posterior cerebral circulations.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior cerebral arteries + anterior communicating artery; internal carotid arteries; posterior cerebral arteries + posterior communicating arteries', isCorrect: true },
+              {
+                text: 'Middle cerebral arteries + anterior communicating artery; vertebral arteries; posterior cerebral arteries only',
+                isCorrect: false,
+                explanation: 'The middle cerebral arteries are branches arising from the internal carotid arteries beyond the circle of Willis and are not themselves part of the anastomotic ring.',
+              },
+              {
+                text: 'Basilar artery + posterior communicating artery only, without any anterior contribution',
+                isCorrect: false,
+                explanation: 'The circle of Willis includes anterior circulation contributions (anterior cerebral and internal carotid arteries) as well, not just posterior circulation vessels.',
+              },
+              {
+                text: 'Superior and inferior cerebellar arteries, connected by the basilar artery',
+                isCorrect: false,
+                explanation: 'These cerebellar arteries branch off the vertebrobasilar system but are not part of the circle of Willis itself.',
+              },
+              {
+                text: 'Ophthalmic arteries, connected by the optic chiasm',
+                isCorrect: false,
+                explanation: 'The ophthalmic arteries branch from the internal carotid arteries to supply the orbit but are not part of the circle of Willis, and the optic chiasm is neural tissue, not a vessel.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Trace the drainage pathway of the dural venous sinuses',
+        summary:
+          'The superior sagittal sinus drains posteriorly to the confluence of sinuses, where it typically joins the straight sinus (which drains the inferior sagittal sinus and great cerebral vein); from the confluence, blood flows into the paired transverse sinuses, then the sigmoid sinuses, and finally into the internal jugular veins, which carry blood out of the skull.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Contrast injected into the superior sagittal sinus is traced as it flows posteriorly and then exits the skull. Through which sequence of dural venous sinuses does this blood travel before reaching the internal jugular vein?',
+            explanation:
+              'Blood in the superior sagittal sinus flows posteriorly to the confluence of sinuses, where it meets drainage from the straight sinus. From there, it flows into the transverse sinuses, then the sigmoid sinuses, and finally drains into the internal jugular veins as they exit the skull through the jugular foramen.',
+            difficulty: 2,
+            choices: [
+              { text: 'Confluence of sinuses → transverse sinus → sigmoid sinus → internal jugular vein', isCorrect: true },
+              {
+                text: 'Confluence of sinuses → cavernous sinus → sigmoid sinus → internal jugular vein',
+                isCorrect: false,
+                explanation: 'The cavernous sinus is not part of this drainage pathway; it instead drains separately via the superior and inferior petrosal sinuses.',
+              },
+              {
+                text: 'Straight sinus → cavernous sinus → transverse sinus → external jugular vein',
+                isCorrect: false,
+                explanation: 'The cavernous sinus is not part of the superior sagittal sinus’s drainage pathway, and dural sinus blood ultimately drains into the internal, not external, jugular vein.',
+              },
+              {
+                text: 'Confluence of sinuses → superior petrosal sinus → inferior petrosal sinus → internal jugular vein',
+                isCorrect: false,
+                explanation: 'The petrosal sinuses are part of the cavernous sinus’s drainage pathway, not the pathway from the confluence of sinuses.',
+              },
+              {
+                text: 'Confluence of sinuses → transverse sinus → superior ophthalmic vein → internal jugular vein',
+                isCorrect: false,
+                explanation: 'The superior ophthalmic vein drains into the cavernous sinus, a separate pathway from the transverse-to-sigmoid-to-jugular route described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish isolated radial nerve injury from posterior cord brachial plexus injury by deltoid involvement',
+        summary:
+          'Both an isolated radial nerve injury and a posterior cord brachial plexus injury cause wrist drop, but a posterior cord lesion also affects the axillary nerve (also arising from the posterior cord), causing additional deltoid weakness and lateral shoulder sensory loss — findings that are absent with an isolated radial nerve lesion occurring distal to where the axillary nerve has already branched off.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Two patients present with wrist drop. One has normal shoulder abduction strength and normal sensation over the lateral shoulder. The other has, in addition to the wrist drop, weak shoulder abduction and numbness over the lateral shoulder. Which patient has an isolated radial nerve injury, and which has a more proximal posterior cord injury?',
+            explanation:
+              'The first patient, with wrist drop but normal deltoid strength and lateral shoulder sensation, has an isolated radial nerve injury, occurring distal to the point where the axillary nerve has already branched off from the posterior cord. The second patient, with wrist drop plus deltoid weakness and lateral shoulder sensory loss, has a more proximal posterior cord injury, since the posterior cord gives rise to both the axillary nerve (explaining the additional deltoid/shoulder findings) and the radial nerve (explaining the wrist drop) — a combined deficit that localizes the lesion further proximal than an isolated peripheral radial nerve injury could.',
+            difficulty: 3,
+            choices: [
+              { text: 'First patient: isolated radial nerve injury; Second patient: posterior cord injury', isCorrect: true },
+              {
+                text: 'First patient: posterior cord injury; Second patient: isolated radial nerve injury',
+                isCorrect: false,
+                explanation: 'This reverses the correct localization; additional deltoid weakness and lateral shoulder sensory loss indicate the more proximal posterior cord lesion, not an isolated distal radial nerve injury.',
+              },
+              {
+                text: 'Both patients have isolated radial nerve injuries, since both have wrist drop',
+                isCorrect: false,
+                explanation: 'Wrist drop alone does not distinguish the two; the presence or absence of deltoid weakness and lateral shoulder sensory loss is the key differentiating feature.',
+              },
+              {
+                text: 'Both patients have posterior cord injuries, since the posterior cord always causes wrist drop',
+                isCorrect: false,
+                explanation: 'While a posterior cord injury does cause wrist drop, an isolated peripheral radial nerve injury (as in the first patient) can also cause wrist drop without any posterior cord (or axillary nerve) involvement.',
+              },
+              {
+                text: 'Deltoid strength and shoulder sensation cannot help localize a lesion causing wrist drop',
+                isCorrect: false,
+                explanation: 'These findings are in fact the key distinguishing features between an isolated radial nerve lesion and a more proximal posterior cord lesion, both of which cause wrist drop.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the "ulnar paradox": a more distal ulnar nerve lesion causes worse clawing than a proximal one',
+        summary:
+          'Counterintuitively, a distal ulnar nerve lesion (at the wrist) produces a more pronounced claw hand than a proximal lesion (at the elbow), because a proximal lesion also denervates the flexor digitorum profundus to the ring and little fingers, weakening the very muscle that flexes the distal interphalangeal joints and contributes to the clawed posture — so a proximal lesion "self-limits" the clawing by also disabling one of its causes, an effect known as the ulnar paradox.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'Two patients have ulnar nerve injuries: one at the wrist (distal) and one at the elbow (proximal). Counterintuitively, the patient with the more proximal (elbow-level) injury has a less pronounced claw hand deformity than the patient with the more distal (wrist-level) injury. Denervation of which specific muscle, present only with the proximal lesion, explains this paradoxical finding?',
+            explanation:
+              'This is the "ulnar paradox." A proximal ulnar nerve lesion at the elbow denervates the flexor digitorum profundus (to the ring and little fingers) in addition to the intrinsic hand muscles, whereas a distal lesion at the wrist spares this muscle, since its nerve branch has already been given off more proximally. Because the flexor digitorum profundus is one of the muscles contributing to the flexed-finger clawed posture (via unopposed flexion at the distal interphalangeal joints), its loss in a proximal lesion actually reduces the degree of visible clawing — paradoxically making the more proximal, seemingly more severe injury look milder on inspection.',
+            difficulty: 3,
+            choices: [
+              { text: 'Flexor digitorum profundus (to the ring and little fingers), denervated only by the proximal lesion', isCorrect: true },
+              {
+                text: 'Flexor digitorum superficialis, denervated only by the proximal lesion',
+                isCorrect: false,
+                explanation: 'The flexor digitorum superficialis is innervated by the median nerve, not the ulnar nerve, and is not the muscle responsible for the ulnar paradox.',
+              },
+              {
+                text: 'Flexor carpi ulnaris, denervated only by the distal lesion',
+                isCorrect: false,
+                explanation: 'The flexor carpi ulnaris is denervated by a proximal (not distal) ulnar lesion, but it flexes the wrist, not the fingers, and is not the muscle responsible for the paradoxical clawing difference.',
+              },
+              {
+                text: 'Abductor pollicis brevis, denervated only by the proximal lesion',
+                isCorrect: false,
+                explanation: 'This is a median-innervated thenar muscle, unrelated to the ulnar nerve or the claw hand deformity.',
+              },
+              {
+                text: 'Interossei muscles, denervated only by the distal lesion',
+                isCorrect: false,
+                explanation: 'The interossei are denervated by both proximal and distal ulnar nerve lesions equally, since their nerve supply branches off distally in both cases; they are not the differentiating factor in the ulnar paradox.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the "hand of benediction" from proximal median nerve injury',
+        summary:
+          'A proximal median nerve injury (at or above the elbow) paralyzes the flexor digitorum profundus to the index/middle fingers and the flexor digitorum superficialis to all fingers, so that when the patient attempts to make a fist, the thumb, index, and middle fingers remain extended while the ulnar-innervated ring and little fingers flex normally — the "hand of benediction" posture, seen specifically on attempted fist-making rather than at rest.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a proximal median nerve injury at the elbow is asked to make a fist. His ring and little fingers curl normally into the palm, but his thumb, index, and middle fingers remain extended, unable to flex. What is this posture called, and why are the ring and little fingers spared while the more radial digits are not?',
+            explanation:
+              'This is the "hand of benediction," seen specifically when a patient with a proximal median nerve injury attempts to make a fist. The median nerve normally innervates the flexor digitorum superficialis (to all four fingers) and the flexor digitorum profundus to the index and middle fingers, so a proximal lesion paralyzes flexion of the thumb, index, and middle fingers. The ring and little fingers, however, are spared because their flexor digitorum profundus supply comes from the ulnar nerve, which remains intact, allowing them to flex normally even as the more radial digits remain extended.',
+            difficulty: 3,
+            choices: [
+              { text: 'Hand of benediction; the ring and little fingers’ flexor digitorum profundus is ulnar-, not median-, innervated', isCorrect: true },
+              {
+                text: 'Claw hand; the ring and little fingers’ flexor digitorum profundus is median-, not ulnar-, innervated',
+                isCorrect: false,
+                explanation: 'This describes claw hand from ulnar nerve injury, a different posture (seen at rest, from intrinsic muscle paralysis) and the innervation assignment is reversed — the ring/little finger FDP is ulnar-, not median-, innervated.',
+              },
+              {
+                text: 'Wrist drop; the ring and little fingers’ extensors are radial-, not median-, innervated',
+                isCorrect: false,
+                explanation: 'Wrist drop results from radial, not median, nerve injury and involves inability to extend, not flex, the wrist and fingers.',
+              },
+              {
+                text: 'Ape hand; the thenar muscles are ulnar-, not median-, innervated',
+                isCorrect: false,
+                explanation: 'Ape hand refers to thenar wasting from median nerve injury at the wrist, a different deformity from the fist-making posture described, and the thenar muscles are in fact median-, not ulnar-, innervated.',
+              },
+              {
+                text: 'Boutonniere deformity; caused by extensor tendon injury, not a nerve lesion',
+                isCorrect: false,
+                explanation: 'Boutonniere deformity is a structural tendon injury at the PIP joint, unrelated to median nerve function or this fist-making test.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish long thoracic, spinal accessory, and dorsal scapular nerve injury as causes of scapular winging',
+        summary:
+          'Three distinct nerve injuries can cause scapular winging with different patterns: long thoracic nerve injury (serratus anterior) causes medial winging worsened by pushing against a wall; spinal accessory nerve injury (trapezius) causes lateral winging with a drooped shoulder and weak shrug; and dorsal scapular nerve injury (rhomboids) causes a milder winging with the scapula displaced laterally and slightly rotated, without the shoulder drop or shrug weakness of a spinal accessory lesion.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Three patients have scapular winging from three different nerve injuries. The first has medial winging that worsens when pushing against a wall, with normal shoulder shrug. The second has a drooped shoulder, lateral winging, and weak shoulder shrug. The third has mild winging with a laterally displaced, slightly rotated scapula, normal shoulder shrug, and no shoulder droop. Which nerve is most likely injured in each patient, respectively?',
+            explanation:
+              'The first patient’s pattern, classic medial winging worsened by pushing (a maneuver that tests serratus anterior function), with a normal shrug, indicates long thoracic nerve injury. The second patient’s drooped shoulder with lateral winging and weak shrug indicates spinal accessory nerve injury (trapezius paralysis), since the trapezius normally elevates the shoulder and assists scapular rotation during abduction. The third patient’s milder winging with lateral scapular displacement, normal shrug, and no shoulder droop indicates dorsal scapular nerve injury (rhomboid paralysis), a subtler and less functionally significant deficit than the other two.',
+            difficulty: 3,
+            choices: [
+              { text: 'First: long thoracic nerve; Second: spinal accessory nerve; Third: dorsal scapular nerve', isCorrect: true },
+              {
+                text: 'First: spinal accessory nerve; Second: dorsal scapular nerve; Third: long thoracic nerve',
+                isCorrect: false,
+                explanation: 'This does not match the classic clinical patterns; long thoracic nerve injury specifically causes the wall-push-aggravated medial winging described in the first patient, not spinal accessory injury.',
+              },
+              {
+                text: 'First: dorsal scapular nerve; Second: long thoracic nerve; Third: spinal accessory nerve',
+                isCorrect: false,
+                explanation: 'The shoulder droop and weak shrug described in the second patient are specific to spinal accessory (trapezius) injury, not long thoracic nerve injury.',
+              },
+              {
+                text: 'All three patients have long thoracic nerve injury, since all have scapular winging',
+                isCorrect: false,
+                explanation: 'While all three conditions cause winging, each has a distinct associated pattern (wall-push aggravation, shoulder droop/weak shrug, or mild lateral displacement) that allows them to be distinguished clinically.',
+              },
+              {
+                text: 'Scapular winging patterns cannot be used to distinguish between these three nerve injuries',
+                isCorrect: false,
+                explanation: 'Each of these three nerve injuries produces a recognizably distinct winging pattern and associated findings, which is precisely how they are clinically differentiated.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the actions of the four rotator cuff (SITS) muscles',
+        summary:
+          'The four rotator cuff muscles, remembered by the mnemonic "SITS," each perform a distinct action on the shoulder: Supraspinatus initiates abduction; Infraspinatus and Teres minor externally rotate the shoulder; and Subscapularis internally rotates the shoulder. Together they also dynamically stabilize the humeral head within the glenoid fossa during all arm movements.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient has an isolated tear of the subscapularis muscle, confirmed on MRI, and a positive lift-off test (inability to lift the hand off the lower back). Which specific shoulder movement is this muscle primarily responsible for, distinguishing its function from the other three rotator cuff muscles?',
+            explanation:
+              'The subscapularis is the only one of the four rotator cuff (SITS) muscles responsible for internal rotation of the shoulder, which is why its injury is tested with the lift-off test (an internal rotation maneuver). This distinguishes it from the supraspinatus (abduction initiation) and the infraspinatus and teres minor (both external rotators) — together, the mnemonic "SITS" captures each muscle’s distinct primary action.',
+            difficulty: 2,
+            choices: [
+              { text: 'Internal rotation of the shoulder', isCorrect: true },
+              {
+                text: 'Abduction initiation of the shoulder',
+                isCorrect: false,
+                explanation: 'This is the primary action of the supraspinatus, not the subscapularis.',
+              },
+              {
+                text: 'External rotation of the shoulder',
+                isCorrect: false,
+                explanation: 'This is the primary action of the infraspinatus and teres minor, not the subscapularis, which performs the opposite movement (internal rotation).',
+              },
+              {
+                text: 'Adduction of the shoulder',
+                isCorrect: false,
+                explanation: 'Adduction is primarily performed by muscles like the latissimus dorsi and pectoralis major, not the rotator cuff muscles.',
+              },
+              {
+                text: 'Extension of the elbow',
+                isCorrect: false,
+                explanation: 'The rotator cuff muscles act on the shoulder joint, not the elbow; elbow extension is performed by the triceps.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the boundaries of the quadrangular space and the axillary nerve’s course through it',
+        summary:
+          'The quadrangular space, bounded by the teres minor superiorly, teres major inferiorly, the long head of the triceps medially, and the surgical neck of the humerus laterally, transmits the axillary nerve and posterior circumflex humeral artery from the posterior shoulder region into the deltoid muscle.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient with quadrilateral space syndrome (compression within a specific anatomic space bounded by the teres minor, teres major, long head of the triceps, and the humerus) develops deltoid weakness and lateral shoulder numbness. Compression of which nerve, passing through this space, best explains these symptoms?',
+            explanation:
+              'The quadrangular (quadrilateral) space is bounded by the teres minor superiorly, teres major inferiorly, the long head of the triceps medially, and the surgical neck of the humerus laterally. The axillary nerve (along with the posterior circumflex humeral artery) passes through this space to reach the deltoid muscle and the overlying lateral shoulder skin; compression here (quadrilateral space syndrome) therefore produces deltoid weakness and lateral shoulder sensory loss, the same territory affected by axillary nerve injury from other causes like anterior shoulder dislocation.',
+            difficulty: 3,
+            choices: [
+              { text: 'Axillary nerve', isCorrect: true },
+              {
+                text: 'Radial nerve',
+                isCorrect: false,
+                explanation: 'The radial nerve passes through the triangular interval, a different anatomic space, not the quadrangular space.',
+              },
+              {
+                text: 'Suprascapular nerve',
+                isCorrect: false,
+                explanation: 'This nerve passes through the suprascapular notch, a different location from the quadrangular space.',
+              },
+              {
+                text: 'Musculocutaneous nerve',
+                isCorrect: false,
+                explanation: 'This nerve pierces the coracobrachialis muscle anteriorly and does not pass through the posterior quadrangular space.',
+              },
+              {
+                text: 'Long thoracic nerve',
+                isCorrect: false,
+                explanation: 'This nerve travels along the lateral chest wall to the serratus anterior and does not pass through the quadrangular space.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the triangular interval and the radial nerve’s course with the profunda brachii artery',
+        summary:
+          'The triangular interval, bounded by the teres major superiorly, the long head of the triceps medially, and the lateral head of the triceps (with the humeral shaft) laterally, transmits the radial nerve and the profunda brachii (deep brachial) artery from the posterior arm into the spiral groove of the humerus.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'The radial nerve and its accompanying artery pass from the posterior compartment of the arm into the spiral groove of the humerus by traveling through a triangular space bounded by the teres major and the two heads of the triceps. Which artery travels alongside the radial nerve through this space?',
+            explanation:
+              'The triangular interval, bounded by the teres major superiorly, the long head of the triceps medially, and the lateral head of the triceps/humeral shaft laterally, transmits the radial nerve together with the profunda brachii (deep brachial) artery as they pass from the posterior arm into the spiral groove of the humerus — explaining why a fracture at the spiral groove can injure both the nerve and this artery together.',
+            difficulty: 3,
+            choices: [
+              { text: 'Profunda brachii (deep brachial) artery', isCorrect: true },
+              {
+                text: 'Posterior circumflex humeral artery',
+                isCorrect: false,
+                explanation: 'This artery travels with the axillary nerve through the quadrangular space, a different anatomic space from the triangular interval.',
+              },
+              {
+                text: 'Brachial artery',
+                isCorrect: false,
+                explanation: 'The brachial artery travels in the anterior compartment of the arm alongside the median nerve, not through the posterior triangular interval with the radial nerve.',
+              },
+              {
+                text: 'Anterior circumflex humeral artery',
+                isCorrect: false,
+                explanation: 'This smaller vessel travels anteriorly around the humeral neck and is not associated with the triangular interval or radial nerve.',
+              },
+              {
+                text: 'Subscapular artery',
+                isCorrect: false,
+                explanation: 'This artery arises from the axillary artery and supplies the subscapularis and surrounding structures, not the specific vessel accompanying the radial nerve through the triangular interval.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the median cubital vein as the preferred venipuncture site overlying the bicipital aponeurosis',
+        summary:
+          'The median cubital vein, which connects the cephalic and basilic veins across the antecubital fossa, is the preferred site for routine venipuncture because it is typically large, superficial, and relatively fixed in position. It lies superficial to the bicipital aponeurosis, a fibrous band that helps protect the underlying brachial artery and median nerve from an improperly placed needle.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A phlebotomist selects a large, superficial vein crossing the antecubital fossa for routine blood draws, connecting two other named veins of the arm. A fibrous band deep to this vein helps protect the brachial artery and median nerve from inadvertent needle injury. Which vein is being accessed, and what is the name of this protective fibrous band?',
+            explanation:
+              'This is the median cubital vein, which connects the cephalic vein (laterally) and the basilic vein (medially) across the antecubital fossa and is the preferred site for routine venipuncture due to its size, superficial location, and relatively fixed position. It lies superficial to the bicipital aponeurosis, a fibrous expansion of the biceps tendon that helps shield the underlying brachial artery and median nerve from injury during venipuncture, provided the needle does not penetrate too deeply.',
+            difficulty: 2,
+            choices: [
+              { text: 'Median cubital vein; bicipital aponeurosis', isCorrect: true },
+              {
+                text: 'Basilic vein; brachial fascia',
+                isCorrect: false,
+                explanation: 'The basilic vein is one of the two veins connected by the median cubital vein, not the vein typically selected first for venipuncture, and "brachial fascia" is not the specific protective structure named here.',
+              },
+              {
+                text: 'Cephalic vein; deltopectoral fascia',
+                isCorrect: false,
+                explanation: 'The cephalic vein runs more laterally along the arm and shoulder (deltopectoral groove), not across the antecubital fossa where the median cubital vein is found.',
+              },
+              {
+                text: 'Median antebrachial vein; flexor retinaculum',
+                isCorrect: false,
+                explanation: 'The median antebrachial vein is a smaller forearm vein, and the flexor retinaculum is located at the wrist, not the antecubital fossa.',
+              },
+              {
+                text: 'Accessory cephalic vein; extensor retinaculum',
+                isCorrect: false,
+                explanation: 'This is not the classic preferred venipuncture vein, and the extensor retinaculum is a dorsal wrist structure unrelated to the antecubital fossa.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the basilic vein as the preferred access for PICC line placement',
+        summary:
+          'The basilic vein, running along the medial arm before piercing the deep fascia partway up the arm to join the brachial veins, is the preferred site for peripherally inserted central catheter (PICC) line placement because of its large caliber, relatively straight course toward the axillary and subclavian veins, and lower risk of arterial puncture compared to the more variable cephalic vein.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A nurse selects a large-caliber vein along the medial aspect of the upper arm for placement of a peripherally inserted central catheter (PICC line), rather than a vein along the lateral arm. Which vein is preferentially selected, and why is it generally favored for this purpose?',
+            explanation:
+              'The basilic vein, running along the medial arm, is generally preferred for PICC line placement because of its larger caliber and more direct, straighter course as it ascends to join the axillary and subclavian veins toward the superior vena cava. In contrast, the cephalic vein (lateral arm) has a more tortuous course and can narrow significantly near the deltopectoral groove, making catheter advancement more difficult and increasing the risk of malposition.',
+            difficulty: 2,
+            choices: [
+              { text: 'Basilic vein, due to its larger caliber and straighter course toward the central veins', isCorrect: true },
+              {
+                text: 'Cephalic vein, due to its larger caliber and straighter course toward the central veins',
+                isCorrect: false,
+                explanation: 'The cephalic vein is generally the less preferred option for PICC placement due to its more variable and tortuous course, particularly as it narrows near the deltopectoral groove.',
+              },
+              {
+                text: 'Median cubital vein, due to its direct connection to the subclavian vein',
+                isCorrect: false,
+                explanation: 'The median cubital vein is a connecting vessel in the antecubital fossa, typically used for routine venipuncture rather than central catheter placement, and does not directly connect to the subclavian vein.',
+              },
+              {
+                text: 'Radial vein, due to its proximity to the radial artery',
+                isCorrect: false,
+                explanation: 'The radial vein is a small deep vein of the forearm, not the vessel of choice for PICC line placement.',
+              },
+              {
+                text: 'Axillary vein, due to its superficial location in the upper arm',
+                isCorrect: false,
+                explanation: 'The axillary vein is deeper and located in the axilla, not the upper arm, and is not the peripheral vein typically cannulated for PICC insertion, though the catheter tip ultimately advances toward this level.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the cephalic vein’s course through the deltopectoral groove',
+        summary:
+          'The cephalic vein runs along the lateral aspect of the arm and forearm, then ascends through the deltopectoral groove (between the deltoid and pectoralis major muscles) before piercing the clavipectoral fascia to join the axillary vein — a superficial landmark used for both venous access and, historically, as a surgical guide to the axillary vessels.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 30,
+        variations: [
+          {
+            stem: 'A superficial vein running along the lateral arm ascends through a groove between two chest wall muscles before piercing a deeper fascial layer to join a major vein near the shoulder. Which vein is this, which groove does it pass through, and which vein does it ultimately join?',
+            explanation:
+              'This is the cephalic vein, which runs along the lateral arm and ascends through the deltopectoral groove (between the deltoid and pectoralis major muscles) before piercing the clavipectoral fascia to drain into the axillary vein. This superficial course has historically made it a useful landmark for surgically locating the deeper axillary vessels.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cephalic vein; deltopectoral groove; joins the axillary vein', isCorrect: true },
+              {
+                text: 'Basilic vein; deltopectoral groove; joins the axillary vein',
+                isCorrect: false,
+                explanation: 'The basilic vein runs along the medial, not lateral, arm and pierces the deep fascia of the arm itself, not the deltopectoral groove, before joining the brachial veins.',
+              },
+              {
+                text: 'Cephalic vein; costoclavicular space; joins the subclavian vein directly',
+                isCorrect: false,
+                explanation: 'The cephalic vein passes through the deltopectoral groove, not the costoclavicular space, and joins the axillary vein, not the subclavian vein directly.',
+              },
+              {
+                text: 'Median cubital vein; deltopectoral groove; joins the basilic vein',
+                isCorrect: false,
+                explanation: 'The median cubital vein is located at the elbow (antecubital fossa), not ascending through the deltopectoral groove.',
+              },
+              {
+                text: 'External jugular vein; deltopectoral groove; joins the axillary vein',
+                isCorrect: false,
+                explanation: 'The external jugular vein is a neck vein that joins the subclavian vein, not a vessel that travels through the deltopectoral groove of the arm.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the great saphenous vein as the longest vein in the body and its saphenofemoral junction',
+        summary:
+          'The great saphenous vein, the longest vein in the human body, runs from the dorsum of the foot, anterior to the medial malleolus, up the medial leg and thigh, before draining into the femoral vein at the saphenofemoral junction in the femoral triangle — a key landmark for vein stripping surgery and a common site of venous incompetence leading to varicose veins.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A superficial vein originating on the dorsum of the foot passes just anterior to the medial malleolus, ascends along the medial leg and thigh, and ultimately drains into the femoral vein at a specific junction within the femoral triangle. Which vein is this, and what is its distinction as the longest vein in the body significant for clinically?',
+            explanation:
+              'This is the great saphenous vein, the longest vein in the human body, which passes anterior to the medial malleolus (a reliable landmark for venous access even when a patient is in shock and other veins have collapsed) before ascending the medial leg and thigh to drain into the femoral vein at the saphenofemoral junction within the femoral triangle. Its long, superficial course makes it both a common site of varicose vein formation (from valvular incompetence) and a historically important vessel for coronary artery bypass grafting.',
+            difficulty: 2,
+            choices: [
+              { text: 'Great saphenous vein, draining into the femoral vein at the saphenofemoral junction', isCorrect: true },
+              {
+                text: 'Small saphenous vein, draining into the femoral vein at the saphenofemoral junction',
+                isCorrect: false,
+                explanation: 'The small saphenous vein runs along the posterior leg and drains into the popliteal vein, not the femoral vein, and is not the longest vein in the body.',
+              },
+              {
+                text: 'Great saphenous vein, draining into the popliteal vein',
+                isCorrect: false,
+                explanation: 'The great saphenous vein drains into the femoral vein at the saphenofemoral junction, not the popliteal vein, which instead receives the small saphenous vein.',
+              },
+              {
+                text: 'Femoral vein, draining into the great saphenous vein',
+                isCorrect: false,
+                explanation: 'This reverses the actual direction of drainage; the great saphenous vein drains into the femoral vein, not the other way around.',
+              },
+              {
+                text: 'Popliteal vein, draining into the great saphenous vein at the knee',
+                isCorrect: false,
+                explanation: 'This also reverses the relationship; the popliteal vein is a deep vein that receives the small saphenous vein and is not connected to the great saphenous vein in this manner.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the small saphenous vein’s course alongside the sural nerve',
+        summary:
+          'The small saphenous vein arises from the lateral dorsal venous arch of the foot, passes posterior to the lateral malleolus, and ascends the posterior calf alongside the sural nerve before draining into the popliteal vein — a close anatomic relationship that means procedures on this vein (such as stripping) risk injury to the sural nerve, causing lateral foot/heel numbness.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'Following surgical stripping of a superficial vein that runs posterior to the lateral malleolus and up the back of the calf to drain into the popliteal vein, a patient develops numbness over the lateral aspect of the foot and heel. Injury to which nerve, which travels in close proximity to this vein throughout its course, best explains this complication?',
+            explanation:
+              'This is injury to the sural nerve, which travels in close anatomic association with the small saphenous vein as it ascends the posterior calf from behind the lateral malleolus to the popliteal fossa. Because the two structures run so closely together, surgical procedures on the small saphenous vein, such as vein stripping, carry a recognized risk of sural nerve injury, causing sensory loss over the lateral foot and heel, the nerve’s area of cutaneous distribution.',
+            difficulty: 3,
+            choices: [
+              { text: 'Sural nerve', isCorrect: true },
+              {
+                text: 'Saphenous nerve',
+                isCorrect: false,
+                explanation: 'The saphenous nerve travels with the great, not small, saphenous vein along the medial leg, a different vessel and location from the one described.',
+              },
+              {
+                text: 'Tibial nerve',
+                isCorrect: false,
+                explanation: 'The tibial nerve travels more deeply through the leg and is not the superficial nerve classically associated with the small saphenous vein.',
+              },
+              {
+                text: 'Superficial fibular nerve',
+                isCorrect: false,
+                explanation: 'This nerve travels in the lateral compartment of the leg, supplying the dorsum of the foot, not in close association with the small saphenous vein posteriorly.',
+              },
+              {
+                text: 'Deep fibular nerve',
+                isCorrect: false,
+                explanation: 'This nerve travels in the anterior compartment of the leg, unrelated to the posterior course of the small saphenous vein.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link incompetent perforator veins to venous ulcer formation at the medial malleolus',
+        summary:
+          'Perforator veins connect the superficial venous system (great/small saphenous veins) to the deep venous system through the deep fascia. When their one-way valves become incompetent, blood is forced back into the superficial system under high pressure during calf muscle contraction, leading to chronic venous hypertension and, over time, venous ulcers characteristically located over the medial malleolus (the "gaiter" area), where perforator veins are most concentrated.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with long-standing varicose veins develops a chronic, shallow, poorly healing ulcer just above the medial malleolus, with surrounding skin hyperpigmentation. Incompetence of which type of vein, normally connecting the superficial and deep venous systems, best explains this location and mechanism of ulceration?',
+            explanation:
+              'This is a venous stasis ulcer, resulting from chronic venous hypertension due to incompetent perforator veins, which normally connect the superficial (saphenous) venous system to the deep venous system through the deep fascia, allowing blood to flow one-way from superficial to deep. When their valves fail, high pressure generated by calf muscle contraction is instead transmitted back into the superficial veins and skin, causing chronic venous hypertension, tissue hypoxia, and skin breakdown. Ulcers form characteristically over the medial malleolus (the "gaiter" area), where a particularly dense concentration of perforator veins is located.',
+            difficulty: 2,
+            choices: [
+              { text: 'Perforator veins, connecting the superficial and deep venous systems', isCorrect: true },
+              {
+                text: 'Deep veins alone, without any involvement of perforator or superficial veins',
+                isCorrect: false,
+                explanation: 'While deep venous insufficiency can contribute to chronic venous disease, the classic mechanism specifically linking superficial varicosities to medial malleolar ulcers is incompetence of the connecting perforator veins.',
+              },
+              {
+                text: 'Arterial perforator branches, connecting the superficial and deep arterial systems',
+                isCorrect: false,
+                explanation: 'Venous ulcers result from venous, not arterial, pathology; arterial insufficiency ulcers have a different appearance and typically occur on the toes/lateral foot, not the medial malleolus.',
+              },
+              {
+                text: 'Lymphatic channels, connecting the superficial and deep lymphatic systems',
+                isCorrect: false,
+                explanation: 'Lymphatic dysfunction causes lymphedema, a different process from the venous hypertension mechanism responsible for this classic medial malleolar ulcer.',
+              },
+              {
+                text: 'Great saphenous vein alone, without any perforator vein involvement',
+                isCorrect: false,
+                explanation: 'While great saphenous vein incompetence contributes to superficial varicosities, the mechanism specifically transmitting pressure to the skin and causing ulceration involves incompetent perforator veins connecting to the deep system.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the classic dermatomes of the hand: C6, C7, and C8',
+        summary:
+          'The hand’s dermatomes follow a simple pattern useful for localizing cervical nerve root lesions: C6 supplies the thumb, C7 supplies the middle finger, and C8 supplies the little finger — a pattern sometimes remembered by counting the digits (thumb through little finger) as roughly corresponding to the numbers 6, 7, and 8.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with neck pain has numbness isolated to the middle finger, with normal sensation over the thumb and little finger. Compression of which cervical nerve root best explains this specific pattern of sensory loss?',
+            explanation:
+              'The middle finger corresponds to the C7 dermatome, distinct from the thumb (C6) and little finger (C8). Isolated numbness of the middle finger, with sparing of the thumb and little finger, therefore localizes to compression of the C7 nerve root, most commonly from a herniated disc at the C6-C7 level.',
+            difficulty: 2,
+            choices: [
+              { text: 'C7', isCorrect: true },
+              {
+                text: 'C6',
+                isCorrect: false,
+                explanation: 'The C6 dermatome corresponds to the thumb, not the middle finger, which is explicitly spared in this patient.',
+              },
+              {
+                text: 'C8',
+                isCorrect: false,
+                explanation: 'The C8 dermatome corresponds to the little finger, not the middle finger, and the little finger is explicitly spared in this patient.',
+              },
+              {
+                text: 'T1',
+                isCorrect: false,
+                explanation: 'The T1 dermatome corresponds to the medial forearm, not any specific finger.',
+              },
+              {
+                text: 'C5',
+                isCorrect: false,
+                explanation: 'The C5 dermatome corresponds to the lateral upper arm/shoulder region, not any of the fingers.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recall the classic dermatomes of the leg and foot: L4, L5, and S1',
+        summary:
+          'The lower limb’s dermatomes follow a useful clinical pattern: L4 supplies the medial leg and big toe, L5 supplies the dorsum of the foot and lateral leg (including the web space between the first and second toes), and S1 supplies the lateral foot and sole — a pattern that, together with reflex and motor testing, helps localize lumbosacral nerve root compression.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a herniated lumbar disc has numbness isolated to the lateral aspect of the foot and sole, with normal sensation over the medial leg and the dorsum of the foot. Compression of which nerve root best explains this specific pattern of sensory loss?',
+            explanation:
+              'The lateral foot and sole correspond to the S1 dermatome, distinct from the medial leg/big toe (L4) and the dorsum of the foot/lateral leg (L5), both of which are spared in this patient. This pattern of isolated lateral foot/sole numbness therefore localizes to compression of the S1 nerve root, commonly from a herniated disc at the L5-S1 level, and would classically also be associated with a diminished ankle (Achilles) reflex.',
+            difficulty: 2,
+            choices: [
+              { text: 'S1', isCorrect: true },
+              {
+                text: 'L4',
+                isCorrect: false,
+                explanation: 'The L4 dermatome corresponds to the medial leg and big toe, which are explicitly spared in this patient.',
+              },
+              {
+                text: 'L5',
+                isCorrect: false,
+                explanation: 'The L5 dermatome corresponds to the dorsum of the foot and lateral leg, which are explicitly spared in this patient.',
+              },
+              {
+                text: 'S2',
+                isCorrect: false,
+                explanation: 'The S2 dermatome corresponds to the posterior thigh and calf, not the lateral foot and sole.',
+              },
+              {
+                text: 'L3',
+                isCorrect: false,
+                explanation: 'The L3 dermatome corresponds to the anterior/medial thigh and knee, not the foot.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Map deep tendon reflexes to their corresponding spinal nerve root levels',
+        summary:
+          'Deep tendon reflexes test specific spinal cord segments: the biceps reflex tests C5-C6, the brachioradialis reflex tests C6, the triceps reflex tests C7, the patellar (knee-jerk) reflex tests L2-L4 (most commonly cited as L4), and the Achilles (ankle-jerk) reflex tests S1 — a mapping used to localize the level of a suspected nerve root or spinal cord lesion based on which reflexes are diminished or absent.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient with a suspected herniated disc has a diminished Achilles (ankle-jerk) reflex on one side, with normal patellar, biceps, and triceps reflexes. Compression of which nerve root level does this isolated finding suggest?',
+            explanation:
+              'The Achilles (ankle-jerk) reflex specifically tests the S1 nerve root level. An isolated diminished Achilles reflex, with preserved patellar (L4), biceps (C5-C6), and triceps (C7) reflexes, therefore localizes the suspected lesion to the S1 level, consistent with compression at the L5-S1 disc level affecting the traversing S1 nerve root.',
+            difficulty: 2,
+            choices: [
+              { text: 'S1', isCorrect: true },
+              {
+                text: 'L4',
+                isCorrect: false,
+                explanation: 'L4 is tested by the patellar reflex, which is explicitly normal in this patient.',
+              },
+              {
+                text: 'C7',
+                isCorrect: false,
+                explanation: 'C7 is tested by the triceps reflex, which is explicitly normal in this patient, and is a cervical, not lumbosacral, level.',
+              },
+              {
+                text: 'C5-C6',
+                isCorrect: false,
+                explanation: 'C5-C6 is tested by the biceps reflex, which is explicitly normal in this patient, and is a cervical, not lumbosacral, level.',
+              },
+              {
+                text: 'L2-L3',
+                isCorrect: false,
+                explanation: 'These levels are more associated with the cremasteric reflex and hip flexor strength, not the Achilles reflex, which specifically tests S1.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize transient global amnesia from temporary hippocampal dysfunction',
+        summary:
+          'Transient global amnesia is a sudden, self-limited episode of profound anterograde amnesia (with striking repetitive questioning) and variable retrograde amnesia, but preserved personal identity, alertness, and immediate (working) memory, thought to result from transient dysfunction of the hippocampus, particularly the CA1 region, sometimes provoked by cold water immersion, Valsalva, or emotional stress. It resolves within 24 hours, leaving a permanent gap only for the episode itself.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 71-year-old woman is brought to the emergency department after her husband found her repeatedly asking where her sister was, despite having driven together to visit that sister only twenty minutes earlier. The episode began abruptly while she was swimming in cold lake water. She has no history of head trauma, seizures, or prior cognitive decline, and takes only a statin. Vital signs are normal. On examination she is awake, oriented to person, and correctly names her husband and the current president. She repeats a string of six digits forward without difficulty. When asked to remember three unrelated objects, however, she recalls none of them after five minutes, and she asks the same three or four questions about why she is in the hospital every few minutes, seemingly unaware she has already asked them. Cranial nerve, motor, sensory, and cerebellar examinations are all normal, and there is no aphasia or apraxia. By the next morning her memory has returned to normal, though she retains no recollection of the emergency department visit itself. Temporary dysfunction of which of the following structures is most likely responsible for this presentation?',
+            explanation:
+              'This is transient global amnesia: sudden-onset anterograde amnesia (0/3 recall at five minutes despite a normal immediate digit span, reflected in her repetitive questioning), preserved identity and alertness, no other focal deficits, and full resolution within 24 hours with a permanent gap for the event itself. It is attributed to transient dysfunction of the hippocampus, especially the CA1 region, sometimes triggered by events like cold water immersion, Valsalva maneuvers, or emotional stress, possibly via transient venous congestion. The repetitive, moment-to-moment memory failure reflects an inability to consolidate new episodic memories, a specifically hippocampal function.',
+            difficulty: 3,
+            choices: [
+              { text: 'Hippocampus', isCorrect: true },
+              {
+                text: 'Amygdala',
+                isCorrect: false,
+                explanation: 'The amygdala mediates emotional processing and fear conditioning, not the formation of new episodic memories; its dysfunction would not produce this specific anterograde amnesia pattern.',
+              },
+              {
+                text: 'Mammillary bodies',
+                isCorrect: false,
+                explanation: 'Mammillary body damage is classically associated with the chronic, often irreversible amnesia of Korsakoff syndrome (from thiamine deficiency), not this acute, fully reversible episode without any nutritional or alcohol-related history.',
+              },
+              {
+                text: 'Medial longitudinal fasciculus',
+                isCorrect: false,
+                explanation: 'This structure coordinates conjugate horizontal eye movements; its damage causes internuclear ophthalmoplegia, not memory impairment, and this patient has no eye movement abnormality.',
+              },
+              {
+                text: 'Prefrontal cortex',
+                isCorrect: false,
+                explanation: 'Prefrontal dysfunction typically impairs executive function, working memory, and behavior/personality, not this specific, isolated pattern of profound anterograde amnesia with otherwise normal cognition.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Wernicke encephalopathy from thiamine-deficient damage to the mammillary bodies',
+        summary:
+          'Wernicke encephalopathy, caused by thiamine (vitamin B1) deficiency classically in alcohol use disorder or malnutrition, produces a triad of confusion, ataxia, and ophthalmoplegia/nystagmus. Thiamine-dependent enzymes are concentrated in periventricular structures, so deficiency preferentially damages the mammillary bodies (along with the periaqueductal gray and medial thalamus), and untreated cases can progress to the irreversible amnesia of Korsakoff syndrome.',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 54-year-old man with a long history of alcohol use disorder is brought to the emergency department by his roommate for three days of worsening confusion and unsteady gait. The roommate reports the patient has eaten very little for the past two weeks. On examination the patient is disoriented to place and date, and his speech is slow but coherent. He has a wide-based, unsteady gait and cannot walk heel-to-toe. Extraocular movements reveal bilateral abduction deficits with rhythmic horizontal oscillations of both eyes. Reflexes and strength are otherwise normal, and there is no facial asymmetry. Bedside glucose is normal. Acute damage to which of the following structures, resulting from this patient’s underlying nutritional deficiency, most directly accounts for his classic triad of findings?',
+            explanation:
+              'Confusion, ataxia, and ophthalmoplegia/nystagmus constitute the Wernicke triad, resulting from thiamine (vitamin B1) deficiency, classically in the setting of alcohol use disorder and poor nutritional intake. Thiamine-dependent metabolic pathways are especially concentrated in periventricular and periaqueductal brain regions, so deficiency preferentially damages the mammillary bodies (along with the periaqueductal gray and medial thalamus), producing this triad. If untreated with thiamine repletion, it can progress to the irreversible anterograde amnesia and confabulation of Korsakoff syndrome, reflecting more permanent mammillary body and thalamic damage.',
+            difficulty: 2,
+            choices: [
+              { text: 'Mammillary bodies', isCorrect: true },
+              {
+                text: 'Hippocampus',
+                isCorrect: false,
+                explanation: 'Isolated hippocampal dysfunction (as in transient global amnesia) does not classically produce ataxia or ophthalmoplegia, both of which are prominent in this patient.',
+              },
+              {
+                text: 'Cerebellar vermis alone',
+                isCorrect: false,
+                explanation: 'Isolated cerebellar vermis damage would produce truncal ataxia but would not explain the ophthalmoplegia/nystagmus or confusion seen here as part of a single unifying process.',
+              },
+              {
+                text: 'Frontal lobe',
+                isCorrect: false,
+                explanation: 'Frontal lobe dysfunction causes behavioral and executive changes, not this specific triad of confusion, ataxia, and ophthalmoplegia tied to thiamine-dependent periventricular structures.',
+              },
+              {
+                text: 'Basal ganglia',
+                isCorrect: false,
+                explanation: 'Basal ganglia damage classically produces movement disorders like parkinsonism or chorea, not the classic Wernicke triad.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Korsakoff syndrome as chronic diencephalic damage following unresolved Wernicke encephalopathy',
+        summary:
+          'Korsakoff syndrome, the chronic sequela of inadequately treated Wernicke encephalopathy, results from lasting damage to the mammillary bodies and the anterior/dorsomedial thalamic nuclei (structures within the Papez memory circuit), producing severe, largely irreversible anterograde amnesia with confabulation, while remote memories and general alertness remain relatively preserved.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 58-year-old man with long-standing alcohol use disorder is evaluated three weeks after being treated for an episode of confusion, unsteady gait, and abnormal eye movements that resolved with thiamine repletion. He now has a persistent, severe inability to form new memories: he cannot recall the name of the hospital or the current year, and when asked about his morning, he confidently describes a detailed but entirely fabricated series of events. Remote memories from decades ago remain largely intact, and he is fully alert with no focal weakness or sensory loss. Chronic damage to which of the following pairs of structures is most likely responsible for this persistent memory disorder?',
+            explanation:
+              'This is Korsakoff syndrome, the chronic amnestic sequela of Wernicke encephalopathy that was not treated quickly enough to prevent lasting neuronal damage. It results from chronic injury to the mammillary bodies and the anterior/dorsomedial thalamic nuclei, key relay structures in the Papez circuit that supports memory consolidation. This produces profound, largely irreversible anterograde amnesia with confabulation (fabricated, confidently stated "memories" filling the gaps), while general alertness, language, and remote memory remain comparatively preserved.',
+            difficulty: 3,
+            choices: [
+              { text: 'Mammillary bodies and anterior/dorsomedial thalamic nuclei', isCorrect: true },
+              {
+                text: 'Hippocampus and amygdala',
+                isCorrect: false,
+                explanation: 'While the hippocampus contributes to memory broadly, the classic, chronic diencephalic damage responsible for Korsakoff syndrome specifically centers on the mammillary bodies and thalamic nuclei, not the amygdala, which mediates emotional processing.',
+              },
+              {
+                text: 'Prefrontal cortex and cerebellum',
+                isCorrect: false,
+                explanation: 'These structures are not the classic sites of damage responsible for the amnestic-confabulatory syndrome of Korsakoff syndrome.',
+              },
+              {
+                text: 'Basal ganglia alone',
+                isCorrect: false,
+                explanation: 'Basal ganglia damage produces movement disorders, not this amnestic-confabulatory syndrome.',
+              },
+              {
+                text: 'Occipital cortex bilaterally',
+                isCorrect: false,
+                explanation: 'Bilateral occipital damage causes cortical blindness (as in Anton syndrome), not this memory disorder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Klüver-Bucy syndrome from bilateral amygdala damage',
+        summary:
+          'Klüver-Bucy syndrome results from bilateral damage to the amygdala (and surrounding anterior temporal lobe), classically from herpes simplex encephalitis, and produces a striking behavioral constellation: hyperorality (placing inappropriate objects in the mouth), hypersexuality, placidity/loss of normal fear responses, and an inability to recognize the emotional or dangerous significance of stimuli.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 45-year-old man is evaluated for a dramatic personality change following recovery from herpes simplex encephalitis that had preferentially affected his temporal lobes bilaterally. His wife reports that he now attempts to put inedible objects in his mouth, has become markedly and inappropriately hypersexual, and approaches strangers and unfamiliar animals without any fear or hesitation, seeming unable to recognize the emotional significance of previously frightening or dangerous situations. Bilateral destruction of which of the following structures is most likely responsible for this constellation of findings?',
+            explanation:
+              'This is Klüver-Bucy syndrome, classically caused by bilateral destruction of the amygdala (and adjacent anterior temporal lobe), as can occur with herpes simplex encephalitis, which has a predilection for the temporal lobes. The amygdala normally attaches emotional and threat-related significance to sensory stimuli; its bilateral loss produces hyperorality, hypersexuality, placidity, and an inability to appropriately fear or avoid dangerous situations, exactly as described in this patient.',
+            difficulty: 2,
+            choices: [
+              { text: 'Amygdala (bilateral)', isCorrect: true },
+              {
+                text: 'Hippocampus (bilateral)',
+                isCorrect: false,
+                explanation: 'Bilateral hippocampal damage causes profound anterograde amnesia, not this specific behavioral constellation of hyperorality, hypersexuality, and placidity.',
+              },
+              {
+                text: 'Mammillary bodies (bilateral)',
+                isCorrect: false,
+                explanation: 'Mammillary body damage is linked to the amnestic syndrome of Korsakoff disease, not this behavioral pattern.',
+              },
+              {
+                text: 'Prefrontal cortex (bilateral)',
+                isCorrect: false,
+                explanation: 'While prefrontal damage can cause behavioral disinhibition, the specific, classic triad described here (particularly hyperorality and loss of fear) is attributed to bilateral amygdala/anterior temporal lobe damage, the hallmark of Klüver-Bucy syndrome.',
+              },
+              {
+                text: 'Hypothalamus (bilateral)',
+                isCorrect: false,
+                explanation: 'Hypothalamic damage affects autonomic and endocrine regulation, not this specific behavioral syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize absence seizures to abnormal thalamocortical circuit oscillations',
+        summary:
+          'Absence seizures are generalized seizures characterized by brief, abrupt lapses in awareness without loss of postural tone, often with subtle motor automatisms, and are associated with generalized 3-Hz spike-and-wave discharges on EEG, frequently provoked by hyperventilation. They result from abnormal, synchronized oscillatory activity within thalamocortical circuits, involving reciprocal connections between the thalamus and cortex.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'An 8-year-old girl is brought to clinic because her teacher has noticed that she frequently "zones out" during class, staring blankly for several seconds before abruptly resuming her previous activity as though nothing happened. These episodes occur dozens of times per day and are sometimes accompanied by subtle eyelid fluttering, but she never falls or has convulsive movements, and she has no memory of the episodes afterward. Hyperventilation for two minutes in the office reproduces a typical episode. EEG shows generalized 3-Hz spike-and-wave discharges. Abnormal, self-sustaining oscillatory activity between the cortex and which of the following structures underlies this seizure type?',
+            explanation:
+              'This presentation, brief staring spells with subtle automatisms, no postictal confusion, provocation by hyperventilation, and generalized 3-Hz spike-and-wave discharges, is classic for absence (petit mal) seizures. These arise from abnormal, synchronized oscillatory activity within thalamocortical circuits, in which reciprocal excitatory and inhibitory connections between the thalamus and cortex generate the generalized, bilaterally synchronous spike-and-wave pattern, distinguishing them from focal seizures arising from a single cortical or temporal lobe focus.',
+            difficulty: 2,
+            choices: [
+              { text: 'Thalamus', isCorrect: true },
+              {
+                text: 'Hippocampus',
+                isCorrect: false,
+                explanation: 'The hippocampus is the classic focus for complex partial (focal impaired-awareness) seizures with mesial temporal sclerosis, a different seizure type with postictal confusion and a focal, not generalized, EEG pattern.',
+              },
+              {
+                text: 'Amygdala',
+                isCorrect: false,
+                explanation: 'The amygdala is not the primary generator of the generalized 3-Hz spike-and-wave pattern characteristic of absence seizures.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'The cerebellum coordinates movement and is not the origin of the thalamocortical oscillations underlying absence seizures.',
+              },
+              {
+                text: 'Basal ganglia',
+                isCorrect: false,
+                explanation: 'The basal ganglia are involved in movement modulation, not the generation of the generalized spike-and-wave discharges of absence seizures.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize complex partial (focal impaired-awareness) seizures to the mesial temporal lobe',
+        summary:
+          'Complex partial (focal impaired-awareness) seizures often arise from a mesial temporal lobe focus, classically involving hippocampal (mesial temporal) sclerosis. They typically begin with an aura (such as a rising epigastric sensation or déjà vu), progress to impaired awareness with oral or manual automatisms, and are followed by postictal confusion and amnesia for the event — distinguishing them from the generalized, automatism-poor pattern of absence seizures.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 26-year-old man presents after his girlfriend witnessed an episode in which he suddenly stopped talking mid-sentence, stared blankly for about a minute, and began smacking his lips and picking at his shirt repetitively. He did not respond to his name during the episode. Afterward he was confused for several minutes and had no memory of the event, though he recalled experiencing a rising sensation in his stomach and a sudden intense feeling of déjà vu just before it began. MRI reveals atrophy and increased T2 signal in the mesial temporal lobe on one side. Dysfunction originating in which of the following structures is the most likely seizure focus?',
+            explanation:
+              'This is a complex partial (focal impaired-awareness) seizure, characterized by an aura (rising epigastric sensation, déjà vu), impaired awareness with oral and manual automatisms (lip smacking, picking at clothing), and postictal confusion with amnesia — a pattern classically arising from a hippocampal (mesial temporal) sclerosis focus, as confirmed by the MRI findings. This contrasts with absence seizures, which lack an aura, automatisms are less prominent, and there is no postictal confusion.',
+            difficulty: 2,
+            choices: [
+              { text: 'Hippocampus (mesial temporal lobe)', isCorrect: true },
+              {
+                text: 'Thalamus',
+                isCorrect: false,
+                explanation: 'The thalamus is the classic site of abnormal oscillation in generalized absence seizures, which lack an aura, prominent automatisms, and postictal confusion, all present in this patient.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'The cerebellum is not a classic seizure focus and is not associated with this presentation.',
+              },
+              {
+                text: 'Occipital cortex',
+                isCorrect: false,
+                explanation: 'Occipital lobe seizures classically produce visual auras (flashing lights), not the epigastric/déjà vu aura and automatisms described here.',
+              },
+              {
+                text: 'Parietal cortex',
+                isCorrect: false,
+                explanation: 'Parietal lobe seizures classically produce sensory auras (tingling, distorted body perception), not this specific pattern of epigastric aura, déjà vu, and automatisms.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Todd paralysis as transient postictal cortical exhaustion',
+        summary:
+          'Todd paralysis is a transient, focal neurologic deficit (most often weakness) that follows a seizure, resulting from temporary metabolic exhaustion of the neurons in the region of cortex where the seizure activity occurred, rather than any structural or permanent damage. It resolves completely over hours, and its localization mirrors the seizure focus (contralateral cortex for limb weakness).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 60-year-old man is evaluated in the emergency department after a witnessed generalized tonic-clonic seizure. Twenty minutes after the seizure ends, he remains drowsy and is found to have weakness of the right arm and leg, with normal strength on the left. He has no facial droop and is able to follow simple commands slowly. His right-sided weakness gradually resolves completely over the next several hours without any intervention, and repeat neurologic examination the following day is entirely normal, with no new abnormality on brain imaging. Transient postictal exhaustion of neurons in which of the following structures, contralateral to the weak side, best explains this temporary deficit?',
+            explanation:
+              'This is Todd paralysis, a transient postictal focal neurologic deficit resulting from temporary metabolic exhaustion of the cortical neurons involved in generating the seizure, rather than any structural lesion (consistent with the normal follow-up imaging and full resolution). Because his weakness affects the right arm and leg, the exhausted region localizes to the left (contralateral) motor cortex, and the deficit is expected to resolve completely within hours as the affected neurons recover their normal metabolic and electrical function.',
+            difficulty: 2,
+            choices: [
+              { text: 'Left motor cortex (contralateral cerebral cortex)', isCorrect: true },
+              {
+                text: 'Right motor cortex (ipsilateral cerebral cortex)',
+                isCorrect: false,
+                explanation: 'Motor pathways cross before reaching the limbs, so weakness of the right arm and leg corresponds to dysfunction of the left (contralateral), not right (ipsilateral), cortex.',
+              },
+              {
+                text: 'Brainstem',
+                isCorrect: false,
+                explanation: 'Todd paralysis is classically attributed to focal cortical exhaustion at the seizure focus, not a brainstem process.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'Cerebellar dysfunction would cause ataxia and incoordination, not the hemiparesis pattern described here.',
+              },
+              {
+                text: 'Spinal cord',
+                isCorrect: false,
+                explanation: 'A spinal cord process would not resolve so completely and rapidly after a cerebral seizure and would typically also affect sensation or bowel/bladder function.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize cluster headache attacks to hypothalamic activation',
+        summary:
+          'Cluster headache produces severe, strictly unilateral periorbital pain in clusters of attacks, often with a striking circadian and seasonal periodicity, accompanied by ipsilateral autonomic features (lacrimation, conjunctival injection, ptosis, miosis) from activation of the trigeminal-autonomic reflex. Functional imaging implicates the posterior hypothalamus as the primary "generator" driving the attacks and their strict periodicity, distinguishing this headache’s pathophysiology from the cortical spreading depression of migraine.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 34-year-old man presents with a two-week history of excruciating, strictly one-sided pain around his left eye, occurring in clusters of several attacks per day, each lasting less than an hour, often waking him from sleep at the same time each night. During attacks he is markedly restless, pacing the room, and his left eye becomes red and tearing with drooping of the left eyelid and a smaller left pupil. Between attacks he is entirely asymptomatic. Neuroimaging is unremarkable. Activation of which of the following structures is thought to be the primary generator driving these attacks, distinguishing this headache disorder from migraine?',
+            explanation:
+              'This presentation, strictly unilateral, severe periorbital pain in clusters with a striking circadian pattern and ipsilateral autonomic features (lacrimation, ptosis, miosis) from activation of the trigeminal-autonomic reflex, is classic for cluster headache. Functional imaging studies have implicated the posterior hypothalamus as the primary "generator" responsible for triggering attacks and producing their notable circadian and seasonal periodicity, a mechanism distinct from the cortical spreading depression thought to underlie migraine with aura.',
+            difficulty: 3,
+            choices: [
+              { text: 'Hypothalamus (posterior)', isCorrect: true },
+              {
+                text: 'Trigeminal ganglion alone',
+                isCorrect: false,
+                explanation: 'The trigeminal ganglion contributes to the pain and autonomic features via the trigeminal-autonomic reflex, but the primary attack "generator" driving the strict circadian periodicity is hypothalamic, not the ganglion itself.',
+              },
+              {
+                text: 'Cerebral cortex (via spreading depression)',
+                isCorrect: false,
+                explanation: 'Cortical spreading depression is the mechanism implicated in migraine with aura, not the strictly periodic, autonomic-predominant pattern of cluster headache.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'The cerebellum is not implicated in the generation of cluster headache attacks.',
+              },
+              {
+                text: 'Occipital lobe',
+                isCorrect: false,
+                explanation: 'The occipital lobe is relevant to visual auras in migraine, not the mechanism of cluster headache.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize REM sleep behavior disorder from loss of pontine-mediated REM atonia',
+        summary:
+          'REM sleep behavior disorder results from failure of the normal skeletal muscle paralysis (atonia) that should accompany REM sleep, allowing patients to physically act out vivid dreams. This atonia is normally generated by circuitry in the pons (including the subcoeruleus nucleus), and its dysfunction — often an early marker of an evolving synucleinopathy such as Parkinson disease — leads to potentially injurious dream enactment behavior.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 68-year-old man is brought to clinic by his wife, who reports that for the past year he has been physically acting out his dreams during sleep, punching, kicking, and once falling out of bed while shouting, all while apparently still asleep and later recalling a vivid dream matching his physical actions. He otherwise sleeps soundly and has no history of parasomnia during childhood. Polysomnography confirms loss of the normal skeletal muscle paralysis that should accompany his dream-stage sleep. Dysfunction of which of the following structures, normally responsible for producing this paralysis during REM sleep, is most likely responsible?',
+            explanation:
+              'This is REM sleep behavior disorder, caused by failure of the pons (including the subcoeruleus nucleus and its descending projections) to generate the normal skeletal muscle atonia that should accompany REM sleep. Without this atonia, patients physically enact their dreams, sometimes causing injury to themselves or a bed partner. This disorder is notable as an early marker that can precede the motor symptoms of a synucleinopathy such as Parkinson disease by years.',
+            difficulty: 2,
+            choices: [
+              { text: 'Pons (subcoeruleus nucleus and REM-atonia circuitry)', isCorrect: true },
+              {
+                text: 'Hypothalamus (orexin-producing neurons)',
+                isCorrect: false,
+                explanation: 'Loss of orexin-producing hypothalamic neurons causes narcolepsy (excessive daytime sleepiness, cataplexy), not the loss of REM atonia responsible for dream enactment.',
+              },
+              {
+                text: 'Thalamus',
+                isCorrect: false,
+                explanation: 'The thalamus is not the primary structure responsible for generating REM-associated muscle atonia.',
+              },
+              {
+                text: 'Medulla',
+                isCorrect: false,
+                explanation: 'While some medullary circuitry participates in descending inhibition, the primary generator of REM atonia implicated in this disorder is pontine.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'The cerebellum coordinates movement and balance and is not responsible for REM sleep muscle atonia.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link narcolepsy-cataplexy to loss of lateral hypothalamic orexin (hypocretin) neurons',
+        summary:
+          'Narcolepsy with cataplexy results from loss of orexin (hypocretin)-producing neurons in the lateral hypothalamus, which normally help stabilize wakefulness and prevent inappropriate transitions into REM sleep. Their loss produces excessive, irresistible daytime sleepiness, cataplexy (sudden loss of muscle tone triggered by emotion, with preserved consciousness), and hypnagogic hallucinations, and is confirmed by low CSF orexin levels.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 19-year-old college student presents with several months of overwhelming, irresistible daytime sleepiness despite adequate nighttime sleep, along with episodes in which she suddenly loses muscle tone in her face and knees whenever she laughs, causing her to nearly collapse, while remaining fully conscious throughout. She also describes vivid, dreamlike hallucinations just as she is falling asleep. CSF testing reveals markedly low levels of a specific neuropeptide. Degeneration of neurons in which of the following structures, which normally produce this neuropeptide, is most likely responsible for her condition?',
+            explanation:
+              'This is narcolepsy with cataplexy, resulting from autoimmune-mediated degeneration of orexin (hypocretin)-producing neurons in the lateral hypothalamus. Orexin normally helps stabilize wakefulness and appropriately gate REM sleep; its loss produces excessive daytime sleepiness, cataplexy (an inappropriate intrusion of REM-like muscle atonia while awake, triggered by strong emotion, with preserved consciousness), and hypnagogic hallucinations, and is confirmed by the characteristically low CSF orexin level.',
+            difficulty: 2,
+            choices: [
+              { text: 'Lateral hypothalamus (orexin/hypocretin-producing neurons)', isCorrect: true },
+              {
+                text: 'Pons (subcoeruleus nucleus)',
+                isCorrect: false,
+                explanation: 'This structure is responsible for generating REM atonia; its dysfunction causes REM sleep behavior disorder (acting out dreams), not the sleepiness and cataplexy pattern described here, and does not produce low CSF orexin.',
+              },
+              {
+                text: 'Suprachiasmatic nucleus',
+                isCorrect: false,
+                explanation: 'This hypothalamic nucleus controls circadian rhythm timing, not orexin production or wake stabilization in this manner.',
+              },
+              {
+                text: 'Amygdala',
+                isCorrect: false,
+                explanation: 'The amygdala is not the source of orexin and is not implicated in the pathophysiology of narcolepsy-cataplexy.',
+              },
+              {
+                text: 'Locus coeruleus',
+                isCorrect: false,
+                explanation: 'This noradrenergic brainstem nucleus modulates arousal but is not the site of orexin production whose loss defines narcolepsy.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize congenital central hypoventilation syndrome from medullary respiratory center dysfunction',
+        summary:
+          'Congenital central hypoventilation syndrome ("Ondine’s curse") results from a developmental abnormality (classically a PHOX2B mutation) affecting the medullary neurons that normally generate automatic respiratory drive. Affected infants breathe adequately while awake (using voluntary/behavioral respiratory control) but develop dangerous hypoventilation during sleep, when breathing depends entirely on this automatic medullary drive.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A newborn is noted to have recurrent episodes of shallow, inadequate breathing and dangerously low oxygen saturation whenever she falls asleep, though her breathing is entirely normal and adequate while she is awake. Genetic testing confirms a mutation affecting the development of brainstem neurons responsible for automatic control of breathing. Dysfunction of which of the following structures, which normally drives involuntary respiratory rhythm independent of conscious control, best explains this condition?',
+            explanation:
+              'This is congenital central hypoventilation syndrome, resulting from abnormal development of the medulla oblongata’s automatic respiratory rhythm-generating and chemoreceptor circuitry (classically linked to PHOX2B mutations). Because breathing while awake can be partly maintained by voluntary/behavioral cortical control, these infants breathe adequately when awake, but during sleep, when respiration depends entirely on the automatic medullary drive, this dysfunction causes dangerous hypoventilation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Medulla oblongata (automatic respiratory rhythm generator and chemoreceptors)', isCorrect: true },
+              {
+                text: 'Pons (pneumotaxic center) alone',
+                isCorrect: false,
+                explanation: 'While pontine centers help modulate respiratory rhythm, the primary automatic rhythm generator and chemoreceptor site classically implicated in this congenital disorder is the medulla.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'The cerebellum coordinates movement and balance and is not responsible for automatic respiratory drive.',
+              },
+              {
+                text: 'Spinal cord (phrenic nerve nucleus alone)',
+                isCorrect: false,
+                explanation: 'The phrenic nerve nucleus executes the respiratory signal to the diaphragm but is not itself the site of the automatic rhythm-generating dysfunction in this disorder.',
+              },
+              {
+                text: 'Hypothalamus',
+                isCorrect: false,
+                explanation: 'The hypothalamus regulates autonomic functions broadly but is not the classic site of the automatic respiratory drive dysfunction in this congenital syndrome.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize central diabetes insipidus to hypothalamic ADH-producing neurons',
+        summary:
+          'Central diabetes insipidus results from damage to the hypothalamic supraoptic and paraventricular nuclei (or their axonal projections to the posterior pituitary), which normally synthesize antidiuretic hormone (ADH). Loss of ADH production causes inability to concentrate urine despite rising serum osmolality, producing polyuria and polydipsia that responds to exogenous desmopressin, distinguishing it from nephrogenic diabetes insipidus (where the kidney fails to respond to ADH).',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 45-year-old woman who underwent transsphenoidal resection of a pituitary tumor develops polyuria and polydipsia postoperatively, producing over 6 liters of dilute urine daily despite a serum sodium of 149 mEq/L. Water deprivation testing fails to appropriately concentrate her urine, but urine osmolality rises sharply after administration of desmopressin. Damage to which of the following structures, or its axonal projections, is most likely responsible for her condition?',
+            explanation:
+              'This is central diabetes insipidus, caused by damage (here, surgical) to the hypothalamic supraoptic and paraventricular nuclei, which synthesize antidiuretic hormone (ADH) that is then transported down axons for release from the posterior pituitary. Loss of ADH production prevents renal water reabsorption, causing polyuria with inappropriately dilute urine despite rising serum osmolality/sodium. The sharp rise in urine osmolality after desmopressin (a synthetic ADH analog) confirms that the kidney itself can respond normally to ADH, localizing the defect to inadequate ADH production rather than renal resistance to it (nephrogenic diabetes insipidus).',
+            difficulty: 2,
+            choices: [
+              { text: 'Hypothalamus (supraoptic and paraventricular nuclei)', isCorrect: true },
+              {
+                text: 'Anterior pituitary',
+                isCorrect: false,
+                explanation: 'The anterior pituitary produces hormones like ACTH, TSH, and growth hormone, not ADH, which is produced by the hypothalamus and only stored/released from the posterior pituitary.',
+              },
+              {
+                text: 'Adrenal cortex',
+                isCorrect: false,
+                explanation: 'The adrenal cortex produces cortisol, aldosterone, and androgens, unrelated to ADH production or this presentation.',
+              },
+              {
+                text: 'Renal collecting duct',
+                isCorrect: false,
+                explanation: 'The collecting duct is the site of ADH action, not production; because her urine concentrates normally in response to desmopressin, her kidney’s response to ADH is intact, arguing against a renal (nephrogenic) cause.',
+              },
+              {
+                text: 'Thyroid gland',
+                isCorrect: false,
+                explanation: 'The thyroid gland is unrelated to ADH production or water balance regulation in this manner.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize central precocious puberty from ectopic hypothalamic GnRH secretion',
+        summary:
+          'A hypothalamic hamartoma, a benign, non-neoplastic mass of ectopic but functional hypothalamic tissue near the floor of the third ventricle, can secrete gonadotropin-releasing hormone (GnRH) in a pulsatile pattern, prematurely activating the hypothalamic-pituitary-gonadal axis and causing central precocious puberty in young children.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 4-year-old girl presents with breast development and pubic hair growth. MRI reveals a small mass at the floor of the third ventricle that is composed of normal-appearing neural tissue rather than a true neoplasm. Laboratory testing shows pulsatile secretion of a hypothalamic releasing hormone at levels appropriate for a much older child, with subsequently elevated gonadotropins and estradiol. Ectopic pulsatile secretion of which of the following hormones by this mass is most likely responsible for her precocious puberty?',
+            explanation:
+              'This is central precocious puberty caused by a hypothalamic hamartoma, a mass of ectopic but hormonally functional hypothalamic tissue that secretes gonadotropin-releasing hormone (GnRH) in a pulsatile pattern, just as the normal hypothalamus does at puberty, but prematurely. This ectopic pulsatile GnRH prematurely activates the pituitary to release luteinizing hormone and follicle-stimulating hormone, in turn stimulating the ovaries to produce estradiol and driving early pubertal development.',
+            difficulty: 2,
+            choices: [
+              { text: 'Gonadotropin-releasing hormone (GnRH)', isCorrect: true },
+              {
+                text: 'Growth hormone-releasing hormone',
+                isCorrect: false,
+                explanation: 'Ectopic secretion of this hormone would cause gigantism/acromegaly-like growth effects, not the pubertal development described here.',
+              },
+              {
+                text: 'Corticotropin-releasing hormone',
+                isCorrect: false,
+                explanation: 'Ectopic secretion of this hormone would drive excess cortisol production (Cushing-like features), not pubertal development.',
+              },
+              {
+                text: 'Thyrotropin-releasing hormone',
+                isCorrect: false,
+                explanation: 'Ectopic secretion of this hormone would cause hyperthyroid features, not pubertal development.',
+              },
+              {
+                text: 'Prolactin',
+                isCorrect: false,
+                explanation: 'Prolactin is not a hypothalamic releasing hormone (it is largely under inhibitory dopaminergic control) and excess would cause galactorrhea, not this pattern of precocious puberty.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Guillain-Barré syndrome as autoimmune demyelination of peripheral nerves',
+        summary:
+          'Guillain-Barré syndrome (acute inflammatory demyelinating polyradiculoneuropathy) is an autoimmune attack on the myelin sheath of peripheral nerves, often triggered by a preceding infection (classically Campylobacter jejuni) via molecular mimicry. It produces rapidly progressive, ascending weakness with areflexia and slowed nerve conduction velocities, sparing sensation relatively more than motor function early on.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 32-year-old man presents with two days of progressive, ascending weakness that began in his feet and has now reached his thighs, associated with absent deep tendon reflexes throughout the lower extremities and mild distal paresthesias, but no bowel or bladder dysfunction. He reports a diarrheal illness three weeks earlier. Nerve conduction studies show markedly slowed conduction velocities with relatively preserved amplitude in early testing. Autoimmune-mediated damage to which of the following structures is most likely responsible for this presentation?',
+            explanation:
+              'This is Guillain-Barré syndrome, an autoimmune attack on the myelin sheath of peripheral nerves (formed by Schwann cells), often triggered several weeks after a preceding infection such as Campylobacter jejuni gastroenteritis via molecular mimicry between bacterial and peripheral nerve antigens. Demyelination slows nerve conduction velocity (as seen on this patient’s studies) and produces the classic ascending, symmetric weakness with areflexia, sparing bowel/bladder function early in the classic (non-variant) presentation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Myelin sheath of peripheral nerves (Schwann cells)', isCorrect: true },
+              {
+                text: 'Anterior horn cells of the spinal cord',
+                isCorrect: false,
+                explanation: 'Anterior horn cell destruction (as in poliomyelitis) causes asymmetric, pure lower motor neuron weakness without the demyelinating pattern (slowed conduction velocity) or ascending symmetric distribution described here.',
+              },
+              {
+                text: 'Postsynaptic neuromuscular junction',
+                isCorrect: false,
+                explanation: 'This is the site of autoimmune attack in myasthenia gravis, which causes fatigable weakness without sensory symptoms or the nerve conduction slowing seen here.',
+              },
+              {
+                text: 'Dorsal root ganglia',
+                isCorrect: false,
+                explanation: 'Isolated dorsal root ganglion damage would primarily cause sensory loss/ataxia, not the predominant motor weakness pattern with areflexia described here.',
+              },
+              {
+                text: 'Lateral corticospinal tract',
+                isCorrect: false,
+                explanation: 'Corticospinal tract damage produces upper motor neuron signs (spasticity, hyperreflexia), the opposite of the flaccid, areflexic weakness seen in this peripheral nerve disorder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize myasthenia gravis to postsynaptic acetylcholine receptors at the neuromuscular junction',
+        summary:
+          'Myasthenia gravis is caused by autoantibodies against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction, progressively reducing the effectiveness of neuromuscular transmission with repeated use. This produces fatigable weakness that worsens with sustained activity and throughout the day, classically affecting ocular and bulbar muscles, and improves transiently with cooling (the ice pack test) or cholinesterase inhibition.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 29-year-old woman presents with several months of fluctuating muscle weakness that worsens throughout the day and with repetitive activity, particularly affecting her eyelids (which droop progressively by evening) and her ability to chew during a meal. Applying an ice pack to her eyelid transiently improves the ptosis. Repetitive nerve stimulation at low frequency shows a decremental response in muscle action potential amplitude. Antibodies directed against which of the following structures are most likely responsible for her symptoms?',
+            explanation:
+              'This is myasthenia gravis, caused by autoantibodies directed against postsynaptic nicotinic acetylcholine receptors at the neuromuscular junction. As these receptors are progressively blocked and degraded, neuromuscular transmission becomes less effective with repeated use, producing fatigable weakness that worsens with sustained activity and throughout the day (as acetylcholine stores and available postsynaptic receptors become relatively depleted), classically affecting ocular and bulbar muscles first. The decremental response on repetitive nerve stimulation reflects this progressive failure of transmission with repeated stimulation.',
+            difficulty: 2,
+            choices: [
+              { text: 'Postsynaptic acetylcholine receptors at the neuromuscular junction', isCorrect: true },
+              {
+                text: 'Presynaptic voltage-gated calcium channels at the neuromuscular junction',
+                isCorrect: false,
+                explanation: 'Antibodies against these channels cause Lambert-Eaton myasthenic syndrome, which classically improves (an incremental response), rather than worsens, with repeated activity — the opposite of this patient’s pattern.',
+              },
+              {
+                text: 'Myelin sheath of peripheral nerves',
+                isCorrect: false,
+                explanation: 'This is the target in Guillain-Barré syndrome, which causes ascending weakness with areflexia and slowed nerve conduction, not this fatigable, fluctuating pattern.',
+              },
+              {
+                text: 'Muscle spindle',
+                isCorrect: false,
+                explanation: 'The muscle spindle is a sensory stretch receptor, not the target of the autoimmune attack in myasthenia gravis.',
+              },
+              {
+                text: 'Anterior horn cell body',
+                isCorrect: false,
+                explanation: 'Anterior horn cell damage causes pure lower motor neuron weakness with atrophy and fasciculations, not this fatigable, fluctuating pattern responsive to cooling.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize Lambert-Eaton myasthenic syndrome to presynaptic calcium channels at the neuromuscular junction',
+        summary:
+          'Lambert-Eaton myasthenic syndrome is caused by autoantibodies against presynaptic voltage-gated calcium channels at the neuromuscular junction, often as a paraneoplastic phenomenon associated with small cell lung cancer. It produces proximal muscle weakness that paradoxically improves with sustained or repeated activity (as calcium accumulates presynaptically), the opposite pattern from myasthenia gravis, along with autonomic symptoms like dry mouth.',
+        discipline: 'Musculoskeletal',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 63-year-old man with a 50-pack-year smoking history presents with several weeks of progressive proximal muscle weakness, particularly difficulty rising from a chair, that paradoxically improves after a few minutes of sustained exercise before again fatiguing with continued effort. He also reports dry mouth. Repetitive nerve stimulation at high frequency shows a marked incremental response in muscle action potential amplitude. Chest CT reveals a central lung mass. Autoantibodies against which of the following structures, triggered by this underlying malignancy, best explain his presentation?',
+            explanation:
+              'This is Lambert-Eaton myasthenic syndrome, a paraneoplastic disorder (here, associated with small cell lung cancer) caused by autoantibodies against presynaptic voltage-gated calcium channels at the neuromuscular junction. This impairs calcium-dependent acetylcholine vesicle release, but with sustained or repeated muscle activity, calcium accumulates within the presynaptic terminal, transiently improving neurotransmitter release and strength, explaining both the incremental response on high-frequency repetitive stimulation and the clinical improvement with brief exercise, in direct contrast to the decremental, worsening pattern of myasthenia gravis.',
+            difficulty: 3,
+            choices: [
+              { text: 'Presynaptic voltage-gated calcium channels at the neuromuscular junction', isCorrect: true },
+              {
+                text: 'Postsynaptic acetylcholine receptors at the neuromuscular junction',
+                isCorrect: false,
+                explanation: 'This is the target in myasthenia gravis, which classically worsens (a decremental response), not improves, with sustained or repetitive activity — the opposite of this patient’s pattern.',
+              },
+              {
+                text: 'Myelin sheath of peripheral nerves',
+                isCorrect: false,
+                explanation: 'This is the target in Guillain-Barré syndrome, a demyelinating disorder with a different electrophysiologic and clinical pattern than this paraneoplastic neuromuscular junction disorder.',
+              },
+              {
+                text: 'Dorsal root ganglia',
+                isCorrect: false,
+                explanation: 'Dorsal root ganglion damage would primarily affect sensation, not produce this specific fatigable-then-improving motor weakness pattern.',
+              },
+              {
+                text: 'Muscle spindle',
+                isCorrect: false,
+                explanation: 'The muscle spindle is a sensory receptor, not the site of the autoimmune attack in this paraneoplastic disorder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize periventricular white matter demyelination in multiple sclerosis',
+        summary:
+          'Multiple sclerosis causes demyelinating plaques classically located in the periventricular white matter, oriented perpendicular to the ventricles along the path of small medullary veins ("Dawson fingers"), reflecting an immune-mediated process targeting myelin around these venous structures. Lesions disseminated in time and space (such as prior optic neuritis or internuclear ophthalmoplegia plus new spinal cord symptoms) support the diagnosis.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 30-year-old woman with a previous episode of optic neuritis and an earlier episode of internuclear ophthalmoplegia now presents with urinary urgency and mild leg spasticity. MRI shows multiple ovoid white matter lesions immediately surrounding the ventricles, oriented perpendicular to the ventricular surface along small veins. Where are these characteristic lesions classically located, and what does this location reflect about the underlying disease process?',
+            explanation:
+              'This patient has multiple sclerosis, demonstrating the classic clinical pattern of lesions disseminated in time (multiple episodes over time) and space (optic nerve, brainstem, and now spinal cord involvement). The characteristic lesions are located in the periventricular white matter, oriented perpendicular to the ventricles along the course of small medullary veins ("Dawson fingers"), reflecting an immune-mediated demyelinating process that preferentially targets myelin surrounding these periventricular venous structures.',
+            difficulty: 2,
+            choices: [
+              { text: 'Periventricular white matter, along small veins radiating from the ventricles', isCorrect: true },
+              {
+                text: 'Gray matter cortex exclusively, sparing all white matter',
+                isCorrect: false,
+                explanation: 'While cortical involvement can occur in MS, the classic, most characteristic lesion location is periventricular white matter, not the cortex exclusively.',
+              },
+              {
+                text: 'Peripheral nerve, sparing the central nervous system entirely',
+                isCorrect: false,
+                explanation: 'Multiple sclerosis is a central nervous system demyelinating disease; it does not classically target peripheral nerves, which distinguishes it from disorders like Guillain-Barré syndrome.',
+              },
+              {
+                text: 'Basal ganglia exclusively',
+                isCorrect: false,
+                explanation: 'This is not the classic or most characteristic lesion location in multiple sclerosis.',
+              },
+              {
+                text: 'Subarachnoid space',
+                isCorrect: false,
+                explanation: 'This is a CSF-containing space, not a site of demyelinating plaque formation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize poliomyelitis from selective destruction of anterior horn cells',
+        summary:
+          'Poliovirus selectively infects and destroys anterior horn cells (lower motor neurons) of the spinal cord, producing asymmetric flaccid paralysis with areflexia and significant muscle atrophy, but with sensation entirely preserved, since sensory neurons and pathways are not affected — a pattern that cleanly distinguishes a pure lower motor neuron process from disorders affecting sensory or upper motor neuron pathways.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 6-year-old unvaccinated child in a region with an active outbreak develops fever followed by asymmetric flaccid paralysis of one leg, with absent reflexes and significant muscle atrophy over the following weeks, but no sensory loss whatsoever on detailed examination. Which of the following structures has been selectively destroyed by this viral infection, explaining the purely motor deficit with completely preserved sensation?',
+            explanation:
+              'This is poliomyelitis, in which poliovirus selectively infects and destroys the anterior horn cells (lower motor neurons) of the spinal cord. Because sensory neurons and pathways are anatomically and functionally distinct from these motor neurons and are not targeted by the virus, the resulting paralysis is purely motor — flaccid, asymmetric, areflexic, with atrophy from denervation — while sensation remains completely intact, a pattern that cleanly localizes the lesion to the anterior (motor) horn alone.',
+            difficulty: 2,
+            choices: [
+              { text: 'Anterior horn cells of the spinal cord (lower motor neurons)', isCorrect: true },
+              {
+                text: 'Dorsal root ganglia',
+                isCorrect: false,
+                explanation: 'Dorsal root ganglion destruction would cause sensory loss, which is explicitly absent in this patient.',
+              },
+              {
+                text: 'Lateral corticospinal tract',
+                isCorrect: false,
+                explanation: 'Corticospinal tract damage produces upper motor neuron signs (spasticity, hyperreflexia), the opposite of the flaccid, areflexic weakness with atrophy seen here.',
+              },
+              {
+                text: 'Peripheral nerve myelin',
+                isCorrect: false,
+                explanation: 'Demyelinating peripheral nerve disorders like Guillain-Barré syndrome typically produce a symmetric, ascending pattern and often some sensory symptoms, not poliomyelitis’s classic asymmetric, purely motor pattern.',
+              },
+              {
+                text: 'Cerebellum',
+                isCorrect: false,
+                explanation: 'Cerebellar dysfunction causes ataxia and incoordination, not flaccid paralysis with atrophy and areflexia.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize amyotrophic lateral sclerosis from combined upper and lower motor neuron degeneration',
+        summary:
+          'Amyotrophic lateral sclerosis (ALS) causes progressive, combined degeneration of both lower motor neurons (anterior horn cells, producing muscle wasting, fasciculations, and weakness) and upper motor neurons (the corticospinal tracts, producing hyperreflexia and spasticity), with sensation, extraocular movements, and bowel/bladder function classically spared — a combination of findings not seen together in any single, more limited process.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 58-year-old man presents with a year of progressive weakness, beginning with hand clumsiness. Examination shows muscle wasting and visible fasciculations in the intrinsic hand muscles, along with hyperreflexia and an extensor plantar response bilaterally in the lower extremities. There is no sensory loss on detailed testing, no bowel or bladder dysfunction, and no abnormality of eye movements. Combined degeneration of which two structures explains the simultaneous presence of muscle wasting/fasciculations and hyperreflexia/spasticity in this patient?',
+            explanation:
+              'This presentation, combined lower motor neuron signs (wasting, fasciculations) and upper motor neuron signs (hyperreflexia, extensor plantar response) without any sensory loss, is the hallmark of amyotrophic lateral sclerosis (ALS). It results from simultaneous degeneration of the anterior horn cells (lower motor neurons) and the lateral corticospinal tracts (upper motor neurons), while sensory pathways, extraocular movements, and (classically, at least early in the disease) bowel/bladder function are spared — a combination that essentially defines this specific pattern of motor neuron disease.',
+            difficulty: 3,
+            choices: [
+              { text: 'Anterior horn cells and lateral corticospinal tracts (combined lower and upper motor neuron degeneration)', isCorrect: true },
+              {
+                text: 'Anterior horn cells alone (isolated lower motor neuron degeneration)',
+                isCorrect: false,
+                explanation: 'This alone would explain the wasting and fasciculations but not the hyperreflexia and extensor plantar response, which reflect upper motor neuron involvement as well.',
+              },
+              {
+                text: 'Lateral corticospinal tracts alone (isolated upper motor neuron degeneration)',
+                isCorrect: false,
+                explanation: 'This alone would explain the hyperreflexia and spasticity but not the muscle wasting and fasciculations, which reflect lower motor neuron involvement as well.',
+              },
+              {
+                text: 'Dorsal columns and cerebellum',
+                isCorrect: false,
+                explanation: 'These structures mediate proprioception/vibration sense and coordination, respectively, neither of which is affected in this purely motor presentation.',
+              },
+              {
+                text: 'Hippocampus and amygdala',
+                isCorrect: false,
+                explanation: 'These structures are involved in memory and emotional processing, not motor function, and are unrelated to this presentation.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize subacute combined degeneration from vitamin B12 deficiency',
+        summary:
+          'Vitamin B12 deficiency can cause subacute combined degeneration of the spinal cord, damaging both the dorsal columns (impairing vibration/proprioception, causing a positive Romberg sign) and the lateral corticospinal tracts (causing hyperreflexia and spasticity), while sparing the spinothalamic tract, so pain and temperature sensation remain intact — a distinct combination from the isolated dorsal column damage of tabes dorsalis.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 65-year-old man who follows a strict vegan diet without supplementation presents with progressive unsteady gait and tingling in his feet. Examination reveals loss of vibration and position sense in the toes bilaterally, a positive Romberg sign, and bilateral hyperreflexia with extensor plantar responses, but pain and temperature sensation are entirely preserved. Laboratory studies reveal macrocytic anemia and a low vitamin B12 level. Combined degeneration of which two spinal cord structures accounts for this pattern of findings?',
+            explanation:
+              'This is subacute combined degeneration of the spinal cord from vitamin B12 deficiency, which damages both the dorsal columns (impairing vibration and position sense, producing the positive Romberg sign and unsteady gait) and the lateral corticospinal tracts (producing hyperreflexia and extensor plantar responses), while sparing the separate spinothalamic tract, which carries pain and temperature sensation and remains intact. This combined dorsal column plus corticospinal tract pattern, with sensory sparing of pain/temperature, distinguishes it from disorders affecting only one of these tracts.',
+            difficulty: 3,
+            choices: [
+              { text: 'Dorsal columns and lateral corticospinal tracts', isCorrect: true },
+              {
+                text: 'Spinothalamic tract and anterior horn cells',
+                isCorrect: false,
+                explanation: 'This combination would cause pain/temperature loss and lower motor neuron weakness, not the vibration/proprioception loss and upper motor neuron signs with preserved pain/temperature seen in this patient.',
+              },
+              {
+                text: 'Dorsal columns alone',
+                isCorrect: false,
+                explanation: 'Isolated dorsal column damage (as in tabes dorsalis) would not explain this patient’s hyperreflexia and extensor plantar responses, which reflect additional corticospinal tract involvement.',
+              },
+              {
+                text: 'Lateral corticospinal tract alone',
+                isCorrect: false,
+                explanation: 'Isolated corticospinal tract damage would not explain this patient’s loss of vibration and position sense and positive Romberg sign, which reflect additional dorsal column involvement.',
+              },
+              {
+                text: 'Central canal (periependymal gray matter)',
+                isCorrect: false,
+                explanation: 'This is the site of damage in syringomyelia, which causes a "cape-like" loss of pain and temperature sensation, a different pattern from the one described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Link thoracoabdominal aortic surgery to spinal cord infarction via the artery of Adamkiewicz',
+        summary:
+          'The artery of Adamkiewicz (the great anterior radicular artery), typically arising from a lower thoracic or upper lumbar intercostal/lumbar artery, provides the dominant blood supply reinforcing the anterior spinal artery in the lower spinal cord. It is vulnerable to interruption during thoracoabdominal aortic aneurysm repair, and its infarction produces anterior spinal artery syndrome: paraplegia with loss of pain/temperature sensation but preserved vibration/proprioception (dorsal columns, supplied separately by the posterior spinal arteries).',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 68-year-old man undergoes emergency repair of a thoracoabdominal aortic aneurysm. Postoperatively he has bilateral leg weakness and loss of pain and temperature sensation below the level of the lesion, but preserved vibration and proprioception in the toes bilaterally. Interruption of which artery, which normally reinforces the blood supply to the lower spinal cord during this type of surgery, best explains this pattern?',
+            explanation:
+              'This is anterior spinal artery syndrome, resulting from interruption of the artery of Adamkiewicz (the great anterior radicular artery), which arises from a lower intercostal or upper lumbar artery and provides the dominant reinforcing blood supply to the anterior spinal artery in the lower thoracic and lumbar spinal cord. Because thoracoabdominal aortic aneurysm repair can sacrifice or interrupt the intercostal/lumbar artery giving rise to this vessel, the anterior two-thirds of the cord (corticospinal and spinothalamic tracts) becomes ischemic, causing paraplegia with loss of pain/temperature sensation, while the posterior dorsal columns, supplied separately by the posterior spinal arteries, are spared.',
+            difficulty: 3,
+            choices: [
+              { text: 'Artery of Adamkiewicz (great anterior radicular artery)', isCorrect: true },
+              {
+                text: 'Posterior spinal arteries',
+                isCorrect: false,
+                explanation: 'These arteries supply the dorsal columns; their interruption would cause loss of vibration/proprioception, the opposite of the sensory sparing pattern described in this patient.',
+              },
+              {
+                text: 'Vertebral arteries',
+                isCorrect: false,
+                explanation: 'The vertebral arteries supply the upper cervical spinal cord and brainstem, not the lower thoracolumbar cord territory at risk during thoracoabdominal aortic surgery.',
+              },
+              {
+                text: 'Azygos vein',
+                isCorrect: false,
+                explanation: 'This is a venous structure unrelated to spinal cord arterial supply.',
+              },
+              {
+                text: 'Basilar artery',
+                isCorrect: false,
+                explanation: 'The basilar artery supplies the brainstem and cerebellum, not the thoracolumbar spinal cord.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Localize combined CN VI and CN VII dysfunction to the facial colliculus in the dorsal pons',
+        summary:
+          'The facial colliculus, a small elevation on the floor of the fourth ventricle, is formed by fibers of the facial nerve (CN VII) looping around the abducens nucleus (CN VI) within the dorsal pontine tegmentum. A lesion here produces ipsilateral, isolated combined CN VI (impaired abduction) and CN VII (complete facial paralysis) deficits, without the limb weakness seen in more ventral pontine lesions.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient with a small dorsal pontine lesion presents with inability to abduct the right eye and complete right-sided facial paralysis, including the forehead, but with entirely normal strength in all four limbs. Imaging localizes the lesion to a small elevation on the floor of the fourth ventricle formed by fibers of one cranial nerve looping around the nucleus of another. Which structure has been damaged?',
+            explanation:
+              'This is a lesion of the facial colliculus, a small elevation on the floor of the fourth ventricle formed by fibers of the facial nerve (CN VII) looping around the abducens nucleus (CN VI) within the dorsal pontine tegmentum. Damage here produces the combined ipsilateral CN VI (impaired abduction) and CN VII (complete facial paralysis, including the forehead, since this is a lower motor neuron lesion of the nerve itself) deficits seen in this patient, without limb weakness, since the corticospinal tracts run more ventrally in the pons and are unaffected by this dorsal lesion.',
+            difficulty: 3,
+            choices: [
+              { text: 'Facial colliculus', isCorrect: true },
+              {
+                text: 'Internal acoustic meatus',
+                isCorrect: false,
+                explanation: 'A lesion here would affect CN VII and CN VIII together (facial paralysis plus hearing/balance disturbance), not CN VI, and would not be located in the dorsal pons.',
+              },
+              {
+                text: 'Cerebellopontine angle',
+                isCorrect: false,
+                explanation: 'A lesion here classically affects CN V, VII, and VIII together, a different combination than the isolated CN VI and VII findings described.',
+              },
+              {
+                text: 'Jugular foramen',
+                isCorrect: false,
+                explanation: 'This affects CN IX, X, and XI, unrelated to the CN VI/VII combination and dorsal pontine location described here.',
+              },
+              {
+                text: 'Cavernous sinus',
+                isCorrect: false,
+                explanation: 'A cavernous sinus lesion would affect CN III, IV, V1, V2, and VI, not CN VII, and would not produce complete facial paralysis including the forehead.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Millard-Gubler syndrome from a ventral pontine lesion affecting CN VI, VII, and the corticospinal tract',
+        summary:
+          'Millard-Gubler syndrome results from a lesion in the ventral (basal) pons, classically from occlusion of paramedian branches of the basilar artery, damaging the fascicles of CN VI and CN VII along with the corticospinal tract before it crosses. This produces ipsilateral CN VI and VII palsies together with contralateral limb weakness — a distinct combination from the isolated cranial nerve findings of a dorsal facial colliculus lesion.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient presents with left-sided facial paralysis (including the forehead) and inability to abduct the left eye, together with weakness of the right arm and leg. Occlusion of small paramedian branches of which artery, supplying the ventral pons, best explains this combination of ipsilateral cranial nerve findings with contralateral limb weakness?',
+            explanation:
+              'This is Millard-Gubler syndrome, resulting from occlusion of small paramedian branches of the basilar artery supplying the ventral (basal) pons. This damages the fascicles of CN VI and CN VII (producing ipsilateral, left-sided abduction weakness and complete facial paralysis) along with the corticospinal tract, which has not yet crossed at this level, producing contralateral (right-sided) limb weakness — a distinct pattern from an isolated dorsal facial colliculus lesion, which affects only CN VI and VII without any limb weakness.',
+            difficulty: 3,
+            choices: [
+              { text: 'Basilar artery (paramedian branches)', isCorrect: true },
+              {
+                text: 'Posterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the lateral medulla, producing Wallenberg syndrome (a different combination of cranial nerve, sensory, and cerebellar findings), not this ventral pontine pattern.',
+              },
+              {
+                text: 'Anterior inferior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the lateral pons, producing CN VII/VIII findings with ataxia, but not the specific combination of CN VI, VII, and contralateral hemiparesis from ventral pontine (not lateral) involvement.',
+              },
+              {
+                text: 'Superior cerebellar artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the superior cerebellum and rostral pons/midbrain, not the specific ventral mid-pontine territory responsible for this syndrome.',
+              },
+              {
+                text: 'Anterior spinal artery',
+                isCorrect: false,
+                explanation: 'This artery supplies the spinal cord, not the pons, and is unrelated to this cranial nerve and limb weakness combination.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize central cord syndrome from cervical hyperextension injury',
+        summary:
+          'Central cord syndrome results from injury centered on the central gray and adjacent central white matter of the cervical spinal cord, classically from a hyperextension injury in an older adult with underlying cervical spondylosis. Because the fibers destined for the arms are located more centrally within the corticospinal tract than those destined for the legs, this produces weakness that is disproportionately greater in the arms than the legs, often with variable sensory changes and preserved leg strength.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 74-year-old man with long-standing neck stiffness falls forward and strikes his forehead, causing his neck to hyperextend. He is brought to the emergency department with weakness that is markedly more severe in both hands and arms than in his legs, which retain nearly normal strength, along with patchy sensory changes in the arms. MRI shows no fracture but demonstrates cord signal change centered on the gray matter of the cervical spinal cord. Injury centered on which region of the spinal cord, and its characteristic somatotopic organization, best explains this disproportionate arm-greater-than-leg weakness?',
+            explanation:
+              'This is central cord syndrome, typically resulting from a hyperextension injury to a cervical spine already narrowed by degenerative spondylosis, common in older adults. The injury centers on the central gray matter and adjacent central white matter of the cervical cord. Because corticospinal tract fibers are somatotopically organized with cervical (arm) fibers positioned more centrally and lumbosacral (leg) fibers positioned more peripherally, a centrally located injury preferentially damages the arm fibers, producing the disproportionate arm-greater-than-leg weakness pattern characteristic of this syndrome.',
+            difficulty: 3,
+            choices: [
+              { text: 'Central gray matter and adjacent central white matter of the cervical spinal cord', isCorrect: true },
+              {
+                text: 'Anterior two-thirds of the spinal cord (anterior spinal artery territory)',
+                isCorrect: false,
+                explanation: 'This produces anterior spinal artery syndrome, with fairly equal bilateral weakness and dissociated sensory loss below the lesion, not the disproportionate arm-greater-than-leg pattern described here.',
+              },
+              {
+                text: 'One lateral half of the spinal cord',
+                isCorrect: false,
+                explanation: 'This produces Brown-Séquard syndrome, with ipsilateral weakness and contralateral pain/temperature loss, a very different, asymmetric pattern from the one described.',
+              },
+              {
+                text: 'Posterior columns exclusively',
+                isCorrect: false,
+                explanation: 'Isolated posterior column damage would cause loss of vibration/proprioception without this pattern of disproportionate motor weakness.',
+              },
+              {
+                text: 'Peripheral (outermost) white matter of the spinal cord exclusively',
+                isCorrect: false,
+                explanation: 'This would preferentially affect the more peripherally located leg fibers, the opposite of the arm-predominant weakness described in this patient.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize autonomic dysreflexia from unopposed sympathetic outflow below a high spinal cord injury',
+        summary:
+          'Autonomic dysreflexia occurs in patients with spinal cord injury at or above the T6 level, when a noxious stimulus below the injury (classically bladder distension) triggers massive, unchecked sympathetic outflow from the thoracolumbar splanchnic nerves, causing severe hypertension below the lesion. Because the injury blocks descending inhibitory signals from above, but the vagus nerve can still sense the hypertension and slow the heart, a reflex bradycardia results — a combination of severe hypertension with bradycardia in a high spinal cord injury patient.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 24-year-old man with a complete spinal cord injury at T4 from a motorcycle accident one year ago is brought to the emergency department with a pounding headache, profuse sweating and flushing above the level of his injury, and a blood pressure of 220/130 mm Hg with a heart rate of 48/min. His indwelling urinary catheter is found to be kinked and non-draining; once it is replaced and his bladder decompressed, his blood pressure rapidly normalizes. Unopposed activity of which of the following pathways, triggered by the distended bladder below his level of injury, best explains this presentation?',
+            explanation:
+              'This is autonomic dysreflexia, occurring because his T4-level spinal cord injury is at or above the T6 threshold above which this syndrome classically occurs. A noxious stimulus below the injury, here bladder distension, triggers massive sympathetic outflow via the thoracolumbar splanchnic nerves, causing severe vasoconstriction and hypertension below the lesion. Because the injury blocks the brain’s usual descending inhibitory signals that would normally dampen this reflex, the sympathetic response goes unchecked; the vagus nerve, however, can still sense the resulting hypertension via intact cranial nerve pathways and reflexively slows the heart, producing the combination of severe hypertension with bradycardia.',
+            difficulty: 3,
+            choices: [
+              { text: 'Unopposed sympathetic outflow via the thoracolumbar splanchnic nerves below the level of injury', isCorrect: true },
+              {
+                text: 'Unopposed parasympathetic outflow via the vagus nerve below the level of injury',
+                isCorrect: false,
+                explanation: 'The vagus nerve does not extend below the level typically affected by spinal cord injury and is not the source of the hypertensive response; it instead mediates the compensatory bradycardia.',
+              },
+              {
+                text: 'Loss of all autonomic tone below the level of injury',
+                isCorrect: false,
+                explanation: 'This describes spinal shock, an early, transient state of depressed reflexes and tone, not the exaggerated, unchecked sympathetic hyperactivity of autonomic dysreflexia, which occurs later.',
+              },
+              {
+                text: 'Excess cortisol release from the adrenal cortex',
+                isCorrect: false,
+                explanation: 'This is not the mechanism of autonomic dysreflexia, which is a neurally mediated reflex, not a primary endocrine process.',
+              },
+              {
+                text: 'Direct compression of the brainstem cardiovascular centers',
+                isCorrect: false,
+                explanation: 'The pathology here is at the spinal cord level (T4), not the brainstem, and the mechanism is unopposed spinal sympathetic reflex activity, not direct brainstem compression.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize spinal shock as transient areflexia following acute spinal cord injury',
+        summary:
+          'Spinal shock is a temporary physiologic state following acute, severe spinal cord injury in which all reflexes, motor tone, and autonomic function below the level of injury are lost, mimicking a lower motor neuron picture even though the injury is anatomically an upper motor neuron lesion. Over days to weeks, reflexes gradually return and typically become hyperactive, revealing the expected upper motor neuron signs (spasticity, hyperreflexia) once this transient state resolves.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 22-year-old man sustains a complete spinal cord transection at T10 in a diving accident. Immediately after the injury, he has flaccid paralysis of both legs with completely absent deep tendon reflexes and no bulbocavernosus reflex, findings that would ordinarily suggest a lower motor neuron process. Three weeks later, his reflexes have returned and become markedly hyperactive with sustained clonus and bilateral extensor plantar responses. Which physiologic phenomenon explains why his initial examination, despite an anatomically upper motor neuron lesion, showed absent reflexes rather than the hyperreflexia eventually seen?',
+            explanation:
+              'This is spinal shock, a transient state following acute, severe spinal cord injury in which all reflex activity, motor tone, and autonomic function below the level of the lesion are temporarily lost, producing a misleadingly flaccid, areflexic picture even though the lesion (transection of the corticospinal tract) is anatomically an upper motor neuron lesion. Over the following days to weeks, as spinal shock resolves and spinal reflex arcs below the lesion regain and then exceed their normal excitability (due to loss of descending inhibition), the expected upper motor neuron signs of spasticity, hyperreflexia, and extensor plantar responses emerge.',
+            difficulty: 2,
+            choices: [
+              { text: 'Spinal shock (transient loss of all reflex activity below the level of an acute spinal cord injury)', isCorrect: true },
+              {
+                text: 'Concurrent injury to the anterior horn cells only',
+                isCorrect: false,
+                explanation: 'While anterior horn cell injury would cause lower motor neuron signs, the transient nature of this patient’s areflexia (resolving into hyperreflexia over weeks) is explained by spinal shock, not a separate structural anterior horn cell injury.',
+              },
+              {
+                text: 'Autonomic dysreflexia',
+                isCorrect: false,
+                explanation: 'Autonomic dysreflexia is a later complication of high spinal cord injury causing episodic severe hypertension in response to a noxious stimulus, not the early, transient areflexia described here.',
+              },
+              {
+                text: 'A permanent lower motor neuron lesion superimposed on the upper motor neuron injury',
+                isCorrect: false,
+                explanation: 'The eventual return and hyperactivity of his reflexes indicates the areflexia was transient (spinal shock), not a permanent superimposed lower motor neuron lesion.',
+              },
+              {
+                text: 'Cerebral diaschisis',
+                isCorrect: false,
+                explanation: 'This term refers to remote functional depression of connected brain regions after a focal brain lesion, not the spinal reflex phenomenon described in this spinal cord injury.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Gerstmann syndrome from a dominant parietal lobe (angular gyrus) lesion',
+        summary:
+          'Gerstmann syndrome results from a lesion of the dominant (usually left) parietal lobe, classically the angular gyrus, producing a characteristic tetrad: finger agnosia (inability to identify or distinguish individual fingers), agraphia (impaired writing), acalculia (impaired calculation), and left-right disorientation — without significant weakness, sensory loss, or aphasia.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 66-year-old right-handed woman is evaluated after a stroke. On examination she cannot identify which of her fingers is being touched when her eyes are closed, cannot perform simple written subtraction problems she could previously do easily, struggles to write a coherent sentence despite normal spoken language, and consistently confuses her left and right sides when asked to raise a specific hand. Strength, sensation to light touch, and formal language testing are otherwise normal. A lesion in which of the following locations, in the hemisphere dominant for language, is most likely responsible for this specific combination of deficits?',
+            explanation:
+              'This tetrad, finger agnosia, agraphia, acalculia, and left-right disorientation, without weakness, primary sensory loss, or aphasia, is Gerstmann syndrome, classically localized to the angular gyrus of the dominant (usually left) parietal lobe. This region integrates the higher-order cognitive functions needed for these specific tasks (finger identification, writing, calculation, and spatial/directional orientation), and its damage selectively impairs them while sparing basic motor, sensory, and language function.',
+            difficulty: 3,
+            choices: [
+              { text: 'Angular gyrus of the dominant parietal lobe', isCorrect: true },
+              {
+                text: 'Non-dominant parietal lobe',
+                isCorrect: false,
+                explanation: 'Non-dominant parietal lobe lesions classically cause hemispatial neglect and anosognosia (denial of deficit), not this specific tetrad of finger agnosia, agraphia, acalculia, and left-right disorientation.',
+              },
+              {
+                text: 'Broca area of the dominant frontal lobe',
+                isCorrect: false,
+                explanation: 'Broca area damage causes non-fluent aphasia, which is explicitly absent in this patient, whose spoken language is normal.',
+              },
+              {
+                text: 'Wernicke area of the dominant temporal lobe',
+                isCorrect: false,
+                explanation: 'Wernicke area damage causes fluent aphasia with impaired comprehension, which is explicitly absent here.',
+              },
+              {
+                text: 'Bilateral occipital lobes',
+                isCorrect: false,
+                explanation: 'Bilateral occipital damage causes cortical blindness, not this tetrad of parietal lobe findings.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize hemispatial neglect from a non-dominant (right) parietal lobe lesion',
+        summary:
+          'Hemispatial neglect results from a lesion of the non-dominant (usually right) parietal lobe, producing a striking failure to attend to, and often outright denial of any problem with, the contralateral (left) side of space and body — despite intact primary sensory pathways — because the non-dominant parietal lobe normally represents both sides of space, while the dominant parietal lobe represents only the contralateral side.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 70-year-old man is evaluated three days after a stroke. He eats food from only the right half of his plate, shaves only the right side of his face, and when asked to bisect a horizontal line on paper, consistently marks a point far to the right of the true midpoint, ignoring the entire left half of the line. When his left arm is passively raised in front of him, he seems genuinely unaware that it is weak or even that it belongs to him. Formal visual field testing shows no true visual field cut. A lesion in which of the following locations best explains this pattern, and why is it more severe and persistent than the mirror-image deficit would be from a lesion on the opposite side?',
+            explanation:
+              'This is hemispatial neglect with anosognosia, classically resulting from a lesion of the non-dominant (usually right) parietal lobe. The non-dominant parietal lobe normally directs attention to both sides of space, whereas the dominant parietal lobe directs attention only to the contralateral (right) side; a right parietal lesion therefore leaves no hemisphere able to attend to the left side of space, producing severe and often persistent neglect (with denial of any deficit), whereas a comparable left parietal lesion produces only mild or transient right-sided neglect, since the intact right hemisphere can still partially attend to the right side.',
+            difficulty: 3,
+            choices: [
+              { text: 'Non-dominant (right) parietal lobe', isCorrect: true },
+              {
+                text: 'Dominant (left) parietal lobe',
+                isCorrect: false,
+                explanation: 'A lesion here would produce only mild or transient neglect of the opposite (right) side, since the intact non-dominant hemisphere can still partially attend to that side; it does not produce this severe, persistent pattern.',
+              },
+              {
+                text: 'Occipital lobe bilaterally',
+                isCorrect: false,
+                explanation: 'This would cause cortical blindness, and formal visual field testing here is explicitly normal, arguing against a primary visual pathway lesion.',
+              },
+              {
+                text: 'Dominant frontal lobe (Broca area)',
+                isCorrect: false,
+                explanation: 'This would cause non-fluent aphasia, not the attentional/spatial deficit and anosognosia described in this patient.',
+              },
+              {
+                text: 'Bilateral hippocampi',
+                isCorrect: false,
+                explanation: 'This would cause profound anterograde amnesia, not the spatial neglect and body-awareness deficit described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize ideomotor apraxia as impaired performance of learned motor tasks despite intact strength',
+        summary:
+          'Ideomotor apraxia is the inability to correctly perform a learned, skilled motor task on command (such as pantomiming how to use a tool) despite fully intact strength, sensation, and comprehension of the task. It classically results from a lesion disconnecting the dominant parietal lobe (where motor programs for skilled movement are stored) from the motor cortex, either directly or via the corpus callosum when the non-dominant hand is affected.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 62-year-old right-handed man who suffered a stroke is asked to pantomime brushing his teeth. Despite clearly understanding the instruction and having full strength and sensation in both arms, he makes a clumsy, disorganized fist-clenching motion near his mouth that does not resemble the actual task, using either hand. When physically handed a toothbrush, however, he uses it correctly and automatically. Damage disconnecting which of the following processes, responsible for storing and executing learned motor sequences, is most likely responsible for this dissociation between comprehension and command performance versus automatic, contextually cued performance?',
+            explanation:
+              'This is ideomotor apraxia: an inability to perform a learned skilled movement on verbal command, despite intact strength, sensation, and comprehension, and despite being able to perform the same movement automatically when given the actual object as a contextual cue. It results from damage to (or disconnection of) the dominant parietal lobe, which stores the learned motor programs ("praxicons") for skilled movements, from the motor cortices responsible for executing them — since the deficit affects both hands here, the disconnection likely also involves the corpus callosum, which normally relays this parietal motor programming information to the non-dominant hemisphere’s motor cortex for left-hand movements.',
+            difficulty: 3,
+            choices: [
+              { text: 'Dominant parietal lobe’s stored motor programs and their connections to the motor cortices (via the corpus callosum for the non-dominant hand)', isCorrect: true },
+              {
+                text: 'Primary motor cortex bilaterally, causing bilateral weakness',
+                isCorrect: false,
+                explanation: 'This patient has fully intact strength in both arms; his deficit is specific to organizing and executing a learned skilled movement, not a weakness problem.',
+              },
+              {
+                text: 'Primary sensory cortex bilaterally, causing bilateral sensory loss',
+                isCorrect: false,
+                explanation: 'Sensation is explicitly intact in this patient; the deficit is not sensory but reflects impaired motor planning/programming.',
+              },
+              {
+                text: 'Broca area, causing non-fluent aphasia',
+                isCorrect: false,
+                explanation: 'This patient understands the instruction (intact comprehension) and this scenario does not describe an expressive language deficit, which would suggest Broca area involvement instead.',
+              },
+              {
+                text: 'Cerebellum, causing intention tremor and dysmetria',
+                isCorrect: false,
+                explanation: 'Cerebellar dysfunction produces incoordination and tremor during movement, not this specific inability to correctly plan/organize a learned skilled gesture despite normal coordination when using the actual object.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize ascending cholangitis (Charcot triad) from common bile duct obstruction',
+        summary:
+          'Ascending cholangitis results from obstruction of the common bile duct (classically by a gallstone) with superimposed bacterial infection of the stagnant, obstructed bile. It presents with Charcot triad — right upper quadrant pain, fever, and jaundice — and can progress to Reynolds pentad (adding hypotension and altered mental status) if untreated, reflecting worsening sepsis from the obstructed, infected biliary system.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'A 72-year-old woman with a known history of gallstones presents with two days of right upper quadrant pain, fevers with shaking chills, and yellowing of her skin and eyes. On examination she is febrile and tender in the right upper quadrant, and laboratory studies show an elevated white blood cell count, elevated total and direct bilirubin, and elevated alkaline phosphatase. Ultrasound reveals a dilated common bile duct with a stone lodged near its distal end. Obstruction and bacterial infection at which of the following structures is most directly responsible for this presentation, and what serious complication should be anticipated if the obstruction is not promptly relieved?',
+            explanation:
+              'This is ascending cholangitis, presenting with the classic Charcot triad of right upper quadrant pain, fever, and jaundice, caused by obstruction of the common bile duct (here, by a gallstone) with bacterial infection ascending into the stagnant, obstructed bile. If not promptly treated with biliary decompression and antibiotics, the infection can progress to sepsis, adding hypotension and altered mental status (Reynolds pentad), reflecting the life-threatening potential of an obstructed and infected biliary system.',
+            difficulty: 2,
+            choices: [
+              { text: 'Common bile duct, obstructed by a gallstone with superimposed bacterial infection', isCorrect: true },
+              {
+                text: 'Cystic duct alone, without common bile duct involvement',
+                isCorrect: false,
+                explanation: 'Isolated cystic duct obstruction causes acute cholecystitis (gallbladder inflammation), which typically does not cause jaundice, since bile can still flow from the liver into the duodenum via the unobstructed common bile duct.',
+              },
+              {
+                text: 'Pancreatic duct alone',
+                isCorrect: false,
+                explanation: 'Isolated pancreatic duct obstruction would present with pancreatitis (epigastric pain, elevated lipase), not this classic triad of biliary infection.',
+              },
+              {
+                text: 'Hepatic artery',
+                isCorrect: false,
+                explanation: 'This is a vascular structure whose obstruction would cause ischemic liver injury, not the biliary obstruction and ascending infection responsible for this presentation.',
+              },
+              {
+                text: 'Portal vein',
+                isCorrect: false,
+                explanation: 'Portal vein obstruction (thrombosis) causes portal hypertension, not the biliary obstruction and cholangitis described here.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize unilateral diaphragmatic paralysis from phrenic nerve injury',
+        summary:
+          'Unilateral phrenic nerve injury, which can occur during cardiac surgery (from cold cardioplegia or direct trauma near the pericardium, where the nerve runs) or from a mediastinal mass, paralyzes the ipsilateral hemidiaphragm. This produces an elevated hemidiaphragm on chest x-ray and paradoxical upward movement of that hemidiaphragm during a sniff test, though many patients remain only mildly symptomatic because the contralateral diaphragm and accessory muscles compensate.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 66-year-old man reports mild exertional dyspnea and difficulty lying flat two weeks after undergoing coronary artery bypass grafting. Chest x-ray shows an elevated left hemidiaphragm, and fluoroscopic sniff testing demonstrates paradoxical upward movement of the left hemidiaphragm during inspiration. Injury to which nerve, which runs along the pericardium in a location placing it at risk during cardiac surgery, best explains this finding?',
+            explanation:
+              'This is unilateral left phrenic nerve injury, likely from surgical trauma or cold-induced injury during cardiac surgery, given the nerve’s course along the fibrous pericardium (crossed by the phrenic nerve on its way to the diaphragm) directly adjacent to the operative field. Paralysis of the left hemidiaphragm removes its normal descent during inspiration; instead, it is passively pushed upward by the negative intrathoracic pressure generated by the still-functioning right hemidiaphragm and accessory muscles, producing the paradoxical upward movement seen on sniff testing and the elevated hemidiaphragm on chest x-ray.',
+            difficulty: 2,
+            choices: [
+              { text: 'Phrenic nerve', isCorrect: true },
+              {
+                text: 'Vagus nerve',
+                isCorrect: false,
+                explanation: 'Vagus nerve injury would affect laryngeal, cardiac, and gastrointestinal autonomic function, not diaphragmatic movement.',
+              },
+              {
+                text: 'Recurrent laryngeal nerve',
+                isCorrect: false,
+                explanation: 'Injury here causes hoarseness from vocal cord paralysis, not diaphragmatic dysfunction.',
+              },
+              {
+                text: 'Intercostal nerves',
+                isCorrect: false,
+                explanation: 'These nerves supply the intercostal muscles and skin of the chest wall, not the diaphragm itself.',
+              },
+              {
+                text: 'Long thoracic nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the serratus anterior, causing scapular winging when injured, not diaphragmatic paralysis.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize bilateral diaphragmatic paralysis from a high cervical spinal cord injury',
+        summary:
+          'The diaphragm is innervated by the phrenic nerve, formed from the C3, C4, and C5 nerve roots ("C3, 4, 5 keep the diaphragm alive"). A complete spinal cord injury at or above this level severs the connection between the brainstem’s respiratory centers and these phrenic motor neurons bilaterally, causing complete diaphragmatic paralysis and immediate ventilator dependence, in contrast to a unilateral peripheral phrenic nerve injury, which causes only mild symptoms from one paralyzed hemidiaphragm.',
+        discipline: 'Respiratory',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 19-year-old man sustains a complete spinal cord transection at the C2 level after a diving accident. He is immediately unable to breathe on his own and requires mechanical ventilation at the scene. Complete interruption of signals to which nerve roots, which together form the nerve responsible for diaphragmatic contraction, best explains his immediate, complete respiratory failure?',
+            explanation:
+              'The diaphragm, the primary muscle of respiration, is innervated by the phrenic nerve, which arises from the C3, C4, and C5 spinal nerve roots. A complete spinal cord injury at C2, above this level, severs all descending signals from the brainstem’s respiratory centers to these phrenic motor neurons on both sides, causing immediate, complete bilateral diaphragmatic paralysis and ventilator dependence — in sharp contrast to an isolated unilateral peripheral phrenic nerve injury (as can occur with cardiac surgery), which paralyzes only one hemidiaphragm and typically causes only mild symptoms because the other side compensates.',
+            difficulty: 2,
+            choices: [
+              { text: 'C3, C4, and C5 nerve roots (forming the phrenic nerve)', isCorrect: true },
+              {
+                text: 'C5, C6, and C7 nerve roots (forming the long thoracic nerve)',
+                isCorrect: false,
+                explanation: 'The long thoracic nerve supplies the serratus anterior, not the diaphragm, and is not responsible for this life-threatening respiratory failure.',
+              },
+              {
+                text: 'T1 and T2 nerve roots (forming intercostal nerves)',
+                isCorrect: false,
+                explanation: 'While intercostal muscles assist breathing, they are not the primary muscle of respiration, and their loss alone would not cause the immediate, complete respiratory failure seen with loss of diaphragmatic (phrenic) function.',
+              },
+              {
+                text: 'C1 and C2 nerve roots alone',
+                isCorrect: false,
+                explanation: 'The phrenic nerve arises from C3-C5, not C1-C2; a lesion at C2 causes this presentation precisely because it lies above the C3-C5 phrenic nerve roots, interrupting all descending input to them.',
+              },
+              {
+                text: 'S2, S3, and S4 nerve roots (forming the pudendal nerve)',
+                isCorrect: false,
+                explanation: 'The pudendal nerve supplies the pelvic floor and external sphincters, entirely unrelated to diaphragmatic function.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Cheyne-Stokes breathing from bilateral cerebral or diencephalic dysfunction',
+        summary:
+          'Cheyne-Stokes respiration is a crescendo-decrescendo breathing pattern with intervening periods of apnea, resulting from bilateral dysfunction of the cerebral hemispheres or diencephalon (or, commonly, severe heart failure with delayed circulatory feedback to the brainstem chemoreceptors) that impairs the normal fine-tuned regulation of breathing by higher centers, leaving a exaggerated, oscillating ventilatory response to changing carbon dioxide levels.',
+        discipline: 'Respiratory',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 78-year-old man with severe congestive heart failure is observed to have a breathing pattern that gradually increases in depth and rate, then gradually decreases, followed by a period of complete apnea lasting up to 20 seconds, after which the cycle repeats. He is otherwise arousable between cycles. This pattern is most directly attributable to dysfunction or delayed feedback involving which of the following, impairing the normal smooth regulation of breathing?',
+            explanation:
+              'This is Cheyne-Stokes respiration, a crescendo-decrescendo breathing pattern with intervening apneic periods. It classically results from bilateral cerebral hemisphere or diencephalic dysfunction (impairing the higher-level smoothing of respiratory drive) or, as in this patient with severe heart failure, from delayed circulation time between the lungs and the brainstem chemoreceptors, causing an exaggerated, oscillating ventilatory response as carbon dioxide levels are sensed later than they actually change, in contrast to the irregular, unpredictable pattern of Biot (ataxic) breathing seen with structural medullary damage.',
+            difficulty: 3,
+            choices: [
+              { text: 'Bilateral cerebral hemisphere/diencephalic dysfunction or delayed brainstem chemoreceptor feedback (as in heart failure)', isCorrect: true },
+              {
+                text: 'Isolated medullary structural damage',
+                isCorrect: false,
+                explanation: 'Isolated structural medullary damage classically produces Biot (ataxic) breathing, an irregular pattern without the smooth crescendo-decrescendo waxing and waning seen in Cheyne-Stokes respiration.',
+              },
+              {
+                text: 'Isolated phrenic nerve dysfunction',
+                isCorrect: false,
+                explanation: 'Phrenic nerve dysfunction causes diaphragmatic weakness or paralysis, not this specific crescendo-decrescendo central respiratory pattern.',
+              },
+              {
+                text: 'Isolated neuromuscular junction dysfunction',
+                isCorrect: false,
+                explanation: 'This would cause fatigable respiratory muscle weakness, not this specific centrally generated oscillating breathing pattern.',
+              },
+              {
+                text: 'Isolated cervical spinal cord injury below C5',
+                isCorrect: false,
+                explanation: 'An injury below the C3-C5 phrenic roots would spare diaphragmatic function and is not the classic cause of this specific central breathing pattern.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Biot (ataxic) breathing from structural medullary damage',
+        summary:
+          'Biot (ataxic) breathing is a completely irregular breathing pattern, with unpredictable variation in the rate and depth of breaths and irregular pauses, reflecting damage to the medulla’s respiratory pattern-generating neurons themselves — a specific, structural process that carries a poor prognosis, distinguishing it from the smooth, cyclical waxing-and-waning pattern of Cheyne-Stokes respiration, which instead reflects bilateral higher-center or circulatory-timing dysfunction.',
+        discipline: 'Respiratory',
+        yieldWeight: 35,
+        variations: [
+          {
+            stem: 'A patient with a large brainstem hemorrhage is observed to have a breathing pattern that is completely irregular, with breaths of unpredictably varying depth and rate interspersed with irregular pauses, lacking any smooth crescendo-decrescendo pattern. This specific breathing pattern reflects structural damage to which of the following?',
+            explanation:
+              'This is Biot (ataxic) breathing, reflecting direct structural damage to the medulla oblongata’s respiratory pattern-generating neurons themselves. Unlike Cheyne-Stokes respiration, which has a smooth, predictable crescendo-decrescendo pattern from bilateral higher-center dysfunction or delayed circulatory feedback, Biot breathing is chaotic and unpredictable because the fundamental medullary rhythm generator itself is damaged, carrying an ominous prognostic significance in the setting of a large brainstem lesion.',
+            difficulty: 3,
+            choices: [
+              { text: 'Medulla oblongata (respiratory pattern-generating neurons)', isCorrect: true },
+              {
+                text: 'Bilateral cerebral hemispheres, sparing the brainstem',
+                isCorrect: false,
+                explanation: 'Bilateral cerebral hemisphere dysfunction classically produces the smooth, cyclical Cheyne-Stokes pattern, not the chaotic, irregular pattern of Biot breathing.',
+              },
+              {
+                text: 'Phrenic nerve bilaterally',
+                isCorrect: false,
+                explanation: 'Bilateral phrenic nerve dysfunction would cause diaphragmatic weakness or paralysis, not this specific irregular central respiratory pattern.',
+              },
+              {
+                text: 'Neuromuscular junction',
+                isCorrect: false,
+                explanation: 'Neuromuscular junction dysfunction causes fatigable weakness, not this centrally generated chaotic breathing pattern.',
+              },
+              {
+                text: 'Cervical spinal cord',
+                isCorrect: false,
+                explanation: 'Cervical spinal cord damage would affect the transmission of respiratory signals to the diaphragm, not generate this specific irregular pattern originating from damaged medullary rhythm-generating neurons.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the Cushing reflex from rising intracranial pressure compressing the brainstem',
+        summary:
+          'The Cushing reflex (hypertension, bradycardia, and irregular respirations) is a physiologic response to rising intracranial pressure that compresses the brainstem: as cerebral perfusion pressure falls, the brain triggers a compensatory rise in systemic blood pressure (via increased sympathetic tone) to maintain blood flow, and the resulting hypertension is sensed by baroreceptors, producing a reflex bradycardia — together with brainstem compression itself causing irregular respirations.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 45-year-old man with a rapidly expanding epidural hematoma is found to have a blood pressure of 200/110 mm Hg, a heart rate of 42/min, and an irregular breathing pattern. This specific triad of findings reflects rising pressure within the skull compressing which of the following structures, and through what physiologic mechanism does the hypertension develop?',
+            explanation:
+              'This is the Cushing reflex (Cushing triad: hypertension, bradycardia, irregular respirations), a response to rising intracranial pressure compressing the brainstem. As intracranial pressure rises, cerebral perfusion pressure (mean arterial pressure minus intracranial pressure) falls; the brain compensates by triggering a sympathetically mediated rise in systemic blood pressure to preserve cerebral blood flow. This hypertension is then sensed by peripheral baroreceptors, triggering a reflex, vagally mediated bradycardia, while direct compression of the brainstem’s respiratory centers produces the irregular breathing pattern — together forming this classic, ominous triad signaling critically elevated intracranial pressure.',
+            difficulty: 2,
+            choices: [
+              { text: 'Brainstem, via a compensatory sympathetic rise in blood pressure to preserve cerebral perfusion, followed by reflex (baroreceptor-mediated) bradycardia', isCorrect: true },
+              {
+                text: 'Brainstem, via direct parasympathetic activation causing both the hypertension and bradycardia simultaneously',
+                isCorrect: false,
+                explanation: 'The hypertension results from a sympathetically mediated compensatory response to falling cerebral perfusion pressure, not direct parasympathetic activation; the bradycardia is the secondary, baroreceptor-mediated reflex response to that hypertension.',
+              },
+              {
+                text: 'Spinal cord, via loss of all sympathetic tone below the lesion',
+                isCorrect: false,
+                explanation: 'This describes neurogenic shock from a spinal cord injury (causing hypotension and bradycardia), the opposite hemodynamic pattern from the hypertension seen in the Cushing reflex, and this is an intracranial, not spinal, process.',
+              },
+              {
+                text: 'Adrenal medulla, via primary catecholamine-secreting tumor activity',
+                isCorrect: false,
+                explanation: 'This describes pheochromocytoma, an endocrine tumor, not the intracranial pressure-related brainstem compression mechanism responsible for this classic triad.',
+              },
+              {
+                text: 'Carotid body, via primary chemoreceptor dysfunction',
+                isCorrect: false,
+                explanation: 'The carotid body senses oxygen/carbon dioxide levels; it is not the primary driver of the Cushing reflex, which originates from brainstem compression and the cerebral perfusion pressure response.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish pseudobulbar palsy (upper motor neuron) from bulbar palsy (lower motor neuron)',
+        summary:
+          'Pseudobulbar palsy results from bilateral upper motor neuron (corticobulbar tract) damage above the medulla, causing dysarthria and dysphagia with a spastic tongue, hyperactive jaw jerk, and pathologic emotional lability (pseudobulbar affect), while bulbar palsy results from direct damage to the lower motor neurons of the medullary cranial nerve nuclei (IX, X, XII) themselves, causing similar dysarthria/dysphagia but with a flaccid, atrophic, fasciculating tongue and no jaw jerk hyperreflexia.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'Two patients with amyotrophic lateral sclerosis both have severe dysarthria and dysphagia. The first has a stiff, spastic tongue with little movement, a markedly hyperactive jaw jerk reflex, and inappropriate episodes of uncontrollable laughing and crying with minimal provocation. The second has a soft, atrophic tongue with visible fasciculations, a normal (not hyperactive) jaw jerk, and no emotional lability. Damage to which respective structures explains each patient’s presentation?',
+            explanation:
+              'The first patient has pseudobulbar palsy, from bilateral upper motor neuron (corticobulbar tract) damage above the level of the medulla; this removes descending inhibition of brainstem reflexes (producing the hyperactive jaw jerk) and of emotional expression pathways (producing pathologic laughing/crying, or pseudobulbar affect), while the tongue itself becomes spastic rather than atrophic since its lower motor neurons remain intact. The second patient has bulbar palsy, from direct damage to the lower motor neurons of the medullary cranial nerve nuclei (hypoglossal nucleus for the tongue) themselves, producing the expected lower motor neuron findings of atrophy, fasciculations, and no reflex hyperactivity.',
+            difficulty: 3,
+            choices: [
+              { text: 'First: bilateral corticobulbar tracts (pseudobulbar palsy); Second: medullary cranial nerve nuclei/lower motor neurons (bulbar palsy)', isCorrect: true },
+              {
+                text: 'First: medullary cranial nerve nuclei (bulbar palsy); Second: bilateral corticobulbar tracts (pseudobulbar palsy)',
+                isCorrect: false,
+                explanation: 'This reverses the classic findings; hyperreflexia, spasticity, and emotional lability indicate an upper motor neuron (corticobulbar) process, while atrophy and fasciculations indicate a lower motor neuron (nuclear) process.',
+              },
+              {
+                text: 'Both patients have the same underlying structural damage, since both have ALS',
+                isCorrect: false,
+                explanation: 'Although both patients have ALS, which characteristically causes combined upper and lower motor neuron degeneration, their described exam findings localize predominantly to different components of that combined process, explaining the differing presentations.',
+              },
+              {
+                text: 'First: peripheral facial nerve; Second: trigeminal nerve motor root',
+                isCorrect: false,
+                explanation: 'Neither of these isolated cranial nerve lesions would produce this specific combination of tongue findings, jaw jerk changes, and (in the first patient) emotional lability.',
+              },
+              {
+                text: 'Both patients have cerebellar dysfunction, causing ataxic speech',
+                isCorrect: false,
+                explanation: 'Cerebellar (ataxic) dysarthria has a different quality (irregular, scanning speech) and would not explain the specific tongue and jaw jerk findings or emotional lability described in these patients.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize medial medullary syndrome from anterior spinal artery occlusion at the medulla',
+        summary:
+          'Medial medullary syndrome results from occlusion of the anterior spinal artery (or the vertebral artery branches feeding it) at the level of the medulla, damaging the medial medullary structures: the pyramid (contralateral limb weakness), the medial lemniscus (contralateral loss of vibration/proprioception), and the hypoglossal nerve fascicles (ipsilateral tongue weakness, with deviation toward the side of the lesion on protrusion) — a distinct pattern from the lateral medullary (Wallenberg) syndrome caused by PICA occlusion.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient presents with left-sided tongue weakness, with the tongue deviating to the left on protrusion, along with weakness and loss of vibration/proprioception affecting the right arm and leg. Pain and temperature sensation are intact throughout, and there is no facial weakness, dysphagia, vertigo, or ataxia. Occlusion of which artery, affecting structures on which side of the medulla, best explains this pattern?',
+            explanation:
+              'This is medial medullary syndrome, from occlusion of the anterior spinal artery (or its vertebral artery origin) supplying the medial medulla on the left. This damages the left hypoglossal nerve fascicles (causing left tongue weakness with ipsilateral deviation on protrusion, since the genioglossus normally pushes the tongue to the opposite side), the left pyramid (causing contralateral, right-sided limb weakness, since corticospinal fibers have not yet crossed at this level), and the left medial lemniscus (causing contralateral, right-sided loss of vibration/proprioception) — while sparing the more laterally located spinothalamic tract (pain/temperature) and the structures affected in lateral medullary (Wallenberg) syndrome, such as the nucleus ambiguus and cerebellar peduncles.',
+            difficulty: 3,
+            choices: [
+              { text: 'Anterior spinal artery, affecting the medial medulla on the side of the tongue weakness', isCorrect: true },
+              {
+                text: 'Posterior inferior cerebellar artery, affecting the lateral medulla',
+                isCorrect: false,
+                explanation: 'This causes lateral medullary (Wallenberg) syndrome, with dysphagia, hoarseness, ataxia, and crossed pain/temperature loss, a very different pattern from the one described, which notably spares pain/temperature and includes limb weakness (absent in Wallenberg).',
+              },
+              {
+                text: 'Middle cerebral artery, affecting the cerebral cortex',
+                isCorrect: false,
+                explanation: 'This would cause cortical deficits like aphasia or neglect, not this specific brainstem pattern with ipsilateral tongue deviation.',
+              },
+              {
+                text: 'Superior cerebellar artery, affecting the rostral pons and cerebellum',
+                isCorrect: false,
+                explanation: 'This produces ataxia and other pontine/cerebellar findings, not this specific medullary pattern of crossed motor/sensory loss with ipsilateral tongue weakness.',
+              },
+              {
+                text: 'Basilar artery, affecting the entire pons diffusely',
+                isCorrect: false,
+                explanation: 'Diffuse basilar artery occlusion typically causes severe, often bilateral brainstem findings, not this discrete, localized medial medullary pattern.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Weber syndrome from a midbrain lesion affecting CN III and the cerebral peduncle',
+        summary:
+          'Weber syndrome results from a lesion of the ventral (basal) midbrain, classically from occlusion of paramedian branches of the posterior cerebral artery, damaging the fascicles of the oculomotor nerve (CN III) as they pass through and the adjacent cerebral peduncle (corticospinal tract). This produces ipsilateral CN III palsy (ptosis, "down and out" eye, dilated pupil) together with contralateral limb weakness, since the corticospinal tract has not yet crossed at this level.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A patient presents with a dilated, non-reactive left pupil, left-sided ptosis, and the left eye deviated down and out, together with weakness of the right arm and leg. Imaging localizes an infarct to the ventral midbrain. Damage to the fascicles of which cranial nerve, together with which adjacent structure, best explains this combination of ipsilateral eye findings and contralateral limb weakness?',
+            explanation:
+              'This is Weber syndrome, resulting from a ventral (basal) midbrain lesion, classically from occlusion of paramedian branches of the posterior cerebral artery. This damages the fascicles of the oculomotor nerve (CN III) as they exit the midbrain (producing the ipsilateral, left-sided ptosis, dilated pupil, and "down and out" eye position from unopposed lateral rectus and superior oblique action) together with the adjacent cerebral peduncle, which carries the corticospinal tract before it crosses at the medullary pyramids, producing contralateral (right-sided) limb weakness.',
+            difficulty: 3,
+            choices: [
+              { text: 'Oculomotor nerve (CN III) fascicles and the cerebral peduncle', isCorrect: true },
+              {
+                text: 'Trochlear nerve (CN IV) fascicles and the medial lemniscus',
+                isCorrect: false,
+                explanation: 'Trochlear nerve palsy causes vertical diplopia from superior oblique weakness, not the ptosis, dilated pupil, and "down and out" position described, which are specific to CN III palsy.',
+              },
+              {
+                text: 'Abducens nerve (CN VI) fascicles and the corticospinal tract in the pons',
+                isCorrect: false,
+                explanation: 'Abducens palsy causes an inability to abduct the eye, not this specific combination of ptosis, mydriasis, and "down and out" positioning, and this is a midbrain, not pontine, syndrome.',
+              },
+              {
+                text: 'Facial nerve (CN VII) fascicles and the abducens nucleus',
+                isCorrect: false,
+                explanation: 'This describes a facial colliculus lesion in the pons, causing facial paralysis and abduction weakness, a different cranial nerve combination and location than described here.',
+              },
+              {
+                text: 'Optic nerve (CN II) and the optic chiasm',
+                isCorrect: false,
+                explanation: 'Optic nerve or chiasm damage causes visual field deficits, not ptosis, pupillary dilation, or abnormal eye positioning from oculomotor dysfunction.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Benedikt syndrome from a midbrain tegmental lesion affecting CN III and the red nucleus',
+        summary:
+          'Benedikt syndrome results from a lesion of the midbrain tegmentum (rather than the more ventral, basal midbrain affected in Weber syndrome), damaging the fascicles of the oculomotor nerve (CN III) together with the red nucleus and cerebellar (dentatorubrothalamic) fibers passing through it. This produces the same ipsilateral CN III palsy as Weber syndrome, but with contralateral tremor/ataxia (from red nucleus and cerebellar pathway involvement) instead of contralateral limb weakness.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A patient presents with a dilated, non-reactive right pupil, right-sided ptosis, and the right eye deviated down and out, together with a coarse tremor and ataxia of the left arm, but normal strength in all limbs. Imaging localizes a lesion to the midbrain tegmentum. Damage to the fascicles of CN III together with which additional structure, distinct from the structure involved in a more ventral midbrain lesion, best explains the contralateral tremor and ataxia rather than weakness in this patient?',
+            explanation:
+              'This is Benedikt syndrome, from a lesion of the midbrain tegmentum affecting the fascicles of the oculomotor nerve (CN III, producing the same ipsilateral ptosis, mydriasis, and "down and out" eye position as in Weber syndrome) together with the red nucleus and passing cerebellar (dentatorubrothalamic) fibers, rather than the more ventrally located cerebral peduncle affected in Weber syndrome. Because the corticospinal tract (in the cerebral peduncle) is spared here, strength remains normal, but involvement of the red nucleus and cerebellar pathways instead produces contralateral tremor and ataxia.',
+            difficulty: 3,
+            choices: [
+              { text: 'Red nucleus (and passing cerebellar/dentatorubrothalamic fibers)', isCorrect: true },
+              {
+                text: 'Cerebral peduncle (corticospinal tract)',
+                isCorrect: false,
+                explanation: 'This is the structure involved in Weber syndrome, producing contralateral weakness, not the tremor/ataxia with preserved strength described in this patient.',
+              },
+              {
+                text: 'Medial lemniscus',
+                isCorrect: false,
+                explanation: 'Medial lemniscus involvement would cause contralateral loss of vibration/proprioception, not tremor and ataxia with preserved strength.',
+              },
+              {
+                text: 'Spinothalamic tract',
+                isCorrect: false,
+                explanation: 'Spinothalamic tract involvement would cause contralateral pain/temperature loss, not the tremor and ataxia described here.',
+              },
+              {
+                text: 'Abducens nucleus',
+                isCorrect: false,
+                explanation: 'This is a pontine structure whose involvement causes abduction weakness, not the tremor/ataxia pattern described, and this lesion is localized to the midbrain, not the pons.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Distinguish a pupil-sparing (microvascular) from a pupil-involving (compressive) third nerve palsy',
+        summary:
+          'Parasympathetic pupillary fibers travel along the outer surface of the oculomotor nerve (CN III), making them especially vulnerable to compressive lesions (such as a posterior communicating artery aneurysm), which classically cause a "blown," dilated, poorly reactive pupil in addition to ptosis and eye movement abnormalities. Microvascular ischemia (classically from diabetes), by contrast, damages the centrally located motor fibers while relatively sparing the peripherally located pupillary fibers (which receive some collateral blood supply), producing a pupil-sparing third nerve palsy — ptosis and eye movement abnormality with a normal, reactive pupil.',
+        discipline: 'Nervous system',
+        yieldWeight: 50,
+        variations: [
+          {
+            stem: 'Two patients present with acute right-sided ptosis and an eye that is deviated down and out. The first, a 68-year-old man with long-standing poorly controlled diabetes, has a normal-sized, briskly reactive pupil on the affected side. The second, a 52-year-old woman with a sudden, severe "worst headache of her life," has a markedly dilated, non-reactive pupil on the affected side. Which underlying cause is more likely in each patient, and what anatomic feature of the oculomotor nerve explains why the pupil is spared in one case but not the other?',
+            explanation:
+              'The first patient’s pupil-sparing third nerve palsy is most consistent with microvascular ischemic injury to the oculomotor nerve, a well-recognized complication of long-standing diabetes; this damages the centrally located motor fibers of the nerve while relatively sparing the parasympathetic pupillary fibers, which run along the nerve’s outer surface and receive some independent collateral blood supply. The second patient’s pupil-involving palsy, especially with a thunderclap headache, is concerning for compression of the oculomotor nerve by a posterior communicating artery aneurysm, which directly compresses the vulnerable, superficially located pupillary fibers first, causing early pupillary dilation and non-reactivity — a distinction that makes new pupillary involvement in a third nerve palsy a neurosurgical emergency until an aneurysm is excluded.',
+            difficulty: 3,
+            choices: [
+              { text: 'First: microvascular ischemia (sparing the peripherally located pupillary fibers); Second: compressive aneurysm (affecting the peripherally located pupillary fibers early)', isCorrect: true },
+              {
+                text: 'First: compressive aneurysm; Second: microvascular ischemia',
+                isCorrect: false,
+                explanation: 'This reverses the classic associations; a compressive lesion like an aneurysm classically produces pupillary involvement, while microvascular disease classically spares the pupil.',
+              },
+              {
+                text: 'Both patients have the same underlying cause, since both have identical eye position and ptosis',
+                isCorrect: false,
+                explanation: 'While the motor findings (ptosis, "down and out" eye) are similar in both, the pupillary findings differ sharply and reflect genuinely different underlying mechanisms and urgency.',
+              },
+              {
+                text: 'The pupil is always spared regardless of cause, since it is not part of the oculomotor nerve',
+                isCorrect: false,
+                explanation: 'The parasympathetic pupillary constrictor fibers do travel within the oculomotor nerve, along its outer surface, which is precisely why compressive lesions preferentially affect them.',
+              },
+              {
+                text: 'The pupil is always involved regardless of cause, since it is the most sensitive fiber type in the nerve',
+                isCorrect: false,
+                explanation: 'Microvascular ischemic third nerve palsy classically spares the pupil, since the disease process affects the centrally located motor fibers preferentially while the peripheral pupillary fibers retain some collateral supply.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Wilson disease from copper accumulation in the basal ganglia',
+        summary:
+          'Wilson disease is an autosomal recessive disorder of impaired biliary copper excretion (from a defective ATP7B copper-transporting ATPase), causing toxic copper accumulation in the liver and, once hepatic storage capacity is exceeded, in the basal ganglia (especially the putamen) and the cornea (Kayser-Fleischer rings). Basal ganglia copper deposition produces a movement disorder — tremor, dystonia, parkinsonism, or chorea — typically presenting in children, adolescents, or young adults, often together with liver disease.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 17-year-old boy presents with several months of worsening tremor, difficulty with fine hand movements, and slurred speech, along with mild jaundice. Slit-lamp examination reveals golden-brown rings at the periphery of both corneas. Liver function tests are mildly elevated, and serum ceruloplasmin is low. Toxic accumulation of copper in which of the following structures is most directly responsible for this patient’s movement disorder?',
+            explanation:
+              'This is Wilson disease, caused by a defective copper-transporting ATPase (ATP7B) that impairs biliary copper excretion, leading to toxic copper accumulation first in the liver (causing his jaundice and elevated liver enzymes) and, once hepatic storage is overwhelmed, in the basal ganglia — particularly the putamen — producing the movement disorder (tremor, dysarthria, dystonia, or parkinsonism) seen here, as well as in the cornea, producing the characteristic Kayser-Fleischer rings.',
+            difficulty: 2,
+            choices: [
+              { text: 'Basal ganglia (particularly the putamen)', isCorrect: true },
+              {
+                text: 'Hippocampus',
+                isCorrect: false,
+                explanation: 'Hippocampal damage causes memory impairment, not the movement disorder described in this patient.',
+              },
+              {
+                text: 'Cerebellum exclusively',
+                isCorrect: false,
+                explanation: 'While some cerebellar involvement can occur, the classic, primary site of copper-related movement disorder in Wilson disease is the basal ganglia, particularly the putamen.',
+              },
+              {
+                text: 'Substantia nigra exclusively',
+                isCorrect: false,
+                explanation: 'While the substantia nigra can be involved in some presentations, the disease is most classically characterized by broader basal ganglia (especially putaminal) copper deposition alongside the classic corneal and hepatic findings.',
+              },
+              {
+                text: 'Corpus callosum',
+                isCorrect: false,
+                explanation: 'The corpus callosum is not the classic site of copper accumulation responsible for this movement disorder.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize progressive supranuclear palsy from midbrain atrophy affecting vertical gaze',
+        summary:
+          'Progressive supranuclear palsy is a neurodegenerative disorder causing atrophy of midbrain structures controlling vertical eye movements (near the superior colliculus/rostral midbrain), producing a supranuclear vertical gaze palsy (impaired voluntary vertical eye movements that can still be overcome with the oculocephalic/doll’s eye maneuver, confirming the problem is in the voluntary gaze pathway rather than the eye muscles or nerves themselves), together with parkinsonism and early, prominent falls (especially backward).',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 70-year-old man presents with a two-year history of frequent falls, often backward, along with progressive difficulty looking downward voluntarily and a stiff, unsteady gait poorly responsive to levodopa. On examination, he cannot voluntarily look down, but when the examiner passively rotates his head, his eyes reflexively move to maintain fixation, demonstrating that downward eye movement is still possible. Atrophy of which region, controlling voluntary vertical gaze, best explains this specific eye movement finding?',
+            explanation:
+              'This is progressive supranuclear palsy, a neurodegenerative disorder causing atrophy of midbrain structures near the superior colliculus that control voluntary vertical eye movements. This produces a supranuclear gaze palsy: the patient cannot voluntarily look down, but the oculocephalic (doll’s eye) maneuver, which bypasses the voluntary cortical/supranuclear pathway and instead uses vestibular-ocular brainstem reflex circuitry, demonstrates that the eye muscles and their direct nerve supply are intact and still capable of the movement — confirming the lesion lies in the voluntary ("supranuclear") control pathway, not the nerves or muscles themselves. The parkinsonism and early falls (particularly backward) further support this specific diagnosis over more typical Parkinson disease.',
+            difficulty: 3,
+            choices: [
+              { text: 'Midbrain (near the superior colliculus, controlling voluntary vertical gaze)', isCorrect: true },
+              {
+                text: 'Oculomotor and trochlear nerves themselves',
+                isCorrect: false,
+                explanation: 'If the nerves themselves were damaged, the oculocephalic maneuver would not restore downward eye movement, since that maneuver relies on the same final motor pathway; the preserved reflex movement indicates a supranuclear (above the nerve/nucleus), not a nerve-level, lesion.',
+              },
+              {
+                text: 'Extraocular muscles themselves',
+                isCorrect: false,
+                explanation: 'Similarly, if the muscles themselves were the primary problem, the reflexive oculocephalic maneuver would not be able to produce downward movement either.',
+              },
+              {
+                text: 'Substantia nigra exclusively, without any midbrain gaze center involvement',
+                isCorrect: false,
+                explanation: 'While substantia nigra involvement contributes to the parkinsonism in this disease, the specific vertical gaze palsy described requires additional involvement of the midbrain vertical gaze centers near the superior colliculus.',
+              },
+              {
+                text: 'Cerebellum exclusively',
+                isCorrect: false,
+                explanation: 'Isolated cerebellar disease would cause ataxia and nystagmus, not this specific supranuclear vertical gaze palsy with preserved reflexive eye movements.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Creutzfeldt-Jakob disease from prion-induced spongiform cortical degeneration',
+        summary:
+          'Creutzfeldt-Jakob disease is a rapidly progressive dementia caused by misfolded prion proteins that induce further misfolding of normal prion protein, leading to neuronal death and characteristic spongiform (vacuolated) changes in the cerebral cortex. It classically presents with rapidly progressive dementia and myoclonus over weeks to months, distinguishing it from the much slower course of typical neurodegenerative dementias like Alzheimer disease.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 64-year-old woman develops rapidly progressive cognitive decline over just six weeks, going from independent functioning to being unable to recognize family members, accompanied by sudden, brief jerking movements of her limbs triggered by loud noises. EEG shows periodic sharp-wave complexes, and MRI shows cortical ribboning on diffusion-weighted imaging. Brain biopsy would be expected to show characteristic vacuolated, sponge-like changes in which of the following structures, reflecting the underlying pathologic process?',
+            explanation:
+              'This presentation, dementia progressing over weeks rather than years, along with myoclonus and characteristic EEG and MRI findings, is classic for Creutzfeldt-Jakob disease, caused by misfolded prion proteins that template the misfolding of normal prion protein, leading to progressive neuronal death. This produces characteristic spongiform (vacuolated) degeneration of the cerebral cortex, visible on biopsy as a sponge-like appearance, and accounts for the unusually rapid, aggressive course compared to typical neurodegenerative dementias.',
+            difficulty: 2,
+            choices: [
+              { text: 'Cerebral cortex (spongiform/vacuolated degeneration)', isCorrect: true },
+              {
+                text: 'Substantia nigra (Lewy body deposition)',
+                isCorrect: false,
+                explanation: 'Lewy body deposition in the substantia nigra is characteristic of Parkinson disease and Lewy body dementia, not the spongiform cortical changes of prion disease.',
+              },
+              {
+                text: 'Hippocampus (neurofibrillary tangles and amyloid plaques)',
+                isCorrect: false,
+                explanation: 'This describes the pathology of Alzheimer disease, which typically progresses over years, not the rapid, weeks-long course and spongiform changes of Creutzfeldt-Jakob disease.',
+              },
+              {
+                text: 'Caudate nucleus (neuronal loss and gliosis)',
+                isCorrect: false,
+                explanation: 'This describes the pathology of Huntington disease, which causes chorea and a much slower progressive course, not this rapid dementia with myoclonus.',
+              },
+              {
+                text: 'Mammillary bodies (hemorrhagic necrosis)',
+                isCorrect: false,
+                explanation: 'This describes the pathology of Wernicke encephalopathy from thiamine deficiency, a distinct and much more treatable condition from Creutzfeldt-Jakob disease.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize central retinal vein occlusion by its "blood and thunder" fundus appearance',
+        summary:
+          'Central retinal vein occlusion causes painless, gradual (over hours) monocular vision loss with a dramatically abnormal fundus exam: diffuse retinal hemorrhages in all four quadrants, venous dilation and tortuosity, cotton-wool spots, and optic disc edema — the "blood and thunder" appearance — reflecting venous outflow obstruction and resulting increased venous/capillary pressure, distinct from the pale retina and cherry-red spot of an arterial (central retinal artery) occlusion.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 74-year-old man with hypertension and glaucoma reports gradual, painless blurring of vision in one eye that developed over several hours. Fundoscopic examination reveals extensive retinal hemorrhages scattered throughout all four quadrants, dilated and tortuous retinal veins, scattered cotton-wool spots, and swelling of the optic disc. Obstruction of which vessel best explains this dramatic fundus appearance, and how does the mechanism differ from that of a central retinal artery occlusion?',
+            explanation:
+              'This is central retinal vein occlusion, producing the classic "blood and thunder" fundus appearance: widespread hemorrhages, venous dilation/tortuosity, cotton-wool spots, and disc edema, all reflecting obstruction of venous outflow from the retina and the resulting rise in venous and capillary pressure, which causes vessels to leak and rupture over hours. This contrasts with central retinal artery occlusion, in which sudden arterial inflow obstruction causes immediate, severe ischemia with a pale retina and a cherry-red fovea, rather than this hemorrhagic, edematous picture.',
+            difficulty: 2,
+            choices: [
+              { text: 'Central retinal vein, causing venous congestion and hemorrhage', isCorrect: true },
+              {
+                text: 'Central retinal artery, causing acute ischemia',
+                isCorrect: false,
+                explanation: 'Central retinal artery occlusion causes sudden, severe, painless vision loss with a pale retina and cherry-red spot, not this gradual, hemorrhagic "blood and thunder" appearance.',
+              },
+              {
+                text: 'Ophthalmic artery, causing global ocular ischemia',
+                isCorrect: false,
+                explanation: 'Ophthalmic artery occlusion would cause more severe, global ischemic changes affecting the entire eye, not this specific venous congestion pattern.',
+              },
+              {
+                text: 'Posterior ciliary arteries, causing optic nerve head ischemia',
+                isCorrect: false,
+                explanation: 'This describes ischemic optic neuropathy, a different process with a different fundus appearance (pale, swollen disc without this degree of diffuse hemorrhage) than the one described.',
+              },
+              {
+                text: 'Vortex veins, causing choroidal congestion',
+                isCorrect: false,
+                explanation: 'These veins drain the choroid, not the retina itself, and are not the vessels responsible for this classic retinal hemorrhagic appearance.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize subclavian steal syndrome from reversed vertebral artery flow',
+        summary:
+          'Subclavian steal syndrome occurs when a stenosis or occlusion of the proximal subclavian artery (before the vertebral artery origin) causes blood to flow retrograde down the ipsilateral vertebral artery to supply the arm, "stealing" blood from the vertebrobasilar circulation. This mismatch worsens with arm exercise, which increases demand distal to the stenosis, producing transient vertebrobasilar symptoms (dizziness, visual disturbance, ataxia) along with a blood pressure discrepancy between the arms.',
+        discipline: 'Cardiovascular',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 62-year-old man reports that whenever he uses his left arm vigorously, such as while painting a ceiling, he experiences dizziness, unsteadiness, and blurred vision that resolve within minutes of resting his arm. Blood pressure measured in his left arm is 40 mm Hg lower than in his right arm, and a bruit is heard over his left subclavian region. Doppler ultrasound reveals reversed flow in his left vertebral artery. Stenosis of which artery, proximal to the origin of the affected vertebral artery, best explains this reversed flow and his exercise-induced symptoms?',
+            explanation:
+              'This is subclavian steal syndrome, caused by a hemodynamically significant stenosis of the subclavian artery proximal to the origin of the vertebral artery. This pressure gradient causes blood to flow retrograde down the ipsilateral vertebral artery to supply the arm distal to the stenosis, effectively "stealing" blood that would otherwise contribute to the vertebrobasilar circulation. Arm exercise increases the metabolic demand and flow requirement distal to the stenosis, exaggerating this retrograde steal and transiently reducing vertebrobasilar perfusion, producing the dizziness, visual disturbance, and unsteadiness described, along with the characteristic interarm blood pressure discrepancy.',
+            difficulty: 3,
+            choices: [
+              { text: 'Subclavian artery, proximal to the vertebral artery origin', isCorrect: true },
+              {
+                text: 'Vertebral artery itself, distal to the subclavian artery origin',
+                isCorrect: false,
+                explanation: 'The stenosis responsible for this syndrome is in the subclavian artery proximal to the vertebral artery origin, which is precisely why blood is diverted (stolen) retrograde down the vertebral artery in the first place.',
+              },
+              {
+                text: 'Common carotid artery',
+                isCorrect: false,
+                explanation: 'Carotid artery stenosis causes anterior circulation (hemispheric) symptoms and does not explain this specific arm-exercise-triggered vertebrobasilar symptom pattern with reversed vertebral flow.',
+              },
+              {
+                text: 'Basilar artery',
+                isCorrect: false,
+                explanation: 'Basilar artery stenosis would not produce this specific pattern of reversed vertebral flow toward the arm or the interarm blood pressure discrepancy.',
+              },
+              {
+                text: 'Brachiocephalic (innominate) artery, distal to all its branches',
+                isCorrect: false,
+                explanation: 'The critical stenosis must be proximal to the vertebral artery origin (in the subclavian artery, whether or not it originates from the brachiocephalic trunk) to create the pressure gradient causing retrograde vertebral flow.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize diabetic peripheral neuropathy as a distal, symmetric, length-dependent axonal process',
+        summary:
+          'Diabetic peripheral neuropathy is a distal symmetric polyneuropathy resulting from chronic hyperglycemia-induced damage to peripheral nerve axons, affecting the longest nerve fibers first ("dying-back" axonal degeneration). This produces sensory loss beginning in the toes and feet and progressing proximally in a symmetric "stocking" distribution (and later a "glove" distribution in the hands) — a distinct pattern from the ascending, demyelinating, areflexic weakness of Guillain-Barré syndrome.',
+        discipline: 'Nervous system',
+        yieldWeight: 45,
+        variations: [
+          {
+            stem: 'A 60-year-old man with a 15-year history of poorly controlled type 2 diabetes reports gradual numbness and tingling that began in both feet and has slowly ascended to just below his knees over several years, with early, mild involvement now also beginning in his fingertips. Nerve conduction studies show reduced amplitude with relatively preserved conduction velocity, consistent with axonal (rather than demyelinating) damage. Which of the following best characterizes the underlying process responsible for this pattern of sensory loss?',
+            explanation:
+              'This is diabetic peripheral neuropathy, a distal symmetric polyneuropathy resulting from chronic hyperglycemia-induced axonal damage that preferentially affects the longest peripheral nerve fibers first (a "dying-back" process), which is why symptoms begin in the feet (supplied by the longest nerves) and slowly ascend, with the hands becoming involved only once the disease has progressed enough that even the somewhat shorter arm nerves reach a comparable affected length — producing the classic symmetric "stocking-glove" pattern. This chronic, slowly progressive, axonal, length-dependent process is distinct from the acute, ascending, primarily demyelinating pattern of Guillain-Barré syndrome.',
+            difficulty: 2,
+            choices: [
+              { text: 'Chronic, length-dependent axonal degeneration affecting the longest peripheral nerve fibers first', isCorrect: true },
+              {
+                text: 'Acute, ascending demyelination of peripheral nerve roots',
+                isCorrect: false,
+                explanation: 'This describes Guillain-Barré syndrome, an acute, rapidly progressive process with reduced conduction velocity (demyelinating pattern), not the chronic, slowly progressive, axonal pattern (reduced amplitude, preserved velocity) described here.',
+              },
+              {
+                text: 'Autoimmune attack on postsynaptic neuromuscular junction receptors',
+                isCorrect: false,
+                explanation: 'This describes myasthenia gravis, a disorder of neuromuscular transmission causing fatigable weakness, not this sensory, axonal, length-dependent process.',
+              },
+              {
+                text: 'Selective destruction of anterior horn cells',
+                isCorrect: false,
+                explanation: 'This describes a pure motor process (as in poliomyelitis), not the sensory-predominant, length-dependent pattern described in this patient.',
+              },
+              {
+                text: 'Compression of a single nerve at one specific anatomic site',
+                isCorrect: false,
+                explanation: 'This describes a focal mononeuropathy (like carpal tunnel syndrome), not the diffuse, symmetric, length-dependent polyneuropathy pattern affecting both feet symmetrically and ascending over years.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize diabetic gastroparesis from vagus nerve autonomic neuropathy',
+        summary:
+          'Diabetic gastroparesis results from chronic hyperglycemia-induced damage to the vagus nerve’s autonomic fibers innervating the stomach, impairing the coordinated peristaltic contractions needed for normal gastric emptying. This produces early satiety, postprandial bloating, nausea, and vomiting of food eaten hours earlier, with delayed gastric emptying confirmed on nuclear scintigraphy, in the absence of any mechanical obstruction.',
+        discipline: 'Gastrointestinal',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 55-year-old woman with a 20-year history of poorly controlled type 1 diabetes reports early fullness after eating only a few bites of food, along with bloating and occasional vomiting of undigested food eaten many hours earlier. Upper endoscopy reveals no mechanical obstruction, and a gastric emptying study confirms markedly delayed emptying of a solid meal. Chronic damage to which nerve, responsible for coordinating normal gastric motility, is most likely responsible for this presentation?',
+            explanation:
+              'This is diabetic gastroparesis, resulting from chronic hyperglycemia-induced damage to the autonomic (particularly vagal) nerve fibers that normally coordinate the stomach’s peristaltic contractions responsible for propelling food into the duodenum. Vagal neuropathy impairs this coordinated motility, causing food to remain in the stomach far longer than normal (delayed gastric emptying, confirmed by scintigraphy, in the absence of any mechanical blockage), producing early satiety, bloating, nausea, and vomiting of retained, undigested food.',
+            difficulty: 2,
+            choices: [
+              { text: 'Vagus nerve (autonomic innervation of the stomach)', isCorrect: true },
+              {
+                text: 'Recurrent laryngeal nerve',
+                isCorrect: false,
+                explanation: 'This branch of the vagus nerve supplies the larynx, causing hoarseness when injured, not gastric motility dysfunction.',
+              },
+              {
+                text: 'Phrenic nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the diaphragm and is unrelated to gastric motility.',
+              },
+              {
+                text: 'Splanchnic nerves (sympathetic) exclusively',
+                isCorrect: false,
+                explanation: 'While sympathetic input modulates gastric motility to some degree, the primary autonomic pathway responsible for coordinating the propulsive contractions impaired in diabetic gastroparesis is the (parasympathetic) vagus nerve.',
+              },
+              {
+                text: 'Pudendal nerve',
+                isCorrect: false,
+                explanation: 'This nerve supplies the perineum and pelvic floor, entirely unrelated to gastric motility.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize Charcot-Marie-Tooth disease as a hereditary demyelinating peripheral neuropathy',
+        summary:
+          'Charcot-Marie-Tooth disease is the most common hereditary peripheral neuropathy, most often caused by a duplication of the PMP22 gene affecting Schwann cell myelin production. It produces slowly progressive, symmetric distal weakness and atrophy (classically producing high-arched feet and hammer toes, with "inverted champagne bottle" legs from calf atrophy), along with reduced or absent reflexes and demyelinating slowing on nerve conduction studies, typically beginning in childhood or adolescence.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 16-year-old boy is evaluated for frequent ankle sprains and difficulty running. His father and paternal grandfather had similar problems beginning in adolescence. Examination reveals high-arched feet, hammer toes, symmetric distal leg weakness with markedly atrophied calf muscles giving an "inverted champagne bottle" appearance, and absent ankle reflexes bilaterally. Nerve conduction studies show markedly slowed conduction velocities. Duplication of the gene encoding which of the following, essential for normal Schwann cell myelin production, is the most common cause of this inherited condition?',
+            explanation:
+              'This presentation, a family history of similar symptoms beginning in adolescence, high-arched feet, hammer toes, distal leg atrophy ("inverted champagne bottle" legs), areflexia, and markedly slowed nerve conduction velocities, is classic for Charcot-Marie-Tooth disease, the most common hereditary peripheral neuropathy. The most common genetic cause is a duplication of PMP22 (peripheral myelin protein 22), a gene essential for normal Schwann cell myelin formation and maintenance; its overexpression disrupts myelin structure, producing a demyelinating peripheral neuropathy that slowly progresses over years.',
+            difficulty: 3,
+            choices: [
+              { text: 'Peripheral myelin protein 22 (PMP22)', isCorrect: true },
+              {
+                text: 'Dystrophin',
+                isCorrect: false,
+                explanation: 'Dystrophin mutations cause Duchenne and Becker muscular dystrophy, primary muscle disorders with a different inheritance pattern and clinical course, not this demyelinating peripheral nerve disease.',
+              },
+              {
+                text: 'Survival motor neuron protein',
+                isCorrect: false,
+                explanation: 'Mutations here cause spinal muscular atrophy, a lower motor neuron disease, not this peripheral nerve myelin disorder.',
+              },
+              {
+                text: 'Huntingtin',
+                isCorrect: false,
+                explanation: 'Trinucleotide repeat expansion in this gene causes Huntington disease, a basal ganglia disorder causing chorea, unrelated to peripheral nerve myelin.',
+              },
+              {
+                text: 'ATP7B copper-transporting ATPase',
+                isCorrect: false,
+                explanation: 'Mutations here cause Wilson disease, a disorder of copper metabolism affecting the liver and basal ganglia, not this peripheral neuropathy.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize detrusor-sphincter dyssynergia from suprasacral spinal cord injury',
+        summary:
+          'A spinal cord injury above the sacral micturition center (but below the brainstem) disrupts the coordinating pathways between the bladder (detrusor muscle) and the external urethral sphincter, causing detrusor-sphincter dyssynergia: the bladder and sphincter contract simultaneously rather than in the normal coordinated sequence, producing incomplete emptying, urinary retention, and high bladder pressures that risk kidney damage over time.',
+        discipline: 'Renal/Genitourinary',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 27-year-old man with a spinal cord injury at T10 from a motorcycle accident one year ago undergoes urodynamic testing for recurrent urinary tract infections and a sensation of incomplete bladder emptying. The study shows that his bladder (detrusor) muscle and his external urethral sphincter contract at the same time instead of the sphincter relaxing as the bladder contracts. Disruption of coordinating pathways between the pons and the sacral spinal cord, caused by an injury at which general level relative to the sacral micturition center, best explains this finding?',
+            explanation:
+              'This is detrusor-sphincter dyssynergia, occurring when a spinal cord injury above the sacral micturition center (but below the brainstem’s pontine micturition center) disconnects the normal coordinating pathway between the two. Normally, the pons coordinates bladder (detrusor) contraction with relaxation of the external urethral sphincter for effective voiding; when this suprasacral pathway is interrupted, the bladder and sphincter instead contract simultaneously (dyssynergia), causing incomplete emptying, elevated bladder pressures, and risk of upper urinary tract damage over time.',
+            difficulty: 3,
+            choices: [
+              { text: 'A suprasacral spinal cord injury, above the sacral micturition center but below the pons', isCorrect: true },
+              {
+                text: 'A sacral spinal cord injury, directly destroying the micturition center itself',
+                isCorrect: false,
+                explanation: 'A lesion directly destroying the sacral micturition center would instead cause an areflexic, flaccid bladder with overflow incontinence, not the dyssynergic simultaneous contraction pattern described here.',
+              },
+              {
+                text: 'A brainstem lesion above the pontine micturition center',
+                isCorrect: false,
+                explanation: 'A lesion here can also disrupt coordinated voiding, but the classic dyssynergia pattern tested here specifically reflects a spinal cord lesion below the pons but above the sacral center, interrupting the pathway between the two.',
+              },
+              {
+                text: 'A peripheral pudendal nerve injury alone',
+                isCorrect: false,
+                explanation: 'Isolated pudendal nerve injury would impair voluntary external sphincter control, not this specific pattern of simultaneous detrusor-sphincter contraction from a central coordinating pathway disruption.',
+              },
+              {
+                text: 'A lesion of the cauda equina alone',
+                isCorrect: false,
+                explanation: 'Cauda equina lesions typically cause an areflexic, flaccid bladder from disruption of the sacral reflex arc itself, not this dyssynergic pattern from a more proximal spinal cord disconnection.',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        title: 'Recognize the Argyll Robertson pupil as a sign of neurosyphilis',
+        summary:
+          'The Argyll Robertson pupil, classically seen in tertiary neurosyphilis (often accompanying tabes dorsalis), accommodates normally (constricting with near focus) but fails to constrict in response to direct light — summarized by the mnemonic "prostitute’s pupil" (accommodates but does not react). This dissociation reflects damage to the pretectal light-reflex pathway near the midbrain, sparing the separate, more ventrally located pathway mediating the accommodation reflex.',
+        discipline: 'Nervous system',
+        yieldWeight: 40,
+        variations: [
+          {
+            stem: 'A 60-year-old man with untreated syphilis from decades earlier is found to have small, irregular pupils that constrict briskly when he focuses on a near object but fail to constrict at all when a bright light is shone directly into either eye. He also has loss of vibration and position sense in his legs with a positive Romberg sign. This specific pupillary finding reflects damage to a light-reflex pathway near which of the following structures, while sparing the separate pathway for the accommodation reflex?',
+            explanation:
+              'This is the Argyll Robertson pupil, a classic sign of tertiary neurosyphilis often accompanying tabes dorsalis (explaining this patient’s dorsal column findings). It reflects damage to the pupillary light-reflex pathway near the pretectal area of the midbrain, which normally relays the afferent light signal to both Edinger-Westphal nuclei for pupillary constriction. The separate pathway mediating the accommodation (near) reflex, which involves different midbrain and cortical connections, is spared, producing the classic dissociation: the pupil accommodates normally but does not react to light.',
+            difficulty: 3,
+            choices: [
+              { text: 'Pretectal area of the midbrain (light-reflex pathway)', isCorrect: true },
+              {
+                text: 'Edinger-Westphal nucleus itself, affecting both light and accommodation pathways equally',
+                isCorrect: false,
+                explanation: 'If the Edinger-Westphal nucleus itself were destroyed, both the light and accommodation reflexes would be lost, not just the light reflex, since both pathways converge there for the final motor output.',
+              },
+              {
+                text: 'Optic nerve, affecting the afferent limb of both light and accommodation reflexes equally',
+                isCorrect: false,
+                explanation: 'Optic nerve damage would impair vision itself and both reflexes together (or cause an afferent pupillary defect), not this selective light-reflex-only deficit with preserved accommodation.',
+              },
+              {
+                text: 'Ciliary ganglion, affecting only the accommodation reflex',
+                isCorrect: false,
+                explanation: 'This patient’s accommodation reflex is preserved, not affected; the deficit is isolated to the light reflex pathway.',
+              },
+              {
+                text: 'Cavernous sinus, affecting oculomotor nerve function broadly',
+                isCorrect: false,
+                explanation: 'A cavernous sinus lesion would typically also cause ptosis and extraocular movement abnormalities, not this isolated, bilateral, small-pupil light-accommodation dissociation.',
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -564,16 +11926,55 @@ What is the positive predictive value of this test?`,
   },
 ];
 
-async function main() {
-  // Idempotent: clear previously-seeded content for this exam (but never
-  // touches user progress/attempts/sessions, which reference questions by
-  // id and cascade-delete along with them intentionally on reseed).
-  await database.system.deleteMany({ where: { examType: EXAM } });
+// Deterministic PRNG (mulberry32) seeded from a hash of the question stem, so
+// that re-seeding always reproduces the same shuffle rather than the correct
+// choice always landing in the same array position (which happens because
+// every SeedQuestion above is authored with the correct choice listed first).
+function hashString(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
+  }
+  return h >>> 0;
+}
 
+function mulberry32(seed: number) {
+  let a = seed;
+  return () => {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffledChoices(q: SeedQuestion): SeedChoice[] {
+  const rng = mulberry32(hashString(q.stem));
+  const shuffled = [...q.choices];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+async function main() {
+  // Idempotent: for each system, wipe just its learning objectives (which
+  // cascade-deletes their questions and any user progress/attempts/notes
+  // referencing them — intentional, since this is sample dev content) and
+  // recreate them fresh. Systems themselves are upserted by their stable
+  // (examType, name) key rather than deleted and recreated, so a reseed
+  // never invalidates a user's stored `focusSystemIds` (System row ids)
+  // by silently swapping in new ones.
   for (const [systemIndex, systemData] of SYSTEMS.entries()) {
-    const system = await database.system.create({
-      data: { examType: EXAM, name: systemData.name, sortOrder: systemIndex },
+    const system = await database.system.upsert({
+      where: { examType_name: { examType: EXAM, name: systemData.name } },
+      create: { examType: EXAM, name: systemData.name, sortOrder: systemIndex },
+      update: { sortOrder: systemIndex },
     });
+
+    await database.learningObjective.deleteMany({ where: { systemId: system.id } });
 
     for (const objectiveData of systemData.objectives) {
       const objective = await database.learningObjective.create({
@@ -598,7 +11999,7 @@ async function main() {
             explanation: q.explanation,
             difficulty: q.difficulty,
             choices: {
-              create: q.choices.map((c, i) => ({
+              create: shuffledChoices(q).map((c, i) => ({
                 text: c.text,
                 isCorrect: c.isCorrect,
                 explanation: c.explanation,
