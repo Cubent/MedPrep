@@ -56,14 +56,14 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
 
       {/* Hero Section */}
       <div
-        className="relative overflow-hidden px-6 pt-6 sm:pt-12 lg:pt-14"
+        className="relative overflow-hidden px-6 pt-6 pb-40 sm:pt-12 sm:pb-48 lg:pt-14 lg:pb-0"
         style={{ backgroundColor: '#06005A' }}
       >
-        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col items-center lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center lg:flex-row lg:items-end lg:justify-between lg:gap-10">
           {/* Left: Text content */}
-          <div className="flex max-w-xl flex-col items-center text-center pb-52 sm:pb-64 lg:pb-40 lg:items-start lg:text-left">
+          <div className="flex max-w-xl flex-col items-center text-center pb-64 sm:pb-72 lg:pb-40 lg:items-start lg:text-left">
             {/* Exam Timeline */}
-            <p className="mb-5 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 lg:justify-start">
+            <p className="mt-3 mb-5 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 text-xs font-semibold uppercase tracking-[0.16em] text-white/80 lg:mt-0 lg:justify-start">
               <span>STEP 1</span>
               <span aria-hidden="true" className="size-1 rotate-45 bg-[#C46B10]" />
               <span>STEP 2</span>
@@ -202,7 +202,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
               <span className="h-4 w-px bg-white/20" aria-hidden="true" />
               <p className="text-sm text-white/90">
                 <span className="font-bold text-white">5.0 rating</span>{' '}
-                <span className="text-white/60">&middot; MedPrep Institute students</span>
+                <span className="hidden text-white/60 sm:inline">&middot; MedPrep Institute students</span>
               </p>
             </div>
           </div>

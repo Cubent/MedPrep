@@ -7,9 +7,11 @@ import {
   ChevronRight,
   History,
   Home,
+  LayoutDashboard,
   RotateCcw,
   Target,
   UserRound,
+  X,
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -37,6 +39,7 @@ type DashboardShellProps = {
 export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => {
   const pathname = usePathname();
   const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     try {
@@ -45,6 +48,10 @@ export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => 
       // localStorage unavailable — default to expanded.
     }
   }, []);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
 
   const toggleCollapsed = () => {
     setIsCollapsed((prev) => {
@@ -81,8 +88,48 @@ export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => 
             </span>
           )}
         </div>
-        <DashboardHeaderActions />
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            aria-label={isMobileMenuOpen ? 'Close dashboard menu' : 'Open dashboard menu'}
+            aria-expanded={isMobileMenuOpen}
+            className="flex size-9 shrink-0 items-center justify-center rounded-lg text-[#06005A] hover:bg-gray-50 dark:text-white dark:hover:bg-white/5 md:hidden"
+          >
+            {isMobileMenuOpen ? <X className="size-5" /> : <LayoutDashboard className="size-5" />}
+          </button>
+          <DashboardHeaderActions />
+        </div>
       </header>
+
+      {isMobileMenuOpen && (
+        <nav className="flex flex-col gap-1 border-b border-gray-200 bg-white p-3 dark:border-white/10 dark:bg-[#120A2E] md:hidden">
+          {NAV_ITEMS.map((item) => {
+            const isActive =
+              item.href === '/dashboard'
+                ? pathname === '/dashboard' || pathname.endsWith('/dashboard')
+                : pathname.includes(item.href) &&
+                  (pathname.length === pathname.indexOf(item.href) + item.href.length ||
+                    pathname[pathname.indexOf(item.href) + item.href.length] === '/');
+            const Icon = item.icon;
+
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors ${
+                  isActive
+                    ? 'bg-[#06005A]/10 font-semibold text-[#06005A] dark:bg-[#C46B10]/15 dark:text-[#C46B10]'
+                    : 'font-medium text-gray-600 hover:bg-gray-50 hover:text-[#06005A] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white'
+                }`}
+              >
+                <Icon className="size-4 shrink-0" />
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+      )}
 
       <div className="flex min-h-[calc(100vh-4rem)]">
         {/* Sidebar */}
@@ -142,7 +189,7 @@ export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => 
         </aside>
 
         {/* Main content */}
-        <main className="flex-1 px-4 py-8 sm:px-6">{children}</main>
+        <main className="flex-1 px-4 pt-10 pb-8 sm:px-6 sm:py-8">{children}</main>
       </div>
     </div>
     </PracticeProvider>
