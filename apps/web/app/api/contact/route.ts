@@ -3,33 +3,23 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
-    
-    const firstName = formData.get('firstName') as string;
-    const lastName = formData.get('lastName') as string;
+
+    const name = formData.get('name') as string;
     const email = formData.get('email') as string;
-    const company = formData.get('company') as string;
-    const service = formData.get('service') as string;
-    const budget = formData.get('budget') as string;
-    const urgency = formData.get('urgency') as string;
     const message = formData.get('message') as string;
 
-    // Log the contact form submission
-    console.log('Contact form submission:', {
-      firstName,
-      lastName,
-      email,
-      company,
-      service,
-      budget,
-      urgency,
-      message
-    });
+    if (!name || !email || !message) {
+      return NextResponse.json(
+        { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
 
-    // Return success response
-    return NextResponse.json({ 
-      success: true,
-      message: 'Contact form submitted successfully' 
-    });
+    // TODO: wire up real email delivery (e.g. @repo/email) once it's added
+    // as a dependency of this app; for now submissions are logged.
+    console.log('Contact form submission:', { name, email, message });
+
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error('Error processing contact form:', error);
     return NextResponse.json(

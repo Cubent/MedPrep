@@ -187,16 +187,20 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
       <div className="bg-[#F4F2FB] px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <div className="mb-12 flex flex-col items-center text-center">
-            <div className="flex items-center gap-1 text-[#C46B10]">
-              {[0, 1, 2, 3, 4].map((i) => (
-                <svg key={i} className="size-4 fill-current" viewBox="0 0 20 20">
-                  <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
-                </svg>
-              ))}
+            <div className="inline-flex items-center gap-3 rounded-full px-5 py-2.5" style={{ backgroundColor: '#06005A' }}>
+              <div className="flex items-center gap-0.5 text-[#C46B10]">
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} className="size-4 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+              <span className="h-4 w-px bg-white/20" aria-hidden="true" />
+              <p className="text-sm text-white/90">
+                <span className="font-bold text-white">5.0 rating</span>{' '}
+                <span className="text-white/60">&middot; MedPrep Institute students</span>
+              </p>
             </div>
-            <p className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-gray-500">
-              5.0 rating &middot; MedPrep Institute students
-            </p>
           </div>
 
           <div className="grid gap-10 md:grid-cols-3 md:gap-8">
@@ -208,9 +212,11 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 not gonna lie i was skeptical of another qbank but this one actually notices what i keep missing and just... brings it back
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#06005A] text-sm font-semibold text-white">
-                  M
-                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=72&h=72&fit=crop&crop=faces&auto=format"
+                  alt="Maya R."
+                  className="size-9 shrink-0 rounded-full object-cover"
+                />
                 <div className="text-sm">
                   <span className="font-semibold text-black">Maya R.</span>{' '}
                   <span className="text-gray-500">MS-3</span>
@@ -226,9 +232,11 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 barely make flashcards anymore. the stuff i missed just shows back up right when i'm about to forget it, kind of annoyingly perfect timing
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#C46B10] text-sm font-semibold text-white">
-                  D
-                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=72&h=72&fit=crop&crop=faces&auto=format"
+                  alt="Devon K."
+                  className="size-9 shrink-0 rounded-full object-cover"
+                />
                 <div className="text-sm">
                   <span className="font-semibold text-black">Devon K.</span>{' '}
                   <span className="text-gray-500">MS-2</span>
@@ -244,9 +252,11 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
                 cardio was wrecking me for weeks. it kept throwing the same concepts back at me in different forms until it finally clicked. passed Step 2 with room to spare
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#06005A] text-sm font-semibold text-white">
-                  P
-                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=72&h=72&fit=crop&crop=faces&auto=format"
+                  alt="Priya S."
+                  className="size-9 shrink-0 rounded-full object-cover"
+                />
                 <div className="text-sm">
                   <span className="font-semibold text-black">Priya S.</span>{' '}
                   <span className="text-gray-500">MS-4</span>
@@ -591,27 +601,66 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
             </div>
           </div>
 
-          <div className="mt-14 grid gap-10 sm:grid-cols-3 sm:gap-8">
-            <div className="border-t-2 border-[#06005A]/70 pt-6">
-              <span className="font-[family-name:var(--font-display)] text-lg text-gray-500">01</span>
-              <h3 className="mt-3 text-xl font-semibold text-black">Spaced repetition built in</h3>
-              <p className="mt-2 text-base leading-relaxed text-gray-600">
-                Variations on questions you got wrong are presented to you just before you would forget them. Spaced repetition is the most powerful way to consolidate long term memories, and should not be a separate activity.
+        </div>
+      </div>
+
+      {/* Why It Works Section */}
+      <div className="px-6 py-16 sm:py-20" style={{ backgroundColor: '#06005A' }}>
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/60">
+                Why it works
               </p>
+              <h2 className="font-[family-name:var(--font-display)] mt-4 text-balance text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Three reasons this method sticks
+              </h2>
+              <p className="mt-4 max-w-md text-lg leading-relaxed text-white/70">
+                None of this is a gimmick. It is spaced repetition, progressive
+                difficulty, and high-yield prioritization &mdash; done automatically
+                instead of left for you to manage on your own.
+              </p>
+              <a
+                href="/sign-up"
+                className="mt-8 inline-flex h-12 items-center justify-center rounded-full border border-white/30 px-8 text-base font-semibold text-white transition-colors hover:bg-white/10"
+              >
+                Start practicing free
+              </a>
             </div>
-            <div className="border-t-2 border-[#06005A]/70 pt-6">
-              <span className="font-[family-name:var(--font-display)] text-lg text-gray-500">02</span>
-              <h3 className="mt-3 text-xl font-semibold text-black">Spot how they try and trick you</h3>
-              <p className="mt-2 text-base leading-relaxed text-gray-600">
-                By progressively expanding on topics, you get to see the ways test writers try and trick you. This is very difficult to learn when questions are presented randomly.
-              </p>
-            </div>
-            <div className="border-t-2 border-[#06005A]/70 pt-6">
-              <span className="font-[family-name:var(--font-display)] text-lg text-gray-500">03</span>
-              <h3 className="mt-3 text-xl font-semibold text-black">Hit all high yield concepts first</h3>
-              <p className="mt-2 text-base leading-relaxed text-gray-600">
-                Not everyone finishes their question bank, and thats okay. We front-load with the most high yield concepts first to maximize your score.
-              </p>
+
+            <div className="flex flex-col gap-3">
+              <div
+                className="px-8 py-7 sm:px-10 sm:py-8"
+                style={{ background: 'linear-gradient(90deg, #4c6fff 0%, #2b3fb0 22%, #1c2a86 100%)' }}
+              >
+                <span className="font-[family-name:var(--font-display)] text-4xl text-white sm:text-5xl">01</span>
+                <p className="mt-2 text-lg font-bold text-white">Reviews come back right on time</p>
+                <p className="mt-1 max-w-md text-[0.95rem] leading-relaxed text-white/75">
+                  Variations on questions you got wrong are presented to you just before you would forget them. Spaced repetition is the most powerful way to consolidate long term memories, and should not be a separate activity.
+                </p>
+              </div>
+
+              <div
+                className="px-8 py-7 sm:px-10 sm:py-8"
+                style={{ background: 'linear-gradient(90deg, #4c6fff 0%, #2b3fb0 22%, #1c2a86 100%)' }}
+              >
+                <span className="font-[family-name:var(--font-display)] text-4xl text-white sm:text-5xl">02</span>
+                <p className="mt-2 text-lg font-bold text-white">Learn to spot trick answers</p>
+                <p className="mt-1 max-w-md text-[0.95rem] leading-relaxed text-white/75">
+                  By progressively expanding on topics, you get to see the ways test writers try and trick you. This is very difficult to learn when questions are presented randomly.
+                </p>
+              </div>
+
+              <div
+                className="px-8 py-7 sm:px-10 sm:py-8"
+                style={{ background: 'linear-gradient(90deg, #4c6fff 0%, #2b3fb0 22%, #1c2a86 100%)' }}
+              >
+                <span className="font-[family-name:var(--font-display)] text-4xl text-white sm:text-5xl">03</span>
+                <p className="mt-2 text-lg font-bold text-white">The most important topics come first</p>
+                <p className="mt-1 max-w-md text-[0.95rem] leading-relaxed text-white/75">
+                  Not everyone finishes their question bank, and thats okay. We front-load with the most high yield concepts first to maximize your score.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -874,33 +923,51 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-50 border-t border-gray-200 py-8 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            {/* Logo and Copyright */}
-            <div className="flex items-center gap-3">
-              <img
-                src="/animateos-logo (1).png"
-                alt="MedPrep Institute Logo"
-                className="h-8 w-8 rounded-lg object-cover"
-              />
-              <div className="text-sm text-gray-600">
-                © 2026 MedPrep Institute. All rights reserved.
+      <footer className="px-6 pb-10 pt-16" style={{ backgroundColor: '#06005A' }}>
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
+            <div>
+              <div className="flex items-center gap-2.5">
+                <img
+                  src="/animateos-logo (1).png"
+                  alt="MedPrep Institute Logo"
+                  className="h-7 w-7 rounded-md object-cover"
+                />
+                <span className="text-base font-medium text-white">MedPrep Institute</span>
               </div>
+              <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
+                An adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that remembers what you miss.
+              </p>
             </div>
 
-            {/* Links */}
-            <div className="flex items-center gap-6 text-sm">
-              <a href="/privacy-policy" className="text-gray-600 hover:text-[#06005A] transition-colors">
-                Privacy Policy
-              </a>
-              <a href="/terms-of-service" className="text-gray-600 hover:text-[#06005A] transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-gray-600 hover:text-[#06005A] transition-colors">
-                Contact
-              </a>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Product</p>
+              <ul className="mt-4 flex flex-col gap-3 text-sm">
+                <li><a href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</a></li>
+                <li><a href="/#how-it-works" className="text-white/70 hover:text-white">The Method</a></li>
+                <li><a href="/sign-up" className="text-white/70 hover:text-white">Start practicing</a></li>
+              </ul>
             </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Company</p>
+              <ul className="mt-4 flex flex-col gap-3 text-sm">
+                <li><a href="/contact" className="text-white/70 hover:text-white">Contact</a></li>
+                <li><a href="/#faq" className="text-white/70 hover:text-white">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Legal</p>
+              <ul className="mt-4 flex flex-col gap-3 text-sm">
+                <li><a href="/privacy-policy" className="text-white/70 hover:text-white">Privacy Policy</a></li>
+                <li><a href="/terms-of-service" className="text-white/70 hover:text-white">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-14 border-t border-white/10 pt-6 text-sm text-white/40">
+            © 2026 MedPrep Institute. All rights reserved.
           </div>
         </div>
       </footer>

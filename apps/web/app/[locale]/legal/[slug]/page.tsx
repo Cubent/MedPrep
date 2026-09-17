@@ -18,6 +18,7 @@ export const generateMetadata = async ({
   return createMetadata({
     title: `Legal - ${slug}`,
     description: 'Legal page',
+    path: `/legal/${slug}`,
   });
 };
 

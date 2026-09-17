@@ -6,6 +6,7 @@ import { SiteHeader } from '../components/site-header';
 export const metadata: Metadata = createMetadata({
   title: 'Terms of Service',
   description: 'The terms that govern your access to and use of MedPrep Institute.',
+  path: '/terms-of-service',
   noSuffix: true,
 });
 

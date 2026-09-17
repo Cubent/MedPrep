@@ -6,6 +6,7 @@ import { SiteHeader } from '../components/site-header';
 export const metadata: Metadata = createMetadata({
   title: 'Privacy Policy',
   description: 'How MedPrep Institute collects, uses, and protects your information.',
+  path: '/privacy-policy',
   noSuffix: true,
 });
 
