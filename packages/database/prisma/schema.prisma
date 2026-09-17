@@ -92,10 +92,36 @@ model LearningObjective {
   questions   Question[]
   progress    UserObjectiveProgress[]
   notes       UserQuestionNote[]
+  studyGuideEntries StudyGuideEntry[]
   createdAt   DateTime                @default(now())
 
   @@index([examType, systemId])
   @@map("learning_objectives")
+}
+
+// A "concerning learning area" surfaced by the Study Guide: one per
+// clerkUserId+learningObjective the user has missed at least once. `summary`
+// is AI-generated from ONLY that objective's own question/answer history
+// (never the user's broader profile or other objectives). `isReviewed` is
+// set by the user marking it studied, and flips back to false the next time
+// `missedCount` grows past what it was when marked reviewed (see qbank.ts).
+model StudyGuideEntry {
+  id                  String            @id @default(cuid())
+  clerkUserId         String
+  learningObjectiveId String
+  learningObjective   LearningObjective @relation(fields: [learningObjectiveId], references: [id], onDelete: Cascade)
+  summary             String
+  missedCount         Int               @default(0)
+  attemptCount        Int               @default(0)
+  reviewedAtMissCount Int?
+  isReviewed          Boolean           @default(false)
+  lastAttemptAt       DateTime?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+
+  @@unique([clerkUserId, learningObjectiveId])
+  @@index([clerkUserId, isReviewed])
+  @@map("study_guide_entries")
 }
 
 // variationGroupId groups multiple questions that test the SAME learning

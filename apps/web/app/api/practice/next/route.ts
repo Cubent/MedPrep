@@ -1,5 +1,6 @@
 import { auth } from '@clerk/nextjs/server';
 import { database } from '@repo/database';
+import { AI_SYSTEM_NAME, saveGeneratedQuestion } from '@repo/database/ai-practice';
 import {
   getNote,
   getOrCreateActiveSession,
@@ -9,6 +10,7 @@ import {
   pickQuestionSet,
   SET_SIZE,
 } from '@repo/database/qbank';
+import { generateQuestionsForTitles } from '@/lib/ai-question-generation';
 import { NextResponse } from 'next/server';
 
 export async function GET() {
@@ -48,10 +50,28 @@ export async function GET() {
     const remaining = SET_SIZE - answeredInSet;
     if (remaining > 0) {
       const picks = await pickQuestionSet(userId, preference.exam, preference.focusSystemIds, remaining);
+
+      // Some picks may be AI-pool titles with no content yet (`question: null`)
+      // — batch-generate all of those in one call, then persist each.
+      const needsGeneration = picks.filter((p) => !p.question).map((p) => p.objective);
+      const generatedByObjectiveId = needsGeneration.length
+        ? await generateQuestionsForTitles(
+            needsGeneration.map((o) => ({ id: o.id, title: o.title, requiresTable: o.requiresTable }))
+          )
+        : new Map();
+
       for (const p of picks) {
-        await markQuestionServed(session.id, p.question.id, p.isReview);
+        let questionId = p.question?.id;
+        if (!questionId) {
+          const generated = generatedByObjectiveId.get(p.objective.id);
+          if (!generated) continue; // AI failed to produce this one — skip, don't serve broken content
+          const saved = await saveGeneratedQuestion(p.objective.id, generated);
+          questionId = saved.id;
+        }
+        await markQuestionServed(session.id, questionId, p.isReview);
       }
-      picked = picks[0] ?? null;
+
+      picked = await getPendingSessionQuestion(session.id);
     }
   }
 
@@ -66,16 +86,18 @@ export async function GET() {
 
   // Never send isCorrect/explanation to the client before they answer.
   const { choices, learningObjective, explanation, ...rest } = picked.question;
+  const isAiGenerated = learningObjective.system.name === AI_SYSTEM_NAME;
   return NextResponse.json({
     sessionId: session.id,
     isReview: picked.isReview,
     isBookmarked: bookmarked,
+    isAiGenerated,
     note: note?.content ?? '',
     setSize: SET_SIZE,
     answeredInSet,
     question: {
       ...rest,
-      system: learningObjective.system.name,
+      system: isAiGenerated ? learningObjective.discipline : learningObjective.system.name,
       objectiveTitle: learningObjective.title,
       learningObjectiveId: learningObjective.id,
       choices: choices.map((c) => ({ id: c.id, text: c.text, sortOrder: c.sortOrder })),

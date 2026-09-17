@@ -219,27 +219,14 @@ export const QuestionPlayer = () => {
         {actionButtons}
       </div>
 
-      {!result && (
-        <button
-          type="button"
-          onClick={() => setIsStuck(true)}
-          className="mb-3 text-[0.65rem] font-medium text-gray-300 hover:text-gray-400 dark:text-white/10 dark:hover:text-white/30"
-        >
-          Simulate 5 min stuck (test)
-        </button>
-      )}
-
       <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 dark:border-white/10 dark:bg-[#120A2E]">
         {isReview && (
           <span className="mb-3 inline-block rounded-full bg-[#C46B10]/10 px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-[#C46B10]">
             Review
           </span>
         )}
-        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
-          {question.system} &middot; {question.objectiveTitle}
-        </p>
 
-        <RichText content={question.stem} className="mt-4 text-[#06005A] dark:text-white" />
+        <RichText content={question.stem} className="text-[#06005A] dark:text-white" />
 
         <div className="mt-6 flex flex-col gap-2">
           {question.choices

@@ -1,5 +1,5 @@
 import { database } from './index';
-import { ExamType, ObjectiveStatus } from './generated/client';
+import { ExamType } from './generated/client';
 
 /**
  * AI-generated practice content lives entirely under one dedicated System per
@@ -10,7 +10,7 @@ import { ExamType, ObjectiveStatus } from './generated/client';
  * the rest of the qbank engine (spaced repetition, session tracking, etc.
  * all just work, since it's the same tables).
  */
-const AI_SYSTEM_NAME = 'AI Generated';
+export const AI_SYSTEM_NAME = 'AI Generated';
 
 export async function getOrCreateAiSystem(examType: ExamType) {
   return database.system.upsert({
@@ -81,135 +81,46 @@ export async function setRequiresTableFlags(learningObjectiveIds: string[], valu
   return result.count;
 }
 
-type AiObjective = { id: string; title: string; discipline: string; requiresTable: boolean };
-
-/**
- * Picks one AI-system learning objective using the same priority order as
- * the real algorithm (overdue review -> weak area -> unseen), simplified
- * since there's only one System here (no breadth/system-rotation needed) and
- * "unseen" is chosen uniformly at random rather than by yield weight, since
- * these titles aren't curated/ranked the way hand-authored content is.
- */
-async function pickOneAiObjective(
-  clerkUserId: string,
-  aiSystemId: string,
-  discipline: string | null,
-  excludeObjectiveIds: string[]
-): Promise<{ objective: AiObjective; isReview: boolean } | null> {
-  const now = new Date();
-  const disciplineFilter = discipline ? { discipline } : {};
-  const excludeProgressFilter = excludeObjectiveIds.length
-    ? { learningObjectiveId: { notIn: excludeObjectiveIds } }
-    : {};
-
-  // 1. Overdue reviews
-  const dueProgress = await database.userObjectiveProgress.findFirst({
-    where: {
-      clerkUserId,
-      nextReviewAt: { lte: now },
-      learningObjective: { systemId: aiSystemId, ...disciplineFilter },
-      ...excludeProgressFilter,
-    },
-    orderBy: { nextReviewAt: 'asc' },
-    include: { learningObjective: true },
-  });
-  if (dueProgress) return { objective: dueProgress.learningObjective, isReview: true };
-
-  // 2. Weak areas: attempted before, accuracy under 50%, not mastered
-  const weakProgress = await database.userObjectiveProgress.findMany({
-    where: {
-      clerkUserId,
-      status: { in: [ObjectiveStatus.LEARNING, ObjectiveStatus.REVIEW] },
-      learningObjective: { systemId: aiSystemId, ...disciplineFilter },
-      ...excludeProgressFilter,
-    },
-    include: { learningObjective: true },
-  });
-  for (const progress of weakProgress) {
-    const attempts = await database.userQuestionAttempt.findMany({
-      where: { clerkUserId, question: { learningObjectiveId: progress.learningObjectiveId } },
-    });
-    const accuracy = attempts.length ? attempts.filter((a) => a.isCorrect).length / attempts.length : 1;
-    if (accuracy < 0.5) return { objective: progress.learningObjective, isReview: true };
-  }
-
-  // 3. Uniformly random unseen title
-  const seenIds = (
-    await database.userObjectiveProgress.findMany({
-      where: { clerkUserId, learningObjective: { systemId: aiSystemId } },
-      select: { learningObjectiveId: true },
-    })
-  ).map((p) => p.learningObjectiveId);
-  const allExcluded = [...new Set([...seenIds, ...excludeObjectiveIds])];
-  const excludeIdFilter = allExcluded.length ? { id: { notIn: allExcluded } } : {};
-
-  const eligibleCount = await database.learningObjective.count({
-    where: { systemId: aiSystemId, ...disciplineFilter, ...excludeIdFilter },
-  });
-  if (eligibleCount === 0) return null;
-
-  const randomSkip = Math.floor(Math.random() * eligibleCount);
-  const objective = await database.learningObjective.findFirst({
-    where: { systemId: aiSystemId, ...disciplineFilter, ...excludeIdFilter },
-    skip: randomSkip,
-  });
-
-  return objective ? { objective, isReview: false } : null;
-}
-
-/** Picks up to `count` AI-system objectives for one set, never repeating an objective within the same batch. */
-export async function pickAiObjectiveSet(
-  clerkUserId: string,
-  aiSystemId: string,
-  discipline: string | null,
-  count: number
-): Promise<{ objective: AiObjective; isReview: boolean }[]> {
-  const picks: { objective: AiObjective; isReview: boolean }[] = [];
-  const excludeObjectiveIds: string[] = [];
-
-  for (let i = 0; i < count; i++) {
-    const picked = await pickOneAiObjective(clerkUserId, aiSystemId, discipline, excludeObjectiveIds);
-    if (!picked) break;
-    picks.push(picked);
-    excludeObjectiveIds.push(picked.objective.id);
-  }
-
-  return picks;
-}
-
 export type GeneratedQuestionContent = {
   stem: string;
   explanation: string;
+  summary: string;
   difficulty: number;
   choices: { text: string; isCorrect: boolean; explanation: string }[];
 };
 
-/** Persists AI-generated content for a title as a real Question, forever reusable after this point. */
+/**
+ * Persists AI-generated content for a title as a real Question, forever
+ * reusable after this point, and backfills the parent LearningObjective's
+ * summary (it was title-only until now) — the actual selection of which
+ * objective to generate for lives in qbank.ts's pickOneQuestion, unified
+ * with the real algorithm.
+ */
 export async function saveGeneratedQuestion(learningObjectiveId: string, generated: GeneratedQuestionContent) {
-  return database.question.create({
-    data: {
-      learningObjectiveId,
-      variationGroupId: learningObjectiveId,
-      stem: generated.stem,
-      explanation: generated.explanation,
-      difficulty: Math.min(3, Math.max(1, Math.round(generated.difficulty) || 2)),
-      choices: {
-        create: generated.choices.map((c, i) => ({
-          text: c.text,
-          isCorrect: c.isCorrect,
-          explanation: c.explanation,
-          sortOrder: i,
-        })),
+  const [question] = await database.$transaction([
+    database.question.create({
+      data: {
+        learningObjectiveId,
+        variationGroupId: learningObjectiveId,
+        stem: generated.stem,
+        explanation: generated.explanation,
+        difficulty: Math.min(3, Math.max(1, Math.round(generated.difficulty) || 2)),
+        choices: {
+          create: generated.choices.map((c, i) => ({
+            text: c.text,
+            isCorrect: c.isCorrect,
+            explanation: c.explanation,
+            sortOrder: i,
+          })),
+        },
       },
-    },
-    include: { choices: true },
-  });
-}
+      include: { choices: true },
+    }),
+    database.learningObjective.update({
+      where: { id: learningObjectiveId },
+      data: { summary: generated.summary },
+    }),
+  ]);
 
-/** The first (or only) existing Question for a learning objective, if content has already been generated for it. */
-export async function getExistingQuestionForObjective(learningObjectiveId: string) {
-  return database.question.findFirst({
-    where: { learningObjectiveId },
-    include: { choices: true },
-  });
+  return question;
 }

@@ -1,3 +1,4 @@
+import { AI_SYSTEM_NAME, getOrCreateAiSystem } from './ai-practice';
 import { database } from './index';
 import { ExamType, ObjectiveStatus, SessionMode } from './generated/client';
 
@@ -5,6 +6,119 @@ const CONSECUTIVE_QUESTIONS_BEFORE_SWITCH = 3;
 export const SET_SIZE = 5;
 export const SETS_TO_UNLOCK_STUDY_GUIDE = 3;
 export const REVIEWS_TO_UNLOCK_STUDY_GUIDE = 1;
+
+// Focus tokens for AI-generated disciplines are encoded as "ai:<discipline>"
+// rather than a real System id, so /dashboard/topics can offer each AI
+// discipline as its own focusable row (sized by title count) without a
+// separate System per discipline. Real system ids never contain a colon.
+const AI_FOCUS_PREFIX = 'ai:';
+
+function splitFocusTokens(focusSystemIds: string[]) {
+  const systemIds: string[] = [];
+  const aiDisciplines: string[] = [];
+  for (const token of focusSystemIds) {
+    if (token.startsWith(AI_FOCUS_PREFIX)) aiDisciplines.push(token.slice(AI_FOCUS_PREFIX.length));
+    else systemIds.push(token);
+  }
+  return { systemIds, aiDisciplines };
+}
+
+/**
+ * Builds the LearningObjective-scoping filter for a focus selection that may
+ * mix real system ids and "ai:<discipline>" tokens. Empty focus means no
+ * filter at all (sample from everything, AI system included). Also reports
+ * whether the scope is AI-only: AI titles aren't yield-curated like
+ * hand-authored content, so an AI-only scope samples uniformly at random
+ * instead of by yieldWeight (see `findNextObjective`).
+ */
+async function buildScopeFilter(examType: ExamType, focusSystemIds: string[]) {
+  if (!focusSystemIds.length) {
+    // "Whole exam" is only actually mixed if real, yield-curated content
+    // still exists — if every system is the AI pool, sample randomly here too.
+    const hasRealSystem = await database.system.findFirst({
+      where: { examType, name: { not: AI_SYSTEM_NAME } },
+      select: { id: true },
+    });
+    return { filter: {}, isAiOnly: !hasRealSystem };
+  }
+
+  const { systemIds, aiDisciplines } = splitFocusTokens(focusSystemIds);
+  const clauses: Record<string, unknown>[] = [];
+  if (systemIds.length) clauses.push({ systemId: { in: systemIds } });
+  if (aiDisciplines.length) {
+    const aiSystem = await getOrCreateAiSystem(examType);
+    clauses.push({ systemId: aiSystem.id, discipline: { in: aiDisciplines } });
+  }
+  const isAiOnly = aiDisciplines.length > 0 && systemIds.length === 0;
+  if (!clauses.length) return { filter: {}, isAiOnly };
+  return { filter: clauses.length === 1 ? clauses[0] : { OR: clauses }, isAiOnly };
+}
+
+/**
+ * The label to show for a question/review/history row: AI-pool content
+ * displays its discipline (e.g. "Anatomy") so it reads naturally alongside
+ * hand-authored topics of the same name, rather than a generic "AI
+ * Generated" bucket label everywhere. `isAiGenerated` is still reported
+ * separately so the UI can add a small "not reviewed" disclosure badge.
+ */
+function describeSource(learningObjective: { discipline: string; system: { name: string } }) {
+  const isAiGenerated = learningObjective.system.name === AI_SYSTEM_NAME;
+  return {
+    isAiGenerated,
+    displayName: isAiGenerated ? learningObjective.discipline : learningObjective.system.name,
+  };
+}
+
+/**
+ * The "topic" a learning objective belongs to for breadth/saturation
+ * tracking: a real system's id, or `ai:<discipline>` for AI-pool content.
+ * All AI-pool objectives share one literal System row, so raw `systemId`
+ * can't tell disciplines apart the way it can for real content — this is
+ * the same identity scheme `buildScopeFilter`'s focus tokens already use.
+ */
+function topicIdentity(learningObjective: { systemId: string; discipline: string; system: { name: string } }) {
+  return learningObjective.system.name === AI_SYSTEM_NAME
+    ? `${AI_FOCUS_PREFIX}${learningObjective.discipline}`
+    : learningObjective.systemId;
+}
+
+/** The scope filter that excludes just the recently-saturated topic (a real system, or one AI discipline). */
+async function buildAvoidTopicFilter(examType: ExamType, identity: string): Promise<Record<string, unknown>> {
+  if (identity.startsWith(AI_FOCUS_PREFIX)) {
+    const aiSystem = await getOrCreateAiSystem(examType);
+    return { NOT: { systemId: aiSystem.id, discipline: identity.slice(AI_FOCUS_PREFIX.length) } };
+  }
+  return { systemId: { not: identity } };
+}
+
+/**
+ * AI-pool objectives, grouped by discipline into "virtual topics" — used by
+ * both the Topics page and the dashboard's per-topic accuracy breakdown so
+ * each AI discipline appears as its own focusable/reportable row (sized by
+ * title count), the same way a real System does, without needing a real
+ * System row per discipline. `ai:<discipline>` is the same focus token
+ * `buildScopeFilter` understands.
+ */
+async function getAiDisciplineGroups(examType: ExamType) {
+  const aiSystem = await database.system.findFirst({ where: { examType, name: AI_SYSTEM_NAME } });
+  if (!aiSystem) return [];
+
+  const objectives = await database.learningObjective.findMany({
+    where: { systemId: aiSystem.id },
+    select: { id: true, discipline: true },
+  });
+
+  const byDiscipline = new Map<string, string[]>();
+  for (const o of objectives) {
+    const ids = byDiscipline.get(o.discipline) ?? [];
+    ids.push(o.id);
+    byDiscipline.set(o.discipline, ids);
+  }
+
+  return [...byDiscipline.entries()]
+    .map(([discipline, objectiveIds]) => ({ systemId: `${AI_FOCUS_PREFIX}${discipline}`, name: discipline, objectiveIds }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
 
 type ScoredProgress = {
   easeFactor: number;
@@ -78,6 +192,7 @@ export async function getOrCreateActiveSession(
 }
 
 type PickedQuestion = NonNullable<Awaited<ReturnType<typeof pickUnseenVariation>>>;
+type PickedObjective = NonNullable<Awaited<ReturnType<typeof findNextObjective>>>;
 
 type PickOptions = {
   /** Learning objectives already reserved earlier in the same batch pick, so a second slot never repeats one. */
@@ -87,20 +202,59 @@ type PickOptions = {
   recentSystemIdsWindow?: string[];
 };
 
+/** A picked slot for a set: the objective is always present; `question` is null when the caller must generate one (AI-pool titles with no content yet). */
+export type QuestionPick = { objective: PickedObjective; question: PickedQuestion | null; isReview: boolean };
+
+/**
+ * Yield-weight ordering makes sense for hand-curated content, but AI-pool
+ * titles are all yieldWeight 50 with no curation behind the number — so an
+ * AI-only scope instead samples uniformly at random among eligible titles
+ * ("random 5 of the remaining N", per how the AI pool is meant to behave),
+ * while a real (or mixed) scope keeps the original deterministic ordering.
+ */
+async function findNextObjective(
+  examType: ExamType,
+  where: Record<string, unknown>,
+  randomize: boolean
+) {
+  if (!randomize) {
+    return database.learningObjective.findFirst({
+      where,
+      orderBy: { yieldWeight: 'desc' },
+      include: { system: true },
+    });
+  }
+
+  const eligibleCount = await database.learningObjective.count({ where });
+  if (eligibleCount === 0) return null;
+  return database.learningObjective.findFirst({
+    where,
+    include: { system: true },
+    skip: Math.floor(Math.random() * eligibleCount),
+  });
+}
+
 /**
  * Priority-queue question selection:
  *   1. Overdue spaced-repetition reviews (a variation of a previously-missed LO)
  *   2. Weak areas: LOs the user has started but is under 50% on, not yet mastered
  *   3. Next unseen LO by yield weight, favoring breadth once a system is "saturated"
+ *
+ * Steps 1 and 2 always resolve to a real Question (you can't have progress on
+ * an objective without one having existed). Step 3 can return an objective
+ * with `question: null` when it lands on an AI-pool title that has never
+ * been generated before — the caller (an apps/web API route, which can call
+ * OpenAI) is responsible for generating and persisting content for those,
+ * then this same picker will find it via `pickUnseenVariation` next time.
  */
 async function pickOneQuestion(
   clerkUserId: string,
   examType: ExamType,
   focusSystemIds: string[],
   options: PickOptions = {}
-): Promise<{ question: PickedQuestion; isReview: boolean } | null> {
+): Promise<QuestionPick | null> {
   const now = new Date();
-  const systemFilter = focusSystemIds.length ? { systemId: { in: focusSystemIds } } : {};
+  const { filter: scopeFilter, isAiOnly } = await buildScopeFilter(examType, focusSystemIds);
   const excludeObjectiveIds = options.excludeObjectiveIds ?? [];
   const excludeFilter = excludeObjectiveIds.length
     ? { learningObjectiveId: { notIn: excludeObjectiveIds } }
@@ -111,15 +265,16 @@ async function pickOneQuestion(
     where: {
       clerkUserId,
       nextReviewAt: { lte: now },
-      learningObjective: { examType, ...systemFilter },
+      learningObjective: { examType, ...scopeFilter },
       ...excludeFilter,
     },
     orderBy: { nextReviewAt: 'asc' },
+    include: { learningObjective: { include: { system: true } } },
   });
 
   if (dueProgress) {
     const question = await pickUnseenVariation(clerkUserId, dueProgress.learningObjectiveId);
-    if (question) return { question, isReview: true };
+    if (question) return { objective: dueProgress.learningObjective, question, isReview: true };
   }
 
   // 2. Weak areas: attempted before, accuracy under 50%, not mastered
@@ -127,9 +282,10 @@ async function pickOneQuestion(
     where: {
       clerkUserId,
       status: { in: [ObjectiveStatus.LEARNING, ObjectiveStatus.REVIEW] },
-      learningObjective: { examType, ...systemFilter },
+      learningObjective: { examType, ...scopeFilter },
       ...excludeFilter,
     },
+    include: { learningObjective: { include: { system: true } } },
   });
 
   for (const progress of weakProgress) {
@@ -139,7 +295,7 @@ async function pickOneQuestion(
     const accuracy = attempts.length ? attempts.filter((a) => a.isCorrect).length / attempts.length : 1;
     if (accuracy < 0.5) {
       const question = await pickUnseenVariation(clerkUserId, progress.learningObjectiveId);
-      if (question) return { question, isReview: true };
+      if (question) return { objective: progress.learningObjective, question, isReview: true };
     }
   }
 
@@ -152,9 +308,9 @@ async function pickOneQuestion(
       where: { clerkUserId },
       orderBy: { attemptedAt: 'desc' },
       take: CONSECUTIVE_QUESTIONS_BEFORE_SWITCH,
-      include: { question: { include: { learningObjective: true } } },
+      include: { question: { include: { learningObjective: { include: { system: true } } } } },
     });
-    recentSystemIds = recentAttempts.map((a) => a.question.learningObjective.systemId);
+    recentSystemIds = recentAttempts.map((a) => topicIdentity(a.question.learningObjective));
   }
 
   const isSaturated =
@@ -170,25 +326,30 @@ async function pickOneQuestion(
 
   const allExcludedObjectiveIds = [...new Set([...seenObjectiveIds, ...excludeObjectiveIds])];
 
-  // Only let "saturation" force a system switch away from the recent system
-  // if that system is actually still in scope under the current focus.
+  // Only let "saturation" force a topic switch away from the recent one if
+  // that topic is actually still in scope under the current focus.
   const shouldAvoidRecentSystem =
-    isSaturated && (!focusSystemIds.length || focusSystemIds.includes(recentSystemIds[0]));
+    isSaturated && (!focusSystemIds.length || focusSystemIds.some((t) => t === recentSystemIds[0]));
 
-  const nextObjective = await database.learningObjective.findFirst({
-    where: {
+  const avoidFilter = shouldAvoidRecentSystem
+    ? await buildAvoidTopicFilter(examType, recentSystemIds[0])
+    : {};
+
+  const nextObjective = await findNextObjective(
+    examType,
+    {
       examType,
-      ...systemFilter,
+      ...scopeFilter,
+      ...avoidFilter,
       id: { notIn: allExcludedObjectiveIds.length ? allExcludedObjectiveIds : undefined },
-      ...(shouldAvoidRecentSystem ? { systemId: { not: recentSystemIds[0] } } : {}),
     },
-    orderBy: { yieldWeight: 'desc' },
-  });
+    isAiOnly
+  );
 
   if (!nextObjective) return null;
 
   const question = await pickUnseenVariation(clerkUserId, nextObjective.id);
-  return question ? { question, isReview: false } : null;
+  return { objective: nextObjective, question, isReview: false };
 }
 
 /** Picks a single question — kept for callers that only ever need one at a time. */
@@ -196,7 +357,7 @@ export async function pickNextQuestion(
   clerkUserId: string,
   examType: ExamType,
   focusSystemIds: string[] = []
-): Promise<{ question: PickedQuestion; isReview: boolean } | null> {
+): Promise<QuestionPick | null> {
   return pickOneQuestion(clerkUserId, examType, focusSystemIds);
 }
 
@@ -208,23 +369,25 @@ export async function pickNextQuestion(
  * objectives have already been reserved earlier in this same batch (so the
  * set never repeats an objective) and rolls the "recent system" window
  * forward locally instead of only reading it from already-recorded attempts.
+ * Some picks may come back with `question: null` (AI-pool titles with no
+ * content generated yet) — see `pickOneQuestion`'s doc comment.
  */
 export async function pickQuestionSet(
   clerkUserId: string,
   examType: ExamType,
   focusSystemIds: string[] = [],
   count: number = SET_SIZE
-): Promise<{ question: PickedQuestion; isReview: boolean }[]> {
-  const picks: { question: PickedQuestion; isReview: boolean }[] = [];
+): Promise<QuestionPick[]> {
+  const picks: QuestionPick[] = [];
   const excludeObjectiveIds: string[] = [];
 
   const recentAttempts = await database.userQuestionAttempt.findMany({
     where: { clerkUserId },
     orderBy: { attemptedAt: 'desc' },
     take: CONSECUTIVE_QUESTIONS_BEFORE_SWITCH,
-    include: { question: { include: { learningObjective: true } } },
+    include: { question: { include: { learningObjective: { include: { system: true } } } } },
   });
-  let recentSystemIdsWindow = recentAttempts.map((a) => a.question.learningObjective.systemId);
+  let recentSystemIdsWindow = recentAttempts.map((a) => topicIdentity(a.question.learningObjective));
 
   for (let i = 0; i < count; i++) {
     const picked = await pickOneQuestion(clerkUserId, examType, focusSystemIds, {
@@ -234,8 +397,8 @@ export async function pickQuestionSet(
     if (!picked) break;
 
     picks.push(picked);
-    excludeObjectiveIds.push(picked.question.learningObjectiveId);
-    recentSystemIdsWindow = [picked.question.learningObjective.systemId, ...recentSystemIdsWindow].slice(
+    excludeObjectiveIds.push(picked.objective.id);
+    recentSystemIdsWindow = [topicIdentity(picked.objective), ...recentSystemIdsWindow].slice(
       0,
       CONSECUTIVE_QUESTIONS_BEFORE_SWITCH
     );
@@ -411,6 +574,7 @@ export async function recordAttempt(params: {
 
   const learningObjective = await database.learningObjective.findUniqueOrThrow({
     where: { id: question.learningObjectiveId },
+    include: { system: true },
   });
 
   return {
@@ -430,6 +594,7 @@ export async function recordAttempt(params: {
     isFirstCorrectEver,
     isFirstIncorrectEver,
     isSetComplete: answeredInSession >= SET_SIZE,
+    isAiGenerated: describeSource(learningObjective).isAiGenerated,
   };
 }
 
@@ -456,7 +621,7 @@ export async function getSessionSummary(clerkUserId: string, sessionId: string) 
       isCorrect: a.isCorrect,
       isReview: a.isReview,
       stem: a.question.stem,
-      system: a.question.learningObjective.system.name,
+      system: describeSource(a.question.learningObjective).displayName,
       objectiveTitle: a.question.learningObjective.title,
     })),
   };
@@ -553,6 +718,45 @@ function accuracyOf(attempts: { isCorrect: boolean }[]) {
   return { pct: total ? Math.round((correct / total) * 100) : 0, correct, total };
 }
 
+export const STATS_RANGE_DAYS = { '7d': 7, '14d': 14, '30d': 30, '6m': 180 } as const;
+export type StatsRangeKey = keyof typeof STATS_RANGE_DAYS;
+
+/**
+ * Accuracy + activity for an arbitrary trailing window, used by the
+ * dashboard's time-range selector. Buckets by day for windows up to 30 days,
+ * and by week beyond that (a 6-month view of 180 daily bars would be
+ * unreadable), matching however granular `DailyActivityChart` can render.
+ */
+export async function getRangeStats(clerkUserId: string, examType: ExamType, rangeDays: number) {
+  const now = new Date();
+  const startDate = new Date(now);
+  startDate.setDate(now.getDate() - rangeDays + 1);
+  startDate.setHours(0, 0, 0, 0);
+
+  const attempts = await database.userQuestionAttempt.findMany({
+    where: { clerkUserId, question: { learningObjective: { examType } }, attemptedAt: { gte: startDate } },
+    select: { isCorrect: true, attemptedAt: true },
+  });
+
+  const bucketDays = rangeDays > 30 ? 7 : 1;
+  const bucketCount = Math.ceil(rangeDays / bucketDays);
+  const dailyActivity: { date: string; correct: number; incorrect: number }[] = [];
+  for (let i = 0; i < bucketCount; i++) {
+    const bucketStart = new Date(startDate);
+    bucketStart.setDate(startDate.getDate() + i * bucketDays);
+    const bucketEnd = new Date(bucketStart);
+    bucketEnd.setDate(bucketStart.getDate() + bucketDays);
+    const inBucket = attempts.filter((a) => a.attemptedAt >= bucketStart && a.attemptedAt < bucketEnd);
+    dailyActivity.push({
+      date: bucketStart.toISOString(),
+      correct: inBucket.filter((a) => a.isCorrect).length,
+      incorrect: inBucket.filter((a) => !a.isCorrect).length,
+    });
+  }
+
+  return { recentAccuracy: accuracyOf(attempts), dailyActivity };
+}
+
 /**
  * Real dashboard analytics: accuracy, exam coverage, daily activity (for the
  * hover chart), upcoming reviews, and per-system topic accuracy. All
@@ -588,7 +792,7 @@ export async function getDashboardAnalytics(clerkUserId: string, examType: ExamT
         select: { learningObjectiveId: true },
       }),
       database.system.findMany({
-        where: { examType },
+        where: { examType, name: { not: AI_SYSTEM_NAME } },
         orderBy: { sortOrder: 'asc' },
         include: { objectives: { select: { id: true } } },
       }),
@@ -623,10 +827,14 @@ export async function getDashboardAnalytics(clerkUserId: string, examType: ExamT
   }
 
   const seenSet = new Set(seenObjectiveIds.map((p) => p.learningObjectiveId));
+  const aiDisciplineGroups = await getAiDisciplineGroups(examType);
+  const topicGroups = [
+    ...systems.map((s) => ({ systemId: s.id, systemName: s.name, objectiveIds: s.objectives.map((o) => o.id) })),
+    ...aiDisciplineGroups.map((g) => ({ systemId: g.systemId, systemName: g.name, objectiveIds: g.objectiveIds })),
+  ];
 
   const topicAccuracy = await Promise.all(
-    systems.map(async (system) => {
-      const objectiveIds = system.objectives.map((o) => o.id);
+    topicGroups.map(async ({ systemName, objectiveIds }) => {
       const seenInSystem = objectiveIds.filter((id) => seenSet.has(id)).length;
       const attempts = objectiveIds.length
         ? await database.userQuestionAttempt.findMany({
@@ -636,7 +844,7 @@ export async function getDashboardAnalytics(clerkUserId: string, examType: ExamT
         : [];
       const acc = accuracyOf(attempts);
       return {
-        systemName: system.name,
+        systemName,
         totalObjectives: objectiveIds.length,
         seenObjectives: seenInSystem,
         accuracyPct: acc.pct,
@@ -656,7 +864,7 @@ export async function getDashboardAnalytics(clerkUserId: string, examType: ExamT
     dailyActivity,
     upcomingReviews,
     upcomingReviewsPreview: upcomingReviewsPreview.map((p) => ({
-      system: p.learningObjective.system.name,
+      system: describeSource(p.learningObjective).displayName,
       objectiveTitle: p.learningObjective.title,
       nextReviewAt: p.nextReviewAt,
     })),
@@ -666,10 +874,10 @@ export async function getDashboardAnalytics(clerkUserId: string, examType: ExamT
 
 /** Every system for this exam with real seen% and question counts, for /dashboard/topics. */
 export async function getTopicsOverview(clerkUserId: string, examType: ExamType) {
-  const [preference, systems, seenObjectiveIds] = await Promise.all([
+  const [preference, systems, seenObjectiveIds, aiDisciplineGroups] = await Promise.all([
     database.userPreference.findUnique({ where: { clerkUserId } }),
     database.system.findMany({
-      where: { examType },
+      where: { examType, name: { not: AI_SYSTEM_NAME } },
       orderBy: { name: 'asc' },
       include: { objectives: { select: { id: true, _count: { select: { questions: true } } } } },
     }),
@@ -677,11 +885,12 @@ export async function getTopicsOverview(clerkUserId: string, examType: ExamType)
       where: { clerkUserId, learningObjective: { examType } },
       select: { learningObjectiveId: true },
     }),
+    getAiDisciplineGroups(examType),
   ]);
 
   const seenSet = new Set(seenObjectiveIds.map((p) => p.learningObjectiveId));
 
-  const topics = systems.map((system) => {
+  const realTopics = systems.map((system) => {
     const totalObjectives = system.objectives.length;
     const seenInSystem = system.objectives.filter((o) => seenSet.has(o.id)).length;
     const totalQuestions = system.objectives.reduce((sum, o) => sum + o._count.questions, 0);
@@ -693,7 +902,21 @@ export async function getTopicsOverview(clerkUserId: string, examType: ExamType)
     };
   });
 
-  return { topics, focusSystemIds: preference?.focusSystemIds ?? [] };
+  // AI-pool "topics": one row per discipline, sized by title count (not by
+  // how many have been generated yet) — a title is available to practice as
+  // soon as it exists, generated on first real use.
+  const aiTopics = aiDisciplineGroups.map((group) => {
+    const totalTitles = group.objectiveIds.length;
+    const seenInGroup = group.objectiveIds.filter((id) => seenSet.has(id)).length;
+    return {
+      systemId: group.systemId,
+      name: group.name,
+      seenPct: totalTitles ? Math.round((seenInGroup / totalTitles) * 100) : 0,
+      totalQuestions: totalTitles,
+    };
+  });
+
+  return { topics: [...realTopics, ...aiTopics], focusSystemIds: preference?.focusSystemIds ?? [] };
 }
 
 /**
@@ -752,7 +975,8 @@ export async function getAttemptHistory(clerkUserId: string, examType: ExamType)
     isReview: attempt.isReview,
     attemptedAt: attempt.attemptedAt,
     isBookmarked: bookmarkedIds.has(attempt.questionId),
-    system: attempt.question.learningObjective.system.name,
+    system: describeSource(attempt.question.learningObjective).displayName,
+    isAiGenerated: describeSource(attempt.question.learningObjective).isAiGenerated,
     objectiveTitle: attempt.question.learningObjective.title,
     objectiveSummary: attempt.question.learningObjective.summary ?? attempt.question.learningObjective.title,
     stem: attempt.question.stem,
@@ -784,7 +1008,173 @@ export async function getReviewCalendar(clerkUserId: string, examType: ExamType)
 
   return rows.map((row) => ({
     date: row.nextReviewAt!.toISOString(),
-    system: row.learningObjective.system.name,
+    system: describeSource(row.learningObjective).displayName,
     objectiveTitle: row.learningObjective.title,
   }));
+}
+
+export type StudyGuideQa = { stem: string; chosenText: string | null; isCorrect: boolean; correctText: string };
+export type StudyGuideCandidate = {
+  learningObjectiveId: string;
+  title: string;
+  missedCount: number;
+  attemptCount: number;
+  lastAttemptAt: Date;
+  qa: StudyGuideQa[];
+};
+
+const STUDY_GUIDE_MAX_ENTRIES = 15;
+
+/**
+ * Learning objectives the user has missed at least once, paired with ONLY
+ * that objective's own question/answer history (stem + choice texts +
+ * correctness) — never the user's broader profile, other objectives, or
+ * anything beyond what's needed to explain that specific gap. This is the
+ * sole input to the Study Guide's AI summary generation.
+ */
+export async function getStudyGuideCandidates(
+  clerkUserId: string,
+  examType: ExamType
+): Promise<StudyGuideCandidate[]> {
+  const attempts = await database.userQuestionAttempt.findMany({
+    where: { clerkUserId, question: { learningObjective: { examType } } },
+    orderBy: { attemptedAt: 'desc' },
+    include: {
+      chosenAnswer: true,
+      question: { include: { choices: true, learningObjective: true } },
+    },
+  });
+
+  const byObjective = new Map<
+    string,
+    { title: string; missed: number; attempts: number; lastAttemptAt: Date; qa: StudyGuideQa[] }
+  >();
+
+  for (const a of attempts) {
+    const lo = a.question.learningObjective;
+    const bucket = byObjective.get(lo.id) ?? {
+      title: lo.title,
+      missed: 0,
+      attempts: 0,
+      lastAttemptAt: a.attemptedAt,
+      qa: [],
+    };
+    bucket.attempts += 1;
+    if (!a.isCorrect) bucket.missed += 1;
+    bucket.qa.push({
+      stem: a.question.stem,
+      chosenText: a.chosenAnswer?.text ?? null,
+      isCorrect: a.isCorrect,
+      correctText: a.question.choices.find((c) => c.isCorrect)?.text ?? '',
+    });
+    byObjective.set(lo.id, bucket);
+  }
+
+  const candidates = [...byObjective.entries()]
+    .filter(([, bucket]) => bucket.missed > 0)
+    .map(([learningObjectiveId, bucket]) => ({
+      learningObjectiveId,
+      title: bucket.title,
+      missedCount: bucket.missed,
+      attemptCount: bucket.attempts,
+      lastAttemptAt: bucket.lastAttemptAt,
+      qa: bucket.qa,
+    }));
+
+  return candidates.sort((a, b) => b.missedCount - a.missedCount).slice(0, STUDY_GUIDE_MAX_ENTRIES);
+}
+
+/** Candidates whose stored summary is missing or stale (new attempts since it was generated). */
+export async function getStaleStudyGuideCandidates(clerkUserId: string, examType: ExamType) {
+  const candidates = await getStudyGuideCandidates(clerkUserId, examType);
+  if (!candidates.length) return [];
+
+  const existing = await database.studyGuideEntry.findMany({
+    where: { clerkUserId, learningObjectiveId: { in: candidates.map((c) => c.learningObjectiveId) } },
+    select: { learningObjectiveId: true, missedCount: true, attemptCount: true },
+  });
+  const existingByLo = new Map(existing.map((e) => [e.learningObjectiveId, e]));
+
+  return candidates.filter((c) => {
+    const entry = existingByLo.get(c.learningObjectiveId);
+    return !entry || entry.missedCount !== c.missedCount || entry.attemptCount !== c.attemptCount;
+  });
+}
+
+/**
+ * Persists a freshly-generated (or regenerated) summary for one objective.
+ * If the entry was previously marked reviewed but has now been missed again
+ * (missedCount grew past what it was at review time), it returns to Active.
+ */
+export async function saveStudyGuideSummary(
+  clerkUserId: string,
+  learningObjectiveId: string,
+  data: { summary: string; missedCount: number; attemptCount: number; lastAttemptAt: Date }
+) {
+  const existing = await database.studyGuideEntry.findUnique({
+    where: { clerkUserId_learningObjectiveId: { clerkUserId, learningObjectiveId } },
+  });
+
+  const shouldUnreview =
+    Boolean(existing?.isReviewed) &&
+    existing?.reviewedAtMissCount != null &&
+    data.missedCount > existing.reviewedAtMissCount;
+
+  return database.studyGuideEntry.upsert({
+    where: { clerkUserId_learningObjectiveId: { clerkUserId, learningObjectiveId } },
+    create: {
+      clerkUserId,
+      learningObjectiveId,
+      summary: data.summary,
+      missedCount: data.missedCount,
+      attemptCount: data.attemptCount,
+      lastAttemptAt: data.lastAttemptAt,
+    },
+    update: {
+      summary: data.summary,
+      missedCount: data.missedCount,
+      attemptCount: data.attemptCount,
+      lastAttemptAt: data.lastAttemptAt,
+      ...(shouldUnreview ? { isReviewed: false, reviewedAtMissCount: null } : {}),
+    },
+  });
+}
+
+/** The user's Study Guide entries, joined with display-ready topic/title info. */
+export async function getStudyGuideEntries(
+  clerkUserId: string,
+  examType: ExamType,
+  options: { isReviewed?: boolean; sort?: 'recent' | 'missed'; limit?: number } = {}
+) {
+  const rows = await database.studyGuideEntry.findMany({
+    where: {
+      clerkUserId,
+      ...(options.isReviewed !== undefined ? { isReviewed: options.isReviewed } : {}),
+      learningObjective: { examType },
+    },
+    include: { learningObjective: { include: { system: true } } },
+    orderBy: options.sort === 'recent' ? { lastAttemptAt: 'desc' } : { missedCount: 'desc' },
+    ...(options.limit ? { take: options.limit } : {}),
+  });
+
+  return rows.map((row) => ({
+    id: row.id,
+    objectiveTitle: row.learningObjective.title,
+    topic: describeSource(row.learningObjective).displayName,
+    summary: row.summary,
+    missedCount: row.missedCount,
+    attemptCount: row.attemptCount,
+    isReviewed: row.isReviewed,
+    updatedAt: row.updatedAt,
+  }));
+}
+
+/** Marks a Study Guide entry as reviewed; it returns to Active if missed again later. */
+export async function markStudyGuideReviewed(clerkUserId: string, entryId: string) {
+  const entry = await database.studyGuideEntry.findFirst({ where: { id: entryId, clerkUserId } });
+  if (!entry) return null;
+  return database.studyGuideEntry.update({
+    where: { id: entryId },
+    data: { isReviewed: true, reviewedAtMissCount: entry.missedCount },
+  });
 }
