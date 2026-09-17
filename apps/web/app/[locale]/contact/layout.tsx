@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact | Velgance',
-  description: 'Get in touch with Velgance for modeling opportunities, collaborations, or questions about our talent agency services.',
+  title: 'Contact',
+  description: 'Get in touch with the MedPrep Institute team for support, partnership opportunities, or questions about our USMLE prep platform.',
 };
 
 export default function ContactLayout({

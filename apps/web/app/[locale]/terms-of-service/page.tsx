@@ -25,7 +25,7 @@ const TermsOfServicePage = () => (
       <div className="prose prose-neutral mt-10 max-w-none prose-headings:font-[family-name:var(--font-display)] prose-headings:text-black prose-h2:mt-10 prose-h2:text-2xl prose-p:leading-relaxed prose-p:text-gray-700 prose-li:text-gray-700 prose-a:text-[#06005A]">
         <p>
           These Terms of Service (&quot;Terms&quot;) govern your access to and use of
-          medprepinstitute.com and related MedPrep Institute products and services. By using
+          medprepinstitute.org and related MedPrep Institute products and services. By using
           MedPrep Institute, you agree to these Terms.
         </p>
 

@@ -1,29 +1,22 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://velgance.com/sitemap.xml
+# Sitemap
+Sitemap: https://medprepinstitute.org/sitemap.xml
 
 # Disallow sensitive areas only
 Disallow: /_next/
 Disallow: /admin/
-
-# Allow API endpoints (needed for site functionality)
-Allow: /api/models
-Allow: /api/contact
+Disallow: /dashboard/
 
 # Disallow sensitive API endpoints
-Disallow: /api/admin/
-Disallow: /api/debug/
-Disallow: /api/webhooks/
-Disallow: /api/clerk-webhook/
+Disallow: /api/
 
 # Allow important pages
 Allow: /
-Allow: /models
-Allow: /magazine
-Allow: /contact
 Allow: /legal/
+Allow: /privacy-policy
+Allow: /terms-of-service
 Allow: /sign-in
 Allow: /sign-up
 

@@ -7,10 +7,15 @@ import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'MedPrep Institute - Study smarter. Master the USMLE.',
-  description: 'MedPrep Institute is a living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
+  metadataBase: new URL('https://medprepinstitute.org'),
+  title: {
+    default: 'MedPrep Institute – All-in-One USMLE Prep Platform',
+    template: '%s | MedPrep Institute',
+  },
+  description: 'MedPrep Institute is the all-in-one USMLE prep platform behind a 95% pass rate, with an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
   keywords: [
     'MedPrep Institute',
+    'USMLE prep platform',
     'USMLE question bank',
     'USMLE Step 1',
     'USMLE Step 2 CK',
@@ -21,6 +26,10 @@ export const metadata: Metadata = {
     'med school qbank',
     'residency prep',
   ],
+  robots: {
+    index: true,
+    follow: true,
+  },
   manifest: '/manifest.json',
   appleWebApp: {
     title: 'MedPrep Institute',
@@ -29,7 +38,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.png', type: 'image/png' },
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
       { url: '/favicon-192x192.png', sizes: '192x192', type: 'image/png' },
@@ -39,16 +48,16 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'MedPrep Institute - Study smarter. Master the USMLE.',
-    description: 'A living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
+    title: 'MedPrep Institute – All-in-One USMLE Prep Platform',
+    description: 'The USMLE prep platform behind a 95% pass rate: an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
     type: 'website',
     locale: 'en_US',
     siteName: 'MedPrep Institute',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'MedPrep Institute - Study smarter. Master the USMLE.',
-    description: 'A living, adaptive question bank for USMLE Step 1, Step 2 CK, Step 3, and the ABIM Exam that learns how you learn.',
+    title: 'MedPrep Institute – All-in-One USMLE Prep Platform',
+    description: 'The USMLE prep platform behind a 95% pass rate: an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
   },
 };
 
@@ -59,9 +68,6 @@ export default function RootLayout({
 }) {
   return (
     <html className={cn(fonts, 'scroll-smooth')} suppressHydrationWarning>
-      <head>
-        <link rel="canonical" href="https://medprepinstitute.com" />
-      </head>
       <body style={{ backgroundColor: '#ffffff' }}>
         <ClerkProvider
           appearance={{

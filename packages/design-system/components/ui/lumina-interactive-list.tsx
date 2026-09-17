@@ -75,7 +75,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
 
             {/* Title */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight font-[family-name:var(--font-display)]">
-              <span className="text-white">Study smarter. Master the USMLE.</span>
+              <span className="text-white">The USMLE Prep Platform Behind a 95% Pass Rate</span>
             </h1>
 
             {/* Subtitle */}

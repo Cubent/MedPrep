@@ -1,16 +1,22 @@
 {
-  "name": "TripDeals - Cheap Flight Deals",
-  "short_name": "TripDeals",
-  "description": "Get instant alerts for massive flight discounts and error fares from your home airport. Save up to 90% on flights.",
+  "name": "MedPrep Institute – All-in-One USMLE Prep Platform",
+  "short_name": "MedPrep Institute",
+  "description": "The all-in-one USMLE prep platform behind a 95% pass rate, with an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#004ffe",
+  "theme_color": "#06005A",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en",
-  "categories": ["travel", "lifestyle"],
+  "categories": ["education", "medical"],
   "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/favicon-192x192.png",
       "sizes": "192x192",

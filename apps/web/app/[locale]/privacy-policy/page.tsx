@@ -26,7 +26,7 @@ const PrivacyPolicyPage = () => (
         <p>
           MedPrep Institute (&quot;MedPrep Institute,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;)
           respects your privacy. This Privacy Policy explains what information we collect, how we
-          use it, and the choices you have when you use medprepinstitute.com and related MedPrep
+          use it, and the choices you have when you use medprepinstitute.org and related MedPrep
           Institute services.
         </p>
 
