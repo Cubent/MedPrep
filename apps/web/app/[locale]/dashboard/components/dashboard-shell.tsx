@@ -18,6 +18,7 @@ import { usePathname } from 'next/navigation';
 import { type ReactNode, useEffect, useState } from 'react';
 import { PracticeProvider } from '../practice-context';
 import { DashboardHeaderActions } from './dashboard-header-actions';
+import { ExamSwitcher } from './exam-switcher';
 
 const NAV_ITEMS = [
   { label: 'My Dashboard', href: '/dashboard', icon: Home },
@@ -33,10 +34,15 @@ const SIDEBAR_COLLAPSED_KEY = 'medprep-sidebar-collapsed';
 
 type DashboardShellProps = {
   children: ReactNode;
-  examBadge?: string | null;
+  currentExam?: string | null;
+  examSelectedAt?: string | null;
 };
 
-export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => {
+export const DashboardShell = ({
+  children,
+  currentExam,
+  examSelectedAt,
+}: DashboardShellProps) => {
   const pathname = usePathname();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -82,11 +88,10 @@ export const DashboardShell = ({ children, examBadge }: DashboardShellProps) => 
           <span className="hidden text-sm font-semibold text-gray-500 dark:text-gray-400 sm:inline">
             &middot; Member Dashboard
           </span>
-          {examBadge && (
-            <span className="rounded-full bg-[#C46B10]/10 px-2.5 py-1 text-xs font-bold tracking-wide text-[#C46B10] dark:bg-[#C46B10]/20">
-              {examBadge}
-            </span>
-          )}
+          <ExamSwitcher
+            currentExam={currentExam ?? null}
+            examSelectedAt={examSelectedAt ?? null}
+          />
         </div>
         <div className="flex items-center gap-2">
           <button
