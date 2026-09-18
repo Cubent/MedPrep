@@ -11,11 +11,52 @@ const SYSTEM_PROMPT =
   'diagnoses, without simply restating a textbook. Be concise, exam-focused, and encouraging. ' +
   'If asked something outside medical education, gently redirect to studying.';
 
+// Per-user in-memory rate limit — no external store needed for a single-instance
+// dev/small-scale deployment. Fixed window: N messages per WINDOW_MS, reset after
+// the window elapses. Resets on server restart, which is fine for its purpose
+// (capping runaway/abusive usage, not a hard security boundary).
+const RATE_LIMIT = 20;
+const WINDOW_MS = 10 * 60 * 1000;
+const requestLog = new Map<string, { count: number; resetAt: number }>();
+
+function checkRateLimit(userId: string): { allowed: boolean; retryAfterSeconds: number } {
+  const now = Date.now();
+
+  // Opportunistic cleanup so the map doesn't grow unbounded with stale entries.
+  if (requestLog.size > 500) {
+    for (const [key, entry] of requestLog) {
+      if (now > entry.resetAt) requestLog.delete(key);
+    }
+  }
+
+  const entry = requestLog.get(userId);
+  if (!entry || now > entry.resetAt) {
+    requestLog.set(userId, { count: 1, resetAt: now + WINDOW_MS });
+    return { allowed: true, retryAfterSeconds: 0 };
+  }
+  if (entry.count >= RATE_LIMIT) {
+    return { allowed: false, retryAfterSeconds: Math.ceil((entry.resetAt - now) / 1000) };
+  }
+  entry.count += 1;
+  return { allowed: true, retryAfterSeconds: 0 };
+}
+
 export async function POST(request: Request) {
   const { userId } = await auth();
 
   if (!userId) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  const rateLimit = checkRateLimit(userId);
+  if (!rateLimit.allowed) {
+    const minutes = Math.ceil(rateLimit.retryAfterSeconds / 60);
+    return NextResponse.json(
+      {
+        error: `You've hit the AI Tutor's message limit for now — try again in about ${minutes} minute${minutes === 1 ? '' : 's'}.`,
+      },
+      { status: 429, headers: { 'Retry-After': String(rateLimit.retryAfterSeconds) } }
+    );
   }
 
   if (!process.env.OPENAI_API_KEY) {

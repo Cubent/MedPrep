@@ -8,6 +8,57 @@ type LuminaInteractiveListProps = {
   authSlot?: React.ReactNode;
 };
 
+const methodFaqs = [
+  {
+    q: 'What makes MedPrep Institute different from other question banks?',
+    a: "Most question banks deal you disconnected questions with no memory of what you missed. Whether you're working through the Step 1 Qbank or the Step 2 Qbank, MedPrep Institute builds each set from the one before it, so your practice has continuity and concepts get a chance to connect.",
+  },
+  {
+    q: 'What happens when I get a question wrong?',
+    a: 'The learning path adapts. You will be presented variations on the objective through spaced repetition over the next few days.',
+  },
+  {
+    q: 'Does the spaced repetition show me the same question over and over again?',
+    a: "Not exactly. Across the Step 1 Qbank and the Step 2 Qbank, we have pre-written variations on each question that hit the same learning objective from a different angle.",
+  },
+  {
+    q: 'Can I focus on a single system?',
+    a: "Yes. Whether you're in the Step 1 Qbank or the Step 2 Qbank, if you're in your cardiology block, restrict your questions to cardiology and the same adaptive engine works within it. Widen back out whenever you're ready.",
+  },
+  {
+    q: 'Can I study for my SHELF exam with MedPrep Institute?',
+    a: 'Yes. You can focus your learning path to the relevant SHELF exam topics.',
+  },
+  {
+    q: "I need to study a little bit of everything. Isn't random questions better?",
+    a: "Random sampling does help you touch on a lot of material. But MedPrep Institute prioritizes high yield material first. Then when new concepts are introduced, it automatically works out how to cover the entire exam in as little time as possible.",
+  },
+  {
+    q: 'Does MedPrep Institute use clinical images?',
+    a: 'Yes, our questions have rich clinical images to help you understand the material, just like the real exam.',
+  },
+  {
+    q: 'Do we cover Biostats?',
+    a: 'Yes, this is covered.',
+  },
+  {
+    q: 'Which exams does MedPrep Institute cover?',
+    a: 'MedPrep Institute is built for the USMLE Step 1 Qbank, the Step 2 CK Qbank, the Step 3 question bank, and the ABIM Exam.',
+  },
+  {
+    q: "What's the difference between the Step 1 Qbank and the Step 2 Qbank?",
+    a: 'The Step 1 Qbank focuses on foundational science — biochemistry, physiology, pharmacology, and pathology — while the Step 2 Qbank shifts to clinical management and patient-care vignettes. Progress carries over between them, so concepts you struggled with in the Step 1 question bank are prioritized first when you move into the Step 2 question bank.',
+  },
+  {
+    q: 'Is STEP 2 CS Covered?',
+    a: 'No, we cover STEP 2 CK, not CS. For CS we recommend pairing us with a dedicated case-based practice resource.',
+  },
+  {
+    q: 'Can I try it for free?',
+    a: 'Yes, you can try it for free for 7 days.',
+  },
+];
+
 export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps = {}) {
   const [openMethodFaq, setOpenMethodFaq] = useState<number | null>(0);
 
@@ -816,6 +867,23 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
 
       {/* Method FAQ Section */}
       <div id="faq" className="border-t border-gray-200">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: methodFaqs.map(({ q, a }) => ({
+                '@type': 'Question',
+                name: q,
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: a,
+                },
+              })),
+            }),
+          }}
+        />
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gray-500">FAQ</p>
@@ -824,7 +892,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               Anything else?{' '}
-              <a href="mailto:hello@medprepinstitute.com" className="underline underline-offset-4">
+              <a href="mailto:support@medprepinstitute.com" className="underline underline-offset-4">
                 Write to us
               </a>{' '}
               and a member of the team will get back to you.
@@ -832,56 +900,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
           </div>
 
           <div className="flex w-full flex-col">
-            {[
-              {
-                q: 'What makes MedPrep Institute different from other question banks?',
-                a: "Most question banks deal you disconnected questions with no memory of what you missed. Whether you're working through the Step 1 Qbank or the Step 2 Qbank, MedPrep Institute builds each set from the one before it, so your practice has continuity and concepts get a chance to connect.",
-              },
-              {
-                q: 'What happens when I get a question wrong?',
-                a: 'The learning path adapts. You will be presented variations on the objective through spaced repetition over the next few days.',
-              },
-              {
-                q: 'Does the spaced repetition show me the same question over and over again?',
-                a: "Not exactly. Across the Step 1 Qbank and the Step 2 Qbank, we have pre-written variations on each question that hit the same learning objective from a different angle.",
-              },
-              {
-                q: 'Can I focus on a single system?',
-                a: "Yes. Whether you're in the Step 1 Qbank or the Step 2 Qbank, if you're in your cardiology block, restrict your questions to cardiology and the same adaptive engine works within it. Widen back out whenever you're ready.",
-              },
-              {
-                q: 'Can I study for my SHELF exam with MedPrep Institute?',
-                a: 'Yes. You can focus your learning path to the relevant SHELF exam topics.',
-              },
-              {
-                q: "I need to study a little bit of everything. Isn't random questions better?",
-                a: "Random sampling does help you touch on a lot of material. But MedPrep Institute prioritizes high yield material first. Then when new concepts are introduced, it automatically works out how to cover the entire exam in as little time as possible.",
-              },
-              {
-                q: 'Does MedPrep Institute use clinical images?',
-                a: 'Yes, our questions have rich clinical images to help you understand the material, just like the real exam.',
-              },
-              {
-                q: 'Do we cover Biostats?',
-                a: 'Yes, this is covered.',
-              },
-              {
-                q: 'Which exams does MedPrep Institute cover?',
-                a: 'MedPrep Institute is built for the USMLE Step 1 Qbank, the Step 2 CK Qbank, the Step 3 question bank, and the ABIM Exam.',
-              },
-              {
-                q: "What's the difference between the Step 1 Qbank and the Step 2 Qbank?",
-                a: 'The Step 1 Qbank focuses on foundational science &mdash; biochemistry, physiology, pharmacology, and pathology &mdash; while the Step 2 Qbank shifts to clinical management and patient-care vignettes. Progress carries over between them, so concepts you struggled with in the Step 1 question bank are prioritized first when you move into the Step 2 question bank.',
-              },
-              {
-                q: 'Is STEP 2 CS Covered?',
-                a: 'No, we cover STEP 2 CK, not CS. For CS we recommend pairing us with a dedicated case-based practice resource.',
-              },
-              {
-                q: 'Can I try it for free?',
-                a: 'Yes, you can try it for free for 7 days.',
-              },
-            ].map((item, index) => (
+            {methodFaqs.map((item, index) => (
               <div key={item.q} className="border-b border-gray-200 last:border-b-0">
                 <button
                   type="button"

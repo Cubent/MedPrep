@@ -198,7 +198,28 @@ export const QuestionPlayer = () => {
   if (question === undefined) {
     return (
       <div className="rounded-2xl border border-gray-200 bg-white p-8 text-center dark:border-white/10 dark:bg-[#120A2E]">
-        <p className="text-sm text-gray-500 dark:text-gray-400">Loading your next question…</p>
+        <style jsx>{`
+          @keyframes fun-spin {
+            0% {
+              transform: rotate(0deg) scale(1);
+            }
+            50% {
+              transform: rotate(180deg) scale(1.15);
+            }
+            100% {
+              transform: rotate(360deg) scale(1);
+            }
+          }
+          .fun-spin {
+            animation: fun-spin 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+          }
+        `}</style>
+        <img
+          src="/animateos-logo (1).png"
+          alt=""
+          className="fun-spin mx-auto size-12 rounded-xl object-cover shadow-sm"
+        />
+        <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">Loading your next question…</p>
       </div>
     );
   }
