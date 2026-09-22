@@ -29,9 +29,6 @@ export const NextExamAdvantageCard = async () => {
     where: { clerkUserId: userId, question: { learningObjective: { examType: preference!.exam } } },
   });
 
-  // Calibration has already kicked in — the teaser's done its job.
-  if (answered >= QUESTIONS_TO_BEGIN_CALIBRATION) return null;
-
   return (
     <NextExamAdvantageCardView
       nextExamLabel={nextExam.label}
