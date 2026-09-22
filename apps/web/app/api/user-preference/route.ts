@@ -1,5 +1,5 @@
 import { auth } from '@clerk/nextjs/server';
-import { database, ExamType } from '@repo/database';
+import { database, ExamType, NextExamPlan, PrepStage, TimedPreference } from '@repo/database';
 import { NextResponse } from 'next/server';
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
@@ -32,6 +32,36 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Invalid exam' }, { status: 400 });
   }
 
+  // The onboarding questionnaire fields are optional — the account-page exam
+  // switcher only ever sends `{ exam }`, and omitting a field here must never
+  // clobber a value set earlier, so each is only included in the write when
+  // the caller actually sent it.
+  const prepStage = body?.prepStage as string | undefined;
+  if (prepStage !== undefined && !Object.values(PrepStage).includes(prepStage as PrepStage)) {
+    return NextResponse.json({ error: 'Invalid prepStage' }, { status: 400 });
+  }
+
+  const isRetake = body?.isRetake as boolean | undefined;
+  if (isRetake !== undefined && typeof isRetake !== 'boolean') {
+    return NextResponse.json({ error: 'Invalid isRetake' }, { status: 400 });
+  }
+
+  const timedPreference = body?.timedPreference as string | undefined;
+  if (
+    timedPreference !== undefined &&
+    !Object.values(TimedPreference).includes(timedPreference as TimedPreference)
+  ) {
+    return NextResponse.json({ error: 'Invalid timedPreference' }, { status: 400 });
+  }
+
+  const nextExamPlan = body?.nextExamPlan as string | undefined;
+  if (
+    nextExamPlan !== undefined &&
+    !Object.values(NextExamPlan).includes(nextExamPlan as NextExamPlan)
+  ) {
+    return NextResponse.json({ error: 'Invalid nextExamPlan' }, { status: 400 });
+  }
+
   const existing = await database.userPreference.findUnique({
     where: { clerkUserId: userId },
   });
@@ -46,16 +76,26 @@ export async function POST(request: Request) {
     }
   }
 
+  const questionnaireFields = {
+    ...(prepStage !== undefined && { prepStage: prepStage as PrepStage }),
+    ...(isRetake !== undefined && { isRetake }),
+    ...(timedPreference !== undefined && { timedPreference: timedPreference as TimedPreference }),
+    ...(nextExamPlan !== undefined && { nextExamPlan: nextExamPlan as NextExamPlan }),
+  };
+
   const preference = await database.userPreference.upsert({
     where: { clerkUserId: userId },
     create: {
       clerkUserId: userId,
       exam: exam as ExamType,
+      ...questionnaireFields,
     },
-    update:
-      existing && existing.exam !== exam
+    update: {
+      ...(existing && existing.exam !== exam
         ? { exam: exam as ExamType, examSelectedAt: new Date() }
-        : {},
+        : {}),
+      ...questionnaireFields,
+    },
   });
 
   return NextResponse.json({ preference });

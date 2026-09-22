@@ -15,6 +15,23 @@ enum ExamType {
   ABIM
 }
 
+enum PrepStage {
+  JUST_STARTING
+  MID_WAY
+  CRAMMING
+}
+
+enum TimedPreference {
+  TIMED
+  UNTIMED
+}
+
+enum NextExamPlan {
+  YES
+  NOT_YET
+  NOT_SURE
+}
+
 // The exam a user selected during onboarding. Locked for 30 days from
 // examSelectedAt; changing exams after that resets the timer (enforced in
 // application code, not the database).
@@ -26,6 +43,12 @@ model UserPreference {
   // Systems the user has chosen to drill via /dashboard/topics. Empty means
   // "All topics" — no filter, sample from the whole exam.
   focusSystemIds String[] @default([])
+  // Onboarding questionnaire answers. Nullable: only set once, at the end of
+  // onboarding, all together — never partially saved mid-flow.
+  prepStage       PrepStage?
+  isRetake        Boolean?
+  timedPreference TimedPreference?
+  nextExamPlan    NextExamPlan?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 

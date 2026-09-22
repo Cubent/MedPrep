@@ -79,6 +79,18 @@ export default function RootLayout({
               colorInputForeground: '#000000',
               colorMutedForeground: '#4b5563',
             },
+            elements: {
+              // The OTP digit boxes (email verification code) don't pick up
+              // colorInput the way regular text fields do — they render at
+              // colorBackground instead, which is a light grey nearly
+              // matching the card behind it. Force them white with a
+              // visible border so the code is actually readable.
+              otpCodeFieldInput: {
+                backgroundColor: '#ffffff',
+                borderColor: '#d1d5db',
+                color: '#000000',
+              },
+            },
           }}
         >
           <DesignSystemProvider>
