@@ -1,3 +1,4 @@
+import { NextExamAdvantageCard } from '../components/next-exam-advantage-card';
 import { StudyGuideList } from './components/study-guide-list';
 
 const StudyGuidePage = () => (
@@ -14,6 +15,7 @@ const StudyGuidePage = () => (
     </p>
 
     <div className="mt-8">
+      <NextExamAdvantageCard />
       <StudyGuideList />
     </div>
   </div>

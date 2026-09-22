@@ -8,6 +8,7 @@ import {
 } from '@repo/database/qbank';
 import { Lock, Play, Sparkles } from 'lucide-react';
 import Link from 'next/link';
+import { NextExamAdvantageCard } from './next-exam-advantage-card';
 
 const DASHBOARD_PREVIEW_COUNT = 2;
 
@@ -48,6 +49,10 @@ export const DashboardOverview = async () => {
           <Play className="size-3.5 fill-current" />
           Continue practicing
         </Link>
+      </div>
+
+      <div className="mt-6">
+        <NextExamAdvantageCard />
       </div>
 
       <div className="mt-8 rounded-2xl bg-[#000C3F] p-6 sm:p-8">
