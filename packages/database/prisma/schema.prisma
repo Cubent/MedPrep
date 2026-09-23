@@ -55,6 +55,28 @@ model UserPreference {
   @@map("user_preferences")
 }
 
+// Mirrors a Stripe subscription for one user. Written and kept in sync
+// entirely by the /api/webhooks/stripe handler, never by application code
+// directly — the webhook is the single source of truth since Stripe is the
+// system of record for billing state. `status` stores Stripe's own status
+// string verbatim (trialing/active/past_due/canceled/...) rather than a
+// Prisma enum, so a new Stripe status never requires a migration here.
+model Subscription {
+  id                   String    @id @default(cuid())
+  clerkUserId          String    @unique
+  stripeCustomerId     String
+  stripeSubscriptionId String    @unique
+  status               String
+  priceId              String
+  currentPeriodEnd     DateTime
+  trialEnd             DateTime?
+  cancelAtPeriodEnd    Boolean   @default(false)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  @@map("subscriptions")
+}
+
 enum ObjectiveStatus {
   NOT_SEEN
   LEARNING

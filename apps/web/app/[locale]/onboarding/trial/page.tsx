@@ -103,8 +103,8 @@ const Heading = ({ children }: { children: React.ReactNode }) => (
 
 /** Smaller, borderless illustration used above the title on marketing
  * slides. Sits right under the step counter. */
-const StepImage = ({ src }: { src: string }) => (
-  <img src={src} alt="" className="mb-2 w-full max-w-xs" />
+const StepImage = ({ src, className = 'max-w-xs' }: { src: string; className?: string }) => (
+  <img src={src} alt="" className={`mb-2 w-full ${className}`} />
 );
 
 /** Icon + title + paragraph used for the keypoint pairs on marketing
@@ -259,7 +259,7 @@ function StepSemester() {
   return (
     <div>
       <Eyebrow>Step 6 of {TOTAL_STEPS}</Eyebrow>
-      <StepImage src="/MedPrep institute (10).png" />
+      <StepImage src="/MedPrep institute (10).png" className="max-w-[12rem]" />
       <Heading>Your everyday study routine.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         A little every day, whether you&apos;re in lecture, on rotations, or working shifts. The
@@ -309,7 +309,7 @@ function StepStory() {
   return (
     <div>
       <Eyebrow>Step 8 of {TOTAL_STEPS}</Eyebrow>
-      <StepImage src="/MedPrep institute (12).png" />
+      <StepImage src="/MedPrep institute (12).png" className="max-w-[12rem]" />
       <Heading>Questions build on each other.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         One question leads naturally into the next, instead of jumping between unrelated topics.
@@ -519,7 +519,7 @@ const OnboardingTrialPage = () => {
             type="button"
             onClick={async () => {
               const ok = await finish();
-              if (ok) window.location.href = '/dashboard';
+              if (ok) window.location.href = '/paywall';
             }}
             disabled={isSaving}
             className="rounded-full bg-[#C46B10] px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#a95a0d] disabled:cursor-not-allowed disabled:opacity-60"

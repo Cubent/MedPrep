@@ -30,7 +30,7 @@ const securityHeaders = env.FLAGS_SECRET
   : noseconeMiddleware(noseconeOptions);
 
 const isProtectedRoute = (pathname: string) =>
-  pathname.includes('/onboarding') || pathname.includes('/dashboard');
+  pathname.includes('/onboarding') || pathname.includes('/dashboard') || pathname.includes('/paywall');
 
 export default clerkMiddleware(async (auth, request: NextRequest) => {
   // Skip middleware for email API routes to prevent blocking external API calls
