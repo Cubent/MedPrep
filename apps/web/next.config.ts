@@ -35,6 +35,16 @@ nextConfig.experimental = {
   optimizePackageImports: ['lucide-react', '@repo/design-system'],
 };
 
+// Prisma's client is generated to a custom `output` path (packages/database/
+// generated/client) instead of the default node_modules/.prisma/client that
+// Next.js's serverless file tracing has built-in support for. Without this,
+// the query engine binary (e.g. libquery_engine-rhel-openssl-3.0.x.so.node)
+// never makes it into the deployed function bundle. See
+// https://pris.ly/d/engine-not-found-nextjs
+nextConfig.outputFileTracingIncludes = {
+  '/**/*': ['../../packages/database/generated/client/**/*'],
+};
+
 // Turbopack configuration disabled temporarily due to FlightClientEntryPlugin issues
 // nextConfig.turbopack = {
 //   rules: {
