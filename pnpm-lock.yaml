@@ -452,6 +452,9 @@ importers:
         specifier: ^3.25.28
         version: 3.25.76
     devDependencies:
+      '@prisma/nextjs-monorepo-workaround-plugin':
+        specifier: 6.19.3
+        version: 6.19.3
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
@@ -3705,6 +3708,9 @@ packages:
     resolution: {integrity: sha512-mrZOev24EDhnefmnZX7WVVT7v+r9LttPRqf54ONvj6re4XMF7wFTpK2tLJi4XHB7fFp/6xhYbgRel8YV7gQiyA==}
     peerDependencies:
       '@opentelemetry/api': ^1.8
+
+  '@prisma/nextjs-monorepo-workaround-plugin@6.19.3':
+    resolution: {integrity: sha512-lu3KrWToTwYrkEk1UHoMW4aqa69USu3yaG9+gnHmjeAQuCb804NHq0PvkS7Zd7D/ViDDrIKKQE5pzdwLn1EgoA==}
 
   '@protobufjs/aspromise@1.1.2':
     resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
@@ -13928,6 +13934,8 @@ snapshots:
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
     transitivePeerDependencies:
       - supports-color
+
+  '@prisma/nextjs-monorepo-workaround-plugin@6.19.3': {}
 
   '@protobufjs/aspromise@1.1.2': {}
 

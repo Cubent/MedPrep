@@ -1,5 +1,6 @@
 import { env } from '@/env';
 
+import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
 import { withToolbar } from '@repo/feature-flags/lib/toolbar';
 import { config, withAnalyzer } from '@repo/next-config';
 import { withLogging, withSentry } from '@repo/observability/next-config';
@@ -33,6 +34,19 @@ nextConfig.images?.remotePatterns?.push({
 nextConfig.experimental = {
   ...nextConfig.experimental,
   optimizePackageImports: ['lucide-react', '@repo/design-system'],
+};
+
+// pnpm monorepos: Next's file tracing doesn't copy Prisma's query engine
+// binary into the server bundle, so the deployed function throws "could not
+// locate the Query Engine". This plugin copies it next to the server chunks.
+// https://pris.ly/d/engine-not-found-nextjs
+const baseWebpack = nextConfig.webpack;
+nextConfig.webpack = (webpackConfig, options) => {
+  const configured = baseWebpack ? baseWebpack(webpackConfig, options) : webpackConfig;
+  if (options.isServer) {
+    configured.plugins = [...(configured.plugins ?? []), new PrismaPlugin()];
+  }
+  return configured;
 };
 
 // Turbopack configuration disabled temporarily due to FlightClientEntryPlugin issues
