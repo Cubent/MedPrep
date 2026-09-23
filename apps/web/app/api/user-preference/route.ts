@@ -7,7 +7,34 @@ import { NextResponse } from 'next/server';
 
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
-export async function GET() {
+// TEMPORARY diagnostics: tags every log line and error response with the
+// deployment that served it, so it's obvious whether a new build is live.
+// Remove once the 500 on this route is resolved.
+const deploymentTag = () =>
+  `dpl=${process.env.VERCEL_DEPLOYMENT_ID ?? 'local'} sha=${(process.env.VERCEL_GIT_COMMIT_SHA ?? 'local').slice(0, 7)}`;
+
+const withDiagnostics =
+  <Args extends unknown[]>(method: string, handler: (...args: Args) => Promise<Response>) =>
+  async (...args: Args): Promise<Response> => {
+    const tag = deploymentTag();
+    console.log(`[user-preference] ${method} start ${tag}`);
+    try {
+      return await handler(...args);
+    } catch (error) {
+      const err = error instanceof Error ? error : new Error(String(error));
+      console.error(`[user-preference] ${method} FAILED ${tag}`, {
+        name: err.name,
+        message: err.message,
+        stack: err.stack,
+      });
+      return NextResponse.json(
+        { error: 'Internal error', debug: { name: err.name, message: err.message, deployment: tag } },
+        { status: 500 }
+      );
+    }
+  };
+
+async function handleGet() {
   const { userId } = await auth();
 
   if (!userId) {
@@ -21,7 +48,7 @@ export async function GET() {
   return NextResponse.json({ preference });
 }
 
-export async function POST(request: Request) {
+async function handlePost(request: Request) {
   const { userId } = await auth();
 
   if (!userId) {
@@ -103,3 +130,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ preference });
 }
+
+export const GET = withDiagnostics('GET', handleGet);
+export const POST = withDiagnostics('POST', handlePost);
