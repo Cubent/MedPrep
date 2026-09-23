@@ -124,7 +124,8 @@ type ScoredProgress = {
   easeFactor: number;
   interval: number;
   correctStreak: number;
-  nextReviewAt: Date;
+  /** Null when the objective has never been missed, so nothing is due for review. */
+  nextReviewAt: Date | null;
   status: ObjectiveStatus;
 };
 
@@ -133,9 +134,19 @@ type ScoredProgress = {
  * since a multiple-choice attempt only gives us correct/incorrect, this
  * collapses that into fixed ease adjustments. Same shape (ease factor +
  * growing interval on success, reset on failure) as the real thing.
+ *
+ * Reviews are only scheduled for objectives the user has missed: a miss
+ * schedules one for tomorrow, and once an objective is on the review
+ * schedule, correct answers keep spacing it out. A correct answer on an
+ * objective that was never missed schedules nothing.
  */
 export function scoreAttempt(
-  previous: { easeFactor: number; interval: number; correctStreak: number } | null,
+  previous: {
+    easeFactor: number;
+    interval: number;
+    correctStreak: number;
+    nextReviewAt: Date | null;
+  } | null,
   isCorrect: boolean
 ): ScoredProgress {
   const easeFactor = previous?.easeFactor ?? 2.5;
@@ -162,8 +173,14 @@ export function scoreAttempt(
     nextInterval = 1;
   }
 
-  const nextReviewAt = new Date();
-  nextReviewAt.setDate(nextReviewAt.getDate() + nextInterval);
+  const neverMissed = isCorrect && !previous?.nextReviewAt;
+  let nextReviewAt: Date | null = null;
+  if (neverMissed) {
+    nextInterval = 0;
+  } else {
+    nextReviewAt = new Date();
+    nextReviewAt.setDate(nextReviewAt.getDate() + nextInterval);
+  }
 
   const status: ObjectiveStatus = !isCorrect
     ? ObjectiveStatus.LEARNING

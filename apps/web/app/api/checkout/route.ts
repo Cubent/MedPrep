@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     client_reference_id: userId,
     customer_email: email,
     metadata: { clerkUserId: userId },
-    success_url: `${origin}/dashboard?checkout=success`,
+    success_url: `${origin}/checkout/success`,
     cancel_url: `${origin}/paywall`,
     allow_promotion_codes: true,
   });

@@ -1,6 +1,8 @@
 import { auth } from '@clerk/nextjs/server';
 import { database } from '@repo/database';
+import { redirect } from 'next/navigation';
 import type { ReactNode } from 'react';
+import { getSubscription, hasAccess } from '@/lib/subscription';
 import { DashboardShell } from './components/dashboard-shell';
 
 // Neon's serverless Postgres suspends its compute when idle and takes several
@@ -12,6 +14,12 @@ export const maxDuration = 30;
 
 const DashboardLayout = async ({ children }: { children: ReactNode }) => {
   const { userId } = await auth();
+
+  // Paywall: the dashboard needs a trialing/active subscription. Middleware
+  // already guarantees a signed-in user here.
+  if (userId && !hasAccess(await getSubscription(userId))) {
+    redirect('/paywall');
+  }
 
   const preference = userId
     ? await database.userPreference.findUnique({ where: { clerkUserId: userId } })

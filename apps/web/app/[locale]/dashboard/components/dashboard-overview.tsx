@@ -47,7 +47,7 @@ export const DashboardOverview = async () => {
           className="inline-flex items-center gap-2 rounded-full bg-[#06005A] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#0a0080]"
         >
           <Play className="size-3.5 fill-current" />
-          Continue practicing
+          {stats.questionsAnswered === 0 ? 'Start practicing' : 'Continue practicing'}
         </Link>
       </div>
 
