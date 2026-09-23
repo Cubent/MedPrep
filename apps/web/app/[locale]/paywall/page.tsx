@@ -1,6 +1,14 @@
 'use client';
 
-import { ChevronLeft, ChevronRight, Check, RefreshCw, ShieldCheck, Sparkles } from 'lucide-react';
+import {
+  ChevronLeft,
+  ChevronRight,
+  Check,
+  Plus,
+  RefreshCw,
+  ShieldCheck,
+  Sparkles,
+} from 'lucide-react';
 import { useState } from 'react';
 
 type PlanId = 'monthly' | 'quarterly' | 'yearly';
@@ -26,10 +34,7 @@ const PLANS: Plan[] = [
     label: '3 months',
     perMonth: '$36.67',
     billedLine: 'Billed $110 every 3 months',
-    badges: [
-      { text: 'Low commitment', tone: 'neutral' },
-      { text: 'Save 10%', tone: 'savings' },
-    ],
+    badges: [{ text: 'Save 10%', tone: 'savings' }],
   },
   {
     id: 'yearly',
@@ -65,33 +70,36 @@ const Badge = ({ text, tone }: { text: string; tone: 'primary' | 'savings' | 'ne
 
 // Placeholder testimonial content — NOT real student reviews. Replace with
 // actual quotes/names (or first-name + exam only, for privacy) before this
-// ships publicly. Avatars are illustrated (DiceBear, deterministic from
-// `seed`), never real photos — pairing a real person's photo with a quote
-// they never said is a textbook deceptive-testimonial pattern, so that
-// stays off the table even as a placeholder.
-type Testimonial = { quote: string; body: string; seed: string; role: string };
+// ships publicly. Photos are stock Unsplash portraits standing in for real
+// student photos — pairing an actual person's photo with a quote they never
+// said is a textbook deceptive-testimonial pattern, so these must be swapped
+// for real student photos (with consent) before this ships publicly.
+type Testimonial = { quote: string; body: string; name: string; photo: string; role: string };
 
-const avatarUrl = (seed: string) =>
-  `https://api.dicebear.com/9.x/avataaars/svg?seed=${encodeURIComponent(seed)}&backgroundColor=b6e3f4,c0aede,d1d4f9,ffd5dc,ffdfbf`;
+const unsplashPortrait = (photoId: string) =>
+  `https://images.unsplash.com/${photoId}?w=128&h=128&fit=crop&crop=faces&auto=format&q=80`;
 
 const TESTIMONIAL_PAGES: Testimonial[][] = [
   [
     {
       quote: 'Finally felt like the bank knew what I needed',
       body: 'The weak-area follow-up questions made review actually useful instead of just re-reading the same explanations.',
-      seed: 'medprep-s1',
+      name: 'Sarah Chen',
+      photo: unsplashPortrait('photo-1494790108377-be9c29b29330'),
       role: 'STEP 1 student',
     },
     {
       quote: 'Kept me on pace all semester',
       body: 'I stopped falling behind on review because it just showed up automatically instead of me having to plan it myself.',
-      seed: 'medprep-s2',
+      name: 'Marcus Bell',
+      photo: unsplashPortrait('photo-1500648767791-00dcc994a43e'),
       role: 'STEP 2 CK student',
     },
     {
       quote: 'The explanations are what sold me',
       body: 'They read like something a physician actually wrote, not a generic summary pulled from a textbook.',
-      seed: 'medprep-s3',
+      name: 'Priya Patel',
+      photo: unsplashPortrait('photo-1489424731084-a5d8b219a5bb'),
       role: 'STEP 3 candidate',
     },
   ],
@@ -99,19 +107,22 @@ const TESTIMONIAL_PAGES: Testimonial[][] = [
     {
       quote: 'Picked up right where I left off',
       body: 'Switching from Step 3 to ABIM prep, it already knew what I was weak on instead of starting from zero.',
-      seed: 'medprep-a1',
+      name: 'David Okafor',
+      photo: unsplashPortrait('photo-1472099645785-5658abf4ff4e'),
       role: 'ABIM candidate',
     },
     {
       quote: 'Dedicated period felt manageable',
       body: 'The reserve set for weak areas meant I wasn’t just grinding random questions in the last few weeks.',
-      seed: 'medprep-s4',
+      name: 'Rachel Kim',
+      photo: unsplashPortrait('photo-1544005313-94ddf0286df2'),
       role: 'STEP 2 CK student',
     },
     {
       quote: 'Questions actually connect',
       body: 'Working through a case-style thread instead of jumping topics made things stick better than flashcards ever did.',
-      seed: 'medprep-s5',
+      name: 'James Whitfield',
+      photo: unsplashPortrait('photo-1507003211169-0a1dd7228f2d'),
       role: 'STEP 1 student',
     },
   ],
@@ -147,18 +158,32 @@ const TrialTimeline = () => {
   ];
 
   return (
-    <div className="mt-8 flex flex-col gap-5">
-      {steps.map((step) => (
-        <div key={step.number} className="flex items-start gap-4">
-          <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#06005A]/10 text-sm font-bold text-[#06005A]">
-            {step.number}
-          </span>
-          <div className="min-w-0">
-            <h3 className="text-base font-semibold text-black">{step.title}</h3>
-            <p className="mt-1 text-sm leading-relaxed text-gray-600">{step.body}</p>
-          </div>
-        </div>
-      ))}
+    <div className="mt-8">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+        How the trial works
+      </p>
+      <div className="mt-5 flex flex-col">
+        {steps.map((step, i) => {
+          const isLast = i === steps.length - 1;
+          return (
+            <div key={step.number} className="relative flex items-start gap-4 pb-8 last:pb-0">
+              {!isLast && (
+                <span
+                  aria-hidden
+                  className="absolute left-[18px] top-9 h-[calc(100%-2.25rem)] w-px bg-gradient-to-b from-[#06005A]/25 to-[#06005A]/5"
+                />
+              )}
+              <span className="relative flex size-9 shrink-0 items-center justify-center rounded-full bg-[#06005A]/10 text-sm font-bold text-[#06005A] ring-4 ring-white">
+                {step.number}
+              </span>
+              <div className="min-w-0 pt-1">
+                <h3 className="text-base font-semibold text-black">{step.title}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-gray-600">{step.body}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -184,11 +209,14 @@ const TestimonialsSection = () => {
             <p className="mt-2 text-sm leading-relaxed text-gray-600">{t.body}</p>
             <div className="mt-4 flex items-center gap-2.5">
               <img
-                src={avatarUrl(t.seed)}
+                src={t.photo}
                 alt=""
-                className="size-8 shrink-0 rounded-full bg-gray-100"
+                className="size-9 shrink-0 rounded-full bg-gray-100 object-cover"
               />
-              <span className="text-xs font-medium text-gray-500">{t.role}</span>
+              <div className="min-w-0">
+                <p className="truncate text-sm font-semibold text-black">{t.name}</p>
+                <p className="truncate text-xs font-medium text-gray-500">{t.role}</p>
+              </div>
             </div>
           </div>
         ))}
@@ -227,6 +255,100 @@ const TestimonialsSection = () => {
           </button>
         </div>
       )}
+    </div>
+  );
+};
+
+const FAQS = [
+  {
+    question: 'Will I be charged today?',
+    answer:
+      'No. Starting the trial unlocks full access immediately and your card isn’t charged until the trial ends on day 7.',
+  },
+  {
+    question: 'How do I cancel?',
+    answer:
+      'Cancel anytime from your account settings before day 7. It takes one click and there’s no retention flow to fight through. Once canceled, you won’t be charged.',
+  },
+  {
+    question: 'What happens when the trial ends?',
+    answer:
+      'If you don’t cancel, your selected plan starts automatically and you’re billed at the rate shown for that plan. We email you a reminder before that happens.',
+  },
+  {
+    question: 'Can I switch plans later?',
+    answer:
+      'Yes. You can move between monthly, 3-month, and yearly plans at any time from your account settings, and changes apply at your next billing cycle.',
+  },
+  {
+    question: 'What do I get access to during the trial?',
+    answer:
+      'Everything: the full adaptive question bank, spaced-repetition review schedule, and physician-reviewed explanations. Nothing is held back for paying users only.',
+  },
+];
+
+const FaqSection = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+  return (
+    <div className="mt-20 border-t border-gray-100 pt-14 sm:pt-16">
+      <div className="grid gap-10 sm:grid-cols-[minmax(0,15rem)_1fr] sm:gap-16">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#C46B10]">FAQ</p>
+          <h2 className="font-[family-name:var(--font-display)] mt-3 text-2xl font-bold tracking-tight text-black sm:text-[2rem]">
+            Questions, answered.
+          </h2>
+        </div>
+
+        <div className="divide-y divide-gray-100 border-t border-gray-100 sm:border-t-0">
+          {FAQS.map((faq, i) => {
+            const isOpen = openIndex === i;
+            return (
+              <div key={faq.question} className="py-1">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  className="group flex w-full items-start justify-between gap-6 py-4 text-left"
+                >
+                  <span className="flex items-baseline gap-4">
+                    <span className="font-[family-name:var(--font-display)] text-xs font-semibold text-gray-300">
+                      {String(i + 1).padStart(2, '0')}
+                    </span>
+                    <span
+                      className={`text-[15px] font-semibold transition-colors ${
+                        isOpen ? 'text-black' : 'text-gray-800 group-hover:text-black'
+                      }`}
+                    >
+                      {faq.question}
+                    </span>
+                  </span>
+                  <span
+                    className={`flex size-6 shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
+                      isOpen
+                        ? 'rotate-45 border-[#C46B10] bg-[#C46B10] text-white'
+                        : 'border-gray-300 text-gray-500 group-hover:border-gray-400'
+                    }`}
+                  >
+                    <Plus className="size-3.5" strokeWidth={2.5} />
+                  </span>
+                </button>
+
+                <div
+                  className="grid transition-[grid-template-rows] duration-300 ease-out"
+                  style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+                >
+                  <div className="overflow-hidden">
+                    <p className="max-w-lg pb-5 pl-[2.1rem] text-sm leading-relaxed text-gray-600">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
@@ -279,7 +401,7 @@ const PaywallPage = () => {
           Start your 7-day free trial.
         </h1>
         <p className="mt-3 text-lg text-gray-600">
-          Experience the NARQB Method before you commit.
+          Full access to every adaptive set, review, and explanation, free for 7 days.
         </p>
         <p className="mt-1 text-sm font-medium text-emerald-700">No risk. Cancel anytime.</p>
 
@@ -292,11 +414,13 @@ const PaywallPage = () => {
                 type="button"
                 onClick={() => setSelected(p.id)}
                 className={`rounded-2xl border p-5 text-left transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md ${
-                  isSelected ? 'border-[#C46B10] bg-[#C46B10]/5' : 'border-gray-200 hover:border-gray-300'
+                  isSelected
+                    ? 'border-[#C46B10] bg-[#C46B10]/5'
+                    : 'border-transparent bg-gray-100'
                 }`}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <h3 className="text-base font-semibold text-black">{p.label}</h3>
+                  <h3 className="text-base font-semibold text-[#000C3F]">{p.label}</h3>
                   <span
                     className={`flex size-5 shrink-0 items-center justify-center rounded-full border-2 ${
                       isSelected ? 'border-[#C46B10] bg-[#C46B10]' : 'border-gray-300'
@@ -306,7 +430,7 @@ const PaywallPage = () => {
                   </span>
                 </div>
 
-                <p className="mt-3 text-2xl font-bold text-black">
+                <p className="mt-3 text-2xl font-bold text-[#000C3F]">
                   {p.perMonth}
                   <span className="text-sm font-medium text-gray-500">/mo</span>
                 </p>
@@ -335,7 +459,7 @@ const PaywallPage = () => {
           {isRedirecting ? 'Redirecting…' : 'Start my free trial'}
         </button>
 
-        <div className="mt-6 rounded-2xl border border-gray-200 bg-gray-50 p-6 sm:p-8">
+        <div className="mt-6 rounded-2xl bg-gray-100 p-6 sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
             Your trial
           </p>
@@ -359,6 +483,8 @@ const PaywallPage = () => {
         <TrialTimeline />
 
         <TestimonialsSection />
+
+        <FaqSection />
       </div>
     </div>
   );
