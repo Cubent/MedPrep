@@ -12,7 +12,7 @@
  * questions before any real user studies from it.
  */
 import { database } from '../index';
-import { ExamType } from '../generated/client';
+import { ExamType } from '@prisma/client';
 
 type SeedChoice = { text: string; isCorrect: boolean; explanation?: string };
 

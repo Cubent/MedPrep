@@ -1,5 +1,5 @@
 import { database } from './index';
-import { ExamType } from './generated/client';
+import { ExamType } from '@prisma/client';
 
 /**
  * AI-generated practice content lives entirely under one dedicated System per

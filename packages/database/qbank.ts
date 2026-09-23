@@ -1,6 +1,6 @@
 import { AI_SYSTEM_NAME, getOrCreateAiSystem } from './ai-practice';
 import { database } from './index';
-import { ExamType, ObjectiveStatus, SessionMode } from './generated/client';
+import { ExamType, ObjectiveStatus, SessionMode } from '@prisma/client';
 
 const CONSECUTIVE_QUESTIONS_BEFORE_SWITCH = 3;
 export const SET_SIZE = 5;
