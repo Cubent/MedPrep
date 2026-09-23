@@ -30,6 +30,7 @@ export const SiteFooter = () => (
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Company</p>
           <ul className="mt-4 flex flex-col gap-3 text-sm">
+            <li><Link href="/blog" className="text-white/70 hover:text-white">Blog</Link></li>
             <li><Link href="/contact" className="text-white/70 hover:text-white">Contact</Link></li>
             <li><Link href="/#faq" className="text-white/70 hover:text-white">FAQ</Link></li>
           </ul>
