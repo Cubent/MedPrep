@@ -2,6 +2,9 @@ import { auth } from '@clerk/nextjs/server';
 import { database, ExamType, NextExamPlan, PrepStage, TimedPreference } from '@repo/database';
 import { NextResponse } from 'next/server';
 
+// maxDuration for every API route is set globally in vercel.json (Neon's
+// serverless Postgres cold-start needs more than the platform default).
+
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
 export async function GET() {
