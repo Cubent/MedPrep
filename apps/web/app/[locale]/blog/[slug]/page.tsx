@@ -1,9 +1,19 @@
 import { TableOfContents } from '@/components/blog/table-of-contents';
-import { SITE_URL, formatPostDate, getAllPosts, getPostBySlug } from '@/lib/blog';
+import {
+  SITE_URL,
+  formatPostDate,
+  getAllPosts,
+  getPostBySlug,
+} from '@/lib/blog';
 import { JsonLd } from '@repo/seo/json-ld';
-import type { BlogPosting, BreadcrumbList, WithContext } from '@repo/seo/json-ld';
+import type {
+  BlogPosting,
+  BreadcrumbList,
+  WithContext,
+} from '@repo/seo/json-ld';
 import { createMetadata } from '@repo/seo/metadata';
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SiteFooter } from '../../components/site-footer';
@@ -16,7 +26,9 @@ type BlogPostPageProperties = {
 export const generateStaticParams = async (): Promise<{ slug: string }[]> =>
   getAllPosts().map((post) => ({ slug: post.slug }));
 
-export const generateMetadata = async ({ params }: BlogPostPageProperties): Promise<Metadata> => {
+export const generateMetadata = async ({
+  params,
+}: BlogPostPageProperties): Promise<Metadata> => {
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) return {};
@@ -53,8 +65,16 @@ const BlogPostPage = async ({ params }: BlogPostPageProperties) => {
     image: [`${SITE_URL}/og-image.png`],
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
-    author: { '@type': 'Organization', name: post.author.name, url: post.author.url },
-    publisher: { '@type': 'Organization', name: 'MedPrep Institute', url: SITE_URL },
+    author: {
+      '@type': 'Organization',
+      name: post.author.name,
+      url: post.author.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MedPrep Institute',
+      url: SITE_URL,
+    },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     keywords: post.keywords.join(', '),
   };
@@ -64,7 +84,12 @@ const BlogPostPage = async ({ params }: BlogPostPageProperties) => {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: `${SITE_URL}/blog`,
+      },
       { '@type': 'ListItem', position: 3, name: post.title, item: url },
     ],
   };
@@ -74,61 +99,90 @@ const BlogPostPage = async ({ params }: BlogPostPageProperties) => {
       <JsonLd code={article} />
       <JsonLd code={breadcrumbs} />
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-6 py-10 sm:py-16">
-        <nav aria-label="Breadcrumb" className="text-xs text-gray-500">
-          <ol className="flex flex-wrap items-center gap-1.5">
-            <li>
-              <Link href="/" className="hover:text-[#06005A]">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden>/</li>
-            <li>
-              <Link href="/blog" className="hover:text-[#06005A]">
-                Blog
-              </Link>
-            </li>
-          </ol>
-        </nav>
-
-        <article className="mt-6">
-          <header>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#C46B10]">
-              {post.category}
-            </p>
-            <h1 className="font-[family-name:var(--font-display)] mt-3 text-3xl font-bold leading-tight tracking-tight text-[#06005A] sm:text-4xl">
-              {post.title}
-            </h1>
-            <p className="mt-4 text-lg leading-relaxed text-gray-600">{post.description}</p>
-            <p className="mt-5 text-sm text-gray-500">
-              By{' '}
-              <a href={post.author.url} className="font-medium text-[#06005A] hover:underline">
-                {post.author.name}
-              </a>
-              {' · '}
-              Published <time dateTime={post.publishedAt}>{formatPostDate(post.publishedAt)}</time>
-              {post.updatedAt !== post.publishedAt && (
-                <>
-                  {' · '}
-                  Updated <time dateTime={post.updatedAt}>{formatPostDate(post.updatedAt)}</time>
-                </>
-              )}
-              {' · '}
-              {post.readingMinutes} min read
-            </p>
-            {post.reviewer && (
-              <p className="mt-1 text-sm text-gray-500">
-                Medically reviewed by{' '}
-                <span className="font-medium text-[#06005A]">{post.reviewer.name}</span>,{' '}
-                {post.reviewer.credentials}
+      <main>
+        <article>
+          <header className="relative isolate overflow-hidden bg-[#000C3F]">
+            <Image
+              src="/MedPrep (1).png"
+              alt=""
+              fill
+              priority
+              quality={70}
+              sizes="100vw"
+              className="-z-20 object-cover"
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0 -z-10 bg-gradient-to-b from-[#000C3F]/75 via-[#000C3F]/55 to-[#000C3F]/85"
+            />
+            <div className="mx-auto max-w-3xl px-6 py-12 sm:py-20">
+              <nav aria-label="Breadcrumb" className="text-xs text-white/60">
+                <ol className="flex flex-wrap items-center gap-1.5">
+                  <li>
+                    <Link href="/" className="hover:text-white">
+                      Home
+                    </Link>
+                  </li>
+                  <li aria-hidden>/</li>
+                  <li>
+                    <Link href="/blog" className="hover:text-white">
+                      Blog
+                    </Link>
+                  </li>
+                </ol>
+              </nav>
+              <p className="mt-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#C46B10]">
+                {post.category}
               </p>
-            )}
+              <h1 className="font-[family-name:var(--font-display)] mt-3 text-3xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
+                {post.title}
+              </h1>
+              <p className="mt-4 text-lg leading-relaxed text-white/80">
+                {post.description}
+              </p>
+              <p className="mt-6 text-sm text-white/70">
+                By{' '}
+                <a
+                  href={post.author.url}
+                  className="font-medium text-white hover:underline"
+                >
+                  {post.author.name}
+                </a>
+                {' · '}
+                Published{' '}
+                <time dateTime={post.publishedAt}>
+                  {formatPostDate(post.publishedAt)}
+                </time>
+                {post.updatedAt !== post.publishedAt && (
+                  <>
+                    {' · '}
+                    Updated{' '}
+                    <time dateTime={post.updatedAt}>
+                      {formatPostDate(post.updatedAt)}
+                    </time>
+                  </>
+                )}
+                {' · '}
+                {post.readingMinutes} min read
+              </p>
+              {post.reviewer && (
+                <p className="mt-1 text-sm text-white/70">
+                  Medically reviewed by{' '}
+                  <span className="font-medium text-white">
+                    {post.reviewer.name}
+                  </span>
+                  , {post.reviewer.credentials}
+                </p>
+              )}
+            </div>
           </header>
 
-          <TableOfContents sections={post.sections} />
+          <div className="mx-auto max-w-3xl px-6 py-10 sm:py-14">
+            <TableOfContents sections={post.sections} />
 
-          <div className="prose prose-lg max-w-none prose-headings:font-[family-name:var(--font-display)] prose-headings:font-bold prose-headings:text-[#06005A] prose-h2:mt-14 prose-h2:scroll-mt-24 prose-h3:mt-8 prose-h3:scroll-mt-24 prose-a:font-medium prose-a:text-[#C46B10] prose-a:no-underline hover:prose-a:underline prose-strong:text-[#000C3F] prose-li:my-1.5">
-            <post.Body />
+            <div className="prose prose-lg max-w-none prose-headings:font-[family-name:var(--font-display)] prose-headings:font-bold prose-headings:text-[#06005A] prose-h2:mt-14 prose-h2:scroll-mt-24 prose-h3:mt-8 prose-h3:scroll-mt-24 prose-a:font-medium prose-a:text-[#C46B10] prose-a:no-underline hover:prose-a:underline prose-strong:text-[#000C3F] prose-li:my-1.5">
+              <post.Body />
+            </div>
           </div>
         </article>
       </main>

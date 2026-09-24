@@ -65,6 +65,18 @@ const MEDPREP_PRICES = [
   '$400 per year ($33.33 per month)',
 ];
 
+// Counted from the hand-authored title lists in apps/web/scripts/seed-ai-titles-*.mjs
+// (unique titles per exam, rounded down to the hundred). Re-run the check-*-totals
+// scripts against the live database before changing these.
+const MEDPREP_TOPICS = {
+  step1: '7,500+',
+  step2: '5,300+',
+  step3: '10,400+',
+  abim: '5,500+',
+};
+const MEDPREP_TOPICS_NOTE =
+  'MedPrep counts question topics; each topic produces a full clinical vignette when you reach it, so its figure is not directly comparable to a fixed, pre-written bank.';
+
 const MEDPREP_TRIAL = '7-day free trial, cancel anytime';
 const NOT_CONFIRMED = 'Not confirmed on the official page';
 const NOT_LISTED = 'Not listed on the official page';
@@ -209,7 +221,7 @@ const Body = () => (
           featured: true,
           cells: {
             bank: 'MedPrep Institute',
-            questions: 'Adaptive sets from a bank that is expanded regularly',
+            questions: `${MEDPREP_TOPICS.step1} question topics`,
             plans: <Lines items={MEDPREP_PRICES} />,
             trial: MEDPREP_TRIAL,
             best: 'Students who keep missing the same concepts and want spaced repetition built in',
@@ -295,8 +307,9 @@ const Body = () => (
       ]}
       footnote={
         <>
-          UWorld self-assessments: none on the 30-day plan, 1 on 90 days, 2 on 180 days and 3 on 360
-          and 730 days. UWorld QBank Plus, which adds medical videos, costs $99 more on every plan.
+          {MEDPREP_TOPICS_NOTE} UWorld self-assessments: none on the 30-day plan, 1 on 90 days, 2
+          on 180 days and 3 on 360 and 730 days. UWorld QBank Plus, which adds medical videos, costs
+          $99 more on every plan.
           Kaplan&rsquo;s pricing page returned an access error every time we checked it, so we are
           not repeating a number we could not verify directly. &ldquo;Not confirmed&rdquo; means we
           could not verify it on the official page.
@@ -325,7 +338,7 @@ const Body = () => (
           featured: true,
           cells: {
             bank: 'MedPrep Institute',
-            questions: 'Adaptive sets from a bank that is expanded regularly',
+            questions: `${MEDPREP_TOPICS.step2} question topics`,
             plans: <Lines items={MEDPREP_PRICES} />,
             trial: MEDPREP_TRIAL,
             best: 'Clinical vignette practice that resurfaces your weak areas on a schedule',
@@ -338,7 +351,7 @@ const Body = () => (
             questions: '4,250+',
             plans: <Lines items={UWORLD_PRICES} />,
             trial: NOT_CONFIRMED,
-            best: 'The largest Step 2 CK bank we verified, with official self-assessments',
+            best: 'Exam-style questions with up to three official self-assessments',
           },
         },
         {
@@ -409,7 +422,12 @@ const Body = () => (
           },
         },
       ]}
-      footnote="UWorld Step 2 CK plans and self-assessments match the Step 1 plans listed above."
+      footnote={
+        <>
+          {MEDPREP_TOPICS_NOTE} UWorld Step 2 CK plans and self-assessments match the Step 1 plans
+          listed above.
+        </>
+      }
     />
 
     <H2 section={S.step3} />
@@ -433,7 +451,7 @@ const Body = () => (
           featured: true,
           cells: {
             bank: 'MedPrep Institute',
-            questions: 'Adaptive multiple-choice practice',
+            questions: `${MEDPREP_TOPICS.step3} question topics`,
             plans: <Lines items={MEDPREP_PRICES} />,
             trial: MEDPREP_TRIAL,
             best: 'Extra multiple-choice practice with adaptive review',
@@ -510,7 +528,12 @@ const Body = () => (
           },
         },
       ]}
-      footnote="UWorld Step 3 QBank Plus, which adds medical videos, costs $99 more on every plan."
+      footnote={
+        <>
+          {MEDPREP_TOPICS_NOTE} UWorld Step 3 QBank Plus, which adds medical videos, costs $99 more
+          on every plan.
+        </>
+      }
     />
 
     <H2 section={S.uworld} />
@@ -521,7 +544,7 @@ const Body = () => (
     </p>
     <h3>Strengths</h3>
     <ul>
-      <li>The largest Step 1 and Step 2 CK question banks among the banks we could verify.</li>
+      <li>Large pre-written banks: 3,600+ questions for Step 1 and 4,250+ for Step 2 CK.</li>
       <li>Official self-assessments on longer plans, up to three for Step 1 and Step 2 CK.</li>
       <li>CCS case simulations for Step 3, which no other bank in this guide lists.</li>
       <li>An optional QBank Plus tier that adds medical videos.</li>
@@ -661,7 +684,11 @@ const Body = () => (
       <li>Built-in spaced repetition, so missed concepts come back on a schedule.</li>
       <li>Physician-reviewed explanations.</li>
       <li>Practice for Step 1, Step 2 CK, Step 3 and the ABIM exam.</li>
-      <li>A question bank that is expanded regularly.</li>
+      <li>
+        A large bank of question topics: {MEDPREP_TOPICS.step1} for Step 1, {MEDPREP_TOPICS.step2}{' '}
+        for Step 2 CK, {MEDPREP_TOPICS.step3} for Step 3 and {MEDPREP_TOPICS.abim} for the ABIM
+        exam. Each topic produces a full clinical vignette when you reach it.
+      </li>
     </ul>
     <ComparisonTable
       caption="MedPrep Institute plans and pricing"
@@ -784,8 +811,8 @@ const Body = () => (
     <H2 section={S.faq} />
     <h3>What is the best question bank for USMLE Step 1?</h3>
     <p>
-      UWorld is the most widely used Step 1 bank and has the largest verified question count
-      (3,600+). AMBOSS is the main alternative if you want a library and score predictor in one
+      UWorld is the most widely used Step 1 bank, with 3,600+ pre-written questions and up to three
+      official self-assessments. AMBOSS is the main alternative if you want a library and score predictor in one
       plan, TrueLearn and BoardVitals have lower entry prices, and MedPrep Institute adds adaptive
       weak-area review.
     </p>
