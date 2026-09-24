@@ -1,4 +1,3 @@
-import { Callout } from '@/components/blog/callout';
 import { ComparisonTable } from '@/components/blog/comparison-table';
 import { PostCta } from '@/components/blog/post-cta';
 import Link from 'next/link';
@@ -16,7 +15,7 @@ const S = {
   step3: { id: 'step-3-question-banks', title: 'Step 3 question banks compared' },
   uworld: { id: 'uworld-review', title: 'UWorld: strengths, drawbacks and which plan to buy' },
   versus: { id: 'uworld-vs-amboss', title: 'UWorld vs AMBOSS' },
-  others: { id: 'other-question-banks', title: 'TrueLearn and other question banks' },
+  others: { id: 'other-question-banks', title: 'TrueLearn, Kaplan, BoardVitals, Lecturio and USMLE-Rx' },
   medprep: { id: 'medprep-institute', title: 'MedPrep Institute: adaptive practice (our product)' },
   choose: { id: 'how-to-choose', title: 'How to choose the right question bank' },
   perDay: { id: 'questions-per-day', title: 'How many questions should you do per day?' },
@@ -58,6 +57,8 @@ const TRUELEARN_STEP1_PRICES = [
   '365 days: $399',
   '545 days: $419',
 ];
+const BOARDVITALS_STEP1_PRICES = ['Cram, 1 month: $169', 'Prepare, 3 months: $259', 'Master, 6 months: $449'];
+const BOARDVITALS_STEP3_PRICES = ['Cram, 1 month: $109', 'Prepare, 3 months: $169', 'Master, 6 months: $249'];
 const MEDPREP_PRICES = [
   '$40 per month',
   '$110 per 3 months ($36.67 per month)',
@@ -66,34 +67,16 @@ const MEDPREP_PRICES = [
 
 const MEDPREP_TRIAL = '7-day free trial, cancel anytime';
 const NOT_CONFIRMED = 'Not confirmed on the official page';
+const NOT_LISTED = 'Not listed on the official page';
 
 const Body = () => (
   <>
     <p>
       Choosing a question bank is one of the biggest study decisions you will make for the USMLE,
-      and the prices vary a lot. This guide compares the main options for Step 1, Step 2 CK and
-      Step 3 using the prices and question counts published on each company&rsquo;s own site, then
-      tells you which one to pick for your situation.
+      and the prices vary a lot. This guide compares eight options for Step 1, Step 2 CK and Step 3
+      using the prices and question counts published on each company&rsquo;s own site, then tells
+      you which one to pick for your situation.
     </p>
-
-    <Callout title="Quick answer">
-      <p>
-        UWorld is the most widely used USMLE question bank. AMBOSS is the best-value alternative
-        with a built-in library, TrueLearn has the lowest entry prices, and MedPrep Institute (our
-        product) is built for adaptive weak-area review. For Step 3, UWorld is the only bank we
-        checked that lists CCS case simulations.
-      </p>
-    </Callout>
-
-    <Callout title="Disclosure" tone="disclosure">
-      <p>
-        MedPrep Institute publishes this guide and sells one of the question banks in it. We list
-        our own product first and label it. Prices, question counts and trial terms for every other
-        bank come from that company&rsquo;s official page (linked under{' '}
-        <a href={`#${S.sources.id}`}>Sources</a>) and were checked on September 24, 2026. They
-        change often, so confirm before you buy.
-      </p>
-    </Callout>
 
     <H2 section={S.quick} />
     <p>
@@ -112,8 +95,6 @@ const Body = () => (
         {
           id: 'medprep',
           featured: true,
-          badge: 'Our product',
-          cta: { label: 'Start 7-day free trial', href: signup('at-a-glance-table') },
           cells: {
             bank: 'MedPrep Institute',
             best: 'Adaptive practice that brings back the concepts you miss',
@@ -148,6 +129,42 @@ const Body = () => (
             trial: '5-day trial with 120 questions',
           },
         },
+        {
+          id: 'boardvitals',
+          cells: {
+            bank: 'BoardVitals',
+            best: 'Pass guarantee on the 3-month and 6-month plans',
+            price: '$169 for 1 month (Step 1)',
+            trial: NOT_CONFIRMED,
+          },
+        },
+        {
+          id: 'usmlerx',
+          cells: {
+            bank: 'USMLE-Rx',
+            best: 'One bank covering Step 1 and Step 2 CK, tied to First Aid',
+            price: '$299 per year (Step 1 and Step 2 CK combined)',
+            trial: '5-day free trial',
+          },
+        },
+        {
+          id: 'lecturio',
+          cells: {
+            bank: 'Lecturio',
+            best: 'Video lectures paired with a question bank',
+            price: NOT_LISTED,
+            trial: '7-day free trial',
+          },
+        },
+        {
+          id: 'kaplan',
+          cells: {
+            bank: 'Kaplan Qbank',
+            best: 'Physiology and behavioral science focus',
+            price: NOT_CONFIRMED,
+            trial: 'Free sample questions',
+          },
+        },
       ]}
     />
 
@@ -162,7 +179,8 @@ const Body = () => (
       qualitative points, such as who each bank suits, reflect what those companies publish about
       their products and how medical students commonly describe them. We have not run head-to-head
       score studies, and we do not claim any bank raises scores by a specific amount. Where we could
-      not confirm a number on an official page, we say so instead of guessing.
+      not confirm a number on an official page, we say so instead of guessing, rather than repeat a
+      figure we could not verify.
     </p>
     <p>
       We update this page when prices or products change, and we only change the &ldquo;updated&rdquo;
@@ -189,8 +207,6 @@ const Body = () => (
         {
           id: 'medprep',
           featured: true,
-          badge: 'Our product',
-          cta: { label: 'Start 7-day free trial', href: signup('step-1-table') },
           cells: {
             bank: 'MedPrep Institute',
             questions: 'Adaptive sets from a bank that is expanded regularly',
@@ -229,12 +245,61 @@ const Body = () => (
             best: 'Performance analytics with national benchmarking',
           },
         },
+        {
+          id: 'boardvitals',
+          cells: {
+            bank: 'BoardVitals',
+            questions: '3,300+',
+            plans: <Lines items={BOARDVITALS_STEP1_PRICES} />,
+            trial: '100% pass guarantee on the Prepare and Master plans',
+            best: 'A pass guarantee without committing to a full year',
+          },
+        },
+        {
+          id: 'lecturio',
+          cells: {
+            bank: 'Lecturio',
+            questions: '2,200+',
+            plans: (
+              <Lines
+                items={[
+                  '3-month, 12-month and 24-month plans available',
+                  'Prices not listed on the page we checked',
+                ]}
+              />
+            ),
+            trial: '7-day free trial. Free tier with 1,000+ questions',
+            best: 'Students who want video lectures alongside questions',
+          },
+        },
+        {
+          id: 'usmlerx',
+          cells: {
+            bank: 'USMLE-Rx',
+            questions: '5,000+ (Qmax, shared with Step 2 CK)',
+            plans: <Lines items={['12 months: $299 (Qmax, covers Step 1 and Step 2 CK)']} />,
+            trial: '5-day free trial, no card required',
+            best: 'Students using First Aid as their primary review book',
+          },
+        },
+        {
+          id: 'kaplan',
+          cells: {
+            bank: 'Kaplan Qbank',
+            questions: NOT_CONFIRMED,
+            plans: NOT_CONFIRMED,
+            trial: 'Free sample questions',
+            best: 'Physiology and behavioral science content',
+          },
+        },
       ]}
       footnote={
         <>
           UWorld self-assessments: none on the 30-day plan, 1 on 90 days, 2 on 180 days and 3 on 360
           and 730 days. UWorld QBank Plus, which adds medical videos, costs $99 more on every plan.
-          &ldquo;Not confirmed&rdquo; means we could not verify it on the official page.
+          Kaplan&rsquo;s pricing page returned an access error every time we checked it, so we are
+          not repeating a number we could not verify directly. &ldquo;Not confirmed&rdquo; means we
+          could not verify it on the official page.
         </>
       }
     />
@@ -258,8 +323,6 @@ const Body = () => (
         {
           id: 'medprep',
           featured: true,
-          badge: 'Our product',
-          cta: { label: 'Start 7-day free trial', href: signup('step-2-ck-table') },
           cells: {
             bank: 'MedPrep Institute',
             questions: 'Adaptive sets from a bank that is expanded regularly',
@@ -305,6 +368,46 @@ const Body = () => (
             best: 'Shelf exam practice in the same bank as Step 2 CK',
           },
         },
+        {
+          id: 'boardvitals',
+          cells: {
+            bank: 'BoardVitals',
+            questions: NOT_CONFIRMED,
+            plans: NOT_CONFIRMED,
+            trial: NOT_CONFIRMED,
+            best: 'We could not load a Step 2 CK page on BoardVitals&rsquo; site to confirm details',
+          },
+        },
+        {
+          id: 'lecturio',
+          cells: {
+            bank: 'Lecturio',
+            questions: NOT_CONFIRMED,
+            plans: NOT_LISTED,
+            trial: '7-day free trial',
+            best: 'Not confirmed as a dedicated Step 2 CK bank on the page we checked',
+          },
+        },
+        {
+          id: 'usmlerx',
+          cells: {
+            bank: 'USMLE-Rx',
+            questions: '5,000+ (Qmax, shared with Step 1)',
+            plans: <Lines items={['12 months: $299 (Qmax, covers Step 1 and Step 2 CK)']} />,
+            trial: '5-day free trial, no card required',
+            best: 'One subscription that covers Step 1 and Step 2 CK together',
+          },
+        },
+        {
+          id: 'kaplan',
+          cells: {
+            bank: 'Kaplan Qbank',
+            questions: NOT_CONFIRMED,
+            plans: NOT_CONFIRMED,
+            trial: 'Free sample questions',
+            best: 'UpToDate-style clinical content, per Kaplan&rsquo;s marketing',
+          },
+        },
       ]}
       footnote="UWorld Step 2 CK plans and self-assessments match the Step 1 plans listed above."
     />
@@ -328,8 +431,6 @@ const Body = () => (
         {
           id: 'medprep',
           featured: true,
-          badge: 'Our product',
-          cta: { label: 'Start 7-day free trial', href: signup('step-3-table') },
           cells: {
             bank: 'MedPrep Institute',
             questions: 'Adaptive multiple-choice practice',
@@ -359,13 +460,53 @@ const Body = () => (
           },
         },
         {
+          id: 'boardvitals',
+          cells: {
+            bank: 'BoardVitals',
+            questions: '1,500+',
+            plans: <Lines items={BOARDVITALS_STEP3_PRICES} />,
+            trial: 'No CCS practice; pass guarantee on the Prepare and Master plans',
+            best: 'Budget multiple-choice practice for Step 3',
+          },
+        },
+        {
           id: 'truelearn',
           cells: {
             bank: 'TrueLearn',
-            questions: 'Not listed on the USMLE page, which covers Step 1 and Step 2 CK/Shelf',
+            questions: NOT_LISTED,
             plans: 'Not applicable',
             trial: 'Not applicable',
             best: 'Use another bank for Step 3',
+          },
+        },
+        {
+          id: 'lecturio',
+          cells: {
+            bank: 'Lecturio',
+            questions: NOT_LISTED,
+            plans: 'Not applicable',
+            trial: 'Not applicable',
+            best: 'Use another bank for Step 3',
+          },
+        },
+        {
+          id: 'usmlerx',
+          cells: {
+            bank: 'USMLE-Rx',
+            questions: NOT_LISTED,
+            plans: 'Not applicable',
+            trial: 'Not applicable',
+            best: 'Use another bank for Step 3',
+          },
+        },
+        {
+          id: 'kaplan',
+          cells: {
+            bank: 'Kaplan Qbank',
+            questions: NOT_CONFIRMED,
+            plans: NOT_CONFIRMED,
+            trial: 'Free sample questions',
+            best: 'Budget option, per third-party reviews. We could not confirm details directly',
           },
         },
       ]}
@@ -388,8 +529,9 @@ const Body = () => (
     <h3>Drawbacks</h3>
     <ul>
       <li>
-        The highest prices of the banks we compared: the 90-day plan is $459, against $199 for
-        TrueLearn&rsquo;s 90-day Step 1 plan and $378 for AMBOSS&rsquo;s six-month plan.
+        The highest prices of the banks we compared with published pricing: the 90-day plan is
+        $459, against $199 for TrueLearn&rsquo;s 90-day Step 1 plan and $378 for AMBOSS&rsquo;s
+        six-month plan.
       </li>
       <li>The 30-day plan includes no self-assessments.</li>
       <li>Videos are not included unless you pay $99 more for QBank Plus.</li>
@@ -475,13 +617,35 @@ const Body = () => (
       with national benchmarking. Its USMLE page does not list a Step 3 bank, and its Step 1 bank is
       smaller than UWorld&rsquo;s.
     </p>
-    <h3>Kaplan, BoardVitals, Lecturio and USMLE-Rx</h3>
+    <h3>BoardVitals</h3>
     <p>
-      Other banks worth a look include Kaplan Qbank, BoardVitals, Lecturio (which pairs video
-      lectures with questions) and USMLE-Rx (built around the First Aid ecosystem). Their official
-      pages were not available to us when we checked, so we are not listing prices or question
-      counts for them rather than repeating figures we could not confirm. Check their sites
-      directly and compare against the tables above.
+      BoardVitals sells three plan tiers for both Step 1 and Step 3: Cram (1 month), Prepare (3
+      months) and Master (6 months). Step 1 runs from $169 to $449 with 3,300+ questions, and Step 3
+      runs from $109 to $249 with 1,500+ questions. The Prepare and Master plans on both carry a
+      100% pass guarantee. We could not load a Step 2 CK product page on their site to confirm
+      whether the same structure applies there.
+    </p>
+    <h3>Lecturio</h3>
+    <p>
+      Lecturio pairs its Qbank with a full video library. The Step 1 Qbank page lists 2,200+
+      questions and a 7-day free trial, plus a free tier of 1,000+ questions with no card required.
+      Its pricing page lists 3-month, 12-month and 24-month billing options for the Qbank-inclusive
+      &ldquo;Premium&rdquo; tier, but the dollar amounts did not load on the page we checked, so we
+      are not listing a price.
+    </p>
+    <h3>USMLE-Rx</h3>
+    <p>
+      USMLE-Rx&rsquo;s main product, Qmax, is a single 12-month plan at $299 that covers both Step 1
+      and Step 2 CK together, with 5,000+ questions and three self-assessments. It is built around
+      First Aid, referencing specific page numbers in its explanations, and offers a 5-day free
+      trial with no card required. Its official pages do not list a Step 3 product.
+    </p>
+    <h3>Kaplan Qbank</h3>
+    <p>
+      Kaplan sells a Qbank for Step 1, Step 2 CK and Step 3, with free sample questions available.
+      Its pricing pages returned an access error every time we tried to load them directly, so
+      rather than repeat a number from a source we could not verify ourselves, we are not listing
+      a price or question count here. Check kaptest.com directly if you are considering it.
     </p>
 
     <H2 section={S.medprep} />
@@ -524,8 +688,7 @@ const Body = () => (
         {
           id: 'yearly',
           featured: true,
-          badge: 'Best value',
-          cells: { plan: 'Yearly', price: '$400 per year', monthly: '$33.33', note: 'Save 20%' },
+          cells: { plan: 'Yearly', price: '$400 per year', monthly: '$33.33', note: 'Save 20%, best value' },
         },
       ]}
       footnote="Every plan starts with a 7-day free trial. Cancel anytime before day 7 and pay nothing."
@@ -560,6 +723,14 @@ const Body = () => (
         days), or a UWorld 30-day plan plus one self-assessment form ($399).
       </li>
       <li>
+        <strong>You want a pass guarantee without committing to a full year:</strong> BoardVitals&rsquo;
+        Prepare or Master plan.
+      </li>
+      <li>
+        <strong>You are studying Step 1 and Step 2 CK together off First Aid:</strong> USMLE-Rx&rsquo;s
+        Qmax.
+      </li>
+      <li>
         <strong>You keep missing the same concepts:</strong> add MedPrep&rsquo;s adaptive review
         alongside your primary bank.
       </li>
@@ -590,6 +761,8 @@ const Body = () => (
     <ul>
       <li>TrueLearn: a 5-day free trial with 120 Step 1 questions.</li>
       <li>AMBOSS: a 5-day free trial.</li>
+      <li>Lecturio: a 7-day free trial, plus a free tier of 1,000+ questions.</li>
+      <li>USMLE-Rx: a 5-day free trial, no card required.</li>
       <li>MedPrep Institute: a 7-day free trial, cancel anytime.</li>
       <li>
         The official <External href="https://www.usmle.org/">USMLE website</External>: content
@@ -613,8 +786,8 @@ const Body = () => (
     <p>
       UWorld is the most widely used Step 1 bank and has the largest verified question count
       (3,600+). AMBOSS is the main alternative if you want a library and score predictor in one
-      plan, TrueLearn has the lowest entry prices, and MedPrep Institute adds adaptive weak-area
-      review.
+      plan, TrueLearn and BoardVitals have lower entry prices, and MedPrep Institute adds adaptive
+      weak-area review.
     </p>
     <h3>Is UWorld worth it for Step 1?</h3>
     <p>
@@ -632,19 +805,21 @@ const Body = () => (
     <p>
       UWorld&rsquo;s 4,250+ question bank is the default choice, and TrueLearn&rsquo;s 4,100+
       question Step 2 CK and shelf bank is the main alternative, especially if you want shelf
-      practice in the same subscription. Step 2 CK is scored, so self-assessments matter more.
+      practice in the same subscription. USMLE-Rx&rsquo;s Qmax is worth a look if you also want your
+      Step 1 review in the same plan. Step 2 CK is scored, so self-assessments matter more.
     </p>
     <h3>What is the best question bank for Step 3?</h3>
     <p>
       UWorld, because its Step 3 page lists 90+ CCS case simulations alongside 2,100+ questions,
-      and none of the other banks we checked list CCS cases. Add a second multiple-choice bank if
-      you want more volume.
+      and none of the other banks we checked list CCS cases. BoardVitals is a budget multiple-choice
+      option if you already have CCS practice elsewhere.
     </p>
     <h3>Are there free USMLE question banks?</h3>
     <p>
-      Yes. TrueLearn and AMBOSS each offer a 5-day free trial, MedPrep Institute offers a 7-day free
-      trial, and USMLE.org publishes official content outlines and an interactive testing
-      experience. Also ask your school about institutional access before paying.
+      Yes. TrueLearn and AMBOSS each offer a 5-day free trial, Lecturio and MedPrep Institute each
+      offer a 7-day free trial, USMLE-Rx offers a 5-day free trial, and USMLE.org publishes official
+      content outlines and an interactive testing experience. Also ask your school about
+      institutional access before paying.
     </p>
     <h3>Can I use more than one question bank?</h3>
     <p>
@@ -677,14 +852,31 @@ const Body = () => (
         <External href="https://truelearn.com/usmle/step-1-prep-smartbank/">Step 1 SmartBank</External>
       </li>
       <li>
+        <External href="https://www.boardvitals.com/USMLE-step1-questions">
+          BoardVitals Step 1
+        </External>{' '}
+        and{' '}
+        <External href="https://www.boardvitals.com/USMLE-step3-questions">Step 3</External>
+      </li>
+      <li>
+        <External href="https://www.lecturio.com/medical/usmle-step-1/qbank/">
+          Lecturio Step 1 Qbank
+        </External>{' '}
+        and <External href="https://www.lecturio.com/medical/pricing/">pricing</External>
+      </li>
+      <li>
+        <External href="https://usmle-rx.com/pricing/">USMLE-Rx pricing</External>
+      </li>
+      <li>
         <External href="https://www.usmle.org/">USMLE.org</External> for Step scoring and official
         materials
       </li>
     </ul>
     <p className="text-sm text-gray-500">
       MedPrep Institute is not affiliated with or endorsed by NBME, FSMB, USMLE, UWorld, AMBOSS,
-      TrueLearn or any other company named here. All trademarks belong to their owners and are used
-      descriptively. This guide is for general information and is not a guarantee of any exam result.
+      TrueLearn, BoardVitals, Lecturio, USMLE-Rx, Kaplan or any other company named here. All
+      trademarks belong to their owners and are used descriptively. This guide is for general
+      information and is not a guarantee of any exam result.
     </p>
   </>
 );
@@ -694,7 +886,7 @@ export const post: BlogPost = {
   title: 'Best USMLE Question Banks in 2026: Step 1, Step 2 CK and Step 3 Compared',
   seoTitle: 'Best USMLE Question Banks (2026): Prices Compared by Step',
   description:
-    'Compare UWorld, AMBOSS, TrueLearn and MedPrep for Step 1, Step 2 CK and Step 3 with verified 2026 prices, question counts and free trials.',
+    'Compare UWorld, AMBOSS, TrueLearn, BoardVitals, Lecturio, USMLE-Rx, Kaplan and MedPrep for Step 1, Step 2 CK and Step 3 with verified 2026 prices and free trials.',
   publishedAt: '2026-09-24T12:00:00+02:00',
   updatedAt: '2026-09-24T12:00:00+02:00',
   author: { name: 'MedPrep Institute Editorial Team', url: 'https://medprepinstitute.org' },
@@ -709,7 +901,7 @@ export const post: BlogPost = {
     'UWorld vs AMBOSS',
     'USMLE Qbank prices 2026',
   ],
-  readingMinutes: 12,
+  readingMinutes: 14,
   sections: Object.values(S),
   Body,
 };
