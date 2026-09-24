@@ -8,8 +8,6 @@ const signup = (medium: string) =>
   `/sign-up?utm_source=blog&utm_medium=${medium}&utm_campaign=best-usmle-question-banks`;
 
 const S = {
-  quick: { id: 'quick-answer', title: 'Which USMLE question bank is best?' },
-  method: { id: 'how-we-compared', title: 'How we compared them' },
   step1: { id: 'step-1-question-banks', title: 'Step 1 question banks compared' },
   step2: { id: 'step-2-ck-question-banks', title: 'Step 2 CK question banks compared' },
   step3: { id: 'step-3-question-banks', title: 'Step 3 question banks compared' },
@@ -88,115 +86,6 @@ const Body = () => (
       and the prices vary a lot. This guide compares eight options for Step 1, Step 2 CK and Step 3
       using the prices and question counts published on each company&rsquo;s own site, then tells
       you which one to pick for your situation.
-    </p>
-
-    <H2 section={S.quick} />
-    <p>
-      Here is the short version. Use the step-by-step tables further down for full plans and
-      prices.
-    </p>
-    <ComparisonTable
-      caption="USMLE question banks at a glance (prices checked September 24, 2026)"
-      columns={[
-        { key: 'bank', label: 'Question bank' },
-        { key: 'best', label: 'Best for' },
-        { key: 'price', label: 'Starting price' },
-        { key: 'trial', label: 'Free trial' },
-      ]}
-      rows={[
-        {
-          id: 'medprep',
-          featured: true,
-          cells: {
-            bank: 'MedPrep Institute',
-            best: 'Adaptive practice that brings back the concepts you miss',
-            price: '$40 per month, or $400 per year',
-            trial: '7 days, cancel anytime',
-          },
-        },
-        {
-          id: 'uworld',
-          cells: {
-            bank: 'UWorld',
-            best: 'Exam-style volume and official self-assessments; CCS cases for Step 3',
-            price: '$349 for 30 days (Step 1 and Step 2 CK)',
-            trial: NOT_CONFIRMED,
-          },
-        },
-        {
-          id: 'amboss',
-          cells: {
-            bank: 'AMBOSS',
-            best: 'Question bank, library and score predictor in one plan',
-            price: '$378 for 6 months',
-            trial: '5-day free trial',
-          },
-        },
-        {
-          id: 'truelearn',
-          cells: {
-            bank: 'TrueLearn',
-            best: 'Analytics with national benchmarking',
-            price: '$149 for 30 days (Step 1)',
-            trial: '5-day trial with 120 questions',
-          },
-        },
-        {
-          id: 'boardvitals',
-          cells: {
-            bank: 'BoardVitals',
-            best: 'Pass guarantee on the 3-month and 6-month plans',
-            price: '$169 for 1 month (Step 1)',
-            trial: NOT_CONFIRMED,
-          },
-        },
-        {
-          id: 'usmlerx',
-          cells: {
-            bank: 'USMLE-Rx',
-            best: 'One bank covering Step 1 and Step 2 CK, tied to First Aid',
-            price: '$299 per year (Step 1 and Step 2 CK combined)',
-            trial: '5-day free trial',
-          },
-        },
-        {
-          id: 'lecturio',
-          cells: {
-            bank: 'Lecturio',
-            best: 'Video lectures paired with a question bank',
-            price: NOT_LISTED,
-            trial: '7-day free trial',
-          },
-        },
-        {
-          id: 'kaplan',
-          cells: {
-            bank: 'Kaplan Qbank',
-            best: 'Physiology and behavioral science focus',
-            price: NOT_CONFIRMED,
-            trial: 'Free sample questions',
-          },
-        },
-      ]}
-    />
-
-    <H2 section={S.method} />
-    <p>
-      We compared each bank on five things: what the question bank contains (question counts and,
-      for Step 3, CCS cases), what comes with the plan (self-assessments, library, score predictor,
-      analytics), price and plan length, whether you can try it free, and any guarantee.
-    </p>
-    <p>
-      Prices, question counts and trial terms come from each company&rsquo;s official pages. The
-      qualitative points, such as who each bank suits, reflect what those companies publish about
-      their products and how medical students commonly describe them. We have not run head-to-head
-      score studies, and we do not claim any bank raises scores by a specific amount. Where we could
-      not confirm a number on an official page, we say so instead of guessing, rather than repeat a
-      figure we could not verify.
-    </p>
-    <p>
-      We update this page when prices or products change, and we only change the &ldquo;updated&rdquo;
-      date when we actually revise it.
     </p>
 
     <H2 section={S.step1} />
