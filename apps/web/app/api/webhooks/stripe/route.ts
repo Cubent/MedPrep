@@ -82,7 +82,13 @@ export async function POST(request: Request) {
         eventId: invoice.id ?? `${event.id}`,
         eventTime: invoice.status_transitions?.paid_at ?? invoice.created,
         email: invoice.customer_email,
-        clerkUserId: invoice.parent?.subscription_details?.metadata?.clerkUserId,
+        // The subscription metadata sits under `parent` on newer Stripe API
+        // versions and at the top level (`subscription_details`) on older ones.
+        clerkUserId:
+          invoice.parent?.subscription_details?.metadata?.clerkUserId ??
+          (invoice as unknown as {
+            subscription_details?: { metadata?: Record<string, string> | null };
+          }).subscription_details?.metadata?.clerkUserId,
         value: invoice.amount_paid / 100,
         currency: invoice.currency,
       });
