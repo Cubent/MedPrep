@@ -96,6 +96,25 @@ export type GeneratedQuestionContent = {
  * objective to generate for lives in qbank.ts's pickOneQuestion, unified
  * with the real algorithm.
  */
+/**
+ * Randomizes the order of a question's answer choices (Fisher-Yates).
+ *
+ * The generation prompt asks the model for a random order, but it reliably
+ * isn't random: whole batches come back with the correct answer in the same
+ * slot (e.g. five questions in a row all answered "A"), so the order is set
+ * here instead. "All/None of the above" style choices are kept last, since
+ * they stop making sense anywhere else.
+ */
+export function shuffleChoices<T extends { text: string }>(choices: T[]): T[] {
+  const isPinned = (choice: T) => /^(all|none) of the above\b/i.test(choice.text.trim());
+  const movable = choices.filter((choice) => !isPinned(choice));
+  for (let i = movable.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [movable[i], movable[j]] = [movable[j] as T, movable[i] as T];
+  }
+  return [...movable, ...choices.filter(isPinned)];
+}
+
 export async function saveGeneratedQuestion(learningObjectiveId: string, generated: GeneratedQuestionContent) {
   const [question] = await database.$transaction([
     database.question.create({
@@ -106,7 +125,7 @@ export async function saveGeneratedQuestion(learningObjectiveId: string, generat
         explanation: generated.explanation,
         difficulty: Math.min(3, Math.max(1, Math.round(generated.difficulty) || 2)),
         choices: {
-          create: generated.choices.map((c, i) => ({
+          create: shuffleChoices(generated.choices).map((c, i) => ({
             text: c.text,
             isCorrect: c.isCorrect,
             explanation: c.explanation,

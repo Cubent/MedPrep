@@ -255,6 +255,7 @@ async function findNextObjective(
  * Priority-queue question selection:
  *   1. Overdue spaced-repetition reviews (a variation of a previously-missed LO)
  *   2. Weak areas: LOs the user has started but is under 50% on, not yet mastered
+ *      (never ones whose review is scheduled for a later date)
  *   3. Next unseen LO by yield weight, favoring breadth once a system is "saturated"
  *
  * Steps 1 and 2 always resolve to a real Question (you can't have progress on
@@ -294,10 +295,14 @@ async function pickOneQuestion(
     if (question) return { objective: dueProgress.learningObjective, question, isReview: true };
   }
 
-  // 2. Weak areas: attempted before, accuracy under 50%, not mastered
+  // 2. Weak areas: attempted before, accuracy under 50%, not mastered.
+  // Respects the review schedule: an objective whose review is booked for a
+  // later date must not come back early (and be labelled "Review") just
+  // because the user is currently under 50% on it.
   const weakProgress = await database.userObjectiveProgress.findMany({
     where: {
       clerkUserId,
+      OR: [{ nextReviewAt: null }, { nextReviewAt: { lte: now } }],
       status: { in: [ObjectiveStatus.LEARNING, ObjectiveStatus.REVIEW] },
       learningObjective: { examType, ...scopeFilter },
       ...excludeFilter,
