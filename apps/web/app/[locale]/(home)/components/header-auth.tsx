@@ -1,8 +1,9 @@
 'use client';
 
-import { Show, UserButton } from '@clerk/nextjs';
+import { Show } from '@clerk/nextjs';
 import { LayoutDashboard } from 'lucide-react';
 import Link from 'next/link';
+import { ProfileMenu } from '../../../../components/profile-menu';
 
 export const HeaderAuth = () => (
   <div className="flex items-center gap-3">
@@ -29,9 +30,7 @@ export const HeaderAuth = () => (
         <LayoutDashboard className="size-5 shrink-0 sm:size-4" />
         <span className="hidden sm:inline">My Dashboard</span>
       </Link>
-      <div className="pointer-events-none mt-1 sm:mt-0" aria-hidden="true">
-        <UserButton />
-      </div>
+      <ProfileMenu />
     </Show>
   </div>
 );

@@ -805,7 +805,7 @@ export const post: BlogPost = {
     'Compare UWorld, AMBOSS, TrueLearn, BoardVitals, Lecturio, USMLE-Rx, Kaplan and MedPrep for Step 1, Step 2 CK and Step 3 with verified 2026 prices and free trials.',
   publishedAt: '2026-09-24T12:00:00+02:00',
   updatedAt: '2026-09-24T12:00:00+02:00',
-  author: { name: 'MedPrep Institute Editorial Team', url: 'https://medprepinstitute.org' },
+  author: { name: 'MedPrep Institute Editorial Team', url: 'https://www.medprepinstitute.org' },
   category: 'Question banks',
   keywords: [
     'best USMLE question banks',

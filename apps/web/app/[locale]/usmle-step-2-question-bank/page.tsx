@@ -30,7 +30,7 @@ const Step2QuestionBankPage = () => (
           provider: {
             '@type': 'EducationalOrganization',
             name: 'MedPrep Institute',
-            url: 'https://medprepinstitute.org',
+            url: 'https://www.medprepinstitute.org',
           },
         }),
       }}

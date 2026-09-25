@@ -15,7 +15,7 @@ import type { Metadata } from 'next';
 import { headers } from 'next/headers';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://medprepinstitute.org'),
+  metadataBase: new URL('https://www.medprepinstitute.org'),
   title: 'MedPrep Institute – All-in-One USMLE Prep Platform',
   description: 'MedPrep Institute is the all-in-one USMLE prep platform behind a 95% pass rate, with an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
   keywords: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'MedPrep Institute – All-in-One USMLE Prep Platform',
     description: 'The USMLE prep platform behind a 95% pass rate: an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
-    url: 'https://medprepinstitute.org',
+    url: 'https://www.medprepinstitute.org',
     siteName: 'MedPrep Institute',
     images: [
       {
@@ -111,8 +111,8 @@ const RootLayout = async ({ children, params }: RootLayoutProperties) => {
             "name": "MedPrep Institute",
             "alternateName": "MedPrep Institute – All-in-One USMLE Prep Platform",
             "description": "MedPrep Institute is the all-in-one USMLE prep platform behind a 95% pass rate, with an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.",
-            "url": "https://medprepinstitute.org",
-            "logo": "https://medprepinstitute.org/favicon.png",
+            "url": "https://www.medprepinstitute.org",
+            "logo": "https://www.medprepinstitute.org/favicon.png",
           })
         }}
       />

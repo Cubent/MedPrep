@@ -1,7 +1,7 @@
 import { getAllPosts } from '@/lib/blog';
 import type { MetadataRoute } from 'next';
 
-const baseUrl = 'https://medprepinstitute.org';
+const baseUrl = 'https://www.medprepinstitute.org';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

@@ -14,7 +14,7 @@ const defaultImage = '/og-image.png';
 const applicationName = 'MedPrep Institute';
 const author: Metadata['authors'] = {
   name: 'MedPrep Institute',
-  url: 'https://medprepinstitute.org/',
+  url: 'https://www.medprepinstitute.org/',
 };
 const publisher = 'MedPrep Institute';
 const twitterHandle = '@medprepinstitute';

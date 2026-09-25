@@ -978,6 +978,7 @@ export function LuminaInteractiveList({
               <ul className="mt-4 flex flex-col gap-3 text-sm">
                 <li><a href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</a></li>
                 <li><a href="/usmle-step-2-question-bank" className="text-white/70 hover:text-white">Step 2 CK Qbank</a></li>
+                <li><a href="/usmle-step-3-question-bank" className="text-white/70 hover:text-white">Step 3 Qbank</a></li>
                 <li><a href="/#how-it-works" className="text-white/70 hover:text-white">The Method</a></li>
                 <li><a href="/sign-up" className="text-white/70 hover:text-white">Start practicing</a></li>
               </ul>
@@ -986,6 +987,7 @@ export function LuminaInteractiveList({
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Company</p>
               <ul className="mt-4 flex flex-col gap-3 text-sm">
+                <li><a href="/blog" className="text-white/70 hover:text-white">Blog</a></li>
                 <li><a href="/contact" className="text-white/70 hover:text-white">Contact</a></li>
                 <li><a href="/#faq" className="text-white/70 hover:text-white">FAQ</a></li>
               </ul>

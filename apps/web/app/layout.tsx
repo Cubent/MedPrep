@@ -8,7 +8,7 @@ import { MetaPixel } from '../components/meta-pixel';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://medprepinstitute.org'),
+  metadataBase: new URL('https://www.medprepinstitute.org'),
   title: 'MedPrep Institute – All-in-One USMLE Prep Platform',
   description: 'MedPrep Institute is the all-in-one USMLE prep platform behind a 95% pass rate, with an adaptive Qbank, AI-powered practice, and personalized study guides for Step 1, Step 2 CK, Step 3, and the ABIM Exam.',
   keywords: [

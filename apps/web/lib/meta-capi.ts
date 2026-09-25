@@ -52,7 +52,7 @@ export const sendMetaPurchase = async ({
               event_time: eventTime,
               event_id: eventId,
               action_source: 'website',
-              event_source_url: 'https://medprepinstitute.org/',
+              event_source_url: 'https://www.medprepinstitute.org/',
               user_data: userData,
               custom_data: { value, currency: currency.toUpperCase() },
             },
