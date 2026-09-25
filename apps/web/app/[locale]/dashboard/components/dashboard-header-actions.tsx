@@ -32,7 +32,7 @@ export const DashboardHeaderActions = () => {
       <button
         type="button"
         aria-label="Notifications"
-        className="flex size-9 items-center justify-center rounded-lg text-gray-600 transition-colors hover:bg-gray-50 hover:text-[#06005A] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-[#C46B10]"
+        className="hidden size-9 items-center justify-center rounded-lg text-gray-600 transition-colors hover:bg-gray-50 hover:text-[#06005A] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-[#C46B10] sm:flex"
       >
         <Bell className="size-4" />
       </button>

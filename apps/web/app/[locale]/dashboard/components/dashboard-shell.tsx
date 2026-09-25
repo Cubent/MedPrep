@@ -7,7 +7,7 @@ import {
   ChevronRight,
   History,
   Home,
-  LayoutDashboard,
+  Menu,
   RotateCcw,
   Target,
   UserRound,
@@ -86,7 +86,7 @@ export const DashboardShell = ({
             alt="MedPrep Institute Logo"
             className="h-8 w-8 rounded-lg object-cover"
           />
-          <span className="text-lg font-semibold text-[#06005A] dark:text-white">
+          <span className="hidden text-lg font-semibold text-[#06005A] dark:text-white sm:inline">
             MedPrep Institute
           </span>
           <span className="hidden text-sm font-semibold text-gray-500 dark:text-gray-400 sm:inline">
@@ -105,7 +105,7 @@ export const DashboardShell = ({
             aria-expanded={isMobileMenuOpen}
             className="flex size-9 shrink-0 items-center justify-center rounded-lg text-[#06005A] hover:bg-gray-50 dark:text-white dark:hover:bg-white/5 md:hidden"
           >
-            {isMobileMenuOpen ? <X className="size-5" /> : <LayoutDashboard className="size-5" />}
+            {isMobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
           <DashboardHeaderActions />
         </div>
