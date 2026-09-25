@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { type ReactNode, useEffect, useState } from 'react';
+import { type ReactNode, useEffect, useRef, useState } from 'react';
 import { PracticeProvider } from '../practice-context';
 import { DashboardHeaderActions } from './dashboard-header-actions';
 import { ExamSwitcher } from './exam-switcher';
@@ -50,6 +50,7 @@ export const DashboardShell = ({
   const pathname = usePathname();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     try {
@@ -62,6 +63,30 @@ export const DashboardShell = ({
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
+
+  // Close the mobile dropdown on an outside tap or Escape.
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (!mobileMenuRef.current?.contains(event.target as Node)) setIsMobileMenuOpen(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setIsMobileMenuOpen(false);
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKey);
+    };
+  }, [isMobileMenuOpen]);
+
+  const isActiveItem = (href: string) =>
+    href === '/dashboard'
+      ? pathname === '/dashboard' || pathname.endsWith('/dashboard')
+      : pathname.includes(href) &&
+        (pathname.length === pathname.indexOf(href) + href.length ||
+          pathname[pathname.indexOf(href) + href.length] === '/');
 
   const toggleCollapsed = () => {
     setIsCollapsed((prev) => {
@@ -98,47 +123,51 @@ export const DashboardShell = ({
           />
         </div>
         <div className="flex items-center gap-2">
-          <button
-            type="button"
-            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            aria-label={isMobileMenuOpen ? 'Close dashboard menu' : 'Open dashboard menu'}
-            aria-expanded={isMobileMenuOpen}
-            className="flex size-9 shrink-0 items-center justify-center rounded-lg text-[#06005A] hover:bg-gray-50 dark:text-white dark:hover:bg-white/5 md:hidden"
-          >
-            {isMobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-          </button>
           <DashboardHeaderActions />
+
+          {/* Mobile menu: same links as the desktop sidebar, in a small dropdown by the profile. */}
+          <div ref={mobileMenuRef} className="relative md:hidden">
+            <button
+              type="button"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+              aria-label={isMobileMenuOpen ? 'Close dashboard menu' : 'Open dashboard menu'}
+              aria-expanded={isMobileMenuOpen}
+              aria-haspopup="menu"
+              className="flex size-9 shrink-0 items-center justify-center rounded-lg text-[#06005A] hover:bg-gray-50 dark:text-white dark:hover:bg-white/5"
+            >
+              {isMobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+
+            {isMobileMenuOpen && (
+              <nav
+                role="menu"
+                className="absolute right-0 top-full z-50 mt-2 flex w-56 flex-col gap-0.5 rounded-xl border border-gray-200 bg-white p-2 shadow-xl dark:border-white/10 dark:bg-[#120A2E]"
+              >
+                {NAV_ITEMS.map((item) => {
+                  const Icon = item.icon;
+                  const isActive = isActiveItem(item.href);
+
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      role="menuitem"
+                      className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors ${
+                        isActive
+                          ? 'bg-[#06005A]/10 font-semibold text-[#06005A] dark:bg-[#C46B10]/15 dark:text-[#C46B10]'
+                          : 'font-medium text-gray-600 hover:bg-gray-50 hover:text-[#06005A] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white'
+                      }`}
+                    >
+                      <Icon className="size-4 shrink-0" />
+                      {item.label}
+                    </Link>
+                  );
+                })}
+              </nav>
+            )}
+          </div>
         </div>
       </header>
-
-      {isMobileMenuOpen && (
-        <nav className="flex flex-col gap-1 border-b border-gray-200 bg-white p-3 dark:border-white/10 dark:bg-[#120A2E] md:hidden">
-          {NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === '/dashboard'
-                ? pathname === '/dashboard' || pathname.endsWith('/dashboard')
-                : pathname.includes(item.href) &&
-                  (pathname.length === pathname.indexOf(item.href) + item.href.length ||
-                    pathname[pathname.indexOf(item.href) + item.href.length] === '/');
-            const Icon = item.icon;
-
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition-colors ${
-                  isActive
-                    ? 'bg-[#06005A]/10 font-semibold text-[#06005A] dark:bg-[#C46B10]/15 dark:text-[#C46B10]'
-                    : 'font-medium text-gray-600 hover:bg-gray-50 hover:text-[#06005A] dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white'
-                }`}
-              >
-                <Icon className="size-4 shrink-0" />
-                {item.label}
-              </Link>
-            );
-          })}
-        </nav>
-      )}
 
       <div className="flex min-h-[calc(100vh-4rem)]">
         {/* Sidebar */}
@@ -149,12 +178,7 @@ export const DashboardShell = ({
         >
           <nav className="flex flex-1 flex-col gap-1">
             {NAV_ITEMS.map((item) => {
-              const isActive =
-                item.href === '/dashboard'
-                  ? pathname === '/dashboard' || pathname.endsWith('/dashboard')
-                  : pathname.includes(item.href) &&
-                    (pathname.length === pathname.indexOf(item.href) + item.href.length ||
-                      pathname[pathname.indexOf(item.href) + item.href.length] === '/');
+              const isActive = isActiveItem(item.href);
               const Icon = item.icon;
 
               return (
