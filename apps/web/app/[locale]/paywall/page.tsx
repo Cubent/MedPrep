@@ -10,6 +10,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { useState } from 'react';
+import { META_PLAN_KEY, META_PLAN_VALUE, trackMeta } from '../../../lib/meta-pixel';
 
 type PlanId = 'monthly' | 'quarterly' | 'yearly';
 
@@ -363,6 +364,16 @@ const PaywallPage = () => {
   const startCheckout = async () => {
     setIsRedirecting(true);
     setError(null);
+    trackMeta('InitiateCheckout', {
+      value: META_PLAN_VALUE[selected],
+      currency: 'USD',
+      content_name: `${plan.label} plan`,
+    });
+    try {
+      window.sessionStorage.setItem(META_PLAN_KEY, selected);
+    } catch {
+      // Storage blocked: the trial event just goes out without a plan value.
+    }
     try {
       const response = await fetch('/api/checkout', {
         method: 'POST',

@@ -4,6 +4,7 @@ import { fonts } from '@repo/design-system/lib/fonts';
 import { cn } from '@repo/design-system/lib/utils';
 import { ClerkProvider } from '@clerk/nextjs';
 import type { ReactNode } from 'react';
+import { MetaPixel } from '../components/meta-pixel';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -93,6 +94,7 @@ export default function RootLayout({
             },
           }}
         >
+          <MetaPixel />
           <DesignSystemProvider>
             {children}
           </DesignSystemProvider>

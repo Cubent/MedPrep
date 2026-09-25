@@ -2,9 +2,35 @@
 
 import { Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import {
+  META_PLAN_KEY,
+  META_PLAN_VALUE,
+  type MetaPlanId,
+  once,
+  trackMeta,
+} from '../../../../lib/meta-pixel';
 
 const POLL_INTERVAL_MS = 1500;
 const MAX_ATTEMPTS = 20;
+
+// Trial activated: tell Meta. The plan chosen on the paywall gives the value
+// (used as predicted lifetime value); the real Purchase is sent server-side
+// when Stripe charges the card after the trial.
+const reportTrialStarted = () => {
+  let plan: MetaPlanId | null = null;
+  try {
+    plan = window.sessionStorage.getItem(META_PLAN_KEY) as MetaPlanId | null;
+  } catch {
+    // Storage blocked: report without a value.
+  }
+  const value = plan ? META_PLAN_VALUE[plan] : undefined;
+  once(`mp_meta_trial_${plan ?? 'unknown'}_${new Date().toISOString().slice(0, 10)}`, () =>
+    trackMeta('StartTrial', {
+      currency: 'USD',
+      ...(value !== undefined && { value: 0, predicted_ltv: value }),
+    }),
+  );
+};
 
 // Stripe sends the user here right after Checkout, but the webhook that
 // records the subscription can land a moment later. Wait for it so the
@@ -21,7 +47,9 @@ const CheckoutSuccessPage = () => {
           const response = await fetch('/api/subscription/status', { cache: 'no-store' });
           const data = await response.json().catch(() => ({}));
           if (data.active) {
-            window.location.replace('/dashboard');
+            reportTrialStarted();
+            // Give the pixel a moment to send before the page is replaced.
+            setTimeout(() => window.location.replace('/dashboard'), 400);
             return;
           }
         } catch {

@@ -1,6 +1,7 @@
 import { database } from '@repo/database';
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
+import { sendMetaPurchase } from '../../../../lib/meta-capi';
 
 // Stripe is the system of record for billing state — this handler is the
 // ONLY place that ever writes to the Subscription table. Never write to it
@@ -71,6 +72,21 @@ export async function POST(request: Request) {
 
   if (RELEVANT_EVENTS.has(event.type)) {
     await upsertFromSubscription(event.data.object as Stripe.Subscription);
+  }
+
+  // Report real payments to Meta Ads. Trial invoices are $0, so only charges count.
+  if (event.type === 'invoice.paid') {
+    const invoice = event.data.object as Stripe.Invoice;
+    if (invoice.amount_paid > 0) {
+      await sendMetaPurchase({
+        eventId: invoice.id ?? `${event.id}`,
+        eventTime: invoice.status_transitions?.paid_at ?? invoice.created,
+        email: invoice.customer_email,
+        clerkUserId: invoice.parent?.subscription_details?.metadata?.clerkUserId,
+        value: invoice.amount_paid / 100,
+        currency: invoice.currency,
+      });
+    }
   }
 
   return NextResponse.json({ received: true });

@@ -6,6 +6,8 @@ import React, { useState } from 'react';
 type LuminaInteractiveListProps = {
   /** Renders in place of the default header "Sign in" link, e.g. real auth controls. */
   authSlot?: React.ReactNode;
+  /** Overrides the hero headline, e.g. for ad landing page variants. */
+  heroTitle?: string;
 };
 
 const methodFaqs = [
@@ -59,7 +61,10 @@ const methodFaqs = [
   },
 ];
 
-export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps = {}) {
+export function LuminaInteractiveList({
+  authSlot,
+  heroTitle = 'The USMLE Prep Platform Behind a 95% Pass Rate',
+}: LuminaInteractiveListProps = {}) {
   const [openMethodFaq, setOpenMethodFaq] = useState<number | null>(0);
 
   const toggleMethodFaq = (index: number) => {
@@ -126,7 +131,7 @@ export function LuminaInteractiveList({ authSlot }: LuminaInteractiveListProps =
 
             {/* Title */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight font-[family-name:var(--font-display)]">
-              <span className="text-white">The USMLE Prep Platform Behind a 95% Pass Rate</span>
+              <span className="text-white">{heroTitle}</span>
             </h1>
 
             {/* Subtitle */}
