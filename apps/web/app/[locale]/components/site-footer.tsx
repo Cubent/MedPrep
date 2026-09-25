@@ -22,6 +22,7 @@ export const SiteFooter = () => (
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/40">Product</p>
           <ul className="mt-4 flex flex-col gap-3 text-sm">
             <li><Link href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</Link></li>
+            <li><Link href="/usmle-step-2-question-bank" className="text-white/70 hover:text-white">Step 2 CK Qbank</Link></li>
             <li><Link href="/#how-it-works" className="text-white/70 hover:text-white">The Method</Link></li>
             <li><Link href="/sign-up" className="text-white/70 hover:text-white">Start practicing</Link></li>
           </ul>

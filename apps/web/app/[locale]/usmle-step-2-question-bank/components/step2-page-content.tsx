@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { DashboardPreviewSection } from '../../components/dashboard-preview-section';
 import {
   Stethoscope,
   Scissors,
@@ -73,7 +74,7 @@ export const Step2PageContent = () => {
       {/* Hero */}
       <div
         className="relative overflow-hidden bg-cover bg-center px-6 pt-16 pb-20 sm:pt-20 sm:pb-28"
-        style={{ backgroundColor: '#06005A', backgroundImage: "url('/MedPrep.png')" }}
+        style={{ backgroundColor: '#06005A', backgroundImage: "url('/MedPrep (2).png')" }}
       >
         <div className="relative mx-auto max-w-4xl text-center">
           <p className="mb-5 flex flex-wrap items-center justify-center gap-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/80">
@@ -178,6 +179,18 @@ export const Step2PageContent = () => {
         </div>
       </div>
 
+      {/* Dashboard preview */}
+      <DashboardPreviewSection
+        exam="Step 2 CK"
+        topics={[
+          { name: 'Cardiology', pct: 88 },
+          { name: 'Neurology', pct: 79 },
+          { name: 'OB/GYN', pct: 71 },
+          { name: 'Emergency medicine', pct: 63 },
+          { name: 'Endocrinology', pct: 44 },
+        ]}
+      />
+
       {/* Testimonial */}
       <div className="bg-[#F4F2FB] px-6 py-16 sm:py-20">
         <div className="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[1.2fr_1fr] lg:gap-16">
@@ -195,27 +208,6 @@ export const Step2PageContent = () => {
 
             <p className="mt-6 font-semibold text-black">Daniel R.</p>
             <p className="text-sm text-gray-500">MS-4, passed USMLE Step 2 CK</p>
-
-            <div className="mt-6 flex items-center gap-3">
-              <div className="flex -space-x-2">
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#06005A] text-xs font-semibold text-white">
-                  M
-                </span>
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#C46B10] text-xs font-semibold text-white">
-                  D
-                </span>
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#06005A] text-xs font-semibold text-white">
-                  P
-                </span>
-              </div>
-              <a href="#faq" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#06005A] hover:underline">
-                Read more learner stories
-                <svg className="size-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </div>
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">

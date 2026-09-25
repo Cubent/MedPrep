@@ -200,27 +200,6 @@ export const Step1PageContent = () => {
 
             <p className="mt-6 font-semibold text-black">Priya S.</p>
             <p className="text-sm text-gray-500">MS-2, passed USMLE Step 1</p>
-
-            <div className="mt-6 flex items-center gap-3">
-              <div className="flex -space-x-2">
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#06005A] text-xs font-semibold text-white">
-                  M
-                </span>
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#C46B10] text-xs font-semibold text-white">
-                  D
-                </span>
-                <span className="flex size-8 items-center justify-center rounded-full border-2 border-[#F4F2FB] bg-[#06005A] text-xs font-semibold text-white">
-                  P
-                </span>
-              </div>
-              <a href="#faq" className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#06005A] hover:underline">
-                Read more learner stories
-                <svg className="size-4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
-            </div>
           </div>
 
           <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white">
