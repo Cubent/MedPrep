@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { InsightsChartsSection } from '../../components/insights-charts-section';
+import { DashboardPreviewSection } from '../../components/dashboard-preview-section';
 import {
   Activity,
   Baby,
@@ -192,8 +192,8 @@ export const Step3PageContent = () => {
         </div>
       </div>
 
-      {/* Analytics charts */}
-      <InsightsChartsSection
+      {/* Dashboard preview */}
+      <DashboardPreviewSection
         exam="Step 3"
         topics={[
           { name: 'Cardiology', pct: 88 },
