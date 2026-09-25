@@ -1,6 +1,6 @@
 'use client';
 
-import { Bookmark, Search, X } from 'lucide-react';
+import { Bookmark, Search, StickyNote, X } from 'lucide-react';
 import { useMemo, useState } from 'react';
 import { RichText } from '../../components/rich-text';
 
@@ -11,6 +11,8 @@ type HistoryEntry = {
   isReview: boolean;
   attemptedAt: string;
   isBookmarked: boolean;
+  /** The user's note on this question's concept, if they wrote one. */
+  note: string | null;
   system: string;
   objectiveTitle: string;
   objectiveSummary: string;
@@ -20,7 +22,7 @@ type HistoryEntry = {
   choices: Choice[];
 };
 
-type Filter = 'all' | 'correct' | 'incorrect' | 'bookmarked';
+type Filter = 'all' | 'correct' | 'incorrect' | 'bookmarked' | 'notes';
 
 const firstSentence = (stem: string) => {
   const withoutTable = stem.split(/\n\s*\|/)[0];
@@ -34,6 +36,7 @@ const FILTERS: { key: Filter; label: string }[] = [
   { key: 'correct', label: 'Correct' },
   { key: 'incorrect', label: 'Incorrect' },
   { key: 'bookmarked', label: 'Bookmarked' },
+  { key: 'notes', label: 'With notes' },
 ];
 
 export const HistoryList = ({ entries }: { entries: HistoryEntry[] }) => {
@@ -46,6 +49,7 @@ export const HistoryList = ({ entries }: { entries: HistoryEntry[] }) => {
       if (filter === 'correct' && !entry.isCorrect) return false;
       if (filter === 'incorrect' && entry.isCorrect) return false;
       if (filter === 'bookmarked' && !entry.isBookmarked) return false;
+      if (filter === 'notes' && !entry.note) return false;
       if (query.trim() && !entry.stem.toLowerCase().includes(query.trim().toLowerCase())) return false;
       return true;
     });
@@ -121,7 +125,18 @@ export const HistoryList = ({ entries }: { entries: HistoryEntry[] }) => {
                     {date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })} at{' '}
                     {date.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })}
                   </p>
+                  {entry.note && (
+                    <p className="mt-1 truncate text-xs italic text-[#C46B10]">
+                      Note: {entry.note.replace(/\s+/g, ' ')}
+                    </p>
+                  )}
                 </div>
+                {entry.note && (
+                  <StickyNote
+                    aria-label="Has a note"
+                    className="size-4 shrink-0 text-[#C46B10]"
+                  />
+                )}
                 {entry.isBookmarked && (
                   <Bookmark className="size-4 shrink-0 fill-current text-[#C46B10]" />
                 )}
@@ -161,6 +176,7 @@ export const HistoryList = ({ entries }: { entries: HistoryEntry[] }) => {
                 >
                   {selected.isCorrect ? 'Correct' : 'Incorrect'}
                 </span>
+                {selected.note && <StickyNote aria-label="Has a note" className="size-4 text-[#C46B10]" />}
                 {selected.isBookmarked && (
                   <Bookmark className="size-4 fill-current text-[#C46B10]" />
                 )}
@@ -222,6 +238,21 @@ export const HistoryList = ({ entries }: { entries: HistoryEntry[] }) => {
                     </p>
                   ))}
               </div>
+
+              {selected.note && (
+                <div className="mt-5 rounded-lg border border-[#C46B10]/30 bg-[#C46B10]/5 p-4">
+                  <p className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-[#C46B10]">
+                    <StickyNote className="size-3.5" />
+                    Your note
+                  </p>
+                  <p className="mt-1.5 whitespace-pre-wrap text-sm leading-relaxed text-gray-700 dark:text-gray-300">
+                    {selected.note}
+                  </p>
+                  <p className="mt-2 text-xs text-gray-400 dark:text-gray-500">
+                    Notes are saved per concept, so this note shows on every question about it.
+                  </p>
+                </div>
+              )}
 
               <div className="mt-5 rounded-lg bg-[#F4F2FB] p-4 dark:bg-white/5">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 dark:text-gray-400">

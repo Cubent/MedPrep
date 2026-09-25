@@ -990,12 +990,14 @@ export async function setUserFocus(clerkUserId: string, examType: ExamType, syst
 
 /**
  * Full attempt history for /dashboard/history: every question the user has
- * answered, newest first, with bookmark status. The list view shows just a
- * preview; the full stem/choices/explanation ride along so a click can open
- * the detail popup without a second fetch.
+ * answered, newest first, with bookmark status and the user's note. Notes are
+ * saved per learning objective (the concept), so every attempt on a concept
+ * carries the same note. The list view shows just a preview; the full
+ * stem/choices/explanation ride along so a click can open the detail popup
+ * without a second fetch.
  */
 export async function getAttemptHistory(clerkUserId: string, examType: ExamType) {
-  const [attempts, bookmarks] = await Promise.all([
+  const [attempts, bookmarks, notes] = await Promise.all([
     database.userQuestionAttempt.findMany({
       where: { clerkUserId, question: { learningObjective: { examType } } },
       orderBy: { attemptedAt: 'desc' },
@@ -1012,9 +1014,14 @@ export async function getAttemptHistory(clerkUserId: string, examType: ExamType)
       where: { clerkUserId, question: { learningObjective: { examType } } },
       select: { questionId: true },
     }),
+    database.userQuestionNote.findMany({
+      where: { clerkUserId, learningObjective: { examType } },
+      select: { learningObjectiveId: true, content: true },
+    }),
   ]);
 
   const bookmarkedIds = new Set(bookmarks.map((b) => b.questionId));
+  const noteByObjective = new Map(notes.map((n) => [n.learningObjectiveId, n.content]));
 
   return attempts.map((attempt) => ({
     id: attempt.id,
@@ -1022,6 +1029,7 @@ export async function getAttemptHistory(clerkUserId: string, examType: ExamType)
     isReview: attempt.isReview,
     attemptedAt: attempt.attemptedAt,
     isBookmarked: bookmarkedIds.has(attempt.questionId),
+    note: noteByObjective.get(attempt.question.learningObjectiveId)?.trim() || null,
     system: describeSource(attempt.question.learningObjective).displayName,
     isAiGenerated: describeSource(attempt.question.learningObjective).isAiGenerated,
     objectiveTitle: attempt.question.learningObjective.title,
