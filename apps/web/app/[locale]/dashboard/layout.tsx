@@ -25,10 +25,21 @@ const DashboardLayout = async ({ children }: { children: ReactNode }) => {
     ? await database.userPreference.findUnique({ where: { clerkUserId: userId } })
     : null;
 
+  // New users (no answered questions yet) get a one-time welcome popup.
+  const hasAnsweredQuestions = userId
+    ? Boolean(
+        await database.userQuestionAttempt.findFirst({
+          where: { clerkUserId: userId },
+          select: { id: true },
+        })
+      )
+    : true;
+
   return (
     <DashboardShell
       currentExam={preference?.exam ?? null}
       examSelectedAt={preference?.examSelectedAt?.toISOString() ?? null}
+      showWelcome={!hasAnsweredQuestions}
     >
       {children}
     </DashboardShell>

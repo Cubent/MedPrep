@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Award,
   BookMarked,
@@ -101,9 +101,17 @@ const Heading = ({ children }: { children: React.ReactNode }) => (
   </h2>
 );
 
+// Illustrations for steps 6 to 8. Kept in one place so the page can preload
+// them while the user is still answering the earlier questions.
+const STEP_IMAGES = {
+  semester: '/MedPrep institute (10).png',
+  dedicated: '/MedPrep institute (11).png',
+  story: '/MedPrep institute (12).png',
+};
+
 /** Smaller, borderless illustration used above the title on marketing
  * slides. Sits right under the step counter. */
-const StepImage = ({ src, className = 'max-w-xs' }: { src: string; className?: string }) => (
+const StepImage =({ src, className = 'max-w-xs' }: { src: string; className?: string }) => (
   <img src={src} alt="" className={`mb-2 w-full ${className}`} />
 );
 
@@ -259,7 +267,7 @@ function StepSemester() {
   return (
     <div>
       <Eyebrow>Step 6 of {TOTAL_STEPS}</Eyebrow>
-      <StepImage src="/MedPrep institute (10).png" className="max-w-[12rem]" />
+      <StepImage src={STEP_IMAGES.semester} className="max-w-[12rem]" />
       <Heading>Your everyday study routine.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         A little every day, whether you&apos;re in lecture, on rotations, or working shifts. The
@@ -284,7 +292,7 @@ function StepDedicated() {
   return (
     <div>
       <Eyebrow>Step 7 of {TOTAL_STEPS}</Eyebrow>
-      <StepImage src="/MedPrep institute (11).png" />
+      <StepImage src={STEP_IMAGES.dedicated} />
       <Heading>Dedicated study period.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         The focused stretch of weeks right before your exam. We shift with you, from broad
@@ -309,7 +317,7 @@ function StepStory() {
   return (
     <div>
       <Eyebrow>Step 8 of {TOTAL_STEPS}</Eyebrow>
-      <StepImage src="/MedPrep institute (12).png" className="max-w-[12rem]" />
+      <StepImage src={STEP_IMAGES.story} className="max-w-[12rem]" />
       <Heading>Questions build on each other.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         One question leads naturally into the next, instead of jumping between unrelated topics.
@@ -383,6 +391,15 @@ const OnboardingTrialPage = () => {
   });
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
+
+  // Start downloading the step 6 to 8 illustrations now, in the background, so
+  // they are already cached by the time the user reaches those steps.
+  useEffect(() => {
+    for (const src of Object.values(STEP_IMAGES)) {
+      const image = new Image();
+      image.src = src;
+    }
+  }, []);
 
   const canContinue =
     (step === 1 && Boolean(answers.exam)) ||

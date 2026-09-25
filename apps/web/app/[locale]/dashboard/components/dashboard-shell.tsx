@@ -19,6 +19,7 @@ import { type ReactNode, useEffect, useState } from 'react';
 import { PracticeProvider } from '../practice-context';
 import { DashboardHeaderActions } from './dashboard-header-actions';
 import { ExamSwitcher } from './exam-switcher';
+import { WelcomeModal } from './welcome-modal';
 
 const NAV_ITEMS = [
   { label: 'My Dashboard', href: '/dashboard', icon: Home },
@@ -36,12 +37,15 @@ type DashboardShellProps = {
   children: ReactNode;
   currentExam?: string | null;
   examSelectedAt?: string | null;
+  /** Show the one-time welcome popup (new users only). */
+  showWelcome?: boolean;
 };
 
 export const DashboardShell = ({
   children,
   currentExam,
   examSelectedAt,
+  showWelcome = false,
 }: DashboardShellProps) => {
   const pathname = usePathname();
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -196,6 +200,7 @@ export const DashboardShell = ({
         {/* Main content */}
         <main className="flex-1 px-4 pt-10 pb-8 sm:px-6 sm:py-8">{children}</main>
       </div>
+      <WelcomeModal enabled={showWelcome} />
     </div>
     </PracticeProvider>
   );
