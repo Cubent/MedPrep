@@ -2,6 +2,7 @@
 
 import { Loader2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { trackEvent } from '../../../../lib/umami';
 import {
   META_PLAN_KEY,
   META_PLAN_VALUE,
@@ -24,12 +25,13 @@ const reportTrialStarted = () => {
     // Storage blocked: report without a value.
   }
   const value = plan ? META_PLAN_VALUE[plan] : undefined;
-  once(`mp_meta_trial_${plan ?? 'unknown'}_${new Date().toISOString().slice(0, 10)}`, () =>
+  once(`mp_meta_trial_${plan ?? 'unknown'}_${new Date().toISOString().slice(0, 10)}`, () => {
     trackMeta('StartTrial', {
       currency: 'USD',
       ...(value !== undefined && { value: 0, predicted_ltv: value }),
-    }),
-  );
+    });
+    trackEvent('trial-started', { plan: plan ?? 'unknown' });
+  });
 };
 
 // Stripe sends the user here right after Checkout, but the webhook that

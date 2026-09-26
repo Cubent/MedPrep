@@ -4,6 +4,7 @@ import { useUser } from '@clerk/nextjs';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
 import { META_PIXEL_ID, once, trackMeta } from '../lib/meta-pixel';
+import { trackEvent } from '../lib/umami';
 
 const NEW_USER_WINDOW_MS = 15 * 60 * 1000;
 
@@ -22,7 +23,10 @@ export const MetaPixel = () => {
   useEffect(() => {
     if (!isLoaded || !user?.createdAt) return;
     if (Date.now() - user.createdAt.getTime() > NEW_USER_WINDOW_MS) return;
-    once(`mp_meta_reg_${user.id}`, () => trackMeta('CompleteRegistration', { status: true }));
+    once(`mp_meta_reg_${user.id}`, () => {
+      trackMeta('CompleteRegistration', { status: true });
+      trackEvent('signup-completed');
+    });
   }, [isLoaded, user]);
 
   return (

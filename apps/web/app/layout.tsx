@@ -5,6 +5,7 @@ import { cn } from '@repo/design-system/lib/utils';
 import { ClerkProvider } from '@clerk/nextjs';
 import type { ReactNode } from 'react';
 import { MetaPixel } from '../components/meta-pixel';
+import { UmamiAnalytics } from '../components/umami-analytics';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -95,6 +96,7 @@ export default function RootLayout({
           }}
         >
           <MetaPixel />
+          <UmamiAnalytics />
           <DesignSystemProvider>
             {children}
           </DesignSystemProvider>
