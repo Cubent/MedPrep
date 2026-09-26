@@ -17,6 +17,8 @@ export type BlogPost = {
   author: { name: string; url: string };
   /** Shown as "Medically reviewed by" and in the byline when set. */
   reviewer?: { name: string; credentials: string; url?: string };
+  /** Image behind the post header, from /public. Defaults to MedPrep (1).png. */
+  heroImage?: string;
   category: string;
   keywords: string[];
   readingMinutes: number;

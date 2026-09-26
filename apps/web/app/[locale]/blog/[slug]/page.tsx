@@ -103,7 +103,7 @@ const BlogPostPage = async ({ params }: BlogPostPageProperties) => {
         <article>
           <header className="relative isolate overflow-hidden bg-[#000C3F]">
             <Image
-              src="/MedPrep (1).png"
+              src={post.heroImage ?? '/MedPrep (1).png'}
               alt=""
               fill
               priority
