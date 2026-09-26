@@ -5,6 +5,11 @@ import Script from 'next/script';
 import { useEffect, useRef } from 'react';
 import { UMAMI_SCRIPT_URL, UMAMI_WEBSITE_ID, trackEvent } from '../lib/umami';
 
+// Umami already drops well-known crawlers by user agent on its servers. This also catches
+// automation that looks like a normal browser: WebDriver-controlled and headless browsers,
+// uptime and speed-test tools, and link-preview fetchers.
+const BOT_FILTER_SCRIPT = `window.mpUmamiBeforeSend=function(type,payload){try{var n=window.navigator,ua=n.userAgent||'';if(n.webdriver===true||/bot|crawl|spider|slurp|headless|phantom|lighthouse|pagespeed|gtmetrix|pingdom|uptime|monitor|preview|facebookexternalhit|whatsapp|telegram|curl|wget|python|node-fetch|axios/i.test(ua)||!n.languages||n.languages.length===0){return null}}catch(e){}return payload};`;
+
 const CLICKABLE = 'button, a[href], [role="button"], summary, input[type="submit"]';
 const LABEL_MAX = 40;
 
@@ -62,13 +67,23 @@ export const UmamiAnalytics = () => {
   }, []);
 
   return (
-    <Script
-      src={UMAMI_SCRIPT_URL}
-      data-website-id={UMAMI_WEBSITE_ID}
-      // Only count the real site, not localhost or preview deployments.
-      data-domains="www.medprepinstitute.org,medprepinstitute.org"
-      strategy="afterInteractive"
-      defer
-    />
+    <>
+      {/* Plain inline script so the filter exists in the server HTML, before Umami loads.
+          Umami calls it for every pageview and event; returning null drops the hit. */}
+      <script
+        id="umami-bot-filter"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: static, no user input
+        dangerouslySetInnerHTML={{ __html: BOT_FILTER_SCRIPT }}
+      />
+      <Script
+        src={UMAMI_SCRIPT_URL}
+        data-website-id={UMAMI_WEBSITE_ID}
+        // Only count the real site, not localhost or preview deployments.
+        data-domains="www.medprepinstitute.org,medprepinstitute.org"
+        data-before-send="mpUmamiBeforeSend"
+        strategy="afterInteractive"
+        defer
+      />
+    </>
   );
 };
