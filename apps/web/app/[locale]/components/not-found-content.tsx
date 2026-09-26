@@ -6,6 +6,7 @@ const popularPages = [
   { label: 'Step 1 Qbank', href: '/usmle-step-1-question-bank' },
   { label: 'Step 2 CK Qbank', href: '/usmle-step-2-question-bank' },
   { label: 'Step 3 Qbank', href: '/usmle-step-3-question-bank' },
+  { label: 'ABIM Qbank', href: '/abim-internal-medicine-question-bank' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '/#faq' },
   { label: 'Contact', href: '/contact' },

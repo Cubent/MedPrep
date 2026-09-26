@@ -24,6 +24,7 @@ export const SiteFooter = () => (
             <li><Link href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</Link></li>
             <li><Link href="/usmle-step-2-question-bank" className="text-white/70 hover:text-white">Step 2 CK Qbank</Link></li>
             <li><Link href="/usmle-step-3-question-bank" className="text-white/70 hover:text-white">Step 3 Qbank</Link></li>
+            <li><Link href="/abim-internal-medicine-question-bank" className="text-white/70 hover:text-white">ABIM Qbank</Link></li>
             <li><Link href="/#how-it-works" className="text-white/70 hover:text-white">The Method</Link></li>
             <li><Link href="/sign-up" className="text-white/70 hover:text-white">Start practicing</Link></li>
           </ul>

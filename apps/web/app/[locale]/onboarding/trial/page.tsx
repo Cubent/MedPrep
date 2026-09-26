@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
 import {
   Award,
   BookMarked,
@@ -84,6 +84,17 @@ const NEXT_EXAM_OPTIONS: Option[] = [
 ];
 
 const TOTAL_STEPS = 9;
+const NEXT_EXAM_STEP = 5;
+
+// ABIM is the last exam in the path, so "planning your next exam" is skipped for it and
+// every later step number shifts down by one.
+const StepMetaContext = createContext({ total: TOTAL_STEPS, skipNextExam: false });
+
+const StepEyebrow = ({ n }: { n: number }) => {
+  const { total, skipNextExam } = useContext(StepMetaContext);
+  const shown = skipNextExam && n > NEXT_EXAM_STEP ? n - 1 : n;
+  return <Eyebrow>Step {shown} of {total}</Eyebrow>;
+};
 
 const CheckIcon = () => (
   <svg className="size-3 text-white" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
@@ -200,7 +211,7 @@ function StepExam({
 }) {
   return (
     <div>
-      <Eyebrow>Step 1 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={1} />
       <Heading>Which exam are you studying for?</Heading>
       <p className="mt-3 text-lg text-gray-600">Select your exam.</p>
       <p className="mt-4 rounded-xl bg-[#F4F2FB] p-4 text-sm leading-relaxed text-gray-600">
@@ -216,7 +227,7 @@ function StepExam({
 function StepPrepStage({ selected, onSelect }: { selected: string | null; onSelect: (id: string) => void }) {
   return (
     <div>
-      <Eyebrow>Step 2 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={2} />
       <Heading>Where are you in your prep?</Heading>
       <p className="mt-3 text-lg text-gray-600">
         This shapes how your bank is paced from day one.
@@ -229,7 +240,7 @@ function StepPrepStage({ selected, onSelect }: { selected: string | null; onSele
 function StepRetake({ selected, onSelect }: { selected: string | null; onSelect: (id: string) => void }) {
   return (
     <div>
-      <Eyebrow>Step 3 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={3} />
       <Heading>Have you taken this exam before?</Heading>
       <p className="mt-3 text-lg text-gray-600">
         Retaking changes how broadly we sample at the start.
@@ -242,7 +253,7 @@ function StepRetake({ selected, onSelect }: { selected: string | null; onSelect:
 function StepTimedPreference({ selected, onSelect }: { selected: string | null; onSelect: (id: string) => void }) {
   return (
     <div>
-      <Eyebrow>Step 4 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={4} />
       <Heading>Timed or untimed to start?</Heading>
       <p className="mt-3 text-lg text-gray-600">You can always switch this later.</p>
       <OptionCards options={TIMED_OPTIONS} selected={selected} onSelect={onSelect} />
@@ -253,7 +264,7 @@ function StepTimedPreference({ selected, onSelect }: { selected: string | null; 
 function StepNextExamPlan({ selected, onSelect }: { selected: string | null; onSelect: (id: string) => void }) {
   return (
     <div>
-      <Eyebrow>Step 5 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={5} />
       <Heading>Already planning your next exam after this one?</Heading>
       <p className="mt-3 text-lg text-gray-600">
         Your progress carries forward, and your weak areas get prioritized first.
@@ -266,7 +277,7 @@ function StepNextExamPlan({ selected, onSelect }: { selected: string | null; onS
 function StepSemester() {
   return (
     <div>
-      <Eyebrow>Step 6 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={6} />
       <StepImage src={STEP_IMAGES.semester} className="max-w-[12rem]" />
       <Heading>Your everyday study routine.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
@@ -291,7 +302,7 @@ function StepSemester() {
 function StepDedicated() {
   return (
     <div>
-      <Eyebrow>Step 7 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={7} />
       <StepImage src={STEP_IMAGES.dedicated} />
       <Heading>Dedicated study period.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
@@ -316,7 +327,7 @@ function StepDedicated() {
 function StepStory() {
   return (
     <div>
-      <Eyebrow>Step 8 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={8} />
       <StepImage src={STEP_IMAGES.story} className="max-w-[12rem]" />
       <Heading>Questions build on each other.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
@@ -339,7 +350,7 @@ function StepStory() {
 function StepCompounding() {
   return (
     <div>
-      <Eyebrow>Step 9 of {TOTAL_STEPS}</Eyebrow>
+      <StepEyebrow n={9} />
       <Heading>After this exam.</Heading>
       <p className="mt-4 text-lg leading-relaxed text-gray-600">
         Your progress will be waiting for you when you start studying for the next exam.
@@ -409,8 +420,20 @@ const OnboardingTrialPage = () => {
     (step === 5 && Boolean(answers.nextExamPlan)) ||
     step > 5;
 
-  const goNext = () => setStep((s) => Math.min(TOTAL_STEPS, s + 1));
-  const goBack = () => setStep((s) => Math.max(1, s - 1));
+  const skipNextExam = answers.exam === 'ABIM';
+  const totalSteps = skipNextExam ? TOTAL_STEPS - 1 : TOTAL_STEPS;
+  const shownStep = skipNextExam && step > NEXT_EXAM_STEP ? step - 1 : step;
+
+  const goNext = () =>
+    setStep((s) => {
+      const next = Math.min(TOTAL_STEPS, s + 1);
+      return skipNextExam && next === NEXT_EXAM_STEP ? next + 1 : next;
+    });
+  const goBack = () =>
+    setStep((s) => {
+      const prev = Math.max(1, s - 1);
+      return skipNextExam && prev === NEXT_EXAM_STEP ? prev - 1 : prev;
+    });
 
   const finish = async () => {
     setIsSaving(true);
@@ -424,7 +447,8 @@ const OnboardingTrialPage = () => {
           prepStage: answers.prepStage,
           isRetake: answers.isRetake === 'true',
           timedPreference: answers.timedPreference,
-          nextExamPlan: answers.nextExamPlan,
+          // Skipped for ABIM; undefined is dropped from the JSON (null would fail validation).
+          nextExamPlan: skipNextExam ? undefined : answers.nextExamPlan,
         }),
       });
       if (!response.ok) {
@@ -447,6 +471,7 @@ const OnboardingTrialPage = () => {
   };
 
   return (
+    <StepMetaContext.Provider value={{ total: totalSteps, skipNextExam }}>
     <div className="min-h-screen bg-white">
       <div className="mx-auto flex max-w-2xl items-center gap-2.5 px-6 pt-8">
         <img
@@ -458,11 +483,11 @@ const OnboardingTrialPage = () => {
       </div>
 
       <div className="mx-auto flex max-w-2xl items-center gap-2 px-6 pt-6">
-        {Array.from({ length: TOTAL_STEPS }).map((_, i) => (
+        {Array.from({ length: totalSteps }).map((_, i) => (
           <div
             key={i}
             className={`h-1 flex-1 rounded-full transition-colors ${
-              i < step ? 'bg-[#C46B10]' : 'bg-gray-200'
+              i < shownStep ? 'bg-[#C46B10]' : 'bg-gray-200'
             }`}
           />
         ))}
@@ -546,6 +571,7 @@ const OnboardingTrialPage = () => {
         )}
       </div>
     </div>
+    </StepMetaContext.Provider>
   );
 };
 

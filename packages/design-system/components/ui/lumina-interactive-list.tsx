@@ -979,6 +979,7 @@ export function LuminaInteractiveList({
                 <li><a href="/usmle-step-1-question-bank" className="text-white/70 hover:text-white">Step 1 Qbank</a></li>
                 <li><a href="/usmle-step-2-question-bank" className="text-white/70 hover:text-white">Step 2 CK Qbank</a></li>
                 <li><a href="/usmle-step-3-question-bank" className="text-white/70 hover:text-white">Step 3 Qbank</a></li>
+                <li><a href="/abim-internal-medicine-question-bank" className="text-white/70 hover:text-white">ABIM Qbank</a></li>
                 <li><a href="/#how-it-works" className="text-white/70 hover:text-white">The Method</a></li>
                 <li><a href="/sign-up" className="text-white/70 hover:text-white">Start practicing</a></li>
               </ul>
